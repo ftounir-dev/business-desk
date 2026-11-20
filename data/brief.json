@@ -1,140 +1,1157 @@
 {
- "generated_at": "2026-11-20T10:25:00Z",
- "summary_mode": "ai",
+ "generated_at": "2026-11-20T10:44:54.208Z",
+ "summary_mode": "rules",
  "peg": 655.957,
  "fx": {
-  "eurusd": 1.1,
-  "usdxaf": 596.3245454545454,
-  "usdxaf_prev": 583.0728888888889,
-  "date": "2026-11-19"
+  "eurusd": 1.0968520641326904,
+  "usdxaf": 598.0359808309084,
+  "usdxaf_prev": 597.8457318897565,
+  "date": "2026-11-20"
  },
  "markets": [
   {
    "id": "usdxaf",
+   "group": "fx",
    "name": "USD/XAF",
    "unit": "XAF per USD",
    "dp": 1,
    "cost": 1,
-   "value": 596.3245454545454,
-   "prev": 583.0728888888889,
-   "date": "2026-11-19",
-   "change_pct": 2.2727272727272707,
-   "series": [],
-   "source": "655.957 ÷ EUR/USD (vs 10 Nov)",
-   "url": "https://www.tradingkey.com/news/forex/262309809-fxstr",
-   "group": "fx"
+   "value": 598.0359808309084,
+   "prev": 597.8457318897565,
+   "date": "2026-11-20",
+   "change_pct": 0.03182241354313664,
+   "series": [
+    [
+     "2026-10-21",
+     583.8673462814331
+    ],
+    [
+     "2026-10-22",
+     584.5560850899462
+    ],
+    [
+     "2026-10-26",
+     584.7594069793663
+    ],
+    [
+     "2026-10-27",
+     587.0487180947524
+    ],
+    [
+     "2026-10-28",
+     589.3773612680742
+    ],
+    [
+     "2026-10-29",
+     587.9998540149355
+    ],
+    [
+     "2026-10-30",
+     586.5764290952483
+    ],
+    [
+     "2026-11-02",
+     587.940796740865
+    ],
+    [
+     "2026-11-03",
+     586.09104053113
+    ],
+    [
+     "2026-11-04",
+     585.2973102128872
+    ],
+    [
+     "2026-11-05",
+     583.8542125178324
+    ],
+    [
+     "2026-11-06",
+     584.201836771775
+    ],
+    [
+     "2026-11-09",
+     588.4459308750901
+    ],
+    [
+     "2026-11-10",
+     584.5036158436657
+    ],
+    [
+     "2026-11-11",
+     587.3045481807546
+    ],
+    [
+     "2026-11-12",
+     591.2074871975705
+    ],
+    [
+     "2026-11-13",
+     593.6148349448034
+    ],
+    [
+     "2026-11-16",
+     594.9792398106772
+    ],
+    [
+     "2026-11-17",
+     596.4223260826303
+    ],
+    [
+     "2026-11-18",
+     596.710981384034
+    ],
+    [
+     "2026-11-19",
+     597.8457318897565
+    ],
+    [
+     "2026-11-20",
+     598.0359808309084
+    ]
+   ],
+   "source": "655.957 ÷ EUR/USD",
+   "url": "https://finance.yahoo.com/quote/EURUSD%3DX"
   },
   {
    "id": "eurusd",
+   "group": "fx",
    "name": "EUR/USD",
-   "unit": "USD per EUR (vs 10 Nov)",
+   "unit": "USD per EUR",
    "dp": 4,
    "cost": -1,
-   "value": 1.1,
-   "prev": 1.125,
-   "date": "2026-11-19",
-   "change_pct": -2.2222222222222143,
-   "series": [],
-   "source": "FXStreet",
-   "url": "https://www.tradingkey.com/news/forex/262309809-fxstr",
-   "group": "fx"
+   "value": 1.0968520641326904,
+   "prev": 1.0972011089324951,
+   "date": "2026-11-20",
+   "change_pct": -0.03181229010461584,
+   "series": [
+    [
+     "2026-10-21",
+     1.1234692335128784
+    ],
+    [
+     "2026-10-22",
+     1.1221455335617065
+    ],
+    [
+     "2026-10-26",
+     1.1217553615570068
+    ],
+    [
+     "2026-10-27",
+     1.1173808574676514
+    ],
+    [
+     "2026-10-28",
+     1.1129660606384277
+    ],
+    [
+     "2026-10-29",
+     1.1155734062194824
+    ],
+    [
+     "2026-10-30",
+     1.1182805299758911
+    ],
+    [
+     "2026-11-02",
+     1.1156854629516602
+    ],
+    [
+     "2026-11-03",
+     1.1192066669464111
+    ],
+    [
+     "2026-11-04",
+     1.1207244396209717
+    ],
+    [
+     "2026-11-05",
+     1.1234945058822632
+    ],
+    [
+     "2026-11-06",
+     1.1228259801864624
+    ],
+    [
+     "2026-11-09",
+     1.1147277355194092
+    ],
+    [
+     "2026-11-10",
+     1.122246265411377
+    ],
+    [
+     "2026-11-11",
+     1.1168941259384155
+    ],
+    [
+     "2026-11-12",
+     1.1095207929611206
+    ],
+    [
+     "2026-11-13",
+     1.1050212383270264
+    ],
+    [
+     "2026-11-16",
+     1.1024872064590454
+    ],
+    [
+     "2026-11-17",
+     1.0998196601867676
+    ],
+    [
+     "2026-11-18",
+     1.0992876291275024
+    ],
+    [
+     "2026-11-19",
+     1.0972011089324951
+    ],
+    [
+     "2026-11-20",
+     1.0968520641326904
+    ]
+   ],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/EURUSD%3DX"
+  },
+  {
+   "id": "usdngn",
+   "group": "africa",
+   "name": "USD/NGN",
+   "unit": "Nigerian naira per USD",
+   "dp": 0,
+   "cost": 0,
+   "value": 1354,
+   "prev": 1352.199951171875,
+   "date": "2026-11-20",
+   "change_pct": 0.1331200187195014,
+   "series": [
+    [
+     "2026-10-21",
+     1331.7900390625
+    ],
+    [
+     "2026-10-22",
+     1330.5400390625
+    ],
+    [
+     "2026-10-26",
+     1331.56005859375
+    ],
+    [
+     "2026-10-27",
+     1339.989990234375
+    ],
+    [
+     "2026-10-28",
+     1340.1600341796875
+    ],
+    [
+     "2026-10-29",
+     1344.6600341796875
+    ],
+    [
+     "2026-10-30",
+     1346.2099609375
+    ],
+    [
+     "2026-11-02",
+     1345.969970703125
+    ],
+    [
+     "2026-11-03",
+     1343.8299560546875
+    ],
+    [
+     "2026-11-04",
+     1343.449951171875
+    ],
+    [
+     "2026-11-05",
+     1345.9200439453125
+    ],
+    [
+     "2026-11-06",
+     1344.6300048828125
+    ],
+    [
+     "2026-11-09",
+     1346.7099609375
+    ],
+    [
+     "2026-11-10",
+     1346.510009765625
+    ],
+    [
+     "2026-11-11",
+     1345.6500244140625
+    ],
+    [
+     "2026-11-12",
+     1346.949951171875
+    ],
+    [
+     "2026-11-13",
+     1344.25
+    ],
+    [
+     "2026-11-16",
+     1343.0699462890625
+    ],
+    [
+     "2026-11-17",
+     1345.3800048828125
+    ],
+    [
+     "2026-11-18",
+     1350.8900146484375
+    ],
+    [
+     "2026-11-19",
+     1352.199951171875
+    ],
+    [
+     "2026-11-20",
+     1354
+    ]
+   ],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/NGN%3DX"
+  },
+  {
+   "id": "usdghs",
+   "group": "africa",
+   "name": "USD/GHS",
+   "unit": "Ghana cedi per USD",
+   "dp": 2,
+   "cost": 0,
+   "value": 11.729999542236328,
+   "prev": 11.760000228881836,
+   "date": "2026-11-20",
+   "change_pct": -0.2551078746735769,
+   "series": [
+    [
+     "2026-10-21",
+     11.59000015258789
+    ],
+    [
+     "2026-10-22",
+     11.59000015258789
+    ],
+    [
+     "2026-10-26",
+     11.239344596862793
+    ],
+    [
+     "2026-10-27",
+     11.600000381469727
+    ],
+    [
+     "2026-10-28",
+     11.600000381469727
+    ],
+    [
+     "2026-10-29",
+     11.640000343322754
+    ],
+    [
+     "2026-10-30",
+     11.640000343322754
+    ],
+    [
+     "2026-11-02",
+     11.288639068603516
+    ],
+    [
+     "2026-11-03",
+     11.640000343322754
+    ],
+    [
+     "2026-11-04",
+     11.65999984741211
+    ],
+    [
+     "2026-11-05",
+     11.285758972167969
+    ],
+    [
+     "2026-11-06",
+     11.321830749511719
+    ],
+    [
+     "2026-11-09",
+     11.359131813049316
+    ],
+    [
+     "2026-11-10",
+     11.670000076293945
+    ],
+    [
+     "2026-11-11",
+     11.6899995803833
+    ],
+    [
+     "2026-11-12",
+     11.49351692199707
+    ],
+    [
+     "2026-11-13",
+     11.710000038146973
+    ],
+    [
+     "2026-11-16",
+     11.710000038146973
+    ],
+    [
+     "2026-11-17",
+     11.720000267028809
+    ],
+    [
+     "2026-11-18",
+     11.729999542236328
+    ],
+    [
+     "2026-11-19",
+     11.760000228881836
+    ],
+    [
+     "2026-11-20",
+     11.729999542236328
+    ]
+   ],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/GHS%3DX"
+  },
+  {
+   "id": "usdcdf",
+   "group": "africa",
+   "name": "USD/CDF",
+   "unit": "Congolese franc (DRC) per USD",
+   "dp": 0,
+   "cost": 0,
+   "value": 2259.43994140625,
+   "prev": 2255,
+   "date": "2026-11-20",
+   "change_pct": 0.19689318874722694,
+   "series": [
+    [
+     "2026-10-21",
+     2301
+    ],
+    [
+     "2026-10-22",
+     2301
+    ],
+    [
+     "2026-10-26",
+     2301
+    ],
+    [
+     "2026-10-27",
+     2301
+    ],
+    [
+     "2026-10-28",
+     2300
+    ],
+    [
+     "2026-10-29",
+     2300
+    ],
+    [
+     "2026-10-30",
+     2300
+    ],
+    [
+     "2026-11-02",
+     2300
+    ],
+    [
+     "2026-11-03",
+     2300
+    ],
+    [
+     "2026-11-04",
+     2300
+    ],
+    [
+     "2026-11-05",
+     2300
+    ],
+    [
+     "2026-11-06",
+     2300
+    ],
+    [
+     "2026-11-09",
+     2290
+    ],
+    [
+     "2026-11-10",
+     2295
+    ],
+    [
+     "2026-11-11",
+     2256
+    ],
+    [
+     "2026-11-12",
+     2256
+    ],
+    [
+     "2026-11-13",
+     2300
+    ],
+    [
+     "2026-11-16",
+     2300
+    ],
+    [
+     "2026-11-17",
+     2300
+    ],
+    [
+     "2026-11-18",
+     2303
+    ],
+    [
+     "2026-11-19",
+     2255
+    ],
+    [
+     "2026-11-20",
+     2259.43994140625
+    ]
+   ],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/CDF%3DX"
   },
   {
    "id": "brent",
+   "group": "commod",
    "name": "Brent",
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 92.69,
-   "prev": 91.95,
-   "date": "2026-11-19",
-   "change_pct": 0.8047852093528984,
+   "value": 87.95999908447266,
+   "prev": 91.9800033569336,
+   "date": "2026-11-20",
+   "change_pct": -4.370519814900509,
    "series": [
     [
+     "2026-10-22",
+     113.16999816894531
+    ],
+    [
+     "2026-10-23",
+     116.72000122070312
+    ],
+    [
+     "2026-10-26",
+     115.80999755859375
+    ],
+    [
+     "2026-10-27",
+     113.87999725341797
+    ],
+    [
+     "2026-10-28",
+     115.31999969482422
+    ],
+    [
+     "2026-10-29",
+     114.87999725341797
+    ],
+    [
+     "2026-10-30",
+     117.63999938964844
+    ],
+    [
+     "2026-11-02",
+     104.7699966430664
+    ],
+    [
+     "2026-11-03",
+     103.5999984741211
+    ],
+    [
+     "2026-11-04",
+     94.62000274658203
+    ],
+    [
+     "2026-11-05",
+     98.29000091552734
+    ],
+    [
+     "2026-11-06",
+     98.31999969482422
+    ],
+    [
      "2026-11-09",
-     92.57
+     92.56999969482422
     ],
     [
      "2026-11-10",
-     91.49
+     91.48999786376953
     ],
     [
      "2026-11-11",
-     92.76
+     92.76000213623047
     ],
     [
      "2026-11-12",
-     95.82
+     95.81999969482422
     ],
     [
      "2026-11-13",
-     95.84
+     95.83999633789062
     ],
     [
      "2026-11-16",
-     92.44
+     92.44000244140625
     ],
     [
      "2026-11-17",
-     93.14
+     93.13999938964844
     ],
     [
      "2026-11-18",
-     91.95
+     91.94999694824219
     ],
     [
      "2026-11-19",
-     92.69
+     91.9800033569336
+    ],
+    [
+     "2026-11-20",
+     87.95999908447266
     ]
    ],
-   "source": "Trading Economics",
-   "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
-   "group": "commod"
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/BZ%3DF"
   },
   {
    "id": "sugar",
+   "group": "commod",
    "name": "Sugar No.11",
    "unit": "US¢/lb",
    "dp": 2,
    "cost": 1,
-   "value": 18.1,
-   "prev": 18.41,
-   "date": "2026-11-16",
-   "change_pct": -1.6838674633351425,
-   "series": [],
-   "source": "CMB",
-   "url": "https://commodity-board.com/sugar-no-11-slips-from-highs-as-weather-and-policy-keep-market-tight",
-   "group": "commod"
+   "value": 17.149999618530273,
+   "prev": 17.15999984741211,
+   "date": "2026-11-20",
+   "change_pct": -0.058276392603484606,
+   "series": [
+    [
+     "2026-10-22",
+     20.1299991607666
+    ],
+    [
+     "2026-10-23",
+     20.239999771118164
+    ],
+    [
+     "2026-10-26",
+     19.100000381469727
+    ],
+    [
+     "2026-10-27",
+     19.200000762939453
+    ],
+    [
+     "2026-10-28",
+     19.34000015258789
+    ],
+    [
+     "2026-10-29",
+     19.469999313354492
+    ],
+    [
+     "2026-10-30",
+     19.360000610351562
+    ],
+    [
+     "2026-11-02",
+     19.059999465942383
+    ],
+    [
+     "2026-11-03",
+     18.329999923706055
+    ],
+    [
+     "2026-11-04",
+     18.469999313354492
+    ],
+    [
+     "2026-11-05",
+     18.559999465942383
+    ],
+    [
+     "2026-11-06",
+     18.239999771118164
+    ],
+    [
+     "2026-11-09",
+     18.209999084472656
+    ],
+    [
+     "2026-11-10",
+     18.09000015258789
+    ],
+    [
+     "2026-11-11",
+     18.479999542236328
+    ],
+    [
+     "2026-11-12",
+     18.219999313354492
+    ],
+    [
+     "2026-11-13",
+     18.40999984741211
+    ],
+    [
+     "2026-11-16",
+     18.100000381469727
+    ],
+    [
+     "2026-11-17",
+     18.170000076293945
+    ],
+    [
+     "2026-11-18",
+     18.040000915527344
+    ],
+    [
+     "2026-11-19",
+     17.15999984741211
+    ],
+    [
+     "2026-11-20",
+     17.149999618530273
+    ]
+   ],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/SB%3DF"
+  },
+  {
+   "id": "wheat",
+   "group": "commod",
+   "name": "Wheat CBOT",
+   "unit": "US¢/bu · malt proxy",
+   "dp": 2,
+   "cost": 1,
+   "value": 594.25,
+   "prev": 578.25,
+   "date": "2026-11-20",
+   "change_pct": 2.7669693039342746,
+   "series": [
+    [
+     "2026-10-22",
+     624.75
+    ],
+    [
+     "2026-10-23",
+     625
+    ],
+    [
+     "2026-10-26",
+     616
+    ],
+    [
+     "2026-10-27",
+     610.25
+    ],
+    [
+     "2026-10-28",
+     599
+    ],
+    [
+     "2026-10-29",
+     603.75
+    ],
+    [
+     "2026-10-30",
+     603.5
+    ],
+    [
+     "2026-11-02",
+     606.5
+    ],
+    [
+     "2026-11-03",
+     599.75
+    ],
+    [
+     "2026-11-04",
+     598.5
+    ],
+    [
+     "2026-11-05",
+     599.25
+    ],
+    [
+     "2026-11-06",
+     591.25
+    ],
+    [
+     "2026-11-09",
+     588
+    ],
+    [
+     "2026-11-10",
+     592.75
+    ],
+    [
+     "2026-11-11",
+     599.5
+    ],
+    [
+     "2026-11-12",
+     584.25
+    ],
+    [
+     "2026-11-13",
+     593.25
+    ],
+    [
+     "2026-11-16",
+     587
+    ],
+    [
+     "2026-11-17",
+     595.25
+    ],
+    [
+     "2026-11-18",
+     570
+    ],
+    [
+     "2026-11-19",
+     578.25
+    ],
+    [
+     "2026-11-20",
+     594.25
+    ]
+   ],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/ZW%3DF"
   },
   {
    "id": "alu",
-   "name": "Aluminium LME 3M",
+   "group": "commod",
+   "name": "Aluminium",
    "unit": "USD/t",
    "dp": 0,
    "cost": 1,
-   "value": 3018,
-   "prev": 3016,
-   "date": "2026-11-16",
-   "change_pct": 0.06631299734747298,
-   "series": [],
-   "source": "AL Circle",
-   "url": "https://www.alcircle.com/news/lme-aluminium-cash-offer-price-jumps-5-76-to-3-332-t-as-stocks-fall-0-97-on-november-16-121985",
-   "group": "commod"
+   "value": 2839.5,
+   "prev": 2919,
+   "date": "2026-11-19",
+   "change_pct": -2.7235354573484027,
+   "series": [
+    [
+     "2026-10-21",
+     3177.75
+    ],
+    [
+     "2026-10-22",
+     3193
+    ],
+    [
+     "2026-10-23",
+     3268.5
+    ],
+    [
+     "2026-10-26",
+     3222
+    ],
+    [
+     "2026-10-27",
+     3285.25
+    ],
+    [
+     "2026-10-28",
+     3278
+    ],
+    [
+     "2026-10-29",
+     3332.25
+    ],
+    [
+     "2026-10-30",
+     3310.5
+    ],
+    [
+     "2026-11-02",
+     3314.75
+    ],
+    [
+     "2026-11-03",
+     3235.25
+    ],
+    [
+     "2026-11-04",
+     3253.75
+    ],
+    [
+     "2026-11-05",
+     3209.75
+    ],
+    [
+     "2026-11-06",
+     3236.25
+    ],
+    [
+     "2026-11-09",
+     3230.25
+    ],
+    [
+     "2026-11-10",
+     3175.25
+    ],
+    [
+     "2026-11-11",
+     3228
+    ],
+    [
+     "2026-11-12",
+     3160.25
+    ],
+    [
+     "2026-11-13",
+     3133.25
+    ],
+    [
+     "2026-11-16",
+     3124.5
+    ],
+    [
+     "2026-11-17",
+     3040.75
+    ],
+    [
+     "2026-11-18",
+     2919
+    ],
+    [
+     "2026-11-19",
+     2839.5
+    ]
+   ],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/ALI%3DF"
   },
   {
    "id": "gold",
+   "group": "commod",
    "name": "Gold",
    "unit": "USD/oz",
    "dp": 0,
    "cost": 0,
-   "value": 3841.58,
-   "prev": 3856.68,
-   "date": "2026-11-17",
-   "change_pct": -0.3915284648972617,
-   "series": [],
-   "source": "USAGOLD",
-   "url": "https://www.usagold.com/daily-precious-metals-market-report-november-17-2026/",
-   "group": "commod"
+   "value": 3586.300048828125,
+   "prev": 3685.5,
+   "date": "2026-11-20",
+   "change_pct": -2.6916280334249088,
+   "series": [
+    [
+     "2026-10-22",
+     4060.39990234375
+    ],
+    [
+     "2026-10-23",
+     4007.89990234375
+    ],
+    [
+     "2026-10-26",
+     4038.39990234375
+    ],
+    [
+     "2026-10-27",
+     4074.60009765625
+    ],
+    [
+     "2026-10-28",
+     4051.60009765625
+    ],
+    [
+     "2026-10-29",
+     4031.39990234375
+    ],
+    [
+     "2026-10-30",
+     3898.89990234375
+    ],
+    [
+     "2026-11-02",
+     3969.60009765625
+    ],
+    [
+     "2026-11-03",
+     3940.39990234375
+    ],
+    [
+     "2026-11-04",
+     4073
+    ],
+    [
+     "2026-11-05",
+     4113.5
+    ],
+    [
+     "2026-11-06",
+     4074.89990234375
+    ],
+    [
+     "2026-11-09",
+     4114.5
+    ],
+    [
+     "2026-11-10",
+     4030.199951171875
+    ],
+    [
+     "2026-11-11",
+     4000.5
+    ],
+    [
+     "2026-11-12",
+     3885.300048828125
+    ],
+    [
+     "2026-11-13",
+     3886.300048828125
+    ],
+    [
+     "2026-11-16",
+     3853
+    ],
+    [
+     "2026-11-17",
+     3864.199951171875
+    ],
+    [
+     "2026-11-18",
+     3741.89990234375
+    ],
+    [
+     "2026-11-19",
+     3685.5
+    ],
+    [
+     "2026-11-20",
+     3586.300048828125
+    ]
+   ],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/GC%3DF"
+  },
+  {
+   "id": "us10y",
+   "group": "rates",
+   "name": "US 10-year yield",
+   "unit": "%",
+   "dp": 2,
+   "cost": 0,
+   "value": 5.052000045776367,
+   "prev": 5.065999984741211,
+   "date": "2026-11-19",
+   "change_pct": -0.2763509476314985,
+   "series": [
+    [
+     "2026-10-21",
+     5.145999908447266
+    ],
+    [
+     "2026-10-22",
+     4.953000068664551
+    ],
+    [
+     "2026-10-23",
+     4.98799991607666
+    ],
+    [
+     "2026-10-26",
+     4.986000061035156
+    ],
+    [
+     "2026-10-27",
+     4.993000030517578
+    ],
+    [
+     "2026-10-28",
+     5.045000076293945
+    ],
+    [
+     "2026-10-29",
+     4.988999843597412
+    ],
+    [
+     "2026-10-30",
+     4.928999900817871
+    ],
+    [
+     "2026-11-02",
+     4.894000053405762
+    ],
+    [
+     "2026-11-03",
+     4.952000141143799
+    ],
+    [
+     "2026-11-04",
+     4.894000053405762
+    ],
+    [
+     "2026-11-05",
+     4.836999893188477
+    ],
+    [
+     "2026-11-06",
+     4.859000205993652
+    ],
+    [
+     "2026-11-09",
+     4.863999843597412
+    ],
+    [
+     "2026-11-10",
+     4.982999801635742
+    ],
+    [
+     "2026-11-11",
+     4.998000144958496
+    ],
+    [
+     "2026-11-12",
+     5.103000164031982
+    ],
+    [
+     "2026-11-13",
+     5.1539998054504395
+    ],
+    [
+     "2026-11-16",
+     5.120999813079834
+    ],
+    [
+     "2026-11-17",
+     5.103000164031982
+    ],
+    [
+     "2026-11-18",
+     5.065999984741211
+    ],
+    [
+     "2026-11-19",
+     5.052000045776367
+    ]
+   ],
+   "source": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/quote/%5ETNX"
   }
  ],
  "static_rates": [
@@ -210,284 +1227,410 @@
  "summary": {
   "en": [
    {
-    "level": "high",
+    "level": "med",
     "owner": "Treasury",
-    "title": "Fed minutes point to more rate hikes; the dollar holds near a 19-month high.",
-    "detail": "Almost all Fed officials saw further increases from 3.75–4.00% as likely; a couple were open to more than 25 bp in December. EUR/USD sits near 1.10, putting USD/XAF around 596.",
-    "impact": "USD invoices (concentrate, PET, spare parts) cost about 2.3% more in XAF than on 10 November. EUR invoices carry no FX risk under the peg: invoice in EUR where suppliers accept it, or settle USD bills before the 8–9 December Fed meeting.",
-    "url": "https://www.cnbc.com/amp/2026/11/19/us-dollar-currency-bonds-eu-asia-price.html"
+    "title": "USD/XAF at 598.0 (dollar firmer)",
+    "detail": "EUR/USD 1.0969, -0.03% on the day.",
+    "impact": "Little change on the day. EUR invoices carry no FX risk under the peg; only USD bills move."
    },
    {
-    "level": "med",
-    "owner": "Procurement",
-    "title": "Raw sugar trades near two-month lows, around 18.1 ¢/lb.",
-    "detail": "India's early-season output is running far ahead of last year. The ISO still expects a 2026/27 deficit of about 1 Mt, so the dip may not last.",
-    "impact": "About $399/t raw before premium, freight and refining. A window to price Q1 2027 sugar for juices and soft drinks.",
-    "url": "https://commodity-board.com/sugar-no-11-slips-from-highs-as-weather-and-policy-keep-market-tight"
-   },
-   {
-    "level": "med",
-    "owner": "Procurement",
-    "title": "Aluminium squeeze: LME stocks at their lowest since 1990.",
-    "detail": "Cash aluminium jumped to $3,332/t on 16 November, more than $250 above the three-month price.",
-    "impact": "Can and closure suppliers may pass on surcharges. Check price-revision clauses before the next order.",
-    "url": "https://www.alcircle.com/news/lme-aluminium-cash-offer-price-jumps-5-76-to-3-332-t-as-stocks-fall-0-97-on-november-16-121985"
-   },
-   {
-    "level": "med",
+    "level": "high",
     "owner": "Operations",
-    "title": "Brent steadies near $92–93 after its early-November slide; OPEC+ meets 29 November.",
-    "detail": "US crude stocks rose 3.4M barrels, and reports of mines near Hormuz did not spark a rally.",
-    "impact": "Diesel, distribution and PET feedstock stay expensive but stable. Oil is well above the $67/bbl Congolese crude price assumed in the revised 2026 budget, which supports state revenue.",
-    "url": "https://www.tradingandinvestmentnews.co.uk/brent-crude-oil-price-steadies-at-92-12-after-3-4-million-barrel-eia-build-and-hormuz-mine-reports/"
+    "title": "Brent down 4.37% to 87.96 USD/bbl",
+    "detail": "Last close 2026-11-20.",
+    "impact": "Cost relief; consider fixing prices for the coming quarter."
+   },
+   {
+    "level": "high",
+    "owner": "Procurement",
+    "title": "Wheat CBOT up 2.77% to 594.25 US¢/bu",
+    "detail": "Last close 2026-11-20.",
+    "impact": "Cost pressure on ITE inputs; check supplier price clauses."
+   },
+   {
+    "level": "high",
+    "owner": "Procurement",
+    "title": "Aluminium down 2.72% to 2840 USD/t",
+    "detail": "Last close 2026-11-19.",
+    "impact": "Cost relief; consider fixing prices for the coming quarter."
    },
    {
     "level": "med",
-    "owner": "Tax & Finance",
-    "title": "Congo's 2027 budget: XAF 3,121bn revenue, XAF 680bn for investment, debt interest up 46%.",
-    "detail": "The World Bank sees 4.4% growth in 2026 and puts arrears clearance at the centre of its 10 November update. Talks on a new IMF programme continue.",
-    "impact": "Read the 2027 finance bill's tax annex for excise and VAT changes on beverages. The arrears focus is a lever to push VAT-credit refunds and state receivables.",
-    "url": "https://ecomatin.net/le-congo-table-sur-3-121-milliards-fcfa-de-recettes-budgetaires-en-2027-en-hausse-de-12"
+    "owner": "Finance",
+    "title": "Poutine, Trump et Xi affichent un front commun : une déclaration de paix aux ambitions mondiales",
+    "detail": "Les Echos du Congo Brazzaville",
+    "impact": "Read the source for tax or payment implications.",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNTGI3TzRzckZfdlhVY0hBNzZkWjdMQl9EOHRpd1FpanBjV00wT1BLZi1LUS1UUFg4OWJNcmxUUTNfeHhjNml2ZXFVZ1RYYTJ6eUh6bmlSOGFNZExxbHFaajhMNzhZZkkxRFVlLVY2d2ZKVUZkQXpScDc1V25fb0hSTUJyWURTdnNLV3BIZ3VRT3ZTc2xFSTdtZHVNTldWQnprRUdjTEFudDFrLXVoVElrZ2pMRm5fS1NLa01SRVo1MWNralBiYjJ3TVZhaE5TYlZlR1RVeEpCQVc?oc=5"
    }
   ],
   "fr": [
    {
-    "level": "high",
+    "level": "med",
     "owner": "Trésorerie",
-    "title": "Les minutes de la Fed annoncent d'autres hausses ; le dollar reste proche d'un plus haut de 19 mois.",
-    "detail": "Presque tous les membres jugent probables de nouvelles hausses depuis 3,75–4,00 % ; certains n'excluent pas plus de 25 pb en décembre. L'EUR/USD est proche de 1,10, soit environ 596 XAF pour 1 USD.",
-    "impact": "Les factures en USD (concentrés, PET, pièces) coûtent ~2,3 % de plus en XAF qu'au 10 novembre. Les factures en EUR ne portent aucun risque de change grâce à la parité fixe : facturer en EUR quand le fournisseur l'accepte, ou régler les factures USD avant la Fed des 8–9 décembre.",
-    "url": "https://www.cnbc.com/amp/2026/11/19/us-dollar-currency-bonds-eu-asia-price.html"
+    "title": "USD/XAF à 598,0 (dollar plus fort)",
+    "detail": "EUR/USD 1,0969, -0,03 % sur la journée.",
+    "impact": "Peu de variation. Les factures en EUR ne portent aucun risque de change ; seules les factures USD bougent."
    },
    {
-    "level": "med",
-    "owner": "Achats",
-    "title": "Le sucre brut évolue près de ses plus bas de deux mois, vers 18,1 ¢/lb.",
-    "detail": "La production indienne de début de campagne dépasse nettement l'an dernier. L'ISO prévoit toujours un déficit d'environ 1 Mt en 2026/27 : la baisse pourrait ne pas durer.",
-    "impact": "≈ 399 $/t brut, hors prime, fret et raffinage. Fenêtre pour fixer le prix du sucre du T1 2027 (jus, boissons gazeuses).",
-    "url": "https://commodity-board.com/sugar-no-11-slips-from-highs-as-weather-and-policy-keep-market-tight"
-   },
-   {
-    "level": "med",
-    "owner": "Achats",
-    "title": "Tension sur l'aluminium : stocks LME au plus bas depuis 1990.",
-    "detail": "Le comptant a bondi à 3 332 $/t le 16 novembre, plus de 250 $ au-dessus du prix à trois mois.",
-    "impact": "Les fournisseurs de canettes et capsules pourraient répercuter des surcharges. Vérifier les clauses de révision de prix avant la prochaine commande.",
-    "url": "https://www.alcircle.com/news/lme-aluminium-cash-offer-price-jumps-5-76-to-3-332-t-as-stocks-fall-0-97-on-november-16-121985"
-   },
-   {
-    "level": "med",
+    "level": "high",
     "owner": "Exploitation",
-    "title": "Le Brent se stabilise vers 92–93 $ après la chute de début novembre ; l'OPEP+ se réunit le 29 novembre.",
-    "detail": "Les stocks américains de brut ont augmenté de 3,4 Mb, et les informations sur des mines près d'Ormuz n'ont pas provoqué de hausse.",
-    "impact": "Gasoil, distribution et matière PET restent chers mais stables. Le pétrole reste bien au-dessus des 67 $/b retenus pour le brut congolais dans la LFR 2026, ce qui soutient les recettes de l'État.",
-    "url": "https://www.tradingandinvestmentnews.co.uk/brent-crude-oil-price-steadies-at-92-12-after-3-4-million-barrel-eia-build-and-hormuz-mine-reports/"
+    "title": "Brent en baisse de 4,37 % à 87,96",
+    "detail": "Dernière clôture 2026-11-20.",
+    "impact": "Allègement des coûts ; envisager de fixer les prix du trimestre."
+   },
+   {
+    "level": "high",
+    "owner": "Achats",
+    "title": "Wheat CBOT en hausse de 2,77 % à 594,25",
+    "detail": "Dernière clôture 2026-11-20.",
+    "impact": "Pression sur les coûts d'ITE ; vérifier les clauses de prix fournisseurs."
+   },
+   {
+    "level": "high",
+    "owner": "Achats",
+    "title": "Aluminium en baisse de 2,72 % à 2840",
+    "detail": "Dernière clôture 2026-11-19.",
+    "impact": "Allègement des coûts ; envisager de fixer les prix du trimestre."
    },
    {
     "level": "med",
-    "owner": "Fiscalité & Finance",
-    "title": "Budget 2027 du Congo : 3 121 Mds FCFA de recettes, 680 Mds d'investissements, intérêts de la dette +46 %.",
-    "detail": "La Banque mondiale prévoit 4,4 % de croissance en 2026 et place l'apurement des arriérés au cœur de son rapport du 10 novembre. Les discussions sur un nouveau programme FMI se poursuivent.",
-    "impact": "Lire l'annexe fiscale du PLF 2027 (accises, TVA sur les boissons). L'accent mis sur les arriérés est un levier pour obtenir les remboursements de crédits de TVA et le paiement des créances sur l'État.",
-    "url": "https://ecomatin.net/le-congo-table-sur-3-121-milliards-fcfa-de-recettes-budgetaires-en-2027-en-hausse-de-12"
+    "owner": "Finance",
+    "title": "Poutine, Trump et Xi affichent un front commun : une déclaration de paix aux ambitions mondiales",
+    "detail": "Les Echos du Congo Brazzaville",
+    "impact": "Lire la source pour les implications fiscales ou de paiement.",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNTGI3TzRzckZfdlhVY0hBNzZkWjdMQl9EOHRpd1FpanBjV00wT1BLZi1LUS1UUFg4OWJNcmxUUTNfeHhjNml2ZXFVZ1RYYTJ6eUh6bmlSOGFNZExxbHFaajhMNzhZZkkxRFVlLVY2d2ZKVUZkQXpScDc1V25fb0hSTUJyWURTdnNLV3BIZ3VRT3ZTc2xFSTdtZHVNTldWQnprRUdjTEFudDFrLXVoVElrZ2pMRm5fS1NLa01SRVo1MWNralBiYjJ3TVZhaE5TYlZlR1RVeEpCQVc?oc=5"
    }
   ]
  },
  "news": [
   {
-   "id": "n2",
+   "id": "n0-2026-11-20",
    "cat": "worldwide",
-   "source": "CNBC",
-   "title": "Dollar hovers near a 19-month high after the Fed minutes",
-   "url": "https://www.cnbc.com/amp/2026/11/19/us-dollar-currency-bonds-eu-asia-price.html",
-   "date": "2026-11-19T12:00:00Z"
+   "title": "20th WAVES Film Bazaar Opens in Goa, Aims to Connect Filmmakers with Global Markets",
+   "source": "DD News",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNd19fVmhrZGNlcW9lYVh5akd4a0lzSm5WYV9WckF5bDNORHY1eUduaXZMVl85VVpaMHBUdmVxd1ByeERueUhpNHVUYVd2cE5ucnp3OHB5ZTJJR0RHTXhzaTZLUU5PZjhvVjBXcDFYb2p1QjI4RFBheUlFZmVCQUM1dENUemtXdHBnX01Ia1dvR05oNnY0STVnSlNsQ0MwSGpJZ1EzSG9ZNlJHVU9a?oc=5",
+   "date": "2026-11-20T09:46:29.000Z"
   },
   {
-   "id": "n4",
+   "id": "n1-2026-11-20",
    "cat": "worldwide",
-   "source": "Reuters via Trading and Investment News",
-   "title": "Brent steadies around $92 after a 3.4M-barrel US stock build",
-   "url": "https://www.tradingandinvestmentnews.co.uk/brent-crude-oil-price-steadies-at-92-12-after-3-4-million-barrel-eia-build-and-hormuz-mine-reports/",
-   "date": "2026-11-19T12:00:00Z"
+   "title": "Stocks Hit Worst Run Since 2023 as AI Trade Cracks: Markets Wrap",
+   "source": "Bloomberg.com",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9Bem9kWjBIcUtfa0xHOW0yQm1mV3A0VFVFZlh4X0hvWjlmckZSTDNGWlB1NGtzWFkyTTVSc0tNNW9tbUxGNURvNExmRTdTYnJyTTJtUGd1dkEyZklWR2xOSkphQ2s1d0NjZE9CRDc4SWtreWJxbDVoOFFnM2toQldLUHR5VUZFTDk4bDBXaWdodTh1?oc=5",
+   "date": "2026-11-20T09:11:09.000Z"
   },
   {
-   "id": "n1",
+   "id": "n2-2026-11-20",
    "cat": "worldwide",
-   "source": "1TRADER",
-   "title": "FOMC minutes: almost all officials see more rate hikes ahead",
-   "url": "https://1trader.com/en/fomc-minutes-2026-11-19/",
-   "date": "2026-11-18T12:00:00Z"
+   "title": "Global Creative Foundation launched to connect emerging markets with global creative opportunities",
+   "source": "Ratopati",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQRHV1d1d5RGJpaVI3ZGVZci1VY2hodzh5VXRaNmM1dm5XcWhRdlUwQWtfdGJDMEsxRTRKVTNUNlJ2ZjRnWWxqRW5TVnpIVlFSUTdOWDl1a3psRHpxZ2ZKNGMwTzdUdTNiNXdIOFNPMjZTc05KT2R0MWVZTVh1OXQ5dXFEVGJOLUZBUFE5YnRzcm9wczRBdVpDVW9xMXBXRndPdXVLR0pCcGNUd24yZk50WTl3R3RMRGw3MlJHUlZfN1pra2FuUnlScENNdENUTVphSVZONndR?oc=5",
+   "date": "2026-11-20T09:01:11.000Z"
   },
   {
-   "id": "n3",
-   "cat": "cfo",
-   "source": "FXStreet",
-   "title": "Euro touches a 19-month low just above 1.0950, recovers to 1.10",
-   "url": "https://www.tradingkey.com/news/forex/262309809-fxstr",
-   "date": "2026-11-17T12:00:00Z"
+   "id": "n3-2026-11-20",
+   "cat": "worldwide",
+   "title": "Historic Trump–Xi–Putin Summit at APEC 2026: Key Agreements, Global Geopolitics and Implications for India",
+   "source": "Sanskriti IAS",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOdlY4YjA0dThrZFFHbHNHd0g4X2pzaE5FM1hQQ093ZXExVml4LUdrLUd4VFNfajQ2WXpMVGQxckJEZmYxWldSdnZRdnVSYUxoaWRCSmZwRUZVQUNsN1RwWnI3WmM5LTY4b1UxdWNuanhSNmZqZGNmbHk4NXFxN3hxcndLejNoMzZVOGpJdmhWSWk0d2NaazFpVWFMUjFOcHJWanZ6SkE4WVA1TTlfZXlXVGlDUW8xendHSFB6Rm5KTG9NTFZGNVVZR1dMcXdrNGNaRGZfMi0wTlJnbW14SHc?oc=5",
+   "date": "2026-11-20T07:38:56.000Z"
   },
   {
-   "id": "n5",
+   "id": "n4-2026-11-19",
+   "cat": "worldwide",
+   "title": "Why $100 Oil is No Longer Spooking Equity Markets",
+   "source": "EnergyNow.com",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZzBxc2IwVXpIRFdPNVVVRmpIMHp5bDN5Vzg4VjJ3NXp5Q3gxTm9GSlBOWW9xLTJCNVRzZUU4MVdPNmRvb1ZRcHUxR1pndGpZMmRrN2JuclFMdHNHRXZ0SExSdGJnR0tGT3cteUsxTXcwTUE0a0hIckdJRHVfQTVGNmQyeEtKSGhpSFpSZktCX09sRHBZb2c?oc=5",
+   "date": "2026-11-19T22:43:01.000Z"
+  },
+  {
+   "id": "n5-2026-11-19",
+   "cat": "worldwide",
+   "title": "Piyush Goyal urges FICCI to evolve into global chamber, strengthen India’s economic engagement with the world",
+   "source": "DD News",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNVEhsQVZKOHBXOGtmeGVSdE1Na1kzaTc1eGl6WHBTdnp1ZkVPdUhiaklHM08tWEpUR01Bb3M4dV9QZUZQTGg0NF9tek0yN3g0WWZLWU1oUmRVRDNlM3JqSzJEQmxfWWF0V09TNFE2clNrd1ZRSUVydHp0Ti1fRUUxTmZWbmlxMVpocmM4YTBzMDBaQzduT3lKYzd5SEhxT0tPMnJTYTRfal9ZZHFQWmxWM3Rha3R6S012T1dHVDlKdmwtY0JiU0NjcHU5TUc4QQ?oc=5",
+   "date": "2026-11-19T19:24:55.000Z"
+  },
+  {
+   "id": "n6-2026-11-19",
+   "cat": "worldwide",
+   "title": "WAVES Film Bazaar celebrates 20 years of connecting Indian cinema with global markets",
+   "source": "DD News",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbHFieFNmNWlobnFHd1NNUlVDbk9qMkhRaERsOUNXekdfZGlWRmQ2UDZoN2d5X21VaDBhOXRqMF9BME5iMl9HOEQwaGNwVzRZSnc0UkVyMGpZT2dyeTR1T2tUV0hlZUFsOXloNTJOOENwVGw3dlN2OW9mRlhUcjhUcC1ENndkYTN4QXJFWUpHSTRRd0c2WkpHbGVia3h0X0p4MVlhdEg3NENMcmtGSjVkOQ?oc=5",
+   "date": "2026-11-19T19:03:07.000Z"
+  },
+  {
+   "id": "n7-2026-11-19",
+   "cat": "worldwide",
+   "title": "Wine Institute Opens Doors to 17 Fast-Growing Global Markets",
+   "source": "Wine Industry Advisor",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOc0l6Qm1GUEJROUNMMFg3eHhIY2VISkEzcDdlQm5ySzZqOThwLVpvQS1oSTJ3b0VXQ2xYbWxzYlMzRENMU1U3Ql9NakUtTlczazRHVW50bnZFNnRDOXVUYnlxSTVsNDFlTlJPRkQtNWlGVVVrcGlDaHgtRlJkOXdrTXBJd0tibFUtNGUydjNEeU1zN09wUkNOM0l2SE5CLXVkZldKZzg1TQ?oc=5",
+   "date": "2026-11-19T18:25:00.000Z"
+  },
+  {
+   "id": "n8-2026-11-20",
+   "cat": "africa",
+   "title": "Côte d’Ivoire : le groupe MAGGI-X remporte le « MAGGI Sustainability Challenge » de Nestlé",
+   "source": "Abidjan.net News",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdlVUcGYxN2dQSXVtSFJmbnRyZUVhNXJPTzFjLXVDZTFDS3ZGNXhmSDNmTkpyUm1vSURkSHZ0YjJGY2N3Tk1leXlmbmE5MGJ5TTMtME5KNTItMTRZVXR6Qkd5RHpKVk9lbXpLS3h0RmFPdDdxOFRtTV9sMlRhQUllbFpINF9FemYtcFpLLW5VTjVKMU9IclJGM3F4UkNQUlZLMHZzTGYxZmJsdVE5NThqTUpBWDhzMTdVQ2hHNkFSSUNMUQ?oc=5",
+   "date": "2026-11-20T09:45:00.000Z"
+  },
+  {
+   "id": "n9-2026-11-20",
+   "cat": "africa",
+   "title": "Strong Institutions Will Drive Nigeria’s Economy, Says Shettima",
+   "source": "https://thefact.ng/",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTjRZeTZOemRhUExkNU0wR0NfWXdfck1kcy1qbDNVcEVKa3JYM2c3RC1ta2laMjBEWS1JV0pXUTNTREZhOHRHcFpJeHBGcDEtdXpqMUFzb3FhQlY4V2hFNGRWWmVjLXRQTTJpM1BkSHlMblI4alZ5cVN0R0YyaThYLTZ3dy1vbV9J?oc=5",
+   "date": "2026-11-20T09:05:13.000Z"
+  },
+  {
+   "id": "n10-2026-11-20",
+   "cat": "africa",
+   "title": "Côte d'Ivoire : construction d'un institut de recherche de référence mondiale dédié au café-cacao",
+   "source": "Abidjan.net News",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPc3Q3TjhRMkNOQnFKSV9EOGw1MzN6Q2w3THBmOWFfbk95MFBBdHZkWE1hTE95Smh3MGlaMDJZQWRWc1lrLVNVcGNpU2k1U2l2MHBuQWlCTTVNZkt3SzN2S0hNZFRWbTU5ck5aX2F2ai0xY3BfbXdpTjlaTnNXZEJTN1I1Y2lRSTh4OVlTMjZMS2d1b1hmTWptek9BeWh0MmY2Z1hiaDdKMnAtQUNHX3ZoejFLVE5XTl9vNC1VdnYxRnlCaW1SYzdwRlFnaDRJZWM?oc=5",
+   "date": "2026-11-20T09:00:38.000Z"
+  },
+  {
+   "id": "n11-2026-11-20",
+   "cat": "africa",
+   "title": "Nigeria’s economic future depends on strong institutions, visionary entrepreneurs — Shettima",
+   "source": "Head Topics",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQT2pGd1A2dEszZmk3dWJvbllsMUFjUFoxVk81cG1UbzBFRFo0VjV5a2hkTl9OX1FnNUMyRjhMU1ZldGVpZjMxQ21rTjBEem14c0RKbmcxQ1dsTUswSk82U1lPR3VGeERTMVZJRThzUmlFTmF2dUh3LWJfcUFhTGRVNjRBM1ZGRldYY0I3Y2ZkUnZzcW55T1RYWnpjQkY?oc=5",
+   "date": "2026-11-20T08:45:00.000Z"
+  },
+  {
+   "id": "n12-2026-11-20",
+   "cat": "africa",
+   "title": "Asset Owner Insights: Nigeria’s NSIA sets ambitious responsible investment agenda",
+   "source": "Responsible Investor",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPS2QwX3c0ai1SdXByejg0ekt6WVdqRy01VWg4OXVBMHRYQU9pRlVuNkVKUWZodXZpOVlNYnJROVhtRDM5N3BFQ2VuODBGVFNfdVd6a3V5NmxyWXN3ZENwVTJHeFM4bHhpZU9pY2w2SmRoQzI4V2dCbmRxMFRITC1ZTmZRUmozLUFNbEJ5RHNPTVd4RVo0Qzh1NDhrMUdnUFhqSkJseVdYQVVYWllETkthVVdjUVB5RGZj?oc=5",
+   "date": "2026-11-20T08:00:27.000Z"
+  },
+  {
+   "id": "n13-2026-11-20",
+   "cat": "africa",
+   "title": "Tony Elumelu Urges Tinubu to Strengthen Nigeria's Justice System for Investment",
+   "source": "Head Topics",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVWF3dFZyQ1B3UjVGMlRxU0ozR0YzZmhhcFEwY0ZhSzkzLXpVNEkzMHpsaU8wYXVqVnVQU0k2NXNJSDhnbW9NR2h0Wm9wSzBEQkVhLUFrQ05Ia3o3VHpwejdnVGFPTWNTMno0b1pLVllkU3Nub1JIWlZ2THVhODlqWHM1Tk1jQ216eEk2TzQ5R2JxZHRid1FXdGhVWkphdw?oc=5",
+   "date": "2026-11-20T07:57:00.000Z"
+  },
+  {
+   "id": "n14-2026-11-20",
+   "cat": "africa",
+   "title": "Coopération gazière / SIREXE 2026 : la Côte d'Ivoire, le Bénin et le Togo signent un protocole d'accord pour sécuriser leur approvisionnement",
+   "source": "Abidjan.net News",
+   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNeFdmYnV5SnJhN1VzMVpTSjFWQlFBZlJIM2xLdnExemJKWmx2Nmg1SEo5RWdrUHJ6OEZJbV9ERUptQnZiMWFsc1R5M0ZuRHBtTUZkT05KTy1HaXRwQ1VSZmJfWjkwMDc3THVlWWdQOERLbm5RbTEyVGFDS2xhdDE3NFJoSFNYbXhvbTZUam5fUzI4LXBnVDBSQXBTOUVRSUZVOFhSb0lHSU9qOWpUcTc5dndfTUJHeVNrXzBibGU2WGFaSncwcjZRRnFWR3lZdFFVQlVLY2FmUlhsdC1vQmRIcTZvV0ROc0dyS3RTTk5nLV9xVzV1cDNmM3hkMDBMaGN0allCdzZB?oc=5",
+   "date": "2026-11-20T07:47:56.000Z"
+  },
+  {
+   "id": "n15-2026-11-20",
+   "cat": "africa",
+   "title": "La Côte d’Ivoire élue à la présidence de la communauté internationale de la noix de coco (ICC)",
+   "source": "Abidjan.net News",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOLVVWNG1kZDJnekNwZDhVdFZSWXhGY1k3QVRjS2swYUd5Ym9KeTZBNDdZUUhkdlRrYzVILVFYa3c5QlgyTGpxeEZwZmFodjZqalRXTjUtMHliSmhaNnUzbmd0Snh2SEJXQ0NRY2R1N0VhMFJBRm1aOVpqM2QxN1BWd1BRNlBYZl9KTzJwaGZYSG5ySlpZdHJaLXBrcV9FbXExUUlEWm5IUWpORENHZTFPSzRCX1hQVUJEcUhacFJSS1N3Z0RlODFJR19nN18?oc=5",
+   "date": "2026-11-20T07:47:56.000Z"
+  },
+  {
+   "id": "n16-2026-11-20",
+   "cat": "congo",
+   "title": "Poutine, Trump et Xi affichent un front commun : une déclaration de paix aux ambitions mondiales",
+   "source": "Les Echos du Congo Brazzaville",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNTGI3TzRzckZfdlhVY0hBNzZkWjdMQl9EOHRpd1FpanBjV00wT1BLZi1LUS1UUFg4OWJNcmxUUTNfeHhjNml2ZXFVZ1RYYTJ6eUh6bmlSOGFNZExxbHFaajhMNzhZZkkxRFVlLVY2d2ZKVUZkQXpScDc1V25fb0hSTUJyWURTdnNLV3BIZ3VRT3ZTc2xFSTdtZHVNTldWQnprRUdjTEFudDFrLXVoVElrZ2pMRm5fS1NLa01SRVo1MWNralBiYjJ3TVZhaE5TYlZlR1RVeEpCQVc?oc=5",
+   "date": "2026-11-20T10:03:14.000Z"
+  },
+  {
+   "id": "n17-2026-11-20",
+   "cat": "congo",
+   "title": "Forum USA 2026 sur les investissements, la gouvernance et le développement de l’Afrique : l’IGF à l’honneur",
+   "source": "Scoop RDC",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNMDlHZ3lRUnFkc2dsdEhNRVE0bUxTb1dIby15SmU4bnpHZnNrOHRISER5S3dYSGEzcWxKc1k2T1hRd1ByRE4tY0dCdGN4RFhuc1hfbVJCRWVxUjY0NEJDaXV5SGpPUENpekFHaFJZazZaNVdWLTNEYklpcm5WY2l3RG5EMnlnWjZEUEdnSnoxX1U2ZWdkeVVZTHJTNVVseGJqaVJkX01WUzVJblBqNERtZVAza2s1Rmo5NllfZmY5VEZpbTU3dlZUUlFZS05oM2M?oc=5",
+   "date": "2026-11-20T09:59:19.000Z"
+  },
+  {
+   "id": "n18-2026-11-20",
+   "cat": "congo",
+   "title": "Soudan : Hemedti à nouveau condamné à mort par contumace",
+   "source": "l'interview.cd",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPYzdWdFh1dGd3UXI3a3N1QzRLb190S3ZKcTVxVEhmcThLcnR5ZHpxQ3VPalVvRGhNRXN0RE5Zd0hwc092cThwZ0w3NUhKc2VLM2x6bDdXT1J2TjhXY3VzSEt5amwtNGdPNjJxOWVMTFBiR1VmQWpIM3RUeUUyQUp6cw?oc=5",
+   "date": "2026-11-20T08:27:54.000Z"
+  },
+  {
+   "id": "n19-2026-11-20",
+   "cat": "congo",
+   "title": "Congo – FIAC 2026 : « Faire du Made in Congo un véritable levier de croissance et d’identité », dixit Mireille Opa",
+   "source": "Les Echos du Congo Brazzaville",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPT21hbVRHa09jaDNMWEZjSkw3WXJHNGF3M3hTYzg0cVlDTVBRQmJWMkpqcjVZSG5aWTdOTzlIM0N6VDRSV2VJdmE1S2RLTVRRUnRyZF84dG1oNTBVYWxsVzEyZlE5ZndZZjBxM3JnRm5WMWVLcnI4TWxKRWZKU1hYRDBTVWswS1ExX1RFMHRKTnRTMlVaWjBmd2tyV0pwRWRQYmhwWW1hVVV2Rm93MW56c3JKblFqUDFLSnc1T1B2NTJYUEtzRWIweGd5RDFmMDVPRDlxNDg3b19LSUpUNGoycU9HNUNNME0?oc=5",
+   "date": "2026-11-20T01:44:05.000Z"
+  },
+  {
+   "id": "n20-2026-11-19",
+   "cat": "congo",
+   "title": "Visa pour la France : l’ambassadrice met tous les demandeurs congolais face à leurs responsabilités",
+   "source": "Les Echos du Congo Brazzaville",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQbXB4NkZ4SzRLNU1EM1Y4NDFYZ3BMNzU4VnYwSWRNR25Rcko5TXhMSVJjS2lJdUFhMld4R2FzOHBZVlR2aXRsSWQxU001bGo2UTVHcHBUSzllamdVSGxJUDU2QkxmdkN2QjJhU0x4dmpDUE8wM3VONGJLeWxPcHNHb19JTUpEQ3V4cGNMa0tOS3ZTLVV1enQ5M0dteWVfWVpHY2NIT3ZNOHM2ZXNtQjJLZHlRcTdTdERzZExwZ2dDMkxoNGVsaVU4a0pEM2FWWUlHcnhNX0l5Rk5KdFJV?oc=5",
+   "date": "2026-11-19T20:59:40.000Z"
+  },
+  {
+   "id": "n21-2026-11-19",
+   "cat": "congo",
+   "title": "Éliminatoures CAN U23 : les affiches du dernier tour connues, Guinée-Congo et Maroc-Sénégal au programme",
+   "source": "Guinee360",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQSHdycVZSczJfRWR1YXlaME9xWEw1dURZVkNMMXZIeEgyTzFIWUpHT3paeFZpeTNLdll0MkxSdk0zM3dDWWc4RE55V3BvY0d4aVhsS2taVUFiT3hZeElSc0hKanRkRURnX29ZTlVFN19EemhZTm1hRXFkd1Nta3d6c3Ayang1MExKWjZCUFkxdzlCelNtTlp2Z1BhbG1nYjVTdXd6Vm9xSmI4eE9vckxLQmx1QmdMdUw2SFRQaEk2azdIa2E5eUFxQ0N3RzNfVHk3TjY4eFFR?oc=5",
+   "date": "2026-11-19T17:32:29.000Z"
+  },
+  {
+   "id": "n22-2026-11-19",
+   "cat": "congo",
+   "title": "Congo : Agrima nouveau sponsor de la ligue 1",
+   "source": "Africa24 TV",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE81WEZybENxMFNRRzVrcjZFOC1XX2wyODd6TnM1N3FDNGQ2X0drTlR0S3FhaG9MLUJfZjl2b1NtVld5NE5ER21GQ1Nta2d4aHROS0xyRnJMYWJieFdKOXNJdG83TlNJUEp5Yk81OWtVMXFYTkl0?oc=5",
+   "date": "2026-11-19T14:03:00.000Z"
+  },
+  {
+   "id": "n23-2026-11-19",
+   "cat": "congo",
+   "title": "Le député Jean-Claude Ibovi, un homme du pouvoir qui refuse de perdre la vue !",
+   "source": "Les Echos du Congo Brazzaville",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOd0g5SlU4ZE5qVU1idEpDM1NQUENCWWN0bnhjQ2FyNnpIdFRTMTdfTllYQXRzMVdSQnRtd0RlbXQzeEhyb3JqcmlUelB0M0cyeGZJWlJuMnZ1MVFWQzFfYjlheC0tbWloc3Rad0lGR1FCbTNGdjhfZDBoZnNfRW9zNl9Va0pMSWpLNU9MZ3dIVGFta2l3UE91Qk5VNkJGd2hfZGh5SzBMY0JkRWlscV9Kd0xmV1l0Tnlsai11Z1RvMWR3dw?oc=5",
+   "date": "2026-11-19T08:51:51.000Z"
+  },
+  {
+   "id": "n24-2026-11-19",
    "cat": "markets",
-   "source": "USAGOLD",
-   "title": "Gold slips to its lowest since September 2025",
-   "url": "https://www.usagold.com/daily-precious-metals-market-report-november-17-2026/",
-   "date": "2026-11-17T12:00:00Z"
+   "title": "EUR/USD Holds 1.0979 off 19-Month Low as DXY Cools From 103.97; ECB Hike Bets Eye 1.1125",
+   "source": "TradingNEWS",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWUFDY3JHbEZ5SThBaHFBNDEzeGdWNUN1SjR0UlRkWndkaVZjLTRzX0M5bFRvT3lxcFhpaXdNeHVuYTVmN1M0TnVtS2YwU1REd1IwQ3BYX24yN09WVWxRa096alkxYTczeWdjQ3FLMkI1RTV0YWRualdSaDNza3ZIY2RSZkVIWmNLY3RvMUlXd3VpSEctTG95QXBiYVNHLW1MSW1rb1kzVWNsZmlLamlPYVZ0ZlllZTVNMFEzTUc1OFpsMkUtUlM4?oc=5",
+   "date": "2026-11-19T17:33:37.000Z"
   },
   {
-   "id": "n7",
-   "cat": "bev",
-   "source": "AL Circle",
-   "title": "LME aluminium cash offer jumps 5.76% to $3,332/t",
-   "url": "https://www.alcircle.com/news/lme-aluminium-cash-offer-price-jumps-5-76-to-3-332-t-as-stocks-fall-0-97-on-november-16-121985",
-   "date": "2026-11-17T12:00:00Z"
+   "id": "n25-2026-11-19",
+   "cat": "markets",
+   "title": "Dollar Slips as Stocks Rally",
+   "source": "TradingView",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQcXkzeXRNSHlCQVNNN0dNbFJjLWMzc2pQVXRuaEZuR0R0eDcwTllJdGNBY2VHX1ZMSjRXU1owdkxhODZTVmRZWGJFTkNfbEVValZqT0V6S2NXUGx0aFdGbzZ5YXUxc0FwckdaaDlwVUJ5aWt0bmNtZTZQUzVEWm94YnVnaEFKX2hDTUM0eFY5ank?oc=5",
+   "date": "2026-11-19T15:35:11.000Z"
   },
   {
-   "id": "n6",
-   "cat": "bev",
-   "source": "Commodity Market Board",
-   "title": "Sugar No.11 eases from highs; curve still backwardated",
-   "url": "https://commodity-board.com/sugar-no-11-slips-from-highs-as-weather-and-policy-keep-market-tight",
-   "date": "2026-11-16T12:00:00Z"
+   "id": "n26-2026-11-19",
+   "cat": "markets",
+   "title": "Euro pares losses as risk appetite improves and Oil prices remain low",
+   "source": "FXStreet",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORGViZ0JLU3lkQ29GanpDcmZVWFlObjBPQmdkN3owMXUyQ3Jnc294TVVNcXBqTV9jLVFPNFg3NG9DaklZbGgxNmxBcW4zWnMwQU1SenNZcVJudDVWSDVRVmxxa0hMcnZmRkxpR1NwbnNfX05GVURZOE84ci1zWklEekVuRmNkamNnZ0JaYVppNkctZDdDLXZfUVVtU1FyZ3JzQVlUMG5hc3BuclZEaVdleXZn?oc=5",
+   "date": "2026-11-19T09:56:08.000Z"
   },
   {
-   "id": "n12",
-   "cat": "congo",
-   "source": "Ecomatin",
-   "title": "Debt to fall to 80.9% of GDP in 2027 as interest jumps to XAF 348.6bn",
-   "url": "https://ecomatin.net/le-congo-prevoit-de-ramener-sa-dette-a-809-du-pib-en-2027-malgre-la-flambee-des-interets",
-   "date": "2026-11-15T12:00:00Z"
+   "id": "n27-2026-11-19",
+   "cat": "markets",
+   "title": "US dollar hits multi-month highs on hawkish Fed bets",
+   "source": "TorFX News",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbFlCdC1iWEZfcXMxRTFpTGtOMGp4M1czd0dOX2tLT2lqTEt0eGtRQ2lKMHRCWWZPWXBiSGluMmMtdmUtQlJlY1kyOExQZ2V4Z29uOVUxY1VoT3JNRHI5MUFCeWpZeS1HazBaQUtpeG4wWGhCTHdlZVE4VEEySHhFX3liNE9QLWE3TDNpQzRUYlJTUUhuZ0ww?oc=5",
+   "date": "2026-11-19T09:08:29.000Z"
   },
   {
-   "id": "n9",
-   "cat": "bev",
-   "source": "The Guardian Nigeria",
-   "title": "African beverage leaders say capital is shifting to sub-Saharan Africa",
-   "url": "https://guardian.ng/?p=2915450",
-   "date": "2026-11-14T12:00:00Z"
+   "id": "n28-2026-11-19",
+   "cat": "markets",
+   "title": "Euro gains ground against Canadian Dollar ahead of ECB Lagarde’s speech",
+   "source": "FXStreet",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVkpnLWpQYVFNQVhGMTcyUmgzdE1BLVhIdmFKbllsMFRFTFp4eTFpLXlkb3UzQUhmNUx5Q21XUHo5NmhzNkJJM2Vhc1MtMTJOTEliMU9ua3FXLUdVbGJJdGw0T2pXU0FzalJkMC15QW5aN1pyR2VqNG0wU2wtM2wxcFpjZ3pmUzR5Mk84ck5OYVZsV0FfWU9pOHhDMjF0ckk5Y3VYOU9wVUpOZGp2b0x1WWh6NA?oc=5",
+   "date": "2026-11-19T09:05:53.000Z"
   },
   {
-   "id": "n15",
+   "id": "n29-2026-11-19",
+   "cat": "markets",
+   "title": "Euro shows little movement amid steady US Dollar and hawkish Fed signals",
+   "source": "www.tmgm.com",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMG1XbUlBWW51cEcxQUZmMnJQWU9MaDk5X3E3bGsxQ2pVNFRmUU1xcm1hNXcyRDJwYVRtTnkyVFNZa0hSUEJLMjg2S2xHZ1VHNG9fR0FxR1pmanlrcTh2QWsxU3RRZk5KNkNyb1hpbGxTM25fenZPQ2hwMmx0UEJtVGYybldXdjV6Q3hYZUpFbnA4ZFRzWF9pYVdzZ1BzZGhacE9XMlpETmJiNWdRR0RLajlYR1czajBzYTM1VTJJSWQ0X2dZaHFubXIxODZTNExUeXBHdElR?oc=5",
+   "date": "2026-11-19T08:13:42.000Z"
+  },
+  {
+   "id": "n30-2026-11-19",
+   "cat": "markets",
+   "title": "US Dollar Price Forecast: DXY Holds 103.76 as Fed Minutes Back Hikes, EUR/USD and GBP/USD Stay Weak",
+   "source": "FXEmpire",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPQktTaXRud2g5d2pMSmhTYUZKMkg5VjFIS1J0TnZWSHFoLVBhMS04bkRSVVpKOXBhTjFHY2NvbENaY1JDNU1Eek9rT1Nzb0ZGVko5SWRCU2tORTRETmlWWVFnZkdiTHBaUHVJTUVzMzBudW5HdXdWZFJqUlMxMUZDNTh5blQ5dmNLU0lXV29QSHNyd0RRMUh4MjRfR0xnWDl3NGV6UDQ5dFVwamlRdjBVSVVZT1R3bEptNnJ5cnp5eUxPa3NybHJBNXZfQ0VGMDdIMlluWlVhTnB6MmZFZndwbHlB?oc=5",
+   "date": "2026-11-19T07:45:00.000Z"
+  },
+  {
+   "id": "n31-2026-11-19",
+   "cat": "markets",
+   "title": "Euro Slips as Hawkish Fed Weighs on EUR/USD, Bears Rule",
+   "source": "TradingPedia",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOV2lCNlFiUWtHZnBITU1vWG9NNjczMHlHbldQX3pnVlVHdmVPZGs0SnlCMk4xdHVTd1ZyeTNpZlNxYjAyOFZyUWI1OGVEVUR4RnEwTzFTOGNTZGlqRnd6QWpCd1plSmFpUDF1Q2RXUWdJT1Zab1RyYjd4NUUwOEhUekdSTnNKREhIZUpHMlRDcEtDbzJZRkdHbHBHSQ?oc=5",
+   "date": "2026-11-19T07:35:41.000Z"
+  },
+  {
+   "id": "n32-2026-11-17",
    "cat": "cfo",
-   "source": "DG Trésor (France)",
-   "title": "CEMAC external debt up 5.7%, says World Bank debt report",
-   "url": "https://www.tresor.economie.gouv.fr/Articles/dede05f4-25ce-4cad-9ef7-c825d43f8c8c/files/07110776-ce0f-4e30-a21c-0a8278e4083d",
-   "date": "2026-11-13T12:00:00Z"
+   "title": "Crowdfunding : les meilleures plateformes de financement participatif !",
+   "source": "Finance Héros",
+   "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBHN2NuaGdSdlNCN1NzS3VLc3JJZkxNQXQ2LUdiVHhzamZhUl8yZUZtVzVmX3N0ZzJHMkt2a1BDNnBGbno3Q1g2M1duWUtMN0E?oc=5",
+   "date": "2026-11-17T08:00:00.000Z"
   },
   {
-   "id": "n10",
-   "cat": "congo",
-   "source": "Banque mondiale",
-   "title": "World Bank: Congo should grow 4.4% in 2026; focus on breaking the debt cycle",
-   "url": "https://www.banquemondiale.org/fr/news/press-release/2026/11/10/republic-of-congo-breaking-the-debt-cycle-from-arrears-to-fiscal-resilience",
-   "date": "2026-11-10T12:00:00Z"
-  },
-  {
-   "id": "n8",
-   "cat": "bev",
-   "source": "Procurement Resource",
-   "title": "PET market opens November split: US virgin prices surge, Europe softens",
-   "url": "https://www.procurementresource.com/news-and-articles/global-pet-market-us-virgin-prices-recycled-pet-trade",
-   "date": "2026-11-02T12:00:00Z"
-  },
-  {
-   "id": "n11",
-   "cat": "congo",
-   "source": "Ecomatin",
-   "title": "2027 budget targets XAF 3,121bn revenue, up 12%",
-   "url": "https://ecomatin.net/le-congo-table-sur-3-121-milliards-fcfa-de-recettes-budgetaires-en-2027-en-hausse-de-12",
-   "date": "2026-10-30T12:00:00Z"
-  },
-  {
-   "id": "n13",
-   "cat": "congo",
-   "source": "IMF",
-   "title": "IMF mission discusses a new Extended Credit Facility with Congo",
-   "url": "https://www.imf.org/en/news/articles/2026/10/08/pr26327-republic-of-congo-imf-staff-concludes-mission",
-   "date": "2026-10-08T12:00:00Z"
-  },
-  {
-   "id": "n14",
-   "cat": "cfo",
-   "source": "Ecomatin",
-   "title": "BEAC holds its policy rate at 4.50%",
-   "url": "https://ecomatin.net/la-beac-maintient-son-taux-directeur-a-45-malgre-une-croissance-revue-a-la-baisse",
-   "date": "2026-09-28T12:00:00Z"
-  },
-  {
-   "id": "n16",
+   "id": "n33-2026-11-20",
    "cat": "lebanon",
-   "source": "World Bank",
-   "title": "Renewed conflict derails Lebanon's fragile recovery; GDP seen down 6.4% in 2026",
-   "url": "https://www.worldbank.org/en/news/press-release/2026/08/21/renewed-conflict-derails-lebanon-s-fragile-economic-recovery",
-   "date": "2026-08-21T12:00:00Z"
+   "title": "Fuel prices drop across Lebanon",
+   "source": "LBCI Lebanon",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRS11SERTcTRwMGp2ekJjZkduZjVhNURITXNjSmNWU0k2QkhJcTZRaUtlY0dWRWtoSzY5NnVPTG1XX1pXcWxOVUNpVDJUR1hreTUzZFpNRUxCRU9LUXdQX2pDN3BNd2JzQXBHZ0hpaDFHeHgzaUd4eUdHRWZ2LTdTeXo4UnA?oc=5",
+   "date": "2026-11-20T07:29:53.000Z"
   },
   {
-   "id": "a1",
-   "cat": "africa",
-   "source": "IMF",
-   "title": "Ghana reaches staff-level agreement with the IMF on its first PCI review",
-   "url": "https://www.imf.org/en/news/articles/2026/11/05/pr26353-ghana-imf-staff-reaches-sla-with-ghana-on-1st-review-under-pci",
-   "date": "2026-11-05T12:00:00Z"
+   "id": "n34-2026-11-20",
+   "cat": "lebanon",
+   "title": "Lebanon launches new intellectual property platform as Madrid system remains in sight",
+   "source": "L'Orient Today",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMTJKMFowOXVxVHFyR0tEb29jb3BYU1lSRENuVVdHOGtrMEwwVF9aZWJnOXVWZTh5OU5WMXJkMU5uanFrOEQzSW5zWWROenZHVXlWUm9TekdzR0lZenlMTWNvcDA1N0FoV2lUSS11QkJLN01kSExlVXp3dG9mLW5TQjA3ZEhjQVNSakl5YWhMQ05KR1ZGcURQVXVtWUplaEtiWjlWa3JtZmt5NF9rckhVOTVESG5vbEt3TmxmT2tqTjB0T0VvWWJCMTliRUlKOXNuLTVqUg?oc=5",
+   "date": "2026-11-20T07:02:55.000Z"
   },
   {
-   "id": "a2",
-   "cat": "africa",
-   "source": "DG Trésor",
-   "title": "Nigeria's crude output averaged 1.56M barrels a day in Q3 2026",
-   "url": "https://www.tresor.economie.gouv.fr/Articles/2026/11/16/actualites-economiques-nigeria-ghana-semaine-du-9-novembre-2026",
-   "date": "2026-11-16T12:00:00Z"
+   "id": "n35-2026-11-20",
+   "cat": "lebanon",
+   "title": "New federal data on job openings, employee turnover, shows sluggish Oregon economy",
+   "source": "Lebanon Local",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTEMtRXdkYThvczZ5Snd0RTdvdXliUVI2UmI0SnQtSWcwYzBuaGpVaERGMUdMbXNLM3J6UDdSckhzLVRvMG5LSUNUS2dFUzgzNnJMcHpyQ2I3VDR3SzZiM3V3RWhGYzdLMmd5RVV4ei13b29hbVNOZVBIamxPdFQ1Y0pVRWxkTGpNOFZwMndOWXhGUXRLUmZUeHhlaEl4SHZpR1dQUTRXZkJvemtlaFUzeGNUZTE?oc=5",
+   "date": "2026-11-20T00:36:17.000Z"
   },
   {
-   "id": "a3",
-   "cat": "africa",
-   "source": "DG Trésor",
-   "title": "Côte d'Ivoire inaugurates the Atinkou combined-cycle power plant",
-   "url": "https://www.tresor.economie.gouv.fr/Articles/2026/11/13/breves-economiques-regionales-d-afrique-de-l-ouest-hors-nigeria-ghana-n-651",
-   "date": "2026-11-13T12:00:00Z"
+   "id": "n36-2026-11-19",
+   "cat": "lebanon",
+   "title": "Shafaq News..Iraq, Lebanon, Syria, Jordan move to deepen agricultural ties",
+   "source": "شفق نيوز",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNlhLR1FvVEhSZ01pdnlpeUtDLXpManZPaE9xZXhCSUJILUJpRUh2RGhZWmUwamdjWDZWa3NfODh3Y1NPLTR2a1hhdHVRZTV5Q2dMdWF4VEtHSnZnaWVnWG5YTzdjdEI4Rmk2dUVEUk5UZHlBZ2Yzb1BCR1E5OFBxR1dkWmliMjJ1ZnJaa1RnakJJdw?oc=5",
+   "date": "2026-11-19T23:20:13.000Z"
   },
   {
-   "id": "a4",
-   "cat": "africa",
-   "source": "Benin Web TV",
-   "title": "BCEAO applies new pricing to instant money transfers across UEMOA from 2 November",
-   "url": "https://beninwebtv.bj/en/uemoa-instant-money-transfers-bceao-implements-new-pricing-rules-starting-november-2/",
-   "date": "2026-11-02T12:00:00Z"
+   "id": "n37-2026-11-19",
+   "cat": "lebanon",
+   "title": "Lebanese Army on Independence Day: Restoring sovereignty and placing...",
+   "source": "LBCI Lebanon",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTkJrY2dqZ3k4QTViSlhaUEhrYXd4ZEdkQXgxZFl5Z3pVcllKdHRoM1kzZ0NVcDhlTnlWY2syU1laVjlhNW4zOGNfM2FaYmhSdl9ReFY2MTFpVkNnVHFuRWR0RjNCQjJId1o1TGg5YzhPWmN6SmNmOWR5bnNpa25MWmhEOFVQWENmek1BYmZ5a0xWd0QzRHBiQXpCT2JfU3h3UlNIN0ZBRmV5YTlhaDlyZzk5SU5Oa3FLVWNkdzZOUQ?oc=5",
+   "date": "2026-11-19T17:11:31.000Z"
   },
   {
-   "id": "a5",
-   "cat": "africa",
-   "source": "DG Trésor",
-   "title": "DRC exits the FATF grey list after four years of reforms",
-   "url": "https://www.tresor.economie.gouv.fr/Articles/2026/11/02/breves-economiques-d-afrique-centrale-semaine-du-2-au-6-novembre-2026",
-   "date": "2026-11-06T12:00:00Z"
+   "id": "n38-2026-11-19",
+   "cat": "lebanon",
+   "title": "Aoun Pushes for Arab Economic Bloc, Starting with Agricultural Cooperation",
+   "source": "MTV Lebanon",
+   "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5TQ3JvdGRacDhJZmYxR3N5OWkwMEdtNmladDRLYkVwUVpqdmt1Qm1nLWhrcjFkM1dVckZlQVBySGRoeHVZRkd5OUpvWXVxOVk?oc=5",
+   "date": "2026-11-19T12:32:14.000Z"
   },
   {
-   "id": "a6",
-   "cat": "africa",
-   "source": "DG Trésor",
-   "title": "Gabon adjusts fuel prices from 1 November; debt principal repayments up 54.5% in 2027",
-   "url": "https://www.tresor.economie.gouv.fr/Articles/2026/11/02/breves-economiques-d-afrique-centrale-semaine-du-2-au-6-novembre-2026",
-   "date": "2026-11-06T12:00:00Z"
+   "id": "n39-2026-11-19",
+   "cat": "lebanon",
+   "title": "Ministers of Interior and Economy Discuss Procedures for Operating Beirut Vegetable Market",
+   "source": "Daily Beirut",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZWdmRTNCVFlQc2w2ZnRIZGNPeERSSlJaOEdxUXJETGJkNjhmTXVYTGVjQkYtdFpTT0dMR3VFaWowczRvOERjWVhyT1B4aTM0dE5wcFBhOFFBMTF3a3BuVHZ2WFg3YVZYcWJ4NXJxUzR3VFNmRHhsTUhSRFJkVF9MRDVIQVo3akRWNXZrMlBRSGJGNU5kZkd5YUtIYU9zNThka2ZnV1pZQl82bU1jTG1jZnAzLU9qcDh4eXppNw?oc=5",
+   "date": "2026-11-19T11:25:52.000Z"
   },
   {
-   "id": "a7",
-   "cat": "africa",
-   "source": "Économie ivoirienne",
-   "title": "BCEAO holds rates and forecasts 6.1% UEMOA growth in 2026",
-   "url": "https://www.economie-ivoirienne.ci/actualites/uemoa-la-bceao-maintient-ses-taux-directeurs-et-prevoit-une-inflation-de-1-en-2026.html",
-   "date": "2026-09-09T12:00:00Z"
-  },
-  {
-   "id": "a8",
-   "cat": "africa",
-   "source": "DG Trésor",
-   "title": "Fitch downgrades Cameroon to B- with a stable outlook",
-   "url": "https://www.tresor.economie.gouv.fr/Articles/d7b4c917-4e25-42de-9a03-ebaed3a11d6f/files/c4ed491c-4d00-45a7-b448-95217a9a65bf",
-   "date": "2026-10-16T12:00:00Z"
+   "id": "n40-2026-11-19",
+   "cat": "lebanon",
+   "title": "Lebanon Launches New Digital Intellectual Property Registration System to Support Businesses and Innovators",
+   "source": "United Nations Development Programme",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQNDBFOHQxMmhSeVZZY3B1RC1VUmlObU1fVm5GT0dZa1NUdktjcHhSc2EwLUhQX0FtekpoYnEwUnBHNUZwVFE5RnctZ3g3NTBmZVlTZ280NUJITTZad0MzblJESmk2S3ZJNmtGM2RKbWZVNlRfSFE3WWxxbXRROHNhQ05SeHZ0R3BfNFdnaENVcW10Z3ZwVzVBRjgwQmtwaTE3WXV6c1ZMS3ptQ1h3ZUFTOC1XX1dOSFFDZFJHRDZNN0lrbVl4WThlRDJXRDJPMWptaTE1d0dSeTR1RUtIZGVSTldn?oc=5",
+   "date": "2026-11-19T09:46:16.000Z"
   }
  ],
- "log": [
-  "Starter brief prepared by Claude on 20 Nov from verified sources; replaced by the first automatic run."
- ]
+ "log": []
 }
