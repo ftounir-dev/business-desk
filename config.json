@@ -103,6 +103,42 @@
       "unit": "%",
       "date": "2026-09-28",
       "note": "Edit in config.json after each BEAC meeting"
+    },
+    {
+      "id": "pet_cn",
+      "group": "pack",
+      "name": "PET bottle grade · China",
+      "value": 875,
+      "dp": 0,
+      "unit": "USD/t",
+      "date": "2026-09-30",
+      "note": "IMARC Q3 2026 (September). Update in config.json when a new figure is published.",
+      "source": "IMARC",
+      "url": "https://www.imarcgroup.com/pet-resin-price-trend"
+    },
+    {
+      "id": "pet_sea",
+      "group": "pack",
+      "name": "PET bottle grade · SE Asia FOB",
+      "value": 1240,
+      "dp": 0,
+      "unit": "USD/t",
+      "date": "2026-10-07",
+      "note": "Platts assessment, 7 Oct 2026, up $75/t from 2 Sep. Update in config.json.",
+      "source": "S&P Global Platts",
+      "url": "https://www.spglobal.com/energy/en/news-research/latest-news/chemicals/100726-recycled-virgin-pet-spread-hits-zero-amid-rising-virgin-feedstock-costs"
+    },
+    {
+      "id": "pet_eu",
+      "group": "pack",
+      "name": "PET bottle grade · Europe",
+      "value": 1281,
+      "dp": 0,
+      "unit": "USD/t",
+      "date": "2026-09-30",
+      "note": "IMARC Q3 2026, Germany. Update in config.json.",
+      "source": "IMARC",
+      "url": "https://www.imarcgroup.com/pet-resin-price-trend"
     }
   ],
   "news": [
