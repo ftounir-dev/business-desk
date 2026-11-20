@@ -103,10 +103,10 @@ async function aiSummary(markets, fx, headlines) {
                         .filter(h => h.cat in SIXTY_PICK);
   if (!pool.length) return null;
   const labels = Object.fromEntries(cfg.news.map(n => [n.cat, { en: n.label_en, fr: n.label_fr }]));
-  const prompt = `You edit "Overnight in 60 seconds", the top of a morning news brief read by the CFO of ${cfg.company}, a beverage manufacturer in ${cfg.city}, Republic of Congo.
+  const prompt = `You edit "Overnight in 60 seconds", the top of a morning news brief read by Rayan, a finance executive in ${cfg.city}, Republic of Congo.
 
 From the headlines below, pick the 20 most important news stories of the last 24 hours for a video news feed: 6 from "worldwide" (mostly economy, finance and banking), 5 from "africa" (West and Central Africa), 5 from "congo" (Republic of Congo and CEMAC) and 4 from "cfo" (treasury, FX, rates, BEAC). Prefer major political, economic and security news over minor or promotional items; skip duplicates. Order them as a mixed feed: the most important story first, and never two stories from the same category in a row.
-For each give: cat (worldwide|africa|congo|cfo), level ("high" or "med"), title (clear, max 14 words, rewritten from the headline), detail (one sentence saying what happened, using only what the headline says; never invent facts or numbers), impact (one short sentence on why it matters for a Congolese company, or "" if it doesn't), source_index (the headline's i).
+For each give: cat (worldwide|africa|congo|cfo), level ("high" or "med"), title (clear, max 14 words, rewritten from the headline), detail (one sentence saying what happened, using only what the headline says; never invent facts or numbers), impact (one short sentence on why it matters for a finance executive in Congo, or "" if it doesn't), source_index (the headline's i).
 Return JSON only: {"en":[20 items],"fr":[the same 20 items in natural French]}.
 
 HEADLINES:
@@ -220,7 +220,7 @@ async function reads() {
 }
 async function aiRead(pick) {
   if (!pick || !process.env.ANTHROPIC_API_KEY) return null;
-  const prompt = `A CFO of a beverage manufacturer in Brazzaville, Republic of Congo, will read this article today: "${pick.title}" (${pick.source}). Using only the title, write JSON {"en":{"why":"..."},"fr":{"title":"...","why":"..."}} where "why" is one or two sentences on what a CFO can take from it, without inventing facts, and fr.title is a French translation of the title.`;
+  const prompt = `A finance executive in Brazzaville, Republic of Congo, will read this article today: "${pick.title}" (${pick.source}). Using only the title, write JSON {"en":{"why":"..."},"fr":{"title":"...","why":"..."}} where "why" is one or two sentences on what a CFO can take from it, without inventing facts, and fr.title is a French translation of the title.`;
   const r = await fetch("https://api.anthropic.com/v1/messages", { method: "POST",
     headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
     body: JSON.stringify({ model: process.env.ANTHROPIC_MODEL || "claude-sonnet-5-5", max_tokens: 600, messages: [{ role: "user", content: prompt }] }) });
@@ -299,10 +299,17 @@ headlines = headlines.filter(h => { const k = h.title.toLowerCase().slice(0, 60)
 if (!MOCK) await addPhotos(cfg.news.flatMap(n => headlines.filter(h => h.cat === n.cat).slice(0, 6)));
 
 const otd = await onThisDay();
-const read = await reads();
-if (read) { try { const w = await aiRead(read.pick); if (w) read.pick.ai = w; } catch (e) { log.push("ai read: " + e.message); } }
-if (read && !MOCK) await addPhotos([read.pick, ...read.more]);
-if (read) {                      // keep the last week of "article of the day" picks
+// The briefing (Play video + article of the day) is rebuilt every 8 hours; news and markets every run.
+let old = {};
+try { old = JSON.parse(await fs.readFile(path.join(ROOT, "data", "brief.json"), "utf8")); } catch {}
+const BRIEF_EVERY_H = 8, forced = process.env.GITHUB_EVENT_NAME === "workflow_dispatch";
+const briefAge = old.summary_at ? (Date.now() - new Date(old.summary_at)) / 36e5 : 99;
+const keepBrief = !forced && briefAge < BRIEF_EVERY_H - 0.5 && (old.summary?.en || []).length >= 10;
+if (keepBrief) log.push(`briefing kept (${briefAge.toFixed(1)} h old)`);
+const read = keepBrief && old.read ? old.read : await reads();
+if (read && !keepBrief) { try { const w = await aiRead(read.pick); if (w) read.pick.ai = w; } catch (e) { log.push("ai read: " + e.message); } }
+if (read && !keepBrief && !MOCK) await addPhotos([read.pick, ...read.more]);
+if (read && !keepBrief) {                      // keep the last week of "article of the day" picks
   try {
     const prev = JSON.parse(await fs.readFile(path.join(ROOT, "data", "brief.json"), "utf8")).read || {};
     const k = a => a.title.toLowerCase().slice(0, 60);
@@ -311,12 +318,15 @@ if (read) {                      // keep the last week of "article of the day" p
   } catch { read.history = []; }
 }
 
-let summary = null, summaryMode = "rules";
-try { summary = await aiSummary(markets, fx, headlines); if (summary) summaryMode = "ai"; } catch (e) { log.push("ai: " + e.message); }
-if (!summary) summary = rulesSummary(markets, fx, headlines);
+let summary = null, summaryMode = "rules", summaryAt = new Date().toISOString();
+if (keepBrief) { summary = old.summary; summaryMode = old.summary_mode || "ai"; summaryAt = old.summary_at; }
+else {
+  try { summary = await aiSummary(markets, fx, headlines); if (summary) summaryMode = "ai"; } catch (e) { log.push("ai: " + e.message); }
+  if (!summary) summary = rulesSummary(markets, fx, headlines);
+}
 
 const brief = {
-  generated_at: new Date().toISOString(), summary_mode: summaryMode, peg: cfg.eur_xaf_peg, fx,
+  generated_at: new Date().toISOString(), summary_at: summaryAt, summary_mode: summaryMode, peg: cfg.eur_xaf_peg, fx,
   markets, static_rates: cfg.static_rates, agenda: cfg.agenda,
   categories: cfg.news.map(n => ({ id: n.cat, en: n.label_en, fr: n.label_fr })),
   summary, on_this_day: otd, read, news: headlines.map((h, i) => ({ id: "n" + i + "-" + h.date.slice(0, 10), ...h })), log
