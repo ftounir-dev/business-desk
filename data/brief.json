@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-20T10:48:18.182Z",
+ "generated_at": "2026-11-20T11:02:06.376Z",
  "summary_mode": "rules",
  "peg": 655.957,
  "fx": {
-  "eurusd": 1.096611499786377,
-  "usdxaf": 598.167172355736,
+  "eurusd": 1.0964912176132202,
+  "usdxaf": 598.2327897051924,
   "usdxaf_prev": 597.8457318897565,
   "date": "2026-11-20"
  },
@@ -16,10 +16,10 @@
    "unit": "XAF per USD",
    "dp": 1,
    "cost": 1,
-   "value": 598.167172355736,
+   "value": 598.2327897051924,
    "prev": 597.8457318897565,
    "date": "2026-11-20",
-   "change_pct": 0.05376645660135626,
+   "change_pct": 0.06474208893529898,
    "series": [
     [
      "2026-10-21",
@@ -107,7 +107,7 @@
     ],
     [
      "2026-11-20",
-     598.167172355736
+     598.2327897051924
     ]
    ],
    "source": "655.957 ÷ EUR/USD",
@@ -120,10 +120,10 @@
    "unit": "USD per EUR",
    "dp": 4,
    "cost": -1,
-   "value": 1.096611499786377,
+   "value": 1.0964912176132202,
    "prev": 1.0972011089324951,
    "date": "2026-11-20",
-   "change_pct": -0.05373756381743533,
+   "change_pct": -0.06470020067383953,
    "series": [
     [
      "2026-10-21",
@@ -211,7 +211,7 @@
     ],
     [
      "2026-11-20",
-     1.096611499786377
+     1.0964912176132202
     ]
    ],
    "source": "Yahoo Finance",
@@ -224,10 +224,10 @@
    "unit": "Nigerian naira per USD",
    "dp": 0,
    "cost": 0,
-   "value": 1370,
+   "value": 1360,
    "prev": 1352.199951171875,
    "date": "2026-11-20",
-   "change_pct": 1.3163769761046495,
+   "change_pct": 0.5768413777389236,
    "series": [
     [
      "2026-10-21",
@@ -315,7 +315,7 @@
     ],
     [
      "2026-11-20",
-     1370
+     1360
     ]
    ],
    "source": "Yahoo Finance",
@@ -536,10 +536,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 88.16000366210938,
+   "value": 88.13999938964844,
    "prev": 91.9800033569336,
    "date": "2026-11-20",
-   "change_pct": -4.1530762724594545,
+   "change_pct": -4.1748247740150735,
    "series": [
     [
      "2026-10-22",
@@ -627,7 +627,7 @@
     ],
     [
      "2026-11-20",
-     88.16000366210938
+     88.13999938964844
     ]
    ],
    "source": "Yahoo Finance",
@@ -640,10 +640,10 @@
    "unit": "US¢/lb",
    "dp": 2,
    "cost": 1,
-   "value": 17.1299991607666,
+   "value": 17.149999618530273,
    "prev": 17.15999984741211,
    "date": "2026-11-20",
-   "change_pct": -0.17482917781046492,
+   "change_pct": -0.058276392603484606,
    "series": [
     [
      "2026-10-22",
@@ -731,7 +731,7 @@
     ],
     [
      "2026-11-20",
-     17.1299991607666
+     17.149999618530273
     ]
    ],
    "source": "Yahoo Finance",
@@ -744,10 +744,10 @@
    "unit": "US¢/bu · malt proxy",
    "dp": 2,
    "cost": 1,
-   "value": 594.5,
+   "value": 595,
    "prev": 578.25,
    "date": "2026-11-20",
-   "change_pct": 2.8102031993082477,
+   "change_pct": 2.8966709900561938,
    "series": [
     [
      "2026-10-22",
@@ -835,7 +835,7 @@
     ],
     [
      "2026-11-20",
-     594.5
+     595
     ]
    ],
    "source": "Yahoo Finance",
@@ -952,10 +952,10 @@
    "unit": "USD/oz",
    "dp": 0,
    "cost": 0,
-   "value": 3592.800048828125,
+   "value": 3588.5,
    "prev": 3685.5,
    "date": "2026-11-20",
-   "change_pct": -2.5152611903913935,
+   "change_pct": -2.631935965269294,
    "series": [
     [
      "2026-10-22",
@@ -1043,7 +1043,7 @@
     ],
     [
      "2026-11-20",
-     3592.800048828125
+     3588.5
     ]
    ],
    "source": "Yahoo Finance",
@@ -1163,6 +1163,42 @@
    "unit": "%",
    "date": "2026-09-28",
    "note": "Edit in config.json after each BEAC meeting"
+  },
+  {
+   "id": "pet_cn",
+   "group": "pack",
+   "name": "PET bottle grade · China",
+   "value": 875,
+   "dp": 0,
+   "unit": "USD/t",
+   "date": "2026-09-30",
+   "note": "IMARC Q3 2026 (September). Update in config.json when a new figure is published.",
+   "source": "IMARC",
+   "url": "https://www.imarcgroup.com/pet-resin-price-trend"
+  },
+  {
+   "id": "pet_sea",
+   "group": "pack",
+   "name": "PET bottle grade · SE Asia FOB",
+   "value": 1240,
+   "dp": 0,
+   "unit": "USD/t",
+   "date": "2026-10-07",
+   "note": "Platts assessment, 7 Oct 2026, up $75/t from 2 Sep. Update in config.json.",
+   "source": "S&P Global Platts",
+   "url": "https://www.spglobal.com/energy/en/news-research/latest-news/chemicals/100726-recycled-virgin-pet-spread-hits-zero-amid-rising-virgin-feedstock-costs"
+  },
+  {
+   "id": "pet_eu",
+   "group": "pack",
+   "name": "PET bottle grade · Europe",
+   "value": 1281,
+   "dp": 0,
+   "unit": "USD/t",
+   "date": "2026-09-30",
+   "note": "IMARC Q3 2026, Germany. Update in config.json.",
+   "source": "IMARC",
+   "url": "https://www.imarcgroup.com/pet-resin-price-trend"
   }
  ],
  "agenda": [
@@ -1230,20 +1266,20 @@
     "level": "med",
     "owner": "Treasury",
     "title": "USD/XAF at 598.2 (dollar firmer)",
-    "detail": "EUR/USD 1.0966, -0.05% on the day.",
+    "detail": "EUR/USD 1.0965, -0.06% on the day.",
     "impact": "Little change on the day. EUR invoices carry no FX risk under the peg; only USD bills move."
    },
    {
     "level": "high",
     "owner": "Operations",
-    "title": "Brent down 4.15% to 88.16 USD/bbl",
+    "title": "Brent down 4.17% to 88.14 USD/bbl",
     "detail": "Last close 2026-11-20.",
     "impact": "Cost relief; consider fixing prices for the coming quarter."
    },
    {
     "level": "high",
     "owner": "Procurement",
-    "title": "Wheat CBOT up 2.81% to 594.50 US¢/bu",
+    "title": "Wheat CBOT up 2.90% to 595.00 US¢/bu",
     "detail": "Last close 2026-11-20.",
     "impact": "Cost pressure on ITE inputs; check supplier price clauses."
    },
@@ -1268,20 +1304,20 @@
     "level": "med",
     "owner": "Trésorerie",
     "title": "USD/XAF à 598,2 (dollar plus fort)",
-    "detail": "EUR/USD 1,0966, -0,05 % sur la journée.",
+    "detail": "EUR/USD 1,0965, -0,06 % sur la journée.",
     "impact": "Peu de variation. Les factures en EUR ne portent aucun risque de change ; seules les factures USD bougent."
    },
    {
     "level": "high",
     "owner": "Exploitation",
-    "title": "Brent en baisse de 4,15 % à 88,16",
+    "title": "Brent en baisse de 4,17 % à 88,14",
     "detail": "Dernière clôture 2026-11-20.",
     "impact": "Allègement des coûts ; envisager de fixer les prix du trimestre."
    },
    {
     "level": "high",
     "owner": "Achats",
-    "title": "Wheat CBOT en hausse de 2,81 % à 594,50",
+    "title": "Wheat CBOT en hausse de 2,90 % à 595,00",
     "detail": "Dernière clôture 2026-11-20.",
     "impact": "Pression sur les coûts d'ITE ; vérifier les clauses de prix fournisseurs."
    },
@@ -1306,21 +1342,29 @@
   {
    "id": "n0-2026-11-20",
    "cat": "worldwide",
+   "title": "Stocks Hit Worst Run Since 2023 as AI Trade Cracks: Markets Wrap",
+   "source": "Bloomberg.com",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9Bem9kWjBIcUtfa0xHOW0yQm1mV3A0VFVFZlh4X0hvWjlmckZSTDNGWlB1NGtzWFkyTTVSc0tNNW9tbUxGNURvNExmRTdTYnJyTTJtUGd1dkEyZklWR2xOSkphQ2s1d0NjZE9CRDc4SWtreWJxbDVoOFFnM2toQldLUHR5VUZFTDk4bDBXaWdodTh1?oc=5",
+   "date": "2026-11-20T10:08:21.000Z"
+  },
+  {
+   "id": "n1-2026-11-20",
+   "cat": "worldwide",
    "title": "20th WAVES Film Bazaar Opens in Goa, Aims to Connect Filmmakers with Global Markets",
    "source": "DD News",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNd19fVmhrZGNlcW9lYVh5akd4a0lzSm5WYV9WckF5bDNORHY1eUduaXZMVl85VVpaMHBUdmVxd1ByeERueUhpNHVUYVd2cE5ucnp3OHB5ZTJJR0RHTXhzaTZLUU5PZjhvVjBXcDFYb2p1QjI4RFBheUlFZmVCQUM1dENUemtXdHBnX01Ia1dvR05oNnY0STVnSlNsQ0MwSGpJZ1EzSG9ZNlJHVU9a?oc=5",
    "date": "2026-11-20T09:46:29.000Z"
   },
   {
-   "id": "n1-2026-11-20",
+   "id": "n2-2026-11-20",
    "cat": "worldwide",
-   "title": "Stocks Hit Worst Run Since 2023 as AI Trade Cracks: Markets Wrap",
-   "source": "Bloomberg.com",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9Bem9kWjBIcUtfa0xHOW0yQm1mV3A0VFVFZlh4X0hvWjlmckZSTDNGWlB1NGtzWFkyTTVSc0tNNW9tbUxGNURvNExmRTdTYnJyTTJtUGd1dkEyZklWR2xOSkphQ2s1d0NjZE9CRDc4SWtreWJxbDVoOFFnM2toQldLUHR5VUZFTDk4bDBXaWdodTh1?oc=5",
-   "date": "2026-11-20T09:11:09.000Z"
+   "title": "Global Creative Foundation launched to connect emerging markets with global creative opportunities",
+   "source": "Ratopati",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQRHV1d1d5RGJpaVI3ZGVZci1VY2hodzh5VXRaNmM1dm5XcWhRdlUwQWtfdGJDMEsxRTRKVTNUNlJ2ZjRnWWxqRW5TVnpIVlFSUTdOWDl1a3psRHpxZ2ZKNGMwTzdUdTNiNXdIOFNPMjZTc05KT2R0MWVZTVh1OXQ5dXFEVGJOLUZBUFE5YnRzcm9wczRBdVpDVW9xMXBXRndPdXVLR0pCcGNUd24yZk50WTl3R3RMRGw3MlJHUlZfN1pra2FuUnlScENNdENUTVphSVZONndR?oc=5",
+   "date": "2026-11-20T09:01:11.000Z"
   },
   {
-   "id": "n2-2026-11-20",
+   "id": "n3-2026-11-20",
    "cat": "worldwide",
    "title": "Historic Trump–Xi–Putin Summit at APEC 2026: Key Agreements, Global Geopolitics and Implications for India",
    "source": "Sanskriti IAS",
@@ -1328,7 +1372,7 @@
    "date": "2026-11-20T07:38:56.000Z"
   },
   {
-   "id": "n3-2026-11-19",
+   "id": "n4-2026-11-19",
    "cat": "worldwide",
    "title": "Why $100 Oil is No Longer Spooking Equity Markets",
    "source": "EnergyNow.com",
@@ -1336,7 +1380,7 @@
    "date": "2026-11-19T22:43:01.000Z"
   },
   {
-   "id": "n4-2026-11-19",
+   "id": "n5-2026-11-19",
    "cat": "worldwide",
    "title": "Piyush Goyal urges FICCI to evolve into global chamber, strengthen India’s economic engagement with the world",
    "source": "DD News",
@@ -1344,7 +1388,7 @@
    "date": "2026-11-19T19:24:55.000Z"
   },
   {
-   "id": "n5-2026-11-19",
+   "id": "n6-2026-11-19",
    "cat": "worldwide",
    "title": "WAVES Film Bazaar celebrates 20 years of connecting Indian cinema with global markets",
    "source": "DD News",
@@ -1352,20 +1396,12 @@
    "date": "2026-11-19T19:03:07.000Z"
   },
   {
-   "id": "n6-2026-11-19",
+   "id": "n7-2026-11-19",
    "cat": "worldwide",
    "title": "Wine Institute Opens Doors to 17 Fast-Growing Global Markets",
    "source": "Wine Industry Advisor",
    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOc0l6Qm1GUEJROUNMMFg3eHhIY2VISkEzcDdlQm5ySzZqOThwLVpvQS1oSTJ3b0VXQ2xYbWxzYlMzRENMU1U3Ql9NakUtTlczazRHVW50bnZFNnRDOXVUYnlxSTVsNDFlTlJPRkQtNWlGVVVrcGlDaHgtRlJkOXdrTXBJd0tibFUtNGUydjNEeU1zN09wUkNOM0l2SE5CLXVkZldKZzg1TQ?oc=5",
    "date": "2026-11-19T18:25:00.000Z"
-  },
-  {
-   "id": "n7-2026-11-19",
-   "cat": "worldwide",
-   "title": "Hormuz crisis is reshaping global energy landscape says IEA",
-   "source": "Enlit World",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNQjdUYUpEZFNmcU95dnYyTVFwTExDVDdIR25zZmFocTJ0SDVzd3d4bmU5QldQbGlDNXo0dGdGZ01QeW15aDNGN3lwekczQXVRNmZFZDVZMUlyd0ZXNHA2Vmo5Nm5RUmw0YnBFME4xeFZzM1pxczRqOGc1SllYQ1ItQmpEejdjSmUxekF0UmcydUE4Y1dMLUE?oc=5",
-   "date": "2026-11-19T14:53:21.000Z"
   },
   {
    "id": "n8-2026-11-20",
@@ -1410,17 +1446,17 @@
   {
    "id": "n13-2026-11-20",
    "cat": "africa",
-   "title": "La Côte d’Ivoire élue à la présidence de la communauté internationale de la noix de coco (ICC)",
+   "title": "Côte d'Ivoire : Endeavour Mining dévoile ‘’ Vision Tanda’’ et son projet aurifère d’Assafo-Dibibango, un investissement de plus de 700 milliards FCFA",
    "source": "Abidjan.net News",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOLVVWNG1kZDJnekNwZDhVdFZSWXhGY1k3QVRjS2swYUd5Ym9KeTZBNDdZUUhkdlRrYzVILVFYa3c5QlgyTGpxeEZwZmFodjZqalRXTjUtMHliSmhaNnUzbmd0Snh2SEJXQ0NRY2R1N0VhMFJBRm1aOVpqM2QxN1BWd1BRNlBYZl9KTzJwaGZYSG5ySlpZdHJaLXBrcV9FbXExUUlEWm5IUWpORENHZTFPSzRCX1hQVUJEcUhacFJSS1N3Z0RlODFJR19nN18?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOaXhXY2lOLWlmemJuY28wVzRHVDhTYlpTRUtsdXNRUWJyWmg0YnlPTnZWM1FTWXJYV0VVc2xhREhLU0lSY1k4My04THpwdTlRXzdvMFFERTBCeGRaaEs4RHpoNE1DanVoMldBQk5TS3NqdmFqQXI3M2ZXYTZRNl9qckhVWHRBRXJrMkc3ZFR5MENuaUxsNzZJQi1ZUE04Z09ZYkhNNEtUWmZqOVk0REt6THNfUExRQy1laS1jZ2Uzak05WUZsOTRnbzZBV0steHNVMjJQRmRXd3p5aDZHUE5qQXJuQmlHSF9yUURPR3oyQnRKbmM2cXMzMzNQQnpsT1hPbkRneU01d3lYeG01?oc=5",
    "date": "2026-11-20T07:47:56.000Z"
   },
   {
    "id": "n14-2026-11-20",
    "cat": "africa",
-   "title": "Côte d'Ivoire : Endeavour Mining dévoile ‘’ Vision Tanda’’ et son projet aurifère d’Assafo-Dibibango, un investissement de plus de 700 milliards FCFA",
+   "title": "La Côte d’Ivoire élue à la présidence de la communauté internationale de la noix de coco (ICC)",
    "source": "Abidjan.net News",
-   "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOaXhXY2lOLWlmemJuY28wVzRHVDhTYlpTRUtsdXNRUWJyWmg0YnlPTnZWM1FTWXJYV0VVc2xhREhLU0lSY1k4My04THpwdTlRXzdvMFFERTBCeGRaaEs4RHpoNE1DanVoMldBQk5TS3NqdmFqQXI3M2ZXYTZRNl9qckhVWHRBRXJrMkc3ZFR5MENuaUxsNzZJQi1ZUE04Z09ZYkhNNEtUWmZqOVk0REt6THNfUExRQy1laS1jZ2Uzak05WUZsOTRnbzZBV0steHNVMjJQRmRXd3p5aDZHUE5qQXJuQmlHSF9yUURPR3oyQnRKbmM2cXMzMzNQQnpsT1hPbkRneU01d3lYeG01?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOLVVWNG1kZDJnekNwZDhVdFZSWXhGY1k3QVRjS2swYUd5Ym9KeTZBNDdZUUhkdlRrYzVILVFYa3c5QlgyTGpxeEZwZmFodjZqalRXTjUtMHliSmhaNnUzbmd0Snh2SEJXQ0NRY2R1N0VhMFJBRm1aOVpqM2QxN1BWd1BRNlBYZl9KTzJwaGZYSG5ySlpZdHJaLXBrcV9FbXExUUlEWm5IUWpORENHZTFPSzRCX1hQVUJEcUhacFJSS1N3Z0RlODFJR19nN18?oc=5",
    "date": "2026-11-20T07:47:56.000Z"
   },
   {
@@ -1498,13 +1534,29 @@
   {
    "id": "n24-2026-11-19",
    "cat": "markets",
+   "title": "Euro trims losses amid stronger risk appetite and still-low Oil prices",
+   "source": "www.tmgm.com",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOOTBrRXBHZF9DNnZXa054NmNyQTNzOWZOLTRfYUJqSTQ5dVRUbGtYWmE5TUE0NzU1VWdjQmp3cjFCSXFxbTRPZFBVYXhRMDlYZmEwU3FMb05LRGJ0R2tWWko5aHJybmt2UUM2bERtWWk3WVBwZ0h5QUJ5bUUyaHNRdGtfMXhSOUNzc1Y3Y25MdFhiMjRFRWV5d0p6bk1ibVB6MlNtYlFrLXRDdWJrZDZNd0ZDQ3o2NWV2WWxIZFhqWW9CRl9MOE5BaHVaY2d0ZVhEYU1HeA?oc=5",
+   "date": "2026-11-19T23:09:50.000Z"
+  },
+  {
+   "id": "n25-2026-11-19",
+   "cat": "markets",
+   "title": "Canadian Dollar strengthens as Oil rebounds, hawkish Fed limits gains",
+   "source": "www.tmgm.com",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOaWtDb0lTNjJMXzFWZzdGZ1FmMzJMYTlMWlc4WW1jMmotQVM3eUMya1VNQXg4QVZiY25GMTRMejlEZlU4TXJmWktzNjE4cmtmZldXVldNaVAwaS1ZZ3BYNlVtQ3JYNjJpMzRXbVpTVVl0UTNxRTlkcWU0Yk1yai1zc2pwQmFpMTM3R294RFdkUUNZLXRYczJzbEZBVzFzZ2xEWFpaeHpjZ1pGVXotQlRWV19Ya1hsYUk3Wm5WQ2NiV1VyYTU2RXl1dEpjenZ3VXM?oc=5",
+   "date": "2026-11-19T22:04:34.000Z"
+  },
+  {
+   "id": "n26-2026-11-19",
+   "cat": "markets",
    "title": "EUR/USD Holds 1.0979 off 19-Month Low as DXY Cools From 103.97; ECB Hike Bets Eye 1.1125",
    "source": "TradingNEWS",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWUFDY3JHbEZ5SThBaHFBNDEzeGdWNUN1SjR0UlRkWndkaVZjLTRzX0M5bFRvT3lxcFhpaXdNeHVuYTVmN1M0TnVtS2YwU1REd1IwQ3BYX24yN09WVWxRa096alkxYTczeWdjQ3FLMkI1RTV0YWRualdSaDNza3ZIY2RSZkVIWmNLY3RvMUlXd3VpSEctTG95QXBiYVNHLW1MSW1rb1kzVWNsZmlLamlPYVZ0ZlllZTVNMFEzTUc1OFpsMkUtUlM4?oc=5",
    "date": "2026-11-19T17:33:37.000Z"
   },
   {
-   "id": "n25-2026-11-19",
+   "id": "n27-2026-11-19",
    "cat": "markets",
    "title": "Dollar Slips as Stocks Rally",
    "source": "TradingView",
@@ -1512,7 +1564,23 @@
    "date": "2026-11-19T15:35:11.000Z"
   },
   {
-   "id": "n26-2026-11-19",
+   "id": "n28-2026-11-19",
+   "cat": "markets",
+   "title": "Canadian Dollar remains little changed as oil price surge offsets US Dollar strength",
+   "source": "www.tmgm.com",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxObnFRSDR4ZERnRzYyeVY1eVdMTWVqUkNyV25tS3UyZUFiUWZIQlczNFU5NGJadTdobmhiWEdXWTFIeXc4b0tKa1IwaVc3WXNVRVQ4Y01mbXJaV1dWZFg4QV9MTmJjaUNXYUJWMkNxQmd1V0N0ejJqZnQwRUFEaW9fUFBCZUpMRW4xTnVWTUN0TjE0R1BEMXJOejNCTjhMVUdleFdPTXhTeDc0SjBUMGZGVWU4N2ZyNXBqWHZPcC0yRGJlUjdXTHFscWhqYU5WeXhJUnNqdEJqZ2pnUXZrSEE?oc=5",
+   "date": "2026-11-19T13:34:50.000Z"
+  },
+  {
+   "id": "n29-2026-11-19",
+   "cat": "markets",
+   "title": "Surging oil prices counter US Dollar strength, leaving Canadian Dollar little changed",
+   "source": "www.tmgm.com",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQWkxST3VUZGREcFp3aGNBNU5POHBvZGg3TkNVbGtCdEJVUVdDa25sMGpiV3pGZVRaLXBuX040NXdkUzBocXVaMmdTX1J5LUdnWFRlSUpSZEE4TWhoUndmQ2MyVXkyRnRKQ2NyWmVuUTJzZnp0NDc3UkRIM253WnhKaVhQUTZQOW9RR2l6bjlqN3dFZGRxNGNZTjNkRVF4TVJ2MTUzZ0Z4YUxMWm5Tb2lYS3A3ZnViRF90LXpHV1B3Y1N4X2lqZ0lWUWNsVEJtSGliRk5JUzZCLU03ZFdrekE?oc=5",
+   "date": "2026-11-19T13:16:56.000Z"
+  },
+  {
+   "id": "n30-2026-11-19",
    "cat": "markets",
    "title": "Euro pares losses as risk appetite improves and Oil prices remain low",
    "source": "FXStreet",
@@ -1520,7 +1588,7 @@
    "date": "2026-11-19T09:56:08.000Z"
   },
   {
-   "id": "n27-2026-11-19",
+   "id": "n31-2026-11-19",
    "cat": "markets",
    "title": "US dollar hits multi-month highs on hawkish Fed bets",
    "source": "TorFX News",
@@ -1528,55 +1596,7 @@
    "date": "2026-11-19T09:08:29.000Z"
   },
   {
-   "id": "n28-2026-11-19",
-   "cat": "markets",
-   "title": "Euro gains ground against Canadian Dollar ahead of ECB Lagarde’s speech",
-   "source": "FXStreet",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVkpnLWpQYVFNQVhGMTcyUmgzdE1BLVhIdmFKbllsMFRFTFp4eTFpLXlkb3UzQUhmNUx5Q21XUHo5NmhzNkJJM2Vhc1MtMTJOTEliMU9ua3FXLUdVbGJJdGw0T2pXU0FzalJkMC15QW5aN1pyR2VqNG0wU2wtM2wxcFpjZ3pmUzR5Mk84ck5OYVZsV0FfWU9pOHhDMjF0ckk5Y3VYOU9wVUpOZGp2b0x1WWh6NA?oc=5",
-   "date": "2026-11-19T09:05:53.000Z"
-  },
-  {
-   "id": "n29-2026-11-19",
-   "cat": "markets",
-   "title": "Euro shows little movement amid steady US Dollar and hawkish Fed signals",
-   "source": "www.tmgm.com",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMG1XbUlBWW51cEcxQUZmMnJQWU9MaDk5X3E3bGsxQ2pVNFRmUU1xcm1hNXcyRDJwYVRtTnkyVFNZa0hSUEJLMjg2S2xHZ1VHNG9fR0FxR1pmanlrcTh2QWsxU3RRZk5KNkNyb1hpbGxTM25fenZPQ2hwMmx0UEJtVGYybldXdjV6Q3hYZUpFbnA4ZFRzWF9pYVdzZ1BzZGhacE9XMlpETmJiNWdRR0RLajlYR1czajBzYTM1VTJJSWQ0X2dZaHFubXIxODZTNExUeXBHdElR?oc=5",
-   "date": "2026-11-19T08:13:42.000Z"
-  },
-  {
-   "id": "n30-2026-11-19",
-   "cat": "markets",
-   "title": "US Dollar Price Forecast: DXY Holds 103.76 as Fed Minutes Back Hikes, EUR/USD and GBP/USD Stay Weak",
-   "source": "FXEmpire",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPQktTaXRud2g5d2pMSmhTYUZKMkg5VjFIS1J0TnZWSHFoLVBhMS04bkRSVVpKOXBhTjFHY2NvbENaY1JDNU1Eek9rT1Nzb0ZGVko5SWRCU2tORTRETmlWWVFnZkdiTHBaUHVJTUVzMzBudW5HdXdWZFJqUlMxMUZDNTh5blQ5dmNLU0lXV29QSHNyd0RRMUh4MjRfR0xnWDl3NGV6UDQ5dFVwamlRdjBVSVVZT1R3bEptNnJ5cnp5eUxPa3NybHJBNXZfQ0VGMDdIMlluWlVhTnB6MmZFZndwbHlB?oc=5",
-   "date": "2026-11-19T07:45:00.000Z"
-  },
-  {
-   "id": "n31-2026-11-19",
-   "cat": "markets",
-   "title": "Euro Slips as Hawkish Fed Weighs on EUR/USD, Bears Rule",
-   "source": "TradingPedia",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOV2lCNlFiUWtHZnBITU1vWG9NNjczMHlHbldQX3pnVlVHdmVPZGs0SnlCMk4xdHVTd1ZyeTNpZlNxYjAyOFZyUWI1OGVEVUR4RnEwTzFTOGNTZGlqRnd6QWpCd1plSmFpUDF1Q2RXUWdJT1Zab1RyYjd4NUUwOEhUekdSTnNKREhIZUpHMlRDcEtDbzJZRkdHbHBHSQ?oc=5",
-   "date": "2026-11-19T07:35:41.000Z"
-  },
-  {
    "id": "n32-2026-11-20",
-   "cat": "bev",
-   "title": "Transparent Plastic Packaging Market to Reach USD 157.7 Billion",
-   "source": "openPR.com",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSlpwMXRLY1BhNjduVmFJam56NmMtREtGMjFjU3V2ckdsUXJtM3J0RERDcTBnSmF0WWhvMTZuUXdWYUdEZVFZSzViNEtHTFlfVTB4OGlEMkVyWXF5enJfanhneVA3VS1tUVpsNzROaWYxQWYxZ29XUzJMR0t3VklReDNpblBIek5Ia0l2YjN2cUxSdGl6eV9PdEdKZ3dNTHY5?oc=5",
-   "date": "2026-11-20T10:26:21.000Z"
-  },
-  {
-   "id": "n33-2026-11-20",
-   "cat": "bev",
-   "title": "From tubs to film: six years of evidence for food-grade recycled polypropylene",
-   "source": "Plastics News",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNXJxd3dxTUQ4WUpJdklIclk5OWJsd0hNX2YxWTU3dHJESzltdTZ4b0lUdEotWHpzMVVwQlNabzlzeVpCTUFoNmt3ZjBoMGQyR0pQNjdGdTIyTVJ3WGN3eDUwak5uZUFhWWY0Y2dpVm11a3dtWWRPeWNmTVhhUzA3UW9YQXlnVzNZSklvTGwyVnV4dWJMYXliSDhzTW9LNkZGSnYtenhPOGJ2WjBCOHl6Qm1xc242Rl9UckRKLWdyYmh1R2dQaWJsS3hKTnRNREF5?oc=5",
-   "date": "2026-11-20T10:22:00.000Z"
-  },
-  {
-   "id": "n34-2026-11-20",
    "cat": "bev",
    "title": "Indian Sugar Market Softens as Mills Boost Supplies — CMB News",
    "source": "CMB News",
@@ -1584,15 +1604,7 @@
    "date": "2026-11-20T09:08:37.000Z"
   },
   {
-   "id": "n35-2026-11-20",
-   "cat": "bev",
-   "title": "Meeting place for the european beverage sector",
-   "source": "Brauwelt",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNM1NuVU12Tk9lVFY4OHRvUU9KWFdPNE1JRmphRXg3azI2Y1VkdTdORlFvVXAzOTlROFJvRmRCSTBZWVlhQ0xOMnNJY3JOb1l6VWFCeEV6Q01abEFqaWlfSjBlak5qRHZzbVFZcV9pVk5zcnhqWUx6cy1IZHN6UGxBdGxIYTRUTVhfT3dFNlBIR3p0bDVFc2RB?oc=5",
-   "date": "2026-11-20T08:57:41.000Z"
-  },
-  {
-   "id": "n36-2026-11-20",
+   "id": "n33-2026-11-20",
    "cat": "bev",
    "title": "EU raw sugar import prices fall below global benchmarks",
    "source": "УкрАгроКонсалт",
@@ -1600,7 +1612,7 @@
    "date": "2026-11-20T07:58:55.000Z"
   },
   {
-   "id": "n37-2026-11-20",
+   "id": "n34-2026-11-20",
    "cat": "bev",
    "title": "India’s Sugar Industry",
    "source": "www.pib.gov.in",
@@ -1608,7 +1620,7 @@
    "date": "2026-11-20T07:52:34.000Z"
   },
   {
-   "id": "n38-2026-11-20",
+   "id": "n35-2026-11-20",
    "cat": "bev",
    "title": "Sugar cane market: ICE No.11 correction, Brazil weather, India policy — CMB News",
    "source": "CMB News",
@@ -1616,12 +1628,36 @@
    "date": "2026-11-20T07:41:23.000Z"
   },
   {
-   "id": "n39-2026-11-20",
+   "id": "n36-2026-11-20",
    "cat": "bev",
    "title": "Commodity market: Raw sugar and copper prices plummet.",
    "source": "Vietnam.vn",
    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZmxWd2lxR3NpRmU1ZFdLU2hrTGMzcTlINFlSZ3VIVDhPTDFSbXRLbUFIdF9sQkM3NnhLdW1wUm1lM1B0ZkYxcUZEOFZsQTNGQnFxZlNnazNMbUdfcy1Xa3BDR1hDQ2NkNU5MSkdYQ3h0dE9UOHJkd2tIX29uTVBDLXd2QWpBWTA?oc=5",
    "date": "2026-11-20T07:30:23.000Z"
+  },
+  {
+   "id": "n37-2026-11-20",
+   "cat": "bev",
+   "title": "German Firm, Partner Pursue 5-year Tax, Rent-free Industrial Sites For Investors In Africa",
+   "source": "LEADERSHIP Newspapers",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbmo4QWJ6ZlE2SVlHOE1IZERtRnFxNVlDbHlhTWR0NzlxT21ONTRFLWFNMG10X2UtempSdEtyX3dBay16dEtZdzVDRERlaEZFVTBKSnJDZHJ3eTlLal9BeVZMdW5jd0s4Vk1xN2lOY1hiVkc4ZXU5clVEWXJhdHZ3QkE0YUJZN2hJUjNQVy1tdDl3UjVfNElkdkxtM1pHZGt3NUFic0xwYVh2WHcxWmFNdg?oc=5",
+   "date": "2026-11-20T06:24:05.000Z"
+  },
+  {
+   "id": "n38-2026-11-20",
+   "cat": "bev",
+   "title": "Govt opens one-time window for allocation of raw sugar imports under TRQ scheme",
+   "source": "Upstox",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPLVh5R3M2dHQyMjE4OUNaTFdnRmwyRy12ZjBOWHJGTkQ5dHVkZGM4SmVNS0ozOGxTTk1Yc1Vtdl81cHlnZ3EySXE3T1NUTzNhOUVqbGlGTWRGVFhHZFM5UnE1RFh3VHFfaW1lNWs1MFRIaTdmUUp2UmRVdFhuSzlad1E4VFA5MUZ3b05KNnpuZF8xcGh6cUFQa3lzZ0piZFN0ZkJDSHdhUG9jTmJPb1drd1JaZW5kd3V0aU5aX3gyU0dLQklpaTFUdXlvX1Zlb3JxZ2ZPR2dvOUlpeWFTSUxUanNR?oc=5",
+   "date": "2026-11-20T03:52:23.000Z"
+  },
+  {
+   "id": "n39-2026-11-20",
+   "cat": "bev",
+   "title": "India invites fresh applications for duty-free import of 2.15 lakh tonnes of raw sugar",
+   "source": "India Shipping News",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNNU1wRm5zUFFQbzl4dVVfdG5ScmhUc2pKLUoxQTRCNWxtQURRNmswaFU1dmVvZnNKUEYwdjNzQXhTTGxES3M0aTNycy1TajhrWVMtbndUVGloUzJQb2NTV3hoNnNJLVZ1RWl1WjRpc3NIT0VmTGRxVXZFS2JJanBPb1RIeHoybHdOY0dqUW1LR3hfMTA0VnVqWnRmS3ZqanRDZ2NFVXB0MkRTeU4yYzZ4ZElIVWk1bW9feEppbWdVcWdZU010?oc=5",
+   "date": "2026-11-20T03:38:11.000Z"
   },
   {
    "id": "n40-2026-11-19",
@@ -1666,26 +1702,26 @@
   {
    "id": "n45-2026-11-17",
    "cat": "cfo",
-   "title": "CEMAC : les fonds cumulent 925 milliards de FCFA de titres du Trésor, dont 177 milliards d’OTA en fonds monétaires",
-   "source": "Investir au Cameroun",
-   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQc2VENnZfQm1BNmFiX0N0LUJyYk0xNzJoU083dkV2aTNQLWtJajBYTW16QkFVOG1rcEJOTUM5UWw3Mk9fa1hVdnhrTHBkaFBUb1JBYWdZeEtTZjhSOGlaX0lZdEg1dHRRMFh0NkVDZERIQ2hEQ2U2endaUm5heU45YXQxRks0OGktQmo1Mk9NVU5PLXAydkhWRko4LVRPNm1qLUZJOXNSS3ctVlcySVBwOVZNMHhBT1pub0o5OWdZY0d6QTM1cUZ5Vy1EbXd0ZGxNZG9WZjctaDRzSHJER3oweHQxeXhzQ2dHMDVXdEQ1eEdydUVqS3hJSg?oc=5",
-   "date": "2026-11-17T14:25:00.000Z"
-  },
-  {
-   "id": "n46-2026-11-17",
-   "cat": "cfo",
    "title": "Nkamouna : Aeternum signe des accords de financement de 1,14 milliard de FCFA, le rachat d’ARM reste en suspens",
    "source": "Investir au Cameroun",
    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNWnVBMi15SFFIYjFTTFRNenV3ZWRUREFfZGdWZW15M0dzRmdKTnBzRzFHNUFIM2tqQmNxMXJpM01zcjJxVDJUaERjbDZGLVM5OHc5M0JOWDkyeVlfNzRQRTN4ZWJKclQ0Q3hITURqUDBycU5tdU1iU2l0UUpLcDVPVGE4UTZhVGQ2TWt6eHdwVERuVS1yNFVCNXpaY2dqckV1Mm4tNF8zNnJNNGdXakxJUWVHbm9ZbXUzXzVoZHNqMzJCN1JVMFVzemlEWjAxUVRkbG9naVpJVUE5WDBwTXJvN1ZxVE5aSHJNc1VwNlVnRWRyZw?oc=5",
    "date": "2026-11-17T10:57:00.000Z"
   },
   {
-   "id": "n47-2026-11-17",
+   "id": "n46-2026-11-17",
    "cat": "cfo",
    "title": "Gabon-Banque Mondiale : Un nouveau partenariat à bâtir sur 307 milliards de FCFA de projets en cours",
    "source": "Direct Infos Gabon",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSU5Db1UwYUI5TF90d3daSjhOaVpBXy1KYkFDUEZHSTFEXzVheTVzVGhfdmNRM1NWWjJqalJRY0c0ano2NHVJTDRkTVBxSVV0ZmxQMXBxSGFMVGk5azExdTRrdHdWTGM2OERQdFhydVRmNlF0anVzdzhGNl9nSkYyRE1tYXZkRDh3ODkyTFlaLWNvUDdEeld5VnFTLVNKdDdaek00Smo3ejZMa09zZ0JKZ2h0Nm5uRGtRMGZPeDRsZ25PVlplQURR?oc=5",
    "date": "2026-11-17T09:29:00.000Z"
+  },
+  {
+   "id": "n47-2026-11-17",
+   "cat": "cfo",
+   "title": "Côte d’Ivoire : près de 1 260 milliards FCFA de riz et de poisson importés en 2025, un signal d’alerte pour la souveraineté alimentaire",
+   "source": "Capmad",
+   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNRURYVVUxRy1fcUU0NjBOYnFPVzJIQmFaSFZxai1JX1c4THhYQ0dQR3BtY2NIMkFXRGV0dmM0SWVJbzl0b3hjSDZaQXRnU0QzWU9lVWJTRlFsNWl0YUNUaERRdnNFaDRiekdlbTl1T1BiZXlmdmdlRk9vOGhsaTFVVm1IU3dHa3NrZUV3WUpUQ3BzaUZkb0VCNjhaWF9hdXNWLUM3Z01ZSUI5X2JDVnBqbUFWQW92MWRtVnNyVTF5SnpYLXZRSnJ1RVNlSVZ6YzU3bElmODRPcG9CaDg5OWFXSDU1aTV6TzktRmJEN1B2QXFyMFk?oc=5",
+   "date": "2026-11-17T05:21:00.000Z"
   },
   {
    "id": "n48-2026-11-20",
@@ -1752,5 +1788,10 @@
    "date": "2026-11-19T09:46:16.000Z"
   }
  ],
- "log": []
+ "log": [
+  "news bev (en): 429 https://news.google.com/rss/search?q=PET%20packaging%20bottles%20when%3A4d&hl=en&gl=US&ceid=US:en",
+  "news bev (fr): 429 https://news.google.com/rss/search?q=boissons%20industrie%20Afrique%20when%3A4d&hl=fr&gl=CI&ceid=CI:fr",
+  "news cfo (fr): 429 https://news.google.com/rss/search?q=BEAC%20taux%20when%3A4d&hl=fr&gl=CM&ceid=CM:fr",
+  "news cfo (en): 429 https://news.google.com/rss/search?q=CFO%20treasury%20dollar%20when%3A4d&hl=en&gl=US&ceid=US:en"
+ ]
 }
