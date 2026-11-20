@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-20T20:10:06.564Z",
+ "generated_at": "2026-11-20T21:00:00.019Z",
  "summary_at": "2026-11-20T18:28:12.534Z",
  "summary_mode": "rules",
  "peg": 655.957,
  "fx": {
-  "eurusd": 1.0972130298614502,
-  "usdxaf": 597.8392364542285,
+  "eurusd": 1.0967316627502441,
+  "usdxaf": 598.1016344098924,
   "usdxaf_prev": 597.8457318897565,
   "date": "2026-11-20"
  },
@@ -17,10 +17,10 @@
    "unit": "XAF per USD",
    "dp": 1,
    "cost": 1,
-   "value": 597.8392364542285,
+   "value": 598.1016344098924,
    "prev": 597.8457318897565,
    "date": "2026-11-20",
-   "change_pct": -0.001086473513400854,
+   "change_pct": 0.04280410588983763,
    "series": [
     [
      "2026-10-21",
@@ -108,7 +108,7 @@
     ],
     [
      "2026-11-20",
-     597.8392364542285
+     598.1016344098924
     ]
    ],
    "source": "655.957 ÷ EUR/USD",
@@ -125,10 +125,10 @@
    "unit": "USD per EUR",
    "dp": 4,
    "cost": -1,
-   "value": 1.0972130298614502,
+   "value": 1.0967316627502441,
    "prev": 1.0972011089324951,
    "date": "2026-11-20",
-   "change_pct": 0.00108648531778055,
+   "change_pct": -0.04278579181420383,
    "series": [
     [
      "2026-10-21",
@@ -216,7 +216,7 @@
     ],
     [
      "2026-11-20",
-     1.0972130298614502
+     1.0967316627502441
     ]
    ],
    "source": "Yahoo Finance",
@@ -233,10 +233,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 89.52999877929688,
+   "value": 90.37999725341797,
    "prev": 91.9800033569336,
    "date": "2026-11-20",
-   "change_pct": -2.663627406197555,
+   "change_pct": -1.7395151610363757,
    "series": [
     [
      "2026-10-22",
@@ -324,7 +324,7 @@
     ],
     [
      "2026-11-20",
-     89.52999877929688
+     90.37999725341797
     ]
    ],
    "source": "Yahoo Finance",
@@ -343,10 +343,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 83,
+   "value": 84.02999877929688,
    "prev": 83.20999908447266,
    "date": "2026-11-20",
-   "change_pct": -0.2523724153144946,
+   "change_pct": 0.9854581226371284,
    "series": [
     [
      "2026-10-22",
@@ -434,7 +434,7 @@
     ],
     [
      "2026-11-20",
-     83
+     84.02999877929688
     ]
    ],
    "source": "Yahoo Finance",
@@ -453,10 +453,10 @@
    "unit": "USD/oz",
    "dp": 0,
    "cost": 0,
-   "value": 3522.699951171875,
+   "value": 3517.199951171875,
    "prev": 3685.5,
    "date": "2026-11-20",
-   "change_pct": -4.417312408848872,
+   "change_pct": -4.566545891415686,
    "series": [
     [
      "2026-10-22",
@@ -544,14 +544,14 @@
     ],
     [
      "2026-11-20",
-     3522.699951171875
+     3517.199951171875
     ]
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/GC%3DF",
    "why": {
-    "en": "Down 4.4%, moving with Silver (−7.5%): a broad sell-off rather than one-off news.",
-    "fr": "En baisse de 4,4%, comme l'argent (−7,5%) : un mouvement d'ensemble plutôt qu'une nouvelle isolée."
+    "en": "Down 4.6%, moving with Silver (−7.8%): a broad sell-off rather than one-off news.",
+    "fr": "En baisse de 4,6%, comme l'argent (−7,8%) : un mouvement d'ensemble plutôt qu'une nouvelle isolée."
    }
   },
   {
@@ -561,10 +561,10 @@
    "unit": "USD/oz",
    "dp": 2,
    "cost": 0,
-   "value": 40.97999954223633,
+   "value": 40.849998474121094,
    "prev": 44.31800079345703,
    "date": "2026-11-20",
-   "change_pct": -7.53193102454548,
+   "change_pct": -7.825267966166793,
    "series": [
     [
      "2026-10-22",
@@ -652,14 +652,14 @@
     ],
     [
      "2026-11-20",
-     40.97999954223633
+     40.849998474121094
     ]
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/SI%3DF",
    "why": {
-    "en": "Down 7.5%, moving with Gold (−4.4%): a broad sell-off rather than one-off news.",
-    "fr": "En baisse de 7,5%, comme l'or (−4,4%) : un mouvement d'ensemble plutôt qu'une nouvelle isolée."
+    "en": "Down 7.8%, moving with Gold (−4.6%): a broad sell-off rather than one-off news.",
+    "fr": "En baisse de 7,8%, comme l'or (−4,6%) : un mouvement d'ensemble plutôt qu'une nouvelle isolée."
    }
   }
  ],
@@ -1532,7 +1532,7 @@
    "source": "Financial Times",
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSkZnaUY5Ni1VV2RvQXB3YWdWTnByc0xNYUt0MW5yYUlZLThpWXpNTzJBSjBROF9CQV9hd1M0MVVCNnB4QW0zd1VIdVhjQ3ZScEZvQ01HblVPTFQ4emlReFRfVnlnOFV1emJvQWtZU3BYT2tOY1JWUThTcUZlMzkzZTlaMnY?oc=5",
    "date": "2026-11-20T05:00:26.000Z",
-   "score": 4.4,
+   "score": 4.3,
    "desc": "Rising oil prices drove sovereign bond yields higher after the start of the Iran war in late February, as traders positioned for an inflation shock and string of interest rate rises.",
    "t": {
     "en": "Oil loses grip on bond markets as inflation ‘virus’ spreads",
@@ -1544,23 +1544,17 @@
    }
   },
   {
-   "id": "n1-2026-11-19",
+   "id": "n1-2026-11-20",
    "cat": "worldwide",
    "lang": "en",
-   "title": "Canada's BMO returning to US oil and gas investment banking, sources say",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMEJnU0FpNlBIQVVrY3RZWkxwVzV5a0RJajBPLWpIZW5DX1Y1cDBuZnJsWU14dHBGcGV3aE9LRkx6aVg4VDRjVHB1UmphaWN1VVJCQVQ1bEhnel9rTnNzSmZVZUJlTHZsTHVsdWpmZjM2aHQ1R09mZEZTUVpqbV9VZ18tMC15WkhxOW5PN2FtNHRXMHkwUndMV3NBQVZtaGNKajVzZkZfMWNwd0pYS21Ea0ZBNkZtUQ?oc=5",
-   "date": "2026-11-19T19:00:02.000Z",
-   "score": 4,
-   "desc": "Bank of Montreal is reviving its investment banking service to oil and gas companies in the United States, six years after it exited, and is hiring bankers ...",
-   "img": "http://www.bing.com/th?id=ONUT.nnm58q1KhIRCi3Uvn1TLqg&pid=News&w=900&h=1200&c=7&rs=1",
+   "title": "Skepticism About AI Is Crushing Stock Prices Around the World",
+   "source": "Bloomberg.com",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPa0xuaEJvTjF2V01vTGdTNXdIdzZ5NklfbmVXVE9WeVBfVU1xRW1Hc2VWWnViUzNOaTl6M0hCSUJKazE1Vkc0NEljbW04b1FBVHZQUk9iZVJMUXN6YnVHQWhfMnl4cFZVU0QybDJBVUc3dXJZM2U3YkZ3OFZFeE5aM1Z0bEFScGNRa0UwY1gyUkJoX0FfRlNJYmhwWUl5eV9MalZsZzNyZDR4bjBoV29Ub1ZNclNvQQ?oc=5",
+   "date": "2026-11-20T20:42:26.000Z",
+   "score": 3.9,
    "t": {
-    "en": "Canada's BMO returning to US oil and gas investment banking, sources say",
-    "fr": "La BMO canadienne revient aux banques d'investissement pétrolières et gazières aux États-Unis, selon des sources"
-   },
-   "d": {
-    "en": "Bank of Montreal is reviving its investment banking service to oil and gas companies in the United States, six years after it exited, and is hiring bankers ...",
-    "fr": "La Banque de Montréal relance son service de banque d'investissement auprès des sociétés pétrolières et gazières aux États-Unis, six ans après sa disparition, et embauche des banquiers..."
+    "en": "Skepticism About AI Is Crushing Stock Prices Around the World",
+    "fr": "Le scepticisme à l’égard de l’IA écrase les cours boursiers dans le monde entier"
    }
   },
   {
@@ -1581,20 +1575,6 @@
    "id": "n3-2026-11-20",
    "cat": "worldwide",
    "lang": "en",
-   "title": "Skepticism About AI Is Crushing Stock Prices Around the World",
-   "source": "Bloomberg.com",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPa0xuaEJvTjF2V01vTGdTNXdIdzZ5NklfbmVXVE9WeVBfVU1xRW1Hc2VWWnViUzNOaTl6M0hCSUJKazE1Vkc0NEljbW04b1FBVHZQUk9iZVJMUXN6YnVHQWhfMnl4cFZVU0QybDJBVUc3dXJZM2U3YkZ3OFZFeE5aM1Z0bEFScGNRa0UwY1gyUkJoX0FfRlNJYmhwWUl5eV9MalZsZzNyZDR4bjBoV29Ub1ZNclNvQQ?oc=5",
-   "date": "2026-11-20T19:12:25.000Z",
-   "score": 3.9,
-   "t": {
-    "en": "Skepticism About AI Is Crushing Stock Prices Around the World",
-    "fr": "Le scepticisme à l’égard de l’IA écrase les cours boursiers dans le monde entier"
-   }
-  },
-  {
-   "id": "n4-2026-11-20",
-   "cat": "worldwide",
-   "lang": "en",
    "title": "Week Ahead for FX, Bonds: Flash PMI Data to Provide Gauge on Economic Growth",
    "source": "WSJ",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUGRKVlM2NDJTdnJ2MW1LcHA4Z29OVTA3eEo0NFlsblNRRnBvcGVGZkVneWN1X1VWWVRWY1FTSm1jWHE0aV9IQzR5Sk9uWHpmdGdSb0VIR3hhal9YckR6QTVTeXhEWVRSTkQ2U2szTEdvQUtSYWVQSXU0LU1Pb3lzNmx6MHdNUmd4NTFHM2thTmpaN2xDclJSa1l1ZzQzRThSdnBPY0tKNC14WlNZRXNpeg?oc=5",
@@ -1610,27 +1590,7 @@
    }
   },
   {
-   "id": "n5-2026-11-20",
-   "cat": "worldwide",
-   "lang": "en",
-   "title": "ECB to make euro swaps more accessible in global push, Lagarde says",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNY2NCeURnMlNOTWoyc0lXdTQ4dFM4aUNNTVVDaVI5TEFQY0ZCU3hXcEVIalBnRGFLOS1qM195dG9qTlB5R2pXcG93eVFuVElWTnpJbW4wbUxicUl1aWxITjRYeTZHZVFtc09ha0JiX0J3NDlFa0w5bmZtNXozSGtDd2lMVGRIeWFXb0M0dUJTWktGUjdKWGRUeUsxOGdQUVF1SFdSYVdneHVITVFkNC1wci1wUQ?oc=5",
-   "date": "2026-11-20T14:41:52.000Z",
-   "score": 3.9,
-   "desc": "The European Central Bank will make its currency swap lines with other countries more accessible to shield the euro area from outside financial shocks and boost the ...",
-   "img": "http://www.bing.com/th?id=ONUT.bufmcqIWPhf7N5ZMisdmbA&pid=News&w=900&h=1200&c=7&rs=1",
-   "t": {
-    "en": "ECB to make euro swaps more accessible in global push, Lagarde says",
-    "fr": "La BCE va rendre les swaps en euros plus accessibles dans le cadre d'une initiative mondiale, dit Lagarde"
-   },
-   "d": {
-    "en": "The European Central Bank will make its currency swap lines with other countries more accessible to shield the euro area from outside financial shocks and boost the ...",
-    "fr": "La Banque centrale européenne rendra plus accessibles ses lignes de swap de devises avec d'autres pays pour protéger la zone euro des chocs financiers extérieurs et stimuler la ..."
-   }
-  },
-  {
-   "id": "n6-2026-11-20",
+   "id": "n4-2026-11-20",
    "cat": "worldwide",
    "lang": "en",
    "title": "Dollar Heads for Fourth Week of Gains Following Anthropic IPO",
@@ -1645,6 +1605,40 @@
    "d": {
     "en": "The dollar is headed for a fourth straight weekly gain as demand tied to the Anthropic PBC IPO further lifts the currency that has been supported by expectations of further Federal Reserve ...",
     "fr": "Le dollar se dirige vers un quatrième gain hebdomadaire consécutif alors que la demande liée à l'introduction en bourse d'Anthropic PBC fait encore grimper la monnaie qui a été soutenue par les attentes d'une nouvelle Réserve fédérale..."
+   }
+  },
+  {
+   "id": "n5-2026-11-19",
+   "cat": "worldwide",
+   "lang": "en",
+   "title": "Canada's BMO returning to US oil and gas investment banking, sources say",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMEJnU0FpNlBIQVVrY3RZWkxwVzV5a0RJajBPLWpIZW5DX1Y1cDBuZnJsWU14dHBGcGV3aE9LRkx6aVg4VDRjVHB1UmphaWN1VVJCQVQ1bEhnel9rTnNzSmZVZUJlTHZsTHVsdWpmZjM2aHQ1R09mZEZTUVpqbV9VZ18tMC15WkhxOW5PN2FtNHRXMHkwUndMV3NBQVZtaGNKajVzZkZfMWNwd0pYS21Ea0ZBNkZtUQ?oc=5",
+   "date": "2026-11-19T19:00:02.000Z",
+   "score": 3.9,
+   "desc": "Bank of Montreal is reviving its investment banking service to oil and gas companies in the United States, six years after it exited, and is hiring bankers ...",
+   "img": "http://www.bing.com/th?id=ONUT.nnm58q1KhIRCi3Uvn1TLqg&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "Canada's BMO returning to US oil and gas investment banking, sources say",
+    "fr": "La BMO canadienne revient aux banques d'investissement pétrolières et gazières aux États-Unis, selon des sources"
+   },
+   "d": {
+    "en": "Bank of Montreal is reviving its investment banking service to oil and gas companies in the United States, six years after it exited, and is hiring bankers ...",
+    "fr": "La Banque de Montréal relance son service de banque d'investissement auprès des sociétés pétrolières et gazières aux États-Unis, six ans après sa disparition, et embauche des banquiers..."
+   }
+  },
+  {
+   "id": "n6-2026-11-19",
+   "cat": "worldwide",
+   "lang": "en",
+   "title": "Euro zone banks' data centre exposure small but growing, ECB says",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcm5Wc0JWdU5keDRHeFRNV0Izdl9IY3pCVzYwaEExN2F0cmo5MTAzMnZ5S3pFSW9zeU5ITVo1bF92OExlbmU0OW55cWR1b09NdGZWU29FTi1kVXBzTHBoSUtNdmRONlVaMUV1XzN5QTUwSWNWQm80YkV0NGpzcjNES195c1VVaS1sRElPVUU2RWJHZ0N3T3I2RGhfVGdTRTlnMkdJeTM0V21lczRyV054R3h3?oc=5",
+   "date": "2026-11-19T18:33:07.000Z",
+   "score": 3.9,
+   "t": {
+    "en": "Euro zone banks' data centre exposure small but growing, ECB says",
+    "fr": "L'exposition aux centres de données des banques de la zone euro est faible mais croissante, selon la BCE"
    }
   },
   {
@@ -1838,7 +1832,7 @@
    "source": "EcoMatin",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdXltNFphTV90WGg4NzFqS1l1X1kyRDlIUG1JVUF2VHdzWDdLb010Wi1PeU1oOE9hc3lXLXpVak9aWXpJcUQwanFpS0piN3NSZVJfNURKNWxRUEY3aTV0dVFMSmEtLUZmNkJ6MzEwVVZWdE5ma3JDdmM2RklDRTBOMXVVeVg1UUFxUml3Yy1CMkxYYUpQOURpZHBSU2dlU1A1b0dGYTVYZzZtZjVWRHpIU3Z3?oc=5",
    "date": "2026-11-20T04:52:50.000Z",
-   "score": 3.8,
+   "score": 3.7,
    "t": {
     "fr": "Logistique : le rachat de Portek soumis à l’examen du régulateur de la concurrence de la Cemac",
     "en": "Logistics: the takeover of Portek subject to examination by the Cemac competition regulator"
@@ -1846,26 +1840,6 @@
   },
   {
    "id": "n18-2026-11-20",
-   "cat": "africa",
-   "lang": "fr",
-   "title": "SIIPS 2026 : le PI-SPI dépasse les 4 millions de transactions en un an dans l’UEMOA",
-   "source": "Financial Afrik",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZXM1X2FsSXc5SkdnVFRnVXRuV2dFcjI3TWVhakF2Y0t2b3lSSTgtMkxnb1lzLUpQdFgtTDZiaEN3YzJkVDBueWpPRzZiOWU4V050YXQ1UGZ0enQweVlqekdZNkNCMUczRll6R3I5a1Fub3Y2dGtpUTR0cl9ETG51Z1ppNGNwRFZXQ0VmTndCZVR6dGFZU29YN24yV09tTlZwaVV0SVdHSTRDclMtcFI0QmZzLTFRWW04SllFMGsyYXE?oc=5",
-   "date": "2026-11-20T11:29:36.000Z",
-   "score": 3.2,
-   "desc": "Lancé le 30 septembre 2025 par la Banque centrale des États de l’Afrique de l’Ouest (BCEAO), le système de paiement instantané interopérable de l’UEMOA ...",
-   "img": "https://www.financialafrik.com/wp-content/uploads/2026/11/PI-BCEAO.jpg",
-   "t": {
-    "fr": "SIIPS 2026 : le PI-SPI dépasse les 4 millions de transactions en un an dans l’UEMOA",
-    "en": "SIIPS 2026: PI-SPI exceeds 4 million transactions in one year in UEMOA"
-   },
-   "d": {
-    "fr": "Lancé le 30 septembre 2025 par la Banque centrale des États de l’Afrique de l’Ouest (BCEAO), le système de paiement instantané interopérable de l’UEMOA ...",
-    "en": "Launched on September 30, 2025 by the Central Bank of West African States (BCEAO), the UEMOA interoperable instant payment system..."
-   }
-  },
-  {
-   "id": "n19-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "Comment Bassirou Diomaye Faye a contourné le Parlement pour imposer le budget révisé 2026",
@@ -1885,7 +1859,7 @@
    }
   },
   {
-   "id": "n20-2026-11-20",
+   "id": "n19-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "MTN franchit une étape décisive dans le rachat d’IHS Towers",
@@ -1905,7 +1879,7 @@
    }
   },
   {
-   "id": "n21-2026-11-17",
+   "id": "n20-2026-11-17",
    "cat": "congo",
    "lang": "fr",
    "title": "CEMAC : les fonds cumulent 925 milliards de FCFA de titres du Trésor, dont 177 milliards d’OTA en fonds monétaires",
@@ -1913,6 +1887,8 @@
    "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQc2VENnZfQm1BNmFiX0N0LUJyYk0xNzJoU083dkV2aTNQLWtJajBYTW16QkFVOG1rcEJOTUM5UWw3Mk9fa1hVdnhrTHBkaFBUb1JBYWdZeEtTZjhSOGlaX0lZdEg1dHRRMFh0NkVDZERIQ2hEQ2U2endaUm5heU45YXQxRks0OGktQmo1Mk9NVU5PLXAydkhWRko4LVRPNm1qLUZJOXNSS3ctVlcySVBwOVZNMHhBT1pub0o5OWdZY0d6QTM1cUZ5Vy1EbXd0ZGxNZG9WZjctaDRzSHJER3oweHQxeXhzQ2dHMDVXdEQ1eEdydUVqS3hJSg?oc=5",
    "date": "2026-11-17T14:25:00.000Z",
    "score": 3,
+   "desc": "Les organismes de placement collectif en valeurs mobilières (OPCVM) de la CEMAC détenaient, au 30 juin 2026, 925,3 milliards de FCFA de titres publics émis sur le marché des valeurs du Trésor de la BE ...",
+   "img": "https://www.investiraucameroun.com/media/k2/items/cache/b9e4e6e237018790f0a2e381138dacc5_L.jpg",
    "t": {
     "fr": "CEMAC : les fonds cumulent 925 milliards de FCFA de titres du Trésor, dont 177 milliards d’OTA en fonds monétaires",
     "en": "CEMAC: funds accumulate 925 billion FCFA in Treasury securities, including 177 billion OTA in monetary funds"
@@ -1923,7 +1899,7 @@
    }
   },
   {
-   "id": "n22-2026-11-17",
+   "id": "n21-2026-11-17",
    "cat": "congo",
    "lang": "fr",
    "title": "CEMAC : 521 milliards FCFA d’actions dans les portefeuilles des sociétés de Bourse, dont 77 % non cotées",
@@ -1934,6 +1910,20 @@
    "t": {
     "fr": "CEMAC : 521 milliards FCFA d’actions dans les portefeuilles des sociétés de Bourse, dont 77 % non cotées",
     "en": "CEMAC: 521 billion FCFA of shares in the portfolios of stock exchange companies, including 77% unlisted"
+   }
+  },
+  {
+   "id": "n22-2026-11-17",
+   "cat": "congo",
+   "lang": "fr",
+   "title": "CEMAC : le Cameroun capte moins de 5 % des placements des fonds d’investissement à fin juin",
+   "source": "EcoMatin",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNG1mWU8xa29OcWt1Rm4wTWZqMkx2N09YYjFtclk4alY0T2h1VGVzbms4cUFQYWJUMXFFLVRpVnZ0TzB4S2dHTk1sTG1RbUpxbXpRSUxJUFBPZEkyZ0YtWVMwMXpjMHJaLVRqV3dzSV9CaG9oUHAwS2ZsSklHOWNTbmtkYm16eG9yOHZxYWZIRWdQMWUtQzNPSF9HSEc5alFNdzNuakEtNWJsbnM?oc=5",
+   "date": "2026-11-17T02:38:15.000Z",
+   "score": 3,
+   "t": {
+    "fr": "CEMAC : le Cameroun capte moins de 5 % des placements des fonds d’investissement à fin juin",
+    "en": "CEMAC: Cameroon captures less than 5% of investment fund investments at the end of June"
    }
   },
   {
@@ -1980,7 +1970,7 @@
    "source": "CNBC",
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5SV3VLcC1fUXZ3eUN2ckZpSzd3akdsSE55cFRrUEZFNDZtVUFxcDRCWng5dHB3XzBDaUliLUowaGdqdDVkaW5va25nUkx5OVc4UXZoVU9qem1NdWFUNndPWldTeXFhVnVo0gFuQVVfeXFMTXRDbE5XQlFpNEF3ZVBycUpzZXFqQXJOdmVWTWVlX2NWLTNPc2w2TEk5TVdEb3FSZTV3c1JpSEJpUTlaX1g3cVhfY0o1cnFZd2xLZm03ZkJWTjRCelpOU2V5bl9pYlk0RkJsZnQtS1E?oc=5",
    "date": "2026-11-20T05:01:49.000Z",
-   "score": 3.8,
+   "score": 3.7,
    "desc": "Oil weakened on Friday, notching a ​second straight weekly decline, as the market weighed signs of a growing global supply surplus.",
    "img": "https://image.cnbcfm.com/api/v1/image/108255194-1769022447893-gettyimages-2256865241-_abd14372.jpeg?v=1794538524&w=1920&h=1080",
    "t": {
@@ -2059,27 +2049,7 @@
    }
   },
   {
-   "id": "n30-2026-11-19",
-   "cat": "bev",
-   "lang": "en",
-   "title": "Perspective - Chef Rachel Khoo: 'You don't need fancy kitchen gadgets to cook delicious food'",
-   "source": "France 24",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNU2I1UGV0TWlQYTl1ZnpsOFlZNW00VHNqTHIwM0FkNkFtMnkyRHNSRnRwU1plUnFtWmlKS0VIYnVqUmlabjBFTER0VEZaQ1F0Um5hSjUzNWVuZENyUFZqQnJWM18wakxHaE1wcWhnbnFXX3oweVlwYzNhZHFKZzRvVkF6TGJBaVpaYzRUcDJXeXhJc3F4RVIwVWJXOEktSHJXR1lha25wWWJKT2padm1pRi1ld3RuMzFhNjdZNllRbFFneHk3djVtaEN0RHRET1U?oc=5",
-   "date": "2026-11-19T14:24:12.000Z",
-   "score": 1.8,
-   "desc": "One of the world's best-known chefs has spoken to FRANCE 24 about her new book that proves you certainly don't need fancy kitchen gadgets to cook delicious meals. The book \"The Smallest Restaurant in ...",
-   "img": "http://www.bing.com/th?id=ONUT.wTV3lT74gOcw_INWH7Ytew&pid=News&w=900&h=1200&c=7&rs=1",
-   "t": {
-    "en": "Perspective - Chef Rachel Khoo: 'You don't need fancy kitchen gadgets to cook delicious food'",
-    "fr": "Perspective - La chef Rachel Khoo : « Vous n'avez pas besoin de gadgets de cuisine sophistiqués pour cuisiner des plats délicieux »"
-   },
-   "d": {
-    "en": "One of the world's best-known chefs has spoken to FRANCE 24 about her new book that proves you certainly don't need fancy kitchen gadgets to cook delicious meals. The book \"The Smallest Restaurant in ...",
-    "fr": "L'une des chefs les plus connues au monde a parlé à FRANCE 24 de son nouveau livre qui prouve qu'on n'a certainement pas besoin d'ustensiles de cuisine sophistiqués pour cuisiner de délicieux repas. Le livre \"Le plus petit restaurant de ..."
-   }
-  },
-  {
-   "id": "n31-2026-11-20",
+   "id": "n30-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "Savadi urges centre to fix approp prices for cane, sugar, ethanol",
@@ -2087,13 +2057,15 @@
    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOXzlTdDZHWnRDc05NMHM2OXZRNHNGeGF6end6c3ViWU9OSHNFRjEyVW1mSl9haGcyTWtaaUFweklCYlJpWDZLb2ZYZjZad1psN2tWOFN0WjNQUmRheFlETnNwLVJtaWoyQTkwZGwxNTdQNnhUczFtMmZDN3FBUl92X2JJTDNQN3lBeG9aTm9pbk5DQktvWVh4UTRmODlrTHNuX0JDVjM0NzlLdGktYmx4N0hrZWpWVGVrcmlBcUlUeXVnVGpKSjIxWGJZMjJONEhYN000Ulczb9IB3AFBVV95cUxOTzR4MkdSemZ3NWZRdGtNTFJZNk5nVWs1Z3JsVHVMU2xodFBqNmlWUnZ0X1czTkpvZnZvZTZsZFZKSVlVelc2bUF1SHNoOHFmZHpIdW90U1UzTERWTmlXYzNKZ1JDUDdqLUg4SFhkalBCcmhKMkx4ZUsybmpVZkg0UjJfUmZmelF3Ykk1eFpTNkNuMmNwbXNGQWVBR2tTd3Zmb3hwVUR3RjZIek0xb0tMaWJPQm9yYkVtd2MxMjdVTW41N29uLUJYendFQlU1ZGVtcGtLUm4zbVl0WDBm?oc=5",
    "date": "2026-11-20T19:54:00.000Z",
    "score": 1.7,
+   "desc": "Cooperation minister Laxman Savadi urges Centre to fix fair prices for cane, sugar and ethanol, revise sugar MSP, and buy all ethanol to end disputes.",
+   "img": "https://static.toiimg.com/photo/msid-47529300/47529300.jpg",
    "t": {
     "en": "Savadi urges centre to fix approp prices for cane, sugar, ethanol",
     "fr": "Savadi exhorte le centre à fixer des prix appropriés pour la canne, le sucre et l'éthanol"
    }
   },
   {
-   "id": "n32-2026-11-20",
+   "id": "n31-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "Improved Supply Outlook Weighs on Sugar Prices",
@@ -2107,7 +2079,7 @@
    }
   },
   {
-   "id": "n33-2026-11-20",
+   "id": "n32-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "Competitive Analysis of Bottles Market: FMI Examines Recycled",
@@ -2121,7 +2093,7 @@
    }
   },
   {
-   "id": "n34-2026-11-20",
+   "id": "n33-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "Union Minister Chirag Paswan Calls on Beverage Industry to Make India a Global Centre for Manufacturing, Innovation and Exports",
@@ -2139,7 +2111,7 @@
    }
   },
   {
-   "id": "n35-2026-11-20",
+   "id": "n34-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "Brazilian Real Weakness Triggers Sharp Correction in Sugar Prices",
@@ -2157,17 +2129,31 @@
    }
   },
   {
+   "id": "n35-2026-11-20",
+   "cat": "bev",
+   "lang": "en",
+   "title": "Sugar Market Update: Maharashtra Output Rises, EU Prices Stabilise",
+   "source": "CMB News",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNWxXckVfbHZCZGZLMDJkb2cySWRWSWM4X1RzcGtaRllGdzVKRVRwLW9xOXpIMkdUQ2tpY0RWbnFBek1XVktISlA1UFpyWnRDRVpMNlFjVTQ1ZHlELVFuS0RYTmJVUW9WZ2pfUlVDSmpxSHN5bVdHZzBuLUs5TXBiUDVhMkY2WXo5LWl6Y3FGUnlKZGltbnhxV2g2TXlEYVZXUEE?oc=5",
+   "date": "2026-11-20T09:07:44.000Z",
+   "score": 1.7,
+   "t": {
+    "en": "Sugar Market Update: Maharashtra Output Rises, EU Prices Stabilise",
+    "fr": "Mise à jour du marché du sucre : la production du Maharashtra augmente et les prix de l'UE se stabilisent"
+   }
+  },
+  {
    "id": "n36-2026-11-20",
    "cat": "bev",
    "lang": "en",
-   "title": "Sugar prices fall 20% as Centre tightens supply monitoring, introduces fortnightly quota",
-   "source": "DD News",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSV9RQXlMN3JHX1ZxTHJEMXRNVDVfNmZtdm16THhWMFNHZmdCY0lVWFlvQ2cwRGE1V0N4aTdZRHZFVUhRMWlTa0RySjk5SVVVZVNfTk9jLTlad0drb25heWdIcS1kTjhyWlMyVEwtOGNLQ0oyLVAwUjZMUXVpbHpWYlN1Y0lLNEZsTHNjZGtDeVV6OUpxakZ0WjV4dWNjc2puYi00MlNkWXAzNDFjcm1qUXZB?oc=5",
-   "date": "2026-11-20T10:56:40.000Z",
+   "title": "EU raw sugar import prices fall below global benchmarks",
+   "source": "УкрАгроКонсалт",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVzlCYnpSMU1ZZVN3RVNmN2paX1hyeTJPT2pNMGFiTWVVWFg3N2NRaUlYX0lkZ01QQmlGU3A5eS1lbXV6RE03cXlrVWhQTE1BRjFlZ0pjZlY1NzdDaExGT2JfLVd1SERqN09rcEZyRjlEenhrVjk4U1plZ3NYdHNPMm9fV1NRZ3VVSWtuVWVwd1JfMkdFOHc?oc=5",
+   "date": "2026-11-20T07:58:55.000Z",
    "score": 1.7,
    "t": {
-    "en": "Sugar prices fall 20% as Centre tightens supply monitoring, introduces fortnightly quota",
-    "fr": "Les prix du sucre chutent de 20 % alors que le Centre renforce la surveillance de l'offre et introduit un quota bimensuel"
+    "en": "EU raw sugar import prices fall below global benchmarks",
+    "fr": "Les prix des importations de sucre brut de l’UE chutent en dessous des références mondiales"
    }
   },
   {
@@ -2198,7 +2184,7 @@
    "source": "Capmad",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNR2lKTVF6QUFPUUxXY21vNHlJNDQtN3BHS3JHVmpyLWthM01jYlBndlpCbURlZjg1b25VWnlnLWEyeTlKcE9lMHRnczFGV3dfMUw0NlhpaFNTdnhYclhuTEZ2YUdOMGpCRWZ0aUFsQXdPdHJ0SHZia3B3WEkxYjVwaXM1RTJ5N0hJay1ERUJ6UnpNVXowdmk4TmdiMzdRNFFCdDhMRGhVZXdycGM?oc=5",
    "date": "2026-11-19T23:56:00.000Z",
-   "score": 2.7,
+   "score": 2.6,
    "t": {
     "fr": "UEMOA : la BCEAO reconstitue ses réserves de change à 41 milliards USD en 2025",
     "en": "UEMOA: BCEAO rebuilds its foreign exchange reserves to USD 41 billion in 2025"
@@ -2308,7 +2294,7 @@
    "source": "LBCI Lebanon",
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRS11SERTcTRwMGp2ekJjZkduZjVhNURITXNjSmNWU0k2QkhJcTZRaUtlY0dWRWtoSzY5NnVPTG1XX1pXcWxOVUNpVDJUR1hreTUzZFpNRUxCRU9LUXdQX2pDN3BNd2JzQXBHZ0hpaDFHeHgzaUd4eUdHRWZ2LTdTeXo4UnA?oc=5",
    "date": "2026-11-20T07:29:53.000Z",
-   "score": 1.7,
+   "score": 1.6,
    "desc": "On Tuesday, November 17, 2026, 95- and 98-octane fuel prices fell by LBP 48,000, while diesel decreased by LBP 31,000 and gas by LBP 4,000. The current prices for hydrocarbon deri ...",
    "img": "https://www.lbcgroup.tv/uploadImages/DocumentImages/Doc-T-968344-639304975855928210.jpg",
    "t": {
@@ -2322,9 +2308,9 @@
   }
  ],
  "log": [
-  "photos: 18/40 {\"nomatch\":42,\"othersrc\":106,\"empty\":25}",
-  "translated 8 new, reused 40, of 48",
-  "dedupe: 2 duplicates removed, 3 re-filed by region",
-  "briefing kept (1.7 h old)"
+  "photos: 17/40 {\"othersrc\":119,\"nomatch\":46,\"empty\":25}",
+  "translated 6 new, reused 42, of 48",
+  "dedupe: 2 duplicates removed, 2 re-filed by region",
+  "briefing kept (2.5 h old)"
  ]
 }
