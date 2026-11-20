@@ -442,7 +442,6 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
   <section>
     <h2 class="sec" data-t="mk_t"></h2>
     <p class="sub" data-t="mk_s"></p>
-    <div class="legend"><span class="pressure" data-t="lg_p"></span><span class="relief" data-t="lg_r"></span><span class="neutral" data-t="lg_n"></span></div>
     <div id="mk"></div>
   </section>
 </div>
@@ -575,7 +574,7 @@ const REEL_DUR=6500;
 const reel={i:0,el:0,last:0,paused:false,hold:false,vis:false,n:0,raf:0,io:null};
 function renderSixty(){
   const nItems=(B.summary[lang]||B.summary.en||[]).length,mins=Math.max(1,Math.round(nItems*7.5/30)/2);
-  $("#sixty-sub").textContent=(lang==="fr"?`Monde, Afrique, Congo & CEMAC · ${nItems} histoires · environ ${String(mins).replace(".",",")} min`:`Worldwide, Africa, Congo & CEMAC · ${nItems} stories · about ${mins} min`);
+  $("#sixty-sub").textContent=(lang==="fr"?`Monde, Afrique, Congo & CEMAC, DAF · ${nItems} histoires · environ ${String(mins).replace(".",",")} min`:`Worldwide, Africa, Congo & CEMAC, CFO · ${nItems} stories · about ${mins} min`);
   const items=B.summary[lang]||B.summary.en||[];
   const catOf=x=>x.cat||((B.categories||[]).find(c=>c.en===x.owner||c.fr===x.owner)||{}).id||"worldwide";
   reel.n=items.length;if(!reel.n){$("#sixty").innerHTML="";return;}
@@ -776,7 +775,7 @@ function renderHero(){
     <h2 class="h-hi">${hi}, Rayan ${hr<12?"☀️":hr<18?"👋":"🌙"}</h2>
     <p class="h-sub">${fr?`${items.length} histoires de ${nC} pays, en ${String(mins).replace(".",",")} minutes.`:`${items.length} stories from ${nC} countries, in ${mins} minutes.`}</p>
     <div class="h-flags" aria-hidden="true">${flags.join("")}</div>
-    <button class="h-play" type="button" id="h-play"><span class="h-btn">▶</span><span><b>${fr?"Lancer le brief du jour":"Play today's brief"}</b><span class="s">${fr?"Vidéo avec voix · Monde, Afrique, Congo & CEMAC":"Video with voice · Worldwide, Africa, Congo & CEMAC"}</span></span></button>`;
+    <button class="h-play" type="button" id="h-play"><span class="h-btn">▶</span><span><b>${fr?"Lancer le brief du jour":"Play today's brief"}</b><span class="s">${fr?"Vidéo avec voix · Monde, Afrique, Congo & CEMAC, DAF":"Video with voice · Worldwide, Africa, Congo & CEMAC, CFO"}</span></span></button>`;
   $("#h-play").onclick=()=>openWatch(0);
   const ids=["usdxaf","brent","gold"],ms=ids.map(id=>B.markets.find(m=>m.id===id)).filter(Boolean);
   const big=ms.reduce((a,m)=>Math.abs(m.change_pct||0)>Math.abs(a.change_pct||0)?m:a,ms[0]||{});
