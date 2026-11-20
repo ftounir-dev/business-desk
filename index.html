@@ -338,6 +338,10 @@ label.f input{background:var(--bg);border:1px solid var(--line);border-radius:10
 .agenda{list-style:none;margin:0;padding:0}
 .agenda li{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:.94rem}
 .agenda li:last-child{border-bottom:0}
+.otd-h{margin:18px 0 2px;font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.otd-h span{font-weight:600;letter-spacing:0;text-transform:none;color:var(--muted);font-size:.78rem}
+#otd .agenda li{grid-template-columns:78px 1fr}
+#otd .empty{padding:8px 0 4px}
 .ag-in{color:var(--muted);font-size:.84rem}
 .aotd{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px 20px;margin-top:14px;display:grid;gap:12px}
 .aotd h3{font-family:var(--display);font-size:clamp(1.5rem,6.6vw,2.1rem);line-height:1.12;margin:0;font-weight:700;text-wrap:balance}
@@ -437,7 +441,7 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 <div class="view" id="v-events" hidden>
   <section id="otd-wrap" hidden>
     <div class="sec-head"><h2 class="sec" data-t="otd_t"></h2></div>
-    <ul class="agenda otd" id="otd"></ul>
+    <div id="otd"></div>
   </section>
   <section>
     <div class="sec-head"><h2 class="sec" data-t="agenda_t"></h2></div>
@@ -506,7 +510,7 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 <script>
 const T={
  en:{ite:"For ITE Congo · Brazzaville",sixty:"The last 24 hours",t_events:"Events",wa:"Send to WhatsApp · FR",copy:"Copy French text",
-  agenda_t:"Coming up",t_read:"Read",read_t:"Article of the day",read_s:"Chosen each morning for a CFO from Harvard Business Review, The Economist, McKinsey, MIT Sloan, Wharton and CFO.com. Some need a subscription.",more_t:"More good reads",hist_t:"Previous picks",readit:"Read the article",why:"Why read it",otd_t:"On this day",mk_t:"Markets",mk_s:"Last close for each. Tap a row for its chart, source and an alert.",lg_p:"Cost pressure for ITE",lg_r:"Cost relief",lg_n:"Context",
+  agenda_t:"Coming up",t_read:"Read",read_t:"Article of the day",read_s:"Chosen each morning for a CFO from Harvard Business Review, The Economist, McKinsey, MIT Sloan, Wharton and CFO.com. Some need a subscription.",more_t:"More good reads",hist_t:"Previous picks",readit:"Read the article",why:"Why read it",otd_t:"On this day in history",mk_t:"Markets",mk_s:"Last close for each. Tap a row for its chart, source and an alert.",lg_p:"Cost pressure for ITE",lg_r:"Cost relief",lg_n:"Context",
   g_fx:"Currencies · XAF",g_commod:"Commodities",g_africa:"Africa FX",g_pack:"Packaging · PET bottle grade",ref:"Reference",g_rates:"BEAC rates · CEMAC interbank",
   news_t:"News",all:"All",tools_t:"Tools",pulse_t:"What the dollar costs ITE this month",pulse_s:"The franc CFA is pegged to the euro, so only USD invoices carry FX risk. Your figures stay on this phone.",
   f_usd:"USD purchases per month",f_budget:"Budget rate (XAF per USD)",o_label:"Monthly cost vs budget at today's rate",
@@ -519,7 +523,7 @@ const T={
   stale:"This brief is more than a day old. The automatic update may have failed; check GitHub Actions.",armed:"alerts armed, none triggered",
   offline:"Offline: showing the last brief saved on this phone.",ago_m:"min ago",ago_h:"h ago",ago_d:"d ago",now:"now",chart:"Last month",nostories:"No stories in this section yet. It fills on the next update."},
  fr:{ite:"Pour ITE Congo · Brazzaville",sixty:"Les dernières 24 heures",t_events:"Événements",wa:"Envoyer sur WhatsApp",copy:"Copier le texte",
-  agenda_t:"À venir",t_read:"Lecture",read_t:"L'article du jour",read_s:"Choisi chaque matin pour un DAF parmi Harvard Business Review, The Economist, McKinsey, MIT Sloan, Wharton et CFO.com. Certains nécessitent un abonnement.",more_t:"Autres lectures",hist_t:"Choix précédents",readit:"Lire l'article",why:"Pourquoi le lire",otd_t:"Ce jour-là",mk_t:"Marchés",mk_s:"Dernière clôture. Touchez une ligne pour le graphique, la source et une alerte.",lg_p:"Pression sur les coûts",lg_r:"Allègement",lg_n:"Contexte",
+  agenda_t:"À venir",t_read:"Lecture",read_t:"L'article du jour",read_s:"Choisi chaque matin pour un DAF parmi Harvard Business Review, The Economist, McKinsey, MIT Sloan, Wharton et CFO.com. Certains nécessitent un abonnement.",more_t:"Autres lectures",hist_t:"Choix précédents",readit:"Lire l'article",why:"Pourquoi le lire",otd_t:"Ce jour dans l'histoire",mk_t:"Marchés",mk_s:"Dernière clôture. Touchez une ligne pour le graphique, la source et une alerte.",lg_p:"Pression sur les coûts",lg_r:"Allègement",lg_n:"Contexte",
   g_fx:"Devises · XAF",g_commod:"Matières premières",g_africa:"Devises africaines",g_pack:"Emballage · PET qualité bouteille",ref:"Référence",g_rates:"Taux BEAC · interbancaire CEMAC",
   news_t:"Actualités",all:"Tout",tools_t:"Outils",pulse_t:"Ce que le dollar coûte à ITE ce mois-ci",pulse_s:"Le franc CFA est arrimé à l'euro : seules les factures en USD portent un risque de change. Vos chiffres restent sur ce téléphone.",
   f_usd:"Achats en USD par mois",f_budget:"Taux budgétaire (XAF pour 1 USD)",o_label:"Coût mensuel vs budget au taux du jour",
@@ -769,9 +773,14 @@ function renderFront(){
   document.querySelectorAll("[data-go]").forEach(a=>a.onclick=()=>{cat=a.dataset.go;});
 }
 function renderOTD(){
-  const l=(B.on_this_day&&(B.on_this_day[lang]||B.on_this_day.en))||[];
-  $("#otd-wrap").hidden=!l.length;
-  $("#otd").innerHTML=l.map(e=>`<li><span class="d">${esc(e.year)}</span><span>${esc(e.text)}${e.url?` <a class="see" href="${esc(e.url)}" target="_blank" rel="noopener">↗</a>`:""}</span></li>`).join("");
+  const fr=lang==="fr",O=B.on_this_day&&(B.on_this_day[lang]||B.on_this_day.en),g=Array.isArray(O)?{world:O}:(O||{});
+  const n=new Date(),md=String(n.getMonth()+1).padStart(2,"0")+"-"+String(n.getDate()).padStart(2,"0");
+  const lab=e=>(e.md&&e.md!==md?new Date("2000-"+e.md+"T12:00:00").toLocaleDateString(fr?"fr-FR":"en-GB",{day:"numeric",month:"short"})+" ":"")+e.year;
+  const pre=e=>e.kind==="born"?(fr?"Naissance : ":"Born: "):e.kind==="died"?(fr?"Décès : ":"Died: "):"";
+  const G=[["world","🌍",fr?"Monde":"Worldwide",""],["congo","🇨🇬","Congo",fr?"cette semaine dans l'histoire":"this week in history"],["lebanon","🇱🇧",fr?"Liban":"Lebanon",fr?"cette semaine dans l'histoire":"this week in history"]];
+  $("#otd-wrap").hidden=!G.some(x=>(g[x[0]]||[]).length);
+  $("#otd").innerHTML=G.map(([k,f,name,sub])=>{const l=g[k]||[];
+    return `<h4 class="otd-h">${f} ${name}${sub?`<span>· ${sub}</span>`:""}</h4>`+(l.length?`<ul class="agenda otd">${l.map(e=>`<li><span class="d">${esc(lab(e))}</span><span>${esc(pre(e)+e.text)}${e.url?` <a class="see" href="${esc(e.url)}" target="_blank" rel="noopener">↗</a>`:""}</span></li>`).join("")}</ul>`:`<p class="empty">${fr?"Rien de marquant pour ces dates.":"Nothing notable recorded for these dates."}</p>`);}).join("");
 }
 function renderHero(){
   const fr=lang==="fr",hr=new Date().getHours(),items=B.summary[lang]||B.summary.en||[];
