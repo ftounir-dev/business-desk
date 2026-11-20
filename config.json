@@ -24,7 +24,7 @@
     {
       "id": "wti",
       "group": "commod",
-      "name": "WTI crude (Texas)",
+      "name": "Crude Oil WTI",
       "ticker": "CL=F",
       "unit": "USD/bbl",
       "dp": 2,
@@ -47,26 +47,52 @@
       "unit": "USD/oz",
       "dp": 2,
       "cost": 0
-    },
-    {
-      "id": "us10y",
-      "group": "rates",
-      "name": "US 10-year yield",
-      "ticker": "^TNX",
-      "unit": "%",
-      "dp": 2,
-      "cost": 0
     }
   ],
   "static_rates": [
     {
+      "id": "beac_timp",
+      "group": "rates",
+      "name": "Interbank rate · TIMP 7 days",
+      "value": 6.56,
+      "unit": "%",
+      "date": "2026-08-31",
+      "note": "Taux interbancaire moyen pondéré: the average rate CEMAC banks charge each other for 7-day unsecured loans. BEAC publishes it monthly; latest is end of August 2026 (6.53% at end of May).",
+      "source": "BEAC",
+      "url": "https://www.beac.int/"
+    },
+    {
       "id": "beac",
       "group": "rates",
-      "name": "BEAC policy rate (TIAO)",
+      "name": "BEAC policy rate · TIAO",
       "value": 4.5,
       "unit": "%",
       "date": "2026-09-28",
-      "note": "Edit in config.json after each BEAC meeting"
+      "note": "Taux d’intérêt des appels d’offres, BEAC’s main policy rate. Cut from 4.75% on 29 June 2026, held on 28 Sept 2026.",
+      "source": "BEAC",
+      "url": "https://www.beac.int/"
+    },
+    {
+      "id": "beac_fpm",
+      "group": "rates",
+      "name": "Marginal lending facility",
+      "value": 5.75,
+      "unit": "%",
+      "date": "2026-09-28",
+      "note": "Taux de la facilité de prêt marginal: the ceiling of BEAC’s corridor, what banks pay to borrow overnight from BEAC. Cut from 6.25% on 29 June 2026.",
+      "source": "BEAC",
+      "url": "https://www.beac.int/"
+    },
+    {
+      "id": "beac_fd",
+      "group": "rates",
+      "name": "Deposit facility",
+      "value": 0,
+      "unit": "%",
+      "date": "2026-09-28",
+      "note": "Taux de la facilité de dépôt: the floor of BEAC’s corridor, what banks earn on deposits at BEAC.",
+      "source": "BEAC",
+      "url": "https://www.beac.int/"
     },
     {
       "id": "pet_cn",
@@ -268,11 +294,18 @@
     "sources": [
       {
         "name": "Harvard Business Review",
-        "q": "site:hbr.org"
+        "q": "site:hbr.org",
+        "paywall": true
       },
       {
         "name": "The Economist",
-        "q": "site:economist.com finance OR economics OR business"
+        "q": "site:economist.com finance OR economics OR business",
+        "paywall": true
+      },
+      {
+        "name": "Financial Times",
+        "q": "site:ft.com CFO OR finance OR Africa",
+        "paywall": true
       },
       {
         "name": "McKinsey",
@@ -289,6 +322,36 @@
       {
         "name": "CFO.com",
         "q": "site:cfo.com"
+      },
+      {
+        "name": "CFO Dive",
+        "q": "site:cfodive.com"
+      },
+      {
+        "name": "BCG",
+        "q": "site:bcg.com publications"
+      },
+      {
+        "name": "Deloitte Insights",
+        "q": "site:deloitte.com insights CFO OR finance"
+      },
+      {
+        "name": "IMF Blog",
+        "q": "site:imf.org blogs"
+      },
+      {
+        "name": "Project Syndicate",
+        "q": "site:project-syndicate.org"
+      },
+      {
+        "name": "The Africa Report",
+        "q": "site:theafricareport.com business OR economy"
+      },
+      {
+        "name": "Jeune Afrique",
+        "q": "site:jeuneafrique.com économie OR finance",
+        "hl": "fr",
+        "gl": "FR"
       }
     ],
     "boost": [
@@ -311,6 +374,7 @@
       "strategy",
       "Africa",
       "emerging market"
-    ]
+    ],
+    "more": 12
   }
 }
