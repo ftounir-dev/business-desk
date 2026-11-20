@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-20T12:37:26.119Z",
+ "generated_at": "2026-11-20T13:39:55.457Z",
  "summary_mode": "rules",
  "peg": 655.957,
  "fx": {
-  "eurusd": 1.0981770753860474,
-  "usdxaf": 597.3144174125182,
+  "eurusd": 1.0996261835098267,
+  "usdxaf": 596.5272652077933,
   "usdxaf_prev": 597.8457318897565,
   "date": "2026-11-20"
  },
@@ -16,10 +16,10 @@
    "unit": "XAF per USD",
    "dp": 1,
    "cost": 1,
-   "value": 597.3144174125182,
+   "value": 596.5272652077933,
    "prev": 597.8457318897565,
    "date": "2026-11-20",
-   "change_pct": -0.08887150127488974,
+   "change_pct": -0.22053627075259152,
    "series": [
     [
      "2026-10-21",
@@ -107,7 +107,7 @@
     ],
     [
      "2026-11-20",
-     597.3144174125182
+     596.5272652077933
     ]
    ],
    "source": "655.957 ÷ EUR/USD",
@@ -120,10 +120,10 @@
    "unit": "USD per EUR",
    "dp": 4,
    "cost": -1,
-   "value": 1.0981770753860474,
+   "value": 1.0996261835098267,
    "prev": 1.0972011089324951,
    "date": "2026-11-20",
-   "change_pct": 0.08895055296669341,
+   "change_pct": 0.22102370819612194,
    "series": [
     [
      "2026-10-21",
@@ -211,7 +211,7 @@
     ],
     [
      "2026-11-20",
-     1.0981770753860474
+     1.0996261835098267
     ]
    ],
    "source": "Yahoo Finance",
@@ -224,10 +224,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 89.23999786376953,
+   "value": 89.25,
    "prev": 91.9800033569336,
    "date": "2026-11-20",
-   "change_pct": -2.978914321769832,
+   "change_pct": -2.9680400709920174,
    "series": [
     [
      "2026-10-22",
@@ -315,7 +315,7 @@
     ],
     [
      "2026-11-20",
-     89.23999786376953
+     89.25
     ]
    ],
    "source": "Yahoo Finance",
@@ -328,10 +328,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 82.2300033569336,
+   "value": 82.45999908447266,
    "prev": 83.20999908447266,
    "date": "2026-11-20",
-   "change_pct": -1.1777379381343267,
+   "change_pct": -0.9013339841989598,
    "series": [
     [
      "2026-10-22",
@@ -419,7 +419,7 @@
     ],
     [
      "2026-11-20",
-     82.2300033569336
+     82.45999908447266
     ]
    ],
    "source": "Yahoo Finance",
@@ -432,10 +432,10 @@
    "unit": "USD/oz",
    "dp": 0,
    "cost": 0,
-   "value": 3578.800048828125,
+   "value": 3560.699951171875,
    "prev": 3685.5,
    "date": "2026-11-20",
-   "change_pct": -2.8951282369251152,
+   "change_pct": -3.3862447111145055,
    "series": [
     [
      "2026-10-22",
@@ -523,7 +523,7 @@
     ],
     [
      "2026-11-20",
-     3578.800048828125
+     3560.699951171875
     ]
    ],
    "source": "Yahoo Finance",
@@ -536,10 +536,10 @@
    "unit": "USD/oz",
    "dp": 2,
    "cost": 0,
-   "value": 42.189998626708984,
+   "value": 41.47999954223633,
    "prev": 44.31800079345703,
    "date": "2026-11-20",
-   "change_pct": -4.801665527886845,
+   "change_pct": -6.403721287986652,
    "series": [
     [
      "2026-10-22",
@@ -627,7 +627,7 @@
     ],
     [
      "2026-11-20",
-     42.189998626708984
+     41.47999954223633
     ]
    ],
    "source": "Yahoo Finance",
@@ -640,15 +640,11 @@
    "unit": "%",
    "dp": 2,
    "cost": 0,
-   "value": 5.052000045776367,
-   "prev": 5.065999984741211,
-   "date": "2026-11-19",
-   "change_pct": -0.2763509476314985,
+   "value": 4.980000019073486,
+   "prev": 5.052000045776367,
+   "date": "2026-11-20",
+   "change_pct": -1.425178662915394,
    "series": [
-    [
-     "2026-10-21",
-     5.145999908447266
-    ],
     [
      "2026-10-22",
      4.953000068664551
@@ -732,6 +728,10 @@
     [
      "2026-11-19",
      5.052000045776367
+    ],
+    [
+     "2026-11-20",
+     4.980000019073486
     ]
    ],
    "source": "Yahoo Finance",
@@ -862,25 +862,25 @@
     "level": "",
     "cat": "worldwide",
     "owner": "Worldwide",
-    "title": "Stocks Hit Worst Run Since 2023 as AI Trade Cracks: Markets Wrap",
+    "title": "Asian stock markets sink without Anthropic dispelling concerns regarding AI",
     "detail": "",
-    "source": "Bloomberg.com",
-    "date": "2026-11-20T12:06:41.000Z",
+    "source": "Plataforma Media",
+    "date": "2026-11-20T13:07:56.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9Bem9kWjBIcUtfa0xHOW0yQm1mV3A0VFVFZlh4X0hvWjlmckZSTDNGWlB1NGtzWFkyTTVSc0tNNW9tbUxGNURvNExmRTdTYnJyTTJtUGd1dkEyZklWR2xOSkphQ2s1d0NjZE9CRDc4SWtreWJxbDVoOFFnM2toQldLUHR5VUZFTDk4bDBXaWdodTh1?oc=5",
-    "img": "https://media.morningstar.com/resizer/v2/6EVBWPJ3TNFUNINJ3ERRKKF6YI.jpg?auth=f50a1a29d7f7b3b18e3539cbdaa3bbe7a63881d742c5ec9c092aa1c1c77ff154&quality=80&height=1350&width=2400&crop=0,0:2400,1350"
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdWZCRUVnaGk1ekk4bk5ZZnl0THIxT3gyVXB3cjJuSkJHMnEweW9SaHNBZ3duUnJwUk5tLVhtUXFxMjdtbl9TZms0c2VKaVQxSU1UaUVlWnQ5N01FWW04cURQZjBrdnctODJUQXJ2UVplaW1EWGltTVJLWEVtNzV1RXU5aV9tYTRRcEpjbGdXVFpvMG1CNFA0cnF6QUd5WW95VHlXeWg5aWR4Y1ZJd2RTTzl3V0tTZ1dBZlFlZ3lvTQ?oc=5",
+    "img": null
    },
    {
     "level": "",
     "cat": "africa",
     "owner": "Africa",
-    "title": "Gaz naturel : le Bénin, le Togo et la Côte d’Ivoire préparent des approvisionnements communs",
+    "title": "Relief as petrol landing cost hits 6-month low, marketers import more fuel",
     "detail": "",
-    "source": "BENIN WEB TV",
-    "date": "2026-11-20T11:57:07.000Z",
+    "source": "Legit News",
+    "date": "2026-11-20T13:24:30.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOY1RoaFY0M2xCcGhOd25DdllZWHRDN0VXd0lPTGllZmx4Qk1HUlhVV2RhVndYc2ZqTEZuUy1BQ3NadTZOZlZia0FwbnlVdTU0Q2VSWmJFU21qWmpKNFBPZzYzbjRaY0Nuenl0ZVVYYWw0QWtQR1JKcEU0azA3STdrdVlSU1Q?oc=5",
-    "img": "https://beninwebtv.com/wp-content/uploads/2025/06/Gazoduc-Energie-e%CC%81lectrique-au-Be%CC%81nin.webp"
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNb2ZNVlc5NFRWcFhYaThUZVdkLUNzMEE1REJrcEk2S1hrV2xlRkZXU3Q2Z3Z2cVdzcWlMUFQxNVZJc0dScHJfY2h1eFJ4V2t3emMwNHNDTGY0N1FoZExwYXRWbHV2VjBaYmZ2a0d0MU1Hem1nQUwzTU5Td2NRQlRCN3V2UElNY2Jmb09xWkw0V2J5eWVWN3dRS0RtWDRKLXlwZjlKSzc0bUtRc1dpd1d4SlVSUXhvVG12MzR5WUN3?oc=5",
+    "img": "https://cdn.legit.ng/images/1200x675/582382f321598aaf.jpeg?v=1"
    },
    {
     "level": "",
@@ -898,61 +898,25 @@
     "level": "",
     "cat": "worldwide",
     "owner": "Worldwide",
-    "title": "Global stock markets slump as Anthropic IPO fails to stem AI sell-off",
+    "title": "Hormuz crisis set to reshape global energy markets, IEA warns",
     "detail": "",
-    "source": "eia.media",
-    "date": "2026-11-20T10:02:21.000Z",
+    "source": "The Independent Uganda",
+    "date": "2026-11-20T13:00:10.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbGtKTzQwOHd6V29ST0Ryakt6bjJOMC05QWkySDhVVlZabzNadjVnclAzSWY3aFpZMGdKX2Q5TFNuZUJCcE1DbGJaU29BWFV4LUJQZEVPcnZzNm1oX3lFc2M4RXc3SXpNZVNzMGFQMFp3czJkSzQ0WWszRGJPcHVuVkNIWTgwZ3NkRkp1cGp6QkJSUGs?oc=5",
-    "img": "https://i.guim.co.uk/img/media/4099c293fe0771f309ff9ec3954f9933d234c1a0/272_0_3245_2596/master/3245.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b4a187a4418875abc5ce4bc5ecd3d4ba"
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOYm9KOWg1MVd2MG1mcmszbWZyUHRIQTJRUS11a0E5eG9SS2lHVTk5bzFhenJKNmJrdmlYakhqVVJ2RmwzeEJfUnNrQlNXTnkzOHVyZTc0cy1ydUhZWU1EeGJCTy14VGxGYUViSWl4by1SY3JWdzlzMkxjRnM5Q0lVRkxUSmpwUl91TGVZa0lSYlRsalEwNWc?oc=5",
+    "img": "https://img.ogj.com/files/base/ebm/ogj/image/2026/11/6aff32d16143d1aca42a3c8a-20026iea_outlook.png?auto=format,compress&fit=fill&fill=blur&w=1200&h=630"
    },
    {
     "level": "",
     "cat": "africa",
     "owner": "Africa",
-    "title": "Côte d’Ivoire : élue à la tête de la Communauté internationale de la noix de coco",
+    "title": "Gaz naturel : le Bénin, le Togo et la Côte d’Ivoire préparent des approvisionnements communs",
     "detail": "",
-    "source": "Bénin Web TV",
-    "date": "2026-11-20T11:55:48.000Z",
+    "source": "BENIN WEB TV",
+    "date": "2026-11-20T11:57:07.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTlJhai1jN29SaEt3QW1WV2I3b1d4SHdKS1c2Q3NyandnWDE4WUhmTFZ6SWR3akx0T0hIRktERUNHUEVjZnlLMjdnT21mTUlmak1UQU16dVRUN011ek91ZTBpNzBzTF9oSk5ldnh3M1BPRWRoaVN4UDRBQWVXbXlrMHZ1LTBuZmJ1cndwR0dEaw?oc=5",
-    "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625200-625199-1795175682.jpg"
-   },
-   {
-    "level": "",
-    "cat": "congo",
-    "owner": "Congo & CEMAC",
-    "title": "BDEAC : Après son premier Eurobond réussi, la banque ambitionne de lever près de",
-    "detail": "",
-    "source": "Sika Finance",
-    "date": "2026-11-20T10:54:34.000Z",
-    "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNRlRoVklnS3dGNnlnei0tcHpmZDA0VHBLQ3RnWGYybzloY3REeVh1VzkycnNONEs5aGRhRk0xSUFxb3FkdEVwWkZKTEdnMmotOWozTHlhM0p6Q2NNdEF6ZWFiYWZucjRadjZ1Vlo4TFlIaEEzcWhBdmNPZlN5VHJvSmlMRnlhUmFhaDhnQlF4RmtfQ2JUR2VKNjZDdXUwRXR2SmF1UzJhTmxXRzl3THBPbXMyQlBEdWx4MlhfaGJqcjhhOTJPa2FCR1duWUZCLUFHRjMwU19SVmkyemNBYzV3Z1FtZ0FpSmd2WjFnQUlIeXNXbFAtcW8tc2I4TnZ5emlZc2RCRGU2SGsxZ1lGYTR3ZEhlSQ?oc=5",
-    "img": null
-   },
-   {
-    "level": "",
-    "cat": "worldwide",
-    "owner": "Worldwide",
-    "title": "20th WAVES Film Bazaar Opens in Goa, Aims to Connect Filmmakers with Global Markets",
-    "detail": "",
-    "source": "DD News",
-    "date": "2026-11-20T09:46:29.000Z",
-    "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNd19fVmhrZGNlcW9lYVh5akd4a0lzSm5WYV9WckF5bDNORHY1eUduaXZMVl85VVpaMHBUdmVxd1ByeERueUhpNHVUYVd2cE5ucnp3OHB5ZTJJR0RHTXhzaTZLUU5PZjhvVjBXcDFYb2p1QjI4RFBheUlFZmVCQUM1dENUemtXdHBnX01Ia1dvR05oNnY0STVnSlNsQ0MwSGpJZ1EzSG9ZNlJHVU9a?oc=5",
-    "img": null
-   },
-   {
-    "level": "",
-    "cat": "africa",
-    "owner": "Africa",
-    "title": "Côte d’Ivoire : un institut de recherche café-cacao de 800 hectares en chantier à Divo",
-    "detail": "",
-    "source": "Bénin Web TV",
-    "date": "2026-11-20T11:34:21.000Z",
-    "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdGJEbWZGbURNUFIzYmZyVDBhb3F3aWQzcXJ5c2ZWdDh2X2FKdm1URndTS19yZlZaWGVTdkdoQ3lkazlsVHlja0VGWXEtekdxN0UzTHVjTnV5Ymc4T2FmYXRhbk96X29XMmZqSVp4SWlfLVhBOXhoYnlfeldTaTdjMTI3eGs0Mnp4YXc?oc=5",
-    "img": "https://www.koaci.com/assets/news/thumbnails/600/2026/11/photo_1795164760.jpg"
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOY1RoaFY0M2xCcGhOd25DdllZWHRDN0VXd0lPTGllZmx4Qk1HUlhVV2RhVndYc2ZqTEZuUy1BQ3NadTZOZlZia0FwbnlVdTU0Q2VSWmJFU21qWmpKNFBPZzYzbjRaY0Nuenl0ZVVYYWw0QWtQR1JKcEU0azA3STdrdVlSU1Q?oc=5",
+    "img": "https://beninwebtv.com/wp-content/uploads/2025/06/Gazoduc-Energie-e%CC%81lectrique-au-Be%CC%81nin.webp"
    },
    {
     "level": "",
@@ -970,25 +934,25 @@
     "level": "",
     "cat": "worldwide",
     "owner": "Worldwide",
-    "title": "Historic Trump–Xi–Putin Summit at APEC 2026: Key Agreements, Global Geopolitics and Implications for India",
+    "title": "Stocks Hit Worst Run Since 2023 as AI Trade Cracks: Markets Wrap",
     "detail": "",
-    "source": "Sanskriti IAS",
-    "date": "2026-11-20T07:38:56.000Z",
+    "source": "Bloomberg.com",
+    "date": "2026-11-20T12:30:41.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOdlY4YjA0dThrZFFHbHNHd0g4X2pzaE5FM1hQQ093ZXExVml4LUdrLUd4VFNfajQ2WXpMVGQxckJEZmYxWldSdnZRdnVSYUxoaWRCSmZwRUZVQUNsN1RwWnI3WmM5LTY4b1UxdWNuanhSNmZqZGNmbHk4NXFxN3hxcndLejNoMzZVOGpJdmhWSWk0d2NaazFpVWFMUjFOcHJWanZ6SkE4WVA1TTlfZXlXVGlDUW8xendHSFB6Rm5KTG9NTFZGNVVZR1dMcXdrNGNaRGZfMi0wTlJnbW14SHc?oc=5",
-    "img": "https://cdn.newsday.com/ace/c:ZTkyZjRjZmUtYTFhYS00:YWY0NTZjODYtZjJjNC00/landscape/1280"
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9Bem9kWjBIcUtfa0xHOW0yQm1mV3A0VFVFZlh4X0hvWjlmckZSTDNGWlB1NGtzWFkyTTVSc0tNNW9tbUxGNURvNExmRTdTYnJyTTJtUGd1dkEyZklWR2xOSkphQ2s1d0NjZE9CRDc4SWtreWJxbDVoOFFnM2toQldLUHR5VUZFTDk4bDBXaWdodTh1?oc=5",
+    "img": "https://media.morningstar.com/resizer/v2/6EVBWPJ3TNFUNINJ3ERRKKF6YI.jpg?auth=f50a1a29d7f7b3b18e3539cbdaa3bbe7a63881d742c5ec9c092aa1c1c77ff154&quality=80&height=1350&width=2400&crop=0,0:2400,1350"
    },
    {
     "level": "",
     "cat": "africa",
     "owner": "Africa",
-    "title": "Côte d’Ivoire : Endeavour présente une mine d’or à plus de 700 milliards de FCFA à Tanda",
+    "title": "Côte d’Ivoire : élue à la tête de la Communauté internationale de la noix de coco",
     "detail": "",
     "source": "Bénin Web TV",
-    "date": "2026-11-20T11:29:54.000Z",
+    "date": "2026-11-20T11:55:48.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSHk0N1VPR3d3N2ptSzJXVW5mVFl5cHJsNW94WksyQXJVNmc2R3NHM19zYng2NHZBU0NJWTB5V2F2X1dNOGJCdGpxaTlqNzBsNDhndWZKZkVXcnZMaGZxeHdmRklDUFMwMzJmRXd1NHg5TGt2ZDRZSV9oUnpWdUNCMVJGWDREZ1FSQTBnTw?oc=5",
-    "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625195-625194-1795174127.jpg"
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTlJhai1jN29SaEt3QW1WV2I3b1d4SHdKS1c2Q3NyandnWDE4WUhmTFZ6SWR3akx0T0hIRktERUNHUEVjZnlLMjdnT21mTUlmak1UQU16dVRUN011ek91ZTBpNzBzTF9oSk5ldnh3M1BPRWRoaVN4UDRBQWVXbXlrMHZ1LTBuZmJ1cndwR0dEaw?oc=5",
+    "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625200-625199-1795175682.jpg"
    },
    {
     "level": "",
@@ -1006,25 +970,25 @@
     "level": "",
     "cat": "worldwide",
     "owner": "Worldwide",
-    "title": "Expand North Star 2026 to bring global AI startups, investors to Dubai in December",
+    "title": "Forum unites Hong Kong Business Associations from global markets to explore new opportunities",
     "detail": "",
-    "source": "Gulf Business",
-    "date": "2026-11-20T07:02:02.000Z",
+    "source": "ANTARA News",
+    "date": "2026-11-20T12:08:12.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcnR4aXh0dmhNay04RGJFQkY1ZWgtVGhra2dhU20xamxRRlVUMkJ4ODlNbGVWUUNraWdrQ290QVRrcEs2aDZhcENkUkg0ZkxublNmUEVJSFA0dFRtaVMybEwyalRhYk5iRm51Z293ZEs0NlotOEFoalZoS2hrLXBubFZyLUJ0YUFTa2pZUjdGNmtyWnJ3OWw0aG9oYjRzaWdPQzhQNV9vTjJvMEVFUjFSa1pFck1pUWZZU18zWGRwQQ?oc=5",
-    "img": "https://i0.wp.com/tbreak.com/wp-content/uploads/2026/11/gulfnewsthumb2209.jpg?fit=1200%2C826&ssl=1"
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxONzRfWkZmZWlYZHRzbTVWVXhucXF3YnR1YWJocWZYZjRFcjN3b2dnNVpIeVgzNXRyQXVUNkNERW56ZGVjQ01PeVBMZ3ZrZnhZUDlSbGg1bm14M3AzdEpkWU9fNXNFa2tWOG96Ym1UTU5fcUp6cmtFaFVwb19qV1E0bmFSRWNIVHJndGxqU0g1Zk9nMXNTOW05VWxCRnNGdDRDeXpmaUplanZhUkJFUGZ3a0VnZ2x2WnRWWFBCZE9BTjJBS0Q1ZXZKTXVLONIB0AFBVV95cUxNWUZqRDItNlZyaW56MjRvbHhVdFdJaWNSVi1NQWlGUFBPMDhJYV9sMFpoS04xeGNvMjlMeVN2aHBOZUtYOWdRWEdkd1BqV3o2TC1WbFpTVDBKMnFpVzdlVHpqOW1ZY25mWVJnUUFTOFl6SWloaEFsdHlkLUppUFpfNmM0UmVRU3lVeTZoRmxRVDlEeDlPb1lOak9qaGM5NG9HVWRMMnJjNExoR2ZnTklEdUxfNDVObW5kZ0gzaFFNOHNkQXEtak96ZE13VGxOSnNr?oc=5",
+    "img": "https://iprsoftwaremedia.com/270/files/202611/d802f73f18eed717e3bbfb24a8c346b0/6afeed77ed6ae5679d626681_a747fb1b67b05757_6afed1d0da846f52982a9fa3_/a747fb1b67b05757_6afed1d0da846f52982a9fa3__hero.jpg?v=a8e5bf6a-d1de-4bdc-a4ec-2cd2afb2a5b9"
    },
    {
     "level": "",
     "cat": "africa",
     "owner": "Africa",
-    "title": "Non-oil Sector Now Accounts For 96% Of Nigeria’s GDP, Says Tinubu",
+    "title": "Côte d’Ivoire : un institut de recherche café-cacao de 800 hectares en chantier à Divo",
     "detail": "",
-    "source": "LEADERSHIP Newspapers",
-    "date": "2026-11-20T11:22:50.000Z",
+    "source": "Bénin Web TV",
+    "date": "2026-11-20T11:34:21.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxObkI5dURhMUgxMWxBb211dE0tVkFQZ1UyOS1CSWcwU3F0NWRLQ0NOLWh4N2k4Ql9oYUFuZmZGWU5xZHNKLXlMdVVWNHpPaV9USG5sSld1TmFpemc5aF9TRFBRY3RnVFFubktjUkJaYnlBcFJDVmowVUhpQzE5RkdFM3VtcDR5SXF3WjJrY3R3?oc=5",
-    "img": "https://leadership.ng/wp-content/uploads/2026/11/IMG-20261112-WA0027-1.jpg"
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdGJEbWZGbURNUFIzYmZyVDBhb3F3aWQzcXJ5c2ZWdDh2X2FKdm1URndTS19yZlZaWGVTdkdoQ3lkazlsVHlja0VGWXEtekdxN0UzTHVjTnV5Ymc4T2FmYXRhbk96X29XMmZqSVp4SWlfLVhBOXhoYnlfeldTaTdjMTI3eGs0Mnp4YXc?oc=5",
+    "img": "https://www.koaci.com/assets/news/thumbnails/600/2026/11/photo_1795164760.jpg"
    },
    {
     "level": "",
@@ -1037,6 +1001,42 @@
     "impact": "",
     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZkE2S2pKN1gyMGFhbDlnQ1JRelJadFB3MkRZZTJhX2x6a091Z3NVVE1WX0pPSmZyNFpKUGlpbC1pZDZub2pIVms2dzJIY0c5TWM2S3lxWXp3OVVhRUVYbEd4bVpVSDM2ek5ESDRCcHJnRXh0VHBhQmxCemNzNUoyOW12NUZUWGtMaXdDOW1R?oc=5",
     "img": "https://forbesafrique.com/wp-content/uploads/2026/11/IHS-TOWERS_1500-x-1000_forbesafrique.com-.jpg"
+   },
+   {
+    "level": "",
+    "cat": "worldwide",
+    "owner": "Worldwide",
+    "title": "Global stock markets slump as Anthropic IPO fails to stem AI sell-off",
+    "detail": "",
+    "source": "eia.media",
+    "date": "2026-11-20T10:02:21.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbGtKTzQwOHd6V29ST0Ryakt6bjJOMC05QWkySDhVVlZabzNadjVnclAzSWY3aFpZMGdKX2Q5TFNuZUJCcE1DbGJaU29BWFV4LUJQZEVPcnZzNm1oX3lFc2M4RXc3SXpNZVNzMGFQMFp3czJkSzQ0WWszRGJPcHVuVkNIWTgwZ3NkRkp1cGp6QkJSUGs?oc=5",
+    "img": "https://i.guim.co.uk/img/media/5a0726c71af19332d1a3095553ff3acc6e341a62/1043_0_5270_4216/master/5270.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=840bb47424232ef8465116aa8eea49a5"
+   },
+   {
+    "level": "",
+    "cat": "africa",
+    "owner": "Africa",
+    "title": "Côte d’Ivoire : Endeavour présente une mine d’or à plus de 700 milliards de FCFA à Tanda",
+    "detail": "",
+    "source": "Bénin Web TV",
+    "date": "2026-11-20T11:29:54.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSHk0N1VPR3d3N2ptSzJXVW5mVFl5cHJsNW94WksyQXJVNmc2R3NHM19zYng2NHZBU0NJWTB5V2F2X1dNOGJCdGpxaTlqNzBsNDhndWZKZkVXcnZMaGZxeHdmRklDUFMwMzJmRXd1NHg5TGt2ZDRZSV9oUnpWdUNCMVJGWDREZ1FSQTBnTw?oc=5",
+    "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625195-625194-1795174127.jpg"
+   },
+   {
+    "level": "",
+    "cat": "congo",
+    "owner": "Congo & CEMAC",
+    "title": "Développement du secteur maritime: Wimowca restitue les travaux de son séminaire au préfet de Pointe-Noire",
+    "detail": "",
+    "source": "Adiac Congo",
+    "date": "2026-11-19T21:18:00.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWjQtRlNsN0lPdmRTc1UtMkdVT0JMSDg5SVd6eVBwRjFMNUROTHgzbHZ1dUNkRF94S3ViM0NxblkwUjJhbGRKU3R6cUQ0TUlDbEJiODBidFJQY3gzVUFxYXpIWDBRYlQ1S3hsdEQxZDR4bDI0djZaRTZLUFRaR0x0dmhlT3JkYnBiTnZkTVJKQS1VNWI4aEVITHc1LVpYMlowSTVOd2lPZ3VrdUhYUWthY0ZnZGE2V0lMUEVIZi11VmM3eHJpVEJr?oc=5",
+    "img": "http://www.bing.com/th?id=ONUT.KHawWGj1oyHiZx0LbrhXEw&pid=News&w=900&h=1200&c=7&rs=1"
    }
   ],
   "fr": [
@@ -1044,25 +1044,25 @@
     "level": "",
     "cat": "worldwide",
     "owner": "Monde",
-    "title": "Stocks Hit Worst Run Since 2023 as AI Trade Cracks: Markets Wrap",
+    "title": "Asian stock markets sink without Anthropic dispelling concerns regarding AI",
     "detail": "",
-    "source": "Bloomberg.com",
-    "date": "2026-11-20T12:06:41.000Z",
+    "source": "Plataforma Media",
+    "date": "2026-11-20T13:07:56.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9Bem9kWjBIcUtfa0xHOW0yQm1mV3A0VFVFZlh4X0hvWjlmckZSTDNGWlB1NGtzWFkyTTVSc0tNNW9tbUxGNURvNExmRTdTYnJyTTJtUGd1dkEyZklWR2xOSkphQ2s1d0NjZE9CRDc4SWtreWJxbDVoOFFnM2toQldLUHR5VUZFTDk4bDBXaWdodTh1?oc=5",
-    "img": "https://media.morningstar.com/resizer/v2/6EVBWPJ3TNFUNINJ3ERRKKF6YI.jpg?auth=f50a1a29d7f7b3b18e3539cbdaa3bbe7a63881d742c5ec9c092aa1c1c77ff154&quality=80&height=1350&width=2400&crop=0,0:2400,1350"
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdWZCRUVnaGk1ekk4bk5ZZnl0THIxT3gyVXB3cjJuSkJHMnEweW9SaHNBZ3duUnJwUk5tLVhtUXFxMjdtbl9TZms0c2VKaVQxSU1UaUVlWnQ5N01FWW04cURQZjBrdnctODJUQXJ2UVplaW1EWGltTVJLWEVtNzV1RXU5aV9tYTRRcEpjbGdXVFpvMG1CNFA0cnF6QUd5WW95VHlXeWg5aWR4Y1ZJd2RTTzl3V0tTZ1dBZlFlZ3lvTQ?oc=5",
+    "img": null
    },
    {
     "level": "",
     "cat": "africa",
     "owner": "Afrique",
-    "title": "Gaz naturel : le Bénin, le Togo et la Côte d’Ivoire préparent des approvisionnements communs",
+    "title": "Relief as petrol landing cost hits 6-month low, marketers import more fuel",
     "detail": "",
-    "source": "BENIN WEB TV",
-    "date": "2026-11-20T11:57:07.000Z",
+    "source": "Legit News",
+    "date": "2026-11-20T13:24:30.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOY1RoaFY0M2xCcGhOd25DdllZWHRDN0VXd0lPTGllZmx4Qk1HUlhVV2RhVndYc2ZqTEZuUy1BQ3NadTZOZlZia0FwbnlVdTU0Q2VSWmJFU21qWmpKNFBPZzYzbjRaY0Nuenl0ZVVYYWw0QWtQR1JKcEU0azA3STdrdVlSU1Q?oc=5",
-    "img": "https://beninwebtv.com/wp-content/uploads/2025/06/Gazoduc-Energie-e%CC%81lectrique-au-Be%CC%81nin.webp"
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNb2ZNVlc5NFRWcFhYaThUZVdkLUNzMEE1REJrcEk2S1hrV2xlRkZXU3Q2Z3Z2cVdzcWlMUFQxNVZJc0dScHJfY2h1eFJ4V2t3emMwNHNDTGY0N1FoZExwYXRWbHV2VjBaYmZ2a0d0MU1Hem1nQUwzTU5Td2NRQlRCN3V2UElNY2Jmb09xWkw0V2J5eWVWN3dRS0RtWDRKLXlwZjlKSzc0bUtRc1dpd1d4SlVSUXhvVG12MzR5WUN3?oc=5",
+    "img": "https://cdn.legit.ng/images/1200x675/582382f321598aaf.jpeg?v=1"
    },
    {
     "level": "",
@@ -1080,61 +1080,25 @@
     "level": "",
     "cat": "worldwide",
     "owner": "Monde",
-    "title": "Global stock markets slump as Anthropic IPO fails to stem AI sell-off",
+    "title": "Hormuz crisis set to reshape global energy markets, IEA warns",
     "detail": "",
-    "source": "eia.media",
-    "date": "2026-11-20T10:02:21.000Z",
+    "source": "The Independent Uganda",
+    "date": "2026-11-20T13:00:10.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbGtKTzQwOHd6V29ST0Ryakt6bjJOMC05QWkySDhVVlZabzNadjVnclAzSWY3aFpZMGdKX2Q5TFNuZUJCcE1DbGJaU29BWFV4LUJQZEVPcnZzNm1oX3lFc2M4RXc3SXpNZVNzMGFQMFp3czJkSzQ0WWszRGJPcHVuVkNIWTgwZ3NkRkp1cGp6QkJSUGs?oc=5",
-    "img": "https://i.guim.co.uk/img/media/4099c293fe0771f309ff9ec3954f9933d234c1a0/272_0_3245_2596/master/3245.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b4a187a4418875abc5ce4bc5ecd3d4ba"
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOYm9KOWg1MVd2MG1mcmszbWZyUHRIQTJRUS11a0E5eG9SS2lHVTk5bzFhenJKNmJrdmlYakhqVVJ2RmwzeEJfUnNrQlNXTnkzOHVyZTc0cy1ydUhZWU1EeGJCTy14VGxGYUViSWl4by1SY3JWdzlzMkxjRnM5Q0lVRkxUSmpwUl91TGVZa0lSYlRsalEwNWc?oc=5",
+    "img": "https://img.ogj.com/files/base/ebm/ogj/image/2026/11/6aff32d16143d1aca42a3c8a-20026iea_outlook.png?auto=format,compress&fit=fill&fill=blur&w=1200&h=630"
    },
    {
     "level": "",
     "cat": "africa",
     "owner": "Afrique",
-    "title": "Côte d’Ivoire : élue à la tête de la Communauté internationale de la noix de coco",
+    "title": "Gaz naturel : le Bénin, le Togo et la Côte d’Ivoire préparent des approvisionnements communs",
     "detail": "",
-    "source": "Bénin Web TV",
-    "date": "2026-11-20T11:55:48.000Z",
+    "source": "BENIN WEB TV",
+    "date": "2026-11-20T11:57:07.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTlJhai1jN29SaEt3QW1WV2I3b1d4SHdKS1c2Q3NyandnWDE4WUhmTFZ6SWR3akx0T0hIRktERUNHUEVjZnlLMjdnT21mTUlmak1UQU16dVRUN011ek91ZTBpNzBzTF9oSk5ldnh3M1BPRWRoaVN4UDRBQWVXbXlrMHZ1LTBuZmJ1cndwR0dEaw?oc=5",
-    "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625200-625199-1795175682.jpg"
-   },
-   {
-    "level": "",
-    "cat": "congo",
-    "owner": "Congo & CEMAC",
-    "title": "BDEAC : Après son premier Eurobond réussi, la banque ambitionne de lever près de",
-    "detail": "",
-    "source": "Sika Finance",
-    "date": "2026-11-20T10:54:34.000Z",
-    "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNRlRoVklnS3dGNnlnei0tcHpmZDA0VHBLQ3RnWGYybzloY3REeVh1VzkycnNONEs5aGRhRk0xSUFxb3FkdEVwWkZKTEdnMmotOWozTHlhM0p6Q2NNdEF6ZWFiYWZucjRadjZ1Vlo4TFlIaEEzcWhBdmNPZlN5VHJvSmlMRnlhUmFhaDhnQlF4RmtfQ2JUR2VKNjZDdXUwRXR2SmF1UzJhTmxXRzl3THBPbXMyQlBEdWx4MlhfaGJqcjhhOTJPa2FCR1duWUZCLUFHRjMwU19SVmkyemNBYzV3Z1FtZ0FpSmd2WjFnQUlIeXNXbFAtcW8tc2I4TnZ5emlZc2RCRGU2SGsxZ1lGYTR3ZEhlSQ?oc=5",
-    "img": null
-   },
-   {
-    "level": "",
-    "cat": "worldwide",
-    "owner": "Monde",
-    "title": "20th WAVES Film Bazaar Opens in Goa, Aims to Connect Filmmakers with Global Markets",
-    "detail": "",
-    "source": "DD News",
-    "date": "2026-11-20T09:46:29.000Z",
-    "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNd19fVmhrZGNlcW9lYVh5akd4a0lzSm5WYV9WckF5bDNORHY1eUduaXZMVl85VVpaMHBUdmVxd1ByeERueUhpNHVUYVd2cE5ucnp3OHB5ZTJJR0RHTXhzaTZLUU5PZjhvVjBXcDFYb2p1QjI4RFBheUlFZmVCQUM1dENUemtXdHBnX01Ia1dvR05oNnY0STVnSlNsQ0MwSGpJZ1EzSG9ZNlJHVU9a?oc=5",
-    "img": null
-   },
-   {
-    "level": "",
-    "cat": "africa",
-    "owner": "Afrique",
-    "title": "Côte d’Ivoire : un institut de recherche café-cacao de 800 hectares en chantier à Divo",
-    "detail": "",
-    "source": "Bénin Web TV",
-    "date": "2026-11-20T11:34:21.000Z",
-    "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdGJEbWZGbURNUFIzYmZyVDBhb3F3aWQzcXJ5c2ZWdDh2X2FKdm1URndTS19yZlZaWGVTdkdoQ3lkazlsVHlja0VGWXEtekdxN0UzTHVjTnV5Ymc4T2FmYXRhbk96X29XMmZqSVp4SWlfLVhBOXhoYnlfeldTaTdjMTI3eGs0Mnp4YXc?oc=5",
-    "img": "https://www.koaci.com/assets/news/thumbnails/600/2026/11/photo_1795164760.jpg"
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOY1RoaFY0M2xCcGhOd25DdllZWHRDN0VXd0lPTGllZmx4Qk1HUlhVV2RhVndYc2ZqTEZuUy1BQ3NadTZOZlZia0FwbnlVdTU0Q2VSWmJFU21qWmpKNFBPZzYzbjRaY0Nuenl0ZVVYYWw0QWtQR1JKcEU0azA3STdrdVlSU1Q?oc=5",
+    "img": "https://beninwebtv.com/wp-content/uploads/2025/06/Gazoduc-Energie-e%CC%81lectrique-au-Be%CC%81nin.webp"
    },
    {
     "level": "",
@@ -1152,25 +1116,25 @@
     "level": "",
     "cat": "worldwide",
     "owner": "Monde",
-    "title": "Historic Trump–Xi–Putin Summit at APEC 2026: Key Agreements, Global Geopolitics and Implications for India",
+    "title": "Stocks Hit Worst Run Since 2023 as AI Trade Cracks: Markets Wrap",
     "detail": "",
-    "source": "Sanskriti IAS",
-    "date": "2026-11-20T07:38:56.000Z",
+    "source": "Bloomberg.com",
+    "date": "2026-11-20T12:30:41.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOdlY4YjA0dThrZFFHbHNHd0g4X2pzaE5FM1hQQ093ZXExVml4LUdrLUd4VFNfajQ2WXpMVGQxckJEZmYxWldSdnZRdnVSYUxoaWRCSmZwRUZVQUNsN1RwWnI3WmM5LTY4b1UxdWNuanhSNmZqZGNmbHk4NXFxN3hxcndLejNoMzZVOGpJdmhWSWk0d2NaazFpVWFMUjFOcHJWanZ6SkE4WVA1TTlfZXlXVGlDUW8xendHSFB6Rm5KTG9NTFZGNVVZR1dMcXdrNGNaRGZfMi0wTlJnbW14SHc?oc=5",
-    "img": "https://cdn.newsday.com/ace/c:ZTkyZjRjZmUtYTFhYS00:YWY0NTZjODYtZjJjNC00/landscape/1280"
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9Bem9kWjBIcUtfa0xHOW0yQm1mV3A0VFVFZlh4X0hvWjlmckZSTDNGWlB1NGtzWFkyTTVSc0tNNW9tbUxGNURvNExmRTdTYnJyTTJtUGd1dkEyZklWR2xOSkphQ2s1d0NjZE9CRDc4SWtreWJxbDVoOFFnM2toQldLUHR5VUZFTDk4bDBXaWdodTh1?oc=5",
+    "img": "https://media.morningstar.com/resizer/v2/6EVBWPJ3TNFUNINJ3ERRKKF6YI.jpg?auth=f50a1a29d7f7b3b18e3539cbdaa3bbe7a63881d742c5ec9c092aa1c1c77ff154&quality=80&height=1350&width=2400&crop=0,0:2400,1350"
    },
    {
     "level": "",
     "cat": "africa",
     "owner": "Afrique",
-    "title": "Côte d’Ivoire : Endeavour présente une mine d’or à plus de 700 milliards de FCFA à Tanda",
+    "title": "Côte d’Ivoire : élue à la tête de la Communauté internationale de la noix de coco",
     "detail": "",
     "source": "Bénin Web TV",
-    "date": "2026-11-20T11:29:54.000Z",
+    "date": "2026-11-20T11:55:48.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSHk0N1VPR3d3N2ptSzJXVW5mVFl5cHJsNW94WksyQXJVNmc2R3NHM19zYng2NHZBU0NJWTB5V2F2X1dNOGJCdGpxaTlqNzBsNDhndWZKZkVXcnZMaGZxeHdmRklDUFMwMzJmRXd1NHg5TGt2ZDRZSV9oUnpWdUNCMVJGWDREZ1FSQTBnTw?oc=5",
-    "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625195-625194-1795174127.jpg"
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTlJhai1jN29SaEt3QW1WV2I3b1d4SHdKS1c2Q3NyandnWDE4WUhmTFZ6SWR3akx0T0hIRktERUNHUEVjZnlLMjdnT21mTUlmak1UQU16dVRUN011ek91ZTBpNzBzTF9oSk5ldnh3M1BPRWRoaVN4UDRBQWVXbXlrMHZ1LTBuZmJ1cndwR0dEaw?oc=5",
+    "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625200-625199-1795175682.jpg"
    },
    {
     "level": "",
@@ -1188,25 +1152,25 @@
     "level": "",
     "cat": "worldwide",
     "owner": "Monde",
-    "title": "Expand North Star 2026 to bring global AI startups, investors to Dubai in December",
+    "title": "Forum unites Hong Kong Business Associations from global markets to explore new opportunities",
     "detail": "",
-    "source": "Gulf Business",
-    "date": "2026-11-20T07:02:02.000Z",
+    "source": "ANTARA News",
+    "date": "2026-11-20T12:08:12.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcnR4aXh0dmhNay04RGJFQkY1ZWgtVGhra2dhU20xamxRRlVUMkJ4ODlNbGVWUUNraWdrQ290QVRrcEs2aDZhcENkUkg0ZkxublNmUEVJSFA0dFRtaVMybEwyalRhYk5iRm51Z293ZEs0NlotOEFoalZoS2hrLXBubFZyLUJ0YUFTa2pZUjdGNmtyWnJ3OWw0aG9oYjRzaWdPQzhQNV9vTjJvMEVFUjFSa1pFck1pUWZZU18zWGRwQQ?oc=5",
-    "img": "https://i0.wp.com/tbreak.com/wp-content/uploads/2026/11/gulfnewsthumb2209.jpg?fit=1200%2C826&ssl=1"
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxONzRfWkZmZWlYZHRzbTVWVXhucXF3YnR1YWJocWZYZjRFcjN3b2dnNVpIeVgzNXRyQXVUNkNERW56ZGVjQ01PeVBMZ3ZrZnhZUDlSbGg1bm14M3AzdEpkWU9fNXNFa2tWOG96Ym1UTU5fcUp6cmtFaFVwb19qV1E0bmFSRWNIVHJndGxqU0g1Zk9nMXNTOW05VWxCRnNGdDRDeXpmaUplanZhUkJFUGZ3a0VnZ2x2WnRWWFBCZE9BTjJBS0Q1ZXZKTXVLONIB0AFBVV95cUxNWUZqRDItNlZyaW56MjRvbHhVdFdJaWNSVi1NQWlGUFBPMDhJYV9sMFpoS04xeGNvMjlMeVN2aHBOZUtYOWdRWEdkd1BqV3o2TC1WbFpTVDBKMnFpVzdlVHpqOW1ZY25mWVJnUUFTOFl6SWloaEFsdHlkLUppUFpfNmM0UmVRU3lVeTZoRmxRVDlEeDlPb1lOak9qaGM5NG9HVWRMMnJjNExoR2ZnTklEdUxfNDVObW5kZ0gzaFFNOHNkQXEtak96ZE13VGxOSnNr?oc=5",
+    "img": "https://iprsoftwaremedia.com/270/files/202611/d802f73f18eed717e3bbfb24a8c346b0/6afeed77ed6ae5679d626681_a747fb1b67b05757_6afed1d0da846f52982a9fa3_/a747fb1b67b05757_6afed1d0da846f52982a9fa3__hero.jpg?v=a8e5bf6a-d1de-4bdc-a4ec-2cd2afb2a5b9"
    },
    {
     "level": "",
     "cat": "africa",
     "owner": "Afrique",
-    "title": "Non-oil Sector Now Accounts For 96% Of Nigeria’s GDP, Says Tinubu",
+    "title": "Côte d’Ivoire : un institut de recherche café-cacao de 800 hectares en chantier à Divo",
     "detail": "",
-    "source": "LEADERSHIP Newspapers",
-    "date": "2026-11-20T11:22:50.000Z",
+    "source": "Bénin Web TV",
+    "date": "2026-11-20T11:34:21.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxObkI5dURhMUgxMWxBb211dE0tVkFQZ1UyOS1CSWcwU3F0NWRLQ0NOLWh4N2k4Ql9oYUFuZmZGWU5xZHNKLXlMdVVWNHpPaV9USG5sSld1TmFpemc5aF9TRFBRY3RnVFFubktjUkJaYnlBcFJDVmowVUhpQzE5RkdFM3VtcDR5SXF3WjJrY3R3?oc=5",
-    "img": "https://leadership.ng/wp-content/uploads/2026/11/IMG-20261112-WA0027-1.jpg"
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdGJEbWZGbURNUFIzYmZyVDBhb3F3aWQzcXJ5c2ZWdDh2X2FKdm1URndTS19yZlZaWGVTdkdoQ3lkazlsVHlja0VGWXEtekdxN0UzTHVjTnV5Ymc4T2FmYXRhbk96X29XMmZqSVp4SWlfLVhBOXhoYnlfeldTaTdjMTI3eGs0Mnp4YXc?oc=5",
+    "img": "https://www.koaci.com/assets/news/thumbnails/600/2026/11/photo_1795164760.jpg"
    },
    {
     "level": "",
@@ -1219,6 +1183,42 @@
     "impact": "",
     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZkE2S2pKN1gyMGFhbDlnQ1JRelJadFB3MkRZZTJhX2x6a091Z3NVVE1WX0pPSmZyNFpKUGlpbC1pZDZub2pIVms2dzJIY0c5TWM2S3lxWXp3OVVhRUVYbEd4bVpVSDM2ek5ESDRCcHJnRXh0VHBhQmxCemNzNUoyOW12NUZUWGtMaXdDOW1R?oc=5",
     "img": "https://forbesafrique.com/wp-content/uploads/2026/11/IHS-TOWERS_1500-x-1000_forbesafrique.com-.jpg"
+   },
+   {
+    "level": "",
+    "cat": "worldwide",
+    "owner": "Monde",
+    "title": "Global stock markets slump as Anthropic IPO fails to stem AI sell-off",
+    "detail": "",
+    "source": "eia.media",
+    "date": "2026-11-20T10:02:21.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbGtKTzQwOHd6V29ST0Ryakt6bjJOMC05QWkySDhVVlZabzNadjVnclAzSWY3aFpZMGdKX2Q5TFNuZUJCcE1DbGJaU29BWFV4LUJQZEVPcnZzNm1oX3lFc2M4RXc3SXpNZVNzMGFQMFp3czJkSzQ0WWszRGJPcHVuVkNIWTgwZ3NkRkp1cGp6QkJSUGs?oc=5",
+    "img": "https://i.guim.co.uk/img/media/5a0726c71af19332d1a3095553ff3acc6e341a62/1043_0_5270_4216/master/5270.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=840bb47424232ef8465116aa8eea49a5"
+   },
+   {
+    "level": "",
+    "cat": "africa",
+    "owner": "Afrique",
+    "title": "Côte d’Ivoire : Endeavour présente une mine d’or à plus de 700 milliards de FCFA à Tanda",
+    "detail": "",
+    "source": "Bénin Web TV",
+    "date": "2026-11-20T11:29:54.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSHk0N1VPR3d3N2ptSzJXVW5mVFl5cHJsNW94WksyQXJVNmc2R3NHM19zYng2NHZBU0NJWTB5V2F2X1dNOGJCdGpxaTlqNzBsNDhndWZKZkVXcnZMaGZxeHdmRklDUFMwMzJmRXd1NHg5TGt2ZDRZSV9oUnpWdUNCMVJGWDREZ1FSQTBnTw?oc=5",
+    "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625195-625194-1795174127.jpg"
+   },
+   {
+    "level": "",
+    "cat": "congo",
+    "owner": "Congo & CEMAC",
+    "title": "Développement du secteur maritime: Wimowca restitue les travaux de son séminaire au préfet de Pointe-Noire",
+    "detail": "",
+    "source": "Adiac Congo",
+    "date": "2026-11-19T21:18:00.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWjQtRlNsN0lPdmRTc1UtMkdVT0JMSDg5SVd6eVBwRjFMNUROTHgzbHZ1dUNkRF94S3ViM0NxblkwUjJhbGRKU3R6cUQ0TUlDbEJiODBidFJQY3gzVUFxYXpIWDBRYlQ1S3hsdEQxZDR4bDI0djZaRTZLUFRaR0x0dmhlT3JkYnBiTnZkTVJKQS1VNWI4aEVITHc1LVpYMlowSTVOd2lPZ3VrdUhYUWthY0ZnZGE2V0lMUEVIZi11VmM3eHJpVEJr?oc=5",
+    "img": "http://www.bing.com/th?id=ONUT.KHawWGj1oyHiZx0LbrhXEw&pid=News&w=900&h=1200&c=7&rs=1"
    }
   ]
  },
@@ -1339,24 +1339,53 @@
    "id": "n0-2026-11-20",
    "cat": "worldwide",
    "lang": "en",
-   "title": "Stocks Hit Worst Run Since 2023 as AI Trade Cracks: Markets Wrap",
-   "source": "Bloomberg.com",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9Bem9kWjBIcUtfa0xHOW0yQm1mV3A0VFVFZlh4X0hvWjlmckZSTDNGWlB1NGtzWFkyTTVSc0tNNW9tbUxGNURvNExmRTdTYnJyTTJtUGd1dkEyZklWR2xOSkphQ2s1d0NjZE9CRDc4SWtreWJxbDVoOFFnM2toQldLUHR5VUZFTDk4bDBXaWdodTh1?oc=5",
-   "date": "2026-11-20T12:06:41.000Z",
-   "img": "https://media.morningstar.com/resizer/v2/6EVBWPJ3TNFUNINJ3ERRKKF6YI.jpg?auth=f50a1a29d7f7b3b18e3539cbdaa3bbe7a63881d742c5ec9c092aa1c1c77ff154&quality=80&height=1350&width=2400&crop=0,0:2400,1350"
+   "title": "Asian stock markets sink without Anthropic dispelling concerns regarding AI",
+   "source": "Plataforma Media",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdWZCRUVnaGk1ekk4bk5ZZnl0THIxT3gyVXB3cjJuSkJHMnEweW9SaHNBZ3duUnJwUk5tLVhtUXFxMjdtbl9TZms0c2VKaVQxSU1UaUVlWnQ5N01FWW04cURQZjBrdnctODJUQXJ2UVplaW1EWGltTVJLWEVtNzV1RXU5aV9tYTRRcEpjbGdXVFpvMG1CNFA0cnF6QUd5WW95VHlXeWg5aWR4Y1ZJd2RTTzl3V0tTZ1dBZlFlZ3lvTQ?oc=5",
+   "date": "2026-11-20T13:07:56.000Z"
   },
   {
    "id": "n1-2026-11-20",
+   "cat": "worldwide",
+   "lang": "en",
+   "title": "Hormuz crisis set to reshape global energy markets, IEA warns",
+   "source": "The Independent Uganda",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOYm9KOWg1MVd2MG1mcmszbWZyUHRIQTJRUS11a0E5eG9SS2lHVTk5bzFhenJKNmJrdmlYakhqVVJ2RmwzeEJfUnNrQlNXTnkzOHVyZTc0cy1ydUhZWU1EeGJCTy14VGxGYUViSWl4by1SY3JWdzlzMkxjRnM5Q0lVRkxUSmpwUl91TGVZa0lSYlRsalEwNWc?oc=5",
+   "date": "2026-11-20T13:00:10.000Z",
+   "img": "https://img.ogj.com/files/base/ebm/ogj/image/2026/11/6aff32d16143d1aca42a3c8a-20026iea_outlook.png?auto=format,compress&fit=fill&fill=blur&w=1200&h=630"
+  },
+  {
+   "id": "n2-2026-11-20",
+   "cat": "worldwide",
+   "lang": "en",
+   "title": "Stocks Hit Worst Run Since 2023 as AI Trade Cracks: Markets Wrap",
+   "source": "Bloomberg.com",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9Bem9kWjBIcUtfa0xHOW0yQm1mV3A0VFVFZlh4X0hvWjlmckZSTDNGWlB1NGtzWFkyTTVSc0tNNW9tbUxGNURvNExmRTdTYnJyTTJtUGd1dkEyZklWR2xOSkphQ2s1d0NjZE9CRDc4SWtreWJxbDVoOFFnM2toQldLUHR5VUZFTDk4bDBXaWdodTh1?oc=5",
+   "date": "2026-11-20T12:30:41.000Z",
+   "img": "https://media.morningstar.com/resizer/v2/6EVBWPJ3TNFUNINJ3ERRKKF6YI.jpg?auth=f50a1a29d7f7b3b18e3539cbdaa3bbe7a63881d742c5ec9c092aa1c1c77ff154&quality=80&height=1350&width=2400&crop=0,0:2400,1350"
+  },
+  {
+   "id": "n3-2026-11-20",
+   "cat": "worldwide",
+   "lang": "en",
+   "title": "Forum unites Hong Kong Business Associations from global markets to explore new opportunities",
+   "source": "ANTARA News",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxONzRfWkZmZWlYZHRzbTVWVXhucXF3YnR1YWJocWZYZjRFcjN3b2dnNVpIeVgzNXRyQXVUNkNERW56ZGVjQ01PeVBMZ3ZrZnhZUDlSbGg1bm14M3AzdEpkWU9fNXNFa2tWOG96Ym1UTU5fcUp6cmtFaFVwb19qV1E0bmFSRWNIVHJndGxqU0g1Zk9nMXNTOW05VWxCRnNGdDRDeXpmaUplanZhUkJFUGZ3a0VnZ2x2WnRWWFBCZE9BTjJBS0Q1ZXZKTXVLONIB0AFBVV95cUxNWUZqRDItNlZyaW56MjRvbHhVdFdJaWNSVi1NQWlGUFBPMDhJYV9sMFpoS04xeGNvMjlMeVN2aHBOZUtYOWdRWEdkd1BqV3o2TC1WbFpTVDBKMnFpVzdlVHpqOW1ZY25mWVJnUUFTOFl6SWloaEFsdHlkLUppUFpfNmM0UmVRU3lVeTZoRmxRVDlEeDlPb1lOak9qaGM5NG9HVWRMMnJjNExoR2ZnTklEdUxfNDVObW5kZ0gzaFFNOHNkQXEtak96ZE13VGxOSnNr?oc=5",
+   "date": "2026-11-20T12:08:12.000Z",
+   "img": "https://iprsoftwaremedia.com/270/files/202611/d802f73f18eed717e3bbfb24a8c346b0/6afeed77ed6ae5679d626681_a747fb1b67b05757_6afed1d0da846f52982a9fa3_/a747fb1b67b05757_6afed1d0da846f52982a9fa3__hero.jpg?v=a8e5bf6a-d1de-4bdc-a4ec-2cd2afb2a5b9"
+  },
+  {
+   "id": "n4-2026-11-20",
    "cat": "worldwide",
    "lang": "en",
    "title": "Global stock markets slump as Anthropic IPO fails to stem AI sell-off",
    "source": "eia.media",
    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbGtKTzQwOHd6V29ST0Ryakt6bjJOMC05QWkySDhVVlZabzNadjVnclAzSWY3aFpZMGdKX2Q5TFNuZUJCcE1DbGJaU29BWFV4LUJQZEVPcnZzNm1oX3lFc2M4RXc3SXpNZVNzMGFQMFp3czJkSzQ0WWszRGJPcHVuVkNIWTgwZ3NkRkp1cGp6QkJSUGs?oc=5",
    "date": "2026-11-20T10:02:21.000Z",
-   "img": "https://i.guim.co.uk/img/media/4099c293fe0771f309ff9ec3954f9933d234c1a0/272_0_3245_2596/master/3245.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b4a187a4418875abc5ce4bc5ecd3d4ba"
+   "img": "https://i.guim.co.uk/img/media/5a0726c71af19332d1a3095553ff3acc6e341a62/1043_0_5270_4216/master/5270.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=840bb47424232ef8465116aa8eea49a5"
   },
   {
-   "id": "n2-2026-11-20",
+   "id": "n5-2026-11-20",
    "cat": "worldwide",
    "lang": "en",
    "title": "20th WAVES Film Bazaar Opens in Goa, Aims to Connect Filmmakers with Global Markets",
@@ -1365,54 +1394,35 @@
    "date": "2026-11-20T09:46:29.000Z"
   },
   {
-   "id": "n3-2026-11-20",
+   "id": "n6-2026-11-20",
    "cat": "worldwide",
    "lang": "en",
    "title": "Historic Trump–Xi–Putin Summit at APEC 2026: Key Agreements, Global Geopolitics and Implications for India",
    "source": "Sanskriti IAS",
    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOdlY4YjA0dThrZFFHbHNHd0g4X2pzaE5FM1hQQ093ZXExVml4LUdrLUd4VFNfajQ2WXpMVGQxckJEZmYxWldSdnZRdnVSYUxoaWRCSmZwRUZVQUNsN1RwWnI3WmM5LTY4b1UxdWNuanhSNmZqZGNmbHk4NXFxN3hxcndLejNoMzZVOGpJdmhWSWk0d2NaazFpVWFMUjFOcHJWanZ6SkE4WVA1TTlfZXlXVGlDUW8xendHSFB6Rm5KTG9NTFZGNVVZR1dMcXdrNGNaRGZfMi0wTlJnbW14SHc?oc=5",
-   "date": "2026-11-20T07:38:56.000Z",
-   "img": "https://cdn.newsday.com/ace/c:ZTkyZjRjZmUtYTFhYS00:YWY0NTZjODYtZjJjNC00/landscape/1280"
+   "date": "2026-11-20T07:38:56.000Z"
   },
   {
-   "id": "n4-2026-11-20",
+   "id": "n7-2026-11-20",
    "cat": "worldwide",
    "lang": "en",
    "title": "Expand North Star 2026 to bring global AI startups, investors to Dubai in December",
    "source": "Gulf Business",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcnR4aXh0dmhNay04RGJFQkY1ZWgtVGhra2dhU20xamxRRlVUMkJ4ODlNbGVWUUNraWdrQ290QVRrcEs2aDZhcENkUkg0ZkxublNmUEVJSFA0dFRtaVMybEwyalRhYk5iRm51Z293ZEs0NlotOEFoalZoS2hrLXBubFZyLUJ0YUFTa2pZUjdGNmtyWnJ3OWw0aG9oYjRzaWdPQzhQNV9vTjJvMEVFUjFSa1pFck1pUWZZU18zWGRwQQ?oc=5",
-   "date": "2026-11-20T07:02:02.000Z",
-   "img": "https://i0.wp.com/tbreak.com/wp-content/uploads/2026/11/gulfnewsthumb2209.jpg?fit=1200%2C826&ssl=1"
-  },
-  {
-   "id": "n5-2026-11-19",
-   "cat": "worldwide",
-   "lang": "en",
-   "title": "Why $100 Oil is No Longer Spooking Equity Markets",
-   "source": "EnergyNow.com",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZzBxc2IwVXpIRFdPNVVVRmpIMHp5bDN5Vzg4VjJ3NXp5Q3gxTm9GSlBOWW9xLTJCNVRzZUU4MVdPNmRvb1ZRcHUxR1pndGpZMmRrN2JuclFMdHNHRXZ0SExSdGJnR0tGT3cteUsxTXcwTUE0a0hIckdJRHVfQTVGNmQyeEtKSGhpSFpSZktCX09sRHBZb2c?oc=5",
-   "date": "2026-11-19T22:43:01.000Z"
-  },
-  {
-   "id": "n6-2026-11-19",
-   "cat": "worldwide",
-   "lang": "en",
-   "title": "Piyush Goyal urges FICCI to evolve into global chamber, strengthen India’s economic engagement with the world",
-   "source": "DD News",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNVEhsQVZKOHBXOGtmeGVSdE1Na1kzaTc1eGl6WHBTdnp1ZkVPdUhiaklHM08tWEpUR01Bb3M4dV9QZUZQTGg0NF9tek0yN3g0WWZLWU1oUmRVRDNlM3JqSzJEQmxfWWF0V09TNFE2clNrd1ZRSUVydHp0Ti1fRUUxTmZWbmlxMVpocmM4YTBzMDBaQzduT3lKYzd5SEhxT0tPMnJTYTRfal9ZZHFQWmxWM3Rha3R6S012T1dHVDlKdmwtY0JiU0NjcHU5TUc4QQ?oc=5",
-   "date": "2026-11-19T19:24:55.000Z"
-  },
-  {
-   "id": "n7-2026-11-19",
-   "cat": "worldwide",
-   "lang": "en",
-   "title": "WAVES Film Bazaar celebrates 20 years of connecting Indian cinema with global markets",
-   "source": "DD News",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbHFieFNmNWlobnFHd1NNUlVDbk9qMkhRaERsOUNXekdfZGlWRmQ2UDZoN2d5X21VaDBhOXRqMF9BME5iMl9HOEQwaGNwVzRZSnc0UkVyMGpZT2dyeTR1T2tUV0hlZUFsOXloNTJOOENwVGw3dlN2OW9mRlhUcjhUcC1ENndkYTN4QXJFWUpHSTRRd0c2WkpHbGVia3h0X0p4MVlhdEg3NENMcmtGSjVkOQ?oc=5",
-   "date": "2026-11-19T19:03:07.000Z"
+   "date": "2026-11-20T07:02:02.000Z"
   },
   {
    "id": "n8-2026-11-20",
+   "cat": "africa",
+   "lang": "en",
+   "title": "Relief as petrol landing cost hits 6-month low, marketers import more fuel",
+   "source": "Legit News",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNb2ZNVlc5NFRWcFhYaThUZVdkLUNzMEE1REJrcEk2S1hrV2xlRkZXU3Q2Z3Z2cVdzcWlMUFQxNVZJc0dScHJfY2h1eFJ4V2t3emMwNHNDTGY0N1FoZExwYXRWbHV2VjBaYmZ2a0d0MU1Hem1nQUwzTU5Td2NRQlRCN3V2UElNY2Jmb09xWkw0V2J5eWVWN3dRS0RtWDRKLXlwZjlKSzc0bUtRc1dpd1d4SlVSUXhvVG12MzR5WUN3?oc=5",
+   "date": "2026-11-20T13:24:30.000Z",
+   "img": "https://cdn.legit.ng/images/1200x675/582382f321598aaf.jpeg?v=1"
+  },
+  {
+   "id": "n9-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "Gaz naturel : le Bénin, le Togo et la Côte d’Ivoire préparent des approvisionnements communs",
@@ -1422,7 +1432,7 @@
    "img": "https://beninwebtv.com/wp-content/uploads/2025/06/Gazoduc-Energie-e%CC%81lectrique-au-Be%CC%81nin.webp"
   },
   {
-   "id": "n9-2026-11-20",
+   "id": "n10-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "Côte d’Ivoire : élue à la tête de la Communauté internationale de la noix de coco",
@@ -1432,7 +1442,7 @@
    "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625200-625199-1795175682.jpg"
   },
   {
-   "id": "n10-2026-11-20",
+   "id": "n11-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "Côte d’Ivoire : un institut de recherche café-cacao de 800 hectares en chantier à Divo",
@@ -1442,7 +1452,7 @@
    "img": "https://www.koaci.com/assets/news/thumbnails/600/2026/11/photo_1795164760.jpg"
   },
   {
-   "id": "n11-2026-11-20",
+   "id": "n12-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "Côte d’Ivoire : Endeavour présente une mine d’or à plus de 700 milliards de FCFA à Tanda",
@@ -1452,23 +1462,14 @@
    "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625195-625194-1795174127.jpg"
   },
   {
-   "id": "n12-2026-11-20",
+   "id": "n13-2026-11-20",
    "cat": "africa",
    "lang": "en",
    "title": "Non-oil Sector Now Accounts For 96% Of Nigeria’s GDP, Says Tinubu",
    "source": "LEADERSHIP Newspapers",
    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxObkI5dURhMUgxMWxBb211dE0tVkFQZ1UyOS1CSWcwU3F0NWRLQ0NOLWh4N2k4Ql9oYUFuZmZGWU5xZHNKLXlMdVVWNHpPaV9USG5sSld1TmFpemc5aF9TRFBRY3RnVFFubktjUkJaYnlBcFJDVmowVUhpQzE5RkdFM3VtcDR5SXF3WjJrY3R3?oc=5",
    "date": "2026-11-20T11:22:50.000Z",
-   "img": "https://leadership.ng/wp-content/uploads/2026/11/IMG-20261112-WA0027-1.jpg"
-  },
-  {
-   "id": "n13-2026-11-20",
-   "cat": "africa",
-   "lang": "fr",
-   "title": "Côte d’Ivoire : Le Mercedes-Benz OF 1017 Midi Intégral officiellement présenté à Abidjan",
-   "source": "afrik soir",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVHMtaG53bkFMYTAzeWlLQUdTemQ5Rnp5aEc5ZS1XTDJSZ2xFN3IyTkUzcUVXUF8zczVjQ0tOZnpTZ3NlZVJCZXVCd0VkajFfU3JrUDRvT085eGhaeTVWa2pHVi1LbVFDZWNyMGVZNnhyME5FTmlZY2kxVzJFYTBOb210WjZSV2Yxb1FlN2ZrRzJ0QWY2LXJjczNWa1pyaUNkR1FKUHlRdERpeHpv?oc=5",
-   "date": "2026-11-20T11:09:40.000Z"
+   "img": "http://www.bing.com/th?id=ONUT._7z9j-pNhdpiEHpC5aA90A&pid=News&w=900&h=1200&c=7&rs=1"
   },
   {
    "id": "n14-2026-11-20",
@@ -1543,7 +1544,8 @@
    "title": "Développement du secteur maritime: Wimowca restitue les travaux de son séminaire au préfet de Pointe-Noire",
    "source": "Adiac Congo",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWjQtRlNsN0lPdmRTc1UtMkdVT0JMSDg5SVd6eVBwRjFMNUROTHgzbHZ1dUNkRF94S3ViM0NxblkwUjJhbGRKU3R6cUQ0TUlDbEJiODBidFJQY3gzVUFxYXpIWDBRYlQ1S3hsdEQxZDR4bDI0djZaRTZLUFRaR0x0dmhlT3JkYnBiTnZkTVJKQS1VNWI4aEVITHc1LVpYMlowSTVOd2lPZ3VrdUhYUWthY0ZnZGE2V0lMUEVIZi11VmM3eHJpVEJr?oc=5",
-   "date": "2026-11-19T21:18:00.000Z"
+   "date": "2026-11-19T21:18:00.000Z",
+   "img": "http://www.bing.com/th?id=ONUT.KHawWGj1oyHiZx0LbrhXEw&pid=News&w=900&h=1200&c=7&rs=1"
   },
   {
    "id": "n22-2026-11-19",
@@ -1617,19 +1619,11 @@
    "title": "US dollar hits multi-month highs on hawkish Fed bets",
    "source": "TorFX News",
    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbFlCdC1iWEZfcXMxRTFpTGtOMGp4M1czd0dOX2tLT2lqTEt0eGtRQ2lKMHRCWWZPWXBiSGluMmMtdmUtQlJlY1kyOExQZ2V4Z29uOVUxY1VoT3JNRHI5MUFCeWpZeS1HazBaQUtpeG4wWGhCTHdlZVE4VEEySHhFX3liNE9QLWE3TDNpQzRUYlJTUUhuZ0ww?oc=5",
-   "date": "2026-11-19T09:08:29.000Z"
+   "date": "2026-11-19T09:08:29.000Z",
+   "img": "http://www.bing.com/th?id=ONUT.ZoB_ucwV8l3do7Q8DrZz0A&pid=News&w=900&h=1200&c=7&rs=1"
   },
   {
    "id": "n30-2026-11-19",
-   "cat": "markets",
-   "lang": "en",
-   "title": "Euro gains ground against Canadian Dollar ahead of ECB Lagarde’s speech",
-   "source": "FXStreet",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVkpnLWpQYVFNQVhGMTcyUmgzdE1BLVhIdmFKbllsMFRFTFp4eTFpLXlkb3UzQUhmNUx5Q21XUHo5NmhzNkJJM2Vhc1MtMTJOTEliMU9ua3FXLUdVbGJJdGw0T2pXU0FzalJkMC15QW5aN1pyR2VqNG0wU2wtM2wxcFpjZ3pmUzR5Mk84ck5OYVZsV0FfWU9pOHhDMjF0ckk5Y3VYOU9wVUpOZGp2b0x1WWh6NA?oc=5",
-   "date": "2026-11-19T09:05:53.000Z"
-  },
-  {
-   "id": "n31-2026-11-19",
    "cat": "markets",
    "lang": "en",
    "title": "Euro shows little movement amid steady US Dollar and hawkish Fed signals",
@@ -1638,7 +1632,45 @@
    "date": "2026-11-19T08:13:42.000Z"
   },
   {
+   "id": "n31-2026-11-19",
+   "cat": "markets",
+   "lang": "en",
+   "title": "Euro Slips as Hawkish Fed Weighs on EUR/USD, Bears Rule",
+   "source": "TradingPedia",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOV2lCNlFiUWtHZnBITU1vWG9NNjczMHlHbldQX3pnVlVHdmVPZGs0SnlCMk4xdHVTd1ZyeTNpZlNxYjAyOFZyUWI1OGVEVUR4RnEwTzFTOGNTZGlqRnd6QWpCd1plSmFpUDF1Q2RXUWdJT1Zab1RyYjd4NUUwOEhUekdSTnNKREhIZUpHMlRDcEtDbzJZRkdHbHBHSQ?oc=5",
+   "date": "2026-11-19T07:35:41.000Z"
+  },
+  {
    "id": "n32-2026-11-20",
+   "cat": "bev",
+   "lang": "en",
+   "title": "India opens fresh applications for duty-free raw sugar imports",
+   "source": "Food Business Middle East & Africa",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQaFptT3ZhQ3VVb20zbUcxTks0LUMtTTRtRHYzclc4N1FEdWdUR1BvVXhja0VBdV9tUkJNYWdWTy1tS0R5blRGNm9LRWlUUXVMMGgtOHRoUnBYWUotYWxMeHc2VHpOcWxNSWVqTDRtQVotTmlnTXU4ZFpIaUxxc1B5b3hkeG8wc05pRjJiWno2RUNFekNYS2g5ZzNuOA?oc=5",
+   "date": "2026-11-20T13:02:32.000Z",
+   "img": "https://bsmedia.business-standard.com/_media/bs/img/article/2023-08/28/thumb/fitandfill/1200X628/1693245029-7818.jpg"
+  },
+  {
+   "id": "n33-2026-11-20",
+   "cat": "bev",
+   "lang": "en",
+   "title": "Kenya announces US$9.2M bonus for Nzoia sugar farmers",
+   "source": "Food Business Middle East & Africa",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYTV0MkZfQ1dTellSZWpERXBaWDRGZW8ycGhqS19jVzVqeVdRclc0NXQyZGRtX05La3Bjd0JKRG9FRTNocm1hbXpvUE1FOHBOcWpsQXZ5eW5tUnRHZ3B5TTQ1Y3o4R3VPcW5jaGlWWU91T3N4T3JiRXZhWGY1dFpLU2xlWS02M0k3X0gya3ZR?oc=5",
+   "date": "2026-11-20T13:02:32.000Z"
+  },
+  {
+   "id": "n34-2026-11-20",
+   "cat": "bev",
+   "lang": "en",
+   "title": "Union Minister Chirag Paswan Calls on Beverage Industry to Make India a Global Centre for Manufacturing, Innovation and Exports",
+   "source": "Big News Network.com",
+   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQeDQyZnpzV0VsNTYxX1lHRzJtaEg3b2xpRWFqQnl2V0ZfYjRLZThXc0dxZ0FMR0FXR01zMkQ3UHh4Y0dRaWQ1NzBoeWFGdUJLdzROVUc0UUUwSllaRUNJaFJxMXB3UkhrSDVmYV9wV0REZDdpQXIzUlhEQ3JkMW0zRFlmT3pjeUdUVFdRRm10cmVGNjBpODJtZ1ZzS3ptNG8weTR4MmxMOXBvTVFyNGtkc1JMejFYTTRtWWkxV2F0ZnFlblZKMEZISjRPNjRYSVdTTmlwd2k1dGZpSS1TcGcwM2ZQQ0NHdVA1a1FuUVBvLUdiMFFkSkFkb2JSdVVYZ2dHOWc?oc=5",
+   "date": "2026-11-20T12:30:00.000Z",
+   "img": "https://www.tribuneindia.com/sortd-service/imaginary/v22-01/jpg/large/high?url=dGhldHJpYnVuZS1zb3J0ZC1wcm8tcHJvZC1zb3J0ZC9tZWRpYTZjODE3ZWMwLWU0ZGMtMTFmMS05NjM3LTViY2YwYzFjMTk4YS5qcGc="
+  },
+  {
+   "id": "n35-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "Daily Sugar Market Update By Vizzie – 20/11/2026",
@@ -1647,7 +1679,7 @@
    "date": "2026-11-20T12:29:28.000Z"
   },
   {
-   "id": "n33-2026-11-20",
+   "id": "n36-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "Why Is Chirag Paswan Supporting Review Of 40% GST On Beverages?",
@@ -1656,7 +1688,17 @@
    "date": "2026-11-20T11:47:49.000Z"
   },
   {
-   "id": "n34-2026-11-20",
+   "id": "n37-2026-11-20",
+   "cat": "bev",
+   "lang": "en",
+   "title": "National Wealth Fund invests €23 million into Pulpex’s paper bottle facility",
+   "source": "Packaging Europe",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTHpaNXozVUdlSmdKS3NnOUpNUktjQ1pwRnB6NzRMMWVmUlh0a1A2QldOYldTM2RrbEM1STdLLTNUMnpQYXExM2xIaWFwOVo2R09yUVBsVWI3X180WkNmR3FVeUdycWprU1poTVZaQ3o5QWVjazQ1ZG44d0otR1ZoYkVtdFFDdTZQUU1DR0plZjNFb2RXWTN5eC0zdy0tX3c2cU1uM3hJcmNnSmF6cTln?oc=5",
+   "date": "2026-11-20T11:03:54.000Z",
+   "img": "http://www.bing.com/th?id=ONUT.nKwbjpSqV8MWgvHaZ7LyZg&pid=News&w=900&h=1200&c=7&rs=1"
+  },
+  {
+   "id": "n38-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "Transparent Plastic Packaging Market to Reach USD 157.7 Billion",
@@ -1665,52 +1707,7 @@
    "date": "2026-11-20T10:26:21.000Z"
   },
   {
-   "id": "n35-2026-11-20",
-   "cat": "bev",
-   "lang": "en",
-   "title": "From tubs to film: six years of evidence for food-grade recycled polypropylene",
-   "source": "Plastics News",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNXJxd3dxTUQ4WUpJdklIclk5OWJsd0hNX2YxWTU3dHJESzltdTZ4b0lUdEotWHpzMVVwQlNabzlzeVpCTUFoNmt3ZjBoMGQyR0pQNjdGdTIyTVJ3WGN3eDUwak5uZUFhWWY0Y2dpVm11a3dtWWRPeWNmTVhhUzA3UW9YQXlnVzNZSklvTGwyVnV4dWJMYXliSDhzTW9LNkZGSnYtenhPOGJ2WjBCOHl6Qm1xc242Rl9UckRKLWdyYmh1R2dQaWJsS3hKTnRNREF5?oc=5",
-   "date": "2026-11-20T10:22:00.000Z"
-  },
-  {
-   "id": "n36-2026-11-20",
-   "cat": "bev",
-   "lang": "en",
-   "title": "Indian Sugar Market Softens as Mills Boost Supplies — CMB News",
-   "source": "CMB News",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZFc4YnpEUmF6UDJHUFVpeU1hdktQZ0FrRjlyR1FEMV82R1p0Vjl1eDFWdlNRV2xYWmsyVXlWeWxLdFZQd0VhMVc0dGRyNll0S0Mxelk5ZWpTX2tNREJOVW5wWkxqSGZ0QXNhR2pZOXdmTjY0czAwZjdQNzBtZlJEeTZjdzhzSmFTWGlPZ0xpNEZxQXc3?oc=5",
-   "date": "2026-11-20T09:08:37.000Z"
-  },
-  {
-   "id": "n37-2026-11-20",
-   "cat": "bev",
-   "lang": "en",
-   "title": "EU Sugar Market Tightens on 2026/27 Beet Losses and Higher Import Demand — CMB News",
-   "source": "CMB News",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdjYtSHYxRF9HYWJNdFhGTzZUbXpjdUVQZi1oazNxT292N0NfRzNiNkMwZXFiemo4VFVXU3kyXzBGaGw1TUFRdDM5Q0lqYkFDcml4WHlTVXV4R1BQd253YVNhWHM1ZU54UU1qNFdhTFJpZXJsdEhSMkN1aEtxOG1oSlVRR0dTV2VTUUVrM2N2c3lUOGFEdldXVGtlV3JGUQ?oc=5",
-   "date": "2026-11-20T09:08:10.000Z"
-  },
-  {
-   "id": "n38-2026-11-20",
-   "cat": "bev",
-   "lang": "en",
-   "title": "Sugar Market Update: Maharashtra Output Rises, EU Prices Stabilise — CMB News",
-   "source": "CMB News",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNWxXckVfbHZCZGZLMDJkb2cySWRWSWM4X1RzcGtaRllGdzVKRVRwLW9xOXpIMkdUQ2tpY0RWbnFBek1XVktISlA1UFpyWnRDRVpMNlFjVTQ1ZHlELVFuS0RYTmJVUW9WZ2pfUlVDSmpxSHN5bVdHZzBuLUs5TXBiUDVhMkY2WXo5LWl6Y3FGUnlKZGltbnhxV2g2TXlEYVZXUEE?oc=5",
-   "date": "2026-11-20T09:07:44.000Z"
-  },
-  {
-   "id": "n39-2026-11-20",
-   "cat": "bev",
-   "lang": "en",
-   "title": "Meeting place for the european beverage sector",
-   "source": "Brauwelt",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNM1NuVU12Tk9lVFY4OHRvUU9KWFdPNE1JRmphRXg3azI2Y1VkdTdORlFvVXAzOTlROFJvRmRCSTBZWVlhQ0xOMnNJY3JOb1l6VWFCeEV6Q01abEFqaWlfSjBlak5qRHZzbVFZcV9pVk5zcnhqWUx6cy1IZHN6UGxBdGxIYTRUTVhfT3dFNlBIR3p0bDVFc2RB?oc=5",
-   "date": "2026-11-20T08:57:41.000Z"
-  },
-  {
-   "id": "n40-2026-11-19",
+   "id": "n39-2026-11-19",
    "cat": "cfo",
    "lang": "en",
    "title": "MinRes locks in successor to retiring CFO",
@@ -1720,7 +1717,7 @@
    "img": "https://www.australianmining.com.au/wp-content/uploads/2026/11/AdobeStock_1243359495_Editorial_Use_Only.jpg"
   },
   {
-   "id": "n41-2026-11-19",
+   "id": "n40-2026-11-19",
    "cat": "cfo",
    "lang": "fr",
    "title": "Au Sénégal, le Pastef acte la perte du statut de membre de Diomaye Faye après la création de Kiraay",
@@ -1730,7 +1727,7 @@
    "img": "https://www.dakarposte.com/photo/art/grande/98734376-68923649.jpg?v=1794945153"
   },
   {
-   "id": "n42-2026-11-19",
+   "id": "n41-2026-11-19",
    "cat": "cfo",
    "lang": "fr",
    "title": "Thiès : Une tontine à 34 000 dollars montée aux États-Unis tourne au vinaigre",
@@ -1740,7 +1737,7 @@
    "img": "https://image.seneweb.com/content/news/2026-47-19/thumb_1260x800_6afec834a767f_80Xm1b4kRM.jpg"
   },
   {
-   "id": "n43-2026-11-19",
+   "id": "n42-2026-11-19",
    "cat": "cfo",
    "lang": "fr",
    "title": "UEMOA : la BCEAO reconstitue ses réserves de change à 41 milliards USD en 2025",
@@ -1749,26 +1746,27 @@
    "date": "2026-11-19T03:36:00.000Z"
   },
   {
-   "id": "n44-2026-11-18",
+   "id": "n43-2026-11-18",
    "cat": "cfo",
    "lang": "fr",
    "title": "UEMOA : Les réserves de change grimpent à 41 milliards USD en 2025",
    "source": "Sika Finance",
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTW5VLTNGSXQyeVhDYTkwbTN3TWhWSWppbk52Z3VoR0h3U2lCbWIwNGFtY1BKT09Ob3J6RFk0X3ZidjB3OWd3cV9YcmJyRjhQNWRPSi1haTdyY3M5dVlYM3VTS3pNMC1abThYLVBvaWVKSHNOTzdNUnNsVVo4QUlEbFdJcWZ2cjNhVUd4aHV6SEFRcldQQjMtWnRLMS1tWG45VU5TaTgyUjJQUQ?oc=5",
    "date": "2026-11-18T17:09:06.000Z",
-   "img": "https://cdn.zonebourse.com/static/web-assets/images/editorial/fallback/twitter_zb_fdnoir.png"
+   "img": "https://cdn.zonebourse.com/static/web-assets/images/editorial/fallback/twitter_zb_fdblanc.png"
   },
   {
-   "id": "n45-2026-11-18",
+   "id": "n44-2026-11-18",
    "cat": "cfo",
    "lang": "fr",
    "title": "UEMOA : Le risque souverain pèse sur 37,6% des actifs bancaires",
    "source": "Sika Finance",
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbEx2em1ya2dGV2VUaUlPclp0S2NYT1Z3TXg4a3NnalNLUVMzaXVYeTNQMm9SRnVXd2ZnR1pqWUVBaWxtM0ZFTURLbjhWdEpmWE12TVNudU9GSnpmYVRYX0xneGdaTVpOMHQyTFVNZFFKUkhWdUVpc3MwVHVrSWhmS18yNkp6cUVhbFh2T0NEUU1PSnVzQzNVeXVMV1FibWctSzFTNA?oc=5",
-   "date": "2026-11-18T12:39:05.000Z"
+   "date": "2026-11-18T12:39:05.000Z",
+   "img": "https://www.sikafinance.com/i/info/b/BRVMC0_3de3b261-3354-4399-ad64-05937c857755_b.jpg"
   },
   {
-   "id": "n46-2026-11-17",
+   "id": "n45-2026-11-17",
    "cat": "cfo",
    "lang": "fr",
    "title": "CEMAC : les fonds cumulent 925 milliards de FCFA de titres du Trésor, dont 177 milliards d’OTA en fonds monétaires",
@@ -1777,7 +1775,7 @@
    "date": "2026-11-17T14:25:00.000Z"
   },
   {
-   "id": "n47-2026-11-20",
+   "id": "n46-2026-11-20",
    "cat": "lebanon",
    "lang": "en",
    "title": "UN Security Council Discusses Resolution 1701, Renews Support for UNIFIL and Lebanon’s Sovereignty",
@@ -1786,13 +1784,23 @@
    "date": "2026-11-20T11:26:20.000Z"
   },
   {
-   "id": "n48-2026-11-20",
+   "id": "n47-2026-11-20",
    "cat": "lebanon",
    "lang": "en",
    "title": "Lebanon’s Economy Ministry Launches New Digital Platform for Intellectual Property Registration: 5 outlets compared",
    "source": "NewsCord",
    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPY2lkaGFaS1dubm5sdGJucHRUcXVSNzlrRGZxVk9PUGNQVmRNZ1l1UWxjNFZPX09FVFBxMzBWUjFsSHozNHBFR1NZRnEydjl3SlVocnd0WmU0cm5qQWVpTmtCZkFBM2NUVWxEblVJT2ZTeWstV0hkSUptV24wY2dJR09wMFNIelA1Y3VOVUtuRTJjNTU4UlVBajBXOWt4VTlaUFZJMFNsNGFpeG9QLVhFeHZQcWtfcWQ1dTRWbS1VYml6X2RIR29qdHpybEtLM09KT3ZHeVkwTVA0dEpNMXkyT3lxSWFyUUF0Tnc?oc=5",
    "date": "2026-11-20T11:22:53.000Z"
+  },
+  {
+   "id": "n48-2026-11-20",
+   "cat": "lebanon",
+   "lang": "en",
+   "title": "French ex-PM Villepin announces presidential run",
+   "source": "LBCI Lebanon",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNWw5d2JCWmR5aEZrYzgwR2pQTHp1aXgzV0VBdV9lejAtakNEZzZvcHRiTEZWaDhZcnp5dTRwenNBMkttWThXUmp6U3QtV29sZW91dXlYMThKOVd0VzU1Xzd1VVFwdHVhUDhZck9VQ2FhTW54dkMxOTdpd2JWOG1saTZCWFZNLVliaWtUT200MXRmc2hpSXBlYkJnNjJlSjQ?oc=5",
+   "date": "2026-11-20T11:15:32.000Z",
+   "img": "https://www.usnews.com/dims4/USNEWS/cafe1cf/2147483647/thumbnail/970x647/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2F1a%2F67c31d3ed26ace0b2b379d04094f77%2Ftag%3Areuters.com%2C2026%3Anewsml_LYNXNPEMAJ0YK%3A22026-11-20T115217Z_2_LYNXNPEMAJ0YK_RTROPTP_3_FRANCE-POLITICS.JPG"
   },
   {
    "id": "n49-2026-11-20",
@@ -1840,18 +1848,9 @@
    "source": "LBCI Lebanon",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTkJrY2dqZ3k4QTViSlhaUEhrYXd4ZEdkQXgxZFl5Z3pVcllKdHRoM1kzZ0NVcDhlTnlWY2syU1laVjlhNW4zOGNfM2FaYmhSdl9ReFY2MTFpVkNnVHFuRWR0RjNCQjJId1o1TGg5YzhPWmN6SmNmOWR5bnNpa25MWmhEOFVQWENmek1BYmZ5a0xWd0QzRHBiQXpCT2JfU3h3UlNIN0ZBRmV5YTlhaDlyZzk5SU5Oa3FLVWNkdzZOUQ?oc=5",
    "date": "2026-11-19T17:11:31.000Z"
-  },
-  {
-   "id": "n54-2026-11-19",
-   "cat": "lebanon",
-   "lang": "en",
-   "title": "Aoun Pushes for Arab Economic Bloc, Starting with Agricultural Cooperation",
-   "source": "MTV Lebanon",
-   "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5TQ3JvdGRacDhJZmYxR3N5OWkwMEdtNmladDRLYkVwUVpqdmt1Qm1nLWhrcjFkM1dVckZlQVBySGRoeHVZRkd5OUpvWXVxOVk?oc=5",
-   "date": "2026-11-19T12:32:14.000Z"
   }
  ],
  "log": [
-  "photos: 20/35 {\"empty\":37,\"nomatch\":8}"
+  "photos: 28/42 {\"nomatch\":11,\"empty\":33}"
  ]
 }
