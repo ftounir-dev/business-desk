@@ -177,6 +177,11 @@ section{padding-top:26px}
 @keyframes toast{0%{opacity:0;transform:translate(-50%,10px)}15%,80%{opacity:1;transform:translate(-50%,0)}100%{opacity:0}}
 @media (prefers-reduced-motion:reduce){.wv.on .kb,.wv.on .w-emoji{animation:none}}
 /* News: a calm reading list built for a daily habit */
+.sig{margin:-4px auto 0;padding:0 18px calc(96px + env(safe-area-inset-bottom));max-width:640px;font-style:italic;font-size:.74rem;letter-spacing:.06em;color:var(--muted);text-align:right}
+.nx-ctry{font-weight:800;color:var(--text);letter-spacing:.02em}
+.nx-sec{margin-top:22px;display:flex;align-items:baseline;justify-content:space-between;gap:10px;border-bottom:2px solid var(--text);padding-bottom:6px}
+.nx-sec h4{margin:0;font-family:var(--display);font-size:1.15rem}
+.nx-sec button{border:0;background:none;color:var(--accent);font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;padding:0}
 .nx-habit{display:grid;grid-template-columns:64px 1fr;gap:14px;align-items:center;margin-top:14px;padding:14px;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
 .nx-ring{position:relative;width:64px;height:64px}
 .nx-ring svg{width:64px;height:64px;transform:rotate(-90deg)}
@@ -405,6 +410,7 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 </div>
 
 <footer data-t="foot"></footer>
+<p class="sig">RAF</p>
 </main>
 
 <nav class="tabs" aria-label="Sections"><div class="in">
@@ -510,7 +516,7 @@ function renderSixty(){
   $("#sixty").innerHTML=`<button class="w-open" type="button" id="w-open"><span class="pl">▶</span>${lang==="fr"?"Regarder avec le son":"Watch with sound"}</button><div class="reel" id="reel" tabindex="0" aria-roledescription="carousel" aria-label="${esc(t("sixty"))}">
   <div class="bars">${items.map(()=>"<i><b></b></i>").join("")}</div>
   ${items.map((x,k)=>{const c=REEL_CATS[catOf(x)]||REEL_CATS.worldwide;return `<article class="slide${x.img?" has-img":""}" style="background:${c[1]}" aria-label="${k+1} / ${items.length}">${bgImg(x.img)}
-    <div class="s-top"><span class="s-cat">${esc(x.owner||"")}</span>${x.level==="high"?`<span class="s-hot">${lang==="fr"?"À la une":"Top story"}</span>`:""}</div>
+    <div class="s-top"><span class="s-cat">${esc(ctryLabel(x)||x.owner||"")}</span>${x.level==="high"?`<span class="s-hot">${lang==="fr"?"À la une":"Top story"}</span>`:""}</div>
     <div class="s-body"><div class="s-emoji" aria-hidden="true">${c[0]}</div><h3>${esc(x.title)}</h3>${x.detail?`<p>${esc(x.detail)}</p>`:""}${x.impact?`<p class="s-imp"><b>${t("impact")}</b>${esc(x.impact)}</p>`:""}</div>
     <div class="s-foot"><span>${esc(x.source||"")}${x.date?" · "+ago(x.date):""}</span>${x.url?`<a class="s-go" href="${esc(x.url)}" target="_blank" rel="noopener">${lang==="fr"?"Lire":"Read"} ↗</a>`:""}</div>
   </article>`}).join("")}
@@ -558,7 +564,7 @@ function openWatch(start){
       return `<section class="wv" data-k="${k}" style="background:${c[1]}">
       ${x.img?`<img class="kb" src="${esc(x.img)}" alt="" decoding="async" onerror="this.insertAdjacentHTML('afterend','<div class=&quot;w-emoji&quot;>${c[0]}</div>');this.remove()">`:`<div class="w-emoji" aria-hidden="true">${c[0]}</div>`}<i class="ov2"></i>
       <div class="w-pause"><i>▶</i></div>
-      <div class="w-body"><span class="w-cat">${esc(x.owner||"")}</span><h2>${x.title.split(/\s+/).map(w=>`<span>${esc(w)}</span>`).join(" ")}</h2>
+      <div class="w-body"><span class="w-cat">${esc([ctryLabel(x),x.owner].filter(Boolean).join(" · "))}</span><h2>${x.title.split(/\s+/).map(w=>`<span>${esc(w)}</span>`).join(" ")}</h2>
       ${x.detail?`<p class="w-imp">${esc(x.detail)}</p>`:""}${x.impact?`<p class="w-imp"><b>${t("impact")} ·</b> ${esc(x.impact)}</p>`:""}
       <div class="w-meta">${esc(x.source||"")}${x.date?" · "+ago(x.date):""}</div></div>
       <div class="w-rail">
@@ -599,7 +605,7 @@ function wActivate(sec,restart){
   const est=Math.max(4500,(words.length+(x.owner||"").split(" ").length+(x.impact||"").split(" ").length)*(fr?400:370)+900);
   const timeLight=(delay,per)=>{let n=0;setTimeout(()=>{if(W.cur!==sec)return;W.lt=setInterval(()=>{n++;light(n);if(n>=words.length)clearInterval(W.lt);},per);},delay);};
   if(W.muted||!window.speechSynthesis){timeLight(150,90);wBar(sec,6500);W.timer=setTimeout(()=>{if(W.cur===sec&&!W.paused)wNext(sec);},6500);return;}
-  const intro=(x.owner?x.owner+". ":""),text=intro+x.title+"."+(x.detail?" "+x.detail:"")+(x.impact?" "+x.impact:"");
+  const cw=ctryWords(x),intro=(cw||x.owner)?(cw||x.owner)+". ":"",text=intro+x.title+"."+(x.detail?" "+x.detail:"")+(x.impact?" "+x.impact:"");
   const starts=[];let p=intro.length;words.forEach(w=>{starts.push(p);p+=w.length+1;});
   let gotB=false;const t0=Date.now();
   const u=wSay(text,fr,ev=>{gotB=true;clearInterval(W.lt);let n=0;for(let j=0;j<starts.length;j++)if(ev.charIndex>=starts[j])n=j+1;light(n);},()=>{if(W.cur!==sec||W.paused)return;if(!gotB&&Date.now()-t0<1500){gotB=true;clearTimeout(W.timer);timeLight(0,90);wBar(sec,6500);W.timer=setTimeout(()=>{if(W.cur===sec&&!W.paused)wNext(sec);},6500);return;}light(words.length);W.timer=setTimeout(()=>{if(W.cur===sec&&!W.paused)wNext(sec);},700);});
@@ -771,6 +777,81 @@ function flipTo(dir){
   leaf.addEventListener("transitionend",done,{once:true});setTimeout(()=>{if(fBusy)done();},900);
 }
 function nudge(dir){const f=$("#flip");f.animate([{transform:"translateY(0)"},{transform:`translateY(${dir>0?-14:14}px)`},{transform:"translateY(0)"}],{duration:280,easing:"ease-out"});}
+/* ---------- Country labels: say where a story really is ---------- */
+const CTRY=[
+ ["ng","🇳🇬","Nigeria","Nigeria","nigeria|nigerian|nigérian\\w*|lagos|abuja|tinubu|naira|dangote|nnpc"],
+ ["gh","🇬🇭","Ghana","Ghana","ghana\\w*|accra|cedi"],
+ ["ci","🇨🇮","Côte d'Ivoire","Côte d'Ivoire","c[ôo]te d['’]ivoire|ivory coast|ivoirien\\w*|ivorian|abidjan|ouattara"],
+ ["sn","🇸🇳","Senegal","Sénégal","s[ée]n[ée]gal\\w*|dakar|faye|sonko|thi[eè]s|touba"],
+ ["cm","🇨🇲","Cameroon","Cameroun","cameroun\\w*|cameroon\\w*|yaound[ée]|douala|biya"],
+ ["ga","🇬🇦","Gabon","Gabon","gabon\\w*|libreville|oligui"],
+ ["cg","🇨🇬","Congo","Congo","congo-brazzaville|brazzaville|pointe-noire|sassou|r[ée]publique du congo|republic of (the )?congo|congolais\\w*(?! de rdc)"],
+ ["cd","🇨🇩","DR Congo","RD Congo","rdc|drc|dr congo|rd congo|kinshasa|tshisekedi|lubumbashi|goma|democratic republic of (the )?congo|r[ée]publique d[ée]mocratique du congo"],
+ ["td","🇹🇩","Chad","Tchad","tchad\\w*|chad|n['’]?djamena"],
+ ["cf","🇨🇫","Central African Rep.","Centrafrique","centrafrique|centrafricain\\w*|central african|bangui|touad[ée]ra"],
+ ["gq","🇬🇶","Equatorial Guinea","Guinée équatoriale","equatorial guinea|guin[ée]e [ée]quatoriale|malabo|obiang"],
+ ["bj","🇧🇯","Benin","Bénin","b[ée]nin\\w*|cotonou|talon"],
+ ["tg","🇹🇬","Togo","Togo","togo\\w*|lom[ée]"],
+ ["ml","🇲🇱","Mali","Mali","mali|malien\\w*|bamako"],
+ ["bf","🇧🇫","Burkina Faso","Burkina Faso","burkina\\w*|ouagadougou"],
+ ["ne","🇳🇪","Niger","Niger","niger(?!ia)|nig[ée]rien\\w*|niamey"],
+ ["gn","🇬🇳","Guinea","Guinée","guin[ée]e(?! [ée]quatoriale| bissau)|guinea(?! bissau)|conakry"],
+ ["ao","🇦🇴","Angola","Angola","angola\\w*|luanda"],
+ ["za","🇿🇦","South Africa","Afrique du Sud","south africa\\w*|afrique du sud|sud-africain\\w*|johannesburg|pretoria|cape town|ramaphosa"],
+ ["ke","🇰🇪","Kenya","Kenya","kenya\\w*|nairobi|ruto"],
+ ["et","🇪🇹","Ethiopia","Éthiopie","ethiopia\\w*|[ée]thiopi\\w*|addis"],
+ ["eg","🇪🇬","Egypt","Égypte","egypt\\w*|[ée]gypt\\w*|cairo|le caire"],
+ ["ma","🇲🇦","Morocco","Maroc","morocc\\w*|maroc\\w*|rabat|casablanca"],
+ ["dz","🇩🇿","Algeria","Algérie","algeria\\w*|alg[ée]ri\\w*|alger"],
+ ["rw","🇷🇼","Rwanda","Rwanda","rwanda\\w*|kigali"],
+ ["mr","🇲🇷","Mauritania","Mauritanie","mauritan\\w*|nouakchott"],
+ ["lb","🇱🇧","Lebanon","Liban","leban\\w*|liban\\w*|beirut|beyrouth|hezbollah|unifil|finul|1701"],
+ ["us","🇺🇸","United States","États-Unis","united states|u\\.s\\.|us|usa|american|am[ée]ricain\\w*|[ée]tats-unis|washington|wall street|trump|fed|fomc|nasdaq|dow jones|s&p 500"],
+ ["cn","🇨🇳","China","Chine","china|chinese|chine|chinois\\w*|beijing|p[ée]kin|shanghai|xi jinping|xi"],
+ ["ru","🇷🇺","Russia","Russie","russia\\w*|russie|russe\\w*|moscow|moscou|putin|poutine|kremlin"],
+ ["ua","🇺🇦","Ukraine","Ukraine","ukrain\\w*|kyiv|kiev|zelensk\\w*"],
+ ["fr","🇫🇷","France","France","france|french|fran[çc]ais\\w*|paris|macron|[ée]lys[ée]e"],
+ ["gb","🇬🇧","United Kingdom","Royaume-Uni","united kingdom|uk|britain|british|britannique\\w*|royaume-uni|london|londres|starmer"],
+ ["de","🇩🇪","Germany","Allemagne","germany|german|allemagne|allemand\\w*|berlin|merz"],
+ ["eu","🇪🇺","European Union","Union européenne","european union|eu|ue|union europ[ée]enne|brussels|bruxelles|ecb|bce|eurozone|zone euro"],
+ ["in","🇮🇳","India","Inde","india|indian|inde|indien\\w*|modi|mumbai|new delhi|goa"],
+ ["jp","🇯🇵","Japan","Japon","japan\\w*|japon\\w*|tokyo"],
+ ["sa","🇸🇦","Saudi Arabia","Arabie saoudite","saudi|arabie saoudite|saoudien\\w*|riyadh|riyad|aramco"],
+ ["ae","🇦🇪","UAE","Émirats","uae|emirat\\w*|[ée]mirats|dubai|duba[iï]|abu dhabi"],
+ ["il","🇮🇱","Israel","Israël","israel\\w*|isra[ëe]l\\w*|gaza|netanyahu|tel aviv"],
+ ["ir","🇮🇷","Iran","Iran","iran\\w*|tehran|t[ée]h[ée]ran|hormuz|ormuz"],
+ ["hk","🇭🇰","Hong Kong","Hong Kong","hong kong"],
+ ["ug","🇺🇬","Uganda","Ouganda","uganda\\w*|ouganda\\w*|kampala|museveni"],
+ ["mg","🇲🇬","Madagascar","Madagascar","madagascar|malgache\\w*|antananarivo"],
+ ["asia","🌏","Asia","Asie","asian?|asie|asiatiques?"],
+ ["tr","🇹🇷","Turkey","Turquie","turkey|turkish|turquie|turc\\w*|ankara|istanbul|erdogan"],
+ ["br","🇧🇷","Brazil","Brésil","brazil\\w*|br[ée]sil\\w*|lula"],
+ ["cemac","🏛️","CEMAC","CEMAC","cemac|beac|cosumaf|bdeac|bvmac"],
+ ["uemoa","🏛️","UEMOA","UEMOA","uemoa|bceao|brvm|waemu"],
+ ["afr","🌍","Africa (regional)","Afrique (régional)","afdb|bad|african union|union africaine|afreximbank|zlecaf|afcfta|ecowas|cedeao"]
+].map(c=>[c[0],c[1],c[2],c[3],new RegExp("(^|[^\\p{L}])("+c[4]+")(?![\\p{L}])","iu")]);
+// When a headline names no place, the outlet usually tells us where the story is
+const CTRY_SRC=[[/legit|leadership|thefact\.ng|punch|businessday|vanguard|thisday|nairametrics|premium times|daily trust|channels tv|thecable|tribune online|the nation|guardian\.ng|arise news/,"ng"],
+ [/ghanaweb|myjoyonline|citinewsroom|graphic\.com\.gh|ghana/,"gh"],[/abidjan\.net|koaci|fratmat|linfodrome/,"ci"],[/seneweb|dakarposte|aps\.sn|senego/,"sn"],
+ [/b[ée]nin web ?tv|beninwebtv|la nouvelle tribune|banouto/,"bj"],[/237online|investir au cameroun|cameroon tribune|actu ?cameroun|ecomatin/,"cm"],
+ [/adiac|echos du congo|d[ée]p[êe]ches de brazzaville|vox congo|brazzanews|horizon ?africain/,"cg"],[/interview\.cd|scoop rdc|actualite\.cd|radio ?okapi|7sur7/,"cd"],
+ [/direct infos gabon|gabonreview|gabonactu/,"ga"],[/guinee360|guineenews/,"gn"],[/capmad|midi madagasikara/,"mg"],
+ [/lbci|l.orient|mtv lebanon|daily beirut|naharnet|national news agency/,"lb"],[/lebanon local/,"us"],
+ [/dd news|etv bharat|pib\.gov\.in|sanskriti ias|times of india|hindustan|economic times/,"in"],[/independent uganda|monitor\.co\.ug/,"ug"]];
+function countriesOf(n){
+  const t=" "+n.title+" ",hits=[];
+  for(const c of CTRY){const m=t.match(c[4]);if(m)hits.push([m.index,c]);}
+  // "Fed"/"US"/"EU" style short words count only in upper case
+  const strict={us:/(^|[^A-Za-z])(US|USA|U\.S\.|Fed|FOMC)(?![A-Za-z$])|united states|[ée]tats-unis|american|am[ée]ricain|washington|wall street|trump|nasdaq|dow jones|s&p 500/i,eu:/(^|[^A-Za-z])(EU|UE|ECB|BCE)(?![A-Za-z])|european union|union europ[ée]enne|brussels|bruxelles|eurozone|zone euro/i,gb:/(^|[^A-Za-z])UK(?![A-Za-z])|united kingdom|britain|british|britannique|royaume-uni|london|londres|starmer/i,cn:/(^|[^A-Za-z])Xi(?![A-Za-z])|china|chinese|chine|chinois|beijing|p[ée]kin|shanghai/i,afr:/(^|[^A-Za-z])(AfDB|BAD)(?![A-Za-z])|african union|union africaine|afreximbank|zlecaf|afcfta|ecowas|cedeao/i};
+  let out=hits.filter(([i,c])=>!strict[c[0]]||strict[c[0]].test(t)).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
+  if(out.some(c=>c[0]==="cd"))out=out.filter(c=>c[0]!=="cg");
+  if(!out.length){const s=(n.source||"").toLowerCase(),hit=CTRY_SRC.find(x=>x[0].test(s));if(hit)out=[CTRY.find(c=>c[0]===hit[1])];}
+  if(!out.length&&/\b(global|world|worldwide|mondial\w*|international\w*)\b/i.test(n.title))out=[["gl","🌐","Global","Monde"]];
+  return out.filter((c,i,a)=>a.indexOf(c)===i).slice(0,3);
+}
+const ctryLabel=n=>countriesOf(n).map(c=>c[1]+" "+(lang==="fr"?c[3]:c[2])).join(" · ");
+const ctryWords=n=>countriesOf(n).map(c=>lang==="fr"?c[3]:c[2]).join(", ");
+
 /* ---------- News: reading list + daily habit ---------- */
 const NX={goal:5,shown:30,q:"",prev:store.get("nx_last",0)||Date.now()-12*36e5,read:store.get("nx_read",{}),days:store.get("nx_days",{})};
 store.set("nx_last",Date.now());
@@ -803,7 +884,7 @@ function nxMarkRead(n){const id=nxId(n);if(NX.read[id])return;NX.read[id]=Date.n
   if(before+1===NX.goal&&typeof wToast==="function")wToast(lang==="fr"?"🎯 Objectif du jour atteint !":"🎯 Daily goal reached!");}
 function nxRow(n,lead){
   const fr=lang==="fr",tags=nxTags(n),isRead=!!NX.read[nxId(n)],isNew=!isRead&&new Date(n.date).getTime()>NX.prev;
-  const meta=`<div class="nx-meta"><span class="c" style="color:${catColor(n.cat)}">${esc(catLabel(n.cat))}</span>·<span class="s">${esc(n.source)}</span>·<span>${ago(n.date)}</span></div>`;
+  const cl=ctryLabel(n),meta=`<div class="nx-meta">${cl?`<span class="nx-ctry">${esc(cl)}</span>·`:""}<span class="c" style="color:${catColor(n.cat)}">${esc(catLabel(n.cat))}</span>·<span class="s">${esc(n.source)}</span>·<span>${ago(n.date)}</span></div>`;
   const tg=tags.length?`<div class="nx-tags">${tags.map(t=>`<span>${t[1]} ${fr?t[3]:t[2]}</span>`).join("")}</div>`:"";
   const img=n.img?`<img src="${esc(n.img)}" alt="" loading="lazy" decoding="async" onerror="this.remove()">`:"";
   if(lead&&n.img)return `<a class="nx-lead${isRead?" read":""}" href="${esc(n.url)}" target="_blank" rel="noopener" data-nid="${esc(nxId(n))}"><div class="ph">${img}<span>${fr?"À la une":"Top story"}</span></div>${meta}<h3>${esc(n.title)}</h3>${tg}</a>`;
@@ -811,29 +892,31 @@ function nxRow(n,lead){
 }
 function renderNews(){
   const fr=lang==="fr",all=[...B.news].sort((a,b)=>b.date.localeCompare(a.date));
-  const iteAll=all.filter(n=>nxTags(n).length);
-  const unseen=all.filter(n=>!NX.read[nxId(n)]&&new Date(n.date).getTime()>NX.prev);
-  nxHabit(unseen.length,unseen.filter(n=>nxTags(n).length).length);
-  const cats=[{id:"all",en:t("all"),fr:t("all")},{id:"ite",en:"⭐ For ITE",fr:"⭐ Pour ITE"},...B.categories];
-  $("#chips").innerHTML=cats.map(c=>{const n=c.id==="all"?unseen.length:c.id==="ite"?unseen.filter(x=>nxTags(x).length).length:unseen.filter(x=>x.cat===c.id).length;
+  const TOP=5,top={};B.categories.forEach(c=>top[c.id]=all.filter(n=>n.cat===c.id).slice(0,TOP));
+  const pool=B.categories.flatMap(c=>top[c.id]);
+  const unseen=pool.filter(n=>!NX.read[nxId(n)]&&new Date(n.date).getTime()>NX.prev);
+  nxHabit(unseen.length,0);
+  if(cat==="ite")cat="all";
+  const cats=[{id:"all",en:t("all"),fr:t("all")},...B.categories];
+  $("#chips").innerHTML=cats.map(c=>{const n=c.id==="all"?unseen.length:unseen.filter(x=>x.cat===c.id).length;
     return `<button class="chip" type="button" data-cat="${c.id}" aria-pressed="${cat===c.id}">${esc(c[lang]||c.en)}${n?`<span class="n">${n}</span>`:""}</button>`;}).join("");
   document.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>{cat=b.dataset.cat;NX.shown=30;renderNews();});
   const qi=$("#nx-q");qi.placeholder=fr?"Rechercher : BEAC, pétrole, Eurobond…":"Search: BEAC, oil, Eurobond…";
   if(!qi.dataset.w){qi.dataset.w=1;let tm=0;qi.oninput=()=>{clearTimeout(tm);tm=setTimeout(()=>{NX.q=qi.value.trim();NX.shown=30;renderNews();},180);};}
   const norm=s=>s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
-  let list=cat==="all"?all:cat==="ite"?iteAll:all.filter(n=>n.cat===cat);
-  if(NX.q){const q=norm(NX.q);list=list.filter(n=>norm(n.title+" "+n.source).includes(q));}
+  let list=cat==="all"?pool:top[cat]||[];
+  if(NX.q){const q=norm(NX.q);list=all.filter(n=>(cat==="all"||n.cat===cat)&&norm(n.title+" "+n.source+" "+ctryWords(n)).includes(q)).slice(0,20);}
   if(!list.length){$("#nx-list").innerHTML=`<p class="empty">${NX.q?(fr?"Aucun article ne correspond.":"No stories match."):t("nostories")}</p>`;return;}
   const now=Date.now(),sod=new Date();sod.setHours(0,0,0,0);const yd=sod.getTime()-864e5;
   const grp=n=>{const ts=new Date(n.date).getTime();return now-ts<2*36e5?0:ts>=sod.getTime()?1:ts>=yd?2:3;};
   const GL=fr?["À l'instant","Plus tôt aujourd'hui","Hier","Plus ancien"]:["Just in","Earlier today","Yesterday","Older"];
-  let html="",g=-1;const shown=list.slice(0,NX.shown);
-  shown.forEach((n,i)=>{const gi=grp(n);if(gi!==g){g=gi;html+=`<div class="nx-group">${GL[gi]}</div>`;}html+=nxRow(n,i===0&&!NX.q);});
-  if(list.length>NX.shown)html+=`<button class="nx-more" type="button" id="nx-more">${fr?"Afficher plus":"Show more"} (${list.length-NX.shown})</button>`;
-  else if(!NX.q&&shown.every(n=>NX.read[nxId(n)]))html+=`<div class="nx-done">✅ ${fr?"Tout lu dans cette rubrique. Bravo !":"You've read everything here. Nice work!"}</div>`;
+  let html="",g=-1;const shown=list;
+  if(cat==="all"&&!NX.q){B.categories.forEach(c=>{const l=top[c.id];if(!l.length)return;html+=`<div class="nx-sec"><h4>${esc(c[lang]||c.en)}</h4></div>`;l.forEach((n,i)=>html+=nxRow(n,false));});}
+  else shown.forEach((n,i)=>{const gi=grp(n);if(gi!==g){g=gi;html+=`<div class="nx-group">${GL[gi]}</div>`;}html+=nxRow(n,i===0&&!NX.q);});
+  if(!NX.q&&shown.every(n=>NX.read[nxId(n)]))html+=`<div class="nx-done">✅ ${fr?"Tout lu dans cette rubrique. Bravo !":"You've read everything here. Nice work!"}</div>`;
   $("#nx-list").innerHTML=html;
-  const mb=$("#nx-more");if(mb)mb.onclick=()=>{NX.shown+=30;renderNews();};
-  $("#nx-list").querySelectorAll("[data-nid]").forEach(a=>a.onclick=()=>{const n=list.find(x=>nxId(x)===a.dataset.nid);if(n){nxMarkRead(n);setTimeout(renderNews,400);}});
+  $("#nx-list").querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>{cat=b.dataset.jump;renderNews();scrollTo({top:0,behavior:"smooth"});});
+  $("#nx-list").querySelectorAll("[data-nid]").forEach(a=>a.onclick=()=>{const n=all.find(x=>nxId(x)===a.dataset.nid);if(n){nxMarkRead(n);setTimeout(renderNews,400);}});
 }
 (function(){
   let y0=null,x0=0,t0=0;
