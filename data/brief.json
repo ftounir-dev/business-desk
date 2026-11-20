@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-20T21:00:00.019Z",
+ "generated_at": "2026-11-20T21:58:06.483Z",
  "summary_at": "2026-11-20T18:28:12.534Z",
  "summary_mode": "rules",
  "peg": 655.957,
  "fx": {
-  "eurusd": 1.0967316627502441,
-  "usdxaf": 598.1016344098924,
+  "eurusd": 1.0968520641326904,
+  "usdxaf": 598.0359808309084,
   "usdxaf_prev": 597.8457318897565,
   "date": "2026-11-20"
  },
@@ -17,10 +17,10 @@
    "unit": "XAF per USD",
    "dp": 1,
    "cost": 1,
-   "value": 598.1016344098924,
+   "value": 598.0359808309084,
    "prev": 597.8457318897565,
    "date": "2026-11-20",
-   "change_pct": 0.04280410588983763,
+   "change_pct": 0.03182241354313664,
    "series": [
     [
      "2026-10-21",
@@ -108,7 +108,7 @@
     ],
     [
      "2026-11-20",
-     598.1016344098924
+     598.0359808309084
     ]
    ],
    "source": "655.957 ÷ EUR/USD",
@@ -125,10 +125,10 @@
    "unit": "USD per EUR",
    "dp": 4,
    "cost": -1,
-   "value": 1.0967316627502441,
+   "value": 1.0968520641326904,
    "prev": 1.0972011089324951,
    "date": "2026-11-20",
-   "change_pct": -0.04278579181420383,
+   "change_pct": -0.03181229010461584,
    "series": [
     [
      "2026-10-21",
@@ -216,7 +216,7 @@
     ],
     [
      "2026-11-20",
-     1.0967316627502441
+     1.0968520641326904
     ]
    ],
    "source": "Yahoo Finance",
@@ -233,10 +233,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 90.37999725341797,
+   "value": 89.95999908447266,
    "prev": 91.9800033569336,
    "date": "2026-11-20",
-   "change_pct": -1.7395151610363757,
+   "change_pct": -2.196134158228058,
    "series": [
     [
      "2026-10-22",
@@ -324,7 +324,7 @@
     ],
     [
      "2026-11-20",
-     90.37999725341797
+     89.95999908447266
     ]
    ],
    "source": "Yahoo Finance",
@@ -343,10 +343,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 84.02999877929688,
+   "value": 83.6500015258789,
    "prev": 83.20999908447266,
    "date": "2026-11-20",
-   "change_pct": 0.9854581226371284,
+   "change_pct": 0.5287855380932793,
    "series": [
     [
      "2026-10-22",
@@ -434,7 +434,7 @@
     ],
     [
      "2026-11-20",
-     84.02999877929688
+     83.6500015258789
     ]
    ],
    "source": "Yahoo Finance",
@@ -453,10 +453,10 @@
    "unit": "USD/oz",
    "dp": 0,
    "cost": 0,
-   "value": 3517.199951171875,
+   "value": 3526.39990234375,
    "prev": 3685.5,
    "date": "2026-11-20",
-   "change_pct": -4.566545891415686,
+   "change_pct": -4.316920299993221,
    "series": [
     [
      "2026-10-22",
@@ -544,14 +544,14 @@
     ],
     [
      "2026-11-20",
-     3517.199951171875
+     3526.39990234375
     ]
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/GC%3DF",
    "why": {
-    "en": "Down 4.6%, moving with Silver (−7.8%): a broad sell-off rather than one-off news.",
-    "fr": "En baisse de 4,6%, comme l'argent (−7,8%) : un mouvement d'ensemble plutôt qu'une nouvelle isolée."
+    "en": "Down 4.3%, moving with Silver (−7.7%): a broad sell-off rather than one-off news.",
+    "fr": "En baisse de 4,3%, comme l'argent (−7,7%) : un mouvement d'ensemble plutôt qu'une nouvelle isolée."
    }
   },
   {
@@ -561,10 +561,10 @@
    "unit": "USD/oz",
    "dp": 2,
    "cost": 0,
-   "value": 40.849998474121094,
+   "value": 40.92499923706055,
    "prev": 44.31800079345703,
    "date": "2026-11-20",
-   "change_pct": -7.825267966166793,
+   "change_pct": -7.656034784171528,
    "series": [
     [
      "2026-10-22",
@@ -652,14 +652,14 @@
     ],
     [
      "2026-11-20",
-     40.849998474121094
+     40.92499923706055
     ]
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/SI%3DF",
    "why": {
-    "en": "Down 7.8%, moving with Gold (−4.6%): a broad sell-off rather than one-off news.",
-    "fr": "En baisse de 7,8%, comme l'or (−4,6%) : un mouvement d'ensemble plutôt qu'une nouvelle isolée."
+    "en": "Down 7.7%, moving with Gold (−4.3%): a broad sell-off rather than one-off news.",
+    "fr": "En baisse de 7,7%, comme l'or (−4,3%) : un mouvement d'ensemble plutôt qu'une nouvelle isolée."
    }
   }
  ],
@@ -1531,7 +1531,7 @@
    "title": "Oil loses grip on bond markets as inflation ‘virus’ spreads",
    "source": "Financial Times",
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSkZnaUY5Ni1VV2RvQXB3YWdWTnByc0xNYUt0MW5yYUlZLThpWXpNTzJBSjBROF9CQV9hd1M0MVVCNnB4QW0zd1VIdVhjQ3ZScEZvQ01HblVPTFQ4emlReFRfVnlnOFV1emJvQWtZU3BYT2tOY1JWUThTcUZlMzkzZTlaMnY?oc=5",
-   "date": "2026-11-20T05:00:26.000Z",
+   "date": "2026-11-20T05:01:49.000Z",
    "score": 4.3,
    "desc": "Rising oil prices drove sovereign bond yields higher after the start of the Iran war in late February, as traders positioned for an inflation shock and string of interest rate rises.",
    "t": {
@@ -1547,20 +1547,6 @@
    "id": "n1-2026-11-20",
    "cat": "worldwide",
    "lang": "en",
-   "title": "Skepticism About AI Is Crushing Stock Prices Around the World",
-   "source": "Bloomberg.com",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPa0xuaEJvTjF2V01vTGdTNXdIdzZ5NklfbmVXVE9WeVBfVU1xRW1Hc2VWWnViUzNOaTl6M0hCSUJKazE1Vkc0NEljbW04b1FBVHZQUk9iZVJMUXN6YnVHQWhfMnl4cFZVU0QybDJBVUc3dXJZM2U3YkZ3OFZFeE5aM1Z0bEFScGNRa0UwY1gyUkJoX0FfRlNJYmhwWUl5eV9MalZsZzNyZDR4bjBoV29Ub1ZNclNvQQ?oc=5",
-   "date": "2026-11-20T20:42:26.000Z",
-   "score": 3.9,
-   "t": {
-    "en": "Skepticism About AI Is Crushing Stock Prices Around the World",
-    "fr": "Le scepticisme à l’égard de l’IA écrase les cours boursiers dans le monde entier"
-   }
-  },
-  {
-   "id": "n2-2026-11-20",
-   "cat": "worldwide",
-   "lang": "en",
    "title": "Apollo Enlists 13 Wall Street Banks for $9 Billion ADT Debt Deal",
    "source": "Bloomberg.com",
    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONGx6YW9EQWZDWTIxQjN0MWFDOHlMX2hFaDJsNWF4amtfRTEwZE5YS0tUeWdTYzhuRG9qUEcwZml6dkxfZTNURmhJb05YSkc4TkNGR3MtMDJuV09HQVpVYTB6S1QxQ3VVZ1NaaFhxTkZ4SkVyQWxoaFk2SVdWYkN4MURickFQREhMNExaTExjQllJRGdZdlU0M3huSHFIb1FuektjZURLOHVnRFJqb1U5NnN0dmo?oc=5",
@@ -1572,13 +1558,33 @@
    }
   },
   {
+   "id": "n2-2026-11-20",
+   "cat": "worldwide",
+   "lang": "en",
+   "title": "Fed’s Paulson Argues for Deliberate Rate Hikes to Tame Inflation",
+   "source": "Bloomberg.com",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOVzNrVGozWDhWTXBGWDE1dEt5SlgtZElGUWtERk03U3ZrQ1g1aXg1dUpWZ1ZkMUJsdFNwZ3lSeGNKTDNkajMyZEVOWHA2anFINmJYWHUzY2FUMk9vZ0pxcEJjS3Q1OWpnYzV1VnRZaWJtaDZLWThERzhoenZvbUdzMlFtUzluSDNkNXpteDZzQTl1NDNnbjgwR3dXaXpIYnlIQ1dDYmtEdW5XT0ZDY1MyWGQ5Y2U1UQ?oc=5",
+   "date": "2026-11-20T18:44:38.000Z",
+   "score": 3.9,
+   "desc": "Federal Reserve Bank of Philadelphia President Anna Paulson said she’d be open to considering back-to-back interest-rate hikes at the central bank’s upcoming policy meetings to help contain inflation, but said officials should…",
+   "img": "https://news-cdn.bindg.com/indg/assets/news/images/Fallback-image.webp",
+   "t": {
+    "en": "Fed’s Paulson Argues for Deliberate Rate Hikes to Tame Inflation",
+    "fr": "Paulson de la Fed plaide en faveur de hausses délibérées des taux pour maîtriser l’inflation"
+   },
+   "d": {
+    "en": "Federal Reserve Bank of Philadelphia President Anna Paulson said she’d be open to considering back-to-back interest-rate hikes at the central bank’s upcoming policy meetings to help contain inflation, but said officials should…",
+    "fr": "La présidente de la Banque fédérale de réserve de Philadelphie, Anna Paulson, a déclaré qu'elle serait disposée à envisager des hausses consécutives des taux d'intérêt lors des prochaines réunions politiques de la banque centrale pour aider à contenir l'inflation, mais a déclaré que les responsables devraient…"
+   }
+  },
+  {
    "id": "n3-2026-11-20",
    "cat": "worldwide",
    "lang": "en",
    "title": "Week Ahead for FX, Bonds: Flash PMI Data to Provide Gauge on Economic Growth",
    "source": "WSJ",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUGRKVlM2NDJTdnJ2MW1LcHA4Z29OVTA3eEo0NFlsblNRRnBvcGVGZkVneWN1X1VWWVRWY1FTSm1jWHE0aV9IQzR5Sk9uWHpmdGdSb0VIR3hhal9YckR6QTVTeXhEWVRSTkQ2U2szTEdvQUtSYWVQSXU0LU1Pb3lzNmx6MHdNUmd4NTFHM2thTmpaN2xDclJSa1l1ZzQzRThSdnBPY0tKNC14WlNZRXNpeg?oc=5",
-   "date": "2026-11-20T15:18:18.000Z",
+   "date": "2026-11-20T15:14:00.000Z",
    "score": 3.9,
    "t": {
     "en": "Week Ahead for FX, Bonds: Flash PMI Data to Provide Gauge on Economic Growth",
@@ -1628,21 +1634,7 @@
    }
   },
   {
-   "id": "n6-2026-11-19",
-   "cat": "worldwide",
-   "lang": "en",
-   "title": "Euro zone banks' data centre exposure small but growing, ECB says",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcm5Wc0JWdU5keDRHeFRNV0Izdl9IY3pCVzYwaEExN2F0cmo5MTAzMnZ5S3pFSW9zeU5ITVo1bF92OExlbmU0OW55cWR1b09NdGZWU29FTi1kVXBzTHBoSUtNdmRONlVaMUV1XzN5QTUwSWNWQm80YkV0NGpzcjNES195c1VVaS1sRElPVUU2RWJHZ0N3T3I2RGhfVGdTRTlnMkdJeTM0V21lczRyV054R3h3?oc=5",
-   "date": "2026-11-19T18:33:07.000Z",
-   "score": 3.9,
-   "t": {
-    "en": "Euro zone banks' data centre exposure small but growing, ECB says",
-    "fr": "L'exposition aux centres de données des banques de la zone euro est faible mais croissante, selon la BCE"
-   }
-  },
-  {
-   "id": "n7-2026-11-20",
+   "id": "n6-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "Hausse des prix des carburants en 2027 : la Guinée « appréciera » (ministre de l'Économie)",
@@ -1662,7 +1654,7 @@
    }
   },
   {
-   "id": "n8-2026-11-19",
+   "id": "n7-2026-11-19",
    "cat": "africa",
    "lang": "en",
    "title": "EY 2027 Budget Insights : 2027 Budget statement and Economic Policy of the Government of Ghana",
@@ -1681,7 +1673,7 @@
    }
   },
   {
-   "id": "n9-2026-11-20",
+   "id": "n8-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "Coris Bank Côte d’Ivoire ouvre 20 % de son capital au public",
@@ -1699,7 +1691,7 @@
    }
   },
   {
-   "id": "n10-2026-11-20",
+   "id": "n9-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "Kenya : le gouvernement présente une stratégie pour lutter contre le commerce illicite",
@@ -1719,7 +1711,7 @@
    }
   },
   {
-   "id": "n11-2026-11-20",
+   "id": "n10-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "Burkina Faso : 3 milliards $ prévus pour les investissements publics dans le budget 2027",
@@ -1739,7 +1731,7 @@
    }
   },
   {
-   "id": "n12-2026-11-20",
+   "id": "n11-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "Soudan du Sud : le gouvernement ouvre 14 blocs pétroliers aux investisseurs",
@@ -1759,7 +1751,7 @@
    }
   },
   {
-   "id": "n13-2026-11-20",
+   "id": "n12-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "Égypte : 2,3 milliards $ attendus du FMI pour la dernière revue de son programme",
@@ -1773,7 +1765,7 @@
    }
   },
   {
-   "id": "n14-2026-11-20",
+   "id": "n13-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "Nigeria : la Banque centrale cherche à faciliter l’accès aux financements énergétiques",
@@ -1787,7 +1779,7 @@
    }
   },
   {
-   "id": "n15-2026-11-20",
+   "id": "n14-2026-11-20",
    "cat": "congo",
    "lang": "fr",
    "title": "Dette de la CEMAC : pourquoi les États se financent de plus en plus auprès de leurs propres banques",
@@ -1805,7 +1797,7 @@
    }
   },
   {
-   "id": "n16-2026-11-20",
+   "id": "n15-2026-11-20",
    "cat": "congo",
    "lang": "fr",
    "title": "BDEAC : Après son premier Eurobond réussi, la banque ambitionne de lever près de 300 milliards FCFA supplémentaires sur les marchés internationaux",
@@ -1825,7 +1817,7 @@
    }
   },
   {
-   "id": "n17-2026-11-20",
+   "id": "n16-2026-11-20",
    "cat": "congo",
    "lang": "fr",
    "title": "Logistique : le rachat de Portek soumis à l’examen du régulateur de la concurrence de la Cemac",
@@ -1836,6 +1828,26 @@
    "t": {
     "fr": "Logistique : le rachat de Portek soumis à l’examen du régulateur de la concurrence de la Cemac",
     "en": "Logistics: the takeover of Portek subject to examination by the Cemac competition regulator"
+   }
+  },
+  {
+   "id": "n17-2026-11-20",
+   "cat": "africa",
+   "lang": "fr",
+   "title": "SIIPS 2026 : le PI-SPI dépasse les 4 millions de transactions en un an dans l’UEMOA",
+   "source": "Financial Afrik",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZXM1X2FsSXc5SkdnVFRnVXRuV2dFcjI3TWVhakF2Y0t2b3lSSTgtMkxnb1lzLUpQdFgtTDZiaEN3YzJkVDBueWpPRzZiOWU4V050YXQ1UGZ0enQweVlqekdZNkNCMUczRll6R3I5a1Fub3Y2dGtpUTR0cl9ETG51Z1ppNGNwRFZXQ0VmTndCZVR6dGFZU29YN24yV09tTlZwaVV0SVdHSTRDclMtcFI0QmZzLTFRWW04SllFMGsyYXE?oc=5",
+   "date": "2026-11-20T11:29:36.000Z",
+   "score": 3.2,
+   "desc": "Lancé le 30 septembre 2025 par la Banque centrale des États de l’Afrique de l’Ouest (BCEAO), le système de paiement instantané interopérable de l’UEMOA ...",
+   "img": "https://www.financialafrik.com/wp-content/uploads/2026/11/PI-BCEAO.jpg",
+   "t": {
+    "fr": "SIIPS 2026 : le PI-SPI dépasse les 4 millions de transactions en un an dans l’UEMOA",
+    "en": "SIIPS 2026: PI-SPI exceeds 4 million transactions in one year in UEMOA"
+   },
+   "d": {
+    "fr": "Lancé le 30 septembre 2025 par la Banque centrale des États de l’Afrique de l’Ouest (BCEAO), le système de paiement instantané interopérable de l’UEMOA ...",
+    "en": "Launched on September 30, 2025 by the Central Bank of West African States (BCEAO), the UEMOA interoperable instant payment system..."
    }
   },
   {
@@ -1859,27 +1871,7 @@
    }
   },
   {
-   "id": "n19-2026-11-20",
-   "cat": "africa",
-   "lang": "fr",
-   "title": "MTN franchit une étape décisive dans le rachat d’IHS Towers",
-   "source": "Forbes Afrique",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZkE2S2pKN1gyMGFhbDlnQ1JRelJadFB3MkRZZTJhX2x6a091Z3NVVE1WX0pPSmZyNFpKUGlpbC1pZDZub2pIVms2dzJIY0c5TWM2S3lxWXp3OVVhRUVYbEd4bVpVSDM2ek5ESDRCcHJnRXh0VHBhQmxCemNzNUoyOW12NUZUWGtMaXdDOW1R?oc=5",
-   "date": "2026-11-20T03:30:00.000Z",
-   "score": 3,
-   "desc": "Le Conseil communautaire de la concurrence de la Cemac a autorisé, sous conditions, le rachat du spécialiste des infrastructures télécoms par l’opérateur sud-africain. Une opération de 2,2 milliards d ...",
-   "img": "https://forbesafrique.com/wp-content/uploads/2026/11/IHS-TOWERS_1500-x-1000_forbesafrique.com-.jpg",
-   "t": {
-    "fr": "MTN franchit une étape décisive dans le rachat d’IHS Towers",
-    "en": "MTN takes a decisive step in the acquisition of IHS Towers"
-   },
-   "d": {
-    "fr": "Le Conseil communautaire de la concurrence de la Cemac a autorisé, sous conditions, le rachat du spécialiste des infrastructures télécoms par l’opérateur sud-africain. Une opération de 2,2 milliards d ...",
-    "en": "The Cemac Community Competition Council has authorized, under conditions, the takeover of the telecoms infrastructure specialist by the South African operator. A 2.2 billion operation..."
-   }
-  },
-  {
-   "id": "n20-2026-11-17",
+   "id": "n19-2026-11-17",
    "cat": "congo",
    "lang": "fr",
    "title": "CEMAC : les fonds cumulent 925 milliards de FCFA de titres du Trésor, dont 177 milliards d’OTA en fonds monétaires",
@@ -1899,7 +1891,7 @@
    }
   },
   {
-   "id": "n21-2026-11-17",
+   "id": "n20-2026-11-17",
    "cat": "congo",
    "lang": "fr",
    "title": "CEMAC : 521 milliards FCFA d’actions dans les portefeuilles des sociétés de Bourse, dont 77 % non cotées",
@@ -1913,7 +1905,7 @@
    }
   },
   {
-   "id": "n22-2026-11-17",
+   "id": "n21-2026-11-17",
    "cat": "congo",
    "lang": "fr",
    "title": "CEMAC : le Cameroun capte moins de 5 % des placements des fonds d’investissement à fin juin",
@@ -1927,7 +1919,7 @@
    }
   },
   {
-   "id": "n23-2026-11-20",
+   "id": "n22-2026-11-20",
    "cat": "markets",
    "lang": "en",
    "title": "Oil Prices Retreat as Traders Assess Supply Outlook, Middle East Risks",
@@ -1945,7 +1937,7 @@
    }
   },
   {
-   "id": "n24-2026-11-20",
+   "id": "n23-2026-11-20",
    "cat": "markets",
    "lang": "en",
    "title": "The Seven Charts That Explain the New Normal for Oil Prices",
@@ -1963,7 +1955,7 @@
    }
   },
   {
-   "id": "n25-2026-11-20",
+   "id": "n24-2026-11-20",
    "cat": "markets",
    "lang": "en",
    "title": "Oil prices set for third straight weekly decline on Middle East export flows",
@@ -1971,8 +1963,8 @@
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5SV3VLcC1fUXZ3eUN2ckZpSzd3akdsSE55cFRrUEZFNDZtVUFxcDRCWng5dHB3XzBDaUliLUowaGdqdDVkaW5va25nUkx5OVc4UXZoVU9qem1NdWFUNndPWldTeXFhVnVo0gFuQVVfeXFMTXRDbE5XQlFpNEF3ZVBycUpzZXFqQXJOdmVWTWVlX2NWLTNPc2w2TEk5TVdEb3FSZTV3c1JpSEJpUTlaX1g3cVhfY0o1cnFZd2xLZm03ZkJWTjRCelpOU2V5bl9pYlk0RkJsZnQtS1E?oc=5",
    "date": "2026-11-20T05:01:49.000Z",
    "score": 3.7,
-   "desc": "Oil weakened on Friday, notching a ​second straight weekly decline, as the market weighed signs of a growing global supply surplus.",
-   "img": "https://image.cnbcfm.com/api/v1/image/108255194-1769022447893-gettyimages-2256865241-_abd14372.jpeg?v=1794538524&w=1920&h=1080",
+   "desc": "Oil prices were set for a weekly decline on strong exports from the Middle East despite Houthi attacks on Saudi Arabia&#x27;s capital ​Riyadh.",
+   "img": "https://image.cnbcfm.com/api/v1/image/108280048-1774614650012-108280048-1773886769851-gettyimages-995754110-132687243.jpeg?v=1795149680&w=1920&h=1080",
    "t": {
     "en": "Oil prices set for third straight weekly decline on Middle East export flows",
     "fr": "Les prix du pétrole devraient connaître une troisième baisse hebdomadaire consécutive en raison des flux d'exportation du Moyen-Orient"
@@ -1983,41 +1975,21 @@
    }
   },
   {
-   "id": "n26-2026-11-19",
+   "id": "n25-2026-11-20",
    "cat": "markets",
    "lang": "en",
-   "title": "Energean posts 54% jump in nine-month profit helped by higher oil prices",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQY2tBbkVxSjI5Z1puUmpGRW1GSmRoMVpEYm9rSFVZVVlWRTM0Tk5mOVJGbnQ3NkJLbk1hUXVqSkdqT2RTSUZZUHBwaHdlQ0hzdXU5YXpxUmJBVEVMT3JRQ0ZDMm1UWTBnZ2tCWWJhX3BYUzdCM09XWDZzVUwtb1FOTmpRU0oxYUsxeFpKVG05MFhMTTRud292T0c0ZF9HQmdIeng5Q00tUEtoZVJKSTBlVGtZRXpiMHJ3RWFNRA?oc=5",
-   "date": "2026-11-19T18:08:07.000Z",
-   "score": 3.3,
-   "desc": "Nov 19 (Reuters) - Eastern Mediterranean gas producer Energean on Thursday posted a 54% jump in profit in the nine months to September 30 helped by higher oil prices and strong performance from its ...",
-   "img": "http://www.bing.com/th?id=ONUT.03zE00bFWRRzxgSrblSjOw&pid=News&w=900&h=1200&c=7&rs=1",
-   "t": {
-    "en": "Energean posts 54% jump in nine-month profit helped by higher oil prices",
-    "fr": "Energean affiche un bénéfice en hausse de 54 % sur neuf mois grâce à la hausse des prix du pétrole"
-   },
-   "d": {
-    "en": "Energean plc (ENOG.L), an oil and gas exploration and production company, on Thursday reported a jump in third-quarter liquid production, and an increase in net profit and adjusted EBITDAX for the first nine months of fiscal 2026.",
-    "fr": "Energean plc (ENOG.L), une société d'exploration et de production pétrolière et gazière, a annoncé jeudi une augmentation de la production liquide au troisième trimestre ainsi qu'une augmentation du bénéfice net et de l'EBITDAX ajusté pour les neuf premiers mois de l'exercice 2026."
-   }
-  },
-  {
-   "id": "n27-2026-11-20",
-   "cat": "markets",
-   "lang": "en",
-   "title": "Oil Set for Third Weekly Drop as Ample Supply Outweighs War Risk",
+   "title": "Oil Set for Third Weekly Drop as Ample Supply Counters Iran Risk",
    "source": "Bloomberg.com",
    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOWExXN0U0WEVhYzdZZ0ZoN0tISFJnbW5vLVVOMTJ1R0JFNW13cWI4ZVlRZTlnanpMTmNCVVB6S1I4TU10NVgzVzBqaHBfeFE2anBWdm1obTVHR19aMTlHb0dqTDZtVUVZNXF2b2tCbE5fZURyQ1F2bXZXVmFBY3Y3dXFZOHp4dHBnUHRqMjZLNjMzUjdoZjJ4ZHBQcDBvdw?oc=5",
-   "date": "2026-11-20T17:43:08.000Z",
+   "date": "2026-11-20T20:38:22.000Z",
    "score": 3.2,
    "t": {
-    "en": "Oil Set for Third Weekly Drop as Ample Supply Outweighs War Risk",
-    "fr": "Le pétrole devrait connaître une troisième baisse hebdomadaire alors que l’offre abondante dépasse le risque de guerre"
+    "en": "Oil Set for Third Weekly Drop as Ample Supply Counters Iran Risk",
+    "fr": "Le pétrole devrait connaître une troisième baisse hebdomadaire alors qu’une offre abondante contrecarre le risque iranien"
    }
   },
   {
-   "id": "n28-2026-11-20",
+   "id": "n26-2026-11-20",
    "cat": "markets",
    "lang": "en",
    "title": "Reluctant Germans Finally Shell Out for Winter Heating Oil",
@@ -2031,25 +2003,41 @@
    }
   },
   {
-   "id": "n29-2026-11-20",
-   "cat": "bev",
+   "id": "n27-2026-11-19",
+   "cat": "markets",
    "lang": "en",
-   "title": "Pakistan Weekly Inflation Falls 0.65% as Tomato Prices Drop 30%",
-   "source": "Bloom Pakistan",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNDY0aWVuMWF0T1NzcmhQYmJWbGZwZm4wQ0p4RmtzRVk1OVc3dnhBejRlNlFzVW1oeFJkeGZMRnZtRjlOZU1HaG9va1JvTk9UU1BXaEdsMzFYMm9aZllZYURBVVVxdDJocmpDVXFkSWktTGZYQzlIT1dfWEV2OEhlaUpSX1Fxak5kNGg2NVk3VWFXdw?oc=5",
-   "date": "2026-11-20T12:16:19.000Z",
-   "score": 2.4,
+   "title": "Energean posts 54% jump in nine-month profit helped by higher oil prices",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQY2tBbkVxSjI5Z1puUmpGRW1GSmRoMVpEYm9rSFVZVVlWRTM0Tk5mOVJGbnQ3NkJLbk1hUXVqSkdqT2RTSUZZUHBwaHdlQ0hzdXU5YXpxUmJBVEVMT3JRQ0ZDMm1UWTBnZ2tCWWJhX3BYUzdCM09XWDZzVUwtb1FOTmpRU0oxYUsxeFpKVG05MFhMTTRud292T0c0ZF9HQmdIeng5Q00tUEtoZVJKSTBlVGtZRXpiMHJ3RWFNRA?oc=5",
+   "date": "2026-11-19T18:08:07.000Z",
+   "score": 3.2,
+   "desc": "Nov 19 (Reuters) - Eastern Mediterranean gas producer Energean on Thursday posted a 54% jump in profit in the nine months to September 30 helped by higher oil prices and strong performance from its ...",
+   "img": "http://www.bing.com/th?id=ONUT.03zE00bFWRRzxgSrblSjOw&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
-    "en": "Pakistan Weekly Inflation Falls 0.65% as Tomato Prices Drop 30%",
-    "fr": "L'inflation hebdomadaire au Pakistan chute de 0,65 % alors que les prix des tomates chutent de 30 %"
+    "en": "Energean posts 54% jump in nine-month profit helped by higher oil prices",
+    "fr": "Energean affiche un bénéfice en hausse de 54 % sur neuf mois grâce à la hausse des prix du pétrole"
    },
    "d": {
-    "en": "Pakistan's weekly inflation rate declined by 0.65 per cent, bringing annual inflation to 10.41 per cent. The Pakistan Bureau of Statistics (PBS) released its latest weekly price report on Friday. However, prices of several…",
-    "fr": "Le taux d'inflation hebdomadaire du Pakistan a diminué de 0,65 pour cent, ramenant l'inflation annuelle à 10,41 pour cent. Le Bureau pakistanais des statistiques (PBS) a publié vendredi son dernier rapport hebdomadaire sur les prix. Cependant, les prix de plusieurs…"
+    "en": "Energean plc (ENOG.L), an oil and gas exploration and production company, on Thursday reported a jump in third-quarter liquid production, and an increase in net profit and adjusted EBITDAX for the first nine months of fiscal 2026.",
+    "fr": "Energean plc (ENOG.L), une société d'exploration et de production pétrolière et gazière, a annoncé jeudi une augmentation de la production liquide au troisième trimestre ainsi qu'une augmentation du bénéfice net et de l'EBITDAX ajusté pour les neuf premiers mois de l'exercice 2026."
    }
   },
   {
-   "id": "n30-2026-11-20",
+   "id": "n28-2026-11-19",
+   "cat": "markets",
+   "lang": "en",
+   "title": "Soaring gas prices could add €16 billion to German power cost, study shows",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPb2ZRblA2NEVaZVg0MWRrYU9rOEdUaVN3bWJmdS0zbGJDMllGSk04OEtJZzU1bG41dzVqTXdKYVhxUndhYU1iZDJncTFWY3M2cXFGS1RDWmYyOE5tUExGOGdyQXFkZE5rQnVHYU1BTkFoaFNRWGh4eUduaFNYMENtdG51OGJVT1lyLXIxaS1BUHB0VnlfN1V1SDJVU2loYmNndmhBLUpqTUV0SS1NQWFQaXFsWEFGNkdEM29icURn?oc=5",
+   "date": "2026-11-19T15:27:47.000Z",
+   "score": 3.1,
+   "t": {
+    "en": "Soaring gas prices could add €16 billion to German power cost, study shows",
+    "fr": "La flambée des prix du gaz pourrait ajouter 16 milliards d'euros au coût de l'électricité en Allemagne, selon une étude"
+   }
+  },
+  {
+   "id": "n29-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "Savadi urges centre to fix approp prices for cane, sugar, ethanol",
@@ -2065,7 +2053,7 @@
    }
   },
   {
-   "id": "n31-2026-11-20",
+   "id": "n30-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "Improved Supply Outlook Weighs on Sugar Prices",
@@ -2073,13 +2061,15 @@
    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSkM4SldfTzdZOUtnS3I4cXhzOXl0dG1pemMyTVFHeGY5MHYyZFo0QWhrTTBMdlZhNHY1QW9ndXpGM1RSRS1ySm5wdndVNkM4V1RQaHhCakRpOEcxb1BiRjJHcGJyTVNUcHA2WHBFVFI0RzNiTEFLQm1NLVBWczlROFBlV1MtM2lDcmpsalZtcmdoSXBP?oc=5",
    "date": "2026-11-20T19:20:42.000Z",
    "score": 1.7,
+   "desc": "March NY world sugar #11 (SBH27) closed down -0.13 (-0.76%) on Friday, and March London ICE white sugar #5 (SWH27) closed down -0.30 (-0.06%). Sugar prices extended their 5-week-long selloff on Friday ...",
+   "img": "http://www.bing.com/th?id=ONUT.ruovpqS90WUBSwe-TQEd_Q&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
     "en": "Improved Supply Outlook Weighs on Sugar Prices",
     "fr": "L’amélioration des perspectives d’approvisionnement pèse sur les prix du sucre"
    }
   },
   {
-   "id": "n32-2026-11-20",
+   "id": "n31-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "Competitive Analysis of Bottles Market: FMI Examines Recycled",
@@ -2093,7 +2083,7 @@
    }
   },
   {
-   "id": "n33-2026-11-20",
+   "id": "n32-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "Union Minister Chirag Paswan Calls on Beverage Industry to Make India a Global Centre for Manufacturing, Innovation and Exports",
@@ -2111,7 +2101,7 @@
    }
   },
   {
-   "id": "n34-2026-11-20",
+   "id": "n33-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "Brazilian Real Weakness Triggers Sharp Correction in Sugar Prices",
@@ -2129,6 +2119,20 @@
    }
   },
   {
+   "id": "n34-2026-11-20",
+   "cat": "bev",
+   "lang": "en",
+   "title": "Sugar prices fall 20% as Centre tightens supply monitoring, introduces fortnightly quota",
+   "source": "DD News",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSV9RQXlMN3JHX1ZxTHJEMXRNVDVfNmZtdm16THhWMFNHZmdCY0lVWFlvQ2cwRGE1V0N4aTdZRHZFVUhRMWlTa0RySjk5SVVVZVNfTk9jLTlad0drb25heWdIcS1kTjhyWlMyVEwtOGNLQ0oyLVAwUjZMUXVpbHpWYlN1Y0lLNEZsTHNjZGtDeVV6OUpxakZ0WjV4dWNjc2puYi00MlNkWXAzNDFjcm1qUXZB?oc=5",
+   "date": "2026-11-20T10:56:40.000Z",
+   "score": 1.7,
+   "t": {
+    "en": "Sugar prices fall 20% as Centre tightens supply monitoring, introduces fortnightly quota",
+    "fr": "Les prix du sucre chutent de 20 % alors que le Centre renforce la surveillance de l'offre et introduit un quota bimensuel"
+   }
+  },
+  {
    "id": "n35-2026-11-20",
    "cat": "bev",
    "lang": "en",
@@ -2143,17 +2147,17 @@
    }
   },
   {
-   "id": "n36-2026-11-20",
+   "id": "n36-2026-11-19",
    "cat": "bev",
-   "lang": "en",
-   "title": "EU raw sugar import prices fall below global benchmarks",
-   "source": "УкрАгроКонсалт",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVzlCYnpSMU1ZZVN3RVNmN2paX1hyeTJPT2pNMGFiTWVVWFg3N2NRaUlYX0lkZ01QQmlGU3A5eS1lbXV6RE03cXlrVWhQTE1BRjFlZ0pjZlY1NzdDaExGT2JfLVd1SERqN09rcEZyRjlEenhrVjk4U1plZ3NYdHNPMm9fV1NRZ3VVSWtuVWVwd1JfMkdFOHc?oc=5",
-   "date": "2026-11-20T07:58:55.000Z",
+   "lang": "fr",
+   "title": "Bourse de Casablanca : Details de l'action cfg-bank",
+   "source": "Medias24",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9sWDhyX1NoLWlYV2RVS3VOQ0lFVjd1NW9WVk00dVB0dEpYRnA2WTU5bEExbTF0M05DdjhKa05WWVduUDJObDB1NHl5T2lYNzF1VXBPdTNYQWUybWx6U0ZBQ3NWRnRwazZ2emFPZg?oc=5",
+   "date": "2026-11-19T16:08:21.000Z",
    "score": 1.7,
    "t": {
-    "en": "EU raw sugar import prices fall below global benchmarks",
-    "fr": "Les prix des importations de sucre brut de l’UE chutent en dessous des références mondiales"
+    "en": "Bourse de Casablanca : Details de l'action cfg-bank",
+    "fr": "Bourse de Casablanca : Détails de l'action cfg-bank"
    }
   },
   {
@@ -2308,9 +2312,9 @@
   }
  ],
  "log": [
-  "photos: 17/40 {\"othersrc\":119,\"nomatch\":46,\"empty\":25}",
-  "translated 6 new, reused 42, of 48",
-  "dedupe: 2 duplicates removed, 2 re-filed by region",
-  "briefing kept (2.5 h old)"
+  "photos: 18/40 {\"othersrc\":111,\"nomatch\":41,\"empty\":26}",
+  "translated 7 new, reused 40, of 47",
+  "dedupe: 1 duplicates removed, 2 re-filed by region",
+  "briefing kept (3.5 h old)"
  ]
 }
