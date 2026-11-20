@@ -56,6 +56,25 @@ function tag(block, name) {
   const m = block.match(new RegExp(`<${name}[^>]*>([\\s\\S]*?)</${name}>`, "i"));
   return m ? decode(m[1]) : "";
 }
+// Tidy a headline: drop source tags, shouting prefixes and stray spacing
+function cleanTitle(t, source) {
+  t = String(t || "").replace(/\s+/g, " ").trim();
+  if (source) for (const sep of [" - ", " | ", " – ", " — "]) if (t.toLowerCase().endsWith((sep + source).toLowerCase())) t = t.slice(0, -(sep.length + source.length));
+  t = t.replace(/\s[|–—-]\s[^|–—-]{2,30}\.(com|fr|net|org|info|cg|cm|ci|sn|africa)$/i, "");
+  t = t.replace(/^(EXCLUSIVE|EXCLUSIF|BREAKING|URGENT|VIDEO|VIDÉO|PHOTOS?|LIVE|DIRECT|UPDATE \d+|ANALYSIS|ANALYSE|INTERVIEW|ENTRETIEN|OPINION|TRIBUNE)\s*[:\-–|]\s*/i, "");
+  t = t.replace(/^\((VIDEO|VIDÉO|PHOTOS?|AUDIO)\)\s*/i, "").replace(/\s+([,.])/g, "$1");
+  if (t === t.toUpperCase() && /[A-Z]{4}/.test(t)) t = t.charAt(0) + t.slice(1).toLowerCase();   // ALL CAPS headline
+  return t.trim();
+}
+function cleanDesc(d, title) {
+  d = decode(String(d || "")).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  if (!d || d.length < 40) return null;
+  const tw = title.toLowerCase().slice(0, 40);
+  if (d.toLowerCase().startsWith(tw)) return null;                         // just repeats the headline
+  if (/cookie|subscribe|abonnez|javascript|sign up|newsletter|all rights reserved/i.test(d)) return null;
+  if (d.length > 230) d = d.slice(0, 230).replace(/\s+\S*$/, "") + "…";
+  return d;
+}
 async function newsQuery(cat, q) {
   const url = `https://news.google.com/rss/search?q=${encodeURIComponent(q.q + " when:" + cfg.news_max_age_days + "d")}&hl=${q.hl}&gl=${q.gl}&ceid=${q.gl}:${q.hl}`;
   const xml = await get(url, "xml");
@@ -63,6 +82,7 @@ async function newsQuery(cat, q) {
     let title = tag(b, "title");
     const source = tag(b, "source");
     if (source && title.endsWith(" - " + source)) title = title.slice(0, -(source.length + 3));
+    title = cleanTitle(title, source);
     return { cat, lang: q.hl, title, source: source || "Google News", url: tag(b, "link"), date: new Date(tag(b, "pubDate") || Date.now()).toISOString() };
   }).filter(x => x.title && x.url);
 }
@@ -111,8 +131,8 @@ function rulesSummary(markets, fx, headlines) {
   // Interleave sections so the feed is mixed: Worldwide, Africa, Congo, Markets, ... then the second round
   for (let r = 0; lists.some(l => l[r]); r++) for (const l of lists) if (l[r]) {
     const { lab, h } = l[r];
-    const it = { level: "", cat: h.cat, owner: lab.label_en, title: h.title, detail: "", source: h.source, date: h.date, impact: "", url: h.url, img: h.img || null };
-    out.en.push(it); out.fr.push({ ...it, owner: lab.label_fr });
+    const it = { level: "", cat: h.cat, owner: lab.label_en, title: (h.t && h.t.en) || h.title, detail: (h.d && h.d.en) || "", source: h.source, date: h.date, impact: "", url: h.url, img: h.img || null };
+    out.en.push(it); out.fr.push({ ...it, owner: lab.label_fr, title: (h.t && h.t.fr) || h.title, detail: (h.d && h.d.fr) || "" });
   }
   return out;
 }
@@ -202,9 +222,13 @@ async function photoFor(h) {
       const got = new Set(words(tag(b, "title"))); const hit = [...got].filter(w => want.has(w)).length;
       if (hit < 3 && hit / Math.max(1, Math.min(want.size, got.size)) < 0.5) continue;   // must be the same story
       fullTitle(h, tag(b, "title"));
+      if (!h.desc) h.desc = cleanDesc(tag(b, "description"), h.title);
       const thumb = (b.match(/<News:Image>([\s\S]*?)<\/News:Image>/i) || [])[1];
       let article = null; try { article = new URL(decode(tag(b, "link"))).searchParams.get("url"); } catch {}
-      if (article) { try { const html = await fetchText(article, 6000); const ot = (html.match(/<meta[^>]+property=["']og:title["'][^>]*>/i) || [""])[0].match(/content=["']([^"']+)/i); if (ot) fullTitle(h, ot[1]); const og = ogImage(html, article); if (og) return og; } catch {} }
+      if (article) { try { const html = await fetchText(article, 6000); const ot = (html.match(/<meta[^>]+property=["']og:title["'][^>]*>/i) || [""])[0].match(/content=["']([^"']+)/i); if (ot) fullTitle(h, ot[1]);
+        const od = (html.match(/<meta[^>]+(?:property|name)=["'](?:og:description|description)["'][^>]*>/i) || [""])[0].match(/content=["']([^"']+)/i);
+        const dd = od && cleanDesc(od[1], h.title); if (dd && (!h.desc || dd.length > h.desc.length)) h.desc = dd;
+        const og = ogImage(html, article); if (og) return og; } catch {} }
       if (thumb) return decode(thumb) + "&w=900&h=1200&c=7&rs=1";
     }
     why.nomatch = (why.nomatch || 0) + 1;
@@ -328,6 +352,43 @@ for (const n of cfg.news) {
 const seen = new Set();
 headlines = headlines.filter(h => { const k = h.title.toLowerCase().slice(0, 60); if (seen.has(k)) return false; seen.add(k); return true; });
 if (!MOCK) await addPhotos(cfg.news.flatMap(n => headlines.filter(h => h.cat === n.cat).slice(0, 6)));
+
+/* ---------- Both languages: every headline and summary in English and French ---------- */
+async function translateBatch(texts, sl, tl) {
+  const out = new Array(texts.length).fill(null);
+  let i = 0;
+  while (i < texts.length) {
+    const chunk = []; let len = 0;
+    while (i < texts.length && (len + texts[i].length < 1800 || !chunk.length)) { chunk.push(texts[i]); len += texts[i].length + 1; i++; }
+    try {
+      const r = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=${sl}&tl=${tl}&dt=t&q=${encodeURIComponent(chunk.join("\n"))}`, { signal: AbortSignal.timeout(10000) });
+      if (!r.ok) throw new Error("translate " + r.status);
+      const lines = (await r.json())[0].map(x => x[0]).join("").split("\n");
+      if (lines.length === chunk.length) lines.forEach((l, k) => out[i - chunk.length + k] = l.trim());
+      else log.push(`translate: ${lines.length}/${chunk.length} lines`);
+    } catch (e) { log.push(e.message); }
+    if (!MOCK) await new Promise(res => setTimeout(res, 300));
+  }
+  return out;
+}
+const isFrench = s => /[àâçéèêëîïôûùüœ]|\b(le|la|les|des|du|une|et|pour|dans|sur|avec|aux|au|est|sont)\b/i.test(s);
+async function bilingual(list) {
+  if (MOCK) return;
+  let n = 0;
+  for (const [sl, tl] of [["en", "fr"], ["fr", "en"]]) {
+    const items = list.filter(h => (isFrench(h.title) ? "fr" : "en") === sl);
+    const texts = items.flatMap(h => [h.title, h.desc || ""]).map(x => x || ".");
+    const tr = await translateBatch(texts, sl, tl);
+    items.forEach((h, k) => {
+      const tt = tr[2 * k], td = h.desc ? tr[2 * k + 1] : null;
+      h.t = { [sl]: h.title, [tl]: tt && tt.length > 3 ? cleanTitle(tt) : h.title };
+      if (h.desc) h.d = { [sl]: h.desc, [tl]: td && td.length > 10 ? td : h.desc };
+      if (tt) n++;
+    });
+  }
+  log.push(`translated ${n}/${list.length}`);
+}
+await bilingual(headlines);
 
 const otd = await onThisDay();
 // The briefing (Play video + article of the day) is rebuilt every 8 hours; news and markets every run.
