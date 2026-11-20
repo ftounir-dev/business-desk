@@ -71,15 +71,18 @@ async function news(n) {
 }
 
 /* ---------- Summary: AI if a key is set, rules otherwise ---------- */
-const SIXTY_PICK = { worldwide: 2, congo: 2, lebanon: 1 }; // "Overnight in 60 seconds" draws only on these sections
+const SIXTY_PICK = { worldwide: 2, africa: 2, congo: 2, markets: 1, bev: 1, cfo: 1, lebanon: 1 }; // "Overnight in 60 seconds": a mixed feed of ~10 stories
 function rulesSummary(markets, fx, headlines) {
-  const out = { en: [], fr: [] };
+  const out = { en: [], fr: [] }, lists = [];
   for (const [cat, n] of Object.entries(SIXTY_PICK)) {
     const lab = cfg.news.find(x => x.cat === cat) || { label_en: cat, label_fr: cat };
-    headlines.filter(h => h.cat === cat).slice(0, n).forEach(h => {
-      const it = { level: "", owner: lab.label_en, title: h.title, detail: h.source, impact: "", url: h.url };
-      out.en.push(it); out.fr.push({ ...it, owner: lab.label_fr });
-    });
+    lists.push(headlines.filter(h => h.cat === cat).slice(0, n).map(h => ({ lab, h })));
+  }
+  // Interleave sections so the feed is mixed: Worldwide, Africa, Congo, Markets, ... then the second round
+  for (let r = 0; lists.some(l => l[r]); r++) for (const l of lists) if (l[r]) {
+    const { lab, h } = l[r];
+    const it = { level: "", cat: h.cat, owner: lab.label_en, title: h.title, detail: "", source: h.source, date: h.date, impact: "", url: h.url };
+    out.en.push(it); out.fr.push({ ...it, owner: lab.label_fr });
   }
   return out;
 }
@@ -91,9 +94,9 @@ async function aiSummary(markets, fx, headlines) {
   const labels = Object.fromEntries(cfg.news.map(n => [n.cat, { en: n.label_en, fr: n.label_fr }]));
   const prompt = `You edit "Overnight in 60 seconds", the top of a morning news brief read by the CFO of ${cfg.company}, a beverage manufacturer in ${cfg.city}, Republic of Congo.
 
-From the headlines below, pick the 5 most important news stories of the last day: about 2 from "worldwide", 2 from "congo" (Republic of Congo and CEMAC) and 1 from "lebanon". Prefer major political, economic and security news over minor or promotional items; skip duplicates.
-For each give: cat (worldwide|congo|lebanon), level ("high" or "med"), title (clear, max 14 words, rewritten from the headline), detail (one sentence saying what happened, using only what the headline says; never invent facts or numbers), impact (one short sentence on why it matters for a Congolese company, or "" if it doesn't), source_index (the headline's i).
-Return JSON only: {"en":[5 items],"fr":[the same 5 items in natural French]}.
+From the headlines below, pick the 10 most important news stories of the last day for a fast, mixed news feed: about 2 from "worldwide", 2 from "africa" (West and Central Africa), 2 from "congo" (Republic of Congo and CEMAC), 1 from "markets", 1 from "bev" (beverages and packaging), 1 from "cfo" (finance and treasury) and 1 from "lebanon". Prefer major political, economic and security news over minor or promotional items; skip duplicates. Order them as a mixed feed: the most important story first, and never two stories from the same category in a row.
+For each give: cat (worldwide|africa|congo|markets|bev|cfo|lebanon), level ("high" or "med"), title (clear, max 14 words, rewritten from the headline), detail (one sentence saying what happened, using only what the headline says; never invent facts or numbers), impact (one short sentence on why it matters for a Congolese company, or "" if it doesn't), source_index (the headline's i).
+Return JSON only: {"en":[10 items],"fr":[the same 10 items in natural French]}.
 
 HEADLINES:
 ${JSON.stringify(pool)}`;
@@ -120,10 +123,10 @@ ${JSON.stringify(pool)}`;
   const json = JSON.parse(text.slice(text.indexOf("{"), text.lastIndexOf("}") + 1));
   for (const lang of ["en", "fr"]) {
     if (!Array.isArray(json[lang]) || json[lang].length === 0) throw new Error("AI output missing " + lang);
-    json[lang] = json[lang].slice(0, 5).map(x => {
+    json[lang] = json[lang].slice(0, 10).map(x => {
       const h = Number.isInteger(x.source_index) ? headlines[x.source_index] : null;
       const cat = (h && h.cat) || x.cat;
-      return { level: x.level === "high" ? "high" : "med", owner: (labels[cat] || {})[lang] || "", title: String(x.title || ""),
+      return { level: x.level === "high" ? "high" : "med", cat, source: h ? h.source : "", date: h ? h.date : null, owner: (labels[cat] || {})[lang] || "", title: String(x.title || ""),
                detail: String(x.detail || ""), impact: String(x.impact || ""), url: h ? h.url : null };
     });
   }
