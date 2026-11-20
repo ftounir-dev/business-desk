@@ -276,6 +276,40 @@ section{padding-top:26px}
 .nx-lead.read h3{color:var(--muted)}
 .nx-more{display:block;width:100%;margin:16px 0 4px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font:inherit;font-weight:700;color:var(--text);cursor:pointer}
 .nx-done{margin-top:18px;padding:16px;border-radius:14px;background:var(--accent-soft);text-align:center;font-weight:600;font-size:.92rem}
+/* v24: News tabs */
+#v-news .nx-tabs{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:6px;margin-top:14px;background:var(--bg);border-bottom:1px solid var(--line)}
+#v-news .chips{position:static;flex:1;gap:20px;padding:0;margin:0;min-width:0}
+#v-news .chip{border:0;background:none;border-radius:0;padding:12px 0 11px;font-size:.88rem;font-weight:600;color:var(--muted);box-shadow:none;position:relative}
+#v-news .chip[aria-pressed="true"]{background:none;color:var(--text);box-shadow:inset 0 -2px 0 var(--accent)}
+#v-news .chip .n{margin-left:5px;font-size:.62rem;font-weight:800;padding:1px 5px;vertical-align:1px}
+.nx-sbtn{flex:none;width:34px;height:34px;border:0;border-radius:50%;background:var(--sunk);color:var(--muted);display:grid;place-items:center;cursor:pointer}
+.nx-sbtn svg{width:16px;height:16px}
+#v-news .nx-search{margin-top:10px}
+#v-news .nx-search[hidden]{display:none}
+.nx-sx{border:0;background:none;color:var(--muted);font-size:.9rem;cursor:pointer;padding:6px}
+/* v24: daily briefing checklist */
+.bf-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.bf-ring{position:relative;width:56px;height:56px;flex:none}.bf-ring svg{width:56px;height:56px}
+.bf-ring b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:.82rem;white-space:nowrap}.bf-ring small{font-size:.65rem;color:var(--muted)}
+.bf-seg{display:flex;gap:3px;margin-top:12px}.bf-seg i{flex:1;height:5px;border-radius:3px;transition:background .4s}
+.bf{list-style:none;margin:10px 0 0;padding:0;border-radius:16px;background:var(--surface);border:1px solid var(--line);overflow:hidden}
+.bf-i{border-top:1px solid var(--line);position:relative}.bf-i:first-child{border-top:0}
+.bf-i::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--cc);opacity:.9}
+.bf-h{display:flex;align-items:flex-start;gap:12px;width:100%;padding:14px 14px 14px 16px;border:0;background:none;text-align:left;font:inherit;color:inherit;cursor:pointer}
+.bf-n{flex:none;width:26px;font-family:var(--mono);font-size:.82rem;font-weight:700;color:var(--muted);padding-top:2px}
+.bf-i.done .bf-n{color:var(--relief);font-size:.95rem}
+.bf-i.next .bf-n{color:var(--accent)}
+.bf-t{flex:1;min-width:0}
+.bf-k{display:block;font-size:.66rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--cc)}
+.bf-ti{display:block;margin-top:3px;font-size:.97rem;line-height:1.35;font-weight:600}
+.bf-i.done .bf-ti{color:var(--muted);font-weight:500}
+.bf-i.next{background:linear-gradient(90deg,var(--accent-soft),transparent 70%)}
+.bf-ch{flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:var(--sunk);color:var(--muted);font-weight:700;margin-top:1px}
+.bf-x{padding:0 16px 14px 54px;animation:viewIn .25s ease}
+.bf-x p{margin:0 0 8px;font-size:.9rem;line-height:1.5;color:var(--text)}.bf-imp{color:var(--muted)!important}
+.bf-a{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:.76rem;color:var(--muted)}
+.bf-a a{flex:none;font-weight:700;color:var(--accent);text-decoration:none}
+.bf-more{display:block;width:100%;margin-top:10px;padding:11px;border:0;border-radius:12px;background:var(--sunk);color:var(--text);font:inherit;font-weight:700;font-size:.88rem;cursor:pointer}
 /* v22: clean cards */
 .tl{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:12px 0 0;padding:2px 0 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .tl::-webkit-scrollbar{display:none}
@@ -397,6 +431,8 @@ section{padding-top:26px}
 .mrow{display:grid;grid-template-columns:1fr 88px 96px;gap:10px;align-items:center;padding:12px 14px;border-top:1px solid var(--line);cursor:pointer;background:none;border-left:0;border-right:0;border-bottom:0;width:100%;text-align:left}
 .mrow:first-child{border-top:0}
 .mrow .nm{font-weight:600;font-size:.95rem}
+.mwhy{grid-column:1/-1;margin-top:-2px;font-size:.8rem;line-height:1.4;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.mwhy b{font-size:.7rem;color:var(--text)}.mwhy span{opacity:.75}
 .mrow .un{font-size:.72rem;color:var(--muted)}
 .mrow svg{width:88px;height:30px;display:block}
 .mrow .px{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
@@ -515,8 +551,7 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
   <div class="quick" id="quick"></div>
   <div class="banner" id="banner"><span class="dot"></span><div id="banner-text">Loading today's brief…</div></div>
   <section>
-    <h2 class="sec" data-t="sixty"></h2>
-    <p class="sub" id="sixty-sub"></p>
+    <div class="bf-head"><div><h2 class="sec" data-t="sixty"></h2><p class="sub" id="sixty-sub"></p></div><div class="bf-ring" id="bf-ring"></div></div>
     <div id="sixty"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
   </section>
 </div>
@@ -546,8 +581,8 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 <div class="view" id="v-news" hidden>
   <section style="padding-top:18px">
     <div id="nx-habit"></div>
-    <div class="nx-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5" stroke-linecap="round"/></svg><input id="nx-q" type="search" autocomplete="off" aria-label="Search news"></div>
-    <div class="chips" id="chips" role="group" aria-label="Sections"></div>
+    <div class="nx-tabs"><div class="chips" id="chips" role="group" aria-label="Sections"></div><button class="nx-sbtn" id="nx-sbtn" type="button" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5" stroke-linecap="round"/></svg></button></div>
+    <div class="nx-search" id="nx-sbox" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5" stroke-linecap="round"/></svg><input id="nx-q" type="search" autocomplete="off" aria-label="Search news"><button type="button" class="nx-sx" id="nx-sx" aria-label="Close">✕</button></div>
     <div id="nx-list" aria-live="polite"></div>
   </section>
 </div>
@@ -667,18 +702,34 @@ function renderTop(){
 const REEL_CATS={worldwide:["🌐","linear-gradient(165deg,#2a4fb8,#0b1533)"],africa:["🌍","linear-gradient(165deg,#c8661f,#3b1606)"],congo:["🇨🇬","linear-gradient(165deg,#12895a,#05261a)"],markets:["📈","linear-gradient(165deg,#0e8a93,#04272b)"],bev:["🥤","linear-gradient(165deg,#c22a6a,#3b0a20)"],cfo:["💼","linear-gradient(165deg,#6740c4,#190c3a)"],lebanon:["🇱🇧","linear-gradient(165deg,#c42b2b,#360808)"]};
 const REEL_DUR=6500;
 const reel={i:0,el:0,last:0,paused:false,hold:false,vis:false,n:0,raf:0,io:null};
+const BF={open:null,all:false};
 function renderSixty(){
-  const nItems=(B.summary[lang]||B.summary.en||[]).length,mins=Math.max(1,Math.round(nItems*7.5/30)/2);
-  $("#sixty-sub").textContent=(lang==="fr"?`Monde, Afrique, Congo & CEMAC, DAF · ${nItems} histoires · environ ${String(mins).replace(".",",")} min`:`Worldwide, Africa, Congo & CEMAC, CFO · ${nItems} stories · about ${mins} min`);
-  const items=B.summary[lang]||B.summary.en||[];
+  const fr=lang==="fr",items=B.summary[lang]||B.summary.en||[],n=items.length;
   const catOf=x=>x.cat||((B.categories||[]).find(c=>c.en===x.owner||c.fr===x.owner)||{}).id||"worldwide";
-  if(!items.length){$("#sixty").innerHTML="";return;}
-  const fr=lang==="fr";
-  $("#sixty").innerHTML=`<div class="tl" role="list">${items.map((x,k)=>{const c=catOf(x),g=(REEL_CATS[c]||REEL_CATS.worldwide);
-    return `<a class="tl-c" role="listitem" ${x.url?`href="${esc(x.url)}" target="_blank" rel="noopener"`:""}>
-      <div class="tl-ph" style="background:${g[1]}">${x.img?`<img src="${esc(x.img)}" alt="" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">`:""}<span class="tl-e" aria-hidden="true">${g[0]}</span><span class="tl-n">${k+1}/${items.length}</span></div>
-      <div class="tl-b"><div class="tl-k" style="color:${catColor(c)}">${esc(catLabel(c))}</div><h3>${esc(x.title)}</h3><div class="tl-m">${esc(x.source||"")}${x.date?" · "+ago(x.date):""}</div></div></a>`;}).join("")}</div>
-  <button class="tl-play" type="button" id="tl-play">▶ ${fr?"Écouter les "+items.length+" sujets":"Listen to all "+items.length+" stories"}</button>`;
+  if(!n){$("#sixty").innerHTML="";$("#bf-ring").innerHTML="";$("#sixty-sub").textContent="";return;}
+  const done=items.filter(x=>NX.read[nxId(x)]).length,p=done/n,C=2*Math.PI*20;
+  const next=items.findIndex(x=>!NX.read[nxId(x)]);
+  $("#sixty-sub").textContent=done===n?(fr?"Briefing terminé. Bravo !":"Briefing complete. Well done!"):done?(fr?`${n-done} sujets restants · environ ${Math.max(1,Math.round((n-done)*0.4))} min`:`${n-done} stories left · about ${Math.max(1,Math.round((n-done)*0.4))} min`):(fr?`${n} sujets essentiels · environ ${Math.round(n*0.4)} min de lecture`:`${n} essential stories · about ${Math.round(n*0.4)} min read`);
+  $("#bf-ring").innerHTML=`<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20" fill="none" stroke="var(--sunk)" stroke-width="5"/><circle cx="24" cy="24" r="20" fill="none" stroke="${done===n?"var(--relief)":"var(--accent)"}" stroke-width="5" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-p)}" transform="rotate(-90 24 24)" style="transition:stroke-dashoffset .6s"/></svg><b>${done}<small>/${n}</small></b>`;
+  const seg=items.map(x=>`<i style="background:${NX.read[nxId(x)]?catColor(catOf(x)):"var(--sunk)"}"></i>`).join("");
+  const show=BF.all?items:items.slice(0,Math.max(6,next>=0?next+3:6));
+  $("#sixty").innerHTML=`<div class="bf-seg" aria-hidden="true">${seg}</div>
+    <ol class="bf">${show.map((x,k)=>{const id=nxId(x),d=!!NX.read[id],o=BF.open===id,c=catOf(x);
+      return `<li class="bf-i${d?" done":""}${o?" open":""}${k===next?" next":""}" style="--cc:${catColor(c)}">
+        <button class="bf-h" type="button" data-bf="${k}" aria-expanded="${o}">
+          <span class="bf-n">${d?"✓":String(k+1).padStart(2,"0")}</span>
+          <span class="bf-t"><span class="bf-k">${esc(catLabel(c))}${countriesOf(x).length?" · "+esc(countriesOf(x).map(q=>fr?q[3]:q[2]).slice(0,1)[0]):""}</span><span class="bf-ti">${esc(x.title)}</span></span>
+          <span class="bf-ch" aria-hidden="true">${o?"−":"+"}</span></button>
+        ${o?`<div class="bf-x">${x.detail?`<p>${esc(cleanDl(x.detail)||"")}</p>`:""}${x.impact?`<p class="bf-imp"><b>${t("impact")} ·</b> ${esc(x.impact)}</p>`:""}
+          <div class="bf-a"><span>${esc(x.source||"")}${x.date?" · "+ago(x.date):""}</span>${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">${fr?"Lire l'article":"Read the article"} ↗</a>`:""}</div></div>`:""}
+      </li>`;}).join("")}</ol>
+    ${show.length<n?`<button class="bf-more" type="button" id="bf-more">${fr?`Voir les ${n} sujets`:`Show all ${n} stories`}</button>`:""}
+    <button class="tl-play" type="button" id="tl-play">▶ ${fr?"Écouter le briefing":"Listen to the briefing"}</button>`;
+  $("#sixty").querySelectorAll("[data-bf]").forEach(b=>b.onclick=()=>{const x=show[+b.dataset.bf],id=nxId(x);
+    BF.open=BF.open===id?null:id;
+    if(!NX.read[id]){nxMarkRead(x);const left=items.filter(y=>!NX.read[nxId(y)]).length;if(!left&&typeof wToast==="function")wToast(fr?"✅ Briefing terminé !":"✅ Briefing complete!");}
+    renderSixty();if(typeof renderNews==="function"&&B)try{renderNews();}catch(e){}});
+  const mb=$("#bf-more");if(mb)mb.onclick=()=>{BF.all=true;renderSixty();};
   $("#tl-play").onclick=()=>openWatch(0);
 }
 function showSlide(k){
@@ -936,7 +987,7 @@ function renderMarkets(){
       const row=`<button class="mrow${tripped(m)?" tripped":""}" type="button" data-m="${m.id}" aria-expanded="${open===m.id}">
         <div><div class="nm">${esc(m.name)}</div><div class="un">${esc(m.unit)} · ${fdate(m.date)}</div></div>
         ${m.static?"<span></span>":spark(m.series,e)}
-        <div class="px"><div class="v">${fmt(m.value,m.dp)}</div><div class="c ${e}">${m.static?esc(t("ref")):(m.change_pct>0?"+":m.change_pct<0?"−":"")+fmt(Math.abs(m.change_pct),2)+"%"}</div></div></button>`;
+        <div class="px"><div class="v">${fmt(m.value,m.dp)}</div><div class="c ${e}">${m.static?esc(t("ref")):(m.change_pct>0?"+":m.change_pct<0?"−":"")+fmt(Math.abs(m.change_pct),2)+"%"}</div></div>${m.why&&m.why[lang]?`<div class="mwhy"><b>${Math.abs(m.change_pct)<0.2?"•":m.change_pct>0?"▲":"▼"}</b> ${esc(m.why[lang])}${m.why.source?` <span>· ${esc(m.why.source)}</span>`:""}</div>`:""}</button>`;
       const det=open===m.id?`<div class="detail">${m.static?esc(m.note||"")+(m.url?` · <a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.source)} ↗</a>`:""):`<div>${t("chart")}</div>${spark(m.series,e,600,90).replace("<svg",'<svg style="width:100%;height:90px"')}
         <div class="share" style="padding:0"><button class="btn" type="button" data-alert="${m.id}">${alerts[m.id]?`${t("alert")} ${alerts[m.id].dir==="above"?">":"<"} ${fmt(alerts[m.id].v,m.dp)}`:t("setalert")}</button>${m.url?`<a class="btn" href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.source)} ↗</a>`:""}</div>`}</div>`:"";
       return row+det;}).join("")}</div></div>`;}).join("");
@@ -1100,13 +1151,15 @@ function nxMeta(n,withCat){
   const ctry=countriesOf(n).map(c=>fr?c[3]:c[2]).slice(0,2).join(", ");
   return [isRead?`<span class="ok">✓ ${fr?"Lu":"Read"}</span>`:isNew?`<span class="nw">${fr?"Nouveau":"New"}</span>`:"",withCat?`<span style="color:${catColor(n.cat)}">${esc(catLabel(n.cat))}</span>`:"",`<span class="src">${esc(n.source)}</span>`,ctry?esc(ctry):"",ago(n.date)].filter(Boolean).join(" · ");
 }
+// Drop wire-service datelines ("By X NEW YORK, Nov 19 (Reuters) - ")
+function cleanDl(d){if(!d)return d;return d.replace(/^By [A-Z][\w.'-]+(?: [A-Z][\w.'-]+){0,3}\s+(?=[A-Z]{2,})/,"").replace(/^[A-ZÀ-Ý][A-ZÀ-Ý .,'’-]{1,40}(?:,\s*\w{3,9}\.?\s*\d{1,2})?\s*\([^)]{2,30}\)\s*[-–—]\s*/,"").trim()||null;}
 function nxRow(n,lead,num,withCat){
   const isRead=!!NX.read[nxId(n)];
   const href=`href="${esc(n.url)}" target="_blank" rel="noopener" data-nid="${esc(nxId(n))}"`;
   const img=n.img?`<img src="${esc(n.img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.remove()">`:"";
-  const ti=esc((n.t&&n.t[lang])||n.title),ds=(n.d&&n.d[lang])||n.desc,dh=ds?`<p class="nc-d">${esc(ds)}</p>`:"";
+  const ti=esc((n.t&&n.t[lang])||n.title),ds=cleanDl((n.d&&n.d[lang])||n.desc),dh=ds?`<p class="nc-d">${esc(ds)}</p>`:"";
   if(lead&&n.img)return `<a class="nc lead${isRead?" read":""}" ${href}><div class="nc-ph">${img}</div><div class="nc-m">${nxMeta(n,withCat)}</div><h3>${ti}</h3>${dh}</a>`;
-  return `<a class="nc${isRead?" read":""}" ${href}><div class="nc-t"><div class="nc-m">${nxMeta(n,withCat)}</div><h3>${ti}</h3>${dh}</div>${img?`<div class="nc-th">${img}</div>`:""}</a>`;
+  return `<a class="nc${isRead?" read":""}" ${href}><div class="nc-t"><div class="nc-m">${nxMeta(n,withCat)}</div><h3>${ti}</h3>${dh}</div></a>`;
 }
 function nxBlock(c,l){
   const fr=lang==="fr",r=l.filter(n=>NX.read[nxId(n)]).length;
@@ -1127,6 +1180,10 @@ function renderNews(){
     return `<button class="chip" type="button" data-cat="${c.id}" aria-pressed="${cat===c.id}">${esc(c[lang]||c.en)}${n?`<span class="n">${n}</span>`:""}</button>`;}).join("");
   document.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>{cat=b.dataset.cat;renderNews();});
   const qi=$("#nx-q");qi.placeholder=fr?"Rechercher : BEAC, pétrole, Eurobond…":"Search: BEAC, oil, Eurobond…";
+  const sb=$("#nx-sbox");if(!$("#nx-sbtn").dataset.w){$("#nx-sbtn").dataset.w=1;
+    $("#nx-sbtn").onclick=()=>{sb.hidden=!sb.hidden;if(!sb.hidden)qi.focus();};
+    $("#nx-sx").onclick=()=>{qi.value="";NX.q="";sb.hidden=true;renderNews();};}
+  if(NX.q)sb.hidden=false;
   if(!qi.dataset.w){qi.dataset.w=1;let tm=0;qi.oninput=()=>{clearTimeout(tm);tm=setTimeout(()=>{NX.q=qi.value.trim();renderNews();},180);};}
   const norm=s=>s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
   let html="";
@@ -1142,7 +1199,7 @@ function renderNews(){
     html+=`<div class="nd-end">${left?`<b>${fr?`Encore ${left} à lire`:`${left} left to read`}</b><span>${fr?"Les titres essentiels, 5 par rubrique.":"The essential headlines, 5 per section."}</span>`:`<b>✅ ${fr?"Tout lu. Bravo !":"All caught up. Well done!"}</b><span>${nxt?(fr?`Nouveaux titres vers ${nxt}.`:`Fresh headlines around ${nxt}.`):""}</span>`}</div>`;
   }
   $("#nx-list").innerHTML=html;
-  $("#nx-list").querySelectorAll("[data-nid]").forEach(a=>a.onclick=()=>{const n=all.find(x=>nxId(x)===a.dataset.nid);if(n){nxMarkRead(n);setTimeout(renderNews,400);}});
+  $("#nx-list").querySelectorAll("[data-nid]").forEach(a=>a.onclick=()=>{const n=all.find(x=>nxId(x)===a.dataset.nid);if(n){nxMarkRead(n);setTimeout(()=>{renderNews();renderSixty();},400);}});
 }
 (function(){
   let y0=null,x0=0,t0=0;
