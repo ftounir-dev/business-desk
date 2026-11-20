@@ -218,6 +218,11 @@
           "q": "dollar euro Fed oil prices",
           "hl": "en",
           "gl": "US"
+        },
+        {
+          "q": "oil prices OR Brent OR OPEC OR \"gold price\" OR \"dollar index\"",
+          "hl": "en",
+          "gl": "GB"
         }
       ]
     },
