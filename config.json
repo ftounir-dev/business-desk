@@ -117,9 +117,14 @@
       "label_fr": "Congo & CEMAC",
       "queries": [
         {
-          "q": "(Congo Brazzaville OR CEMAC OR BEAC) économie",
+          "q": "Brazzaville OR \"Congo-Brazzaville\" OR \"Pointe-Noire\" OR \"République du Congo\" OR Sassou",
           "hl": "fr",
           "gl": "CG"
+        },
+        {
+          "q": "CEMAC OR BEAC",
+          "hl": "fr",
+          "gl": "CM"
         }
       ]
     },
