@@ -276,6 +276,13 @@ section{padding-top:26px}
 .nx-lead.read h3{color:var(--muted)}
 .nx-more{display:block;width:100%;margin:16px 0 4px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font:inherit;font-weight:700;color:var(--text);cursor:pointer}
 .nx-done{margin-top:18px;padding:16px;border-radius:14px;background:var(--accent-soft);text-align:center;font-weight:600;font-size:.92rem}
+/* v25: compact masthead */
+.mast{align-items:center;padding:10px 16px 6px;gap:8px}
+.mast .grow{display:flex;flex-direction:column-reverse}
+.mast h1{font-size:clamp(1.3rem,6.2vw,1.65rem);white-space:nowrap;margin:0}
+.dateline{margin-top:2px;font-size:.7rem;letter-spacing:.06em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mast .iconbtn{height:34px;min-width:34px;padding:0 9px;flex:none}
+@media (max-width:390px){.mast{gap:6px}.mast .iconbtn{height:32px;min-width:32px;padding:0 8px}}
 /* v24: News tabs */
 #v-news .nx-tabs{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:6px;margin-top:14px;background:var(--bg);border-bottom:1px solid var(--line)}
 #v-news .chips{position:static;flex:1;gap:20px;padding:0;margin:0;min-width:0}
@@ -303,6 +310,7 @@ section{padding-top:26px}
 .bf-k{display:block;font-size:.66rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--cc)}
 .bf-ti{display:block;margin-top:3px;font-size:.97rem;line-height:1.35;font-weight:600}
 .bf-i.done .bf-ti{color:var(--muted);font-weight:500}
+.bf-k .st{font-style:normal;margin-left:8px;padding:1px 6px;border-radius:999px;background:var(--sunk);color:var(--muted);letter-spacing:.04em}.bf-k .st.rd{background:color-mix(in srgb,var(--relief) 15%,transparent);color:var(--relief)}
 .bf-i.next{background:linear-gradient(90deg,var(--accent-soft),transparent 70%)}
 .bf-ch{flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:var(--sunk);color:var(--muted);font-weight:700;margin-top:1px}
 .bf-x{padding:0 16px 14px 54px;animation:viewIn .25s ease}
@@ -551,7 +559,7 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
   <div class="quick" id="quick"></div>
   <div class="banner" id="banner"><span class="dot"></span><div id="banner-text">Loading today's brief…</div></div>
   <section>
-    <div class="bf-head"><div><h2 class="sec" data-t="sixty"></h2><p class="sub" id="sixty-sub"></p></div><div class="bf-ring" id="bf-ring"></div></div>
+    <div class="bf-head"><div><h2 class="sec" id="sixty-h"></h2><p class="sub" id="sixty-sub"></p></div><div class="bf-ring" id="bf-ring"></div></div>
     <div id="sixty"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
   </section>
 </div>
@@ -637,7 +645,7 @@ const T={
   t_today:"Today",t_markets:"Markets",t_news:"News",t_tools:"Tools",saved:"Saved",
   above:"Alert above",below:"Alert below",threshold:"Threshold",save_alert:"Save alert",remove:"Remove",cancel:"Cancel",setalert:"Set alert",alert:"Alert",
   foot:"News updates every hour from public market data and news. Prices are last closes and can lag by a day. Not trading advice.",
-  impact:"Why it matters",source:"Source",see:"See all",updated:"Updated",ai:"Written by AI from today's data",rules:"Automatic summary",
+  impact:"Impact on ITE",source:"Source",see:"See all",updated:"Updated",ai:"Written by AI from today's data",rules:"Automatic summary",
   stale:"This brief is more than a day old. The automatic update may have failed; check GitHub Actions.",armed:"alerts armed, none triggered",
   offline:"Offline: showing the last brief saved on this phone.",ago_m:"min ago",ago_h:"h ago",ago_d:"d ago",now:"now",chart:"Last month",nostories:"No stories in this section yet. It fills on the next update."},
  fr:{ite:"Brazzaville",sixty:"Les dernières 24 heures",t_events:"Événements",wa:"Envoyer sur WhatsApp",copy:"Copier le texte",
@@ -650,7 +658,7 @@ const T={
   t_today:"Aujourd'hui",t_markets:"Marchés",t_news:"Actus",t_tools:"Outils",saved:"Enregistrés",
   above:"Alerte au-dessus",below:"Alerte en dessous",threshold:"Seuil",save_alert:"Enregistrer",remove:"Supprimer",cancel:"Annuler",setalert:"Créer une alerte",alert:"Alerte",
   foot:"Actualités mises à jour toutes les heures à partir de données de marché et d'actualités publiques. Prix de clôture, parfois avec un jour de décalage. Pas un conseil d'investissement.",
-  impact:"Pourquoi c'est important",source:"Source",see:"Tout voir",updated:"Mis à jour",ai:"Rédigé par IA à partir des données du jour",rules:"Résumé automatique",
+  impact:"Impact pour ITE",source:"Source",see:"Tout voir",updated:"Mis à jour",ai:"Rédigé par IA à partir des données du jour",rules:"Résumé automatique",
   stale:"Ce brief date de plus d'un jour. La mise à jour automatique a peut-être échoué ; vérifiez GitHub Actions.",armed:"alertes actives, aucune déclenchée",
   offline:"Hors ligne : dernier brief enregistré sur ce téléphone.",ago_m:"min",ago_h:"h",ago_d:"j",now:"à l'instant",chart:"Dernier mois",nostories:"Pas encore d'articles dans cette rubrique. Elle se remplit à la prochaine mise à jour."}
 };
@@ -689,7 +697,7 @@ function spark(series,cls,W=88,H=30){
 
 function renderTop(){
   const g=new Date(B.generated_at);
-  $("#dateline").textContent=`${new Date().toLocaleDateString(loc(),{weekday:"long",day:"numeric",month:"long"})} · ${t("updated")} ${g.toLocaleTimeString(loc(),{hour:"2-digit",minute:"2-digit"})}`;
+  $("#dateline").textContent=`${new Date().toLocaleDateString(loc(),{weekday:"short",day:"numeric",month:"short"})} · ${t("updated")} ${g.toLocaleTimeString(loc(),{hour:"2-digit",minute:"2-digit"})}`;
   const tk=["usdxaf","eurusd","brent","wti","gold","silver"].map(M).filter(Boolean);
   $("#ticker").innerHTML=tk.map(m=>{const e=effect(m);return`<span class="tk"><b>${esc(m.name)}</b><span class="v">${fmt(m.value,m.dp)}</span><span class="${e}">${m.change_pct>0?"▲":m.change_pct<0?"▼":"·"}${fmt(Math.abs(m.change_pct),1)}%</span></span>`;}).join("");
   const bn=$("#banner");bn.className="banner";
@@ -703,32 +711,45 @@ const REEL_CATS={worldwide:["🌐","linear-gradient(165deg,#2a4fb8,#0b1533)"],af
 const REEL_DUR=6500;
 const reel={i:0,el:0,last:0,paused:false,hold:false,vis:false,n:0,raf:0,io:null};
 const BF={open:null,all:false};
+const OPENED=store.get("bf_open",{});
+function bfTitle(items){const fr=lang==="fr",ok=items.length&&items.every(x=>x.date&&Date.now()-new Date(x.date)<=864e5);
+  return ok?(fr?"Les dernières 24 heures":"The last 24 hours"):(fr?"Votre dernier briefing":"Your latest briefing");}
+const wc=s=>String(s||"").trim().split(/\s+/).filter(Boolean).length;
+function bfStats(items){ // audio = what the voice actually reads; reading = headline + summary
+  const say=items.reduce((a,x)=>a+wc((ctryWords(x)||x.owner||""))+wc(x.title)+wc(x.detail)+wc(x.impact),0);
+  const read=items.reduce((a,x)=>a+wc(x.title)+wc(x.detail)+wc(x.impact),0);
+  const full=items.filter(x=>x.detail).length>=items.length/2;
+  return {listen:Math.max(1,Math.round(say/155+items.length*1.2/60)),read:Math.max(1,Math.round(read/220)),full};}
+function minTxt(m){return m+" min";}
 function renderSixty(){
   const fr=lang==="fr",items=B.summary[lang]||B.summary.en||[],n=items.length;
   const catOf=x=>x.cat||((B.categories||[]).find(c=>c.en===x.owner||c.fr===x.owner)||{}).id||"worldwide";
   if(!n){$("#sixty").innerHTML="";$("#bf-ring").innerHTML="";$("#sixty-sub").textContent="";return;}
-  const done=items.filter(x=>NX.read[nxId(x)]).length,p=done/n,C=2*Math.PI*20;
-  const next=items.findIndex(x=>!NX.read[nxId(x)]);
-  $("#sixty-sub").textContent=done===n?(fr?"Briefing terminé. Bravo !":"Briefing complete. Well done!"):done?(fr?`${n-done} sujets restants · environ ${Math.max(1,Math.round((n-done)*0.4))} min`:`${n-done} stories left · about ${Math.max(1,Math.round((n-done)*0.4))} min`):(fr?`${n} sujets essentiels · environ ${Math.round(n*0.4)} min de lecture`:`${n} essential stories · about ${Math.round(n*0.4)} min read`);
+  const seen=x=>NX.read[nxId(x)]||OPENED[nxId(x)];
+  const done=items.filter(seen).length,nRead=items.filter(x=>NX.read[nxId(x)]).length,p=done/n,C=2*Math.PI*20;
+  const next=items.findIndex(x=>!seen(x)),st=bfStats(items);
+  $("#sixty-h").textContent=bfTitle(items);
+  $("#sixty-sub").textContent=done===n?(fr?`Tous les sujets ouverts · ${nRead} articles lus`:`All stories opened · ${nRead} articles read`):(fr?`${done} sur ${n} ouverts · ${nRead} lus · lecture ${minTxt(st.read)}`:`${done} of ${n} opened · ${nRead} read · ${minTxt(st.read)} read`);
   $("#bf-ring").innerHTML=`<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20" fill="none" stroke="var(--sunk)" stroke-width="5"/><circle cx="24" cy="24" r="20" fill="none" stroke="${done===n?"var(--relief)":"var(--accent)"}" stroke-width="5" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-p)}" transform="rotate(-90 24 24)" style="transition:stroke-dashoffset .6s"/></svg><b>${done}<small>/${n}</small></b>`;
-  const seg=items.map(x=>`<i style="background:${NX.read[nxId(x)]?catColor(catOf(x)):"var(--sunk)"}"></i>`).join("");
+  const seg=items.map(x=>`<i style="background:${seen(x)?catColor(catOf(x)):"var(--sunk)"}"></i>`).join("");
   const show=BF.all?items:items.slice(0,Math.max(6,next>=0?next+3:6));
   $("#sixty").innerHTML=`<div class="bf-seg" aria-hidden="true">${seg}</div>
-    <ol class="bf">${show.map((x,k)=>{const id=nxId(x),d=!!NX.read[id],o=BF.open===id,c=catOf(x);
-      return `<li class="bf-i${d?" done":""}${o?" open":""}${k===next?" next":""}" style="--cc:${catColor(c)}">
+    <ol class="bf">${show.map((x,k)=>{const id=nxId(x),d=!!NX.read[id],op=!d&&!!OPENED[id],o=BF.open===id,c=catOf(x);
+      return `<li class="bf-i${d?" done":""}${op?" opened":""}${o?" open":""}${k===next?" next":""}" style="--cc:${catColor(c)}">
         <button class="bf-h" type="button" data-bf="${k}" aria-expanded="${o}">
           <span class="bf-n">${d?"✓":String(k+1).padStart(2,"0")}</span>
-          <span class="bf-t"><span class="bf-k">${esc(catLabel(c))}${countriesOf(x).length?" · "+esc(countriesOf(x).map(q=>fr?q[3]:q[2]).slice(0,1)[0]):""}</span><span class="bf-ti">${esc(x.title)}</span></span>
+          <span class="bf-t"><span class="bf-k">${esc(catLabel(c))}${countriesOf(x).length?" · "+esc(countriesOf(x).map(q=>fr?q[3]:q[2]).slice(0,1)[0]):""}${d?`<em class="st rd">${fr?"Lu":"Read"}</em>`:op?`<em class="st">${fr?"Ouvert":"Opened"}</em>`:""}</span><span class="bf-ti">${esc(x.title)}</span></span>
           <span class="bf-ch" aria-hidden="true">${o?"−":"+"}</span></button>
         ${o?`<div class="bf-x">${x.detail?`<p>${esc(cleanDl(x.detail)||"")}</p>`:""}${x.impact?`<p class="bf-imp"><b>${t("impact")} ·</b> ${esc(x.impact)}</p>`:""}
-          <div class="bf-a"><span>${esc(x.source||"")}${x.date?" · "+ago(x.date):""}</span>${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">${fr?"Lire l'article":"Read the article"} ↗</a>`:""}</div></div>`:""}
+          <div class="bf-a"><span>${esc(x.source||"")}${x.date?" · "+ago(x.date):""}</span>${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener" data-bfread="${k}">${fr?"Lire l'article":"Read the article"} ↗</a>`:""}</div></div>`:""}
       </li>`;}).join("")}</ol>
     ${show.length<n?`<button class="bf-more" type="button" id="bf-more">${fr?`Voir les ${n} sujets`:`Show all ${n} stories`}</button>`:""}
-    <button class="tl-play" type="button" id="tl-play">▶ ${fr?"Écouter le briefing":"Listen to the briefing"}</button>`;
+    <button class="tl-play" type="button" id="tl-play">▶ ${st.full?(fr?"Écouter le briefing":"Listen to the briefing"):(fr?"Écouter les titres":"Listen to the headlines")} · ${minTxt(st.listen)}</button>`;
   $("#sixty").querySelectorAll("[data-bf]").forEach(b=>b.onclick=()=>{const x=show[+b.dataset.bf],id=nxId(x);
     BF.open=BF.open===id?null:id;
-    if(!NX.read[id]){nxMarkRead(x);const left=items.filter(y=>!NX.read[nxId(y)]).length;if(!left&&typeof wToast==="function")wToast(fr?"✅ Briefing terminé !":"✅ Briefing complete!");}
-    renderSixty();if(typeof renderNews==="function"&&B)try{renderNews();}catch(e){}});
+    if(!OPENED[id]&&!NX.read[id]){OPENED[id]=Date.now();store.set("bf_open",OPENED);if(!items.filter(y=>!seen(y)).length&&typeof wToast==="function")wToast(fr?"✅ Tous les sujets ouverts":"✅ All stories opened");}
+    renderSixty();});
+  $("#sixty").querySelectorAll("[data-bfread]").forEach(a=>a.onclick=()=>{nxMarkRead(show[+a.dataset.bfread]);setTimeout(()=>{renderSixty();try{renderNews();}catch(e){}},300);});
   const mb=$("#bf-more");if(mb)mb.onclick=()=>{BF.all=true;renderSixty();};
   $("#tl-play").onclick=()=>openWatch(0);
 }
@@ -766,7 +787,7 @@ function openWatch(start){
   reel.paused=true;ppIcon();
   const fr=lang==="fr";W.items=(B.summary[lang]||B.summary.en||[]).map(x=>({...x,cat:catOfX(x)}));W.paused=false;
   const el=document.createElement("div");el.className="watch";el.id="watch";el.setAttribute("role","dialog");el.setAttribute("aria-label",t("sixty"));
-  el.innerHTML=`<div class="w-top"><button class="w-x" aria-label="${fr?"Fermer":"Close"}">✕</button><span class="w-title">${esc(t("sixty"))}</span><button class="w-snd" aria-label="${fr?"Son":"Sound"}">${W.muted?"🔇":"🔊"}</button></div>`+
+  el.innerHTML=`<div class="w-top"><button class="w-x" aria-label="${fr?"Fermer":"Close"}">✕</button><span class="w-title">${esc(bfTitle(W.items))}</span><button class="w-snd" aria-label="${fr?"Son":"Sound"}">${W.muted?"🔇":"🔊"}</button></div>`+
     W.items.map((x,k)=>{const c=REEL_CATS[x.cat]||REEL_CATS.worldwide,id=wid(x);
       return `<section class="wv" data-k="${k}" style="background:${c[1]}">
       ${x.img?`<img class="kb" src="${esc(x.img)}" alt="" decoding="async" onerror="this.insertAdjacentHTML('afterend','<div class=&quot;w-emoji&quot;>${c[0]}</div>');this.remove()">`:`<div class="w-emoji" aria-hidden="true">${c[0]}</div>`}<i class="ov2"></i>
@@ -924,12 +945,12 @@ function renderHero(){
   const sigHead=sig==="relief"?(fr?"Signal coûts : allègement":"Cost signal: relief"):sig==="pressure"?(fr?"Signal coûts : pression":"Cost signal: pressure"):(fr?"Signal coûts : stable":"Cost signal: stable");
   const pct=m=>(m.change_pct>0?"+":m.change_pct<0?"−":"")+fmt(Math.abs(m.change_pct),1)+"%";
   const why=drivers.map(m=>(m.id==="usdxaf"?"USD/XAF":m.name)+" "+pct(m)).join(" · ");
-  const n=items.length,mins=Math.max(1,Math.round(n*7.5/30)/2);
+  const n=items.length,bst=bfStats(items),mins=bst.listen;
   const stale=age>14;
-  $("#hero").innerHTML=`<div class="h-top"><span>${part} · ${now.toLocaleDateString(fr?"fr-FR":"en-GB",{weekday:"short",day:"numeric",month:"short"})}</span><span>${esc(updTxt)}</span></div>
+  $("#hero").innerHTML=`<div class="h-top"><span>${part}</span><span>${esc(updTxt)}</span></div>
     <h2 class="h-hi">${hi}</h2>
     ${stale?`<p class="h-sub">${fr?"Les données ont plus de 14 h : tirez vers le bas pour actualiser.":"Data is more than 14 hours old: pull down to refresh."}</p>`:""}
-    <button class="h-play" type="button" id="h-play" ${n?"":"disabled"}><span class="h-btn">▶</span><span><b>${n?(fr?`Écouter le briefing · ${String(mins).replace(".",",")} min`:`Play the briefing · ${mins} min`):(fr?"Briefing en préparation":"Briefing being prepared")}</b><span class="s">${n} ${fr?"sujets · Monde, Afrique, Congo & CEMAC, DAF":"stories · Worldwide, Africa, Congo & CEMAC, CFO"}</span></span></button>`;
+    <button class="h-play" type="button" id="h-play" ${n?"":"disabled"}><span class="h-btn">▶</span><span><b>${n?(bst.full?(fr?`Écouter le briefing · ${mins} min`:`Listen to the briefing · ${mins} min`):(fr?`Écouter les titres · ${mins} min`:`Listen to the headlines · ${mins} min`)):(fr?"Briefing en préparation":"Briefing being prepared")}</b><span class="s">${n} ${fr?"sujets":"stories"} · ${fr?"lecture":"read"} ${bst.read} min</span></span></button>`;
   $("#h-play").onclick=()=>{if(n)openWatch(0);};
   const ids=["usdxaf","brent","gold"],ms=ids.map(id=>B.markets.find(m=>m.id===id)).filter(Boolean);
   const big=ms.reduce((a,m)=>Math.abs(m.change_pct||0)>Math.abs(a.change_pct||0)?m:a,ms[0]||{});
