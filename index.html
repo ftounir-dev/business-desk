@@ -183,9 +183,10 @@ section{padding-top:26px}
 .hero{margin-top:14px;border-radius:18px;overflow:hidden;color:#eef2f8;background:linear-gradient(160deg,#0f1b33 0%,#15284a 60%,#1c3157 100%);border:1px solid rgba(255,255,255,.06);box-shadow:0 10px 28px rgba(15,27,51,.28);position:relative}
 .hero::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(#d9a441,#a8741a)}
 .h-top{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px 0 20px;font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#d9a441}
-.h-top span:last-child{color:#9fb0c8;letter-spacing:.04em;font-weight:600;text-transform:none;font-size:.74rem;font-family:var(--mono)}
+.h-top span:last-child{white-space:nowrap;color:#9fb0c8;letter-spacing:.04em;font-weight:600;text-transform:none;font-size:.74rem;font-family:var(--mono)}
 .h-hi{margin:8px 16px 0 20px;font-family:var(--display);font-size:1.55rem;line-height:1.15;font-weight:700;color:#fff}
 .h-sub{margin:6px 16px 0 20px;font-size:.9rem;line-height:1.45;color:#b9c6d9}
+.h-take{color:#e6ecf5;font-size:.92rem}
 .h-sig{display:flex;align-items:center;gap:10px;margin:14px 16px 0 20px;padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.06);font-size:.86rem;line-height:1.35}
 .h-sig i{flex:none;width:10px;height:10px;border-radius:50%;background:#9fb0c8;box-shadow:0 0 0 4px rgba(159,176,200,.15)}
 .h-sig.relief i{background:#4ade80;box-shadow:0 0 0 4px rgba(74,222,128,.18)}.h-sig.pressure i{background:#fb923c;box-shadow:0 0 0 4px rgba(251,146,60,.18)}
@@ -842,7 +843,7 @@ function renderHero(){
   const stale=age>14;
   $("#hero").innerHTML=`<div class="h-top"><span>${part} · ${now.toLocaleDateString(fr?"fr-FR":"en-GB",{weekday:"short",day:"numeric",month:"short"})}</span><span>${esc(updTxt)}</span></div>
     <h2 class="h-hi">${hi}</h2>
-    ${stale?`<p class="h-sub">${fr?"Les données ont plus de 14 h : tirez vers le bas pour actualiser.":"Data is more than 14 hours old: pull down to refresh."}</p>`:""}
+    ${stale?`<p class="h-sub">${fr?"Les données ont plus de 14 h : tirez vers le bas pour actualiser.":"Data is more than 14 hours old: pull down to refresh."}</p>`:(B.takeaway&&B.takeaway[lang]?`<p class="h-sub h-take">${esc(B.takeaway[lang])}</p>`:"")}
     ${drivers.length?`<div class="h-sig ${sig}"><i></i><div><b>${sigHead}</b><br><span>${esc(why)}</span></div></div>`:""}
     <button class="h-play" type="button" id="h-play" ${n?"":"disabled"}><span class="h-btn">▶</span><span><b>${n?(fr?`Écouter le briefing · ${String(mins).replace(".",",")} min`:`Play the briefing · ${mins} min`):(fr?"Briefing en préparation":"Briefing being prepared")}</b><span class="s">${n} ${fr?"sujets · Monde, Afrique, Congo & CEMAC, DAF":"stories · Worldwide, Africa, Congo & CEMAC, CFO"}</span></span></button>`;
   $("#h-play").onclick=()=>{if(n)openWatch(0);};
@@ -1092,7 +1093,8 @@ function nxBlock(c,l){
 }
 function renderNews(){
   const fr=lang==="fr",all=[...B.news].sort((a,b)=>b.date.localeCompare(a.date));
-  const TOP=5,top={};B.categories.forEach(c=>top[c.id]=all.filter(n=>n.cat===c.id).slice(0,TOP));
+  const TOP=5,top={},rank=(a,b)=>(b.score||0)-(a.score||0)||b.date.localeCompare(a.date);
+  B.categories.forEach(c=>top[c.id]=all.filter(n=>n.cat===c.id).sort(rank).slice(0,TOP));
   const pool=B.categories.flatMap(c=>top[c.id]);
   const unseen=pool.filter(n=>!NX.read[nxId(n)]&&new Date(n.date).getTime()>NX.prev);
   nxHabit(unseen.length);
