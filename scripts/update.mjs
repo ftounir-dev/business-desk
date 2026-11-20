@@ -17,9 +17,13 @@ async function get(url, kind = "json") {
     const t = await fs.readFile(f, "utf8");
     return kind === "json" ? JSON.parse(t) : t;
   }
-  const r = await fetch(url, { headers: { "User-Agent": UA, "Accept": kind === "json" ? "application/json" : "application/rss+xml,text/xml" } });
-  if (!r.ok) throw new Error(`${r.status} ${url}`);
-  return kind === "json" ? r.json() : r.text();
+  // Retry politely when a source rate-limits us (429) or hiccups (5xx)
+  for (let attempt = 0; ; attempt++) {
+    const r = await fetch(url, { headers: { "User-Agent": UA, "Accept": kind === "json" ? "application/json" : "application/rss+xml,text/xml" } });
+    if (r.ok) return kind === "json" ? r.json() : r.text();
+    if (attempt < 2 && (r.status === 429 || r.status >= 500)) { await new Promise(res => setTimeout(res, 5000 * (attempt + 1))); continue; }
+    throw new Error(`${r.status} ${url}`);
+  }
 }
 
 /* ---------- Prices (Yahoo Finance chart endpoint, daily closes, last month) ---------- */
@@ -256,9 +260,18 @@ markets.unshift({ id: "usdxaf", group: "fx", name: "USD/XAF", unit: "XAF per USD
   date: fx.date, change_pct: (fx.usdxaf / fx.usdxaf_prev - 1) * 100,
   series: eurusd.series.map(([d, v]) => [d, cfg.eur_xaf_peg / v]), source: "655.957 ÷ EUR/USD", url: eurusd.url });
 
+let prevBrief = {};
+try { prevBrief = JSON.parse(await fs.readFile(path.join(ROOT, "data", "brief.json"), "utf8")); } catch {}
 let headlines = [];
 for (const n of cfg.news) {
-  headlines.push(...await news(n));
+  let got = await news(n);
+  // Never leave a section empty: if a source failed, keep the last good stories for that section
+  if (got.length < 3) {
+    const old = (prevBrief.news || []).filter(h => h.cat === n.cat && !got.some(g => g.title === h.title));
+    if (old.length) { got = [...got, ...old].slice(0, cfg.news_per_category || 8); log.push(`reused ${old.length} earlier ${n.cat} stories`); }
+  }
+  headlines.push(...got);
+  if (!MOCK) await new Promise(res => setTimeout(res, 800));   // space out Google News requests
 }
 const seen = new Set();
 headlines = headlines.filter(h => { const k = h.title.toLowerCase().slice(0, 60); if (seen.has(k)) return false; seen.add(k); return true; });
