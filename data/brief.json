@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-20T11:22:21.216Z",
+ "generated_at": "2026-11-20T11:26:32.673Z",
  "summary_mode": "rules",
  "peg": 655.957,
  "fx": {
-  "eurusd": 1.0967316627502441,
-  "usdxaf": 598.1016344098924,
+  "eurusd": 1.096611499786377,
+  "usdxaf": 598.167172355736,
   "usdxaf_prev": 597.8457318897565,
   "date": "2026-11-20"
  },
@@ -16,10 +16,10 @@
    "unit": "XAF per USD",
    "dp": 1,
    "cost": 1,
-   "value": 598.1016344098924,
+   "value": 598.167172355736,
    "prev": 597.8457318897565,
    "date": "2026-11-20",
-   "change_pct": 0.04280410588983763,
+   "change_pct": 0.05376645660135626,
    "series": [
     [
      "2026-10-21",
@@ -107,7 +107,7 @@
     ],
     [
      "2026-11-20",
-     598.1016344098924
+     598.167172355736
     ]
    ],
    "source": "655.957 ÷ EUR/USD",
@@ -120,10 +120,10 @@
    "unit": "USD per EUR",
    "dp": 4,
    "cost": -1,
-   "value": 1.0967316627502441,
+   "value": 1.096611499786377,
    "prev": 1.0972011089324951,
    "date": "2026-11-20",
-   "change_pct": -0.04278579181420383,
+   "change_pct": -0.05373756381743533,
    "series": [
     [
      "2026-10-21",
@@ -211,7 +211,7 @@
     ],
     [
      "2026-11-20",
-     1.0967316627502441
+     1.096611499786377
     ]
    ],
    "source": "Yahoo Finance",
@@ -224,10 +224,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 88.7300033569336,
+   "value": 88.86000061035156,
    "prev": 91.9800033569336,
    "date": "2026-11-20",
-   "change_pct": -3.5333766920927268,
+   "change_pct": -3.3920446104733104,
    "series": [
     [
      "2026-10-22",
@@ -315,7 +315,7 @@
     ],
     [
      "2026-11-20",
-     88.7300033569336
+     88.86000061035156
     ]
    ],
    "source": "Yahoo Finance",
@@ -328,10 +328,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 81.87999725341797,
+   "value": 81.98999786376953,
    "prev": 83.20999908447266,
    "date": "2026-11-20",
-   "change_pct": -1.5983677991685874,
+   "change_pct": -1.4661714146452676,
    "series": [
     [
      "2026-10-22",
@@ -419,7 +419,7 @@
     ],
     [
      "2026-11-20",
-     81.87999725341797
+     81.98999786376953
     ]
    ],
    "source": "Yahoo Finance",
@@ -432,10 +432,10 @@
    "unit": "USD/oz",
    "dp": 0,
    "cost": 0,
-   "value": 3589.39990234375,
+   "value": 3586.89990234375,
    "prev": 3685.5,
    "date": "2026-11-20",
-   "change_pct": -2.6075185905915066,
+   "change_pct": -2.675351991758246,
    "series": [
     [
      "2026-10-22",
@@ -523,7 +523,7 @@
     ],
     [
      "2026-11-20",
-     3589.39990234375
+     3586.89990234375
     ]
    ],
    "source": "Yahoo Finance",
@@ -536,10 +536,10 @@
    "unit": "USD/oz",
    "dp": 2,
    "cost": 0,
-   "value": 42.4900016784668,
+   "value": 42.45500183105469,
    "prev": 44.31800079345703,
    "date": "2026-11-20",
-   "change_pct": -4.124732799905795,
+   "change_pct": -4.203707137162627,
    "series": [
     [
      "2026-10-22",
@@ -627,7 +627,7 @@
     ],
     [
      "2026-11-20",
-     42.4900016784668
+     42.45500183105469
     ]
    ],
    "source": "Yahoo Finance",
@@ -945,24 +945,24 @@
  "on_this_day": {
   "en": [
    {
-    "year": 2003,
-    "text": "Suicide bombers blew up the British consulate and the headquarters of HSBC Bank in Istanbul, killing 31 people, including consul general Roger Short and actor Kerem Yılmazer.",
-    "url": "https://en.wikipedia.org/wiki/2003_Istanbul_bombings"
-   },
-   {
     "year": 1994,
     "text": "In accordance with the Lusaka Protocol, the Angolan government signed a ceasefire with UNITA rebels in a failed attempt to end the Angolan Civil War.",
     "url": "https://en.wikipedia.org/wiki/Lusaka_Protocol"
    },
    {
-    "year": 1991,
-    "text": "First Nagorno-Karabakh War: An Azerbaijani military helicopter carrying a peacekeeping mission team was shot down in Nagorno-Karabakh, disrupting ongoing peace talks.",
-    "url": "https://en.wikipedia.org/wiki/First_Nagorno-Karabakh_War"
+    "year": 1985,
+    "text": "Windows 1.0, the first version of Microsoft Windows available to the public, was released.",
+    "url": "https://en.wikipedia.org/wiki/Windows_1.0"
    },
    {
-    "year": 1990,
-    "text": "Andrei Chikatilo, one of the Soviet Union's most prolific serial killers, was arrested in Novocherkassk.",
-    "url": "https://en.wikipedia.org/wiki/Andrei_Chikatilo"
+    "year": 1969,
+    "text": "A group of Native American activists began a 19-month occupation (graffiti pictured) of Alcatraz Island in San Francisco Bay.",
+    "url": "https://en.wikipedia.org/wiki/Native_Americans_in_the_United_States"
+   },
+   {
+    "year": 1947,
+    "text": "Princess Elizabeth, daughter of King George VI, married Lieutenant Philip Mountbatten, who was given the title Duke of Edinburgh.",
+    "url": "https://en.wikipedia.org/wiki/Elizabeth_II"
    }
   ],
   "fr": [
@@ -1027,22 +1027,22 @@
     "date": "2026-11-16T22:25:27.000Z"
    },
    {
-    "title": "JPMorgan names next CFO",
+    "title": "Consumers fret about inflation as execs fixate on interest rates",
     "source": "CFO.com",
-    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPN3ZIZjRBTzRaTml3MFMxSTZzczVXYUxVWWhNbE1HWHA1eGhaTWp5U3ZtSkxDOU93bU9QMll6SXl2NVhVTkNucE1vQkNhYVJQRUlnTkxRVlZNSUpacUJMX1lTTjFOVmtqa3RzZ19TbW43aVNPLWhBdTFWSVkzQTFBZW9HQ3QwYzNubDhCOTQ1M2tXMWYy?oc=5",
-    "date": "2026-11-17T16:48:21.000Z"
-   },
-   {
-    "title": "What Nvidia’s leadership shuffle illustrates for growing companies",
-    "source": "CFO.com",
-    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdGtFeXQ0WHg4TXI0X0dkNHh0OXp6VUxtWjZUek1STHpQZ05VTmJkclEyRURZZi1aSUpTMFdZc3ZuMGpyT1p2c29iTTZwYXNRTWVIN0lMXzB5aVFOekZSdjlwanBPMU5ZdlBYZUd3YWxsb3VqQmJxOVZzT1Rud3VHWEgxSFYxTDVoZmpVSFJobWU3Nm9TdTlQWHVZbGx5T0wxOEZFdFBhS2xoOE9WYlhZU0pEemVsdlJsZHZrcVZtQnJmdw?oc=5",
-    "date": "2026-11-17T14:05:16.000Z"
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcmhiMl90MjVwbzhoZElQR1YybWhaMUFXQlRHYTF0NXRlUnNSY3c0X2k4U0oxWXJSSm1KWUI1dDlQWGlEM3dfTG5UQ0FrRFM2NFVmQ283by02V2FFcEdBMG92b0dUWEJlbkxfdWFQWi1nc3JTZDRUcXdZajNXZ0I2dmFnZHFBT2JHQXBQSlgtckd3WFJ1YnlVbVhRcHRVQQ?oc=5",
+    "date": "2026-11-18T14:20:29.000Z"
    },
    {
     "title": "CFOs On the Move: Week ending Nov. 13",
     "source": "CFO.com",
     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSFUyNVZhWkJjQnVhYUJxVGxxbW9zdUVNTGp5LWNDMXhhUXhXdTAwbENLbng2X2V0dWZURnZDcjhwM0l3TUNWMTgweVFMQzhuY0hhNU1jVG9JOXRiRWhfdWU4N3RwMW9oSnl1SDJTdnpxTXBfSUswR0VPX0NwaGVhSnZ3RjN4UUV5eVZHNnhqYllTTVo2VV9oNkl6ZXNXYVZYUjJodDgzYXdRWnhZWVZOS0JRanI3N0s1Z3dr?oc=5",
     "date": "2026-11-13T14:41:23.000Z"
+   },
+   {
+    "title": "Separating signal from noise: The always-on finance intelligence layer",
+    "source": "McKinsey",
+    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNTmRrMW5jQUlmaEVtS1JKTlVrLVJIUFJPc1d5MkpqdENXY2FxVnR6QjlJSF9iVGhYWlRtbXJCOWdPRHc0OEV1MmRTR1RzQTJZLVRlLURmMGhST2ZyWmRwV2lybmxGUFB6TnB0VUVXWExOV2NFcllGaWpqb254QmVRTHh4U210MDA3U2x0X0RtLVFfNDVOOVBEclJkMDItZGF1T0VyTEY3UkFYb0V3Ql9hVnNjVEJEV1YzTVJjZS1PSlhINl9WbzItVWhUTFpfc1B0OEFJVUJrZG5YYVQyS2pyNWhqc1Q4dw?oc=5",
+    "date": "2026-11-13T00:00:00.000Z"
    }
   ]
  },
@@ -1125,7 +1125,7 @@
    "title": "Côte d’Ivoire : le groupe MAGGI-X remporte le « MAGGI Sustainability Challenge » de Nestlé",
    "source": "Abidjan.net News",
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdlVUcGYxN2dQSXVtSFJmbnRyZUVhNXJPTzFjLXVDZTFDS3ZGNXhmSDNmTkpyUm1vSURkSHZ0YjJGY2N3Tk1leXlmbmE5MGJ5TTMtME5KNTItMTRZVXR6Qkd5RHpKVk9lbXpLS3h0RmFPdDdxOFRtTV9sMlRhQUllbFpINF9FemYtcFpLLW5VTjVKMU9IclJGM3F4UkNQUlZLMHZzTGYxZmJsdVE5NThqTUpBWDhzMTdVQ2hHNkFSSUNMUQ?oc=5",
-   "date": "2026-11-20T09:45:00.000Z"
+   "date": "2026-11-20T09:46:57.000Z"
   },
   {
    "id": "n10-2026-11-20",
@@ -1146,33 +1146,33 @@
   {
    "id": "n12-2026-11-20",
    "cat": "africa",
+   "title": "Nigeria’s economic future depends on strong institutions, visionary entrepreneurs — Shettima",
+   "source": "Head Topics",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQT2pGd1A2dEszZmk3dWJvbllsMUFjUFoxVk81cG1UbzBFRFo0VjV5a2hkTl9OX1FnNUMyRjhMU1ZldGVpZjMxQ21rTjBEem14c0RKbmcxQ1dsTUswSk82U1lPR3VGeERTMVZJRThzUmlFTmF2dUh3LWJfcUFhTGRVNjRBM1ZGRldYY0I3Y2ZkUnZzcW55T1RYWnpjQkY?oc=5",
+   "date": "2026-11-20T08:45:00.000Z"
+  },
+  {
+   "id": "n13-2026-11-20",
+   "cat": "africa",
    "title": "Asset Owner Insights: Nigeria’s NSIA sets ambitious responsible investment agenda",
    "source": "Responsible Investor",
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPS2QwX3c0ai1SdXByejg0ekt6WVdqRy01VWg4OXVBMHRYQU9pRlVuNkVKUWZodXZpOVlNYnJROVhtRDM5N3BFQ2VuODBGVFNfdVd6a3V5NmxyWXN3ZENwVTJHeFM4bHhpZU9pY2w2SmRoQzI4V2dCbmRxMFRITC1ZTmZRUmozLUFNbEJ5RHNPTVd4RVo0Qzh1NDhrMUdnUFhqSkJseVdYQVVYWllETkthVVdjUVB5RGZj?oc=5",
    "date": "2026-11-20T08:00:27.000Z"
   },
   {
-   "id": "n13-2026-11-20",
-   "cat": "africa",
-   "title": "Coopération gazière / SIREXE 2026 : la Côte d'Ivoire, le Bénin et le Togo signent un protocole d'accord pour sécuriser leur approvisionnement",
-   "source": "Abidjan.net News",
-   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNeFdmYnV5SnJhN1VzMVpTSjFWQlFBZlJIM2xLdnExemJKWmx2Nmg1SEo5RWdrUHJ6OEZJbV9ERUptQnZiMWFsc1R5M0ZuRHBtTUZkT05KTy1HaXRwQ1VSZmJfWjkwMDc3THVlWWdQOERLbm5RbTEyVGFDS2xhdDE3NFJoSFNYbXhvbTZUam5fUzI4LXBnVDBSQXBTOUVRSUZVOFhSb0lHSU9qOWpUcTc5dndfTUJHeVNrXzBibGU2WGFaSncwcjZRRnFWR3lZdFFVQlVLY2FmUlhsdC1vQmRIcTZvV0ROc0dyS3RTTk5nLV9xVzV1cDNmM3hkMDBMaGN0allCdzZB?oc=5",
-   "date": "2026-11-20T07:47:56.000Z"
-  },
-  {
    "id": "n14-2026-11-20",
    "cat": "africa",
-   "title": "Côte d'Ivoire : Endeavour Mining dévoile ‘’ Vision Tanda’’ et son projet aurifère d’Assafo-Dibibango, un investissement de plus de 700 milliards FCFA",
-   "source": "Abidjan.net News",
-   "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOaXhXY2lOLWlmemJuY28wVzRHVDhTYlpTRUtsdXNRUWJyWmg0YnlPTnZWM1FTWXJYV0VVc2xhREhLU0lSY1k4My04THpwdTlRXzdvMFFERTBCeGRaaEs4RHpoNE1DanVoMldBQk5TS3NqdmFqQXI3M2ZXYTZRNl9qckhVWHRBRXJrMkc3ZFR5MENuaUxsNzZJQi1ZUE04Z09ZYkhNNEtUWmZqOVk0REt6THNfUExRQy1laS1jZ2Uzak05WUZsOTRnbzZBV0steHNVMjJQRmRXd3p5aDZHUE5qQXJuQmlHSF9yUURPR3oyQnRKbmM2cXMzMzNQQnpsT1hPbkRneU01d3lYeG01?oc=5",
-   "date": "2026-11-20T07:47:56.000Z"
+   "title": "Tony Elumelu Urges Tinubu to Strengthen Nigeria's Justice System for Investment",
+   "source": "Head Topics",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVWF3dFZyQ1B3UjVGMlRxU0ozR0YzZmhhcFEwY0ZhSzkzLXpVNEkzMHpsaU8wYXVqVnVQU0k2NXNJSDhnbW9NR2h0Wm9wSzBEQkVhLUFrQ05Ia3o3VHpwejdnVGFPTWNTMno0b1pLVllkU3Nub1JIWlZ2THVhODlqWHM1Tk1jQ216eEk2TzQ5R2JxZHRid1FXdGhVWkphdw?oc=5",
+   "date": "2026-11-20T07:57:00.000Z"
   },
   {
    "id": "n15-2026-11-20",
    "cat": "africa",
-   "title": "La Côte d’Ivoire élue à la présidence de la communauté internationale de la noix de coco (ICC)",
+   "title": "Coopération gazière / SIREXE 2026 : la Côte d'Ivoire, le Bénin et le Togo signent un protocole d'accord pour sécuriser leur approvisionnement",
    "source": "Abidjan.net News",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOLVVWNG1kZDJnekNwZDhVdFZSWXhGY1k3QVRjS2swYUd5Ym9KeTZBNDdZUUhkdlRrYzVILVFYa3c5QlgyTGpxeEZwZmFodjZqalRXTjUtMHliSmhaNnUzbmd0Snh2SEJXQ0NRY2R1N0VhMFJBRm1aOVpqM2QxN1BWd1BRNlBYZl9KTzJwaGZYSG5ySlpZdHJaLXBrcV9FbXExUUlEWm5IUWpORENHZTFPSzRCX1hQVUJEcUhacFJSS1N3Z0RlODFJR19nN18?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNeFdmYnV5SnJhN1VzMVpTSjFWQlFBZlJIM2xLdnExemJKWmx2Nmg1SEo5RWdrUHJ6OEZJbV9ERUptQnZiMWFsc1R5M0ZuRHBtTUZkT05KTy1HaXRwQ1VSZmJfWjkwMDc3THVlWWdQOERLbm5RbTEyVGFDS2xhdDE3NFJoSFNYbXhvbTZUam5fUzI4LXBnVDBSQXBTOUVRSUZVOFhSb0lHSU9qOWpUcTc5dndfTUJHeVNrXzBibGU2WGFaSncwcjZRRnFWR3lZdFFVQlVLY2FmUlhsdC1vQmRIcTZvV0ROc0dyS3RTTk5nLV9xVzV1cDNmM3hkMDBMaGN0allCdzZB?oc=5",
    "date": "2026-11-20T07:47:56.000Z"
   },
   {
@@ -1240,15 +1240,7 @@
    "date": "2026-11-19T09:38:00.000Z"
   },
   {
-   "id": "n24-2026-11-20",
-   "cat": "markets",
-   "title": "Euro losses narrow as risk appetite picks up and Oil prices stay low",
-   "source": "www.tmgm.com",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQQTJZZnlzX2l1eUowd1VveDc3QUFVNlR0a1lIRHYySVh3elBpdjI0U1dYS0hBUXV1VGZjbkdJdG1lVjVjb2NYekNVblM5U2w2aTBBY2h5eklmcTREejhnQXllUldVWVB2c2thZkt0Mm9xOG1KckJ2czRKbjQ0TGU0d3lfc2NGSmwwZjV5QWF2TnhoVE9tT08yZzN1Tkg0dVhReDRuODRadEhZSVpNVFo2ZmtYSEllLWk2N05IZGw1cTVORjlkX2xyRldDREx2VUFXeEE?oc=5",
-   "date": "2026-11-20T02:25:49.000Z"
-  },
-  {
-   "id": "n25-2026-11-19",
+   "id": "n24-2026-11-19",
    "cat": "markets",
    "title": "Euro trims losses amid stronger risk appetite and still-low Oil prices",
    "source": "www.tmgm.com",
@@ -1256,15 +1248,15 @@
    "date": "2026-11-19T23:09:50.000Z"
   },
   {
-   "id": "n26-2026-11-19",
+   "id": "n25-2026-11-19",
    "cat": "markets",
-   "title": "Canadian Dollar strengthens as Oil rebounds, hawkish Fed limits gains",
+   "title": "Euro trims losses as risk appetite strengthens and oil prices stay low",
    "source": "www.tmgm.com",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOaEhESHR4Mll6d1ZKSlFJZ1l6UEdrMVN4LWFmY3RzLVZkSVRjZTR6T1lkMlM0RVFLa2Z6M3NqRFRnWjl2aHY3NThjdWd1OUlpOTQ2bGthN1hJdFpYRExSZUY0Ull4cVN4S2FYTkRuWmRZcjZIVG1kekpUZ19pX05HempPSFAyQ2RHSS1pZTFiWnlVZnJISUsya0RfV0Z1SEdQd1R2c19CWGlkckxna2RZUVpXWG04UHZVS3paUmFDS1M4MjgxNGNyc2w5blBudEN0V0ZB?oc=5",
-   "date": "2026-11-19T18:22:17.000Z"
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMGxjU1VYVWlzTmo3eUN1RmRIUm5GTlhTTEIwME5CQ2lXanZPa3ZCNmVKNGlCVXBlRWJfSGc5Qkl3XzN3Q2lTS0dNeW8xcFBCZklJeXBfMWlHMW9oeHRldFMyUjNTWXpPdVZhWDhneGdVaktCMnYyNEotOWE2RlJVMUlFVFpERFR1UXR1NEZudFZzZ0dLTHhwSWZ3NzFWTkI1X2s5MzZEVzRJckNQQm5lVmE5UkRjSnhWZ1hlYmFvdlZMa1ludldZbjJ5Wnp0dVZuRWJEWQ?oc=5",
+   "date": "2026-11-19T22:54:38.000Z"
   },
   {
-   "id": "n27-2026-11-19",
+   "id": "n26-2026-11-19",
    "cat": "markets",
    "title": "EUR/USD Holds 1.0979 off 19-Month Low as DXY Cools From 103.97; ECB Hike Bets Eye 1.1125",
    "source": "TradingNEWS",
@@ -1272,7 +1264,7 @@
    "date": "2026-11-19T17:33:37.000Z"
   },
   {
-   "id": "n28-2026-11-19",
+   "id": "n27-2026-11-19",
    "cat": "markets",
    "title": "Dollar Slips as Stocks Rally",
    "source": "TradingView",
@@ -1280,28 +1272,36 @@
    "date": "2026-11-19T15:35:11.000Z"
   },
   {
-   "id": "n29-2026-11-19",
-   "cat": "markets",
-   "title": "Canadian Dollar remains little changed as oil price surge offsets US Dollar strength",
-   "source": "www.tmgm.com",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxObnFRSDR4ZERnRzYyeVY1eVdMTWVqUkNyV25tS3UyZUFiUWZIQlczNFU5NGJadTdobmhiWEdXWTFIeXc4b0tKa1IwaVc3WXNVRVQ4Y01mbXJaV1dWZFg4QV9MTmJjaUNXYUJWMkNxQmd1V0N0ejJqZnQwRUFEaW9fUFBCZUpMRW4xTnVWTUN0TjE0R1BEMXJOejNCTjhMVUdleFdPTXhTeDc0SjBUMGZGVWU4N2ZyNXBqWHZPcC0yRGJlUjdXTHFscWhqYU5WeXhJUnNqdEJqZ2pnUXZrSEE?oc=5",
-   "date": "2026-11-19T13:34:50.000Z"
-  },
-  {
-   "id": "n30-2026-11-19",
-   "cat": "markets",
-   "title": "Surging oil prices counter US Dollar strength, leaving Canadian Dollar little changed",
-   "source": "www.tmgm.com",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQWkxST3VUZGREcFp3aGNBNU5POHBvZGg3TkNVbGtCdEJVUVdDa25sMGpiV3pGZVRaLXBuX040NXdkUzBocXVaMmdTX1J5LUdnWFRlSUpSZEE4TWhoUndmQ2MyVXkyRnRKQ2NyWmVuUTJzZnp0NDc3UkRIM253WnhKaVhQUTZQOW9RR2l6bjlqN3dFZGRxNGNZTjNkRVF4TVJ2MTUzZ0Z4YUxMWm5Tb2lYS3A3ZnViRF90LXpHV1B3Y1N4X2lqZ0lWUWNsVEJtSGliRk5JUzZCLU03ZFdrekE?oc=5",
-   "date": "2026-11-19T13:16:56.000Z"
-  },
-  {
-   "id": "n31-2026-11-19",
+   "id": "n28-2026-11-19",
    "cat": "markets",
    "title": "Euro pares losses as risk appetite improves and Oil prices remain low",
    "source": "FXStreet",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORGViZ0JLU3lkQ29GanpDcmZVWFlObjBPQmdkN3owMXUyQ3Jnc294TVVNcXBqTV9jLVFPNFg3NG9DaklZbGgxNmxBcW4zWnMwQU1SenNZcVJudDVWSDVRVmxxa0hMcnZmRkxpR1NwbnNfX05GVURZOE84ci1zWklEekVuRmNkamNnZ0JaYVppNkctZDdDLXZfUVVtU1FyZ3JzQVlUMG5hc3BuclZEaVdleXZn?oc=5",
    "date": "2026-11-19T09:56:08.000Z"
+  },
+  {
+   "id": "n29-2026-11-19",
+   "cat": "markets",
+   "title": "US dollar hits multi-month highs on hawkish Fed bets",
+   "source": "TorFX News",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbFlCdC1iWEZfcXMxRTFpTGtOMGp4M1czd0dOX2tLT2lqTEt0eGtRQ2lKMHRCWWZPWXBiSGluMmMtdmUtQlJlY1kyOExQZ2V4Z29uOVUxY1VoT3JNRHI5MUFCeWpZeS1HazBaQUtpeG4wWGhCTHdlZVE4VEEySHhFX3liNE9QLWE3TDNpQzRUYlJTUUhuZ0ww?oc=5",
+   "date": "2026-11-19T09:08:29.000Z"
+  },
+  {
+   "id": "n30-2026-11-19",
+   "cat": "markets",
+   "title": "Euro gains ground against Canadian Dollar ahead of ECB Lagarde’s speech",
+   "source": "FXStreet",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVkpnLWpQYVFNQVhGMTcyUmgzdE1BLVhIdmFKbllsMFRFTFp4eTFpLXlkb3UzQUhmNUx5Q21XUHo5NmhzNkJJM2Vhc1MtMTJOTEliMU9ua3FXLUdVbGJJdGw0T2pXU0FzalJkMC15QW5aN1pyR2VqNG0wU2wtM2wxcFpjZ3pmUzR5Mk84ck5OYVZsV0FfWU9pOHhDMjF0ckk5Y3VYOU9wVUpOZGp2b0x1WWh6NA?oc=5",
+   "date": "2026-11-19T09:05:53.000Z"
+  },
+  {
+   "id": "n31-2026-11-19",
+   "cat": "markets",
+   "title": "Euro shows little movement amid steady US Dollar and hawkish Fed signals",
+   "source": "www.tmgm.com",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMG1XbUlBWW51cEcxQUZmMnJQWU9MaDk5X3E3bGsxQ2pVNFRmUU1xcm1hNXcyRDJwYVRtTnkyVFNZa0hSUEJLMjg2S2xHZ1VHNG9fR0FxR1pmanlrcTh2QWsxU3RRZk5KNkNyb1hpbGxTM25fenZPQ2hwMmx0UEJtVGYybldXdjV6Q3hYZUpFbnA4ZFRzWF9pYVdzZ1BzZGhacE9XMlpETmJiNWdRR0RLajlYR1czajBzYTM1VTJJSWQ0X2dZaHFubXIxODZTNExUeXBHdElR?oc=5",
+   "date": "2026-11-19T08:13:42.000Z"
   },
   {
    "id": "n32-2026-11-20",
