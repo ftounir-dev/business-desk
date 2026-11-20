@@ -167,8 +167,9 @@ async function aiRead(pick) {
 
 /* ---------- On this day (Wikipedia) ---------- */
 const OTD_BOOST = /congo|brazzaville|kinshasa|lebanon|liban|beirut|beyrouth|africa|afrique|cameroon|cameroun|gabon|nigeria|senegal|sénégal|ivory coast|côte d'ivoire/i;
+const OTD_GRIM = /\b(kill(s|ed|ing|ers?)?|murder(s|ed|ers?)?|massacres?|massacred|bomb(s|ed|ing|ings|ers?)?|terror(ist|ists|ism)?|attack(s|ed)?|shoot(s|ing|ings)?|shot down|shot dead|assassinat(ed|ion)|executions?|genocide|hostages?|raped?|suicide|tu[ée]s?|tu[ée]es|meurtres?|assassin[ée]?|assassinat|attentats?|massacr[ée]s?|fusill[ée]s?|bombard(ement|é|e)|g[ée]nocide|otages?|ex[ée]cut[ée]s?)(?![a-zà-ÿ])/i;
 function pickEvents(list) {
-  return list.filter(e => e.year && e.text)
+  return list.filter(e => e.year && e.text && !OTD_GRIM.test(e.text))
     .map(e => ({ year: e.year, text: e.text, url: e.pages?.[0]?.content_urls?.desktop?.page || null, score: OTD_BOOST.test(e.text) ? 1 : 0 }))
     .sort((a, b) => b.score - a.score || b.year - a.year).slice(0, 4)
     .sort((a, b) => b.year - a.year).map(({ score, ...e }) => e);
