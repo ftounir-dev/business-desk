@@ -245,7 +245,7 @@ label.f input{background:var(--bg);border:1px solid var(--line);border-radius:10
 
 /* Tab bar */
 nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
-nav.tabs .in{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+nav.tabs .in{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr)}
 nav.tabs a{display:grid;place-items:center;gap:2px;padding:9px 2px 8px;font-size:.7rem;font-weight:600;color:var(--muted);text-decoration:none}
 nav.tabs a[aria-current="page"]{color:var(--accent)}
 nav.tabs svg{width:22px;height:22px}
@@ -315,7 +315,10 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
     <p class="sub" id="sixty-sub"></p>
     <div id="sixty"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
   </section>
-  <div id="front"></div>
+</div>
+
+<!-- EVENTS -->
+<div class="view" id="v-events" hidden>
   <section id="otd-wrap" hidden>
     <div class="sec-head"><h2 class="sec" data-t="otd_t"></h2></div>
     <div class="rail" id="otd"></div>
@@ -364,6 +367,7 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 
 <nav class="tabs" aria-label="Sections"><div class="in">
   <a href="#today" data-v="today"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h8M8 17h4" stroke-linecap="round"/></svg><span data-t="t_today"></span></a>
+  <a href="#events" data-v="events"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="5.5" width="16" height="14" rx="2"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4" stroke-linecap="round"/></svg><span data-t="t_events"></span></a>
   <a href="#markets" data-v="markets"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 18l5-6 4 3 7-9" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-t="t_markets"></span></a>
   <a href="#news" data-v="news"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 2.5 14.4 0 17M12 3.5c-2.5 2.6-2.5 14.4 0 17"/></svg><span data-t="t_news"></span></a>
   <a href="#read" data-v="read"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5.5c2.7-1 5.3-1 8 .8 2.7-1.8 5.3-1.8 8-.8v13c-2.7-1-5.3-1-8 .8-2.7-1.8-5.3-1.8-8-.8z" stroke-linejoin="round"/><path d="M12 6.3v13.5"/></svg><span data-t="t_read"></span></a>
@@ -379,7 +383,7 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 
 <script>
 const T={
- en:{ite:"For ITE Congo · Brazzaville",sixty:"Overnight in 60 seconds",wa:"Send to WhatsApp · FR",copy:"Copy French text",
+ en:{ite:"For ITE Congo · Brazzaville",sixty:"The last 24 hours",t_events:"Events",wa:"Send to WhatsApp · FR",copy:"Copy French text",
   agenda_t:"Coming up",t_read:"Read",read_t:"Article of the day",read_s:"Chosen each morning for a CFO from Harvard Business Review, The Economist, McKinsey, MIT Sloan, Wharton and CFO.com. Some need a subscription.",more_t:"More good reads",readit:"Read the article",why:"Why read it",otd_t:"On this day",mk_t:"Markets",mk_s:"Last close for each. Tap a row for its chart, source and an alert.",lg_p:"Cost pressure for ITE",lg_r:"Cost relief",lg_n:"Context",
   g_fx:"Currencies · XAF",g_commod:"Commodities",g_africa:"Africa FX",g_pack:"Packaging · PET bottle grade",ref:"Reference",g_rates:"Rates",
   news_t:"News",all:"All",tools_t:"Tools",pulse_t:"What the dollar costs ITE this month",pulse_s:"The franc CFA is pegged to the euro, so only USD invoices carry FX risk. Your figures stay on this phone.",
@@ -392,7 +396,7 @@ const T={
   impact:"For ITE",source:"Source",see:"See all",updated:"Updated",ai:"Written by AI from today's data",rules:"Automatic summary",
   stale:"This brief is more than a day old. The automatic update may have failed; check GitHub Actions.",armed:"alerts armed, none triggered",
   offline:"Offline: showing the last brief saved on this phone.",ago_m:"min ago",ago_h:"h ago",ago_d:"d ago",now:"now",chart:"Last month",nostories:"No stories in this section yet. It fills on the next update."},
- fr:{ite:"Pour ITE Congo · Brazzaville",sixty:"La nuit en 60 secondes",wa:"Envoyer sur WhatsApp",copy:"Copier le texte",
+ fr:{ite:"Pour ITE Congo · Brazzaville",sixty:"Les dernières 24 heures",t_events:"Événements",wa:"Envoyer sur WhatsApp",copy:"Copier le texte",
   agenda_t:"À venir",t_read:"Lecture",read_t:"L'article du jour",read_s:"Choisi chaque matin pour un DAF parmi Harvard Business Review, The Economist, McKinsey, MIT Sloan, Wharton et CFO.com. Certains nécessitent un abonnement.",more_t:"Autres lectures",readit:"Lire l'article",why:"Pourquoi le lire",otd_t:"Ce jour-là",mk_t:"Marchés",mk_s:"Dernière clôture. Touchez une ligne pour le graphique, la source et une alerte.",lg_p:"Pression sur les coûts",lg_r:"Allègement",lg_n:"Contexte",
   g_fx:"Devises · XAF",g_commod:"Matières premières",g_africa:"Devises africaines",g_pack:"Emballage · PET qualité bouteille",ref:"Référence",g_rates:"Taux",
   news_t:"Actualités",all:"Tout",tools_t:"Outils",pulse_t:"Ce que le dollar coûte à ITE ce mois-ci",pulse_s:"Le franc CFA est arrimé à l'euro : seules les factures en USD portent un risque de change. Vos chiffres restent sur ce téléphone.",
@@ -455,7 +459,8 @@ const REEL_CATS={worldwide:["🌐","linear-gradient(165deg,#2a4fb8,#0b1533)"],af
 const REEL_DUR=6500;
 const reel={i:0,el:0,last:0,paused:false,hold:false,vis:false,n:0,raf:0,io:null};
 function renderSixty(){
-  $("#sixty-sub").textContent=(B.summary_mode==="ai"?t("ai"):t("rules"))+" · "+(lang==="fr"?"touchez ou glissez":"tap or swipe");
+  const nItems=(B.summary[lang]||B.summary.en||[]).length,mins=Math.max(1,Math.round(nItems*7.5/30)/2);
+  $("#sixty-sub").textContent=(lang==="fr"?`Monde, Afrique, Congo & CEMAC · ${nItems} histoires · environ ${String(mins).replace(".",",")} min`:`Worldwide, Africa, Congo & CEMAC · ${nItems} stories · about ${mins} min`);
   const items=B.summary[lang]||B.summary.en||[];
   const catOf=x=>x.cat||((B.categories||[]).find(c=>c.en===x.owner||c.fr===x.owner)||{}).id||"worldwide";
   reel.n=items.length;if(!reel.n){$("#sixty").innerHTML="";return;}
@@ -640,6 +645,7 @@ function newsCard(n){const c=REEL_CATS[n.cat]||REEL_CATS.worldwide;
     <div class="c-top"><span class="c-chip">${esc(n.source)}</span></div><div class="c-emoji" aria-hidden="true">${c[0]}</div>
     <h3>${esc(n.title)}</h3><div class="c-meta"><span>${ago(n.date)}</span><span>· ${lang==="fr"?"Lire":"Read"} ↗</span></div></a>`;}
 function renderFront(){
+  if(!$("#front"))return;
   $("#front").innerHTML=FRONT.map(c=>{const list=byCat(c).slice(0,5);
     return`<section><div class="sec-head"><h2 class="sec">${esc(catLabel(c))}</h2><a class="see" href="#news" data-go="${c}">${t("see")} →</a></div>
     ${list.length?`<div class="rail">${list.map(newsCard).join("")}</div>`:`<p class="empty">${t("nostories")}</p>`}</section>`;}).join("");
@@ -767,7 +773,7 @@ function renderAll(){applyText();if(!B)return;renderTop();renderSixty();renderFr
 $("#lang").onclick=()=>{lang=lang==="fr"?"en":"fr";store.set("lang",lang);renderAll();};
 $("#theme").onclick=()=>{const dark=theme?theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;theme=dark?"light":"dark";store.set("theme",theme);renderAll();};
 
-const V=["today","markets","news","read"];
+const V=["today","events","markets","news","read"];
 function route(){const v=V.includes(location.hash.slice(1))?location.hash.slice(1):"today";
   V.forEach(n=>$("#v-"+n).hidden=n!==v);document.querySelectorAll("nav.tabs a").forEach(a=>a.setAttribute("aria-current",a.dataset.v===v?"page":"false"));
   scrollTo(0,0);if(v==="news"&&B)renderNews();}
