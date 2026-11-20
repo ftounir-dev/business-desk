@@ -773,7 +773,6 @@ function renderHero(){
   const d=new Date().toLocaleDateString(fr?"fr-FR":"en-GB",{weekday:"long",day:"numeric",month:"long"});
   $("#hero").innerHTML=`<div class="h-date">${esc(d)} · ${fr?"mis à jour":"updated"} ${new Date(B.generated_at).toLocaleTimeString(fr?"fr-FR":"en-GB",{hour:"2-digit",minute:"2-digit"})}</div>
     <h2 class="h-hi">${hi}, Rayan ${hr<12?"☀️":hr<18?"👋":"🌙"}</h2>
-    <p class="h-sub">${fr?`${items.length} histoires de ${nC} pays, en ${String(mins).replace(".",",")} minutes.`:`${items.length} stories from ${nC} countries, in ${mins} minutes.`}</p>
     <div class="h-flags" aria-hidden="true">${flags.join("")}</div>
     <button class="h-play" type="button" id="h-play"><span class="h-btn">▶</span><span><b>${fr?"Lancer le brief du jour":"Play today's brief"}</b><span class="s">${fr?"Vidéo avec voix · Monde, Afrique, Congo & CEMAC, DAF":"Video with voice · Worldwide, Africa, Congo & CEMAC, CFO"}</span></span></button>`;
   $("#h-play").onclick=()=>openWatch(0);
