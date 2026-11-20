@@ -306,6 +306,7 @@ section{padding-top:26px}
 .nc-m .src{color:var(--text);font-weight:600}.nc-m .nw{color:var(--accent);font-weight:700}.nc-m .ok{color:var(--relief);font-weight:700}
 .nc h3{margin:4px 0 0;font-size:.98rem;line-height:1.35;font-weight:600;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .nc.read h3{color:var(--muted);font-weight:500}
+.nc.lead .nc-d{-webkit-line-clamp:3}
 .nc-th{flex:none;width:76px;height:76px;border-radius:10px;overflow:hidden;background:var(--sunk)}
 .nc-th img{width:100%;height:100%;object-fit:cover;display:block}
 .nc.lead{display:block;border-top:0;padding-top:4px}
@@ -313,6 +314,7 @@ section{padding-top:26px}
 .nc-ph img{width:100%;height:100%;object-fit:cover;display:block}
 .nc.lead h3{font-size:1.18rem;line-height:1.3;font-weight:700;-webkit-line-clamp:4}
 .nc.read .nc-ph,.nc.read .nc-th{opacity:.6}
+.nc-d{margin:5px 0 0;font-size:.86rem;line-height:1.45;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 /* News desk v20 */
 .nd{margin-top:2px;border-radius:18px;overflow:hidden;color:#eef2f8;background:linear-gradient(160deg,#0f1b33,#15284a 60%,#1c3157);box-shadow:0 10px 28px rgba(15,27,51,.25);position:relative;padding:14px 16px 14px 20px}
 .nd::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(#d9a441,#a8741a)}
@@ -1102,8 +1104,9 @@ function nxRow(n,lead,num,withCat){
   const isRead=!!NX.read[nxId(n)];
   const href=`href="${esc(n.url)}" target="_blank" rel="noopener" data-nid="${esc(nxId(n))}"`;
   const img=n.img?`<img src="${esc(n.img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.remove()">`:"";
-  if(lead&&n.img)return `<a class="nc lead${isRead?" read":""}" ${href}><div class="nc-ph">${img}</div><div class="nc-m">${nxMeta(n,withCat)}</div><h3>${esc(n.title)}</h3></a>`;
-  return `<a class="nc${isRead?" read":""}" ${href}><div class="nc-t"><div class="nc-m">${nxMeta(n,withCat)}</div><h3>${esc(n.title)}</h3></div>${img?`<div class="nc-th">${img}</div>`:""}</a>`;
+  const ti=esc((n.t&&n.t[lang])||n.title),ds=(n.d&&n.d[lang])||n.desc,dh=ds?`<p class="nc-d">${esc(ds)}</p>`:"";
+  if(lead&&n.img)return `<a class="nc lead${isRead?" read":""}" ${href}><div class="nc-ph">${img}</div><div class="nc-m">${nxMeta(n,withCat)}</div><h3>${ti}</h3>${dh}</a>`;
+  return `<a class="nc${isRead?" read":""}" ${href}><div class="nc-t"><div class="nc-m">${nxMeta(n,withCat)}</div><h3>${ti}</h3>${dh}</div>${img?`<div class="nc-th">${img}</div>`:""}</a>`;
 }
 function nxBlock(c,l){
   const fr=lang==="fr",r=l.filter(n=>NX.read[nxId(n)]).length;
@@ -1127,7 +1130,7 @@ function renderNews(){
   if(!qi.dataset.w){qi.dataset.w=1;let tm=0;qi.oninput=()=>{clearTimeout(tm);tm=setTimeout(()=>{NX.q=qi.value.trim();renderNews();},180);};}
   const norm=s=>s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
   let html="";
-  if(NX.q){const q=norm(NX.q);const l=all.filter(n=>(cat==="all"||n.cat===cat)&&norm(n.title+" "+n.source+" "+ctryWords(n)).includes(q)).slice(0,20);
+  if(NX.q){const q=norm(NX.q);const l=all.filter(n=>(cat==="all"||n.cat===cat)&&norm(n.title+" "+((n.t&&n.t.en)||"")+" "+((n.t&&n.t.fr)||"")+" "+n.source+" "+ctryWords(n)).includes(q)).slice(0,20);
     if(!l.length){$("#nx-list").innerHTML=`<p class="empty">${fr?"Aucun article ne correspond.":"No stories match."}</p>`;return;}
     html=`<div class="ns2"><h4>${fr?"Résultats":"Results"}</h4><span>${l.length}</span></div>`+l.map((n,i)=>nxRow(n,false,i+1,true)).join("");}
   else{
