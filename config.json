@@ -3,45 +3,246 @@
   "city": "Brazzaville",
   "eur_xaf_peg": 655.957,
   "markets": [
-    { "id": "eurusd", "group": "fx",    "name": "EUR/USD", "ticker": "EURUSD=X", "unit": "USD per EUR", "dp": 4, "cost": -1 },
-    { "id": "usdngn", "group": "africa","name": "USD/NGN", "ticker": "NGN=X",    "unit": "Nigerian naira per USD", "dp": 0, "cost": 0 },
-    { "id": "usdghs", "group": "africa","name": "USD/GHS", "ticker": "GHS=X",    "unit": "Ghana cedi per USD", "dp": 2, "cost": 0 },
-    { "id": "usdcdf", "group": "africa","name": "USD/CDF", "ticker": "CDF=X",    "unit": "Congolese franc (DRC) per USD", "dp": 0, "cost": 0 },
-    { "id": "brent",  "group": "commod","name": "Brent",   "ticker": "BZ=F",     "unit": "USD/bbl", "dp": 2, "cost": 1 },
-    { "id": "sugar",  "group": "commod","name": "Sugar No.11", "ticker": "SB=F", "unit": "US¢/lb", "dp": 2, "cost": 1 },
-    { "id": "wheat",  "group": "commod","name": "Wheat CBOT", "ticker": "ZW=F",  "unit": "US¢/bu · malt proxy", "dp": 2, "cost": 1 },
-    { "id": "alu",    "group": "commod","name": "Aluminium", "ticker": "ALI=F",  "unit": "USD/t", "dp": 0, "cost": 1 },
-    { "id": "gold",   "group": "commod","name": "Gold",    "ticker": "GC=F",     "unit": "USD/oz", "dp": 0, "cost": 0 },
-    { "id": "us10y",  "group": "rates", "name": "US 10-year yield", "ticker": "^TNX", "unit": "%", "dp": 2, "cost": 0 }
+    {
+      "id": "eurusd",
+      "group": "fx",
+      "name": "EUR/USD",
+      "ticker": "EURUSD=X",
+      "unit": "USD per EUR",
+      "dp": 4,
+      "cost": -1
+    },
+    {
+      "id": "usdngn",
+      "group": "africa",
+      "name": "USD/NGN",
+      "ticker": "NGN=X",
+      "unit": "Nigerian naira per USD",
+      "dp": 0,
+      "cost": 0
+    },
+    {
+      "id": "usdghs",
+      "group": "africa",
+      "name": "USD/GHS",
+      "ticker": "GHS=X",
+      "unit": "Ghana cedi per USD",
+      "dp": 2,
+      "cost": 0
+    },
+    {
+      "id": "usdcdf",
+      "group": "africa",
+      "name": "USD/CDF",
+      "ticker": "CDF=X",
+      "unit": "Congolese franc (DRC) per USD",
+      "dp": 0,
+      "cost": 0
+    },
+    {
+      "id": "brent",
+      "group": "commod",
+      "name": "Brent",
+      "ticker": "BZ=F",
+      "unit": "USD/bbl",
+      "dp": 2,
+      "cost": 1
+    },
+    {
+      "id": "sugar",
+      "group": "commod",
+      "name": "Sugar No.11",
+      "ticker": "SB=F",
+      "unit": "US¢/lb",
+      "dp": 2,
+      "cost": 1
+    },
+    {
+      "id": "wheat",
+      "group": "commod",
+      "name": "Wheat CBOT",
+      "ticker": "ZW=F",
+      "unit": "US¢/bu · malt proxy",
+      "dp": 2,
+      "cost": 1
+    },
+    {
+      "id": "alu",
+      "group": "commod",
+      "name": "Aluminium",
+      "ticker": "ALI=F",
+      "unit": "USD/t",
+      "dp": 0,
+      "cost": 1
+    },
+    {
+      "id": "gold",
+      "group": "commod",
+      "name": "Gold",
+      "ticker": "GC=F",
+      "unit": "USD/oz",
+      "dp": 0,
+      "cost": 0
+    },
+    {
+      "id": "us10y",
+      "group": "rates",
+      "name": "US 10-year yield",
+      "ticker": "^TNX",
+      "unit": "%",
+      "dp": 2,
+      "cost": 0
+    }
   ],
   "static_rates": [
-    { "id": "beac", "group": "rates", "name": "BEAC policy rate (TIAO)", "value": 4.50, "unit": "%", "date": "2026-09-28", "note": "Edit in config.json after each BEAC meeting" }
+    {
+      "id": "beac",
+      "group": "rates",
+      "name": "BEAC policy rate (TIAO)",
+      "value": 4.5,
+      "unit": "%",
+      "date": "2026-09-28",
+      "note": "Edit in config.json after each BEAC meeting"
+    }
   ],
   "news": [
-    { "cat": "worldwide", "label_en": "Worldwide", "label_fr": "Monde",
-      "queries": [ { "q": "world economy OR global markets OR geopolitics", "hl": "en", "gl": "US" } ] },
-    { "cat": "africa", "label_en": "Africa", "label_fr": "Afrique",
+    {
+      "cat": "worldwide",
+      "label_en": "Worldwide",
+      "label_fr": "Monde",
       "queries": [
-        { "q": "(Nigeria OR Ghana OR Senegal OR \"Ivory Coast\" OR Cameroon OR Gabon OR DRC) economy", "hl": "en", "gl": "NG" },
-        { "q": "(Côte d'Ivoire OR Sénégal OR Cameroun OR Gabon OR RDC OR UEMOA OR BCEAO OR \"Afrique de l'Ouest\" OR \"Afrique centrale\") économie", "hl": "fr", "gl": "SN" }
-      ] },
-    { "cat": "congo", "label_en": "Congo & CEMAC", "label_fr": "Congo & CEMAC",
-      "queries": [ { "q": "(Congo Brazzaville OR CEMAC OR BEAC) économie", "hl": "fr", "gl": "CG" } ] },
-    { "cat": "markets", "label_en": "Markets", "label_fr": "Marchés",
-      "queries": [ { "q": "dollar euro Fed oil prices", "hl": "en", "gl": "US" } ] },
-    { "cat": "bev", "label_en": "Beverages & packaging", "label_fr": "Boissons & emballage",
-      "queries": [ { "q": "(sugar prices OR PET resin OR aluminium cans OR beverage industry Africa)", "hl": "en", "gl": "US" } ] },
-    { "cat": "cfo", "label_en": "CFO & treasury", "label_fr": "DAF & trésorerie",
-      "queries": [ { "q": "(trésorerie entreprise OR taux de change FCFA OR financement PME Afrique centrale)", "hl": "fr", "gl": "CG" } ] },
-    { "cat": "lebanon", "label_en": "Lebanon", "label_fr": "Liban",
-      "queries": [ { "q": "Lebanon economy", "hl": "en", "gl": "US" } ] }
+        {
+          "q": "world economy OR global markets OR geopolitics",
+          "hl": "en",
+          "gl": "US"
+        }
+      ]
+    },
+    {
+      "cat": "africa",
+      "label_en": "Africa",
+      "label_fr": "Afrique",
+      "queries": [
+        {
+          "q": "(Nigeria OR Ghana OR Senegal OR \"Ivory Coast\" OR Cameroon OR Gabon OR DRC) economy",
+          "hl": "en",
+          "gl": "NG"
+        },
+        {
+          "q": "(Côte d'Ivoire OR Sénégal OR Cameroun OR Gabon OR RDC OR UEMOA OR BCEAO OR \"Afrique de l'Ouest\" OR \"Afrique centrale\") économie",
+          "hl": "fr",
+          "gl": "SN"
+        }
+      ]
+    },
+    {
+      "cat": "congo",
+      "label_en": "Congo & CEMAC",
+      "label_fr": "Congo & CEMAC",
+      "queries": [
+        {
+          "q": "(Congo Brazzaville OR CEMAC OR BEAC) économie",
+          "hl": "fr",
+          "gl": "CG"
+        }
+      ]
+    },
+    {
+      "cat": "markets",
+      "label_en": "Markets",
+      "label_fr": "Marchés",
+      "queries": [
+        {
+          "q": "dollar euro Fed oil prices",
+          "hl": "en",
+          "gl": "US"
+        }
+      ]
+    },
+    {
+      "cat": "bev",
+      "label_en": "Beverages & packaging",
+      "label_fr": "Boissons & emballage",
+      "queries": [
+        {
+          "q": "sugar prices",
+          "hl": "en",
+          "gl": "US"
+        },
+        {
+          "q": "beverage industry Africa",
+          "hl": "en",
+          "gl": "NG"
+        },
+        {
+          "q": "PET packaging bottles",
+          "hl": "en",
+          "gl": "US"
+        },
+        {
+          "q": "boissons industrie Afrique",
+          "hl": "fr",
+          "gl": "CI"
+        }
+      ]
+    },
+    {
+      "cat": "cfo",
+      "label_en": "CFO & treasury",
+      "label_fr": "DAF & trésorerie",
+      "queries": [
+        {
+          "q": "BEAC taux",
+          "hl": "fr",
+          "gl": "CM"
+        },
+        {
+          "q": "FCFA dollar",
+          "hl": "fr",
+          "gl": "SN"
+        },
+        {
+          "q": "CFO treasury dollar",
+          "hl": "en",
+          "gl": "US"
+        }
+      ]
+    },
+    {
+      "cat": "lebanon",
+      "label_en": "Lebanon",
+      "label_fr": "Liban",
+      "queries": [
+        {
+          "q": "Lebanon economy",
+          "hl": "en",
+          "gl": "US"
+        }
+      ]
+    }
   ],
   "news_per_category": 8,
   "news_max_age_days": 4,
   "agenda": [
-    { "date": "2026-11-29", "en": "OPEC+ meeting", "fr": "Réunion de l'OPEP+" },
-    { "date": "2026-12-09", "en": "Fed decision (FOMC, 8–9 Dec)", "fr": "Décision de la Fed (FOMC, 8–9 déc.)" },
-    { "date": "2026-12-15", "en": "BEAC policy committee (date to confirm)", "fr": "Comité de politique monétaire BEAC (date à confirmer)" },
-    { "date": "2026-12-23", "en": "Parliament votes 2027 finance law (expected)", "fr": "Vote de la loi de finances 2027 (attendu)" }
+    {
+      "date": "2026-11-29",
+      "en": "OPEC+ meeting",
+      "fr": "Réunion de l'OPEP+"
+    },
+    {
+      "date": "2026-12-09",
+      "en": "Fed decision (FOMC, 8–9 Dec)",
+      "fr": "Décision de la Fed (FOMC, 8–9 déc.)"
+    },
+    {
+      "date": "2026-12-15",
+      "en": "BEAC policy committee (date to confirm)",
+      "fr": "Comité de politique monétaire BEAC (date à confirmer)"
+    },
+    {
+      "date": "2026-12-23",
+      "en": "Parliament votes 2027 finance law (expected)",
+      "fr": "Vote de la loi de finances 2027 (attendu)"
+    }
   ]
 }
