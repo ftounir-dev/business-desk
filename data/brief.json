@@ -1,10 +1,11 @@
 {
- "generated_at": "2026-11-20T16:06:28.711Z",
+ "generated_at": "2026-11-20T17:38:17.224Z",
+ "summary_at": "2026-11-20T17:38:17.224Z",
  "summary_mode": "rules",
  "peg": 655.957,
  "fx": {
-  "eurusd": 1.098538875579834,
-  "usdxaf": 597.1176938583724,
+  "eurusd": 1.098056435585022,
+  "usdxaf": 597.3800423568572,
   "usdxaf_prev": 597.8457318897565,
   "date": "2026-11-20"
  },
@@ -16,10 +17,10 @@
    "unit": "XAF per USD",
    "dp": 1,
    "cost": 1,
-   "value": 597.1176938583724,
+   "value": 597.3800423568572,
    "prev": 597.8457318897565,
    "date": "2026-11-20",
-   "change_pct": -0.12177690540381425,
+   "change_pct": -0.07789459856597514,
    "series": [
     [
      "2026-10-21",
@@ -107,7 +108,7 @@
     ],
     [
      "2026-11-20",
-     597.1176938583724
+     597.3800423568572
     ]
    ],
    "source": "655.957 ÷ EUR/USD",
@@ -120,10 +121,10 @@
    "unit": "USD per EUR",
    "dp": 4,
    "cost": -1,
-   "value": 1.098538875579834,
+   "value": 1.098056435585022,
    "prev": 1.0972011089324951,
    "date": "2026-11-20",
-   "change_pct": 0.1219253823613542,
+   "change_pct": 0.07795532155077112,
    "series": [
     [
      "2026-10-21",
@@ -211,7 +212,7 @@
     ],
     [
      "2026-11-20",
-     1.098538875579834
+     1.098056435585022
     ]
    ],
    "source": "Yahoo Finance",
@@ -224,10 +225,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 88.5999984741211,
+   "value": 88.83000183105469,
    "prev": 91.9800033569336,
    "date": "2026-11-20",
-   "change_pct": -3.674717068335165,
+   "change_pct": -3.424659068183711,
    "series": [
     [
      "2026-10-22",
@@ -315,7 +316,7 @@
     ],
     [
      "2026-11-20",
-     88.5999984741211
+     88.83000183105469
     ]
    ],
    "source": "Yahoo Finance",
@@ -328,10 +329,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 81.95999908447266,
+   "value": 82.26000213623047,
    "prev": 83.20999908447266,
    "date": "2026-11-20",
-   "change_pct": -1.5022233069982738,
+   "change_pct": -1.1416860457813205,
    "series": [
     [
      "2026-10-22",
@@ -419,7 +420,7 @@
     ],
     [
      "2026-11-20",
-     81.95999908447266
+     82.26000213623047
     ]
    ],
    "source": "Yahoo Finance",
@@ -432,10 +433,10 @@
    "unit": "USD/oz",
    "dp": 0,
    "cost": 0,
-   "value": 3550.10009765625,
+   "value": 3529.199951171875,
    "prev": 3685.5,
    "date": "2026-11-20",
-   "change_pct": -3.673854357448103,
+   "change_pct": -4.240945565815357,
    "series": [
     [
      "2026-10-22",
@@ -523,7 +524,7 @@
     ],
     [
      "2026-11-20",
-     3550.10009765625
+     3529.199951171875
     ]
    ],
    "source": "Yahoo Finance",
@@ -536,10 +537,10 @@
    "unit": "USD/oz",
    "dp": 2,
    "cost": 0,
-   "value": 41.55500030517578,
+   "value": 41.025001525878906,
    "prev": 44.31800079345703,
    "date": "2026-11-20",
-   "change_pct": -6.234488105991398,
+   "change_pct": -7.430387672325445,
    "series": [
     [
      "2026-10-22",
@@ -627,7 +628,7 @@
     ],
     [
      "2026-11-20",
-     41.55500030517578
+     41.025001525878906
     ]
    ],
    "source": "Yahoo Finance",
@@ -791,15 +792,27 @@
   "en": [
    {
     "level": "",
+    "cat": "worldwide",
+    "owner": "Worldwide",
+    "title": "Week Ahead for FX, Bonds: Flash PMI Data to Provide Gauge on Economic Growth",
+    "detail": "",
+    "source": "WSJ",
+    "date": "2026-11-20T15:14:00.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUGRKVlM2NDJTdnJ2MW1LcHA4Z29OVTA3eEo0NFlsblNRRnBvcGVGZkVneWN1X1VWWVRWY1FTSm1jWHE0aV9IQzR5Sk9uWHpmdGdSb0VIR3hhal9YckR6QTVTeXhEWVRSTkQ2U2szTEdvQUtSYWVQSXU0LU1Pb3lzNmx6MHdNUmd4NTFHM2thTmpaN2xDclJSa1l1ZzQzRThSdnBPY0tKNC14WlNZRXNpeg?oc=5",
+    "img": "http://www.bing.com/th?id=ONUT.IwGgnjhm6bNRbKPrtLPtcQ&pid=News&w=900&h=1200&c=7&rs=1"
+   },
+   {
+    "level": "",
     "cat": "africa",
     "owner": "Africa",
-    "title": "Côte d'Ivoire : ECO 2027, Abidjan, les États membres s'activent à faire sauter les derniers verrous politiques et institutionnels pour concrétiser la monnaie unique ouest-africaine",
+    "title": "Côte d'Ivoire: Société Générale et SanlamAllianz célèbrent les 20 ans du Plan Retraite Zénith Performance avec près de 50 milliards FCFA d’encours",
     "detail": "",
-    "source": "Koaci",
-    "date": "2026-11-20T13:37:00.000Z",
+    "source": "Abidjan.net News",
+    "date": "2026-11-20T17:35:13.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxQcmpsNmp0cXdGUGhnRGh2OHB2NUViTmFPVmJsX0p4YTdHU2QxcTZ5ekhqYng3SUJNQnVDeDdBMzVSYVlRbHVKTF9mZ0l5Z3BUeGhtRHJGZ0d2MDhtZnFwQ1p2dUtiQUFxMnB3dUdrTURFYkVwU1RGLXQ3ckJGT2M5d2U0NDd1NFVwZ2hLeUNoajBBNHF1N2I3ZUwwRUUtaWtOcG1LX2dCVXl6SXdIcHY2ZjhuLVc4ZjZ0Z0dnUk9uc1hTQ0RxcHM1R2kxZmFTeWN5Qk5aSnVCcEdzSDZXNFN3Q2Z2Mk9VTTduNkYwQkJual9kVlJoaXdqR3g4ak1hZmV5bnZKck1lZTFDU1ZxbnpaT2FqUGpVNWtONGZveTlSSlFVZHNKaG9XOGpwQktBYXhocDZuWnlPb3JxOW43czVWXy1sSnNSSHI3RjVsbVhEVmZLdXlfa3FjS29nb1VocGVrMlg2QVA4V2k?oc=5",
-    "img": "https://www.koaci.com/assets/news/thumbnails/600/2026/11/photo_1795185473.jpg"
+    "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOMFpJeHFMUS1KQldjSjIxSGdPUHNhN2ZCeEkyaWUzdnYxWjEwZDFDRDdza3JUTVFqbEVZYzlSa19tWXRJUmFUV3A3VmtDYmtPR25FeEI4YnlFQ2ZCb1U4RV80TWpqbGxRbWc4SEQtdFhlYnJ6RDZWYlhrOUUzc1EwNzFfLVRkNkxEeEpycmd3SGZKUUo2MWlQdFNkUXp1MkNuamFYa3RnNWxocXhMVzdwMmNraHY1SDY0ZTlGVURmcm8zN3BUcm95ZGRhZVZpX1MxR0VhcHhCa3lMSzBsWV9PNWRuSEludU5JLS1VblNXSExvUGVSdDVRRldnczBySUVPeFgyLVB1VU93RGYyZ3JCWVh3?oc=5",
+    "img": "https://www.sikafinance.com/i/info/x/BRVMC0_d949112c-1dba-4e32-af41-8d04dfc510a3_x.jpg"
    },
    {
     "level": "",
@@ -815,113 +828,233 @@
    },
    {
     "level": "",
+    "cat": "cfo",
+    "owner": "CFO & treasury",
+    "title": "UEMOA : la BCEAO reconstitue ses réserves de change à 41 milliards USD en 2025",
+    "detail": "",
+    "source": "Capmad",
+    "date": "2026-11-19T23:56:00.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNR2lKTVF6QUFPUUxXY21vNHlJNDQtN3BHS3JHVmpyLWthM01jYlBndlpCbURlZjg1b25VWnlnLWEyeTlKcE9lMHRnczFGV3dfMUw0NlhpaFNTdnhYclhuTEZ2YUdOMGpCRWZ0aUFsQXdPdHJ0SHZia3B3WEkxYjVwaXM1RTJ5N0hJay1ERUJ6UnpNVXowdmk4TmdiMzdRNFFCdDhMRGhVZXdycGM?oc=5",
+    "img": null
+   },
+   {
+    "level": "",
+    "cat": "worldwide",
+    "owner": "Worldwide",
+    "title": "Sri Lanka market rates rose after May hike: Central bank",
+    "detail": "",
+    "source": "EconomyNext",
+    "date": "2026-11-20T15:00:40.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaFN3ak1zYXFHNGJfemZHT05qZmxpSWNiQlZyMXpMSkpxeVZtRlVmMDJjODBXTmZZUWVqbmJSS3VTVlh4TE9LN3B3aVJGRWw1b2dVRkc4d3pqcU80dDdHd1hoemRvSlJJOE56a0VNa2h6OVF3enZhMkFhWGVab1ZiN2J5RHViWjdGbS1HZmR5MV8?oc=5",
+    "img": "http://www.bing.com/th?id=ONUT.wMHgCVXVLICdR-GArJcnfA&pid=News&w=900&h=1200&c=7&rs=1"
+   },
+   {
+    "level": "",
     "cat": "africa",
     "owner": "Africa",
-    "title": "Or ivoirien : AFG Bank veut que la mine se finance à Abidjan",
+    "title": "Économie : Société Générale Côte d’Ivoire et SanlamAllianz célèbrent les 20 ans du Plan Retraite Zénith Performance avec près de 50 milliards FCFA d’encours",
     "detail": "",
     "source": "Abidjan.net News",
-    "date": "2026-11-20T13:25:30.000Z",
+    "date": "2026-11-20T16:53:25.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNM2x3TGpCVkJXZDVmM0Y0MEVYcUpJNlQ3bHZheEQ4dnMydmhvSnduZWhGeURIdkFUY0ZDQ1N0ajNLbGRfbzZoU3B2YU9EdGJtTVdxTVZtZUU2eHFpZHJlaDBXOG9XVGhUWmpEQmIwODEyWWxUX3p2aVFXODAySzY1czJXWUZKS3E1N2ltbmU1aXhVZ2R3SGk3cm5ocmJBXzRV?oc=5",
-    "img": "http://www.bing.com/th?id=ONUT.HBgcze0kOnsbuAhFHx2FAw&pid=News&w=900&h=1200&c=7&rs=1"
+    "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxPVmZIczNTNTJMZ1RhQkpUWHY5MThIMElDcWx6bUUzb1RZblF2ajlUWlEtX0V5ckdPUGN2R0pZdTJlSkFiZERxUk16TGZQOTREVlRiMXZIeHlRX0QtU29NckRzRjhHYkdJdnFIU1lFb3czOHV6MTE1WGlkcnBHd2x5UXFsOVp4Y3FJYVlNd1RKMjBDemQ3VzZ6ZjdSRk53Z3Q5WllJTXZwWktMemhyalBXS1d3emxidUtieHJ1T2Q1dWVxd0pRMFNma203SHd4ZWc1NDJleWVqcUEyTkNyYlRCQ09HbGZHR3UtWlZHZVo2XzVJRlhPc1lwRUNNVkc1U185Z0J1T05MUmtBczF6dXMybmlFSEdQZ1pBWWRMdg?oc=5",
+    "img": "https://cdn.zonebourse.com/static/web-assets/images/editorial/fallback/twitter_ms_fdnoir.png"
    },
    {
     "level": "",
     "cat": "congo",
     "owner": "Congo & CEMAC",
-    "title": "Green Diplomacy: L'Union européenne mobilise la jeunesse congolaise pour l'environnement",
+    "title": "Cémac : Le gabonais Désiré Mouissi Divoundza, élu nouveau patron de la Cour de justice communautaire",
     "detail": "",
-    "source": "European External Action Service (EEAS)",
-    "date": "2026-11-20T09:22:23.000Z",
+    "source": "Info241.com",
+    "date": "2026-11-20T14:53:13.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOVnQtSWlBSGFiX0pacmNVYUhYNjdFWHp4UE0wZEhYWmJrMFctcWJsamV0YzhZSWpVNGhMZWhLN3lORUFmeW1NQldWMEpiX2pTR0ptc3AtdE0wVkFMMnpmY2xvQWRwOTB2Y245QXBQQ1hjLTZOYjNpaEJyRjVaeEhQS1pvZkZhem84MERSNnJVS3NRb1RvY3EtZGJtZk54aWQzVTh6MzNjRlpReUFTTDhWUnREeHdLWm5MMlY1SU54N3dhTDkxLXJrTHpOcV9oWUxrZ3AwWVRBdURDZlpfMmc?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPY0I0bWNqTU1VbE9xN2Q4TFVNMGxmdk5GQk9ZS3RMZG11dDNfN3hmaVZTN1gwOGphYkxRTmNILWd5dzNJbkJKOW5GRTkzQlBYVjlqTUJOWVhIVmJRMzk1WXNHQVV2UnFDME9JYXhUWGNUaVhFNC1WY2Rta1l1NTFTeC1SM0ZydnZ2OUFUT2pqSDY3RC1TNVFsRVRxb1pMMmZXaTF6R1VUdTdDcGFlS1E?oc=5",
+    "img": "http://www.bing.com/th?id=ONUT.0yNucByPVXQWMclC63Lp6A&pid=News&w=900&h=1200&c=7&rs=1"
+   },
+   {
+    "level": "",
+    "cat": "cfo",
+    "owner": "CFO & treasury",
+    "title": "MinRes locks in successor to retiring CFO",
+    "detail": "",
+    "source": "Australian Mining",
+    "date": "2026-11-19T23:41:41.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQkUycWtKOHRtSEpxelozN1lQQzQ4ek1NaWJyTElHSU9BcFB0U0gzNm45MnVaZUJ2WXpwRG1PNnZMTnlORWFxdG1zM0N1Y1IwRzgxV08yWUVSLUZIdzBWWnhUSzE0NzlIWlI0WWMxQ3FKQXRZd2dyYWwtcHhWSEZKOFVGMFo?oc=5",
+    "img": "https://www.australianmining.com.au/wp-content/uploads/2026/11/AdobeStock_1243359495_Editorial_Use_Only.jpg"
+   },
+   {
+    "level": "",
+    "cat": "worldwide",
+    "owner": "Worldwide",
+    "title": "Global Commodity Markets Reprice as Growth and Interest Rates Collide",
+    "detail": "",
+    "source": "kalkine.ca",
+    "date": "2026-11-20T14:50:00.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYXoxOTNsSnZ5ejBnY2J1Zk9zQWJoOU9vVlFyOGtsSnR0TlBma3U1aXBYMU5wc2Q5TVRvalp0bjhQVmphaTlCdkJJOW9zdHV2YTZFQkdTX3JvekhBUlVJcnZSOTR4SVZkb2pEcUJYXzc4Ni1LNHhNYk5Jd1RyeFZRR3g2bWxHU0ttYjFhWGNhMkNVY3lQbFVzV2tqZGtXR2tRVU9iTnJDYVlZeVE?oc=5",
     "img": null
    },
    {
     "level": "",
     "cat": "africa",
     "owner": "Africa",
-    "title": "Gaz naturel : le Bénin, le Togo et la Côte d’Ivoire préparent des approvisionnements communs",
+    "title": "Coris Bank International Côte d’Ivoire prépare son introduction à la BRVM à travers une offre publique de vente de 20 % de son capital",
     "detail": "",
-    "source": "BENIN WEB TV",
-    "date": "2026-11-20T11:57:07.000Z",
+    "source": "L'economiste du faso",
+    "date": "2026-11-20T16:35:52.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOY1RoaFY0M2xCcGhOd25DdllZWHRDN0VXd0lPTGllZmx4Qk1HUlhVV2RhVndYc2ZqTEZuUy1BQ3NadTZOZlZia0FwbnlVdTU0Q2VSWmJFU21qWmpKNFBPZzYzbjRaY0Nuenl0ZVVYYWw0QWtQR1JKcEU0azA3STdrdVlSU1Q?oc=5",
-    "img": "https://beninwebtv.com/wp-content/uploads/2025/06/Gazoduc-Energie-e%CC%81lectrique-au-Be%CC%81nin.webp"
+    "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPdDc5WDN0QUc1TzBoNGdkV2dRLUYtM1Z4RElaemVhNWJiVTR2bVV0RDRpRFJGY1RramxDVHhQSnZ3dWJCMXdJS3o5c1U1WGE2UTRVYl9temJ5ODVXd3QyQjdwLVlrbWJuazU0QzJqWlZtdmtwSWw3M0pEOFBjczJSYURRQ2FXSWsyYXFzNXo1ZmFfMjFLNzg4Z1FINXREN1p3NW1QZy1WdnJ3ZFlYVDlRNnVsODItbHJoTFNzeHpkWXllUmZPR1NRUlIwY3lIZkJYc0VwUVd2bDM3Rm9OWjBZVnQ4eElkb1RhbzBGRHUtVzZEekZUQ05PQkxyV1dVSWYyWlUw?oc=5",
+    "img": "http://www.bing.com/th?id=ONUT.-6yf2R67TmjUd7Vyr3CQkw&pid=News&w=900&h=1200&c=7&rs=1"
    },
    {
     "level": "",
     "cat": "congo",
     "owner": "Congo & CEMAC",
-    "title": "Développement du secteur maritime: Wimowca restitue les travaux de son séminaire au préfet de Pointe-Noire",
+    "title": "Logistique : le rachat de Portek soumis à l’examen du régulateur de la concurrence de la Cemac",
     "detail": "",
-    "source": "Adiac Congo",
-    "date": "2026-11-19T21:18:00.000Z",
+    "source": "EcoMatin",
+    "date": "2026-11-20T13:52:50.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWjQtRlNsN0lPdmRTc1UtMkdVT0JMSDg5SVd6eVBwRjFMNUROTHgzbHZ1dUNkRF94S3ViM0NxblkwUjJhbGRKU3R6cUQ0TUlDbEJiODBidFJQY3gzVUFxYXpIWDBRYlQ1S3hsdEQxZDR4bDI0djZaRTZLUFRaR0x0dmhlT3JkYnBiTnZkTVJKQS1VNWI4aEVITHc1LVpYMlowSTVOd2lPZ3VrdUhYUWthY0ZnZGE2V0lMUEVIZi11VmM3eHJpVEJr?oc=5",
-    "img": "http://www.bing.com/th?id=ONUT.KHawWGj1oyHiZx0LbrhXEw&pid=News&w=900&h=1200&c=7&rs=1"
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdXltNFphTV90WGg4NzFqS1l1X1kyRDlIUG1JVUF2VHdzWDdLb010Wi1PeU1oOE9hc3lXLXpVak9aWXpJcUQwanFpS0piN3NSZVJfNURKNWxRUEY3aTV0dVFMSmEtLUZmNkJ6MzEwVVZWdE5ma3JDdmM2RklDRTBOMXVVeVg1UUFxUml3Yy1CMkxYYUpQOURpZHBSU2dlU1A1b0dGYTVYZzZtZjVWRHpIU3Z3?oc=5",
+    "img": null
+   },
+   {
+    "level": "",
+    "cat": "cfo",
+    "owner": "CFO & treasury",
+    "title": "Au Sénégal, le Pastef acte la perte du statut de membre de Diomaye Faye après la création de Kiraay",
+    "detail": "",
+    "source": "Capmad",
+    "date": "2026-11-19T16:47:00.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZWx4QzU4Q0w1bmtvUElucGFGSG1KM0FtYmZDLTdqLXM2VEN5aUU2dnVGWjNrbHF5dkUyODVpTHlNY0ZjMnFGclM5VlZaT2tOUWFkNUs1bUM5cWJKZFpVUHhTdGpDR0s5UVNlZ0RvVTRVZC02ZWcwRWVrWWJjQ0FoVEFZUENpZTJNS1ptUWFVX0pMU3MyWm9ITDJxZC1pbXNyN2JIZ0ZzUXdZT3VfbjBvVGdCQ1RjbjQzajRsUGRncGtpcGdfTkp5eg?oc=5",
+    "img": "https://www.dakarposte.com/photo/art/grande/98734376-68923649.jpg?v=1794945153"
+   },
+   {
+    "level": "",
+    "cat": "worldwide",
+    "owner": "Worldwide",
+    "title": "Wall Street Banks Are Demanding Guardrails for Rogue AI Agents",
+    "detail": "",
+    "source": "Bloomberg.com",
+    "date": "2026-11-20T13:29:48.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNkhWM3BWOGJsRzUtcjlqQlRLVl9rWTdLV3hfTHNoZ3JHcVpmQ3ZVRHhnR0RDWkprVWFFWE5FM1ZsLW5uSDVMaFhrRXlOMnYtZEpJTkJOWFl6N0VGUHRvakFlM0RRR2NnY3ZsUTRxS3daczI5TWtMbXRSLUJOSEptb2U1VDBvOFhibkc1dHVLS0hUa05HQmowTnpkX2t6UUc3QU4wSDFoNUczLVlkbVdUZmF5MA?oc=5",
+    "img": "https://news-cdn.bindg.com/indg/assets/news/images/Fallback-image.webp"
    },
    {
     "level": "",
     "cat": "africa",
     "owner": "Africa",
-    "title": "Côte d’Ivoire : élue à la tête de la Communauté internationale de la noix de coco",
+    "title": "Écotourisme : la Côte d’Ivoire veut séduire les touristes allemands et européens",
     "detail": "",
-    "source": "Bénin Web TV",
-    "date": "2026-11-20T11:55:48.000Z",
+    "source": "FratMat",
+    "date": "2026-11-20T16:31:00.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTlJhai1jN29SaEt3QW1WV2I3b1d4SHdKS1c2Q3NyandnWDE4WUhmTFZ6SWR3akx0T0hIRktERUNHUEVjZnlLMjdnT21mTUlmak1UQU16dVRUN011ek91ZTBpNzBzTF9oSk5ldnh3M1BPRWRoaVN4UDRBQWVXbXlrMHZ1LTBuZmJ1cndwR0dEaw?oc=5",
-    "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625200-625199-1795175682.jpg"
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcWVPSkpPcEpyUVVYamdFQ0hJdm9lYjY1R3JOR3Nvckk5eXRMclM1VXlIcEVFLThlbHJlNXdMOFFxbjdLUnVRbkEyWFB5ODlTb0JVcUJJaVJZUEF4aTJVbmVWN1ZKZlBUMUxPMlo3MC1pa3Y2TU91YmtUQ25oSENEejR0Y2Fqejhadi1HNFZNZG8xbWZ5NldqMXJ0VUIyQ01vQi1OR3ZweEp0S0VmNGRQQVNDaVlpOXNFVE1qbF84X2o4LXNkVlE?oc=5",
+    "img": "https://www.fratmat.info/uploads/images/2026/11/20/302190.jpg"
    },
    {
     "level": "",
     "cat": "congo",
     "owner": "Congo & CEMAC",
-    "title": "Handball : les qualifications du tournoi de gala avancent à Brazzaville et Pointe-Noire",
+    "title": "Dette de la CEMAC : pourquoi les États se financent de plus en plus auprès de leurs propres banques",
     "detail": "",
-    "source": "Sport News Africa",
-    "date": "2026-11-19T14:54:00.000Z",
+    "source": "La Nouvelle Tribune",
+    "date": "2026-11-20T11:32:57.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRzBXaHVVX1M2X3ZmQ3VCRFFMMGJaclpSVEQwRGdKclQ2d2IyUkZ6MHI5LWxrN1VZM3JWd080NWN5eTF5RnpLNE1RcjJUSlUtaGJFZWZBX21tTk9lUmx2R0trVk85UzZRREhVc2gzeHF2U2VzWUZnY3NJbDg1ZUhRUWpIZTVuSEpQRkVtdDhDMURIazlrNFhRQUVBWldkNnFHdlRoRENpa1FmbHE1SUFuWW9FZzZDTl9QMUJVMEFDSmpyekE?oc=5",
-    "img": "https://sportnewsafrica.com/cms/media/newsroom-photo-a689767183a742e2b3e90d6d6b4cbf1c.webp"
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZURFTzIwVzRuVWhUcWxJV1o1R3VzZkJXUGRndndnU2pLYlNGaGpMREY5cGZOOHp2aWdSdEwyNUdJRlc5Wm5jLUpDeXpUdmg3ME8ybmtJUWlwSTV3MVloSHFLbndNakNLa2hzMjF1cVljVnhUSm5KX20zanVWS19uM2M2dkY0ZVU3c2ZiV3J5dnZ2UG1JSDRIbjJxQnZqOFZBcTE4RVM4bHl6OFkwbzFQelVpRHZHRFVmX2JrTnZoT1psNm5uOUk2MXFWRzg3ZDZ2b29z?oc=5",
+    "img": "https://io-fsly-bfmtv.cdn.nextradiotv.com/g9rjdxOCFt_aDGI-xLx4rbbf-V4=/0x106:2048x1258/2048x0/images/Le-marche-s-interroge-sur-des-rendements-obligataires-eleves-aux-Etats-Unis-2346594.jpg"
+   },
+   {
+    "level": "",
+    "cat": "cfo",
+    "owner": "CFO & treasury",
+    "title": "Thiès : Une tontine à 34 000 dollars montée aux États-Unis tourne au vinaigre",
+    "detail": "",
+    "source": "Seneweb",
+    "date": "2026-11-19T09:58:13.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZ2pJYTBSZk51VWlEdGx1d3Z0T1I1MndGcTg2MUxFTVdCdlBWTV9Cb29OZTVqaHhleS1ZOGpVdFRzQzJXallOTGhPdkxZX200ZVI1dU5iMURaeFJYSk94cllkdU1iTjJpS3g1cl95NWNCVHp6NHc2NlppREd5TmxBTmxnVGI3SWw2Q0Z0dC12dS0zQl9oT1l3bkZRNlFpR0pqX09KVkw5V2hYTTNZZGxBNmdhc3ZJSEJTak9MbGljQ2lQT0tiRUdaUUVpUmg?oc=5",
+    "img": "https://image.seneweb.com/content/news/2026-47-19/thumb_1260x800_6afec834a767f_80Xm1b4kRM.jpg"
+   },
+   {
+    "level": "",
+    "cat": "worldwide",
+    "owner": "Worldwide",
+    "title": "UK stocks fall as banks and energy shares drag in global risk-off mood",
+    "detail": "",
+    "source": "Reuters",
+    "date": "2026-11-20T12:46:17.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZVVTRHZ4Q0NxLThIeDI5d09DVVhMY3hGQm9QSlo1V3dGLWJMbFBNaFZoZjV5WlhSaU55NVdDb096SWp6cFUzUUYteW9kTnlMUzdXVmZBUS1fbGpUM1FfNzlHRXdMeFYxWWV0NGlmVk9IbDdBdlNNN0E5d2VuUnF4SlA2RjVqRWd3VHR5NDVPVW9EV2FsQWJKSlVEVWJrekt1TDA4WFVVU2U?oc=5",
+    "img": "http://www.bing.com/th?id=ONUT.nYSZPetgZuEAKGDXNqK44w&pid=News&w=900&h=1200&c=7&rs=1"
    },
    {
     "level": "",
     "cat": "africa",
     "owner": "Africa",
-    "title": "Côte d’Ivoire : un institut de recherche café-cacao de 800 hectares en chantier à Divo",
+    "title": "Nigeria’s cultural diversity can drive national unity, economic growth — Minister",
     "detail": "",
-    "source": "Bénin Web TV",
-    "date": "2026-11-20T11:34:21.000Z",
+    "source": "Punch Newspapers",
+    "date": "2026-11-20T16:18:45.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdGJEbWZGbURNUFIzYmZyVDBhb3F3aWQzcXJ5c2ZWdDh2X2FKdm1URndTS19yZlZaWGVTdkdoQ3lkazlsVHlja0VGWXEtekdxN0UzTHVjTnV5Ymc4T2FmYXRhbk96X29XMmZqSVp4SWlfLVhBOXhoYnlfeldTaTdjMTI3eGs0Mnp4YXc?oc=5",
-    "img": "https://www.koaci.com/assets/news/thumbnails/600/2026/11/photo_1795164760.jpg"
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWDJWLUllU3NQcEFmMjlKcFZxWG1wd1lBVlNycUJZVDlZdF9rSkRMSEhvVGJiOXFmSWg1WXZ5ZXpETWVmZS1oYVdYSmk0b2VybjZUMHJyWllIS2ZWS0szNGpvTl9IdU53Tk1YRHFfY2R3VDlMdVBmeW9RVklNUk42MEV2MkpuTC1sMEhHdDhMVkZ6MUVkMl9mRmZhV3RUUzNzTXVySw?oc=5",
+    "img": "https://punchng.com/wp-content/uploads/2026/07/Hannatu-Musawa_1784638249.webp"
    },
    {
     "level": "",
     "cat": "congo",
     "owner": "Congo & CEMAC",
-    "title": "Grand tournoi de gala de handball: la phase qualificative a livré son verdict à Pointe-Noire",
+    "title": "BDEAC : Après son premier Eurobond réussi, la banque ambitionne de lever près de 300 milliards FCFA supplémentaires sur les marchés internationaux",
     "detail": "",
-    "source": "lhorizonafricain",
-    "date": "2026-11-19T12:04:41.000Z",
+    "source": "Sika Finance",
+    "date": "2026-11-20T10:54:34.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdnREUHphSUEwWGxyN2RLakV4RWhlbnB5ekgxV1RYOEE5S0lBVWlPR0JyaV91X2pCOWE0Z1hhXzY3a0xjLXljQkttWWNDZXJYRlAzQlN6MW04YWpDekZoWUYxeVhWUnFZWEpuLTBoRDNzMWlaR0JtTk9LZmhlQmkyMzNRMGhpdnAzbVp2eXY1YkQzWTdZVlEyaUlrT2pNQ09zZXBqclYtUmx3dlBwdlZPU1p6bUd4bzdrX2NTcVZrWW00TFZhM0c5S0E0NA?oc=5",
-    "img": "https://sportnewsafrica.com/cms/media/newsroom-photo-a689767183a742e2b3e90d6d6b4cbf1c.webp"
+    "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNRlRoVklnS3dGNnlnei0tcHpmZDA0VHBLQ3RnWGYybzloY3REeVh1VzkycnNONEs5aGRhRk0xSUFxb3FkdEVwWkZKTEdnMmotOWozTHlhM0p6Q2NNdEF6ZWFiYWZucjRadjZ1Vlo4TFlIaEEzcWhBdmNPZlN5VHJvSmlMRnlhUmFhaDhnQlF4RmtfQ2JUR2VKNjZDdXUwRXR2SmF1UzJhTmxXRzl3THBPbXMyQlBEdWx4MlhfaGJqcjhhOTJPa2FCR1duWUZCLUFHRjMwU19SVmkyemNBYzV3Z1FtZ0FpSmd2WjFnQUlIeXNXbFAtcW8tc2I4TnZ5emlZc2RCRGU2SGsxZ1lGYTR3ZEhlSQ?oc=5",
+    "img": "https://www.sikafinance.com/i/info/x/BRVMC0_cbc7290a-1c79-4235-b8e8-474068258943_x.jpg"
+   },
+   {
+    "level": "",
+    "cat": "worldwide",
+    "owner": "Worldwide",
+    "title": "AI concerns support bond markets, U.S. Dollar stays firm",
+    "detail": "",
+    "source": "LBBW",
+    "date": "2026-11-20T12:40:47.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSVhxQUZsaEtkODhrbkc5ek0tZ1B1aDNweVVDUE0yaklWQk5odUlaR20wUWxRY1RxUl84R1MzU2NMd09WbndzRFhkWldRWGpIOXhrbEQyczRGeXB5YzhuUzZwakFiV1pHcXJTNzFkR3FWcElBNmRDM1NYYVU3S3ZxbkZ3dVBQWUd0RE9QdDI0NW05WXNTWGw2R012cWZJTGZqN0g0?oc=5",
+    "img": null
    }
   ],
   "fr": [
    {
     "level": "",
+    "cat": "worldwide",
+    "owner": "Monde",
+    "title": "Week Ahead for FX, Bonds: Flash PMI Data to Provide Gauge on Economic Growth",
+    "detail": "",
+    "source": "WSJ",
+    "date": "2026-11-20T15:14:00.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUGRKVlM2NDJTdnJ2MW1LcHA4Z29OVTA3eEo0NFlsblNRRnBvcGVGZkVneWN1X1VWWVRWY1FTSm1jWHE0aV9IQzR5Sk9uWHpmdGdSb0VIR3hhal9YckR6QTVTeXhEWVRSTkQ2U2szTEdvQUtSYWVQSXU0LU1Pb3lzNmx6MHdNUmd4NTFHM2thTmpaN2xDclJSa1l1ZzQzRThSdnBPY0tKNC14WlNZRXNpeg?oc=5",
+    "img": "http://www.bing.com/th?id=ONUT.IwGgnjhm6bNRbKPrtLPtcQ&pid=News&w=900&h=1200&c=7&rs=1"
+   },
+   {
+    "level": "",
     "cat": "africa",
     "owner": "Afrique",
-    "title": "Côte d'Ivoire : ECO 2027, Abidjan, les États membres s'activent à faire sauter les derniers verrous politiques et institutionnels pour concrétiser la monnaie unique ouest-africaine",
+    "title": "Côte d'Ivoire: Société Générale et SanlamAllianz célèbrent les 20 ans du Plan Retraite Zénith Performance avec près de 50 milliards FCFA d’encours",
     "detail": "",
-    "source": "Koaci",
-    "date": "2026-11-20T13:37:00.000Z",
+    "source": "Abidjan.net News",
+    "date": "2026-11-20T17:35:13.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxQcmpsNmp0cXdGUGhnRGh2OHB2NUViTmFPVmJsX0p4YTdHU2QxcTZ5ekhqYng3SUJNQnVDeDdBMzVSYVlRbHVKTF9mZ0l5Z3BUeGhtRHJGZ0d2MDhtZnFwQ1p2dUtiQUFxMnB3dUdrTURFYkVwU1RGLXQ3ckJGT2M5d2U0NDd1NFVwZ2hLeUNoajBBNHF1N2I3ZUwwRUUtaWtOcG1LX2dCVXl6SXdIcHY2ZjhuLVc4ZjZ0Z0dnUk9uc1hTQ0RxcHM1R2kxZmFTeWN5Qk5aSnVCcEdzSDZXNFN3Q2Z2Mk9VTTduNkYwQkJual9kVlJoaXdqR3g4ak1hZmV5bnZKck1lZTFDU1ZxbnpaT2FqUGpVNWtONGZveTlSSlFVZHNKaG9XOGpwQktBYXhocDZuWnlPb3JxOW43czVWXy1sSnNSSHI3RjVsbVhEVmZLdXlfa3FjS29nb1VocGVrMlg2QVA4V2k?oc=5",
-    "img": "https://www.koaci.com/assets/news/thumbnails/600/2026/11/photo_1795185473.jpg"
+    "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOMFpJeHFMUS1KQldjSjIxSGdPUHNhN2ZCeEkyaWUzdnYxWjEwZDFDRDdza3JUTVFqbEVZYzlSa19tWXRJUmFUV3A3VmtDYmtPR25FeEI4YnlFQ2ZCb1U4RV80TWpqbGxRbWc4SEQtdFhlYnJ6RDZWYlhrOUUzc1EwNzFfLVRkNkxEeEpycmd3SGZKUUo2MWlQdFNkUXp1MkNuamFYa3RnNWxocXhMVzdwMmNraHY1SDY0ZTlGVURmcm8zN3BUcm95ZGRhZVZpX1MxR0VhcHhCa3lMSzBsWV9PNWRuSEludU5JLS1VblNXSExvUGVSdDVRRldnczBySUVPeFgyLVB1VU93RGYyZ3JCWVh3?oc=5",
+    "img": "https://www.sikafinance.com/i/info/x/BRVMC0_d949112c-1dba-4e32-af41-8d04dfc510a3_x.jpg"
    },
    {
     "level": "",
@@ -937,176 +1070,343 @@
    },
    {
     "level": "",
+    "cat": "cfo",
+    "owner": "DAF & trésorerie",
+    "title": "UEMOA : la BCEAO reconstitue ses réserves de change à 41 milliards USD en 2025",
+    "detail": "",
+    "source": "Capmad",
+    "date": "2026-11-19T23:56:00.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNR2lKTVF6QUFPUUxXY21vNHlJNDQtN3BHS3JHVmpyLWthM01jYlBndlpCbURlZjg1b25VWnlnLWEyeTlKcE9lMHRnczFGV3dfMUw0NlhpaFNTdnhYclhuTEZ2YUdOMGpCRWZ0aUFsQXdPdHJ0SHZia3B3WEkxYjVwaXM1RTJ5N0hJay1ERUJ6UnpNVXowdmk4TmdiMzdRNFFCdDhMRGhVZXdycGM?oc=5",
+    "img": null
+   },
+   {
+    "level": "",
+    "cat": "worldwide",
+    "owner": "Monde",
+    "title": "Sri Lanka market rates rose after May hike: Central bank",
+    "detail": "",
+    "source": "EconomyNext",
+    "date": "2026-11-20T15:00:40.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaFN3ak1zYXFHNGJfemZHT05qZmxpSWNiQlZyMXpMSkpxeVZtRlVmMDJjODBXTmZZUWVqbmJSS3VTVlh4TE9LN3B3aVJGRWw1b2dVRkc4d3pqcU80dDdHd1hoemRvSlJJOE56a0VNa2h6OVF3enZhMkFhWGVab1ZiN2J5RHViWjdGbS1HZmR5MV8?oc=5",
+    "img": "http://www.bing.com/th?id=ONUT.wMHgCVXVLICdR-GArJcnfA&pid=News&w=900&h=1200&c=7&rs=1"
+   },
+   {
+    "level": "",
     "cat": "africa",
     "owner": "Afrique",
-    "title": "Or ivoirien : AFG Bank veut que la mine se finance à Abidjan",
+    "title": "Économie : Société Générale Côte d’Ivoire et SanlamAllianz célèbrent les 20 ans du Plan Retraite Zénith Performance avec près de 50 milliards FCFA d’encours",
     "detail": "",
     "source": "Abidjan.net News",
-    "date": "2026-11-20T13:25:30.000Z",
+    "date": "2026-11-20T16:53:25.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNM2x3TGpCVkJXZDVmM0Y0MEVYcUpJNlQ3bHZheEQ4dnMydmhvSnduZWhGeURIdkFUY0ZDQ1N0ajNLbGRfbzZoU3B2YU9EdGJtTVdxTVZtZUU2eHFpZHJlaDBXOG9XVGhUWmpEQmIwODEyWWxUX3p2aVFXODAySzY1czJXWUZKS3E1N2ltbmU1aXhVZ2R3SGk3cm5ocmJBXzRV?oc=5",
-    "img": "http://www.bing.com/th?id=ONUT.HBgcze0kOnsbuAhFHx2FAw&pid=News&w=900&h=1200&c=7&rs=1"
+    "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxPVmZIczNTNTJMZ1RhQkpUWHY5MThIMElDcWx6bUUzb1RZblF2ajlUWlEtX0V5ckdPUGN2R0pZdTJlSkFiZERxUk16TGZQOTREVlRiMXZIeHlRX0QtU29NckRzRjhHYkdJdnFIU1lFb3czOHV6MTE1WGlkcnBHd2x5UXFsOVp4Y3FJYVlNd1RKMjBDemQ3VzZ6ZjdSRk53Z3Q5WllJTXZwWktMemhyalBXS1d3emxidUtieHJ1T2Q1dWVxd0pRMFNma203SHd4ZWc1NDJleWVqcUEyTkNyYlRCQ09HbGZHR3UtWlZHZVo2XzVJRlhPc1lwRUNNVkc1U185Z0J1T05MUmtBczF6dXMybmlFSEdQZ1pBWWRMdg?oc=5",
+    "img": "https://cdn.zonebourse.com/static/web-assets/images/editorial/fallback/twitter_ms_fdnoir.png"
    },
    {
     "level": "",
     "cat": "congo",
     "owner": "Congo & CEMAC",
-    "title": "Green Diplomacy: L'Union européenne mobilise la jeunesse congolaise pour l'environnement",
+    "title": "Cémac : Le gabonais Désiré Mouissi Divoundza, élu nouveau patron de la Cour de justice communautaire",
     "detail": "",
-    "source": "European External Action Service (EEAS)",
-    "date": "2026-11-20T09:22:23.000Z",
+    "source": "Info241.com",
+    "date": "2026-11-20T14:53:13.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOVnQtSWlBSGFiX0pacmNVYUhYNjdFWHp4UE0wZEhYWmJrMFctcWJsamV0YzhZSWpVNGhMZWhLN3lORUFmeW1NQldWMEpiX2pTR0ptc3AtdE0wVkFMMnpmY2xvQWRwOTB2Y245QXBQQ1hjLTZOYjNpaEJyRjVaeEhQS1pvZkZhem84MERSNnJVS3NRb1RvY3EtZGJtZk54aWQzVTh6MzNjRlpReUFTTDhWUnREeHdLWm5MMlY1SU54N3dhTDkxLXJrTHpOcV9oWUxrZ3AwWVRBdURDZlpfMmc?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPY0I0bWNqTU1VbE9xN2Q4TFVNMGxmdk5GQk9ZS3RMZG11dDNfN3hmaVZTN1gwOGphYkxRTmNILWd5dzNJbkJKOW5GRTkzQlBYVjlqTUJOWVhIVmJRMzk1WXNHQVV2UnFDME9JYXhUWGNUaVhFNC1WY2Rta1l1NTFTeC1SM0ZydnZ2OUFUT2pqSDY3RC1TNVFsRVRxb1pMMmZXaTF6R1VUdTdDcGFlS1E?oc=5",
+    "img": "http://www.bing.com/th?id=ONUT.0yNucByPVXQWMclC63Lp6A&pid=News&w=900&h=1200&c=7&rs=1"
+   },
+   {
+    "level": "",
+    "cat": "cfo",
+    "owner": "DAF & trésorerie",
+    "title": "MinRes locks in successor to retiring CFO",
+    "detail": "",
+    "source": "Australian Mining",
+    "date": "2026-11-19T23:41:41.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQkUycWtKOHRtSEpxelozN1lQQzQ4ek1NaWJyTElHSU9BcFB0U0gzNm45MnVaZUJ2WXpwRG1PNnZMTnlORWFxdG1zM0N1Y1IwRzgxV08yWUVSLUZIdzBWWnhUSzE0NzlIWlI0WWMxQ3FKQXRZd2dyYWwtcHhWSEZKOFVGMFo?oc=5",
+    "img": "https://www.australianmining.com.au/wp-content/uploads/2026/11/AdobeStock_1243359495_Editorial_Use_Only.jpg"
+   },
+   {
+    "level": "",
+    "cat": "worldwide",
+    "owner": "Monde",
+    "title": "Global Commodity Markets Reprice as Growth and Interest Rates Collide",
+    "detail": "",
+    "source": "kalkine.ca",
+    "date": "2026-11-20T14:50:00.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYXoxOTNsSnZ5ejBnY2J1Zk9zQWJoOU9vVlFyOGtsSnR0TlBma3U1aXBYMU5wc2Q5TVRvalp0bjhQVmphaTlCdkJJOW9zdHV2YTZFQkdTX3JvekhBUlVJcnZSOTR4SVZkb2pEcUJYXzc4Ni1LNHhNYk5Jd1RyeFZRR3g2bWxHU0ttYjFhWGNhMkNVY3lQbFVzV2tqZGtXR2tRVU9iTnJDYVlZeVE?oc=5",
     "img": null
    },
    {
     "level": "",
     "cat": "africa",
     "owner": "Afrique",
-    "title": "Gaz naturel : le Bénin, le Togo et la Côte d’Ivoire préparent des approvisionnements communs",
+    "title": "Coris Bank International Côte d’Ivoire prépare son introduction à la BRVM à travers une offre publique de vente de 20 % de son capital",
     "detail": "",
-    "source": "BENIN WEB TV",
-    "date": "2026-11-20T11:57:07.000Z",
+    "source": "L'economiste du faso",
+    "date": "2026-11-20T16:35:52.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOY1RoaFY0M2xCcGhOd25DdllZWHRDN0VXd0lPTGllZmx4Qk1HUlhVV2RhVndYc2ZqTEZuUy1BQ3NadTZOZlZia0FwbnlVdTU0Q2VSWmJFU21qWmpKNFBPZzYzbjRaY0Nuenl0ZVVYYWw0QWtQR1JKcEU0azA3STdrdVlSU1Q?oc=5",
-    "img": "https://beninwebtv.com/wp-content/uploads/2025/06/Gazoduc-Energie-e%CC%81lectrique-au-Be%CC%81nin.webp"
+    "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPdDc5WDN0QUc1TzBoNGdkV2dRLUYtM1Z4RElaemVhNWJiVTR2bVV0RDRpRFJGY1RramxDVHhQSnZ3dWJCMXdJS3o5c1U1WGE2UTRVYl9temJ5ODVXd3QyQjdwLVlrbWJuazU0QzJqWlZtdmtwSWw3M0pEOFBjczJSYURRQ2FXSWsyYXFzNXo1ZmFfMjFLNzg4Z1FINXREN1p3NW1QZy1WdnJ3ZFlYVDlRNnVsODItbHJoTFNzeHpkWXllUmZPR1NRUlIwY3lIZkJYc0VwUVd2bDM3Rm9OWjBZVnQ4eElkb1RhbzBGRHUtVzZEekZUQ05PQkxyV1dVSWYyWlUw?oc=5",
+    "img": "http://www.bing.com/th?id=ONUT.-6yf2R67TmjUd7Vyr3CQkw&pid=News&w=900&h=1200&c=7&rs=1"
    },
    {
     "level": "",
     "cat": "congo",
     "owner": "Congo & CEMAC",
-    "title": "Développement du secteur maritime: Wimowca restitue les travaux de son séminaire au préfet de Pointe-Noire",
+    "title": "Logistique : le rachat de Portek soumis à l’examen du régulateur de la concurrence de la Cemac",
     "detail": "",
-    "source": "Adiac Congo",
-    "date": "2026-11-19T21:18:00.000Z",
+    "source": "EcoMatin",
+    "date": "2026-11-20T13:52:50.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWjQtRlNsN0lPdmRTc1UtMkdVT0JMSDg5SVd6eVBwRjFMNUROTHgzbHZ1dUNkRF94S3ViM0NxblkwUjJhbGRKU3R6cUQ0TUlDbEJiODBidFJQY3gzVUFxYXpIWDBRYlQ1S3hsdEQxZDR4bDI0djZaRTZLUFRaR0x0dmhlT3JkYnBiTnZkTVJKQS1VNWI4aEVITHc1LVpYMlowSTVOd2lPZ3VrdUhYUWthY0ZnZGE2V0lMUEVIZi11VmM3eHJpVEJr?oc=5",
-    "img": "http://www.bing.com/th?id=ONUT.KHawWGj1oyHiZx0LbrhXEw&pid=News&w=900&h=1200&c=7&rs=1"
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdXltNFphTV90WGg4NzFqS1l1X1kyRDlIUG1JVUF2VHdzWDdLb010Wi1PeU1oOE9hc3lXLXpVak9aWXpJcUQwanFpS0piN3NSZVJfNURKNWxRUEY3aTV0dVFMSmEtLUZmNkJ6MzEwVVZWdE5ma3JDdmM2RklDRTBOMXVVeVg1UUFxUml3Yy1CMkxYYUpQOURpZHBSU2dlU1A1b0dGYTVYZzZtZjVWRHpIU3Z3?oc=5",
+    "img": null
+   },
+   {
+    "level": "",
+    "cat": "cfo",
+    "owner": "DAF & trésorerie",
+    "title": "Au Sénégal, le Pastef acte la perte du statut de membre de Diomaye Faye après la création de Kiraay",
+    "detail": "",
+    "source": "Capmad",
+    "date": "2026-11-19T16:47:00.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZWx4QzU4Q0w1bmtvUElucGFGSG1KM0FtYmZDLTdqLXM2VEN5aUU2dnVGWjNrbHF5dkUyODVpTHlNY0ZjMnFGclM5VlZaT2tOUWFkNUs1bUM5cWJKZFpVUHhTdGpDR0s5UVNlZ0RvVTRVZC02ZWcwRWVrWWJjQ0FoVEFZUENpZTJNS1ptUWFVX0pMU3MyWm9ITDJxZC1pbXNyN2JIZ0ZzUXdZT3VfbjBvVGdCQ1RjbjQzajRsUGRncGtpcGdfTkp5eg?oc=5",
+    "img": "https://www.dakarposte.com/photo/art/grande/98734376-68923649.jpg?v=1794945153"
+   },
+   {
+    "level": "",
+    "cat": "worldwide",
+    "owner": "Monde",
+    "title": "Wall Street Banks Are Demanding Guardrails for Rogue AI Agents",
+    "detail": "",
+    "source": "Bloomberg.com",
+    "date": "2026-11-20T13:29:48.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNkhWM3BWOGJsRzUtcjlqQlRLVl9rWTdLV3hfTHNoZ3JHcVpmQ3ZVRHhnR0RDWkprVWFFWE5FM1ZsLW5uSDVMaFhrRXlOMnYtZEpJTkJOWFl6N0VGUHRvakFlM0RRR2NnY3ZsUTRxS3daczI5TWtMbXRSLUJOSEptb2U1VDBvOFhibkc1dHVLS0hUa05HQmowTnpkX2t6UUc3QU4wSDFoNUczLVlkbVdUZmF5MA?oc=5",
+    "img": "https://news-cdn.bindg.com/indg/assets/news/images/Fallback-image.webp"
    },
    {
     "level": "",
     "cat": "africa",
     "owner": "Afrique",
-    "title": "Côte d’Ivoire : élue à la tête de la Communauté internationale de la noix de coco",
+    "title": "Écotourisme : la Côte d’Ivoire veut séduire les touristes allemands et européens",
     "detail": "",
-    "source": "Bénin Web TV",
-    "date": "2026-11-20T11:55:48.000Z",
+    "source": "FratMat",
+    "date": "2026-11-20T16:31:00.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTlJhai1jN29SaEt3QW1WV2I3b1d4SHdKS1c2Q3NyandnWDE4WUhmTFZ6SWR3akx0T0hIRktERUNHUEVjZnlLMjdnT21mTUlmak1UQU16dVRUN011ek91ZTBpNzBzTF9oSk5ldnh3M1BPRWRoaVN4UDRBQWVXbXlrMHZ1LTBuZmJ1cndwR0dEaw?oc=5",
-    "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625200-625199-1795175682.jpg"
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcWVPSkpPcEpyUVVYamdFQ0hJdm9lYjY1R3JOR3Nvckk5eXRMclM1VXlIcEVFLThlbHJlNXdMOFFxbjdLUnVRbkEyWFB5ODlTb0JVcUJJaVJZUEF4aTJVbmVWN1ZKZlBUMUxPMlo3MC1pa3Y2TU91YmtUQ25oSENEejR0Y2Fqejhadi1HNFZNZG8xbWZ5NldqMXJ0VUIyQ01vQi1OR3ZweEp0S0VmNGRQQVNDaVlpOXNFVE1qbF84X2o4LXNkVlE?oc=5",
+    "img": "https://www.fratmat.info/uploads/images/2026/11/20/302190.jpg"
    },
    {
     "level": "",
     "cat": "congo",
     "owner": "Congo & CEMAC",
-    "title": "Handball : les qualifications du tournoi de gala avancent à Brazzaville et Pointe-Noire",
+    "title": "Dette de la CEMAC : pourquoi les États se financent de plus en plus auprès de leurs propres banques",
     "detail": "",
-    "source": "Sport News Africa",
-    "date": "2026-11-19T14:54:00.000Z",
+    "source": "La Nouvelle Tribune",
+    "date": "2026-11-20T11:32:57.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRzBXaHVVX1M2X3ZmQ3VCRFFMMGJaclpSVEQwRGdKclQ2d2IyUkZ6MHI5LWxrN1VZM3JWd080NWN5eTF5RnpLNE1RcjJUSlUtaGJFZWZBX21tTk9lUmx2R0trVk85UzZRREhVc2gzeHF2U2VzWUZnY3NJbDg1ZUhRUWpIZTVuSEpQRkVtdDhDMURIazlrNFhRQUVBWldkNnFHdlRoRENpa1FmbHE1SUFuWW9FZzZDTl9QMUJVMEFDSmpyekE?oc=5",
-    "img": "https://sportnewsafrica.com/cms/media/newsroom-photo-a689767183a742e2b3e90d6d6b4cbf1c.webp"
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZURFTzIwVzRuVWhUcWxJV1o1R3VzZkJXUGRndndnU2pLYlNGaGpMREY5cGZOOHp2aWdSdEwyNUdJRlc5Wm5jLUpDeXpUdmg3ME8ybmtJUWlwSTV3MVloSHFLbndNakNLa2hzMjF1cVljVnhUSm5KX20zanVWS19uM2M2dkY0ZVU3c2ZiV3J5dnZ2UG1JSDRIbjJxQnZqOFZBcTE4RVM4bHl6OFkwbzFQelVpRHZHRFVmX2JrTnZoT1psNm5uOUk2MXFWRzg3ZDZ2b29z?oc=5",
+    "img": "https://io-fsly-bfmtv.cdn.nextradiotv.com/g9rjdxOCFt_aDGI-xLx4rbbf-V4=/0x106:2048x1258/2048x0/images/Le-marche-s-interroge-sur-des-rendements-obligataires-eleves-aux-Etats-Unis-2346594.jpg"
+   },
+   {
+    "level": "",
+    "cat": "cfo",
+    "owner": "DAF & trésorerie",
+    "title": "Thiès : Une tontine à 34 000 dollars montée aux États-Unis tourne au vinaigre",
+    "detail": "",
+    "source": "Seneweb",
+    "date": "2026-11-19T09:58:13.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZ2pJYTBSZk51VWlEdGx1d3Z0T1I1MndGcTg2MUxFTVdCdlBWTV9Cb29OZTVqaHhleS1ZOGpVdFRzQzJXallOTGhPdkxZX200ZVI1dU5iMURaeFJYSk94cllkdU1iTjJpS3g1cl95NWNCVHp6NHc2NlppREd5TmxBTmxnVGI3SWw2Q0Z0dC12dS0zQl9oT1l3bkZRNlFpR0pqX09KVkw5V2hYTTNZZGxBNmdhc3ZJSEJTak9MbGljQ2lQT0tiRUdaUUVpUmg?oc=5",
+    "img": "https://image.seneweb.com/content/news/2026-47-19/thumb_1260x800_6afec834a767f_80Xm1b4kRM.jpg"
+   },
+   {
+    "level": "",
+    "cat": "worldwide",
+    "owner": "Monde",
+    "title": "UK stocks fall as banks and energy shares drag in global risk-off mood",
+    "detail": "",
+    "source": "Reuters",
+    "date": "2026-11-20T12:46:17.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZVVTRHZ4Q0NxLThIeDI5d09DVVhMY3hGQm9QSlo1V3dGLWJMbFBNaFZoZjV5WlhSaU55NVdDb096SWp6cFUzUUYteW9kTnlMUzdXVmZBUS1fbGpUM1FfNzlHRXdMeFYxWWV0NGlmVk9IbDdBdlNNN0E5d2VuUnF4SlA2RjVqRWd3VHR5NDVPVW9EV2FsQWJKSlVEVWJrekt1TDA4WFVVU2U?oc=5",
+    "img": "http://www.bing.com/th?id=ONUT.nYSZPetgZuEAKGDXNqK44w&pid=News&w=900&h=1200&c=7&rs=1"
    },
    {
     "level": "",
     "cat": "africa",
     "owner": "Afrique",
-    "title": "Côte d’Ivoire : un institut de recherche café-cacao de 800 hectares en chantier à Divo",
+    "title": "Nigeria’s cultural diversity can drive national unity, economic growth — Minister",
     "detail": "",
-    "source": "Bénin Web TV",
-    "date": "2026-11-20T11:34:21.000Z",
+    "source": "Punch Newspapers",
+    "date": "2026-11-20T16:18:45.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdGJEbWZGbURNUFIzYmZyVDBhb3F3aWQzcXJ5c2ZWdDh2X2FKdm1URndTS19yZlZaWGVTdkdoQ3lkazlsVHlja0VGWXEtekdxN0UzTHVjTnV5Ymc4T2FmYXRhbk96X29XMmZqSVp4SWlfLVhBOXhoYnlfeldTaTdjMTI3eGs0Mnp4YXc?oc=5",
-    "img": "https://www.koaci.com/assets/news/thumbnails/600/2026/11/photo_1795164760.jpg"
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWDJWLUllU3NQcEFmMjlKcFZxWG1wd1lBVlNycUJZVDlZdF9rSkRMSEhvVGJiOXFmSWg1WXZ5ZXpETWVmZS1oYVdYSmk0b2VybjZUMHJyWllIS2ZWS0szNGpvTl9IdU53Tk1YRHFfY2R3VDlMdVBmeW9RVklNUk42MEV2MkpuTC1sMEhHdDhMVkZ6MUVkMl9mRmZhV3RUUzNzTXVySw?oc=5",
+    "img": "https://punchng.com/wp-content/uploads/2026/07/Hannatu-Musawa_1784638249.webp"
    },
    {
     "level": "",
     "cat": "congo",
     "owner": "Congo & CEMAC",
-    "title": "Grand tournoi de gala de handball: la phase qualificative a livré son verdict à Pointe-Noire",
+    "title": "BDEAC : Après son premier Eurobond réussi, la banque ambitionne de lever près de 300 milliards FCFA supplémentaires sur les marchés internationaux",
     "detail": "",
-    "source": "lhorizonafricain",
-    "date": "2026-11-19T12:04:41.000Z",
+    "source": "Sika Finance",
+    "date": "2026-11-20T10:54:34.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdnREUHphSUEwWGxyN2RLakV4RWhlbnB5ekgxV1RYOEE5S0lBVWlPR0JyaV91X2pCOWE0Z1hhXzY3a0xjLXljQkttWWNDZXJYRlAzQlN6MW04YWpDekZoWUYxeVhWUnFZWEpuLTBoRDNzMWlaR0JtTk9LZmhlQmkyMzNRMGhpdnAzbVp2eXY1YkQzWTdZVlEyaUlrT2pNQ09zZXBqclYtUmx3dlBwdlZPU1p6bUd4bzdrX2NTcVZrWW00TFZhM0c5S0E0NA?oc=5",
-    "img": "https://sportnewsafrica.com/cms/media/newsroom-photo-a689767183a742e2b3e90d6d6b4cbf1c.webp"
+    "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNRlRoVklnS3dGNnlnei0tcHpmZDA0VHBLQ3RnWGYybzloY3REeVh1VzkycnNONEs5aGRhRk0xSUFxb3FkdEVwWkZKTEdnMmotOWozTHlhM0p6Q2NNdEF6ZWFiYWZucjRadjZ1Vlo4TFlIaEEzcWhBdmNPZlN5VHJvSmlMRnlhUmFhaDhnQlF4RmtfQ2JUR2VKNjZDdXUwRXR2SmF1UzJhTmxXRzl3THBPbXMyQlBEdWx4MlhfaGJqcjhhOTJPa2FCR1duWUZCLUFHRjMwU19SVmkyemNBYzV3Z1FtZ0FpSmd2WjFnQUlIeXNXbFAtcW8tc2I4TnZ5emlZc2RCRGU2SGsxZ1lGYTR3ZEhlSQ?oc=5",
+    "img": "https://www.sikafinance.com/i/info/x/BRVMC0_cbc7290a-1c79-4235-b8e8-474068258943_x.jpg"
+   },
+   {
+    "level": "",
+    "cat": "worldwide",
+    "owner": "Monde",
+    "title": "AI concerns support bond markets, U.S. Dollar stays firm",
+    "detail": "",
+    "source": "LBBW",
+    "date": "2026-11-20T12:40:47.000Z",
+    "impact": "",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSVhxQUZsaEtkODhrbkc5ek0tZ1B1aDNweVVDUE0yaklWQk5odUlaR20wUWxRY1RxUl84R1MzU2NMd09WbndzRFhkWldRWGpIOXhrbEQyczRGeXB5YzhuUzZwakFiV1pHcXJTNzFkR3FWcElBNmRDM1NYYVU3S3ZxbkZ3dVBQWUd0RE9QdDI0NW05WXNTWGw2R012cWZJTGZqN0g0?oc=5",
+    "img": null
    }
   ]
  },
  "on_this_day": {
-  "en": [
-   {
-    "year": 1994,
-    "text": "In accordance with the Lusaka Protocol, the Angolan government signed a ceasefire with UNITA rebels in a failed attempt to end the Angolan Civil War.",
-    "url": "https://en.wikipedia.org/wiki/Lusaka_Protocol",
-    "img": "https://upload.wikimedia.org/wikipedia/en/5/57/UNITA_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-   },
-   {
-    "year": 1985,
-    "text": "Windows 1.0, the first version of Microsoft Windows available to the public, was released.",
-    "url": "https://en.wikipedia.org/wiki/Windows_1.0",
-    "img": "https://upload.wikimedia.org/wikipedia/en/4/4e/Windows1.0.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-   },
-   {
-    "year": 1969,
-    "text": "A group of Native American activists began a 19-month occupation (graffiti pictured) of Alcatraz Island in San Francisco Bay.",
-    "url": "https://en.wikipedia.org/wiki/Native_Americans_in_the_United_States",
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Indigenous_Americans_by_county.png/330px-Indigenous_Americans_by_county.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-   },
-   {
-    "year": 1947,
-    "text": "Princess Elizabeth, daughter of King George VI, married Lieutenant Philip Mountbatten, who was given the title Duke of Edinburgh.",
-    "url": "https://en.wikipedia.org/wiki/Elizabeth_II",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/1/11/Queen_Elizabeth_II_official_portrait_for_1959_tour_%28retouched%29_%28cropped%29_%283-to-4_aspect_ratio%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-   }
-  ],
-  "fr": [
-   {
-    "year": 1989,
-    "text": "adoption de la Convention relative aux droits de l'enfant par l'Assemblée générale des Nations unies.",
-    "url": "https://fr.wikipedia.org/wiki/Convention_relative_aux_droits_de_l'enfant",
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Convention_on_the_Rights_of_the_Child.svg/langfr-960px-Convention_on_the_Rights_of_the_Child.svg.png?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-   },
-   {
-    "year": 1959,
-    "text": "proclamation de la Déclaration des droits de l'enfant par l'Assemblée générale des Nations unies.",
-    "url": "https://fr.wikipedia.org/wiki/D%C3%A9claration_des_droits_de_l'enfant",
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/NYC24-158_UN.jpg/330px-NYC24-158_UN.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-   },
-   {
-    "year": 1945,
-    "text": "ouverture du procès de Nuremberg, intenté par les Alliés de la Seconde Guerre mondiale aux hauts responsables de l'Allemagne nazie.",
-    "url": "https://fr.wikipedia.org/wiki/Proc%C3%A8s_de_Nuremberg",
-    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Defendants_in_the_dock_at_the_Nuremberg_Trials.jpg/330px-Defendants_in_the_dock_at_the_Nuremberg_Trials.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
-   },
-   {
-    "year": 1917,
-    "text": "début de la bataille de Cambrai, opposant le Royaume-Uni et l'Allemagne lors de la Première Guerre mondiale.",
-    "url": "https://fr.wikipedia.org/wiki/Bataille_de_Cambrai_(1917)",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/2/24/Bataille_de_Cambrai1.png?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
-   }
-  ]
+  "en": {
+   "world": [
+    {
+     "year": 1994,
+     "text": "In accordance with the Lusaka Protocol, the Angolan government signed a ceasefire with UNITA rebels in a failed attempt to end the Angolan Civil War.",
+     "url": "https://en.wikipedia.org/wiki/Lusaka_Protocol",
+     "img": "https://upload.wikimedia.org/wikipedia/en/5/57/UNITA_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    },
+    {
+     "year": 1985,
+     "text": "Windows 1.0, the first version of Microsoft Windows available to the public, was released.",
+     "url": "https://en.wikipedia.org/wiki/Windows_1.0",
+     "img": "https://upload.wikimedia.org/wikipedia/en/4/4e/Windows1.0.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    },
+    {
+     "year": 1969,
+     "text": "A group of Native American activists began a 19-month occupation (graffiti pictured) of Alcatraz Island in San Francisco Bay.",
+     "url": "https://en.wikipedia.org/wiki/Native_Americans_in_the_United_States",
+     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Indigenous_Americans_by_county.png/330px-Indigenous_Americans_by_county.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    },
+    {
+     "year": 1947,
+     "text": "Princess Elizabeth, daughter of King George VI, married Lieutenant Philip Mountbatten, who was given the title Duke of Edinburgh.",
+     "url": "https://en.wikipedia.org/wiki/Elizabeth_II",
+     "img": "https://upload.wikimedia.org/wikipedia/commons/1/11/Queen_Elizabeth_II_official_portrait_for_1959_tour_%28retouched%29_%28cropped%29_%283-to-4_aspect_ratio%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    }
+   ],
+   "congo": [
+    {
+     "year": 1943,
+     "text": "Denis Sassou-Nguesso, président de la République du Congo.",
+     "kind": "born",
+     "md": "11-23",
+     "url": "https://fr.wikipedia.org/wiki/Denis_Sassou-Nguesso"
+    }
+   ],
+   "lebanon": [
+    {
+     "year": 2006,
+     "text": "Pierre Amine Gemayel, Lebanese lawyer and politician (born 1972)",
+     "kind": "died",
+     "md": "11-21",
+     "url": "https://en.wikipedia.org/wiki/Pierre_Amine_Gemayel"
+    },
+    {
+     "year": 1948,
+     "text": "Michel Suleiman, Lebanese general and politician, 16th President of Lebanon",
+     "kind": "born",
+     "md": "11-21",
+     "url": "https://en.wikipedia.org/wiki/Michel_Suleiman"
+    },
+    {
+     "year": 1943,
+     "text": "Lebanon gains independence from France, nearly two years after it was first announced by the Free French government.",
+     "kind": "event",
+     "md": "11-22",
+     "url": "https://en.wikipedia.org/wiki/Lebanon"
+    }
+   ]
+  },
+  "fr": {
+   "world": [
+    {
+     "year": 1989,
+     "text": "adoption de la Convention relative aux droits de l'enfant par l'Assemblée générale des Nations unies.",
+     "url": "https://fr.wikipedia.org/wiki/Convention_relative_aux_droits_de_l'enfant",
+     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Convention_on_the_Rights_of_the_Child.svg/langfr-960px-Convention_on_the_Rights_of_the_Child.svg.png?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    },
+    {
+     "year": 1959,
+     "text": "proclamation de la Déclaration des droits de l'enfant par l'Assemblée générale des Nations unies.",
+     "url": "https://fr.wikipedia.org/wiki/D%C3%A9claration_des_droits_de_l'enfant",
+     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/NYC24-158_UN.jpg/330px-NYC24-158_UN.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    },
+    {
+     "year": 1945,
+     "text": "ouverture du procès de Nuremberg, intenté par les Alliés de la Seconde Guerre mondiale aux hauts responsables de l'Allemagne nazie.",
+     "url": "https://fr.wikipedia.org/wiki/Proc%C3%A8s_de_Nuremberg",
+     "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Defendants_in_the_dock_at_the_Nuremberg_Trials.jpg/330px-Defendants_in_the_dock_at_the_Nuremberg_Trials.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    },
+    {
+     "year": 1917,
+     "text": "début de la bataille de Cambrai, opposant le Royaume-Uni et l'Allemagne lors de la Première Guerre mondiale.",
+     "url": "https://fr.wikipedia.org/wiki/Bataille_de_Cambrai_(1917)",
+     "img": "https://upload.wikimedia.org/wikipedia/commons/2/24/Bataille_de_Cambrai1.png?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+    }
+   ],
+   "congo": [
+    {
+     "year": 1943,
+     "text": "Denis Sassou-Nguesso, président de la République du Congo.",
+     "kind": "born",
+     "md": "11-23",
+     "url": "https://fr.wikipedia.org/wiki/Denis_Sassou-Nguesso"
+    }
+   ],
+   "lebanon": [
+    {
+     "year": 1992,
+     "text": "Georges Tomb, compositeur et pianiste libanais.",
+     "kind": "born",
+     "md": "11-20",
+     "url": "https://fr.wikipedia.org/wiki/Georges_Tomb"
+    },
+    {
+     "year": 1978,
+     "text": "Yasmine Al Massri, actrice américano-libanaise d'origine palestinienne.",
+     "kind": "born",
+     "md": "11-21",
+     "url": "https://fr.wikipedia.org/wiki/Yasmine_Al_Massri"
+    },
+    {
+     "year": 1943,
+     "text": "Le Liban proclame son indépendance. Un pacte national, non écrit, institue un système politique confessionnel, pour maintenir l'équilibre entre dix-huit communautés.",
+     "kind": "event",
+     "md": "11-22",
+     "url": "https://fr.wikipedia.org/wiki/Liban"
+    }
+   ]
+  }
  },
  "read": {
   "pick": {
-   "title": "CFOs confront cash-flow risks as AI costs rise",
-   "source": "CFO Dive",
-   "lang": "en",
+   "title": "Du PI-SPI au Switch Al Maghrib, qui sont les champions africains du paiement instantané ?",
+   "source": "Jeune Afrique",
+   "lang": "fr",
    "paywall": false,
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbWU3bU1CNmVsclJLRFdXVkFqNC1Fb25nSE9teEpjd1liRTMxUkVfQ3ZjVElOSUNfRE5CZlJzZWh3OW5aZFdhX2VoeFpxUWFaMWFnSnNjdTlTeWtDWFNyeVJyVVFZZkZ5NnczS0g2dmxrLXJSRUtwT3NiT0FyeGF6NnJ1YS1jS3M?oc=5",
-   "date": "2026-11-12T21:27:36.000Z",
-   "img": "https://imgproxy.divecdn.com/mOyU7rqKcKTZkVeKlY7EPJJDGZ_AMtmgZULsKkYPKtc/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjE0Mzg4NDgwLmpwZw==.webp"
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOcVZQd0ZhdjI2UDA5OGlMRDhwWl9fQWdXUURRQkZyMW5yTUQzcnNSOUJrajRxZm9kWXBjRjZkMjhSSTFHVnZ1ZEtHNTdNODhKM1BDaHdwZEVlT1VtcDBXM3QycEhjZUVOX00yX1hKOUc0NkIyeGFfTHZ4cV9fT1VmWEUyb3U4dzNRNlNQaHJ3Tk9aLThMcW1yQ3ZTZi1xamhaQ1phS1FzUkdQZTB4TjJKQWZhSTllZm1qLVJNV3BSVjRBblNHMlN4a1FZd3FRX1pQQ25qR2FjWk5zRHFCS2c?oc=5",
+   "date": "2026-11-19T16:03:17.000Z",
+   "img": "https://prod.cdn-medias.jeuneafrique.com/cdn-cgi/image/q=auto,f=auto,metadata=none,width=1280,height=720,fit=cover,gravity=0.5993x0.4315/https://prod.cdn-medias.jeuneafrique.com/medias/2026/11/19/jad20261119-eco-afrique-paiements-instantanes-montent-en-gamme-pi-spi.jpg"
   },
   "more": [
-   {
-    "title": "Du PI-SPI au Switch Al Maghrib, qui sont les champions africains du paiement instantané ?",
-    "source": "Jeune Afrique",
-    "lang": "fr",
-    "paywall": false,
-    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOcVZQd0ZhdjI2UDA5OGlMRDhwWl9fQWdXUURRQkZyMW5yTUQzcnNSOUJrajRxZm9kWXBjRjZkMjhSSTFHVnZ1ZEtHNTdNODhKM1BDaHdwZEVlT1VtcDBXM3QycEhjZUVOX00yX1hKOUc0NkIyeGFfTHZ4cV9fT1VmWEUyb3U4dzNRNlNQaHJ3Tk9aLThMcW1yQ3ZTZi1xamhaQ1phS1FzUkdQZTB4TjJKQWZhSTllZm1qLVJNV3BSVjRBblNHMlN4a1FZd3FRX1pQQ25qR2FjWk5zRHFCS2c?oc=5",
-    "date": "2026-11-19T16:03:17.000Z",
-    "img": "https://prod.cdn-medias.jeuneafrique.com/cdn-cgi/image/q=auto,f=auto,metadata=none,width=1280,height=720,fit=cover,gravity=0.5993x0.4315/https://prod.cdn-medias.jeuneafrique.com/medias/2026/11/19/jad20261119-eco-afrique-paiements-instantanes-montent-en-gamme-pi-spi.jpg"
-   },
    {
     "title": "The 6 a.m. CFO: How Basware’s Martti Nurminen starts his day",
     "source": "CFO.com",
@@ -1115,6 +1415,14 @@
     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNYkNyaGF3UnNXY0QybGQtV0Vjb3NYblU4aXp1UkJEUEJyQTFsWEs0NmhqMExFbjV1WWdVbkJ1bUQ2S3R2cmZGcnQwTElya1JadkJsd01yZk5WQkNXTUduQXkxQklEWFdZQTB5ZFVMZjBydHhuXzkzY2k0cjYzTU9LMmZqZVRYZUZBa3RFS2dUbWVuVE0?oc=5",
     "date": "2026-11-19T14:07:44.000Z",
     "img": "https://s.yimg.com/lo/mysterio/api/2c893f34d0751b29f0fad8978029f7c87c23a03b2d0be0fb43a07bb5e86a8457/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcfo_com_600%2F3547d4ac6f110a1f09993aa8caa18437.jpg"
+   },
+   {
+    "title": "Check out this job at Deloitte, Deloitte USI - Global Operate Pricing – Specialist - Hyderabad",
+    "source": "Deloitte Insights",
+    "lang": "en",
+    "paywall": false,
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObkFneVE5QTdIbGE2ZWJfSE1HV084dW1xX3pCQTdBNVlRSTk4d3kwS2VzdzUybGM0MW03RkZxdjBiUEZFRmFTb1J2eGd4WkpTUEdTS0FTcEdaTnp0NnpKdzBIVlVPOG9hSTdQdTI5RG9RMjJCVmZkM1N0YVVMcHJQZWpSbFpEQUEwSXMwUDZVZHJHZnZLTHQ0YW5IWkxNVmFjWjQyR0tBQ0o?oc=5",
+    "date": "2026-11-19T05:51:54.000Z"
    },
    {
     "title": "Mines : la stratégie XXL de la Côte d’Ivoire pour devenir le prochain eldorado africain",
@@ -1161,6 +1469,15 @@
     "img": "http://www.bing.com/th?id=ONUT.FgUe2i1NAjlVVPzXLH7LEA&pid=News&w=900&h=1200&c=7&rs=1"
    },
    {
+    "title": "Faut-il oublier le projet de monnaie unique africaine ?",
+    "source": "Jeune Afrique",
+    "lang": "fr",
+    "paywall": false,
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPenJkazk4dzlVWnNSSng2azA2X1ljZUN3MUJZaVI2NkFqd0RSRC1xVVA2VTBzSzFZTHZhQ3pZYUM3b3B1UDVwSXNRRGpWYzg0Mm5FUVhoT2dUcTVxM1dYUlRGb010S19wYUpNdktyTUJlc1Z6QmtremdYNlZxeVN0cUJmbEIzUktGT0Ezd2RFNkMtVzRwbmNhMWw0MUVFSkVyMTFVaTJwYmZ6U0ZCczBqYlBn?oc=5",
+    "date": "2026-11-18T01:56:00.000Z",
+    "img": "https://prod.cdn-medias.jeuneafrique.com/cdn-cgi/image/q=auto,f=auto,metadata=none,width=1280,height=720,fit=cover,gravity=0.7995x0.3986/https://prod.cdn-medias.jeuneafrique.com/medias/2026/11/16/elom9461-scaled.jpg"
+   },
+   {
     "title": "Intel shareholders sue CEO, CFO after stock rout",
     "source": "CFO Dive",
     "lang": "en",
@@ -1195,18 +1512,18 @@
     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQ0l4SWdoVk53aUM1U1QtZ2tGLXVvcXpYMmhHWnZzX3dLY2NwaHlPUWFpX2Q2ZzNVOTA4eG5FUTZ6WE1uMlQtbEpkZ2FQLVZhQTFQVGFPQUl5QTJDQmJuSXdkaWpoTC1mUml1b2p6WFpqeU9OZzVDUFJlekFDc0dXMlRfNk10N3hSZG1FT2x3N2lnWGt2VDR3cV83RF91LVBlYnhrOWlWZDU5ekhweDZIZjE5YXVGVFU5?oc=5",
     "date": "2026-11-17T07:59:59.000Z",
     "img": "https://eu-images.contentstack.com/v3/assets/blt69509c9116440be8/blt8e182aaeeb855183/6af61e0d1b99fb5350813cec/111226_IWK_BTS_vendorrisk_GettyImages-2301328091.png?disable=upscale&width=1200&height=630&fit=crop"
-   },
-   {
-    "title": "Delivering the agentic supply chain",
-    "source": "McKinsey",
-    "lang": "en",
-    "paywall": false,
-    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORUpWT2czeFdTQnBfWUROV0dKWG1uU0tyRGZuS0paeGpNcDEtMWNRdEIxWWhzU2I0Z1BWdTRfc0lhUTdNYkw5RzRsUW1PU1JRUzNta3dvVDZock1HOVFmZ0RYUzJ6M3VLbTNLY1NIdUQxZU9mSkRSOUJoYUFJYm92MG1jamJFNU1ZNlliWFJxS2FWcDZKZ0puZWstNUctMFU0dExGVXNENmstV09SUG9oNjZIWQ?oc=5",
-    "date": "2026-11-17T00:00:00.000Z",
-    "img": "http://www.bing.com/th?id=ONUT.PLfCPjAGUdO8-gcuQgFn4w&pid=News&w=900&h=1200&c=7&rs=1"
    }
   ],
   "history": [
+   {
+    "title": "CFOs confront cash-flow risks as AI costs rise",
+    "source": "CFO Dive",
+    "lang": "en",
+    "paywall": false,
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbWU3bU1CNmVsclJLRFdXVkFqNC1Fb25nSE9teEpjd1liRTMxUkVfQ3ZjVElOSUNfRE5CZlJzZWh3OW5aZFdhX2VoeFpxUWFaMWFnSnNjdTlTeWtDWFNyeVJyVVFZZkZ5NnczS0g2dmxrLXJSRUtwT3NiT0FyeGF6NnJ1YS1jS3M?oc=5",
+    "date": "2026-11-12T21:27:36.000Z",
+    "img": "https://imgproxy.divecdn.com/mOyU7rqKcKTZkVeKlY7EPJJDGZ_AMtmgZULsKkYPKtc/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjE0Mzg4NDgwLmpwZw==.webp"
+   },
    {
     "title": "Why CEOs Wait Too Long to Shake Up Leadership—and Regret It",
     "source": "Harvard Business Review",
@@ -1218,84 +1535,160 @@
  "news": [
   {
    "id": "n0-2026-11-20",
-   "cat": "africa",
-   "lang": "fr",
-   "title": "Côte d'Ivoire : ECO 2027, Abidjan, les États membres s'activent à faire sauter les derniers verrous politiques et institutionnels pour concrétiser la monnaie unique ouest-africaine",
-   "source": "Koaci",
-   "url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxQcmpsNmp0cXdGUGhnRGh2OHB2NUViTmFPVmJsX0p4YTdHU2QxcTZ5ekhqYng3SUJNQnVDeDdBMzVSYVlRbHVKTF9mZ0l5Z3BUeGhtRHJGZ0d2MDhtZnFwQ1p2dUtiQUFxMnB3dUdrTURFYkVwU1RGLXQ3ckJGT2M5d2U0NDd1NFVwZ2hLeUNoajBBNHF1N2I3ZUwwRUUtaWtOcG1LX2dCVXl6SXdIcHY2ZjhuLVc4ZjZ0Z0dnUk9uc1hTQ0RxcHM1R2kxZmFTeWN5Qk5aSnVCcEdzSDZXNFN3Q2Z2Mk9VTTduNkYwQkJual9kVlJoaXdqR3g4ak1hZmV5bnZKck1lZTFDU1ZxbnpaT2FqUGpVNWtONGZveTlSSlFVZHNKaG9XOGpwQktBYXhocDZuWnlPb3JxOW43czVWXy1sSnNSSHI3RjVsbVhEVmZLdXlfa3FjS29nb1VocGVrMlg2QVA4V2k?oc=5",
-   "date": "2026-11-20T13:37:00.000Z",
-   "img": "https://www.koaci.com/assets/news/thumbnails/600/2026/11/photo_1795185473.jpg"
+   "cat": "worldwide",
+   "lang": "en",
+   "title": "Week Ahead for FX, Bonds: Flash PMI Data to Provide Gauge on Economic Growth",
+   "source": "WSJ",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUGRKVlM2NDJTdnJ2MW1LcHA4Z29OVTA3eEo0NFlsblNRRnBvcGVGZkVneWN1X1VWWVRWY1FTSm1jWHE0aV9IQzR5Sk9uWHpmdGdSb0VIR3hhal9YckR6QTVTeXhEWVRSTkQ2U2szTEdvQUtSYWVQSXU0LU1Pb3lzNmx6MHdNUmd4NTFHM2thTmpaN2xDclJSa1l1ZzQzRThSdnBPY0tKNC14WlNZRXNpeg?oc=5",
+   "date": "2026-11-20T15:14:00.000Z",
+   "img": "http://www.bing.com/th?id=ONUT.IwGgnjhm6bNRbKPrtLPtcQ&pid=News&w=900&h=1200&c=7&rs=1"
   },
   {
    "id": "n1-2026-11-20",
-   "cat": "africa",
-   "lang": "fr",
-   "title": "Or ivoirien : AFG Bank veut que la mine se finance à Abidjan",
-   "source": "Abidjan.net News",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNM2x3TGpCVkJXZDVmM0Y0MEVYcUpJNlQ3bHZheEQ4dnMydmhvSnduZWhGeURIdkFUY0ZDQ1N0ajNLbGRfbzZoU3B2YU9EdGJtTVdxTVZtZUU2eHFpZHJlaDBXOG9XVGhUWmpEQmIwODEyWWxUX3p2aVFXODAySzY1czJXWUZKS3E1N2ltbmU1aXhVZ2R3SGk3cm5ocmJBXzRV?oc=5",
-   "date": "2026-11-20T13:25:30.000Z",
-   "img": "http://www.bing.com/th?id=ONUT.HBgcze0kOnsbuAhFHx2FAw&pid=News&w=900&h=1200&c=7&rs=1"
+   "cat": "worldwide",
+   "lang": "en",
+   "title": "Sri Lanka market rates rose after May hike: Central bank",
+   "source": "EconomyNext",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaFN3ak1zYXFHNGJfemZHT05qZmxpSWNiQlZyMXpMSkpxeVZtRlVmMDJjODBXTmZZUWVqbmJSS3VTVlh4TE9LN3B3aVJGRWw1b2dVRkc4d3pqcU80dDdHd1hoemRvSlJJOE56a0VNa2h6OVF3enZhMkFhWGVab1ZiN2J5RHViWjdGbS1HZmR5MV8?oc=5",
+   "date": "2026-11-20T15:00:40.000Z",
+   "img": "http://www.bing.com/th?id=ONUT.wMHgCVXVLICdR-GArJcnfA&pid=News&w=900&h=1200&c=7&rs=1"
   },
   {
    "id": "n2-2026-11-20",
-   "cat": "africa",
-   "lang": "fr",
-   "title": "Gaz naturel : le Bénin, le Togo et la Côte d’Ivoire préparent des approvisionnements communs",
-   "source": "BENIN WEB TV",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOY1RoaFY0M2xCcGhOd25DdllZWHRDN0VXd0lPTGllZmx4Qk1HUlhVV2RhVndYc2ZqTEZuUy1BQ3NadTZOZlZia0FwbnlVdTU0Q2VSWmJFU21qWmpKNFBPZzYzbjRaY0Nuenl0ZVVYYWw0QWtQR1JKcEU0azA3STdrdVlSU1Q?oc=5",
-   "date": "2026-11-20T11:57:07.000Z",
-   "img": "https://beninwebtv.com/wp-content/uploads/2025/06/Gazoduc-Energie-e%CC%81lectrique-au-Be%CC%81nin.webp"
+   "cat": "worldwide",
+   "lang": "en",
+   "title": "Global Commodity Markets Reprice as Growth and Interest Rates Collide",
+   "source": "kalkine.ca",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQYXoxOTNsSnZ5ejBnY2J1Zk9zQWJoOU9vVlFyOGtsSnR0TlBma3U1aXBYMU5wc2Q5TVRvalp0bjhQVmphaTlCdkJJOW9zdHV2YTZFQkdTX3JvekhBUlVJcnZSOTR4SVZkb2pEcUJYXzc4Ni1LNHhNYk5Jd1RyeFZRR3g2bWxHU0ttYjFhWGNhMkNVY3lQbFVzV2tqZGtXR2tRVU9iTnJDYVlZeVE?oc=5",
+   "date": "2026-11-20T14:50:00.000Z"
   },
   {
    "id": "n3-2026-11-20",
-   "cat": "africa",
-   "lang": "fr",
-   "title": "Côte d’Ivoire : élue à la tête de la Communauté internationale de la noix de coco",
-   "source": "Bénin Web TV",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTlJhai1jN29SaEt3QW1WV2I3b1d4SHdKS1c2Q3NyandnWDE4WUhmTFZ6SWR3akx0T0hIRktERUNHUEVjZnlLMjdnT21mTUlmak1UQU16dVRUN011ek91ZTBpNzBzTF9oSk5ldnh3M1BPRWRoaVN4UDRBQWVXbXlrMHZ1LTBuZmJ1cndwR0dEaw?oc=5",
-   "date": "2026-11-20T11:55:48.000Z",
-   "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625200-625199-1795175682.jpg"
+   "cat": "worldwide",
+   "lang": "en",
+   "title": "Wall Street Banks Are Demanding Guardrails for Rogue AI Agents",
+   "source": "Bloomberg.com",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNkhWM3BWOGJsRzUtcjlqQlRLVl9rWTdLV3hfTHNoZ3JHcVpmQ3ZVRHhnR0RDWkprVWFFWE5FM1ZsLW5uSDVMaFhrRXlOMnYtZEpJTkJOWFl6N0VGUHRvakFlM0RRR2NnY3ZsUTRxS3daczI5TWtMbXRSLUJOSEptb2U1VDBvOFhibkc1dHVLS0hUa05HQmowTnpkX2t6UUc3QU4wSDFoNUczLVlkbVdUZmF5MA?oc=5",
+   "date": "2026-11-20T13:29:48.000Z",
+   "img": "https://news-cdn.bindg.com/indg/assets/news/images/Fallback-image.webp"
   },
   {
    "id": "n4-2026-11-20",
-   "cat": "africa",
-   "lang": "fr",
-   "title": "Côte d’Ivoire : un institut de recherche café-cacao de 800 hectares en chantier à Divo",
-   "source": "Bénin Web TV",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdGJEbWZGbURNUFIzYmZyVDBhb3F3aWQzcXJ5c2ZWdDh2X2FKdm1URndTS19yZlZaWGVTdkdoQ3lkazlsVHlja0VGWXEtekdxN0UzTHVjTnV5Ymc4T2FmYXRhbk96X29XMmZqSVp4SWlfLVhBOXhoYnlfeldTaTdjMTI3eGs0Mnp4YXc?oc=5",
-   "date": "2026-11-20T11:34:21.000Z",
-   "img": "https://www.koaci.com/assets/news/thumbnails/600/2026/11/photo_1795164760.jpg"
+   "cat": "worldwide",
+   "lang": "en",
+   "title": "UK stocks fall as banks and energy shares drag in global risk-off mood",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZVVTRHZ4Q0NxLThIeDI5d09DVVhMY3hGQm9QSlo1V3dGLWJMbFBNaFZoZjV5WlhSaU55NVdDb096SWp6cFUzUUYteW9kTnlMUzdXVmZBUS1fbGpUM1FfNzlHRXdMeFYxWWV0NGlmVk9IbDdBdlNNN0E5d2VuUnF4SlA2RjVqRWd3VHR5NDVPVW9EV2FsQWJKSlVEVWJrekt1TDA4WFVVU2U?oc=5",
+   "date": "2026-11-20T12:46:17.000Z",
+   "img": "http://www.bing.com/th?id=ONUT.nYSZPetgZuEAKGDXNqK44w&pid=News&w=900&h=1200&c=7&rs=1"
   },
   {
    "id": "n5-2026-11-20",
-   "cat": "africa",
-   "lang": "fr",
-   "title": "Côte d'Ivoire : Primat 2026, les acteurs du transport plaident pour un secteur plus moderne et digitalisé",
-   "source": "Koaci",
-   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNU1JXZFNyNGJ3TUluUWs0Mm1nWGloSTE3c1hLcmw0OEx0ajVuWnZXQ282UFZwNE1lQlMyUGs1RlNEZ0NSaGhheXZWcnR6enh2ZzJFd0YzU0kySXZOTjlFUHJJTjctaDVTQVhYOGg3ZVB0NENUc0pPanBBbnAxVUQtTF9oYmZxaTZpdU9KYVlFSTdVZDhGU0tRcEFBd1dFNDVVSFF6dUE3WUpMWDk2ajdyelhIQmtyWko0VmFXNGUwUmJJSnNOTGFiSUZFblNNWFpueGE2VEE0REdnMDZocTBzeEpnNXJucDFoejMtZ05EYnphWE1BdDdPT29VV1RqNGlzbnpPbkpNaw?oc=5",
-   "date": "2026-11-20T10:44:00.000Z",
-   "img": "https://www.koaci.com/assets/news/thumbnails/600/2026/11/photo_1795175064.jpg"
+   "cat": "worldwide",
+   "lang": "en",
+   "title": "AI concerns support bond markets, U.S. Dollar stays firm",
+   "source": "LBBW",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSVhxQUZsaEtkODhrbkc5ek0tZ1B1aDNweVVDUE0yaklWQk5odUlaR20wUWxRY1RxUl84R1MzU2NMd09WbndzRFhkWldRWGpIOXhrbEQyczRGeXB5YzhuUzZwakFiV1pHcXJTNzFkR3FWcElBNmRDM1NYYVU3S3ZxbkZ3dVBQWUd0RE9QdDI0NW05WXNTWGw2R012cWZJTGZqN0g0?oc=5",
+   "date": "2026-11-20T12:40:47.000Z"
   },
   {
    "id": "n6-2026-11-20",
-   "cat": "africa",
-   "lang": "fr",
-   "title": "Côte d'Ivoire : Éric Tenié Ouattara, DG de l'ADCI : « Comment les PME demeurent compétitives face à la concurrence…",
-   "source": "Koaci",
-   "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQdUVPellvR1FBdnNqNk9SYVVvenFxOXBrMF9IQ0hNcVluM3RhM0pia2pMTkIwZmRsRFVLcGY0UUhMdjAtTVBBcllTRHBNUDJmTzVpU2hFTXNUem1YVThwM2hGVEE1NFVsNm9hcHRoTUV3Z1Ixb1ppSVNHN0NCNWc2UzdtQzFmWTAwM1d4Z1BBZk00RjZfQ3R0dV9hcl9saGhWOXk2c0ZNLXQ4MFVRUWxCTFNDMWxBdHExZVEtWUtDa2taWEtkY3RVb0prSlU5aVl4djk0T3BwS3RzNUE5LVE4S1JUNzVYTHR6VnNaTG9pVHJLdHBsN1V2clhidm9RcHExYlUtNVRhOGpHT2hB?oc=5",
-   "date": "2026-11-20T10:05:00.000Z"
+   "cat": "worldwide",
+   "lang": "en",
+   "title": "IMF Warns AI Boom Could Keep Global Interest Rates Higher",
+   "source": "Serrari Group",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdGhpaWJGc3RmcmU5aGR5S0pRSkczajlNVmNSTE9JZ2JpMHluWll0R1hKSEFPeWNaa0JqZWktWE9tLUpJejRhb0UzSjdoUTM3N1QwU0xDZEJPNmpGdnJXYWV6UmU2NEt1SEhZOFQ3MnVXVlRodkVnbnJmS0tlY2dVZVBndEFOcU0tQlE0?oc=5",
+   "date": "2026-11-20T12:31:21.000Z"
   },
   {
    "id": "n7-2026-11-20",
-   "cat": "africa",
-   "lang": "fr",
-   "title": "Côte d’Ivoire : le groupe MAGGI-X remporte le « MAGGI Sustainability Challenge » de Nestlé",
-   "source": "Abidjan.net News",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdlVUcGYxN2dQSXVtSFJmbnRyZUVhNXJPTzFjLXVDZTFDS3ZGNXhmSDNmTkpyUm1vSURkSHZ0YjJGY2N3Tk1leXlmbmE5MGJ5TTMtME5KNTItMTRZVXR6Qkd5RHpKVk9lbXpLS3h0RmFPdDdxOFRtTV9sMlRhQUllbFpINF9FemYtcFpLLW5VTjVKMU9IclJGM3F4UkNQUlZLMHZzTGYxZmJsdVE5NThqTUpBWDhzMTdVQ2hHNkFSSUNMUQ?oc=5",
-   "date": "2026-11-20T09:46:57.000Z"
+   "cat": "worldwide",
+   "lang": "en",
+   "title": "Central bank governor concerned rising gas prices will power inflation",
+   "source": "Portugal Resident",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMTR3TDZ1RzgzeFN3MnpnTGlMTnlxeHR1My1lZGozMEhFOFdjcEQxWWZySTVXcnZGLWJmT0w2OF93SHZ0aWoyZWhrc0RpTnctRU1LVGNnU0V0bWo4ekRPcEhBOXBmRVB5V2htbmEtOGo1NDhMX3BvcXo2Ynd6STc2RVlueFpLeFl6aWVuV3VkZkEwZko5RU5ldFJaX1IwRy1wa01YZ2hVcw?oc=5",
+   "date": "2026-11-20T12:18:01.000Z"
   },
   {
    "id": "n8-2026-11-20",
+   "cat": "africa",
+   "lang": "fr",
+   "title": "Côte d'Ivoire: Société Générale et SanlamAllianz célèbrent les 20 ans du Plan Retraite Zénith Performance avec près de 50 milliards FCFA d’encours",
+   "source": "Abidjan.net News",
+   "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxOMFpJeHFMUS1KQldjSjIxSGdPUHNhN2ZCeEkyaWUzdnYxWjEwZDFDRDdza3JUTVFqbEVZYzlSa19tWXRJUmFUV3A3VmtDYmtPR25FeEI4YnlFQ2ZCb1U4RV80TWpqbGxRbWc4SEQtdFhlYnJ6RDZWYlhrOUUzc1EwNzFfLVRkNkxEeEpycmd3SGZKUUo2MWlQdFNkUXp1MkNuamFYa3RnNWxocXhMVzdwMmNraHY1SDY0ZTlGVURmcm8zN3BUcm95ZGRhZVZpX1MxR0VhcHhCa3lMSzBsWV9PNWRuSEludU5JLS1VblNXSExvUGVSdDVRRldnczBySUVPeFgyLVB1VU93RGYyZ3JCWVh3?oc=5",
+   "date": "2026-11-20T17:35:13.000Z",
+   "img": "https://www.sikafinance.com/i/info/x/BRVMC0_d949112c-1dba-4e32-af41-8d04dfc510a3_x.jpg"
+  },
+  {
+   "id": "n9-2026-11-20",
+   "cat": "africa",
+   "lang": "fr",
+   "title": "Économie : Société Générale Côte d’Ivoire et SanlamAllianz célèbrent les 20 ans du Plan Retraite Zénith Performance avec près de 50 milliards FCFA d’encours",
+   "source": "Abidjan.net News",
+   "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxPVmZIczNTNTJMZ1RhQkpUWHY5MThIMElDcWx6bUUzb1RZblF2ajlUWlEtX0V5ckdPUGN2R0pZdTJlSkFiZERxUk16TGZQOTREVlRiMXZIeHlRX0QtU29NckRzRjhHYkdJdnFIU1lFb3czOHV6MTE1WGlkcnBHd2x5UXFsOVp4Y3FJYVlNd1RKMjBDemQ3VzZ6ZjdSRk53Z3Q5WllJTXZwWktMemhyalBXS1d3emxidUtieHJ1T2Q1dWVxd0pRMFNma203SHd4ZWc1NDJleWVqcUEyTkNyYlRCQ09HbGZHR3UtWlZHZVo2XzVJRlhPc1lwRUNNVkc1U185Z0J1T05MUmtBczF6dXMybmlFSEdQZ1pBWWRMdg?oc=5",
+   "date": "2026-11-20T16:53:25.000Z",
+   "img": "https://cdn.zonebourse.com/static/web-assets/images/editorial/fallback/twitter_ms_fdnoir.png"
+  },
+  {
+   "id": "n10-2026-11-20",
+   "cat": "africa",
+   "lang": "fr",
+   "title": "Coris Bank International Côte d’Ivoire prépare son introduction à la BRVM à travers une offre publique de vente de 20 % de son capital",
+   "source": "L'economiste du faso",
+   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPdDc5WDN0QUc1TzBoNGdkV2dRLUYtM1Z4RElaemVhNWJiVTR2bVV0RDRpRFJGY1RramxDVHhQSnZ3dWJCMXdJS3o5c1U1WGE2UTRVYl9temJ5ODVXd3QyQjdwLVlrbWJuazU0QzJqWlZtdmtwSWw3M0pEOFBjczJSYURRQ2FXSWsyYXFzNXo1ZmFfMjFLNzg4Z1FINXREN1p3NW1QZy1WdnJ3ZFlYVDlRNnVsODItbHJoTFNzeHpkWXllUmZPR1NRUlIwY3lIZkJYc0VwUVd2bDM3Rm9OWjBZVnQ4eElkb1RhbzBGRHUtVzZEekZUQ05PQkxyV1dVSWYyWlUw?oc=5",
+   "date": "2026-11-20T16:35:52.000Z",
+   "img": "http://www.bing.com/th?id=ONUT.-6yf2R67TmjUd7Vyr3CQkw&pid=News&w=900&h=1200&c=7&rs=1"
+  },
+  {
+   "id": "n11-2026-11-20",
+   "cat": "africa",
+   "lang": "fr",
+   "title": "Écotourisme : la Côte d’Ivoire veut séduire les touristes allemands et européens",
+   "source": "FratMat",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcWVPSkpPcEpyUVVYamdFQ0hJdm9lYjY1R3JOR3Nvckk5eXRMclM1VXlIcEVFLThlbHJlNXdMOFFxbjdLUnVRbkEyWFB5ODlTb0JVcUJJaVJZUEF4aTJVbmVWN1ZKZlBUMUxPMlo3MC1pa3Y2TU91YmtUQ25oSENEejR0Y2Fqejhadi1HNFZNZG8xbWZ5NldqMXJ0VUIyQ01vQi1OR3ZweEp0S0VmNGRQQVNDaVlpOXNFVE1qbF84X2o4LXNkVlE?oc=5",
+   "date": "2026-11-20T16:31:00.000Z",
+   "img": "https://www.fratmat.info/uploads/images/2026/11/20/302190.jpg"
+  },
+  {
+   "id": "n12-2026-11-20",
+   "cat": "africa",
+   "lang": "en",
+   "title": "Nigeria’s cultural diversity can drive national unity, economic growth — Minister",
+   "source": "Punch Newspapers",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWDJWLUllU3NQcEFmMjlKcFZxWG1wd1lBVlNycUJZVDlZdF9rSkRMSEhvVGJiOXFmSWg1WXZ5ZXpETWVmZS1oYVdYSmk0b2VybjZUMHJyWllIS2ZWS0szNGpvTl9IdU53Tk1YRHFfY2R3VDlMdVBmeW9RVklNUk42MEV2MkpuTC1sMEhHdDhMVkZ6MUVkMl9mRmZhV3RUUzNzTXVySw?oc=5",
+   "date": "2026-11-20T16:18:45.000Z",
+   "img": "https://punchng.com/wp-content/uploads/2026/07/Hannatu-Musawa_1784638249.webp"
+  },
+  {
+   "id": "n13-2026-11-20",
+   "cat": "africa",
+   "lang": "en",
+   "title": "Oyetola Woos Investors to Nigeria’s Untapped Blue Economy Opportunities &",
+   "source": "Business Post Nigeria",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYzBfSW5wNlp1U3VENXpwVWtBbXZDRjRuTFM4SXZXZFZwR0tYMGZYNUJzSjRmTWp2UllPVW9OZXh6a01XVjJIaUhhVUZ1bVpXQXlVVnNmVFMxMUFBZGZveG1zaWNyQjRhbGU1R3lVV1drSU5PMWJhbXBfU1V5OG9aZXMwSXpPcHVfU2NGNEdTRmRfNVM4X0J1aTlKN01MZ3FXb3NDMEV3?oc=5",
+   "date": "2026-11-20T16:04:38.000Z",
+   "img": "https://businesspost.ng/wp-content/uploads/2026/11/gboyega-oyetola-Marine-Minister.jpg"
+  },
+  {
+   "id": "n14-2026-11-20",
+   "cat": "africa",
+   "lang": "fr",
+   "title": "SIREXE 2026 : Côte d’Ivoire–Botswana, une coopération Sud-Sud pour l’industrialisation africaine",
+   "source": "AGENCE ECOFIN",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOOE9qQ1J6bXhBQlk5VWVtS0dvV2E4XzQ1ZXJSRmc3T3plUF9fZHBjR2RSaHY4bUNKOXplQzZUSi1Qa3JkUGljYkNWdEZ5YkhqWnZMOHdvMEptYmpyVEtrZk1ocDl5ZVFPLWRJUlJFT0dMaTJuWHRzYXNUcE5EbjFMNkpEUEZsSF9XampqWklYZVY0RDd6bmE5aUVxNEdxaV9VemlFQnNGNGZ0TmtLanRTNE5FVTY2elg2Wkw2ZE56dDQyekRjYUR3QVNfZTlfWGVWd3Nnd2NTYWF4SzdIXzVjUnZZNUdJM1RfdzRvSg?oc=5",
+   "date": "2026-11-20T16:01:00.000Z"
+  },
+  {
+   "id": "n15-2026-11-20",
+   "cat": "africa",
+   "lang": "en",
+   "title": "SHS students showcase renewable energy innovations for 24-hour economy",
+   "source": "Ghana News Agency",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNVUJseXlJZmJORFZCMW9KTUxiRzNnSFctMV9OcFNQQ0N3TXpXeGRHa2JnSFFDaFRPQjd0M29hRjVyV1prLXVPX0J3VXN4UDF5RWp6aXE3RUdEaWRqUzN3eE1pZDhZanMwNXNLYW1kOVd0aWZfOXFYZVk2SkUwbldXZHJJRlB4bGcySEVzbm5US20xV0FlMlF2TnU2aEpWczA?oc=5",
+   "date": "2026-11-20T15:59:01.000Z"
+  },
+  {
+   "id": "n16-2026-11-20",
    "cat": "congo",
    "lang": "fr",
    "title": "Santé : le siège de l'OMS demeure à Brazzaville",
@@ -1304,7 +1697,56 @@
    "date": "2026-11-20T15:20:01.000Z"
   },
   {
-   "id": "n9-2026-11-20",
+   "id": "n17-2026-11-20",
+   "cat": "congo",
+   "lang": "fr",
+   "title": "Cémac : Le gabonais Désiré Mouissi Divoundza, élu nouveau patron de la Cour de justice communautaire",
+   "source": "Info241.com",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPY0I0bWNqTU1VbE9xN2Q4TFVNMGxmdk5GQk9ZS3RMZG11dDNfN3hmaVZTN1gwOGphYkxRTmNILWd5dzNJbkJKOW5GRTkzQlBYVjlqTUJOWVhIVmJRMzk1WXNHQVV2UnFDME9JYXhUWGNUaVhFNC1WY2Rta1l1NTFTeC1SM0ZydnZ2OUFUT2pqSDY3RC1TNVFsRVRxb1pMMmZXaTF6R1VUdTdDcGFlS1E?oc=5",
+   "date": "2026-11-20T14:53:13.000Z",
+   "img": "http://www.bing.com/th?id=ONUT.0yNucByPVXQWMclC63Lp6A&pid=News&w=900&h=1200&c=7&rs=1"
+  },
+  {
+   "id": "n18-2026-11-20",
+   "cat": "congo",
+   "lang": "fr",
+   "title": "Logistique : le rachat de Portek soumis à l’examen du régulateur de la concurrence de la Cemac",
+   "source": "EcoMatin",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdXltNFphTV90WGg4NzFqS1l1X1kyRDlIUG1JVUF2VHdzWDdLb010Wi1PeU1oOE9hc3lXLXpVak9aWXpJcUQwanFpS0piN3NSZVJfNURKNWxRUEY3aTV0dVFMSmEtLUZmNkJ6MzEwVVZWdE5ma3JDdmM2RklDRTBOMXVVeVg1UUFxUml3Yy1CMkxYYUpQOURpZHBSU2dlU1A1b0dGYTVYZzZtZjVWRHpIU3Z3?oc=5",
+   "date": "2026-11-20T13:52:50.000Z"
+  },
+  {
+   "id": "n19-2026-11-20",
+   "cat": "congo",
+   "lang": "fr",
+   "title": "Dette de la CEMAC : pourquoi les États se financent de plus en plus auprès de leurs propres banques",
+   "source": "La Nouvelle Tribune",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZURFTzIwVzRuVWhUcWxJV1o1R3VzZkJXUGRndndnU2pLYlNGaGpMREY5cGZOOHp2aWdSdEwyNUdJRlc5Wm5jLUpDeXpUdmg3ME8ybmtJUWlwSTV3MVloSHFLbndNakNLa2hzMjF1cVljVnhUSm5KX20zanVWS19uM2M2dkY0ZVU3c2ZiV3J5dnZ2UG1JSDRIbjJxQnZqOFZBcTE4RVM4bHl6OFkwbzFQelVpRHZHRFVmX2JrTnZoT1psNm5uOUk2MXFWRzg3ZDZ2b29z?oc=5",
+   "date": "2026-11-20T11:32:57.000Z",
+   "img": "https://io-fsly-bfmtv.cdn.nextradiotv.com/g9rjdxOCFt_aDGI-xLx4rbbf-V4=/0x106:2048x1258/2048x0/images/Le-marche-s-interroge-sur-des-rendements-obligataires-eleves-aux-Etats-Unis-2346594.jpg"
+  },
+  {
+   "id": "n20-2026-11-20",
+   "cat": "congo",
+   "lang": "fr",
+   "title": "BDEAC : Après son premier Eurobond réussi, la banque ambitionne de lever près de 300 milliards FCFA supplémentaires sur les marchés internationaux",
+   "source": "Sika Finance",
+   "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNRlRoVklnS3dGNnlnei0tcHpmZDA0VHBLQ3RnWGYybzloY3REeVh1VzkycnNONEs5aGRhRk0xSUFxb3FkdEVwWkZKTEdnMmotOWozTHlhM0p6Q2NNdEF6ZWFiYWZucjRadjZ1Vlo4TFlIaEEzcWhBdmNPZlN5VHJvSmlMRnlhUmFhaDhnQlF4RmtfQ2JUR2VKNjZDdXUwRXR2SmF1UzJhTmxXRzl3THBPbXMyQlBEdWx4MlhfaGJqcjhhOTJPa2FCR1duWUZCLUFHRjMwU19SVmkyemNBYzV3Z1FtZ0FpSmd2WjFnQUlIeXNXbFAtcW8tc2I4TnZ5emlZc2RCRGU2SGsxZ1lGYTR3ZEhlSQ?oc=5",
+   "date": "2026-11-20T10:54:34.000Z",
+   "img": "https://www.sikafinance.com/i/info/x/BRVMC0_cbc7290a-1c79-4235-b8e8-474068258943_x.jpg"
+  },
+  {
+   "id": "n21-2026-11-20",
+   "cat": "congo",
+   "lang": "fr",
+   "title": "Rachat d’IHS par MTN : le Cameroun face à un piège concurrentiel",
+   "source": "237online.com",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE92X252TEhxVkN0TUE3S1N3TmZxMEpBeVkxeEliSS1WNk81ZG50dzkzaWkyTDhaaEFMTUt3Ui1Bc2hEZlJrSWE4S0pkOE83ZTVxM3pYTGFQa1BVOUNoNzRveVkwMzQyVzhqMEExaEtudw?oc=5",
+   "date": "2026-11-20T09:41:34.000Z",
+   "img": "https://www.237online.com/wp-content/uploads/2026/11/IHS-par-MTN.webp"
+  },
+  {
+   "id": "n22-2026-11-20",
    "cat": "congo",
    "lang": "fr",
    "title": "Green Diplomacy: L'Union européenne mobilise la jeunesse congolaise pour l'environnement",
@@ -1313,75 +1755,26 @@
    "date": "2026-11-20T09:22:23.000Z"
   },
   {
-   "id": "n10-2026-11-19",
+   "id": "n23-2026-11-20",
    "cat": "congo",
    "lang": "fr",
-   "title": "Développement du secteur maritime: Wimowca restitue les travaux de son séminaire au préfet de Pointe-Noire",
-   "source": "Adiac Congo",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWjQtRlNsN0lPdmRTc1UtMkdVT0JMSDg5SVd6eVBwRjFMNUROTHgzbHZ1dUNkRF94S3ViM0NxblkwUjJhbGRKU3R6cUQ0TUlDbEJiODBidFJQY3gzVUFxYXpIWDBRYlQ1S3hsdEQxZDR4bDI0djZaRTZLUFRaR0x0dmhlT3JkYnBiTnZkTVJKQS1VNWI4aEVITHc1LVpYMlowSTVOd2lPZ3VrdUhYUWthY0ZnZGE2V0lMUEVIZi11VmM3eHJpVEJr?oc=5",
-   "date": "2026-11-19T21:18:00.000Z",
-   "img": "http://www.bing.com/th?id=ONUT.KHawWGj1oyHiZx0LbrhXEw&pid=News&w=900&h=1200&c=7&rs=1"
+   "title": "MTN franchit une étape décisive dans le rachat d’IHS Towers",
+   "source": "Forbes Afrique",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZkE2S2pKN1gyMGFhbDlnQ1JRelJadFB3MkRZZTJhX2x6a091Z3NVVE1WX0pPSmZyNFpKUGlpbC1pZDZub2pIVms2dzJIY0c5TWM2S3lxWXp3OVVhRUVYbEd4bVpVSDM2ek5ESDRCcHJnRXh0VHBhQmxCemNzNUoyOW12NUZUWGtMaXdDOW1R?oc=5",
+   "date": "2026-11-20T03:30:00.000Z"
   },
   {
-   "id": "n11-2026-11-19",
-   "cat": "congo",
-   "lang": "fr",
-   "title": "Handball : les qualifications du tournoi de gala avancent à Brazzaville et Pointe-Noire",
-   "source": "Sport News Africa",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRzBXaHVVX1M2X3ZmQ3VCRFFMMGJaclpSVEQwRGdKclQ2d2IyUkZ6MHI5LWxrN1VZM3JWd080NWN5eTF5RnpLNE1RcjJUSlUtaGJFZWZBX21tTk9lUmx2R0trVk85UzZRREhVc2gzeHF2U2VzWUZnY3NJbDg1ZUhRUWpIZTVuSEpQRkVtdDhDMURIazlrNFhRQUVBWldkNnFHdlRoRENpa1FmbHE1SUFuWW9FZzZDTl9QMUJVMEFDSmpyekE?oc=5",
-   "date": "2026-11-19T14:54:00.000Z",
-   "img": "https://sportnewsafrica.com/cms/media/newsroom-photo-a689767183a742e2b3e90d6d6b4cbf1c.webp"
-  },
-  {
-   "id": "n12-2026-11-19",
-   "cat": "congo",
-   "lang": "fr",
-   "title": "Grand tournoi de gala de handball: la phase qualificative a livré son verdict à Pointe-Noire",
-   "source": "lhorizonafricain",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdnREUHphSUEwWGxyN2RLakV4RWhlbnB5ekgxV1RYOEE5S0lBVWlPR0JyaV91X2pCOWE0Z1hhXzY3a0xjLXljQkttWWNDZXJYRlAzQlN6MW04YWpDekZoWUYxeVhWUnFZWEpuLTBoRDNzMWlaR0JtTk9LZmhlQmkyMzNRMGhpdnAzbVp2eXY1YkQzWTdZVlEyaUlrT2pNQ09zZXBqclYtUmx3dlBwdlZPU1p6bUd4bzdrX2NTcVZrWW00TFZhM0c5S0E0NA?oc=5",
-   "date": "2026-11-19T12:04:41.000Z",
-   "img": "https://sportnewsafrica.com/cms/media/newsroom-photo-a689767183a742e2b3e90d6d6b4cbf1c.webp"
-  },
-  {
-   "id": "n13-2026-11-19",
-   "cat": "congo",
-   "lang": "fr",
-   "title": "Congo-Brazzaville: L'avocat Me William Bourdon porte plainte pour un projet d'assassinat sur sa personne",
-   "source": "allAfrica.fr",
-   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9JWEZwUjFNUFZON2I0ZTFrcW5YRTZhNXIwaGtibFF3V2MwS3VDVXNwUl9mV3FkY1VudkF3dUtYbnhRa3JhaWViSkItVjJzUlNzSzVuRlIzLV9mVkQtZVBJ?oc=5",
-   "date": "2026-11-19T09:46:49.000Z",
-   "img": "https://s.rfi.fr/media/display/90a33120-1817-11ef-86c8-005056a97e36/w:1280/p:16x9/94885644_117587139923067_3592775520749617152_n.jpg"
-  },
-  {
-   "id": "n14-2026-11-19",
-   "cat": "congo",
-   "lang": "fr",
-   "title": "Afrique: Production gazière - Le continent doit bâtir ses propres solutions énergétiques",
-   "source": "allAfrica.fr",
-   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE92N2ZMamE1UGJRaWp4WGpxS0k4X2xuNTRkV2VfLVJySngxMFJLbEpGQVNuc1NxUWR4aHhDYV9lb3dBVTFXREJqZEVlWUYwTmJSTGk1MGc4RW5hNUI5V2pZ?oc=5",
-   "date": "2026-11-19T09:07:47.000Z"
-  },
-  {
-   "id": "n15-2026-11-19",
-   "cat": "congo",
-   "lang": "fr",
-   "title": "Pointe-Noire : à la morgue, les morts aussi risquent de se tromper de famille !",
-   "source": "Les Echos du Congo Brazzaville",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNN0IxTW5UYk1LbXF4MGRsMVYtYXlUUDFsSXdhbHNNazN6QnotOU5wQUVaRlQ0Q3BjMGQweTVNRDZERXg5RnJscVN6eGxLNFQ2M0J2WHlyNnZia3ZfOE1CdUxLLUQ3X2pSekxuVWF6UENyUG05OW96Mng0b3JxZ1lMVXRWOGJrbE5mVUVHcmRNUVhhTkozWkZCV0k5QVlCdHNlT01CVXAwUVh1NTZuVE44bTF6dnpuT240UmZuOUI0WWhqUktU?oc=5",
-   "date": "2026-11-19T08:04:13.000Z"
-  },
-  {
-   "id": "n16-2026-11-20",
+   "id": "n24-2026-11-20",
    "cat": "markets",
    "lang": "en",
-   "title": "US Dollar Price Forecast: DXY Heads for Fourth Weekly Gain as EUR/USD, GBP/USD Slide, Can 103.70 Hold?",
-   "source": "FXEmpire",
-   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQbkZRM2E1SEdJMEhTd0RtVDNZZmxUaUxtWTBqWkZmOVI0Z09uLU5PZjdpeVZ5MDk5em5CLXI3R3hNWndnVGNWZ3g2TFVqS2xpQU8zNjNjWVNaNldsdkNfaVBVMTdRbnh0QmVobjhqMkxBdldfSDRIYWhyT2Jla0VNLUVuaTFXdTNjTTg0cmVxX0c2M1dpVnRRT3hGMDhnN1dGRWJlOGNMNWYyUVZSZEhDYnVqdkZSelhGSVhOX2lnb0tkTl9BcE1XYXl5aGE1MzRnOVVscXNOWXVMOHNfbFdvcE10WQ?oc=5",
-   "date": "2026-11-20T07:00:00.000Z",
+   "title": "EUR/USD Price Forecast — EURUSD (1.0981) 1.1073 Upside Target on Fed-ECB Rate Gap",
+   "source": "TradingNEWS",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSlVYc0FVS01yaVdTamxnbDJBcTRaRHhOTUVIaGtHUklWN2RXWmdDS2p2RThWMFNQVC1Wc3RxZFE1OG1adXhxNkx6RWFPRUVMbEZ2VGtDTWpDeU1aQkdwUnhGY2ltYUVMbWJ1bXNNR0NwaTZibVhLUVFEOHNVU1BpVlktMGZoVUZCTVYxcC1ycUphRmtlVG9KNThrWnF0d2ZHOWl2bFZ5Ukd6UTBjQkNPMmZBQU1GeVpaaU1ZN3BhVkhfYi1B?oc=5",
+   "date": "2026-11-20T17:30:17.000Z",
    "img": "http://www.bing.com/th?id=ONUT.7YTx0iIyOfCHfdaux-Hv6A&pid=News&w=900&h=1200&c=7&rs=1"
   },
   {
-   "id": "n17-2026-11-19",
+   "id": "n25-2026-11-19",
    "cat": "markets",
    "lang": "en",
    "title": "Euro trims losses amid stronger risk appetite and still-low Oil prices",
@@ -1390,17 +1783,16 @@
    "date": "2026-11-19T23:09:50.000Z"
   },
   {
-   "id": "n18-2026-11-19",
+   "id": "n26-2026-11-19",
    "cat": "markets",
    "lang": "en",
-   "title": "Canadian Dollar strengthens as Oil rebounds, hawkish Fed limits gains",
+   "title": "Euro trims losses as risk appetite strengthens and oil prices stay low",
    "source": "www.tmgm.com",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOaWtDb0lTNjJMXzFWZzdGZ1FmMzJMYTlMWlc4WW1jMmotQVM3eUMya1VNQXg4QVZiY25GMTRMejlEZlU4TXJmWktzNjE4cmtmZldXVldNaVAwaS1ZZ3BYNlVtQ3JYNjJpMzRXbVpTVVl0UTNxRTlkcWU0Yk1yai1zc2pwQmFpMTM3R294RFdkUUNZLXRYczJzbEZBVzFzZ2xEWFpaeHpjZ1pGVXotQlRWV19Ya1hsYUk3Wm5WQ2NiV1VyYTU2RXl1dEpjenZ3VXM?oc=5",
-   "date": "2026-11-19T22:04:34.000Z",
-   "img": "http://www.bing.com/th?id=ONUT.DHvwQr3Fw-MVL7EH2M4wnQ&pid=News&w=900&h=1200&c=7&rs=1"
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMGxjU1VYVWlzTmo3eUN1RmRIUm5GTlhTTEIwME5CQ2lXanZPa3ZCNmVKNGlCVXBlRWJfSGc5Qkl3XzN3Q2lTS0dNeW8xcFBCZklJeXBfMWlHMW9oeHRldFMyUjNTWXpPdVZhWDhneGdVaktCMnYyNEotOWE2RlJVMUlFVFpERFR1UXR1NEZudFZzZ0dLTHhwSWZ3NzFWTkI1X2s5MzZEVzRJckNQQm5lVmE5UkRjSnhWZ1hlYmFvdlZMa1ludldZbjJ5Wnp0dVZuRWJEWQ?oc=5",
+   "date": "2026-11-19T22:54:38.000Z"
   },
   {
-   "id": "n19-2026-11-19",
+   "id": "n27-2026-11-19",
    "cat": "markets",
    "lang": "en",
    "title": "EUR/USD Holds 1.0979 off 19-Month Low as DXY Cools From 103.97; ECB Hike Bets Eye 1.1125",
@@ -1409,7 +1801,7 @@
    "date": "2026-11-19T17:33:37.000Z"
   },
   {
-   "id": "n20-2026-11-19",
+   "id": "n28-2026-11-19",
    "cat": "markets",
    "lang": "en",
    "title": "Dollar Slips as Stocks Rally",
@@ -1419,26 +1811,17 @@
    "img": "http://www.bing.com/th?id=ONUT.XTAtWFzqNGMnPHVC-k2eJg&pid=News&w=900&h=1200&c=7&rs=1"
   },
   {
-   "id": "n21-2026-11-19",
-   "cat": "markets",
-   "lang": "en",
-   "title": "Canadian Dollar remains little changed as oil price surge offsets US Dollar strength",
-   "source": "www.tmgm.com",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxObnFRSDR4ZERnRzYyeVY1eVdMTWVqUkNyV25tS3UyZUFiUWZIQlczNFU5NGJadTdobmhiWEdXWTFIeXc4b0tKa1IwaVc3WXNVRVQ4Y01mbXJaV1dWZFg4QV9MTmJjaUNXYUJWMkNxQmd1V0N0ejJqZnQwRUFEaW9fUFBCZUpMRW4xTnVWTUN0TjE0R1BEMXJOejNCTjhMVUdleFdPTXhTeDc0SjBUMGZGVWU4N2ZyNXBqWHZPcC0yRGJlUjdXTHFscWhqYU5WeXhJUnNqdEJqZ2pnUXZrSEE?oc=5",
-   "date": "2026-11-19T13:34:50.000Z",
-   "img": "http://www.bing.com/th?id=ONUT.gsQhapvb1qZAi9SQlEEAkA&pid=News&w=900&h=1200&c=7&rs=1"
-  },
-  {
-   "id": "n22-2026-11-19",
+   "id": "n29-2026-11-19",
    "cat": "markets",
    "lang": "en",
    "title": "Euro pares losses as risk appetite improves and Oil prices remain low",
    "source": "FXStreet",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORGViZ0JLU3lkQ29GanpDcmZVWFlObjBPQmdkN3owMXUyQ3Jnc294TVVNcXBqTV9jLVFPNFg3NG9DaklZbGgxNmxBcW4zWnMwQU1SenNZcVJudDVWSDVRVmxxa0hMcnZmRkxpR1NwbnNfX05GVURZOE84ci1zWklEekVuRmNkamNnZ0JaYVppNkctZDdDLXZfUVVtU1FyZ3JzQVlUMG5hc3BuclZEaVdleXZn?oc=5",
-   "date": "2026-11-19T09:56:08.000Z"
+   "date": "2026-11-19T09:56:08.000Z",
+   "img": "http://www.bing.com/th?id=ONUT.7q78wXNNQstNJqzhdr4bTg&pid=News&w=900&h=1200&c=7&rs=1"
   },
   {
-   "id": "n23-2026-11-19",
+   "id": "n30-2026-11-19",
    "cat": "markets",
    "lang": "en",
    "title": "US dollar hits multi-month highs on hawkish Fed bets",
@@ -1447,7 +1830,46 @@
    "date": "2026-11-19T09:08:29.000Z"
   },
   {
-   "id": "n24-2026-11-20",
+   "id": "n31-2026-11-19",
+   "cat": "markets",
+   "lang": "en",
+   "title": "Euro shows little movement amid steady US Dollar and hawkish Fed signals",
+   "source": "www.tmgm.com",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMG1XbUlBWW51cEcxQUZmMnJQWU9MaDk5X3E3bGsxQ2pVNFRmUU1xcm1hNXcyRDJwYVRtTnkyVFNZa0hSUEJLMjg2S2xHZ1VHNG9fR0FxR1pmanlrcTh2QWsxU3RRZk5KNkNyb1hpbGxTM25fenZPQ2hwMmx0UEJtVGYybldXdjV6Q3hYZUpFbnA4ZFRzWF9pYVdzZ1BzZGhacE9XMlpETmJiNWdRR0RLajlYR1czajBzYTM1VTJJSWQ0X2dZaHFubXIxODZTNExUeXBHdElR?oc=5",
+   "date": "2026-11-19T08:13:42.000Z"
+  },
+  {
+   "id": "n32-2026-11-20",
+   "cat": "bev",
+   "lang": "en",
+   "title": "Sugar Prices Fall on Abundant Global Supplies",
+   "source": "Barchart.com",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNcGsweXVXNmlnV0Fkc3dTSVcxeHJ4dzhLb2dMcWhkb2dVYW5UdHNuRGZUSUtwREJWdFNwSkdUb3lKX2p4eTlCa2hJSFpNMVRRU1g0S2xIOUlYUHFhRHM3UjlUcTJfLThjNW1ISXlHQjFPbWd1ZzNxUTNPR185VTVsQllGWWZxcjdVamMyb1pBNjhwNlE?oc=5",
+   "date": "2026-11-20T17:22:35.000Z",
+   "img": "https://i2.wp.com/see.news/images/2026/11/erergergergjpg-1793997069-0.jpg?resize=701,394&quality=72&strip=all&ssl=1"
+  },
+  {
+   "id": "n33-2026-11-20",
+   "cat": "bev",
+   "lang": "en",
+   "title": "Competitive Analysis of Bottles Market: FMI Examines Recycled",
+   "source": "openPR.com",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVXprNktMYlY0SUcwclpXWHhqbF8yX2FVbGhrTVFEUk5ZUktQUXBkVHBHdVRIanNiTTRtTXVJcEgxd1UyNHpuVVRrQ3dwTnFHWXd5S1ZleGZhSWZQMDBPX0dndlZrNV9CVlRoc0tPRXh1ZDVzQlA5cDZJVVFjdWhGZFgwUTk3MWRXdmV6UkJldFJuaXFFdGd3ZS14VG0?oc=5",
+   "date": "2026-11-20T16:19:37.000Z",
+   "img": "http://www.bing.com/th?id=ONUT.1H7LqGbx9OFPqeHRbZwBsQ&pid=News&w=900&h=1200&c=7&rs=1"
+  },
+  {
+   "id": "n34-2026-11-20",
+   "cat": "bev",
+   "lang": "en",
+   "title": "PSMA says Pakistan has 1 million tonnes of surplus sugar",
+   "source": "UrduPoint",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUTMyVGZIbERGTWRRWkwxQk1sZnNiTmZQZXpJcTF0ZGVWYXZNXzdvbGR2emg5MjVHOU5RcmVMbFBFYUQ0MEVKRWxPT0NwazNBTTg4VmoxMkJLV0dlSEJNVHJWbW5mT2ZZalpYNHFpbk1fS3dSVUhjejUtZnpFeVJXSEE2QWRpdUs0LVZUSDdR?oc=5",
+   "date": "2026-11-20T16:15:16.000Z",
+   "img": "http://www.bing.com/th?id=ONUT.aMQQV6uaZcH0u-ZhJQYh6w&pid=News&w=900&h=1200&c=7&rs=1"
+  },
+  {
+   "id": "n35-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "SA Plastics Pact Sets 2030 Packaging Targets",
@@ -1456,7 +1878,7 @@
    "date": "2026-11-20T15:59:21.000Z"
   },
   {
-   "id": "n25-2026-11-20",
+   "id": "n36-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "Outstanding's 1.5-Year PET Cans: Setting New Standards for the Food and Beverage Industry",
@@ -1465,7 +1887,7 @@
    "date": "2026-11-20T15:24:04.000Z"
   },
   {
-   "id": "n26-2026-11-20",
+   "id": "n37-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "Farmers protest outside sugar mills in Sadiqabad, demand Rs 700 per maund for sugarcane",
@@ -1475,7 +1897,7 @@
    "img": "http://www.bing.com/th?id=ONUT.xDMeSRhxwq9_BYWZpYUnYg&pid=News&w=900&h=1200&c=7&rs=1"
   },
   {
-   "id": "n27-2026-11-20",
+   "id": "n38-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "Brazilian Real Weakness Triggers Sharp Correction in Sugar Prices — CMB News",
@@ -1484,54 +1906,16 @@
    "date": "2026-11-20T13:33:38.000Z"
   },
   {
-   "id": "n28-2026-11-20",
+   "id": "n39-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "India opens fresh applications for duty-free raw sugar imports",
    "source": "Food Business Middle East & Africa",
    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQaFptT3ZhQ3VVb20zbUcxTks0LUMtTTRtRHYzclc4N1FEdWdUR1BvVXhja0VBdV9tUkJNYWdWTy1tS0R5blRGNm9LRWlUUXVMMGgtOHRoUnBYWUotYWxMeHc2VHpOcWxNSWVqTDRtQVotTmlnTXU4ZFpIaUxxc1B5b3hkeG8wc05pRjJiWno2RUNFekNYS2g5ZzNuOA?oc=5",
-   "date": "2026-11-20T13:02:32.000Z",
-   "img": "https://bsmedia.business-standard.com/_media/bs/img/article/2023-08/28/thumb/fitandfill/1200X628/1693245029-7818.jpg"
-  },
-  {
-   "id": "n29-2026-11-20",
-   "cat": "bev",
-   "lang": "en",
-   "title": "Kenya announces US$9.2M bonus for Nzoia sugar farmers",
-   "source": "Food Business Middle East & Africa",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNYTV0MkZfQ1dTellSZWpERXBaWDRGZW8ycGhqS19jVzVqeVdRclc0NXQyZGRtX05La3Bjd0JKRG9FRTNocm1hbXpvUE1FOHBOcWpsQXZ5eW5tUnRHZ3B5TTQ1Y3o4R3VPcW5jaGlWWU91T3N4T3JiRXZhWGY1dFpLU2xlWS02M0k3X0gya3ZR?oc=5",
    "date": "2026-11-20T13:02:32.000Z"
   },
   {
-   "id": "n30-2026-11-20",
-   "cat": "bev",
-   "lang": "en",
-   "title": "Daily Sugar Market Update By Vizzie – 20/11/2026",
-   "source": "ChiniMandi",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1Lak41NGhTQzdyMXpndUVpTVVBdFVhQnZaT0NZUUFXTmlfaGVURHl2UGdnamhOWlNUSFZUOUg3enB0SmtaY3dlSF9DVmFOYjd6WFpPSWtsNXE1WW5PX3ZVSUtWVG14bHVpNlRWaW5vcFVOcWMxd0N2MGxCbEptSGc?oc=5",
-   "date": "2026-11-20T12:29:28.000Z"
-  },
-  {
-   "id": "n31-2026-11-20",
-   "cat": "bev",
-   "lang": "en",
-   "title": "Transparent Plastic Packaging Market to Reach USD 157.7 Billion",
-   "source": "openPR.com",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSlpwMXRLY1BhNjduVmFJam56NmMtREtGMjFjU3V2ckdsUXJtM3J0RERDcTBnSmF0WWhvMTZuUXdWYUdEZVFZSzViNEtHTFlfVTB4OGlEMkVyWXF5enJfanhneVA3VS1tUVpsNzROaWYxQWYxZ29XUzJMR0t3VklReDNpblBIek5Ia0l2YjN2cUxSdGl6eV9PdEdKZ3dNTHY5?oc=5",
-   "date": "2026-11-20T10:26:21.000Z"
-  },
-  {
-   "id": "n32-2026-11-20",
-   "cat": "cfo",
-   "lang": "fr",
-   "title": "Dette de la CEMAC : pourquoi les États se financent de plus en plus auprès de leurs propres banques",
-   "source": "La Nouvelle Tribune",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZURFTzIwVzRuVWhUcWxJV1o1R3VzZkJXUGRndndnU2pLYlNGaGpMREY5cGZOOHp2aWdSdEwyNUdJRlc5Wm5jLUpDeXpUdmg3ME8ybmtJUWlwSTV3MVloSHFLbndNakNLa2hzMjF1cVljVnhUSm5KX20zanVWS19uM2M2dkY0ZVU3c2ZiV3J5dnZ2UG1JSDRIbjJxQnZqOFZBcTE4RVM4bHl6OFkwbzFQelVpRHZHRFVmX2JrTnZoT1psNm5uOUk2MXFWRzg3ZDZ2b29z?oc=5",
-   "date": "2026-11-20T11:32:57.000Z",
-   "img": "https://io-fsly-bfmtv.cdn.nextradiotv.com/g9rjdxOCFt_aDGI-xLx4rbbf-V4=/0x106:2048x1258/2048x0/images/Le-marche-s-interroge-sur-des-rendements-obligataires-eleves-aux-Etats-Unis-2346594.jpg"
-  },
-  {
-   "id": "n33-2026-11-19",
+   "id": "n40-2026-11-19",
    "cat": "cfo",
    "lang": "fr",
    "title": "UEMOA : la BCEAO reconstitue ses réserves de change à 41 milliards USD en 2025",
@@ -1540,7 +1924,17 @@
    "date": "2026-11-19T23:56:00.000Z"
   },
   {
-   "id": "n34-2026-11-19",
+   "id": "n41-2026-11-19",
+   "cat": "cfo",
+   "lang": "en",
+   "title": "MinRes locks in successor to retiring CFO",
+   "source": "Australian Mining",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQkUycWtKOHRtSEpxelozN1lQQzQ4ek1NaWJyTElHSU9BcFB0U0gzNm45MnVaZUJ2WXpwRG1PNnZMTnlORWFxdG1zM0N1Y1IwRzgxV08yWUVSLUZIdzBWWnhUSzE0NzlIWlI0WWMxQ3FKQXRZd2dyYWwtcHhWSEZKOFVGMFo?oc=5",
+   "date": "2026-11-19T23:41:41.000Z",
+   "img": "https://www.australianmining.com.au/wp-content/uploads/2026/11/AdobeStock_1243359495_Editorial_Use_Only.jpg"
+  },
+  {
+   "id": "n42-2026-11-19",
    "cat": "cfo",
    "lang": "fr",
    "title": "Au Sénégal, le Pastef acte la perte du statut de membre de Diomaye Faye après la création de Kiraay",
@@ -1550,7 +1944,7 @@
    "img": "https://www.dakarposte.com/photo/art/grande/98734376-68923649.jpg?v=1794945153"
   },
   {
-   "id": "n35-2026-11-19",
+   "id": "n43-2026-11-19",
    "cat": "cfo",
    "lang": "fr",
    "title": "Thiès : Une tontine à 34 000 dollars montée aux États-Unis tourne au vinaigre",
@@ -1560,17 +1954,17 @@
    "img": "https://image.seneweb.com/content/news/2026-47-19/thumb_1260x800_6afec834a767f_80Xm1b4kRM.jpg"
   },
   {
-   "id": "n36-2026-11-18",
+   "id": "n44-2026-11-18",
    "cat": "cfo",
    "lang": "fr",
    "title": "UEMOA : Les réserves de change grimpent à 41 milliards USD en 2025",
    "source": "Sika Finance",
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTW5VLTNGSXQyeVhDYTkwbTN3TWhWSWppbk52Z3VoR0h3U2lCbWIwNGFtY1BKT09Ob3J6RFk0X3ZidjB3OWd3cV9YcmJyRjhQNWRPSi1haTdyY3M5dVlYM3VTS3pNMC1abThYLVBvaWVKSHNOTzdNUnNsVVo4QUlEbFdJcWZ2cjNhVUd4aHV6SEFRcldQQjMtWnRLMS1tWG45VU5TaTgyUjJQUQ?oc=5",
    "date": "2026-11-18T17:09:06.000Z",
-   "img": "https://cdn.zonebourse.com/static/web-assets/images/editorial/fallback/twitter_zb_fdnoir.png"
+   "img": "https://cdn.zonebourse.com/static/web-assets/images/editorial/fallback/twitter_zb_fdblanc.png"
   },
   {
-   "id": "n37-2026-11-18",
+   "id": "n45-2026-11-18",
    "cat": "cfo",
    "lang": "fr",
    "title": "UEMOA : Le risque souverain pèse sur 37,6% des actifs bancaires",
@@ -1580,7 +1974,7 @@
    "img": "https://www.sikafinance.com/i/info/b/BRVMC0_3de3b261-3354-4399-ad64-05937c857755_b.jpg"
   },
   {
-   "id": "n38-2026-11-17",
+   "id": "n46-2026-11-17",
    "cat": "cfo",
    "lang": "fr",
    "title": "CEMAC : les fonds cumulent 925 milliards de FCFA de titres du Trésor, dont 177 milliards d’OTA en fonds monétaires",
@@ -1589,16 +1983,26 @@
    "date": "2026-11-17T14:25:00.000Z"
   },
   {
-   "id": "n39-2026-11-17",
-   "cat": "cfo",
-   "lang": "fr",
-   "title": "Nkamouna : Aeternum signe des accords de financement de 1,14 milliard de FCFA, le rachat d’ARM reste en suspens",
-   "source": "Investir au Cameroun",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNWnVBMi15SFFIYjFTTFRNenV3ZWRUREFfZGdWZW15M0dzRmdKTnBzRzFHNUFIM2tqQmNxMXJpM01zcjJxVDJUaERjbDZGLVM5OHc5M0JOWDkyeVlfNzRQRTN4ZWJKclQ0Q3hITURqUDBycU5tdU1iU2l0UUpLcDVPVGE4UTZhVGQ2TWt6eHdwVERuVS1yNFVCNXpaY2dqckV1Mm4tNF8zNnJNNGdXakxJUWVHbm9ZbXUzXzVoZHNqMzJCN1JVMFVzemlEWjAxUVRkbG9naVpJVUE5WDBwTXJvN1ZxVE5aSHJNc1VwNlVnRWRyZw?oc=5",
-   "date": "2026-11-17T10:57:00.000Z"
+   "id": "n47-2026-11-20",
+   "cat": "lebanon",
+   "lang": "en",
+   "title": "International Decision to Update Lebanon's Communications; President Aoun Launches Battle to Protect Economy and Combat Smuggling",
+   "source": "Daily Beirut",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdmc3a3VraTN0OGhnZ0lidzJFbko0TFRvMTg4WnpnYWRrVHlDU1BhZ2RwX041cUpmckt4VjhJVTFiZm5SdnZmdHpJcWFBdVprQ1RnLVZJUXhDNUdMQmhnUUtEMXJ4dTVCVkZ0YmYydzhsalBjeE5UODhQcjU3TUF0bXhfaDRMbnNJYjNpdzF1Qk9jNmw2TmtkNXpTa01VQmVEcDlYeEgwOXc2TXNVdDM1WnNieFRuRlhCQmFxR2J3?oc=5",
+   "date": "2026-11-20T17:31:10.000Z"
   },
   {
-   "id": "n40-2026-11-20",
+   "id": "n48-2026-11-20",
+   "cat": "lebanon",
+   "lang": "en",
+   "title": "Salam: Lebanons independence remains incomplete without ending Israeli occupation and restoring state sovereignty",
+   "source": "LBCI Lebanon",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPbGlIT2xDR3E0MUcteEtvUkwzQUtadkZwbTVQamh6TllkWDRtUURaQk5GVlk2cnpsMHh5WWp6Uk0zaUw5Nm95VlVpVGhKNWMydmd1Q1IxRGJLNDZIcHNsVVREOTVHX1dkRkpBX0liQ3lDMWVZc1ZiLW95UGE0b21Uajd6UFBFS1N1R3FrUUF3RFg4N1lpMVR0UG05aTFZQUE1UjhQcUJXamxqdkNZeFBtOUluamtUaFZuRkJTMmRB?oc=5",
+   "date": "2026-11-20T17:03:32.000Z",
+   "img": "https://www.lbcgroup.tv/uploadImages/DocumentImages/Doc-T-968945-639307911304914741.jpg"
+  },
+  {
+   "id": "n49-2026-11-20",
    "cat": "lebanon",
    "lang": "en",
    "title": "Trump sees opportunity for peace with neighbors as Lebanon marks Independence Day",
@@ -1608,7 +2012,7 @@
    "img": "https://www.lbcgroup.tv/uploadImages/DocumentImages/Doc-T-968915-639307842108341531.jpeg"
   },
   {
-   "id": "n41-2026-11-20",
+   "id": "n50-2026-11-20",
    "cat": "lebanon",
    "lang": "en",
    "title": "Lebanon Discusses Electricity Financing and Port Expansion with European Bank Within Economic Recovery Path",
@@ -1617,7 +2021,17 @@
    "date": "2026-11-20T14:47:16.000Z"
   },
   {
-   "id": "n42-2026-11-20",
+   "id": "n51-2026-11-20",
+   "cat": "lebanon",
+   "lang": "en",
+   "title": "Saudi-led coalition says targeted Yemen's Hodeida, other attacks 'ongoing'",
+   "source": "LBCI Lebanon",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQWTBSQzdkM2JHRUpsaG5zX3FuaFB6bTRWZGZpdVF0NlJ2YzM4Qlc4WXNNNnBtWWVxVFpDSWdLSHo5b0hRc25fX3A0Z2JSU1RlOThVaXJTa2hOQXpkV1l1OF9laGEtb0VCSVFaR2ZnUHZ1NnNQaHhPV1U0NmVpdUtzQjh1emJyOHZDWHBQU1pSTHM5MWE1S0hROXlJb0FDeGhLQ2trcElnQnVkMnVucjMtNlZPM3RpVjQyMDJTSHNnMFdxdw?oc=5",
+   "date": "2026-11-20T13:51:37.000Z",
+   "img": "http://www.bing.com/th?id=ONUT.ULHHnrxpN7vGLGFMZcC5vw&pid=News&w=900&h=1200&c=7&rs=1"
+  },
+  {
+   "id": "n52-2026-11-20",
    "cat": "lebanon",
    "lang": "en",
    "title": "UN Security Council Discusses Resolution 1701, Renews Support for UNIFIL and Lebanon’s Sovereignty",
@@ -1626,7 +2040,7 @@
    "date": "2026-11-20T11:26:20.000Z"
   },
   {
-   "id": "n43-2026-11-20",
+   "id": "n53-2026-11-20",
    "cat": "lebanon",
    "lang": "en",
    "title": "Lebanon’s Economy Ministry Launches New Digital Platform for Intellectual Property Registration: 5 outlets compared",
@@ -1635,52 +2049,17 @@
    "date": "2026-11-20T11:22:53.000Z"
   },
   {
-   "id": "n44-2026-11-20",
+   "id": "n54-2026-11-20",
    "cat": "lebanon",
    "lang": "en",
-   "title": "French ex-PM Villepin announces presidential run",
+   "title": "Russia fired more than 110 missiles in 'one of the largest attacks' ever: Zelensky",
    "source": "LBCI Lebanon",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNWw5d2JCWmR5aEZrYzgwR2pQTHp1aXgzV0VBdV9lejAtakNEZzZvcHRiTEZWaDhZcnp5dTRwenNBMkttWThXUmp6U3QtV29sZW91dXlYMThKOVd0VzU1Xzd1VVFwdHVhUDhZck9VQ2FhTW54dkMxOTdpd2JWOG1saTZCWFZNLVliaWtUT200MXRmc2hpSXBlYkJnNjJlSjQ?oc=5",
-   "date": "2026-11-20T11:15:32.000Z",
-   "img": "http://www.bing.com/th?id=ONUT.Qw9cBOGR9dDDj2Z3QC0zCw&pid=News&w=900&h=1200&c=7&rs=1"
-  },
-  {
-   "id": "n45-2026-11-20",
-   "cat": "lebanon",
-   "lang": "en",
-   "title": "New federal data on job openings, employee turnover, shows sluggish Oregon economy",
-   "source": "Lebanon Local",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTEMtRXdkYThvczZ5Snd0RTdvdXliUVI2UmI0SnQtSWcwYzBuaGpVaERGMUdMbXNLM3J6UDdSckhzLVRvMG5LSUNUS2dFUzgzNnJMcHpyQ2I3VDR3SzZiM3V3RWhGYzdLMmd5RVV4ei13b29hbVNOZVBIamxPdFQ1Y0pVRWxkTGpNOFZwMndOWXhGUXRLUmZUeHhlaEl4SHZpR1dQUTRXZkJvemtlaFUzeGNUZTE?oc=5",
-   "date": "2026-11-20T10:05:40.000Z",
-   "img": "http://www.bing.com/th?id=ONUT.xYLvOQf4n2ZmPT9vaMRqXA&pid=News&w=900&h=1200&c=7&rs=1"
-  },
-  {
-   "id": "n46-2026-11-20",
-   "cat": "lebanon",
-   "lang": "en",
-   "title": "Fuel prices drop across Lebanon",
-   "source": "LBCI Lebanon",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRS11SERTcTRwMGp2ekJjZkduZjVhNURITXNjSmNWU0k2QkhJcTZRaUtlY0dWRWtoSzY5NnVPTG1XX1pXcWxOVUNpVDJUR1hreTUzZFpNRUxCRU9LUXdQX2pDN3BNd2JzQXBHZ0hpaDFHeHgzaUd4eUdHRWZ2LTdTeXo4UnA?oc=5",
-   "date": "2026-11-20T07:29:53.000Z"
-  },
-  {
-   "id": "n47-2026-11-20",
-   "cat": "lebanon",
-   "lang": "en",
-   "title": "Lebanon launches new intellectual property platform as Madrid system remains in sight",
-   "source": "L'Orient Today",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMTJKMFowOXVxVHFyR0tEb29jb3BYU1lSRENuVVdHOGtrMEwwVF9aZWJnOXVWZTh5OU5WMXJkMU5uanFrOEQzSW5zWWROenZHVXlWUm9TekdzR0lZenlMTWNvcDA1N0FoV2lUSS11QkJLN01kSExlVXp3dG9mLW5TQjA3ZEhjQVNSakl5YWhMQ05KR1ZGcURQVXVtWUplaEtiWjlWa3JtZmt5NF9rckhVOTVESG5vbEt3TmxmT2tqTjB0T0VvWWJCMTliRUlKOXNuLTVqUg?oc=5",
-   "date": "2026-11-20T07:02:55.000Z"
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQnJnY2dtMGwzS2MzZURHTmhISVFMaGZqUy11OW1NRmZyeGRhZG1Xd0loQ2NRUk51X1R4TG56T204Vnd1Qi1RbGJhbk1OckFfcnljaXZQS0pBRFBUcTlrYjBickh5WjNPQjlzQnlBM2JMcGUxdlJ0WHRJM2RzMWNNV1c2SkdQUGpMc1VCOVR0eTBJS3ZUNjhfbEhjYml5N0F3cWJwNWZqUWJmRThSVDJSOEltejVyUDRVOVBRNQ?oc=5",
+   "date": "2026-11-20T11:04:24.000Z"
   }
  ],
  "log": [
-  "news worldwide (en): 429 https://news.google.com/rss/search?q=world%20economy%20OR%20global%20markets%20OR%20geopolitics%20when%3A4d&hl=en&gl=US&ceid=US:en",
-  "news africa (en): 429 https://news.google.com/rss/search?q=(Nigeria%20OR%20Ghana%20OR%20Senegal%20OR%20%22Ivory%20Coast%22%20OR%20Cameroon%20OR%20Gabon%20OR%20DRC)%20economy%20when%3A4d&hl=en&gl=NG&ceid=NG:en",
-  "news congo (fr): 429 https://news.google.com/rss/search?q=CEMAC%20OR%20BEAC%20when%3A4d&hl=fr&gl=CM&ceid=CM:fr",
-  "news bev (en): 429 https://news.google.com/rss/search?q=beverage%20industry%20Africa%20when%3A4d&hl=en&gl=NG&ceid=NG:en",
-  "news bev (fr): 429 https://news.google.com/rss/search?q=boissons%20industrie%20Afrique%20when%3A4d&hl=fr&gl=CI&ceid=CI:fr",
-  "news cfo (en): 429 https://news.google.com/rss/search?q=CFO%20treasury%20dollar%20when%3A4d&hl=en&gl=US&ceid=US:en",
-  "photos: 24/36 {\"nomatch\":12,\"empty\":26}",
-  "photos: 12/13 {\"nomatch\":15,\"empty\":26}"
+  "photos: 29/42 {\"empty\":28,\"nomatch\":12}",
+  "photos: 11/13 {\"empty\":31,\"nomatch\":15}"
  ]
 }
