@@ -355,6 +355,13 @@ nav.tabs a{display:grid;place-items:center;gap:2px;padding:9px 2px 8px;font-size
 nav.tabs a[aria-current="page"]{color:var(--accent)}
 nav.tabs svg{width:22px;height:22px}
 .view[hidden],.sheet[hidden]{display:none}
+.view:not([hidden]){animation:viewIn .32s cubic-bezier(.2,.8,.2,1)}
+@keyframes viewIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+#refresh.spin svg{animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.ptr{position:fixed;left:50%;top:calc(env(safe-area-inset-top) + 8px);z-index:60;transform:translate(-50%,-70px);width:40px;height:40px;border-radius:50%;background:var(--surface);border:1px solid var(--line);box-shadow:0 6px 18px rgba(0,0,0,.15);display:grid;place-items:center;color:var(--accent);transition:transform .2s;pointer-events:none}
+.ptr svg{width:18px;height:18px}.ptr.go svg{animation:spin .8s linear infinite}
+.toast-up{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom));transform:translateX(-50%);background:var(--text);color:var(--bg);padding:9px 16px;border-radius:999px;font-size:.85rem;font-weight:600;z-index:70;animation:toast 1.8s ease forwards;pointer-events:none}
+@media (prefers-reduced-motion:reduce){.view:not([hidden]){animation:none}}
 
 /* Sheet + toast */
 .sheet{position:fixed;inset:0;z-index:20;background:rgba(5,10,12,.5);display:grid;align-items:end}
@@ -403,6 +410,7 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 <header class="top">
   <div class="mast">
     <div class="grow"><div class="dateline" id="dateline">&nbsp;</div><h1>Business Desk</h1></div>
+    <button class="iconbtn" type="button" id="refresh" aria-label="Refresh"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg></button>
     <button class="iconbtn" type="button" id="lang" aria-label="Switch language">FR</button>
     <button class="iconbtn" type="button" id="theme" aria-label="Switch light or dark">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
@@ -771,8 +779,7 @@ function renderHero(){
   const flags=[...new Set(items.flatMap(x=>countriesOf(x).map(c=>c[1])))].slice(0,10);
   const nC=new Set(items.flatMap(x=>countriesOf(x).filter(c=>c[0].length===2).map(c=>c[0]))).size,mins=Math.max(1,Math.round(items.length*7.5/30)/2);
   const d=new Date().toLocaleDateString(fr?"fr-FR":"en-GB",{weekday:"long",day:"numeric",month:"long"});
-  $("#hero").innerHTML=`<div class="h-date">${esc(d)} · ${fr?"mis à jour":"updated"} ${new Date(B.generated_at).toLocaleTimeString(fr?"fr-FR":"en-GB",{hour:"2-digit",minute:"2-digit"})}</div>
-    <h2 class="h-hi">${hi}, Rayan ${hr<12?"☀️":hr<18?"👋":"🌙"}</h2>
+  $("#hero").innerHTML=`    <h2 class="h-hi">${hi}, Rayan ${hr<12?"☀️":hr<18?"👋":"🌙"}</h2>
     <div class="h-flags" aria-hidden="true">${flags.join("")}</div>
     <button class="h-play" type="button" id="h-play"><span class="h-btn">▶</span><span><b>${fr?"Lancer le brief du jour":"Play today's brief"}</b><span class="s">${fr?"Vidéo avec voix · Monde, Afrique, Congo & CEMAC, DAF":"Video with voice · Worldwide, Africa, Congo & CEMAC, CFO"}</span></span></button>`;
   $("#h-play").onclick=()=>openWatch(0);
@@ -1058,13 +1065,25 @@ function route(){const v=V.includes(location.hash.slice(1))?location.hash.slice(
 addEventListener("hashchange",route);
 
 applyText();route();
-async function load(){
+let lastLoad=0,loading=false;
+async function load(manual){
+  if(loading)return;loading=true;const rb=$("#refresh");if(rb)rb.classList.add("spin");
+  const before=B&&B.generated_at;
   try{const r=await fetch("data/brief.json?ts="+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;B=await r.json();store.set("last",B);offline=false;}
-  catch(e){B=store.get("last",null);offline=true;if(!B){$("#banner-text").textContent="Couldn't load the brief. Check your connection and reopen the app.";return;}}
-  renderAll();
+  catch(e){B=B||store.get("last",null);offline=true;if(!B){$("#banner-text").textContent="Couldn't load the brief. Check your connection and reopen the app.";loading=false;if(rb)rb.classList.remove("spin");return;}}
+  lastLoad=Date.now();renderAll();loading=false;if(rb)rb.classList.remove("spin");
+  if(manual){const t=document.createElement("div");t.className="toast-up";t.textContent=offline?(lang==="fr"?"Hors ligne · dernière version affichée":"Offline · showing the last version"):before&&before===B.generated_at?(lang==="fr"?"Déjà à jour ✓":"Already up to date ✓"):(lang==="fr"?"Mis à jour ✓":"Updated ✓");document.body.appendChild(t);setTimeout(()=>t.remove(),1900);}
 }
 load();
-document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")load();});
+$("#refresh").onclick=()=>load(true);
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"&&Date.now()-lastLoad>2*60e3)load();});
+/* Pull down to refresh (the home-screen app has no browser refresh) */
+(()=>{const p=document.createElement("div");p.className="ptr";p.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg>';document.body.appendChild(p);
+  let y0=null,dy=0;
+  addEventListener("touchstart",e=>{if(scrollY>2||$("#watch")||e.target.closest(".reel,.sheet"))return;y0=e.touches[0].clientY;dy=0;},{passive:true});
+  addEventListener("touchmove",e=>{if(y0===null)return;dy=Math.max(0,e.touches[0].clientY-y0);if(scrollY>2){y0=null;dy=0;}p.style.transform=`translate(-50%,${Math.min(dy*.6,70)-70}px) rotate(${dy*2}deg)`;},{passive:true});
+  addEventListener("touchend",async()=>{if(y0===null)return;y0=null;if(dy>90){p.classList.add("go");p.style.transform="translate(-50%,0)";await load(true);}p.classList.remove("go");p.style.transform="";dy=0;});
+})();
 if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
 </script>
 </body>
