@@ -147,7 +147,7 @@ async function aiSummary(markets, fx, headlines) {
 
 From the headlines below, pick the 20 most important news stories of the last 24 hours for a video news feed: 6 from "worldwide" (mostly economy, finance and banking), 5 from "africa" (West and Central Africa), 5 from "congo" (Republic of Congo and CEMAC) and 4 from "cfo" (treasury, FX, rates, BEAC). Prefer major political, economic and security news over minor or promotional items; skip duplicates. Order them as a mixed feed: the most important story first, and never two stories from the same category in a row.
 Score every candidate's importance from 1 (filler) to 5 (market-moving); never pick a story scoring below 3 (sport, culture, ceremonies, anniversaries, PR, minor local items), even if a section then has fewer stories.
-For each give: cat (worldwide|africa|congo|cfo), score (3-5), level ("high" if score 5, else "med"), title (clear, max 14 words, rewritten from the headline), detail (one sentence saying what happened, using only what the headline says; never invent facts or numbers), impact (one short sentence on why it matters for a finance executive in Congo, or "" if it doesn't), source_index (the headline's i).
+For each give: cat (worldwide|africa|congo|cfo), score (3-5), level ("high" if score 5, else "med"), title (clear, max 14 words, rewritten from the headline), detail (one sentence saying what happened, using only what the headline says; never invent facts or numbers), impact ("Impact on ITE": one short factual sentence ONLY when the story directly affects ITE Congo, a beverage and packaging manufacturer in Brazzaville — its inputs (sugar, PET resin, aluminium, CO2, fuel/electricity), USD/XAF or EUR costs, CEMAC/BEAC rates and liquidity, Congolese tax or customs rules, or Congolese consumer demand — and only if the headline supports it; otherwise ""; never speculate), source_index (the headline's i).
 Also write "takeaway": one line (max 22 words) that sums up the day for Rayan, mixing the biggest story with the key market move (oil, dollar, CFA), in English and French.
 Return JSON only: {"takeaway":{"en":"...","fr":"..."},"en":[up to 20 items],"fr":[the same items in natural French]}.
 
@@ -222,6 +222,8 @@ async function photoFor(h) {
     for (const b of items) {
       const got = new Set(words(tag(b, "title"))); const hit = [...got].filter(w => want.has(w)).length;
       if (hit < 3 && hit / Math.max(1, Math.min(want.size, got.size)) < 0.5) continue;   // must be the same story
+      const bsrc = tag(b, "News:Source").toLowerCase().replace(/[^a-z0-9]/g, ""), hsrc = (h.source || "").toLowerCase().replace(/[^a-z0-9]/g, "").replace(/com$/, "");
+      if (!bsrc || !hsrc || !(bsrc.includes(hsrc.slice(0, 8)) || hsrc.includes(bsrc.slice(0, 8)))) { why.othersrc = (why.othersrc || 0) + 1; continue; }   // same publisher only
       fullTitle(h, tag(b, "title"));
       if (!h.desc) h.desc = cleanDesc(tag(b, "description"), h.title);
       const thumb = (b.match(/<News:Image>([\s\S]*?)<\/News:Image>/i) || [])[1];
@@ -428,6 +430,33 @@ async function bilingual(list) {
   log.push(`translated ${n} new, reused ${reused}, of ${list.length}`);
 }
 await bilingual(headlines);
+
+/* ---------- One story per event, filed under the right region ---------- */
+const CEMAC_RE = /\b(congo|congolais\w*|congo-brazzaville|brazzaville|pointe-noire|république du congo|republic of (the )?congo|sassou|cemac|cémac|beac|bdeac|cosumaf|bvmac|cameroun|cameroon|gabon|gabonais\w*|tchad|chad|centrafri\w*|central african republic|guinée équatoriale|equatorial guinea|douala|yaoundé|libreville|n'djamena|malabo|bangui)\b/i;
+const OTHER_AFR_RE = /\b(uemoa|waemu|bceao|brvm|ecowas|cedeao|sénégal\w*|senegal\w*|côte d['’]ivoire|ivory coast|ivoirien\w*|mali|burkina( faso)?|niger|bénin|benin|togo|guinée|guinea|nigeria\w*|ghana\w*|kenya\w*|rdc|drc|kinshasa|abidjan|dakar|lagos|accra|nairobi|maroc|morocco|egypt\w*|égypte|afrique du sud|south africa|ethiopia|éthiopie)\b/i;
+const txtOf = h => [h.title, h.t && h.t.en, h.t && h.t.fr].filter(Boolean).join(" ");
+let moved = 0;
+for (const h of headlines) {
+  const tx = txtOf(h), drc = /\b(rdc|drc|kinshasa|démocratique|democratic)\b/i.test(tx) && !/brazzaville|cemac|cémac|beac/i.test(tx);
+  const cem = CEMAC_RE.test(tx) && !drc, oth = OTHER_AFR_RE.test(tx) || drc;
+  if (h.cat === "congo" && !cem) { h.cat = "africa"; moved++; }   // not about Congo or CEMAC: file under Africa
+  else if (h.cat === "africa" && cem && !oth) { h.cat = "congo"; moved++; }
+}
+const toks = h => { const w = words((h.t && h.t.en) || h.title); return { set: new Set(w), nums: new Set(w.filter(x => /\d/.test(x))) }; };
+const kept = [], tk = [];
+let dups = 0;
+for (const h of [...headlines].sort((a, b) => (b.score || 0) - (a.score || 0) || b.date.localeCompare(a.date))) {
+  const a = toks(h);
+  const dupOf = tk.findIndex(b => {
+    const common = [...a.set].filter(x => b.set.has(x)).length, small = Math.min(a.set.size, b.set.size);
+    const sharedNum = [...a.nums].some(x => b.nums.has(x) && x.length > 1);
+    return small >= 3 && (common / small >= 0.6 || (sharedNum && common >= 3));
+  });
+  if (dupOf >= 0) { dups++; continue; }
+  kept.push(h); tk.push(a);
+}
+headlines = headlines.filter(h => kept.includes(h));
+log.push(`dedupe: ${dups} duplicates removed, ${moved} re-filed by region`);
 
 /* ---------- Markets: one line on why each price moved, from today's headlines ---------- */
 const MK_KEYS = {
