@@ -131,6 +131,51 @@ section{padding-top:26px}
 .pc.ag p{margin:0;font-size:.94rem;line-height:1.3;font-weight:600}
 .pc.ag .c-in{position:absolute;top:14px;right:14px;font-size:.7rem;font-weight:700;background:rgba(255,255,255,.2);padding:4px 9px;border-radius:999px}
 .pc.ag .c-emoji{position:absolute;right:12px;bottom:56px;margin:0;font-size:2.2rem;opacity:.9}
+/* Watch: TikTok-style full-screen feed with voice */
+.w-open{display:inline-flex;align-items:center;gap:8px;margin-top:12px;border:0;border-radius:999px;padding:11px 18px;font-size:.92rem;font-weight:700;cursor:pointer;color:#fff;background:linear-gradient(90deg,#ff2d55,#ff7a18);box-shadow:0 6px 18px rgba(255,45,85,.35)}
+.w-open .pl{width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.25);display:grid;place-items:center;font-size:.7rem}
+.watch{position:fixed;inset:0;z-index:400;background:#000;color:#fff;overflow-y:scroll;scroll-snap-type:y mandatory;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.watch::-webkit-scrollbar{display:none}
+.wv{position:relative;height:100vh;height:100dvh;scroll-snap-align:start;scroll-snap-stop:always;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:0 82px calc(34px + env(safe-area-inset-bottom)) 18px;-webkit-user-select:none;user-select:none}
+.wv .kb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;transform:scale(1.08)}
+.wv.on .kb{animation:kb1 16s ease-out forwards}
+.wv:nth-of-type(even).on .kb{animation-name:kb2}
+@keyframes kb1{from{transform:scale(1.04) translate(0,0)}to{transform:scale(1.22) translate(-3%,-2%)}}
+@keyframes kb2{from{transform:scale(1.22) translate(3%,1%)}to{transform:scale(1.04) translate(0,0)}}
+.wv .ov2{position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(0,0,0,.6) 0,rgba(0,0,0,.05) 22%,rgba(0,0,0,.15) 45%,rgba(0,0,0,.92) 100%)}
+.wv .w-emoji{position:absolute;top:24%;left:0;right:0;text-align:center;font-size:6.5rem;z-index:1;filter:drop-shadow(0 10px 30px rgba(0,0,0,.4))}
+.wv.on .w-emoji{animation:wfloat 3.5s ease-in-out infinite}
+@keyframes wfloat{50%{transform:translateY(-14px) rotate(-4deg)}}
+.w-body{position:relative;z-index:2;display:flex;flex-direction:column;gap:12px}
+.w-cat{align-self:flex-start;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.2);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);padding:6px 11px;border-radius:999px}
+.wv h2{margin:0;font-family:var(--display);font-size:clamp(1.6rem,7.2vw,2.4rem);line-height:1.15;font-weight:700;text-shadow:0 2px 14px rgba(0,0,0,.45)}
+.wv h2 span{opacity:.32;transition:opacity .18s}
+.wv h2 span.lit{opacity:1}
+.w-imp{margin:0;font-size:1rem;line-height:1.45;opacity:.92}
+.w-meta{font-size:.84rem;opacity:.85}
+.w-bar{position:absolute;left:0;right:0;bottom:0;height:3px;background:rgba(255,255,255,.18);z-index:3}
+.w-bar b{display:block;height:100%;width:0;background:#fff}
+.w-rail{position:absolute;right:10px;bottom:calc(96px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:16px;z-index:4;align-items:center}
+.w-rail button,.w-rail a{width:60px;display:grid;justify-items:center;gap:4px;background:none;border:0;color:#fff;font-size:.68rem;font-weight:700;text-decoration:none;cursor:pointer;text-shadow:0 1px 4px rgba(0,0,0,.6);padding:0}
+.w-rail .ic{width:50px;height:50px;border-radius:50%;background:rgba(0,0,0,.38);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);display:grid;place-items:center;font-size:1.35rem;transition:transform .15s,background .2s}
+.w-rail button:active .ic,.w-rail a:active .ic{transform:scale(.88)}
+.w-rail .liked .ic{background:#ff2d55}.w-rail .saved .ic{background:#f5a524}
+.w-top{position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:calc(12px + env(safe-area-inset-top)) 14px 0;z-index:6;pointer-events:none}
+.w-top>*{pointer-events:auto}
+.w-title{font-weight:800;letter-spacing:.05em;font-size:.86rem;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.w-x,.w-snd{width:40px;height:40px;border-radius:50%;border:0;background:rgba(0,0,0,.4);color:#fff;font-size:1.05rem;cursor:pointer;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.w-pause{position:absolute;inset:0;display:grid;place-items:center;z-index:3;pointer-events:none;opacity:0;transition:opacity .2s}
+.w-pause i{width:84px;height:84px;border-radius:50%;background:rgba(0,0,0,.45);display:grid;place-items:center;font-style:normal;font-size:2rem}
+.wv.paused .w-pause{opacity:1}
+.burst{position:absolute;z-index:7;font-size:6.5rem;pointer-events:none;animation:burst .9s ease-out forwards}
+@keyframes burst{0%{transform:translate(-50%,-50%) scale(.2) rotate(-15deg);opacity:0}25%{transform:translate(-50%,-50%) scale(1.15) rotate(-8deg);opacity:1}100%{transform:translate(-50%,-110%) scale(.9) rotate(0);opacity:0}}
+.w-end{background:radial-gradient(120% 80% at 50% 0,#2a3b8f,#05070f)}
+.w-end .w-body{align-items:center;text-align:center;margin-bottom:30vh}
+.w-btn{border:0;border-radius:999px;padding:12px 20px;font-weight:700;font-size:.95rem;cursor:pointer;background:#fff;color:#111}
+.w-btn.ghost{background:rgba(255,255,255,.18);color:#fff}
+.w-toast{position:fixed;left:50%;bottom:calc(30px + env(safe-area-inset-bottom));transform:translateX(-50%);background:rgba(0,0,0,.75);color:#fff;padding:9px 16px;border-radius:999px;font-size:.85rem;z-index:8;pointer-events:none;animation:toast 1.6s ease forwards}
+@keyframes toast{0%{opacity:0;transform:translate(-50%,10px)}15%,80%{opacity:1;transform:translate(-50%,0)}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.wv.on .kb,.wv.on .w-emoji{animation:none}}
 .share{display:flex;gap:8px;flex-wrap:wrap;padding-top:14px}
 .btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:9px 14px;font-size:.88rem;font-weight:600;cursor:pointer;text-decoration:none;color:var(--text)}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
@@ -415,7 +460,7 @@ function renderSixty(){
   const catOf=x=>x.cat||((B.categories||[]).find(c=>c.en===x.owner||c.fr===x.owner)||{}).id||"worldwide";
   reel.n=items.length;if(!reel.n){$("#sixty").innerHTML="";return;}
   reel.i=Math.min(reel.i,reel.n-1);
-  $("#sixty").innerHTML=`<div class="reel" id="reel" tabindex="0" aria-roledescription="carousel" aria-label="${esc(t("sixty"))}">
+  $("#sixty").innerHTML=`<button class="w-open" type="button" id="w-open"><span class="pl">▶</span>${lang==="fr"?"Regarder avec le son":"Watch with sound"}</button><div class="reel" id="reel" tabindex="0" aria-roledescription="carousel" aria-label="${esc(t("sixty"))}">
   <div class="bars">${items.map(()=>"<i><b></b></i>").join("")}</div>
   ${items.map((x,k)=>{const c=REEL_CATS[catOf(x)]||REEL_CATS.worldwide;return `<article class="slide${x.img?" has-img":""}" style="background:${c[1]}" aria-label="${k+1} / ${items.length}">${bgImg(x.img)}
     <div class="s-top"><span class="s-cat">${esc(x.owner||"")}</span>${x.level==="high"?`<span class="s-hot">${lang==="fr"?"À la une":"Top story"}</span>`:""}</div>
@@ -446,6 +491,110 @@ function reelTick(now){
   }
   reel.raf=requestAnimationFrame(reelTick);
 }
+/* ---------- Watch: TikTok-style feed with voice ---------- */
+const W={muted:store.get("w_muted",false),likes:store.get("w_likes",{}),saves:store.get("w_saves",{}),items:[],cur:null,timer:0,lt:0,bt:0,paused:false,tap:0,tapT:0,io:null};
+const isFr=s=>/[àâçéèêëîïôûùüœ]|\b(le|la|les|des|du|une|et|pour|dans|sur|avec|aux|au)\b/i.test(s);
+const wid=x=>(x.url||x.title).slice(-80);
+function catOfX(x){return x.cat||((B.categories||[]).find(c=>c.en===x.owner||c.fr===x.owner)||{}).id||"worldwide";}
+function pickVoice(l){const vs=(window.speechSynthesis&&speechSynthesis.getVoices())||[],p=l.slice(0,2);
+  const m=vs.filter(v=>v.lang.replace("_","-").toLowerCase().startsWith(p));
+  return m.find(v=>v.lang.toLowerCase()===l.toLowerCase()&&/premium|enhanced|natural|siri|google/i.test(v.name))||m.find(v=>v.lang.toLowerCase()===l.toLowerCase())||m[0]||null;}
+if(window.speechSynthesis)speechSynthesis.onvoiceschanged=()=>{};
+function wToast(s){const t=document.createElement("div");t.className="w-toast";t.textContent=s;document.body.appendChild(t);setTimeout(()=>t.remove(),1700);}
+function openWatch(start){
+  if($("#watch"))return;
+  reel.paused=true;ppIcon();
+  const fr=lang==="fr";W.items=(B.summary[lang]||B.summary.en||[]).map(x=>({...x,cat:catOfX(x)}));W.paused=false;
+  const el=document.createElement("div");el.className="watch";el.id="watch";el.setAttribute("role","dialog");el.setAttribute("aria-label",t("sixty"));
+  el.innerHTML=`<div class="w-top"><button class="w-x" aria-label="${fr?"Fermer":"Close"}">✕</button><span class="w-title">${esc(t("sixty"))}</span><button class="w-snd" aria-label="${fr?"Son":"Sound"}">${W.muted?"🔇":"🔊"}</button></div>`+
+    W.items.map((x,k)=>{const c=REEL_CATS[x.cat]||REEL_CATS.worldwide,id=wid(x);
+      return `<section class="wv" data-k="${k}" style="background:${c[1]}">
+      ${x.img?`<img class="kb" src="${esc(x.img)}" alt="" decoding="async" onerror="this.insertAdjacentHTML('afterend','<div class=&quot;w-emoji&quot;>${c[0]}</div>');this.remove()">`:`<div class="w-emoji" aria-hidden="true">${c[0]}</div>`}<i class="ov2"></i>
+      <div class="w-pause"><i>▶</i></div>
+      <div class="w-body"><span class="w-cat">${esc(x.owner||"")}</span><h2>${x.title.split(/\s+/).map(w=>`<span>${esc(w)}</span>`).join(" ")}</h2>
+      ${x.detail?`<p class="w-imp">${esc(x.detail)}</p>`:""}${x.impact?`<p class="w-imp"><b>${t("impact")} ·</b> ${esc(x.impact)}</p>`:""}
+      <div class="w-meta">${esc(x.source||"")}${x.date?" · "+ago(x.date):""}</div></div>
+      <div class="w-rail">
+        <button type="button" data-act="like" class="${W.likes[id]?"liked":""}"><span class="ic">❤️</span><span>${fr?"J'aime":"Like"}</span></button>
+        <button type="button" data-act="save" class="${W.saves[id]?"saved":""}"><span class="ic">🔖</span><span>${fr?"Garder":"Save"}</span></button>
+        <button type="button" data-act="share"><span class="ic">📤</span><span>${fr?"Partager":"Share"}</span></button>
+        ${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener" data-act="read"><span class="ic">📰</span><span>${fr?"Lire":"Read"}</span></a>`:""}
+      </div><div class="w-bar"><b></b></div></section>`;}).join("")+
+    `<section class="wv w-end" data-k="end"><div class="w-body"><div style="font-size:4.2rem">✅</div><h2>${fr?"Vous êtes à jour":"You're all caught up"}</h2>
+      <p class="w-imp">${fr?"Nouvelles histoires trois fois par jour.":"Fresh stories three times a day."}</p>
+      <div style="display:flex;gap:10px;justify-content:center"><button class="w-btn" type="button" data-act="replay">↺ ${fr?"Revoir":"Replay"}</button><button class="w-btn ghost" type="button" data-act="close">${fr?"Fermer":"Close"}</button></div></div></section>`;
+  document.body.appendChild(el);document.body.style.overflow="hidden";
+  const secs=[...el.querySelectorAll(".wv")];
+  if(start>0&&secs[start])el.scrollTop=secs[start].offsetTop;
+  wActivate(secs[start]||secs[0]);   // speak inside the tap so iPhone allows sound
+  W.io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting&&x.target!==W.cur)wActivate(x.target);}),{root:el,threshold:.6});
+  secs.forEach(s=>W.io.observe(s));
+  el.querySelector(".w-x").onclick=closeWatch;
+  el.querySelector(".w-snd").onclick=e=>{W.muted=!W.muted;store.set("w_muted",W.muted);e.currentTarget.textContent=W.muted?"🔇":"🔊";if(W.cur)wActivate(W.cur,true);};
+  el.addEventListener("click",wClick);
+  el.addEventListener("keydown",e=>{if(e.key==="Escape")closeWatch();});
+  el.tabIndex=-1;el.focus();
+  history.pushState({watch:1},"");window.addEventListener("popstate",closeWatch,{once:true});
+}
+function closeWatch(){const el=$("#watch");if(!el)return;if(window.speechSynthesis)speechSynthesis.cancel();clearTimeout(W.timer);clearInterval(W.lt);
+  if(W.io)W.io.disconnect();el.remove();document.body.style.overflow="";W.cur=null;if(history.state&&history.state.watch)history.back();}
+function wNext(sec){const n=sec&&sec.nextElementSibling;if(n)n.scrollIntoView({behavior:"smooth"});}
+function wBar(sec,ms){const b=sec.querySelector(".w-bar b");if(!b)return;b.style.transition="none";b.style.width="0";void b.offsetWidth;b.style.transition=`width ${ms}ms linear`;b.style.width="100%";}
+function wActivate(sec,restart){
+  if(!sec)return;const same=sec===W.cur;if(same&&!restart)return;
+  clearTimeout(W.timer);clearInterval(W.lt);if(window.speechSynthesis)speechSynthesis.cancel();
+  document.querySelectorAll("#watch .wv.on").forEach(s=>{if(s!==sec)s.classList.remove("on","paused");});
+  W.cur=sec;W.paused=false;sec.classList.remove("paused");void sec.offsetWidth;sec.classList.add("on");
+  const k=sec.dataset.k;if(k==="end"){if(!W.muted)wSay(lang==="fr"?"Vous êtes à jour. À tout à l'heure.":"You're all caught up. See you later.",lang==="fr");return;}
+  const x=W.items[+k],spans=[...sec.querySelectorAll("h2 span")];spans.forEach(s=>s.classList.remove("lit"));
+  const fr=isFr(x.title),words=x.title.split(/\s+/);
+  const light=n=>spans.forEach((s,j)=>s.classList.toggle("lit",j<n));
+  const est=Math.max(4500,(words.length+(x.owner||"").split(" ").length+(x.impact||"").split(" ").length)*(fr?400:370)+900);
+  const timeLight=(delay,per)=>{let n=0;setTimeout(()=>{if(W.cur!==sec)return;W.lt=setInterval(()=>{n++;light(n);if(n>=words.length)clearInterval(W.lt);},per);},delay);};
+  if(W.muted||!window.speechSynthesis){timeLight(150,90);wBar(sec,6500);W.timer=setTimeout(()=>{if(W.cur===sec&&!W.paused)wNext(sec);},6500);return;}
+  const intro=(x.owner?x.owner+". ":""),text=intro+x.title+"."+(x.detail?" "+x.detail:"")+(x.impact?" "+x.impact:"");
+  const starts=[];let p=intro.length;words.forEach(w=>{starts.push(p);p+=w.length+1;});
+  let gotB=false;const t0=Date.now();
+  const u=wSay(text,fr,ev=>{gotB=true;clearInterval(W.lt);let n=0;for(let j=0;j<starts.length;j++)if(ev.charIndex>=starts[j])n=j+1;light(n);},()=>{if(W.cur!==sec||W.paused)return;if(!gotB&&Date.now()-t0<1500){gotB=true;clearTimeout(W.timer);timeLight(0,90);wBar(sec,6500);W.timer=setTimeout(()=>{if(W.cur===sec&&!W.paused)wNext(sec);},6500);return;}light(words.length);W.timer=setTimeout(()=>{if(W.cur===sec&&!W.paused)wNext(sec);},700);});
+  wBar(sec,est);
+  setTimeout(()=>{if(!gotB&&W.cur===sec)timeLight(0,Math.round((est-1200)/words.length*.75));},1300);
+  W.timer=setTimeout(()=>{if(W.cur===sec&&!W.paused&&!speechSynthesis.speaking)wNext(sec);},est+4000);
+}
+function wSay(text,fr,onB,onEnd){
+  const u=new SpeechSynthesisUtterance(text);u.lang=fr?"fr-FR":"en-GB";u.rate=1.05;u.pitch=1;const v=pickVoice(u.lang);if(v)u.voice=v;
+  if(onB)u.onboundary=e=>{if(!e.name||e.name==="word")onB(e);};if(onEnd){u.onend=onEnd;u.onerror=onEnd;}
+  speechSynthesis.speak(u);return u;
+}
+function wBurst(sec,x,y){const r=sec.getBoundingClientRect(),h=document.createElement("div");h.className="burst";h.textContent="❤️";h.style.left=(x-r.left)+"px";h.style.top=(y-r.top)+"px";sec.appendChild(h);setTimeout(()=>h.remove(),950);}
+function wLike(sec,on){const x=W.items[+sec.dataset.k];if(!x)return;const id=wid(x),b=sec.querySelector('[data-act="like"]');
+  const v=on===undefined?!W.likes[id]:on;if(v)W.likes[id]=1;else delete W.likes[id];store.set("w_likes",W.likes);if(b)b.classList.toggle("liked",v);}
+function wTogglePause(sec){
+  if(sec.dataset.k==="end")return;W.paused=!W.paused;sec.classList.toggle("paused",W.paused);
+  const b=sec.querySelector(".w-bar b");
+  if(W.paused){clearTimeout(W.timer);clearInterval(W.lt);if(window.speechSynthesis)speechSynthesis.cancel();if(b){b.style.width=getComputedStyle(b).width;b.style.transition="none";}sec.querySelectorAll(".kb").forEach(i=>i.style.animationPlayState="paused");}
+  else{sec.querySelectorAll(".kb").forEach(i=>i.style.animationPlayState="");wActivate(sec,true);}
+}
+async function wShare(x){
+  const fr=lang==="fr";
+  if(navigator.share){try{await navigator.share({title:x.title,text:x.title,url:x.url||location.href});}catch(e){}return;}
+  window.open("https://wa.me/?text="+encodeURIComponent(x.title+" "+(x.url||location.href)),"_blank","noopener");
+}
+function wClick(e){
+  const sec=e.target.closest(".wv");if(!sec)return;const act=e.target.closest("[data-act]");
+  if(act){const a=act.dataset.act,x=W.items[+sec.dataset.k],fr=lang==="fr";
+    if(a==="like"){wLike(sec);if(sec.querySelector('[data-act="like"]').classList.contains("liked")){const r=act.getBoundingClientRect();wBurst(sec,r.left+r.width/2,r.top);}}
+    else if(a==="save"){const id=wid(x),v=!W.saves[id];if(v)W.saves[id]={title:x.title,url:x.url,source:x.source,date:x.date};else delete W.saves[id];store.set("w_saves",W.saves);act.classList.toggle("saved",v);wToast(v?(fr?"Gardé pour plus tard":"Saved for later"):(fr?"Retiré":"Removed"));}
+    else if(a==="share")wShare(x);
+    else if(a==="replay"){$("#watch").scrollTo({top:0,behavior:"smooth"});}
+    else if(a==="close")closeWatch();
+    else if(a==="read"&&!W.paused)wTogglePause(sec);
+    return;}
+  if(e.target.closest(".w-top"))return;
+  const now=Date.now();
+  if(now-W.tap<320){clearTimeout(W.tapT);W.tap=0;wLike(sec,true);wBurst(sec,e.clientX,e.clientY);return;}
+  W.tap=now;W.tapT=setTimeout(()=>{W.tap=0;wTogglePause(sec);},320);
+}
+document.addEventListener("visibilitychange",()=>{if(document.hidden&&$("#watch")&&W.cur&&!W.paused)wTogglePause(W.cur);});
 function reelFull(on){
   const R=$("#reel");if(!R)return;R.classList.toggle("full",on);document.body.style.overflow=on?"hidden":"";
   const f=R.querySelector(".s-full");f.textContent=on?"✕":"⤢";f.setAttribute("aria-label",on?"Close":"Full screen");
@@ -457,7 +606,8 @@ function wireReel(){
   R.querySelector(".prev").onclick=()=>reelGo(-1);
   R.querySelector(".next").onclick=()=>reelGo(1);
   R.querySelector(".s-pp").onclick=()=>{if(reel.paused&&reel.i>=reel.n-1&&reel.el>=REEL_DUR)showSlide(0);reel.paused=!reel.paused;ppIcon();};
-  R.querySelector(".s-full").onclick=()=>reelFull(!R.classList.contains("full"));
+  R.querySelector(".s-full").onclick=()=>openWatch(reel.i);
+  $("#w-open").onclick=()=>openWatch(0);
   R.onkeydown=e=>{if(e.key==="ArrowRight"||e.key==="ArrowDown"){reelGo(1);e.preventDefault();}else if(e.key==="ArrowLeft"||e.key==="ArrowUp"){reelGo(-1);e.preventDefault();}else if(e.key==="Escape")reelFull(false);else if(e.key===" "){reel.paused=!reel.paused;ppIcon();e.preventDefault();}};
   let sx=0,sy=0,st=0,moved=false,hT=0;
   R.addEventListener("touchstart",e=>{const p=e.touches[0];sx=p.clientX;sy=p.clientY;st=Date.now();moved=false;hT=setTimeout(()=>{reel.hold=true;},220);},{passive:true});
