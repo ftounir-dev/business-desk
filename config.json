@@ -13,33 +13,6 @@
       "cost": -1
     },
     {
-      "id": "usdngn",
-      "group": "africa",
-      "name": "USD/NGN",
-      "ticker": "NGN=X",
-      "unit": "Nigerian naira per USD",
-      "dp": 0,
-      "cost": 0
-    },
-    {
-      "id": "usdghs",
-      "group": "africa",
-      "name": "USD/GHS",
-      "ticker": "GHS=X",
-      "unit": "Ghana cedi per USD",
-      "dp": 2,
-      "cost": 0
-    },
-    {
-      "id": "usdcdf",
-      "group": "africa",
-      "name": "USD/CDF",
-      "ticker": "CDF=X",
-      "unit": "Congolese franc (DRC) per USD",
-      "dp": 0,
-      "cost": 0
-    },
-    {
       "id": "brent",
       "group": "commod",
       "name": "Brent",
@@ -49,30 +22,12 @@
       "cost": 1
     },
     {
-      "id": "sugar",
+      "id": "wti",
       "group": "commod",
-      "name": "Sugar No.11",
-      "ticker": "SB=F",
-      "unit": "US¢/lb",
+      "name": "WTI crude (Texas)",
+      "ticker": "CL=F",
+      "unit": "USD/bbl",
       "dp": 2,
-      "cost": 1
-    },
-    {
-      "id": "wheat",
-      "group": "commod",
-      "name": "Wheat CBOT",
-      "ticker": "ZW=F",
-      "unit": "US¢/bu · malt proxy",
-      "dp": 2,
-      "cost": 1
-    },
-    {
-      "id": "alu",
-      "group": "commod",
-      "name": "Aluminium",
-      "ticker": "ALI=F",
-      "unit": "USD/t",
-      "dp": 0,
       "cost": 1
     },
     {
@@ -82,6 +37,15 @@
       "ticker": "GC=F",
       "unit": "USD/oz",
       "dp": 0,
+      "cost": 0
+    },
+    {
+      "id": "silver",
+      "group": "commod",
+      "name": "Silver",
+      "ticker": "SI=F",
+      "unit": "USD/oz",
+      "dp": 2,
       "cost": 0
     },
     {
@@ -113,30 +77,6 @@
       "unit": "USD/t",
       "date": "2026-09-30",
       "note": "IMARC Q3 2026 (September). Update in config.json when a new figure is published.",
-      "source": "IMARC",
-      "url": "https://www.imarcgroup.com/pet-resin-price-trend"
-    },
-    {
-      "id": "pet_sea",
-      "group": "pack",
-      "name": "PET bottle grade · SE Asia FOB",
-      "value": 1240,
-      "dp": 0,
-      "unit": "USD/t",
-      "date": "2026-10-07",
-      "note": "Platts assessment, 7 Oct 2026, up $75/t from 2 Sep. Update in config.json.",
-      "source": "S&P Global Platts",
-      "url": "https://www.spglobal.com/energy/en/news-research/latest-news/chemicals/100726-recycled-virgin-pet-spread-hits-zero-amid-rising-virgin-feedstock-costs"
-    },
-    {
-      "id": "pet_eu",
-      "group": "pack",
-      "name": "PET bottle grade · Europe",
-      "value": 1281,
-      "dp": 0,
-      "unit": "USD/t",
-      "date": "2026-09-30",
-      "note": "IMARC Q3 2026, Germany. Update in config.json.",
       "source": "IMARC",
       "url": "https://www.imarcgroup.com/pet-resin-price-trend"
     }
@@ -280,5 +220,56 @@
       "en": "Parliament votes 2027 finance law (expected)",
       "fr": "Vote de la loi de finances 2027 (attendu)"
     }
-  ]
+  ],
+  "reads": {
+    "max_age_days": 10,
+    "per_source": 4,
+    "sources": [
+      {
+        "name": "Harvard Business Review",
+        "q": "site:hbr.org"
+      },
+      {
+        "name": "The Economist",
+        "q": "site:economist.com finance OR economics OR business"
+      },
+      {
+        "name": "McKinsey",
+        "q": "site:mckinsey.com insights"
+      },
+      {
+        "name": "MIT Sloan Management Review",
+        "q": "site:sloanreview.mit.edu"
+      },
+      {
+        "name": "Knowledge at Wharton",
+        "q": "site:knowledge.wharton.upenn.edu"
+      },
+      {
+        "name": "CFO.com",
+        "q": "site:cfo.com"
+      }
+    ],
+    "boost": [
+      "CFO",
+      "finance",
+      "financial",
+      "cash",
+      "capital",
+      "cost",
+      "pricing",
+      "inflation",
+      "currency",
+      "treasury",
+      "risk",
+      "supply chain",
+      "margin",
+      "budget",
+      "investment",
+      "leadership",
+      "strategy",
+      "Africa",
+      "emerging market"
+    ]
+  }
 }
