@@ -150,9 +150,14 @@
       "label_fr": "Monde",
       "queries": [
         {
-          "q": "world economy OR global markets OR geopolitics",
+          "q": "global economy OR central bank OR interest rates OR inflation OR recession",
           "hl": "en",
           "gl": "US"
+        },
+        {
+          "q": "banking OR banks OR bond markets OR IMF OR \"World Bank\" OR \"Wall Street\"",
+          "hl": "en",
+          "gl": "GB"
         }
       ]
     },
