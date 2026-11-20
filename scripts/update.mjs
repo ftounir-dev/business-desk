@@ -150,7 +150,7 @@ function ogImage(html, base) {
 const why = {};
 async function photoFor(h) {
   const mkt = h.lang === "fr" ? "fr-FR" : "en-US", want = new Set(words(h.title)), all = h.title.split(" ");
-  for (const q of [all.slice(0, 12).join(" "), all.slice(0, 7).join(" ") + " " + h.source]) {
+  for (const q of [all.slice(0, 12).join(" "), [...want].slice(0, 5).join(" "), all.slice(0, 7).join(" ") + " " + h.source]) {
     let xml;
     try { xml = await fetchText(`https://www.bing.com/news/search?q=${encodeURIComponent(q)}&format=rss&mkt=${mkt}`); }
     catch (e) { why[e.message.slice(0, 3)] = (why[e.message.slice(0, 3)] || 0) + 1; continue; }
