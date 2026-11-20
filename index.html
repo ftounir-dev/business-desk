@@ -484,7 +484,7 @@ function story(n,top){
     <div class="row"><h3><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a></h3></div></li>`;
 }
 function byCat(c){return B.news.filter(n=>n.cat===c).sort((a,b)=>b.date.localeCompare(a.date));}
-function bgImg(src){return src?`<img class="bg" src="${esc(src)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="const p=this.parentNode;p.classList.remove('has-img');if(this.nextElementSibling)this.nextElementSibling.remove();this.remove()"><i class="ov"></i>`:"";}
+function bgImg(src){return src?`<img class="bg" src="${esc(src)}" alt="" decoding="async" referrerpolicy="no-referrer" onerror="const p=this.parentNode;p.classList.remove('has-img');if(this.nextElementSibling)this.nextElementSibling.remove();this.remove()"><i class="ov"></i>`:"";}
 function newsCard(n){const c=REEL_CATS[n.cat]||REEL_CATS.worldwide;
   return `<a class="pc${n.img?" has-img":""}" href="${esc(n.url)}" target="_blank" rel="noopener" style="background:${c[1]}">${bgImg(n.img)}
     <div class="c-top"><span class="c-chip">${esc(n.source)}</span></div><div class="c-emoji" aria-hidden="true">${c[0]}</div>
