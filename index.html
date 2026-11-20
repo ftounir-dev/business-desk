@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Business Desk</title>
+<meta name="theme-color" content="#0c1418" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f4f6f6" media="(prefers-color-scheme: light)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Business Desk">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" href="icons/icon-192.png">
+<style>
+/* Layout idea: an editorial front page. Ticker on top, numbered "60 seconds", then sections in reading order: Worldwide, Africa, Congo.
+   Colour in markets means effect on ITE's costs, never just up/down. */
+:root{
+  --bg:#f4f6f6; --surface:#ffffff; --sunk:#eaeeef; --line:#dde3e5; --text:#10181c; --muted:#5d6b71;
+  --accent:#a8741a; --accent-soft:#f5ead6; --on-accent:#ffffff;
+  --relief:#1d7a4c; --pressure:#b4561a; --critical:#b42318; --critical-soft:#fdecea;
+  --display:"New York","Iowan Old Style",Georgia,serif; --body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; --mono:ui-monospace,"SF Mono",Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0c1418; --surface:#14212a; --sunk:#0f1a20; --line:#22333b; --text:#e9eef0; --muted:#8fa2a9;
+  --accent:#d9a441; --accent-soft:#33291a; --on-accent:#1b1408;
+  --relief:#6fcf97; --pressure:#f2994a; --critical:#ff8a80; --critical-soft:#3a1b1b; color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#0c1418; --surface:#14212a; --sunk:#0f1a20; --line:#22333b; --text:#e9eef0; --muted:#8fa2a9;
+  --accent:#d9a441; --accent-soft:#33291a; --on-accent:#1b1408;
+  --relief:#6fcf97; --pressure:#f2994a; --critical:#ff8a80; --critical-soft:#3a1b1b; color-scheme:dark;}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:16px;line-height:1.5;-webkit-text-size-adjust:100%}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+.wrap{max-width:640px;margin:0 auto;padding:0 max(18px,env(safe-area-inset-left)) calc(100px + env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-right))}
+
+/* Masthead + ticker */
+header.top{position:sticky;top:0;z-index:5;background:var(--bg);padding-top:env(safe-area-inset-top);border-bottom:1px solid var(--line)}
+.mast{max-width:640px;margin:0 auto;padding:10px 18px 6px;display:flex;align-items:flex-end;gap:12px}
+.mast .grow{flex:1;min-width:0}
+.dateline{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.mast h1{font-family:var(--display);font-size:1.7rem;line-height:1.05;margin:2px 0 0;font-weight:700;letter-spacing:-.01em}
+.iconbtn{border:1px solid var(--line);background:var(--surface);border-radius:999px;height:32px;min-width:32px;padding:0 10px;font-size:.78rem;font-weight:600;cursor:pointer;color:var(--muted);display:inline-flex;align-items:center;justify-content:center}
+.ticker{max-width:640px;margin:0 auto;display:flex;gap:18px;overflow-x:auto;padding:6px 18px 9px;scrollbar-width:none;font-size:.8rem;white-space:nowrap}
+.ticker::-webkit-scrollbar{display:none}
+.tk{display:flex;gap:6px;align-items:baseline;flex:none}
+.tk b{font-weight:600}
+.tk .v{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* Typography */
+h2.sec{font-family:var(--display);font-size:1.45rem;line-height:1.15;margin:0;font-weight:700;text-wrap:balance}
+.kicker{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.sub{color:var(--muted);font-size:.88rem;margin:4px 0 0}
+section{padding-top:26px}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:10px;border-bottom:2px solid var(--text);margin-bottom:4px}
+.see{font-size:.84rem;color:var(--accent);text-decoration:none;font-weight:600;white-space:nowrap}
+
+/* Banner */
+.banner{display:flex;gap:10px;align-items:flex-start;padding:11px 14px;border-radius:12px;font-size:.86rem;margin-top:14px;background:var(--surface);border:1px solid var(--line);color:var(--muted)}
+.banner b{color:var(--text)}
+.banner.hit{background:var(--critical-soft);border-color:var(--critical);color:var(--text)}
+.banner.stale{border-color:var(--pressure)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:6px;flex:none}
+.banner.hit .dot{background:var(--critical)} .banner.stale .dot{background:var(--pressure)}
+
+/* 60 seconds */
+.lead{display:grid;grid-template-columns:34px 1fr;gap:4px 12px;padding:16px 0;border-bottom:1px solid var(--line)}
+.lead:last-child{border-bottom:0}
+.lead .n{font-family:var(--display);font-size:1.7rem;line-height:1;color:var(--accent);font-weight:700;grid-row:span 4}
+.lead h3{margin:0;font-size:1.04rem;line-height:1.35;font-weight:650;text-wrap:balance}
+.lead p{margin:0;font-size:.9rem;color:var(--muted)}
+.lead .imp{font-size:.92rem;margin-top:4px}
+.lead .imp b{color:var(--accent)}
+.tags{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:6px;font-size:.74rem}
+.tag{padding:2px 8px;border-radius:999px;background:var(--sunk);color:var(--muted);font-weight:600}
+.tag.high{background:var(--critical-soft);color:var(--critical)}
+.tag.med{background:var(--accent-soft);color:var(--accent)}
+.tags a{color:var(--muted)}
+.share{display:flex;gap:8px;flex-wrap:wrap;padding-top:14px}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:9px 14px;font-size:.88rem;font-weight:600;cursor:pointer;text-decoration:none;color:var(--text)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+
+/* Story rows */
+.stories{list-style:none;margin:0;padding:0}
+.story{padding:13px 0;border-bottom:1px solid var(--line);display:grid;gap:4px}
+.story:last-child{border-bottom:0}
+.story .meta{font-size:.74rem;color:var(--muted);display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.story .meta .src{font-weight:700;color:var(--text);text-transform:uppercase;letter-spacing:.04em;font-size:.7rem}
+.story h3{margin:0;font-size:1rem;line-height:1.35;font-weight:600;text-wrap:balance}
+.story h3 a{text-decoration:none}
+.story h3 a:hover{text-decoration:underline}
+.story .row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.save{background:none;border:0;padding:4px;cursor:pointer;color:var(--muted);flex:none}
+.save[aria-pressed="true"]{color:var(--accent)}
+.save svg{width:20px;height:20px;display:block}
+.story.top h3{font-family:var(--display);font-size:1.22rem;font-weight:700}
+.empty{padding:22px 0;color:var(--muted);font-size:.9rem}
+
+/* Chips */
+.chips{display:flex;gap:8px;overflow-x:auto;padding:12px 0 2px;scrollbar-width:none;position:sticky;top:0}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:7px 13px;font-size:.84rem;cursor:pointer;font-weight:600;color:var(--muted)}
+.chip[aria-pressed="true"]{background:var(--text);border-color:var(--text);color:var(--bg)}
+
+/* Markets */
+.mgroup{margin-top:20px}
+.mgroup h3{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;font-weight:700}
+.mlist{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.mrow{display:grid;grid-template-columns:1fr 88px 96px;gap:10px;align-items:center;padding:12px 14px;border-top:1px solid var(--line);cursor:pointer;background:none;border-left:0;border-right:0;border-bottom:0;width:100%;text-align:left}
+.mrow:first-child{border-top:0}
+.mrow .nm{font-weight:600;font-size:.95rem}
+.mrow .un{font-size:.72rem;color:var(--muted)}
+.mrow svg{width:88px;height:30px;display:block}
+.mrow .px{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.mrow .px .v{font-size:1rem}
+.mrow .px .c{font-size:.76rem}
+.mrow.tripped{box-shadow:inset 3px 0 0 var(--critical)}
+.relief{color:var(--relief)} .pressure{color:var(--pressure)} .neutral{color:var(--muted)}
+.legend{display:flex;gap:14px;font-size:.78rem;margin-top:10px;flex-wrap:wrap}
+.legend span::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;background:currentColor}
+.detail{padding:12px 14px 14px;border-top:1px dashed var(--line);font-size:.82rem;color:var(--muted);display:grid;gap:8px}
+.detail a{color:var(--accent)}
+
+/* Tools */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:12px;margin-top:12px}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+label.f{display:grid;gap:4px;font-size:.78rem;color:var(--muted)}
+label.f input{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px;color:var(--text);font-family:var(--mono);font-size:1rem;width:100%}
+.out{display:grid;gap:4px;background:var(--sunk);border-radius:10px;padding:12px}
+.out .big{font-family:var(--mono);font-size:1.4rem}
+.out small,.note{color:var(--muted);font-size:.8rem;margin:0}
+
+/* Agenda */
+.agenda{list-style:none;margin:0;padding:0}
+.agenda li{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:.94rem}
+.agenda li:last-child{border-bottom:0}
+.agenda .d{font-family:var(--mono);font-size:.82rem;color:var(--accent);font-weight:600}
+
+/* Tab bar */
+nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+nav.tabs .in{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr)}
+nav.tabs a{display:grid;place-items:center;gap:2px;padding:9px 2px 8px;font-size:.7rem;font-weight:600;color:var(--muted);text-decoration:none}
+nav.tabs a[aria-current="page"]{color:var(--accent)}
+nav.tabs svg{width:22px;height:22px}
+.view[hidden],.sheet[hidden]{display:none}
+
+/* Sheet + toast */
+.sheet{position:fixed;inset:0;z-index:20;background:rgba(5,10,12,.5);display:grid;align-items:end}
+.sheet .box{background:var(--surface);border-radius:18px 18px 0 0;padding:18px 18px calc(18px + env(safe-area-inset-bottom));max-width:640px;width:100%;margin:0 auto;display:grid;gap:12px}
+.sheet h3{margin:0;font-family:var(--display);font-size:1.25rem}
+.seg{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.seg button{flex:1;background:none;border:0;padding:9px;cursor:pointer;color:var(--muted);font-weight:600}
+.seg button[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent)}
+.toast{position:fixed;left:50%;bottom:calc(86px + env(safe-area-inset-bottom));transform:translateX(-50%);background:var(--text);color:var(--bg);padding:8px 14px;border-radius:999px;font-size:.85rem;z-index:30;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.on{opacity:1}
+footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
+.skel{height:14px;border-radius:6px;background:var(--sunk);margin:10px 0}
+@media (max-width:370px){.fields{grid-template-columns:1fr}.mrow{grid-template-columns:1fr 92px}.mrow svg{display:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="mast">
+    <div class="grow"><div class="dateline" id="dateline">&nbsp;</div><h1>Business Desk</h1></div>
+    <button class="iconbtn" type="button" id="lang" aria-label="Switch language">FR</button>
+    <button class="iconbtn" type="button" id="theme" aria-label="Switch light or dark">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </div>
+  <div class="ticker" id="ticker" aria-label="Market ticker"></div>
+</header>
+
+<main class="wrap">
+<!-- TODAY -->
+<div class="view" id="v-today">
+  <div class="banner" id="banner"><span class="dot"></span><div id="banner-text">Loading today's brief…</div></div>
+  <section>
+    <div class="kicker" id="k-ite"></div>
+    <h2 class="sec" data-t="sixty"></h2>
+    <p class="sub" id="sixty-sub"></p>
+    <div id="sixty"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
+    <div class="share">
+      <a class="btn primary" id="wa" href="#" target="_blank" rel="noopener" data-t="wa"></a>
+      <button class="btn" type="button" id="copy" data-t="copy"></button>
+    </div>
+  </section>
+  <div id="front"></div>
+  <section>
+    <div class="sec-head"><h2 class="sec" data-t="agenda_t"></h2></div>
+    <ul class="agenda" id="agenda"></ul>
+  </section>
+</div>
+
+<!-- MARKETS -->
+<div class="view" id="v-markets" hidden>
+  <section>
+    <h2 class="sec" data-t="mk_t"></h2>
+    <p class="sub" data-t="mk_s"></p>
+    <div class="legend"><span class="pressure" data-t="lg_p"></span><span class="relief" data-t="lg_r"></span><span class="neutral" data-t="lg_n"></span></div>
+    <div id="mk"></div>
+  </section>
+</div>
+
+<!-- NEWS -->
+<div class="view" id="v-news" hidden>
+  <section style="padding-top:18px">
+    <h2 class="sec" data-t="news_t"></h2>
+    <div class="chips" id="chips" role="group" aria-label="Sections"></div>
+    <div id="news"></div>
+  </section>
+</div>
+
+<!-- TOOLS -->
+<div class="view" id="v-tools" hidden>
+  <section>
+    <h2 class="sec" data-t="tools_t"></h2>
+    <p class="sub" data-t="pulse_s"></p>
+    <div class="card">
+      <div class="kicker" data-t="pulse_t"></div>
+      <div class="fields">
+        <label class="f" for="in-usd"><span data-t="f_usd"></span><input id="in-usd" inputmode="decimal" value="250000"></label>
+        <label class="f" for="in-budget"><span data-t="f_budget"></span><input id="in-budget" inputmode="decimal" value="585"></label>
+      </div>
+      <div class="out"><small data-t="o_label"></small><div class="big" id="o-over"></div><small id="o-detail"></small></div>
+      <p class="note" id="o-sens"></p>
+    </div>
+    <div class="card">
+      <div class="kicker" data-t="sugar_e"></div>
+      <div class="fields">
+        <label class="f" for="in-t"><span data-t="f_t"></span><input id="in-t" inputmode="decimal" value="120"></label>
+        <label class="f" for="in-p"><span data-t="f_p"></span><input id="in-p" inputmode="decimal" value="180"></label>
+      </div>
+      <div class="out"><small data-t="s_label"></small><div class="big" id="s-out"></div><small id="s-detail"></small></div>
+      <p class="note" data-t="s_note"></p>
+    </div>
+  </section>
+</div>
+
+<!-- SAVED -->
+<div class="view" id="v-saved" hidden>
+  <section>
+    <h2 class="sec" data-t="saved_t"></h2>
+    <p class="sub" data-t="saved_s"></p>
+    <ul class="stories" id="saved"></ul>
+  </section>
+</div>
+
+<footer data-t="foot"></footer>
+</main>
+
+<nav class="tabs" aria-label="Sections"><div class="in">
+  <a href="#today" data-v="today"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h8M8 17h4" stroke-linecap="round"/></svg><span data-t="t_today"></span></a>
+  <a href="#markets" data-v="markets"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 18l5-6 4 3 7-9" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-t="t_markets"></span></a>
+  <a href="#news" data-v="news"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 2.5 14.4 0 17M12 3.5c-2.5 2.6-2.5 14.4 0 17"/></svg><span data-t="t_news"></span></a>
+  <a href="#tools" data-v="tools"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="3.5" width="14" height="17" rx="2"/><path d="M8.5 7.5h7M8.5 12h1M12 12h1M15.5 12h0M8.5 16h1M12 16h1M15.5 16h0" stroke-linecap="round"/></svg><span data-t="t_tools"></span></a>
+  <a href="#saved" data-v="saved"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 4h10v16l-5-3.5L7 20z" stroke-linejoin="round"/></svg><span id="saved-tab"></span></a>
+</div></nav>
+
+<div class="sheet" id="sheet" hidden><div class="box" role="dialog" aria-modal="true" aria-labelledby="sheet-h">
+  <h3 id="sheet-h"></h3>
+  <div class="seg"><button type="button" id="dir-above" data-t="above"></button><button type="button" id="dir-below" data-t="below"></button></div>
+  <label class="f" for="sheet-val"><span data-t="threshold"></span><input id="sheet-val" inputmode="decimal"></label>
+  <div class="share"><button class="btn primary" type="button" id="sheet-save" data-t="save_alert"></button><button class="btn" type="button" id="sheet-clear" data-t="remove"></button><button class="btn" type="button" id="sheet-cancel" data-t="cancel"></button></div>
+</div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const T={
+ en:{ite:"For ITE Congo · Brazzaville",sixty:"Overnight in 60 seconds",wa:"Send to WhatsApp · FR",copy:"Copy French text",
+  agenda_t:"Coming up",mk_t:"Markets",mk_s:"Last close for each. Tap a row for its chart, source and an alert.",lg_p:"Cost pressure for ITE",lg_r:"Cost relief",lg_n:"Context",
+  g_fx:"Currencies · XAF",g_commod:"Commodities · ITE inputs",g_africa:"Africa FX",g_rates:"Rates",
+  news_t:"News",all:"All",tools_t:"Tools",pulse_t:"What the dollar costs ITE this month",pulse_s:"The franc CFA is pegged to the euro, so only USD invoices carry FX risk. Your figures stay on this phone.",
+  f_usd:"USD purchases per month",f_budget:"Budget rate (XAF per USD)",o_label:"Monthly cost vs budget at today's rate",
+  sugar_e:"Sugar landed-cost starter",f_t:"Tonnes per month",f_p:"Premium + freight ($/t)",s_label:"Raw sugar No.11 + your premium, in XAF",s_note:"Converts ¢/lb to $/t (× 22.046). Refining, duties and port charges not included.",
+  saved_t:"Saved",saved_s:"Stories you keep, on this phone only.",nosaved:"Nothing saved yet. Tap the bookmark on any story.",
+  t_today:"Today",t_markets:"Markets",t_news:"News",t_tools:"Tools",saved:"Saved",
+  above:"Alert above",below:"Alert below",threshold:"Threshold",save_alert:"Save alert",remove:"Remove",cancel:"Cancel",setalert:"Set alert",alert:"Alert",
+  foot:"Updates itself three times a day from public market data and news. Prices are last closes and can lag by a day. Not trading advice.",
+  impact:"For ITE",source:"Source",see:"See all",updated:"Updated",ai:"Written by AI from today's data",rules:"Automatic summary",
+  stale:"This brief is more than a day old. The automatic update may have failed; check GitHub Actions.",armed:"alerts armed, none triggered",
+  offline:"Offline: showing the last brief saved on this phone.",ago_m:"min ago",ago_h:"h ago",ago_d:"d ago",now:"now",chart:"Last month",nostories:"No stories in this section yet. It fills on the next update."},
+ fr:{ite:"Pour ITE Congo · Brazzaville",sixty:"La nuit en 60 secondes",wa:"Envoyer sur WhatsApp",copy:"Copier le texte",
+  agenda_t:"À venir",mk_t:"Marchés",mk_s:"Dernière clôture. Touchez une ligne pour le graphique, la source et une alerte.",lg_p:"Pression sur les coûts",lg_r:"Allègement",lg_n:"Contexte",
+  g_fx:"Devises · XAF",g_commod:"Matières premières · intrants ITE",g_africa:"Devises africaines",g_rates:"Taux",
+  news_t:"Actualités",all:"Tout",tools_t:"Outils",pulse_t:"Ce que le dollar coûte à ITE ce mois-ci",pulse_s:"Le franc CFA est arrimé à l'euro : seules les factures en USD portent un risque de change. Vos chiffres restent sur ce téléphone.",
+  f_usd:"Achats en USD par mois",f_budget:"Taux budgétaire (XAF pour 1 USD)",o_label:"Coût mensuel vs budget au taux du jour",
+  sugar_e:"Coût du sucre, première estimation",f_t:"Tonnes par mois",f_p:"Prime + fret ($/t)",s_label:"Sucre brut No.11 + votre prime, en XAF",s_note:"Conversion ¢/lb en $/t (× 22,046). Raffinage, droits et frais portuaires non inclus.",
+  saved_t:"Enregistrés",saved_s:"Articles gardés, sur ce téléphone uniquement.",nosaved:"Rien d'enregistré. Touchez le signet d'un article.",
+  t_today:"Aujourd'hui",t_markets:"Marchés",t_news:"Actus",t_tools:"Outils",saved:"Enregistrés",
+  above:"Alerte au-dessus",below:"Alerte en dessous",threshold:"Seuil",save_alert:"Enregistrer",remove:"Supprimer",cancel:"Annuler",setalert:"Créer une alerte",alert:"Alerte",
+  foot:"Mise à jour automatique trois fois par jour à partir de données de marché et d'actualités publiques. Prix de clôture, parfois avec un jour de décalage. Pas un conseil d'investissement.",
+  impact:"Pour ITE",source:"Source",see:"Tout voir",updated:"Mis à jour",ai:"Rédigé par IA à partir des données du jour",rules:"Résumé automatique",
+  stale:"Ce brief date de plus d'un jour. La mise à jour automatique a peut-être échoué ; vérifiez GitHub Actions.",armed:"alertes actives, aucune déclenchée",
+  offline:"Hors ligne : dernier brief enregistré sur ce téléphone.",ago_m:"min",ago_h:"h",ago_d:"j",now:"à l'instant",chart:"Dernier mois",nostories:"Pas encore d'articles dans cette rubrique. Elle se remplit à la prochaine mise à jour."}
+};
+const FRONT=["worldwide","africa","congo"]; // front-page sections, in reading order
+const GROUPS=["fx","commod","africa","rates"];
+const $=s=>document.querySelector(s);
+const store={get(k,d){try{const v=localStorage.getItem("bd:"+k);return v===null?d:JSON.parse(v);}catch(e){return d;}},set(k,v){try{localStorage.setItem("bd:"+k,JSON.stringify(v));}catch(e){}}};
+let lang=store.get("lang",(navigator.language||"").startsWith("fr")?"fr":"en");
+let theme=store.get("theme",null);
+let saved=store.get("saved",{});
+let alerts=store.get("alerts",{brent:{dir:"above",v:95},usdxaf:{dir:"above",v:600}});
+let cat="all",open=null,B=null,offline=false;
+const t=k=>T[lang][k]??T.en[k]??k;
+const loc=()=>lang==="fr"?"fr-FR":"en-GB";
+const fmt=(n,dp=0)=>Number(n).toLocaleString(loc(),{minimumFractionDigits:dp,maximumFractionDigits:dp});
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const num=v=>{const n=parseFloat(String(v).replace(/\s/g,"").replace(",","."));return isFinite(n)?n:0;};
+const fdate=(iso,o)=>new Date(iso).toLocaleDateString(loc(),o||{day:"numeric",month:"short"});
+function ago(iso){const m=Math.round((Date.now()-new Date(iso))/6e4);if(m<2)return t("now");if(m<60)return m+" "+t("ago_m");const h=Math.round(m/60);if(h<24)return h+" "+t("ago_h");const d=Math.round(h/24);return d<8?d+" "+t("ago_d"):fdate(iso);}
+function toast(m){const e=$("#toast");e.textContent=m;e.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove("on"),1800);}
+const M=id=>B&&B.markets.find(m=>m.id===id);
+const catLabel=id=>((B.categories.find(c=>c.id===id)||{})[lang])||id;
+const BM='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 4h10v16l-5-3.5L7 20z" stroke-linejoin="round"/></svg>';
+const BMF='<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8"><path d="M7 4h10v16l-5-3.5L7 20z" stroke-linejoin="round"/></svg>';
+
+function effect(m){if(!m.cost||!m.change_pct)return"neutral";return Math.sign(m.change_pct)*m.cost>0?"pressure":"relief";}
+function tripped(m){const a=alerts[m.id];return a&&typeof m.value==="number"&&(a.dir==="above"?m.value>a.v:m.value<a.v);}
+function spark(series,cls,W=88,H=30){
+  if(!series||series.length<2)return`<svg viewBox="0 0 ${W} ${H}"></svg>`;
+  const v=series.map(p=>p[1]),mn=Math.min(...v),mx=Math.max(...v);
+  const x=i=>2+i*(W-6)/(v.length-1),y=a=>mx===mn?H/2:3+(mx-a)*(H-6)/(mx-mn);
+  const pts=v.map((a,i)=>`${x(i).toFixed(1)},${y(a).toFixed(1)}`).join(" ");
+  const col=getComputedStyle(document.documentElement).getPropertyValue(cls==="pressure"?"--pressure":cls==="relief"?"--relief":"--muted").trim();
+  return`<svg viewBox="0 0 ${W} ${H}" aria-hidden="true"><polygon points="${x(0)},${H} ${pts} ${x(v.length-1)},${H}" fill="${col}" opacity=".1"/><polyline points="${pts}" fill="none" stroke="${col}" stroke-width="1.6" stroke-linejoin="round"/><circle cx="${x(v.length-1)}" cy="${y(v[v.length-1])}" r="2.6" fill="${col}"/></svg>`;
+}
+
+function renderTop(){
+  const g=new Date(B.generated_at);
+  $("#dateline").textContent=`${new Date().toLocaleDateString(loc(),{weekday:"long",day:"numeric",month:"long"})} · ${t("updated")} ${g.toLocaleTimeString(loc(),{hour:"2-digit",minute:"2-digit"})}`;
+  const tk=["usdxaf","eurusd","brent","sugar","alu","wheat","gold","usdngn"].map(M).filter(Boolean);
+  $("#ticker").innerHTML=tk.map(m=>{const e=effect(m);return`<span class="tk"><b>${esc(m.name)}</b><span class="v">${fmt(m.value,m.dp)}</span><span class="${e}">${m.change_pct>0?"▲":m.change_pct<0?"▼":"·"}${fmt(Math.abs(m.change_pct),1)}%</span></span>`;}).join("");
+  const bn=$("#banner");bn.className="banner";
+  const hits=B.markets.filter(tripped);const old=(Date.now()-g)>26*3600e3;
+  if(hits.length){bn.classList.add("hit");$("#banner-text").innerHTML=`<b>${t("alert")}:</b> `+hits.map(m=>`${esc(m.name)} ${fmt(m.value,m.dp)} ${alerts[m.id].dir==="above"?">":"<"} ${fmt(alerts[m.id].v,m.dp)}`).join(" · ");}
+  else if(old){bn.classList.add("stale");$("#banner-text").textContent=t("stale");}
+  else{const a=B.markets.filter(m=>alerts[m.id]);$("#banner-text").innerHTML=`<b>${a.length} ${t("armed")}.</b> ${esc(a.map(m=>`${m.name} ${alerts[m.id].dir==="above"?">":"<"} ${fmt(alerts[m.id].v,m.dp)}`).join(" · "))}`;}
+  if(offline)$("#banner-text").innerHTML+="<br>"+t("offline");
+}
+function renderSixty(){
+  $("#k-ite").textContent=t("ite");
+  $("#sixty-sub").textContent=B.summary_mode==="ai"?t("ai"):t("rules");
+  const lv={high:{en:"High",fr:"Élevé"},med:{en:"Medium",fr:"Moyen"},low:{en:"Low",fr:"Faible"}};
+  $("#sixty").innerHTML=(B.summary[lang]||B.summary.en).map((x,i)=>`<div class="lead"><div class="n">${i+1}</div>
+    <h3>${esc(x.title)}</h3>${x.detail?`<p>${esc(x.detail)}</p>`:""}
+    <div class="imp"><b>${t("impact")} ·</b> ${esc(x.impact)}</div>
+    <div class="tags"><span class="tag ${esc(x.level)}">${(lv[x.level]||{})[lang]||esc(x.level)}</span>${x.owner?`<span class="tag">${esc(x.owner)}</span>`:""}${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">${t("source")} ↗</a>`:""}</div></div>`).join("");
+  $("#wa").href="https://wa.me/?text="+encodeURIComponent(waText());
+}
+function waText(){
+  const fr=B.summary.fr||B.summary.en,g=new Date(B.generated_at);
+  const L=[`*Business Desk* — ${g.toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long"})}`,""];
+  fr.forEach((x,i)=>{L.push(`${i+1}. *${x.title}*`);L.push(`➜ ${x.impact}`);L.push("");});
+  const b=M("brent"),s=M("sugar");
+  L.push(`USD/XAF ≈ ${B.fx.usdxaf.toFixed(1).replace(".",",")}${b?` · Brent ${b.value.toFixed(2).replace(".",",")} $`:""}${s?` · Sucre ${s.value.toFixed(2).replace(".",",")} ¢/lb`:""}`);
+  return L.join("\n");
+}
+function story(n,top){
+  const on=!!saved[n.id];
+  return`<li class="story${top?" top":""}"><div class="meta"><span class="src">${esc(n.source)}</span><span>· ${ago(n.date)}</span></div>
+    <div class="row"><h3><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a></h3>
+    <button class="save" type="button" data-save="${esc(n.id)}" aria-pressed="${on}" aria-label="${on?"Remove from saved":"Save story"}">${on?BMF:BM}</button></div></li>`;
+}
+function byCat(c){return B.news.filter(n=>n.cat===c).sort((a,b)=>b.date.localeCompare(a.date));}
+function renderFront(){
+  $("#front").innerHTML=FRONT.map(c=>{const list=byCat(c).slice(0,c==="worldwide"?3:4);
+    return`<section><div class="sec-head"><h2 class="sec">${esc(catLabel(c))}</h2><a class="see" href="#news" data-go="${c}">${t("see")} →</a></div>
+    <ul class="stories">${list.length?list.map((n,i)=>story(n,i===0)).join(""):`<li class="empty">${t("nostories")}</li>`}</ul></section>`;}).join("");
+  document.querySelectorAll("[data-go]").forEach(a=>a.onclick=()=>{cat=a.dataset.go;});
+}
+function renderAgenda(){
+  const today=new Date().toISOString().slice(0,10);
+  $("#agenda").innerHTML=(B.agenda||[]).filter(a=>a.date>=today).map(a=>`<li><span class="d">${fdate(a.date)}</span><span>${esc(a[lang]||a.en)}</span></li>`).join("");
+}
+function renderMarkets(){
+  const rows=[...B.markets,...(B.static_rates||[]).map(r=>({...r,dp:2,cost:0,change_pct:0,static:true}))];
+  $("#mk").innerHTML=GROUPS.map(g=>{const list=rows.filter(m=>(m.group||"commod")===g);if(!list.length)return"";
+    return`<div class="mgroup"><h3>${t("g_"+g)}</h3><div class="mlist">${list.map(m=>{const e=effect(m);
+      const row=`<button class="mrow${tripped(m)?" tripped":""}" type="button" data-m="${m.id}" aria-expanded="${open===m.id}">
+        <div><div class="nm">${esc(m.name)}</div><div class="un">${esc(m.unit)} · ${fdate(m.date)}</div></div>
+        ${m.static?"<span></span>":spark(m.series,e)}
+        <div class="px"><div class="v">${fmt(m.value,m.dp)}</div><div class="c ${e}">${m.static?esc(t("lg_n")):(m.change_pct>0?"+":m.change_pct<0?"−":"")+fmt(Math.abs(m.change_pct),2)+"%"}</div></div></button>`;
+      const det=open===m.id?`<div class="detail">${m.static?esc(m.note||""):`<div>${t("chart")}</div>${spark(m.series,e,600,90).replace("<svg",'<svg style="width:100%;height:90px"')}
+        <div class="share" style="padding:0"><button class="btn" type="button" data-alert="${m.id}">${alerts[m.id]?`${t("alert")} ${alerts[m.id].dir==="above"?">":"<"} ${fmt(alerts[m.id].v,m.dp)}`:t("setalert")}</button>${m.url?`<a class="btn" href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.source)} ↗</a>`:""}</div>`}</div>`:"";
+      return row+det;}).join("")}</div></div>`;}).join("");
+  document.querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>{open=open===b.dataset.m?null:b.dataset.m;renderMarkets();});
+  document.querySelectorAll("[data-alert]").forEach(b=>b.onclick=e=>{e.stopPropagation();openSheet(b.dataset.alert);});
+}
+function renderNews(){
+  const cats=[{id:"all",en:t("all"),fr:t("all")},...B.categories];
+  $("#chips").innerHTML=cats.map(c=>`<button class="chip" type="button" data-cat="${c.id}" aria-pressed="${cat===c.id}">${esc(c[lang]||c.en)}</button>`).join("");
+  document.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>{cat=b.dataset.cat;renderNews();});
+  const show=cat==="all"?B.categories.map(c=>c.id):[cat];
+  $("#news").innerHTML=show.map(c=>{const list=byCat(c);if(cat==="all"&&!list.length)return"";
+    return`<section style="padding-top:20px">${cat==="all"?`<div class="sec-head"><h2 class="sec">${esc(catLabel(c))}</h2></div>`:""}
+    <ul class="stories">${list.length?list.map((n,i)=>story(n,i===0)).join(""):`<li class="empty">${t("nostories")}</li>`}</ul></section>`;}).join("");
+}
+function renderSaved(){
+  const list=Object.values(saved).sort((a,b)=>b.date.localeCompare(a.date));
+  $("#saved").innerHTML=list.length?list.map(n=>story(n)).join(""):`<li class="empty">${t("nosaved")}</li>`;
+  $("#saved-tab").textContent=t("saved")+(list.length?` ${list.length}`:"");
+}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-save]");if(!b)return;
+  const id=b.dataset.save;if(saved[id])delete saved[id];else{const n=B.news.find(x=>x.id===id);if(n)saved[id]=n;}
+  store.set("saved",saved);renderFront();renderNews();renderSaved();});
+
+function renderCalc(){
+  const R=B.fx.usdxaf,u=num($("#in-usd").value),b=num($("#in-budget").value),d=u*(R-b);
+  $("#o-over").textContent=`${d>0?"+":d<0?"−":""}${fmt(Math.abs(d))} XAF`;
+  $("#o-over").className="big "+(d>0?"pressure":d<0?"relief":"");
+  $("#o-detail").textContent=`$${fmt(u)} × ${fmt(R,1)} = ${fmt(u*R)} XAF · budget ${fmt(u*b)} XAF`;
+  const pc=B.peg/(B.fx.eurusd-0.01)-R;
+  $("#o-sens").textContent=lang==="fr"?`Chaque baisse de 1 centime de l'EUR/USD ajoute ${fmt(pc,1)} XAF par dollar, soit ${fmt(pc*u)} XAF par mois.`:`Each 1-cent fall in EUR/USD adds ${fmt(pc,1)} XAF per dollar, or ${fmt(pc*u)} XAF a month.`;
+  store.set("calc",{u:$("#in-usd").value,b:$("#in-budget").value});
+  const s=M("sugar"),tn=num($("#in-t").value),p=num($("#in-p").value);
+  if(s){const raw=s.value*22.0462,pt=raw+p;$("#s-out").textContent=`${fmt(pt*R*tn)} XAF`;$("#s-detail").textContent=`$${fmt(raw)}/t + $${fmt(p)} = $${fmt(pt)}/t ≈ ${fmt(pt*R)} XAF/t × ${fmt(tn)} t · ${fmt(s.value,2)} ¢/lb (${fdate(s.date)})`;}
+  store.set("sugar",{t:$("#in-t").value,p:$("#in-p").value});
+}
+
+let sid=null,sdir="above";
+function openSheet(id){const m=M(id);sid=id;const a=alerts[id]||{dir:"above",v:+m.value.toFixed(m.dp)};sdir=a.dir;
+  $("#sheet-h").textContent=`${m.name} · ${fmt(m.value,m.dp)}`;$("#sheet-val").value=a.v;syncDir();$("#sheet").hidden=false;}
+function syncDir(){$("#dir-above").setAttribute("aria-pressed",sdir==="above");$("#dir-below").setAttribute("aria-pressed",sdir==="below");}
+$("#dir-above").onclick=()=>{sdir="above";syncDir();};$("#dir-below").onclick=()=>{sdir="below";syncDir();};
+$("#sheet-cancel").onclick=()=>$("#sheet").hidden=true;
+$("#sheet").onclick=e=>{if(e.target.id==="sheet")$("#sheet").hidden=true;};
+$("#sheet-save").onclick=()=>{alerts[sid]={dir:sdir,v:num($("#sheet-val").value)};store.set("alerts",alerts);$("#sheet").hidden=true;renderAll();toast("✓");};
+$("#sheet-clear").onclick=()=>{delete alerts[sid];store.set("alerts",alerts);$("#sheet").hidden=true;renderAll();};
+$("#copy").onclick=async()=>{try{await navigator.clipboard.writeText(waText());toast(lang==="fr"?"Texte copié":"Copied");}catch(e){toast("Copy blocked");}};
+
+function applyText(){
+  document.documentElement.lang=lang;$("#lang").textContent=lang==="fr"?"EN":"FR";
+  if(theme)document.documentElement.dataset.theme=theme;else delete document.documentElement.dataset.theme;
+  document.querySelectorAll("[data-t]").forEach(e=>e.textContent=t(e.dataset.t));
+}
+function renderAll(){applyText();if(!B)return;renderTop();renderSixty();renderFront();renderAgenda();renderMarkets();renderNews();renderSaved();renderCalc();}
+$("#lang").onclick=()=>{lang=lang==="fr"?"en":"fr";store.set("lang",lang);renderAll();};
+$("#theme").onclick=()=>{const dark=theme?theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;theme=dark?"light":"dark";store.set("theme",theme);renderAll();};
+
+const V=["today","markets","news","tools","saved"];
+function route(){const v=V.includes(location.hash.slice(1))?location.hash.slice(1):"today";
+  V.forEach(n=>$("#v-"+n).hidden=n!==v);document.querySelectorAll("nav.tabs a").forEach(a=>a.setAttribute("aria-current",a.dataset.v===v?"page":"false"));
+  if(v==="news"&&B)renderNews();scrollTo(0,0);}
+addEventListener("hashchange",route);
+
+const c=store.get("calc",null);if(c){$("#in-usd").value=c.u;$("#in-budget").value=c.b;}
+const sg=store.get("sugar",null);if(sg){$("#in-t").value=sg.t;$("#in-p").value=sg.p;}
+["#in-usd","#in-budget","#in-t","#in-p"].forEach(i=>$(i).addEventListener("input",()=>B&&renderCalc()));
+applyText();route();
+async function load(){
+  try{const r=await fetch("data/brief.json?ts="+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;B=await r.json();store.set("last",B);offline=false;}
+  catch(e){B=store.get("last",null);offline=true;if(!B){$("#banner-text").textContent="Couldn't load the brief. Check your connection and reopen the app.";return;}}
+  renderAll();
+}
+load();
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")load();});
+if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
+</script>
+</body>
+</html>

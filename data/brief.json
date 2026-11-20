@@ -1,0 +1,493 @@
+{
+ "generated_at": "2026-11-20T10:25:00Z",
+ "summary_mode": "ai",
+ "peg": 655.957,
+ "fx": {
+  "eurusd": 1.1,
+  "usdxaf": 596.3245454545454,
+  "usdxaf_prev": 583.0728888888889,
+  "date": "2026-11-19"
+ },
+ "markets": [
+  {
+   "id": "usdxaf",
+   "name": "USD/XAF",
+   "unit": "XAF per USD",
+   "dp": 1,
+   "cost": 1,
+   "value": 596.3245454545454,
+   "prev": 583.0728888888889,
+   "date": "2026-11-19",
+   "change_pct": 2.2727272727272707,
+   "series": [],
+   "source": "655.957 ÷ EUR/USD (vs 10 Nov)",
+   "url": "https://www.tradingkey.com/news/forex/262309809-fxstr",
+   "group": "fx"
+  },
+  {
+   "id": "eurusd",
+   "name": "EUR/USD",
+   "unit": "USD per EUR (vs 10 Nov)",
+   "dp": 4,
+   "cost": -1,
+   "value": 1.1,
+   "prev": 1.125,
+   "date": "2026-11-19",
+   "change_pct": -2.2222222222222143,
+   "series": [],
+   "source": "FXStreet",
+   "url": "https://www.tradingkey.com/news/forex/262309809-fxstr",
+   "group": "fx"
+  },
+  {
+   "id": "brent",
+   "name": "Brent",
+   "unit": "USD/bbl",
+   "dp": 2,
+   "cost": 1,
+   "value": 92.69,
+   "prev": 91.95,
+   "date": "2026-11-19",
+   "change_pct": 0.8047852093528984,
+   "series": [
+    [
+     "2026-11-09",
+     92.57
+    ],
+    [
+     "2026-11-10",
+     91.49
+    ],
+    [
+     "2026-11-11",
+     92.76
+    ],
+    [
+     "2026-11-12",
+     95.82
+    ],
+    [
+     "2026-11-13",
+     95.84
+    ],
+    [
+     "2026-11-16",
+     92.44
+    ],
+    [
+     "2026-11-17",
+     93.14
+    ],
+    [
+     "2026-11-18",
+     91.95
+    ],
+    [
+     "2026-11-19",
+     92.69
+    ]
+   ],
+   "source": "Trading Economics",
+   "url": "https://tradingeconomics.com/commodity/brent-crude-oil",
+   "group": "commod"
+  },
+  {
+   "id": "sugar",
+   "name": "Sugar No.11",
+   "unit": "US¢/lb",
+   "dp": 2,
+   "cost": 1,
+   "value": 18.1,
+   "prev": 18.41,
+   "date": "2026-11-16",
+   "change_pct": -1.6838674633351425,
+   "series": [],
+   "source": "CMB",
+   "url": "https://commodity-board.com/sugar-no-11-slips-from-highs-as-weather-and-policy-keep-market-tight",
+   "group": "commod"
+  },
+  {
+   "id": "alu",
+   "name": "Aluminium LME 3M",
+   "unit": "USD/t",
+   "dp": 0,
+   "cost": 1,
+   "value": 3018,
+   "prev": 3016,
+   "date": "2026-11-16",
+   "change_pct": 0.06631299734747298,
+   "series": [],
+   "source": "AL Circle",
+   "url": "https://www.alcircle.com/news/lme-aluminium-cash-offer-price-jumps-5-76-to-3-332-t-as-stocks-fall-0-97-on-november-16-121985",
+   "group": "commod"
+  },
+  {
+   "id": "gold",
+   "name": "Gold",
+   "unit": "USD/oz",
+   "dp": 0,
+   "cost": 0,
+   "value": 3841.58,
+   "prev": 3856.68,
+   "date": "2026-11-17",
+   "change_pct": -0.3915284648972617,
+   "series": [],
+   "source": "USAGOLD",
+   "url": "https://www.usagold.com/daily-precious-metals-market-report-november-17-2026/",
+   "group": "commod"
+  }
+ ],
+ "static_rates": [
+  {
+   "id": "beac",
+   "group": "rates",
+   "name": "BEAC policy rate (TIAO)",
+   "value": 4.5,
+   "unit": "%",
+   "date": "2026-09-28",
+   "note": "Edit in config.json after each BEAC meeting"
+  }
+ ],
+ "agenda": [
+  {
+   "date": "2026-11-29",
+   "en": "OPEC+ meeting",
+   "fr": "Réunion de l'OPEP+"
+  },
+  {
+   "date": "2026-12-09",
+   "en": "Fed decision (FOMC, 8–9 Dec)",
+   "fr": "Décision de la Fed (FOMC, 8–9 déc.)"
+  },
+  {
+   "date": "2026-12-15",
+   "en": "BEAC policy committee (date to confirm)",
+   "fr": "Comité de politique monétaire BEAC (date à confirmer)"
+  },
+  {
+   "date": "2026-12-23",
+   "en": "Parliament votes 2027 finance law (expected)",
+   "fr": "Vote de la loi de finances 2027 (attendu)"
+  }
+ ],
+ "categories": [
+  {
+   "id": "worldwide",
+   "en": "Worldwide",
+   "fr": "Monde"
+  },
+  {
+   "id": "africa",
+   "en": "Africa",
+   "fr": "Afrique"
+  },
+  {
+   "id": "congo",
+   "en": "Congo & CEMAC",
+   "fr": "Congo & CEMAC"
+  },
+  {
+   "id": "markets",
+   "en": "Markets",
+   "fr": "Marchés"
+  },
+  {
+   "id": "bev",
+   "en": "Beverages & packaging",
+   "fr": "Boissons & emballage"
+  },
+  {
+   "id": "cfo",
+   "en": "CFO & treasury",
+   "fr": "DAF & trésorerie"
+  },
+  {
+   "id": "lebanon",
+   "en": "Lebanon",
+   "fr": "Liban"
+  }
+ ],
+ "summary": {
+  "en": [
+   {
+    "level": "high",
+    "owner": "Treasury",
+    "title": "Fed minutes point to more rate hikes; the dollar holds near a 19-month high.",
+    "detail": "Almost all Fed officials saw further increases from 3.75–4.00% as likely; a couple were open to more than 25 bp in December. EUR/USD sits near 1.10, putting USD/XAF around 596.",
+    "impact": "USD invoices (concentrate, PET, spare parts) cost about 2.3% more in XAF than on 10 November. EUR invoices carry no FX risk under the peg: invoice in EUR where suppliers accept it, or settle USD bills before the 8–9 December Fed meeting.",
+    "url": "https://www.cnbc.com/amp/2026/11/19/us-dollar-currency-bonds-eu-asia-price.html"
+   },
+   {
+    "level": "med",
+    "owner": "Procurement",
+    "title": "Raw sugar trades near two-month lows, around 18.1 ¢/lb.",
+    "detail": "India's early-season output is running far ahead of last year. The ISO still expects a 2026/27 deficit of about 1 Mt, so the dip may not last.",
+    "impact": "About $399/t raw before premium, freight and refining. A window to price Q1 2027 sugar for juices and soft drinks.",
+    "url": "https://commodity-board.com/sugar-no-11-slips-from-highs-as-weather-and-policy-keep-market-tight"
+   },
+   {
+    "level": "med",
+    "owner": "Procurement",
+    "title": "Aluminium squeeze: LME stocks at their lowest since 1990.",
+    "detail": "Cash aluminium jumped to $3,332/t on 16 November, more than $250 above the three-month price.",
+    "impact": "Can and closure suppliers may pass on surcharges. Check price-revision clauses before the next order.",
+    "url": "https://www.alcircle.com/news/lme-aluminium-cash-offer-price-jumps-5-76-to-3-332-t-as-stocks-fall-0-97-on-november-16-121985"
+   },
+   {
+    "level": "med",
+    "owner": "Operations",
+    "title": "Brent steadies near $92–93 after its early-November slide; OPEC+ meets 29 November.",
+    "detail": "US crude stocks rose 3.4M barrels, and reports of mines near Hormuz did not spark a rally.",
+    "impact": "Diesel, distribution and PET feedstock stay expensive but stable. Oil is well above the $67/bbl Congolese crude price assumed in the revised 2026 budget, which supports state revenue.",
+    "url": "https://www.tradingandinvestmentnews.co.uk/brent-crude-oil-price-steadies-at-92-12-after-3-4-million-barrel-eia-build-and-hormuz-mine-reports/"
+   },
+   {
+    "level": "med",
+    "owner": "Tax & Finance",
+    "title": "Congo's 2027 budget: XAF 3,121bn revenue, XAF 680bn for investment, debt interest up 46%.",
+    "detail": "The World Bank sees 4.4% growth in 2026 and puts arrears clearance at the centre of its 10 November update. Talks on a new IMF programme continue.",
+    "impact": "Read the 2027 finance bill's tax annex for excise and VAT changes on beverages. The arrears focus is a lever to push VAT-credit refunds and state receivables.",
+    "url": "https://ecomatin.net/le-congo-table-sur-3-121-milliards-fcfa-de-recettes-budgetaires-en-2027-en-hausse-de-12"
+   }
+  ],
+  "fr": [
+   {
+    "level": "high",
+    "owner": "Trésorerie",
+    "title": "Les minutes de la Fed annoncent d'autres hausses ; le dollar reste proche d'un plus haut de 19 mois.",
+    "detail": "Presque tous les membres jugent probables de nouvelles hausses depuis 3,75–4,00 % ; certains n'excluent pas plus de 25 pb en décembre. L'EUR/USD est proche de 1,10, soit environ 596 XAF pour 1 USD.",
+    "impact": "Les factures en USD (concentrés, PET, pièces) coûtent ~2,3 % de plus en XAF qu'au 10 novembre. Les factures en EUR ne portent aucun risque de change grâce à la parité fixe : facturer en EUR quand le fournisseur l'accepte, ou régler les factures USD avant la Fed des 8–9 décembre.",
+    "url": "https://www.cnbc.com/amp/2026/11/19/us-dollar-currency-bonds-eu-asia-price.html"
+   },
+   {
+    "level": "med",
+    "owner": "Achats",
+    "title": "Le sucre brut évolue près de ses plus bas de deux mois, vers 18,1 ¢/lb.",
+    "detail": "La production indienne de début de campagne dépasse nettement l'an dernier. L'ISO prévoit toujours un déficit d'environ 1 Mt en 2026/27 : la baisse pourrait ne pas durer.",
+    "impact": "≈ 399 $/t brut, hors prime, fret et raffinage. Fenêtre pour fixer le prix du sucre du T1 2027 (jus, boissons gazeuses).",
+    "url": "https://commodity-board.com/sugar-no-11-slips-from-highs-as-weather-and-policy-keep-market-tight"
+   },
+   {
+    "level": "med",
+    "owner": "Achats",
+    "title": "Tension sur l'aluminium : stocks LME au plus bas depuis 1990.",
+    "detail": "Le comptant a bondi à 3 332 $/t le 16 novembre, plus de 250 $ au-dessus du prix à trois mois.",
+    "impact": "Les fournisseurs de canettes et capsules pourraient répercuter des surcharges. Vérifier les clauses de révision de prix avant la prochaine commande.",
+    "url": "https://www.alcircle.com/news/lme-aluminium-cash-offer-price-jumps-5-76-to-3-332-t-as-stocks-fall-0-97-on-november-16-121985"
+   },
+   {
+    "level": "med",
+    "owner": "Exploitation",
+    "title": "Le Brent se stabilise vers 92–93 $ après la chute de début novembre ; l'OPEP+ se réunit le 29 novembre.",
+    "detail": "Les stocks américains de brut ont augmenté de 3,4 Mb, et les informations sur des mines près d'Ormuz n'ont pas provoqué de hausse.",
+    "impact": "Gasoil, distribution et matière PET restent chers mais stables. Le pétrole reste bien au-dessus des 67 $/b retenus pour le brut congolais dans la LFR 2026, ce qui soutient les recettes de l'État.",
+    "url": "https://www.tradingandinvestmentnews.co.uk/brent-crude-oil-price-steadies-at-92-12-after-3-4-million-barrel-eia-build-and-hormuz-mine-reports/"
+   },
+   {
+    "level": "med",
+    "owner": "Fiscalité & Finance",
+    "title": "Budget 2027 du Congo : 3 121 Mds FCFA de recettes, 680 Mds d'investissements, intérêts de la dette +46 %.",
+    "detail": "La Banque mondiale prévoit 4,4 % de croissance en 2026 et place l'apurement des arriérés au cœur de son rapport du 10 novembre. Les discussions sur un nouveau programme FMI se poursuivent.",
+    "impact": "Lire l'annexe fiscale du PLF 2027 (accises, TVA sur les boissons). L'accent mis sur les arriérés est un levier pour obtenir les remboursements de crédits de TVA et le paiement des créances sur l'État.",
+    "url": "https://ecomatin.net/le-congo-table-sur-3-121-milliards-fcfa-de-recettes-budgetaires-en-2027-en-hausse-de-12"
+   }
+  ]
+ },
+ "news": [
+  {
+   "id": "n2",
+   "cat": "worldwide",
+   "source": "CNBC",
+   "title": "Dollar hovers near a 19-month high after the Fed minutes",
+   "url": "https://www.cnbc.com/amp/2026/11/19/us-dollar-currency-bonds-eu-asia-price.html",
+   "date": "2026-11-19T12:00:00Z"
+  },
+  {
+   "id": "n4",
+   "cat": "worldwide",
+   "source": "Reuters via Trading and Investment News",
+   "title": "Brent steadies around $92 after a 3.4M-barrel US stock build",
+   "url": "https://www.tradingandinvestmentnews.co.uk/brent-crude-oil-price-steadies-at-92-12-after-3-4-million-barrel-eia-build-and-hormuz-mine-reports/",
+   "date": "2026-11-19T12:00:00Z"
+  },
+  {
+   "id": "n1",
+   "cat": "worldwide",
+   "source": "1TRADER",
+   "title": "FOMC minutes: almost all officials see more rate hikes ahead",
+   "url": "https://1trader.com/en/fomc-minutes-2026-11-19/",
+   "date": "2026-11-18T12:00:00Z"
+  },
+  {
+   "id": "n3",
+   "cat": "cfo",
+   "source": "FXStreet",
+   "title": "Euro touches a 19-month low just above 1.0950, recovers to 1.10",
+   "url": "https://www.tradingkey.com/news/forex/262309809-fxstr",
+   "date": "2026-11-17T12:00:00Z"
+  },
+  {
+   "id": "n5",
+   "cat": "markets",
+   "source": "USAGOLD",
+   "title": "Gold slips to its lowest since September 2025",
+   "url": "https://www.usagold.com/daily-precious-metals-market-report-november-17-2026/",
+   "date": "2026-11-17T12:00:00Z"
+  },
+  {
+   "id": "n7",
+   "cat": "bev",
+   "source": "AL Circle",
+   "title": "LME aluminium cash offer jumps 5.76% to $3,332/t",
+   "url": "https://www.alcircle.com/news/lme-aluminium-cash-offer-price-jumps-5-76-to-3-332-t-as-stocks-fall-0-97-on-november-16-121985",
+   "date": "2026-11-17T12:00:00Z"
+  },
+  {
+   "id": "n6",
+   "cat": "bev",
+   "source": "Commodity Market Board",
+   "title": "Sugar No.11 eases from highs; curve still backwardated",
+   "url": "https://commodity-board.com/sugar-no-11-slips-from-highs-as-weather-and-policy-keep-market-tight",
+   "date": "2026-11-16T12:00:00Z"
+  },
+  {
+   "id": "n12",
+   "cat": "congo",
+   "source": "Ecomatin",
+   "title": "Debt to fall to 80.9% of GDP in 2027 as interest jumps to XAF 348.6bn",
+   "url": "https://ecomatin.net/le-congo-prevoit-de-ramener-sa-dette-a-809-du-pib-en-2027-malgre-la-flambee-des-interets",
+   "date": "2026-11-15T12:00:00Z"
+  },
+  {
+   "id": "n9",
+   "cat": "bev",
+   "source": "The Guardian Nigeria",
+   "title": "African beverage leaders say capital is shifting to sub-Saharan Africa",
+   "url": "https://guardian.ng/?p=2915450",
+   "date": "2026-11-14T12:00:00Z"
+  },
+  {
+   "id": "n15",
+   "cat": "cfo",
+   "source": "DG Trésor (France)",
+   "title": "CEMAC external debt up 5.7%, says World Bank debt report",
+   "url": "https://www.tresor.economie.gouv.fr/Articles/dede05f4-25ce-4cad-9ef7-c825d43f8c8c/files/07110776-ce0f-4e30-a21c-0a8278e4083d",
+   "date": "2026-11-13T12:00:00Z"
+  },
+  {
+   "id": "n10",
+   "cat": "congo",
+   "source": "Banque mondiale",
+   "title": "World Bank: Congo should grow 4.4% in 2026; focus on breaking the debt cycle",
+   "url": "https://www.banquemondiale.org/fr/news/press-release/2026/11/10/republic-of-congo-breaking-the-debt-cycle-from-arrears-to-fiscal-resilience",
+   "date": "2026-11-10T12:00:00Z"
+  },
+  {
+   "id": "n8",
+   "cat": "bev",
+   "source": "Procurement Resource",
+   "title": "PET market opens November split: US virgin prices surge, Europe softens",
+   "url": "https://www.procurementresource.com/news-and-articles/global-pet-market-us-virgin-prices-recycled-pet-trade",
+   "date": "2026-11-02T12:00:00Z"
+  },
+  {
+   "id": "n11",
+   "cat": "congo",
+   "source": "Ecomatin",
+   "title": "2027 budget targets XAF 3,121bn revenue, up 12%",
+   "url": "https://ecomatin.net/le-congo-table-sur-3-121-milliards-fcfa-de-recettes-budgetaires-en-2027-en-hausse-de-12",
+   "date": "2026-10-30T12:00:00Z"
+  },
+  {
+   "id": "n13",
+   "cat": "congo",
+   "source": "IMF",
+   "title": "IMF mission discusses a new Extended Credit Facility with Congo",
+   "url": "https://www.imf.org/en/news/articles/2026/10/08/pr26327-republic-of-congo-imf-staff-concludes-mission",
+   "date": "2026-10-08T12:00:00Z"
+  },
+  {
+   "id": "n14",
+   "cat": "cfo",
+   "source": "Ecomatin",
+   "title": "BEAC holds its policy rate at 4.50%",
+   "url": "https://ecomatin.net/la-beac-maintient-son-taux-directeur-a-45-malgre-une-croissance-revue-a-la-baisse",
+   "date": "2026-09-28T12:00:00Z"
+  },
+  {
+   "id": "n16",
+   "cat": "lebanon",
+   "source": "World Bank",
+   "title": "Renewed conflict derails Lebanon's fragile recovery; GDP seen down 6.4% in 2026",
+   "url": "https://www.worldbank.org/en/news/press-release/2026/08/21/renewed-conflict-derails-lebanon-s-fragile-economic-recovery",
+   "date": "2026-08-21T12:00:00Z"
+  },
+  {
+   "id": "a1",
+   "cat": "africa",
+   "source": "IMF",
+   "title": "Ghana reaches staff-level agreement with the IMF on its first PCI review",
+   "url": "https://www.imf.org/en/news/articles/2026/11/05/pr26353-ghana-imf-staff-reaches-sla-with-ghana-on-1st-review-under-pci",
+   "date": "2026-11-05T12:00:00Z"
+  },
+  {
+   "id": "a2",
+   "cat": "africa",
+   "source": "DG Trésor",
+   "title": "Nigeria's crude output averaged 1.56M barrels a day in Q3 2026",
+   "url": "https://www.tresor.economie.gouv.fr/Articles/2026/11/16/actualites-economiques-nigeria-ghana-semaine-du-9-novembre-2026",
+   "date": "2026-11-16T12:00:00Z"
+  },
+  {
+   "id": "a3",
+   "cat": "africa",
+   "source": "DG Trésor",
+   "title": "Côte d'Ivoire inaugurates the Atinkou combined-cycle power plant",
+   "url": "https://www.tresor.economie.gouv.fr/Articles/2026/11/13/breves-economiques-regionales-d-afrique-de-l-ouest-hors-nigeria-ghana-n-651",
+   "date": "2026-11-13T12:00:00Z"
+  },
+  {
+   "id": "a4",
+   "cat": "africa",
+   "source": "Benin Web TV",
+   "title": "BCEAO applies new pricing to instant money transfers across UEMOA from 2 November",
+   "url": "https://beninwebtv.bj/en/uemoa-instant-money-transfers-bceao-implements-new-pricing-rules-starting-november-2/",
+   "date": "2026-11-02T12:00:00Z"
+  },
+  {
+   "id": "a5",
+   "cat": "africa",
+   "source": "DG Trésor",
+   "title": "DRC exits the FATF grey list after four years of reforms",
+   "url": "https://www.tresor.economie.gouv.fr/Articles/2026/11/02/breves-economiques-d-afrique-centrale-semaine-du-2-au-6-novembre-2026",
+   "date": "2026-11-06T12:00:00Z"
+  },
+  {
+   "id": "a6",
+   "cat": "africa",
+   "source": "DG Trésor",
+   "title": "Gabon adjusts fuel prices from 1 November; debt principal repayments up 54.5% in 2027",
+   "url": "https://www.tresor.economie.gouv.fr/Articles/2026/11/02/breves-economiques-d-afrique-centrale-semaine-du-2-au-6-novembre-2026",
+   "date": "2026-11-06T12:00:00Z"
+  },
+  {
+   "id": "a7",
+   "cat": "africa",
+   "source": "Économie ivoirienne",
+   "title": "BCEAO holds rates and forecasts 6.1% UEMOA growth in 2026",
+   "url": "https://www.economie-ivoirienne.ci/actualites/uemoa-la-bceao-maintient-ses-taux-directeurs-et-prevoit-une-inflation-de-1-en-2026.html",
+   "date": "2026-09-09T12:00:00Z"
+  },
+  {
+   "id": "a8",
+   "cat": "africa",
+   "source": "DG Trésor",
+   "title": "Fitch downgrades Cameroon to B- with a stable outlook",
+   "url": "https://www.tresor.economie.gouv.fr/Articles/d7b4c917-4e25-42de-9a03-ebaed3a11d6f/files/c4ed491c-4d00-45a7-b448-95217a9a65bf",
+   "date": "2026-10-16T12:00:00Z"
+  }
+ ],
+ "log": [
+  "Starter brief prepared by Claude on 20 Nov from verified sources; replaced by the first automatic run."
+ ]
+}
