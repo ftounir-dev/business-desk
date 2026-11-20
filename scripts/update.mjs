@@ -187,26 +187,32 @@ async function addPhotos(list) {
 /* ---------- Read: article of the day ---------- */
 async function reads() {
   const rc = cfg.reads; if (!rc) return null;
-  const all = [];
+  const all = [], seen = new Set();
+  const generic = /^(business|finance|economics|the world (ahead|this week)|briefing|leaders|letters|podcast|video|newsletter)\b/i;
   for (const s of rc.sources) {
-    const url = `https://news.google.com/rss/search?q=${encodeURIComponent(s.q + " when:" + rc.max_age_days + "d")}&hl=en&gl=US&ceid=US:en`;
+    const hl = s.hl || "en", gl = s.gl || "US";
+    const url = `https://news.google.com/rss/search?q=${encodeURIComponent(s.q + " when:" + rc.max_age_days + "d")}&hl=${hl}&gl=${gl}&ceid=${gl}:${hl}`;
     try {
       const xml = await get(url, "xml");
-      [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].slice(0, rc.per_source).forEach(m => {
-        let title = tag(m[1], "title"); const src = tag(m[1], "source") || s.name;
+      [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].slice(0, rc.per_source + 2).forEach(m => {
+        let title = decode(tag(m[1], "title")); const src = tag(m[1], "source") || s.name;
         if (title.endsWith(" - " + src)) title = title.slice(0, -(src.length + 3));
-        if (title && tag(m[1], "link")) all.push({ title, source: s.name, url: tag(m[1], "link"), date: new Date(tag(m[1], "pubDate") || Date.now()).toISOString() });
+        title = title.replace(/\s+[-|]\s+(Harvard Business Review|The Economist|Financial Times|FT|McKinsey.*|MIT Sloan.*|Knowledge at Wharton|CFO\.com|CFO Dive|BCG|Deloitte.*|IMF.*|Project Syndicate|The Africa Report.*|Jeune Afrique)$/i, "").trim();
+        const key = title.toLowerCase().slice(0, 60);
+        if (!title || !tag(m[1], "link") || title.split(/\s+/).length < 4 || generic.test(title) || cut(title) || seen.has(key)) return;
+        seen.add(key);
+        all.push({ title, source: s.name, lang: hl, paywall: !!s.paywall, url: tag(m[1], "link"), date: new Date(tag(m[1], "pubDate") || Date.now()).toISOString() });
       });
     } catch (e) { log.push(`read ${s.name}: ${e.message}`); }
   }
   if (!all.length) return null;
   const boost = new RegExp(rc.boost.map(w => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|"), "gi");
-  const score = a => (a.title.match(boost) || []).length;
+  const ageDays = a => (Date.now() - new Date(a.date)) / 864e5;
+  const score = a => (a.title.match(boost) || []).length * 2 + (a.paywall ? 0 : 0.5) + Math.max(0, 3 - ageDays(a) / 2);
   const ranked = all.sort((a, b) => score(b) - score(a) || b.date.localeCompare(a.date));
-  const pick = ranked[0], rest = ranked.slice(1), more = [], used = new Set();
-  for (const a of rest) if (!used.has(a.source) && a.source !== pick.source) { more.push(a); used.add(a.source); }
-  for (const a of rest) if (more.length < 8 && !more.includes(a)) more.push(a);
-  return { pick, more: more.slice(0, 8) };
+  const pick = ranked[0], rest = ranked.slice(1), more = [], per = {};
+  for (const a of rest) { if (more.length >= (rc.more || 12)) break; if ((per[a.source] || 0) < 2) { more.push(a); per[a.source] = (per[a.source] || 0) + 1; } }
+  return { pick, more };
 }
 async function aiRead(pick) {
   if (!pick || !process.env.ANTHROPIC_API_KEY) return null;
@@ -261,6 +267,15 @@ if (!MOCK) await addPhotos(cfg.news.flatMap(n => headlines.filter(h => h.cat ===
 const otd = await onThisDay();
 const read = await reads();
 if (read) { try { const w = await aiRead(read.pick); if (w) read.pick.ai = w; } catch (e) { log.push("ai read: " + e.message); } }
+if (read && !MOCK) await addPhotos([read.pick, ...read.more]);
+if (read) {                      // keep the last week of "article of the day" picks
+  try {
+    const prev = JSON.parse(await fs.readFile(path.join(ROOT, "data", "brief.json"), "utf8")).read || {};
+    const k = a => a.title.toLowerCase().slice(0, 60);
+    read.history = [prev.pick, ...(prev.history || [])].filter(a => a && a.title && k(a) !== k(read.pick))
+      .filter((a, i, l) => l.findIndex(b => k(b) === k(a)) === i).slice(0, 7).map(({ ai, ...a }) => a);
+  } catch { read.history = []; }
+}
 
 let summary = null, summaryMode = "rules";
 try { summary = await aiSummary(markets, fx, headlines); if (summary) summaryMode = "ai"; } catch (e) { log.push("ai: " + e.message); }
