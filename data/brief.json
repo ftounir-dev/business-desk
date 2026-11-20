@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-20T17:49:00.467Z",
- "summary_at": "2026-11-20T17:49:00.466Z",
+ "generated_at": "2026-11-20T18:05:03.864Z",
+ "summary_at": "2026-11-20T18:05:03.864Z",
  "summary_mode": "rules",
  "peg": 655.957,
  "fx": {
-  "eurusd": 1.0978153944015503,
-  "usdxaf": 597.5112057501984,
+  "eurusd": 1.0974539518356323,
+  "usdxaf": 597.7079939461951,
   "usdxaf_prev": 597.8457318897565,
   "date": "2026-11-20"
  },
@@ -17,10 +17,10 @@
    "unit": "XAF per USD",
    "dp": 1,
    "cost": 1,
-   "value": 597.5112057501984,
+   "value": 597.7079939461951,
    "prev": 597.8457318897565,
    "date": "2026-11-20",
-   "change_pct": -0.055955260983575617,
+   "change_pct": -0.023039044391282015,
    "series": [
     [
      "2026-10-21",
@@ -108,7 +108,7 @@
     ],
     [
      "2026-11-20",
-     597.5112057501984
+     597.7079939461951
     ]
    ],
    "source": "655.957 ÷ EUR/USD",
@@ -121,10 +121,10 @@
    "unit": "USD per EUR",
    "dp": 4,
    "cost": -1,
-   "value": 1.0978153944015503,
+   "value": 1.0974539518356323,
    "prev": 1.0972011089324951,
    "date": "2026-11-20",
-   "change_pct": 0.055986588425227524,
+   "change_pct": 0.02304435359012924,
    "series": [
     [
      "2026-10-21",
@@ -212,7 +212,7 @@
     ],
     [
      "2026-11-20",
-     1.0978153944015503
+     1.0974539518356323
     ]
    ],
    "source": "Yahoo Finance",
@@ -225,10 +225,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 88.9800033569336,
+   "value": 89.1500015258789,
    "prev": 91.9800033569336,
    "date": "2026-11-20",
-   "change_pct": -3.261578485008676,
+   "change_pct": -3.0767576949010333,
    "series": [
     [
      "2026-10-22",
@@ -316,7 +316,7 @@
     ],
     [
      "2026-11-20",
-     88.9800033569336
+     89.1500015258789
     ]
    ],
    "source": "Yahoo Finance",
@@ -329,10 +329,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 82.4000015258789,
+   "value": 82.66999816894531,
    "prev": 83.20999908447266,
    "date": "2026-11-20",
-   "change_pct": -0.9734377689049833,
+   "change_pct": -0.6489615688844652,
    "series": [
     [
      "2026-10-22",
@@ -420,7 +420,7 @@
     ],
     [
      "2026-11-20",
-     82.4000015258789
+     82.66999816894531
     ]
    ],
    "source": "Yahoo Finance",
@@ -433,10 +433,10 @@
    "unit": "USD/oz",
    "dp": 0,
    "cost": 0,
-   "value": 3528.800048828125,
+   "value": 3530.89990234375,
    "prev": 3685.5,
    "date": "2026-11-20",
-   "change_pct": -4.251796260259799,
+   "change_pct": -4.194820177893099,
    "series": [
     [
      "2026-10-22",
@@ -524,7 +524,7 @@
     ],
     [
      "2026-11-20",
-     3528.800048828125
+     3530.89990234375
     ]
    ],
    "source": "Yahoo Finance",
@@ -537,10 +537,10 @@
    "unit": "USD/oz",
    "dp": 2,
    "cost": 0,
-   "value": 40.92499923706055,
+   "value": 40.86000061035156,
    "prev": 44.31800079345703,
    "date": "2026-11-20",
-   "change_pct": -7.656034784171528,
+   "change_pct": -7.80269895120359,
    "series": [
     [
      "2026-10-22",
@@ -628,7 +628,7 @@
     ],
     [
      "2026-11-20",
-     40.92499923706055
+     40.86000061035156
     ]
    ],
    "source": "Yahoo Finance",
@@ -795,7 +795,7 @@
     "cat": "worldwide",
     "owner": "Worldwide",
     "title": "Oil loses grip on bond markets as inflation ‘virus’ spreads",
-    "detail": "",
+    "detail": "Rising oil prices drove sovereign bond yields higher after the start of the Iran war in late February, as traders positioned for an inflation shock and string of interest rate rises.",
     "source": "Financial Times",
     "date": "2026-11-20T05:00:26.000Z",
     "impact": "",
@@ -807,19 +807,19 @@
     "cat": "africa",
     "owner": "Africa",
     "title": "Hausse des prix des carburants en 2027 : la Guinée « appréciera » (ministre de l'Économie)",
-    "detail": "",
+    "detail": "En Guinée, l’essence et le gazole restent vendus à 12 000 francs guinéens (1,35 $) le litre à la pompe. Pour préserver ces prix malgré les ...",
     "source": "AGENCE ECOFIN",
     "date": "2026-11-20T11:21:00.000Z",
     "impact": "",
     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWm1KcTVZQmc3V2w3aFNvbW9OMktHMDY1VHJWSzc4bGNXWVhqaDJOdmxhempSREFNN041dVF1V1BscGRyblZwam5uYjYxWUstdFB2M2J0VWZILXpaTUk4b3liY1BPRFJHU1E0d1lsbk1QTlcxeWZyd1N5VmN6ZXI5WjdMc0ZQZmhpVGN1UFNfU3NzcFdjZFBBQWdCQi1SNFRqZGxrUVVLZzlmTXNRNE42Qko1czZnc0FGNFVlRDlFc3hCVlN4Nm1rZW5Ba3pKdw?oc=5",
-    "img": "https://cdn.zonebourse.com/static/resize/0/0//images//reuters/2021-05/2021-05-19T133424Z_1_LYNXNPEH4I0V8-OCABS_RTROPTP_3_CBUSINESS-US-UK-AIRBUS-RESTRUCTURING.JPG"
+    "img": "http://www.bing.com/th?id=ONUT.iN4tQf8z8mSPTLboLPtpug&pid=News&w=900&h=1200&c=7&rs=1"
    },
    {
     "level": "",
     "cat": "congo",
     "owner": "Congo & CEMAC",
     "title": "Dette de la CEMAC : pourquoi les États se financent de plus en plus auprès de leurs propres banques",
-    "detail": "",
+    "detail": "La dette mondiale, publique et privée, a atteint un niveau record à 365.000 milliards de dollars mi-2026, selon l'Institut de la finance internationale. Mais c'est surtout l'envolée continue des coûts d'emprunt des pays…",
     "source": "La Nouvelle Tribune",
     "date": "2026-11-20T11:32:57.000Z",
     "impact": "",
@@ -831,7 +831,7 @@
     "cat": "cfo",
     "owner": "CFO & treasury",
     "title": "UEMOA : Le risque souverain pèse sur 37,6% des actifs bancaires",
-    "detail": "",
+    "detail": "Le financement des États prend une place grandissante dans les bilans bancaires de l'UEMOA, au risque de réduire les ressources disponibles pour les entreprises. En 2025, les émissions nettes de ...",
     "source": "Sika Finance",
     "date": "2026-11-18T12:39:05.000Z",
     "impact": "",
@@ -842,8 +842,8 @@
     "level": "",
     "cat": "worldwide",
     "owner": "Worldwide",
-    "title": "EXCLUSIVE: Canada's BMO returning to US oil and gas investment banking, sources say",
-    "detail": "",
+    "title": "Canada's BMO returning to US oil and gas investment banking, sources say",
+    "detail": "By David French NEW YORK, Nov 19 (Reuters) - Bank of Montreal is reviving its investment banking service to oil and gas companies in the United States, six years after it exited, and is hiring bankers ...",
     "source": "Reuters",
     "date": "2026-11-19T19:00:02.000Z",
     "impact": "",
@@ -855,7 +855,7 @@
     "cat": "africa",
     "owner": "Africa",
     "title": "EY 2027 Budget Insights : 2027 Budget statement and Economic Policy of the Government of Ghana",
-    "detail": "",
+    "detail": "Please keep comments respectful. Use plain English for our global readership and avoid using phrasing that could be misinterpreted as offensive. By commenting, you agree to abide by our community ...",
     "source": "Business & Financial Times",
     "date": "2026-11-19T11:29:15.000Z",
     "impact": "",
@@ -867,7 +867,7 @@
     "cat": "congo",
     "owner": "Congo & CEMAC",
     "title": "BDEAC : Après son premier Eurobond réussi, la banque ambitionne de lever près de 300 milliards FCFA supplémentaires sur les marchés internationaux",
-    "detail": "",
+    "detail": "La Banque de développement des États de l'Afrique centrale (BDEAC) prévoit de mobiliser 298,3 milliards FCFA supplémentaires auprès de ...",
     "source": "Sika Finance",
     "date": "2026-11-20T10:54:34.000Z",
     "impact": "",
@@ -879,7 +879,7 @@
     "cat": "cfo",
     "owner": "CFO & treasury",
     "title": "CEMAC : les fonds cumulent 925 milliards de FCFA de titres du Trésor, dont 177 milliards d’OTA en fonds monétaires",
-    "detail": "",
+    "detail": "Les organismes de placement collectif en valeurs mobilières (OPCVM) de la CEMAC détenaient, au 30 juin 2026, 925,3 milliards de FCFA de titres publics émis sur le marché des valeurs du Trésor de la BE ...",
     "source": "Investir au Cameroun",
     "date": "2026-11-17T14:25:00.000Z",
     "impact": "",
@@ -891,7 +891,7 @@
     "cat": "worldwide",
     "owner": "Worldwide",
     "title": "Euro zone banks' data centre exposure small but growing, ECB says",
-    "detail": "",
+    "detail": "FRANKFURT, Nov 19 (Reuters) - Euro zone banks' credit exposure to data centres is relatively small but has been growing fast, requiring heightened attention from financial watchdogs, the European ...",
     "source": "Reuters",
     "date": "2026-11-19T18:33:07.000Z",
     "impact": "",
@@ -903,7 +903,7 @@
     "cat": "africa",
     "owner": "Africa",
     "title": "Coris Bank Côte d’Ivoire ouvre 20 % de son capital au public",
-    "detail": "",
+    "detail": "Coris Bank International Côte d’Ivoire a annoncé, vendredi 20 novembre 2026 à Abidjan, son projet d’introduction à la Bourse régionale des valeurs mobilières (BRVM), à travers une Offre publique de ve ...",
     "source": "Financial Afrik",
     "date": "2026-11-20T14:52:33.000Z",
     "impact": "",
@@ -951,7 +951,7 @@
     "cat": "africa",
     "owner": "Africa",
     "title": "Kenya : le gouvernement présente une stratégie pour lutter contre le commerce illicite",
-    "detail": "",
+    "detail": "Le dispositif prévoit notamment de renforcer les contrôles, d'améliorer la traçabilité des marchandises et de démanteler les réseaux financiers liés ...",
     "source": "AGENCE ECOFIN",
     "date": "2026-11-20T14:35:00.000Z",
     "impact": "",
@@ -963,7 +963,7 @@
     "cat": "congo",
     "owner": "Congo & CEMAC",
     "title": "SIIPS 2026 : le PI-SPI dépasse les 4 millions de transactions en un an dans l’UEMOA",
-    "detail": "",
+    "detail": "Lancé le 30 septembre 2025 par la Banque centrale des États de l’Afrique de l’Ouest (BCEAO), le système de paiement instantané interopérable de l’UEMOA ...",
     "source": "Financial Afrik",
     "date": "2026-11-20T11:29:36.000Z",
     "impact": "",
@@ -975,43 +975,43 @@
     "cat": "cfo",
     "owner": "CFO & treasury",
     "title": "UEMOA : Les réserves de change grimpent à 41 milliards USD en 2025",
-    "detail": "",
+    "detail": "Les réserves de change de l'Indonésie ont progressé de 1,2 milliard de dollars en août pour atteindre 146,5 milliards de dollars, a annoncé lundi la banque centrale. L'institution a précisé que ce... -Le 07 septembre 2026 à 05:08…",
     "source": "Sika Finance",
     "date": "2026-11-18T17:09:06.000Z",
     "impact": "",
     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTW5VLTNGSXQyeVhDYTkwbTN3TWhWSWppbk52Z3VoR0h3U2lCbWIwNGFtY1BKT09Ob3J6RFk0X3ZidjB3OWd3cV9YcmJyRjhQNWRPSi1haTdyY3M5dVlYM3VTS3pNMC1abThYLVBvaWVKSHNOTzdNUnNsVVo4QUlEbFdJcWZ2cjNhVUd4aHV6SEFRcldQQjMtWnRLMS1tWG45VU5TaTgyUjJQUQ?oc=5",
-    "img": "https://cdn.zonebourse.com/static/web-assets/images/editorial/fallback/twitter_zb_fdblanc.png"
+    "img": "https://cdn.zonebourse.com/static/web-assets/images/editorial/fallback/twitter_zb_fdnoir.png"
    },
    {
     "level": "",
     "cat": "worldwide",
     "owner": "Worldwide",
     "title": "Week Ahead for FX, Bonds: Flash PMI Data to Provide Gauge on Economic Growth",
-    "detail": "",
+    "detail": "November’s flash purchasing managers’ surveys for the U.S., eurozone and U.K. could signal whether there is scope for the central banks to raise interest rates further.",
     "source": "WSJ",
     "date": "2026-11-20T15:14:00.000Z",
     "impact": "",
     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUGRKVlM2NDJTdnJ2MW1LcHA4Z29OVTA3eEo0NFlsblNRRnBvcGVGZkVneWN1X1VWWVRWY1FTSm1jWHE0aV9IQzR5Sk9uWHpmdGdSb0VIR3hhal9YckR6QTVTeXhEWVRSTkQ2U2szTEdvQUtSYWVQSXU0LU1Pb3lzNmx6MHdNUmd4NTFHM2thTmpaN2xDclJSa1l1ZzQzRThSdnBPY0tKNC14WlNZRXNpeg?oc=5",
-    "img": "http://www.bing.com/th?id=ONUT.B3Ranbpeqk_sQeOlnvCi4g&pid=News&w=900&h=1200&c=7&rs=1"
+    "img": "http://www.bing.com/th?id=ONUT.IwGgnjhm6bNRbKPrtLPtcQ&pid=News&w=900&h=1200&c=7&rs=1"
    },
    {
     "level": "",
     "cat": "africa",
     "owner": "Africa",
     "title": "Burkina Faso : 3 milliards $ prévus pour les investissements publics dans le budget 2027",
-    "detail": "",
+    "detail": "Le gouvernement burkinabè entend maintenir ses efforts d'investissement tout en renforçant la mobilisation des ressources intérieures. Les dépenses ...",
     "source": "AGENCE ECOFIN",
     "date": "2026-11-20T13:59:00.000Z",
     "impact": "",
     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPS3BFUDI0N3R0MU5kNW9MMnNjaHRLTnNfV1l5bFJZZFVobkdOM0NDczdkdVJQTmpld3pRSFdVd3dNLWxVMWR6cTF5VDQ5QjQ1bUJlTzhpaXR3ZnZkM3FNZGVkamxSR0xtVmpvS0Z4YV9qWlVSMDJCNU9Ed3pYV0ZtSi1iUmgtaWVhYjllLVotMk5nNnFfck5OZk9JS0NIYWFXQnVSMUpJaGhKUVBNcldfdnBpbE0wODBsY2JPb3I1Q1FUY2Vma1VYbmFfZlh6NFJkaXc?oc=5",
-    "img": "http://www.bing.com/th?id=ONUT.zyk2V51Jknuq3j0LiHZqhA&pid=News&w=900&h=1200&c=7&rs=1"
+    "img": "http://www.bing.com/th?id=ONUT.Di1QTGhGDUhT7QTvg4Qpqg&pid=News&w=900&h=1200&c=7&rs=1"
    },
    {
     "level": "",
     "cat": "congo",
     "owner": "Congo & CEMAC",
     "title": "Comment Bassirou Diomaye Faye a contourné le Parlement pour imposer le budget révisé 2026",
-    "detail": "",
+    "detail": "Face au rejet du Parlement, le président sénégalais a adopté par décret le budget rectificatif 2026. Un coup de force constitutionnel destiné à débloquer l’aide du FMI, mais qui pourrait bien raviver ...",
     "source": "Jeune Afrique",
     "date": "2026-11-20T09:47:09.000Z",
     "impact": "",
@@ -1023,7 +1023,7 @@
     "cat": "worldwide",
     "owner": "Worldwide",
     "title": "Dollar Heads for Fourth Week of Gains Following Anthropic IPO",
-    "detail": "",
+    "detail": "The dollar is headed for a fourth straight weekly gain as demand tied to the Anthropic PBC IPO further lifts the currency that has been supported by expectations of further Federal Reserve ...",
     "source": "Bloomberg.com",
     "date": "2026-11-20T09:01:14.000Z",
     "impact": "",
@@ -1037,7 +1037,7 @@
     "cat": "worldwide",
     "owner": "Monde",
     "title": "Oil loses grip on bond markets as inflation ‘virus’ spreads",
-    "detail": "",
+    "detail": "Rising oil prices drove sovereign bond yields higher after the start of the Iran war in late February, as traders positioned for an inflation shock and string of interest rate rises.",
     "source": "Financial Times",
     "date": "2026-11-20T05:00:26.000Z",
     "impact": "",
@@ -1049,19 +1049,19 @@
     "cat": "africa",
     "owner": "Afrique",
     "title": "Hausse des prix des carburants en 2027 : la Guinée « appréciera » (ministre de l'Économie)",
-    "detail": "",
+    "detail": "En Guinée, l’essence et le gazole restent vendus à 12 000 francs guinéens (1,35 $) le litre à la pompe. Pour préserver ces prix malgré les ...",
     "source": "AGENCE ECOFIN",
     "date": "2026-11-20T11:21:00.000Z",
     "impact": "",
     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWm1KcTVZQmc3V2w3aFNvbW9OMktHMDY1VHJWSzc4bGNXWVhqaDJOdmxhempSREFNN041dVF1V1BscGRyblZwam5uYjYxWUstdFB2M2J0VWZILXpaTUk4b3liY1BPRFJHU1E0d1lsbk1QTlcxeWZyd1N5VmN6ZXI5WjdMc0ZQZmhpVGN1UFNfU3NzcFdjZFBBQWdCQi1SNFRqZGxrUVVLZzlmTXNRNE42Qko1czZnc0FGNFVlRDlFc3hCVlN4Nm1rZW5Ba3pKdw?oc=5",
-    "img": "https://cdn.zonebourse.com/static/resize/0/0//images//reuters/2021-05/2021-05-19T133424Z_1_LYNXNPEH4I0V8-OCABS_RTROPTP_3_CBUSINESS-US-UK-AIRBUS-RESTRUCTURING.JPG"
+    "img": "http://www.bing.com/th?id=ONUT.iN4tQf8z8mSPTLboLPtpug&pid=News&w=900&h=1200&c=7&rs=1"
    },
    {
     "level": "",
     "cat": "congo",
     "owner": "Congo & CEMAC",
     "title": "Dette de la CEMAC : pourquoi les États se financent de plus en plus auprès de leurs propres banques",
-    "detail": "",
+    "detail": "La dette mondiale, publique et privée, a atteint un niveau record à 365.000 milliards de dollars mi-2026, selon l'Institut de la finance internationale. Mais c'est surtout l'envolée continue des coûts d'emprunt des pays…",
     "source": "La Nouvelle Tribune",
     "date": "2026-11-20T11:32:57.000Z",
     "impact": "",
@@ -1073,7 +1073,7 @@
     "cat": "cfo",
     "owner": "DAF & trésorerie",
     "title": "UEMOA : Le risque souverain pèse sur 37,6% des actifs bancaires",
-    "detail": "",
+    "detail": "Le financement des États prend une place grandissante dans les bilans bancaires de l'UEMOA, au risque de réduire les ressources disponibles pour les entreprises. En 2025, les émissions nettes de ...",
     "source": "Sika Finance",
     "date": "2026-11-18T12:39:05.000Z",
     "impact": "",
@@ -1084,8 +1084,8 @@
     "level": "",
     "cat": "worldwide",
     "owner": "Monde",
-    "title": "EXCLUSIVE: Canada's BMO returning to US oil and gas investment banking, sources say",
-    "detail": "",
+    "title": "Canada's BMO returning to US oil and gas investment banking, sources say",
+    "detail": "By David French NEW YORK, Nov 19 (Reuters) - Bank of Montreal is reviving its investment banking service to oil and gas companies in the United States, six years after it exited, and is hiring bankers ...",
     "source": "Reuters",
     "date": "2026-11-19T19:00:02.000Z",
     "impact": "",
@@ -1097,7 +1097,7 @@
     "cat": "africa",
     "owner": "Afrique",
     "title": "EY 2027 Budget Insights : 2027 Budget statement and Economic Policy of the Government of Ghana",
-    "detail": "",
+    "detail": "Please keep comments respectful. Use plain English for our global readership and avoid using phrasing that could be misinterpreted as offensive. By commenting, you agree to abide by our community ...",
     "source": "Business & Financial Times",
     "date": "2026-11-19T11:29:15.000Z",
     "impact": "",
@@ -1109,7 +1109,7 @@
     "cat": "congo",
     "owner": "Congo & CEMAC",
     "title": "BDEAC : Après son premier Eurobond réussi, la banque ambitionne de lever près de 300 milliards FCFA supplémentaires sur les marchés internationaux",
-    "detail": "",
+    "detail": "La Banque de développement des États de l'Afrique centrale (BDEAC) prévoit de mobiliser 298,3 milliards FCFA supplémentaires auprès de ...",
     "source": "Sika Finance",
     "date": "2026-11-20T10:54:34.000Z",
     "impact": "",
@@ -1121,7 +1121,7 @@
     "cat": "cfo",
     "owner": "DAF & trésorerie",
     "title": "CEMAC : les fonds cumulent 925 milliards de FCFA de titres du Trésor, dont 177 milliards d’OTA en fonds monétaires",
-    "detail": "",
+    "detail": "Les organismes de placement collectif en valeurs mobilières (OPCVM) de la CEMAC détenaient, au 30 juin 2026, 925,3 milliards de FCFA de titres publics émis sur le marché des valeurs du Trésor de la BE ...",
     "source": "Investir au Cameroun",
     "date": "2026-11-17T14:25:00.000Z",
     "impact": "",
@@ -1133,7 +1133,7 @@
     "cat": "worldwide",
     "owner": "Monde",
     "title": "Euro zone banks' data centre exposure small but growing, ECB says",
-    "detail": "",
+    "detail": "FRANKFURT, Nov 19 (Reuters) - Euro zone banks' credit exposure to data centres is relatively small but has been growing fast, requiring heightened attention from financial watchdogs, the European ...",
     "source": "Reuters",
     "date": "2026-11-19T18:33:07.000Z",
     "impact": "",
@@ -1145,7 +1145,7 @@
     "cat": "africa",
     "owner": "Afrique",
     "title": "Coris Bank Côte d’Ivoire ouvre 20 % de son capital au public",
-    "detail": "",
+    "detail": "Coris Bank International Côte d’Ivoire a annoncé, vendredi 20 novembre 2026 à Abidjan, son projet d’introduction à la Bourse régionale des valeurs mobilières (BRVM), à travers une Offre publique de ve ...",
     "source": "Financial Afrik",
     "date": "2026-11-20T14:52:33.000Z",
     "impact": "",
@@ -1193,7 +1193,7 @@
     "cat": "africa",
     "owner": "Afrique",
     "title": "Kenya : le gouvernement présente une stratégie pour lutter contre le commerce illicite",
-    "detail": "",
+    "detail": "Le dispositif prévoit notamment de renforcer les contrôles, d'améliorer la traçabilité des marchandises et de démanteler les réseaux financiers liés ...",
     "source": "AGENCE ECOFIN",
     "date": "2026-11-20T14:35:00.000Z",
     "impact": "",
@@ -1205,7 +1205,7 @@
     "cat": "congo",
     "owner": "Congo & CEMAC",
     "title": "SIIPS 2026 : le PI-SPI dépasse les 4 millions de transactions en un an dans l’UEMOA",
-    "detail": "",
+    "detail": "Lancé le 30 septembre 2025 par la Banque centrale des États de l’Afrique de l’Ouest (BCEAO), le système de paiement instantané interopérable de l’UEMOA ...",
     "source": "Financial Afrik",
     "date": "2026-11-20T11:29:36.000Z",
     "impact": "",
@@ -1217,43 +1217,43 @@
     "cat": "cfo",
     "owner": "DAF & trésorerie",
     "title": "UEMOA : Les réserves de change grimpent à 41 milliards USD en 2025",
-    "detail": "",
+    "detail": "Les réserves de change de l'Indonésie ont progressé de 1,2 milliard de dollars en août pour atteindre 146,5 milliards de dollars, a annoncé lundi la banque centrale. L'institution a précisé que ce... -Le 07 septembre 2026 à 05:08…",
     "source": "Sika Finance",
     "date": "2026-11-18T17:09:06.000Z",
     "impact": "",
     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTW5VLTNGSXQyeVhDYTkwbTN3TWhWSWppbk52Z3VoR0h3U2lCbWIwNGFtY1BKT09Ob3J6RFk0X3ZidjB3OWd3cV9YcmJyRjhQNWRPSi1haTdyY3M5dVlYM3VTS3pNMC1abThYLVBvaWVKSHNOTzdNUnNsVVo4QUlEbFdJcWZ2cjNhVUd4aHV6SEFRcldQQjMtWnRLMS1tWG45VU5TaTgyUjJQUQ?oc=5",
-    "img": "https://cdn.zonebourse.com/static/web-assets/images/editorial/fallback/twitter_zb_fdblanc.png"
+    "img": "https://cdn.zonebourse.com/static/web-assets/images/editorial/fallback/twitter_zb_fdnoir.png"
    },
    {
     "level": "",
     "cat": "worldwide",
     "owner": "Monde",
     "title": "Week Ahead for FX, Bonds: Flash PMI Data to Provide Gauge on Economic Growth",
-    "detail": "",
+    "detail": "November’s flash purchasing managers’ surveys for the U.S., eurozone and U.K. could signal whether there is scope for the central banks to raise interest rates further.",
     "source": "WSJ",
     "date": "2026-11-20T15:14:00.000Z",
     "impact": "",
     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUGRKVlM2NDJTdnJ2MW1LcHA4Z29OVTA3eEo0NFlsblNRRnBvcGVGZkVneWN1X1VWWVRWY1FTSm1jWHE0aV9IQzR5Sk9uWHpmdGdSb0VIR3hhal9YckR6QTVTeXhEWVRSTkQ2U2szTEdvQUtSYWVQSXU0LU1Pb3lzNmx6MHdNUmd4NTFHM2thTmpaN2xDclJSa1l1ZzQzRThSdnBPY0tKNC14WlNZRXNpeg?oc=5",
-    "img": "http://www.bing.com/th?id=ONUT.B3Ranbpeqk_sQeOlnvCi4g&pid=News&w=900&h=1200&c=7&rs=1"
+    "img": "http://www.bing.com/th?id=ONUT.IwGgnjhm6bNRbKPrtLPtcQ&pid=News&w=900&h=1200&c=7&rs=1"
    },
    {
     "level": "",
     "cat": "africa",
     "owner": "Afrique",
     "title": "Burkina Faso : 3 milliards $ prévus pour les investissements publics dans le budget 2027",
-    "detail": "",
+    "detail": "Le gouvernement burkinabè entend maintenir ses efforts d'investissement tout en renforçant la mobilisation des ressources intérieures. Les dépenses ...",
     "source": "AGENCE ECOFIN",
     "date": "2026-11-20T13:59:00.000Z",
     "impact": "",
     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPS3BFUDI0N3R0MU5kNW9MMnNjaHRLTnNfV1l5bFJZZFVobkdOM0NDczdkdVJQTmpld3pRSFdVd3dNLWxVMWR6cTF5VDQ5QjQ1bUJlTzhpaXR3ZnZkM3FNZGVkamxSR0xtVmpvS0Z4YV9qWlVSMDJCNU9Ed3pYV0ZtSi1iUmgtaWVhYjllLVotMk5nNnFfck5OZk9JS0NIYWFXQnVSMUpJaGhKUVBNcldfdnBpbE0wODBsY2JPb3I1Q1FUY2Vma1VYbmFfZlh6NFJkaXc?oc=5",
-    "img": "http://www.bing.com/th?id=ONUT.zyk2V51Jknuq3j0LiHZqhA&pid=News&w=900&h=1200&c=7&rs=1"
+    "img": "http://www.bing.com/th?id=ONUT.Di1QTGhGDUhT7QTvg4Qpqg&pid=News&w=900&h=1200&c=7&rs=1"
    },
    {
     "level": "",
     "cat": "congo",
     "owner": "Congo & CEMAC",
     "title": "Comment Bassirou Diomaye Faye a contourné le Parlement pour imposer le budget révisé 2026",
-    "detail": "",
+    "detail": "Face au rejet du Parlement, le président sénégalais a adopté par décret le budget rectificatif 2026. Un coup de force constitutionnel destiné à débloquer l’aide du FMI, mais qui pourrait bien raviver ...",
     "source": "Jeune Afrique",
     "date": "2026-11-20T09:47:09.000Z",
     "impact": "",
@@ -1265,7 +1265,7 @@
     "cat": "worldwide",
     "owner": "Monde",
     "title": "Dollar Heads for Fourth Week of Gains Following Anthropic IPO",
-    "detail": "",
+    "detail": "The dollar is headed for a fourth straight weekly gain as demand tied to the Anthropic PBC IPO further lifts the currency that has been supported by expectations of further Federal Reserve ...",
     "source": "Bloomberg.com",
     "date": "2026-11-20T09:01:14.000Z",
     "impact": "",
@@ -1275,8 +1275,8 @@
   ]
  },
  "takeaway": {
-  "en": "Markets: Brent −3.3%, USD/XAF −0.1%, gold −4.3%. Top story: Oil loses grip on bond markets as inflation ‘virus’ spreads",
-  "fr": "Marchés : Brent −3,3%, USD/XAF −0,1%, or −4,3%. À la une : Oil loses grip on bond markets as inflation ‘virus’ spreads"
+  "en": "Markets: Brent −3.1%, USD/XAF −0.0%, gold −4.2%. Top story: Oil loses grip on bond markets as inflation ‘virus’ spreads",
+  "fr": "Marchés : Brent −3,1%, USD/XAF −0,0%, or −4,2%. À la une : Oil loses grip on bond markets as inflation ‘virus’ spreads"
  },
  "on_this_day": {
   "en": {
@@ -1408,6 +1408,7 @@
    "paywall": false,
    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOcVZQd0ZhdjI2UDA5OGlMRDhwWl9fQWdXUURRQkZyMW5yTUQzcnNSOUJrajRxZm9kWXBjRjZkMjhSSTFHVnZ1ZEtHNTdNODhKM1BDaHdwZEVlT1VtcDBXM3QycEhjZUVOX00yX1hKOUc0NkIyeGFfTHZ4cV9fT1VmWEUyb3U4dzNRNlNQaHJ3Tk9aLThMcW1yQ3ZTZi1xamhaQ1phS1FzUkdQZTB4TjJKQWZhSTllZm1qLVJNV3BSVjRBblNHMlN4a1FZd3FRX1pQQ25qR2FjWk5zRHFCS2c?oc=5",
    "date": "2026-11-19T16:03:17.000Z",
+   "desc": "Avec 71,4 milliards de transactions en 2025, les paiements instantanés explosent en Afrique. Décryptage d’une révolution financière portée par l’interopérabilité bancaire et mobile.",
    "img": "https://prod.cdn-medias.jeuneafrique.com/cdn-cgi/image/q=auto,f=auto,metadata=none,width=1280,height=720,fit=cover,gravity=0.5993x0.4315/https://prod.cdn-medias.jeuneafrique.com/medias/2026/11/19/jad20261119-eco-afrique-paiements-instantanes-montent-en-gamme-pi-spi.jpg"
   },
   "more": [
@@ -1418,6 +1419,7 @@
     "paywall": false,
     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNYkNyaGF3UnNXY0QybGQtV0Vjb3NYblU4aXp1UkJEUEJyQTFsWEs0NmhqMExFbjV1WWdVbkJ1bUQ2S3R2cmZGcnQwTElya1JadkJsd01yZk5WQkNXTUduQXkxQklEWFdZQTB5ZFVMZjBydHhuXzkzY2k0cjYzTU9LMmZqZVRYZUZBa3RFS2dUbWVuVE0?oc=5",
     "date": "2026-11-19T14:07:44.000Z",
+    "desc": "Nurminen discusses why he prioritizes his morning routine, the importance of empathy in leadership and when he tackles challenging matters.",
     "img": "https://s.yimg.com/lo/mysterio/api/2c893f34d0751b29f0fad8978029f7c87c23a03b2d0be0fb43a07bb5e86a8457/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fcfo_com_600%2F3547d4ac6f110a1f09993aa8caa18437.jpg"
    },
    {
@@ -1435,6 +1437,7 @@
     "paywall": false,
     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOdmVKcUVNRVVKYU5iamdQLVhwVVJPYVlJTE1nbVdTdWh6Y3c1bHV2QzFuSGIwY0hPOHpnZ1NkZDhfWDJnaWdzeE9hODlVLWJ2Q3NPeEwzMEgzdkFvQnY1NF9YVGhqdjZReUJPNTZTdXZJU3BtbFEwQzVjMXZybFJrcXlrMEU2d3Zmbjc2NktWZG90Ul95VmE2ZG1udjhpUE94cTk1OGg0aENoWHJOWDRITk1mN00zc0xYRjVEV24zWFNMQ1lVSUtsYjZ4djM1QjRnUllBZ0lvcml4Ymc?oc=5",
     "date": "2026-11-18T16:00:36.000Z",
+    "desc": "La Côte d’Ivoire veut faire des mines et de l’énergie le deuxième pilier de son économie. Un plan de 38 000 milliards de F CFA, en partie porté par le secteur privé, entend développer le secteur extractif et sa transformation…",
     "img": "https://prod.cdn-medias.jeuneafrique.com/cdn-cgi/image/q=auto,f=auto,metadata=none,width=1280,height=720,fit=cover/https://prod.cdn-medias.jeuneafrique.com/medias/2026/11/18/jad20261118-eco-civ-ambitions-secteur-minier.jpg"
    },
    {
@@ -1443,7 +1446,8 @@
     "lang": "en",
     "paywall": true,
     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORjd6ekVsbDdFSXNxc2lFR1RkY0k0aHlOWXlSNmtSYmtyTHNYZHljUkwtY1puS3E5TWdKaFZ5UVY3SUJtb2tHemJMUWpRbXpKVTl5ZTllOWJRd001VTJZR3JIeXN5OUQ4WmlBNW42dHh6WjFXU0k5U3JnYUR4SDk1c0lBazE?oc=5",
-    "date": "2026-11-19T15:40:19.000Z"
+    "date": "2026-11-19T15:40:19.000Z",
+    "desc": "Veteran politician Helen Zille’s Democratic Alliance finished first in local elections but is not expected to take power in economic capital after days of coalition horse-trading ..."
    },
    {
     "title": "Consumers fret about inflation as execs fixate on interest rates",
@@ -1452,6 +1456,7 @@
     "paywall": false,
     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcmhiMl90MjVwbzhoZElQR1YybWhaMUFXQlRHYTF0NXRlUnNSY3c0X2k4U0oxWXJSSm1KWUI1dDlQWGlEM3dfTG5UQ0FrRFM2NFVmQ283by02V2FFcEdBMG92b0dUWEJlbkxfdWFQWi1nc3JTZDRUcXdZajNXZ0I2dmFnZHFBT2JHQXBQSlgtckd3WFJ1YnlVbVhRcHRVQQ?oc=5",
     "date": "2026-11-18T14:20:29.000Z",
+    "desc": "PwC’s latest Market Volatility Survey detected diverging worries among financial services execs and consumers.",
     "img": "http://www.bing.com/th?id=ONUT.M5_AKpYAWlP8oFom8fTQsQ&pid=News&w=900&h=1200&c=7&rs=1"
    },
    {
@@ -1461,6 +1466,7 @@
     "paywall": false,
     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPS3ZJaFFDTVZIOWNJLURHR2FBbFlqMkdrSE5SdGdzMEI0UjhvRDd0RUNEYVVNYml0WkZ1NHU1dU5FcXEyUUZkd3dHUmJ3b0tma1Y4VnNFUVRLWFNmaGh5cWM1bTJmUjRTT3dLRXhnMnlLeXBTMTVWMTVLX1BPZnhCQUhrbG1OYWJsRVBuNlI0ajBqYlVjNndadUFXNWw0cVFuREpESGU5MA?oc=5",
     "date": "2026-11-18T11:17:27.000Z",
+    "desc": "The National Endowment for Democracy and its partners scramble to fill in the gap left by the demise of USAID’s election monitoring.",
     "img": "http://www.bing.com/th?id=ONUT.V38wTfyczHWzTrCopuyDbg&pid=News&w=900&h=1200&c=7&rs=1"
    },
    {
@@ -1470,6 +1476,7 @@
     "paywall": false,
     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVFlHXzN4V3o5X0lCU3FOcHJBLTlNMElTSzhTcmxic1NWemtVcnV4VHJEUzJtYmhPVEVIYjNtam9xYndQbWtSckgwZ3RoWGZwLUNWT1hlajBXSDBLTU0xdUdwZURpa3RINUs0dGNlQkxEU1JqSERBdGo3TU92QjZET29mNXd4UTlxcFZyM3luN2xZejB2WXl5MUxhZGhONFhhMlRudTJrWURMYUVCWURwSnNtTVNlc2llTk5nRTgwQQ?oc=5",
     "date": "2026-11-18T08:00:30.000Z",
+    "desc": "As the American ride-hailing giant scales back its continental footprint, US robotics firm Zipline is counting on an architect of Uber’s early expansion to succeed where ground transport struggles due ...",
     "img": "http://www.bing.com/th?id=ONUT.FgUe2i1NAjlVVPzXLH7LEA&pid=News&w=900&h=1200&c=7&rs=1"
    },
    {
@@ -1479,6 +1486,7 @@
     "paywall": false,
     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPenJkazk4dzlVWnNSSng2azA2X1ljZUN3MUJZaVI2NkFqd0RSRC1xVVA2VTBzSzFZTHZhQ3pZYUM3b3B1UDVwSXNRRGpWYzg0Mm5FUVhoT2dUcTVxM1dYUlRGb010S19wYUpNdktyTUJlc1Z6QmtremdYNlZxeVN0cUJmbEIzUktGT0Ezd2RFNkMtVzRwbmNhMWw0MUVFSkVyMTFVaTJwYmZ6U0ZCczBqYlBn?oc=5",
     "date": "2026-11-18T01:56:00.000Z",
+    "desc": "Plusieurs gouverneurs de banques centrales africaines jugent prématurée la création d’une monnaie commune sur le continent. Réunis à Luanda lors de l’AFIS, ils ont préconisé d’interconnecter d’abord les systèmes de paiement…",
     "img": "https://prod.cdn-medias.jeuneafrique.com/cdn-cgi/image/q=auto,f=auto,metadata=none,width=1280,height=720,fit=cover,gravity=0.7995x0.3986/https://prod.cdn-medias.jeuneafrique.com/medias/2026/11/16/elom9461-scaled.jpg"
    },
    {
@@ -1488,6 +1496,7 @@
     "paywall": false,
     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbVdBWWJWSzJKYlJjbWY4MXdDU05adjd5Z0tVaFR2WjhJZVc4MjcycC1qTDBYQVBzazl6VkJCc3RsS1FocUJ6UEJfRVFkckpwVnkzZjJ3UGpPX080al9UOC1xSmhMWERsVUQwRGc2NUlNczdDQmpXa2lfVm1BemJPNzlobGFpeGMzeEpsUm5R?oc=5",
     "date": "2026-11-17T22:19:39.000Z",
+    "desc": "CEO Lip-Bu Tan and CFO David Zinsner failed to properly disclose the full impact of waning PC demand on company revenue and profitability for the PC maker, shareholders claim.",
     "img": "https://imgproxy.divecdn.com/wX3xq9HyBse0FkMd2dzURrsiCb-rjEXtZ-8jD9VHL44/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjc5NDE1MTIzLmpwZ19yZXNpemUuanBn.webp"
    },
    {
@@ -1497,6 +1506,7 @@
     "paywall": false,
     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSU1sZVBfMWh1S19mQ1ZZbldBTjdIZ0dsWWpHaTBzTnB1WUNMUTV6cXN1YlN1TFZJVFdGSG1ISjd3ZVVoTHV3N3BRc29BYjFYdU81c3d4OTFyNmJ4TTNOeGJ3WW1nOFlDZGlQWDNNZEwwelpuSWM0VUdZamMzZ3F5YmFoODZxb3NvaDE2eThPWlJ6anJJd21Lald3R3o0bUtpVnRjMFhRZndRZUZOc1AzaDd3?oc=5",
     "date": "2026-11-17T15:53:44.000Z",
+    "desc": "Colette Kress is expected to lead Nvidia's quarterly earnings call Tuesday in her debut as interim chief, following the abrupt resignation of ex-CEO Jensen Huang.",
     "img": "https://imgproxy.divecdn.com/nX7zvtJvQTAAPIszHidfehawu3Baw5vcBTQYwR4J2Ds/g:nowe:0:610/c:6000:3389/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xMzk5MjM4OTE0LmpwZw==.webp"
    },
    {
@@ -1506,16 +1516,18 @@
     "paywall": true,
     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQbkZvTExzSGpOMmVzVm41OEh3ZFFfampwNDYyVUlIaWFFYTI2TkxfaExydjB2OGhtR3FRcEpzeTQzTFRGU0k5dmJvWHM0bUR5ekJ0Vm5ReWJMd2JDUG1OTm5oU3VYVVhZNDg3eEdzanN3NnRFNmp4VUNRUmNaZnp3Ykszcmc?oc=5",
     "date": "2026-11-18T13:04:24.000Z",
+    "desc": "By Nellie Peyton JOHANNESBURG, Nov 19 (Reuters) - The African National Congress and smaller rivals are closing in on a coalition deal to govern Johannesburg, South Africa's financial hub and biggest ...",
     "img": "http://www.bing.com/th?id=ONUT.NC-VokyyjSJ3WHVTwE6F_Q&pid=News&w=900&h=1200&c=7&rs=1"
    },
    {
-    "title": "Nvidia’s Leadership Crisis Reveals a Bigger Problem",
-    "source": "Knowledge at Wharton",
+    "title": "Delivering the agentic supply chain",
+    "source": "McKinsey",
     "lang": "en",
     "paywall": false,
-    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQ0l4SWdoVk53aUM1U1QtZ2tGLXVvcXpYMmhHWnZzX3dLY2NwaHlPUWFpX2Q2ZzNVOTA4eG5FUTZ6WE1uMlQtbEpkZ2FQLVZhQTFQVGFPQUl5QTJDQmJuSXdkaWpoTC1mUml1b2p6WFpqeU9OZzVDUFJlekFDc0dXMlRfNk10N3hSZG1FT2x3N2lnWGt2VDR3cV83RF91LVBlYnhrOWlWZDU5ekhweDZIZjE5YXVGVFU5?oc=5",
-    "date": "2026-11-17T07:59:59.000Z",
-    "img": "https://eu-images.contentstack.com/v3/assets/blt69509c9116440be8/blt8e182aaeeb855183/6af61e0d1b99fb5350813cec/111226_IWK_BTS_vendorrisk_GettyImages-2301328091.png?disable=upscale&width=1200&height=630&fit=crop"
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORUpWT2czeFdTQnBfWUROV0dKWG1uU0tyRGZuS0paeGpNcDEtMWNRdEIxWWhzU2I0Z1BWdTRfc0lhUTdNYkw5RzRsUW1PU1JRUzNta3dvVDZock1HOVFmZ0RYUzJ6M3VLbTNLY1NIdUQxZU9mSkRSOUJoYUFJYm92MG1jamJFNU1ZNlliWFJxS2FWcDZKZ0puZWstNUctMFU0dExGVXNENmstV09SUG9oNjZIWQ?oc=5",
+    "date": "2026-11-17T00:00:00.000Z",
+    "desc": "The company uses agentic AI to make supply chains faster and more reliable.",
+    "img": "http://www.bing.com/th?id=ONUT.LYSvHNArpmma3jMmUK4QxQ&pid=News&w=900&h=1200&c=7&rs=1"
    }
   ],
   "history": [
@@ -1545,18 +1557,36 @@
    "source": "Financial Times",
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSkZnaUY5Ni1VV2RvQXB3YWdWTnByc0xNYUt0MW5yYUlZLThpWXpNTzJBSjBROF9CQV9hd1M0MVVCNnB4QW0zd1VIdVhjQ3ZScEZvQ01HblVPTFQ4emlReFRfVnlnOFV1emJvQWtZU3BYT2tOY1JWUThTcUZlMzkzZTlaMnY?oc=5",
    "date": "2026-11-20T05:00:26.000Z",
-   "score": 4.5
+   "score": 4.5,
+   "desc": "Rising oil prices drove sovereign bond yields higher after the start of the Iran war in late February, as traders positioned for an inflation shock and string of interest rate rises.",
+   "t": {
+    "en": "Oil loses grip on bond markets as inflation ‘virus’ spreads",
+    "fr": "Oil loses grip on bond markets as inflation ‘virus’ spreads"
+   },
+   "d": {
+    "en": "Rising oil prices drove sovereign bond yields higher after the start of the Iran war in late February, as traders positioned for an inflation shock and string of interest rate rises.",
+    "fr": "Rising oil prices drove sovereign bond yields higher after the start of the Iran war in late February, as traders positioned for an inflation shock and string of interest rate rises."
+   }
   },
   {
    "id": "n1-2026-11-19",
    "cat": "worldwide",
    "lang": "en",
-   "title": "EXCLUSIVE: Canada's BMO returning to US oil and gas investment banking, sources say",
+   "title": "Canada's BMO returning to US oil and gas investment banking, sources say",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMEJnU0FpNlBIQVVrY3RZWkxwVzV5a0RJajBPLWpIZW5DX1Y1cDBuZnJsWU14dHBGcGV3aE9LRkx6aVg4VDRjVHB1UmphaWN1VVJCQVQ1bEhnel9rTnNzSmZVZUJlTHZsTHVsdWpmZjM2aHQ1R09mZEZTUVpqbV9VZ18tMC15WkhxOW5PN2FtNHRXMHkwUndMV3NBQVZtaGNKajVzZkZfMWNwd0pYS21Ea0ZBNkZtUQ?oc=5",
    "date": "2026-11-19T19:00:02.000Z",
-   "score": 4.1,
-   "img": "http://www.bing.com/th?id=ONUT.nnm58q1KhIRCi3Uvn1TLqg&pid=News&w=900&h=1200&c=7&rs=1"
+   "score": 4,
+   "desc": "By David French NEW YORK, Nov 19 (Reuters) - Bank of Montreal is reviving its investment banking service to oil and gas companies in the United States, six years after it exited, and is hiring bankers ...",
+   "img": "http://www.bing.com/th?id=ONUT.nnm58q1KhIRCi3Uvn1TLqg&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "Canada's BMO returning to US oil and gas investment banking, sources say",
+    "fr": "Canada's BMO returning to US oil and gas investment banking, sources say"
+   },
+   "d": {
+    "en": "By David French NEW YORK, Nov 19 (Reuters) - Bank of Montreal is reviving its investment banking service to oil and gas companies in the United States, six years after it exited, and is hiring bankers ...",
+    "fr": "By David French NEW YORK, Nov 19 (Reuters) - Bank of Montreal is reviving its investment banking service to oil and gas companies in the United States, six years after it exited, and is hiring bankers ..."
+   }
   },
   {
    "id": "n2-2026-11-19",
@@ -1567,7 +1597,16 @@
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcm5Wc0JWdU5keDRHeFRNV0Izdl9IY3pCVzYwaEExN2F0cmo5MTAzMnZ5S3pFSW9zeU5ITVo1bF92OExlbmU0OW55cWR1b09NdGZWU29FTi1kVXBzTHBoSUtNdmRONlVaMUV1XzN5QTUwSWNWQm80YkV0NGpzcjNES195c1VVaS1sRElPVUU2RWJHZ0N3T3I2RGhfVGdTRTlnMkdJeTM0V21lczRyV054R3h3?oc=5",
    "date": "2026-11-19T18:33:07.000Z",
    "score": 4,
-   "img": "http://www.bing.com/th?id=ORMS.6ca565b3f1d6257c3e45c2eb7f69359b&pid=News&w=900&h=1200&c=7&rs=1"
+   "desc": "FRANKFURT, Nov 19 (Reuters) - Euro zone banks' credit exposure to data centres is relatively small but has been growing fast, requiring heightened attention from financial watchdogs, the European ...",
+   "img": "http://www.bing.com/th?id=ORMS.6ca565b3f1d6257c3e45c2eb7f69359b&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "Euro zone banks' data centre exposure small but growing, ECB says",
+    "fr": "Euro zone banks' data centre exposure small but growing, ECB says"
+   },
+   "d": {
+    "en": "FRANKFURT, Nov 19 (Reuters) - Euro zone banks' credit exposure to data centres is relatively small but has been growing fast, requiring heightened attention from financial watchdogs, the European ...",
+    "fr": "FRANKFURT, Nov 19 (Reuters) - Euro zone banks' credit exposure to data centres is relatively small but has been growing fast, requiring heightened attention from financial watchdogs, the European ..."
+   }
   },
   {
    "id": "n3-2026-11-20",
@@ -1577,7 +1616,11 @@
    "source": "Bloomberg.com",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPa0xuaEJvTjF2V01vTGdTNXdIdzZ5NklfbmVXVE9WeVBfVU1xRW1Hc2VWWnViUzNOaTl6M0hCSUJKazE1Vkc0NEljbW04b1FBVHZQUk9iZVJMUXN6YnVHQWhfMnl4cFZVU0QybDJBVUc3dXJZM2U3YkZ3OFZFeE5aM1Z0bEFScGNRa0UwY1gyUkJoX0FfRlNJYmhwWUl5eV9MalZsZzNyZDR4bjBoV29Ub1ZNclNvQQ?oc=5",
    "date": "2026-11-20T17:42:23.000Z",
-   "score": 3.9
+   "score": 3.9,
+   "t": {
+    "en": "Skepticism About AI Is Crushing Stock Prices Around the World",
+    "fr": "Skepticism About AI Is Crushing Stock Prices Around the World"
+   }
   },
   {
    "id": "n4-2026-11-20",
@@ -1588,7 +1631,16 @@
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUGRKVlM2NDJTdnJ2MW1LcHA4Z29OVTA3eEo0NFlsblNRRnBvcGVGZkVneWN1X1VWWVRWY1FTSm1jWHE0aV9IQzR5Sk9uWHpmdGdSb0VIR3hhal9YckR6QTVTeXhEWVRSTkQ2U2szTEdvQUtSYWVQSXU0LU1Pb3lzNmx6MHdNUmd4NTFHM2thTmpaN2xDclJSa1l1ZzQzRThSdnBPY0tKNC14WlNZRXNpeg?oc=5",
    "date": "2026-11-20T15:14:00.000Z",
    "score": 3.9,
-   "img": "http://www.bing.com/th?id=ONUT.B3Ranbpeqk_sQeOlnvCi4g&pid=News&w=900&h=1200&c=7&rs=1"
+   "desc": "November’s flash purchasing managers’ surveys for the U.S., eurozone and U.K. could signal whether there is scope for the central banks to raise interest rates further.",
+   "img": "http://www.bing.com/th?id=ONUT.IwGgnjhm6bNRbKPrtLPtcQ&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "Week Ahead for FX, Bonds: Flash PMI Data to Provide Gauge on Economic Growth",
+    "fr": "Week Ahead for FX, Bonds: Flash PMI Data to Provide Gauge on Economic Growth"
+   },
+   "d": {
+    "en": "November’s flash purchasing managers’ surveys for the U.S., eurozone and U.K. could signal whether there is scope for the central banks to raise interest rates further.",
+    "fr": "November’s flash purchasing managers’ surveys for the U.S., eurozone and U.K. could signal whether there is scope for the central banks to raise interest rates further."
+   }
   },
   {
    "id": "n5-2026-11-20",
@@ -1599,7 +1651,16 @@
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZk10QjN0ZjR3OXFGdVI1OENkTC1WNzZFM2k4Z2VQMFk4bjFwalJtT2RxVTNFS2luNWUyYTVJZlpMcXduQmRnMHBtQ05ZTUlvUnJ3VGhGMlBRcUczbzZ2WkxEcXRadnFSckh5WWdaSnRVRHlTTGVqN0ZWdXl2NGFJYVVwTXJYYzFOVDNIZ2duSGttYklEYVZxamtWOExoT19yLW9XLVdKc1cwNDdHOTRUVVF3?oc=5",
    "date": "2026-11-20T09:01:14.000Z",
    "score": 3.9,
-   "img": "http://www.bing.com/th?id=ONUT.kSBOl3asnzyhcsRGiKPhAA&pid=News&w=900&h=1200&c=7&rs=1"
+   "desc": "The dollar is headed for a fourth straight weekly gain as demand tied to the Anthropic PBC IPO further lifts the currency that has been supported by expectations of further Federal Reserve ...",
+   "img": "http://www.bing.com/th?id=ONUT.kSBOl3asnzyhcsRGiKPhAA&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "Dollar Heads for Fourth Week of Gains Following Anthropic IPO",
+    "fr": "Dollar Heads for Fourth Week of Gains Following Anthropic IPO"
+   },
+   "d": {
+    "en": "The dollar is headed for a fourth straight weekly gain as demand tied to the Anthropic PBC IPO further lifts the currency that has been supported by expectations of further Federal Reserve ...",
+    "fr": "The dollar is headed for a fourth straight weekly gain as demand tied to the Anthropic PBC IPO further lifts the currency that has been supported by expectations of further Federal Reserve ..."
+   }
   },
   {
    "id": "n6-2026-11-19",
@@ -1609,7 +1670,11 @@
    "source": "Bloomberg.com",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNelZRLXNWLUdqaUxFZzVOOVR6T2tOQmx4RFA0dEF3MFdETnVTV01HY1R2cGpnUGlzVFdZUjh6a2U5d1JfSnZ6dUNwOG0yNEV2UFJKX010WUZlak1SMlFsLUJpcEl6Z2NCNlIwYUw5cGVnbUF6RVpQSzRTS3VGTEhWeWlSSXJCbXl6enptVTJONjRLR1NQeEtoLWNnLTBPMFNzVDVwcl95ZHl1dnRHTEQ0amd3?oc=5",
    "date": "2026-11-19T09:28:33.000Z",
-   "score": 3.7
+   "score": 3.6,
+   "t": {
+    "en": "ECB to Probe Riskier Private Credit and Hedge Fund Links at Banks",
+    "fr": "ECB to Probe Riskier Private Credit and Hedge Fund Links at Banks"
+   }
   },
   {
    "id": "n7-2026-11-20",
@@ -1620,7 +1685,16 @@
    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWm1KcTVZQmc3V2w3aFNvbW9OMktHMDY1VHJWSzc4bGNXWVhqaDJOdmxhempSREFNN041dVF1V1BscGRyblZwam5uYjYxWUstdFB2M2J0VWZILXpaTUk4b3liY1BPRFJHU1E0d1lsbk1QTlcxeWZyd1N5VmN6ZXI5WjdMc0ZQZmhpVGN1UFNfU3NzcFdjZFBBQWdCQi1SNFRqZGxrUVVLZzlmTXNRNE42Qko1czZnc0FGNFVlRDlFc3hCVlN4Nm1rZW5Ba3pKdw?oc=5",
    "date": "2026-11-20T11:21:00.000Z",
    "score": 3.9,
-   "img": "https://cdn.zonebourse.com/static/resize/0/0//images//reuters/2021-05/2021-05-19T133424Z_1_LYNXNPEH4I0V8-OCABS_RTROPTP_3_CBUSINESS-US-UK-AIRBUS-RESTRUCTURING.JPG"
+   "desc": "En Guinée, l’essence et le gazole restent vendus à 12 000 francs guinéens (1,35 $) le litre à la pompe. Pour préserver ces prix malgré les ...",
+   "img": "http://www.bing.com/th?id=ONUT.iN4tQf8z8mSPTLboLPtpug&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "fr": "Hausse des prix des carburants en 2027 : la Guinée « appréciera » (ministre de l'Économie)",
+    "en": "Hausse des prix des carburants en 2027 : la Guinée « appréciera » (ministre de l'Économie)"
+   },
+   "d": {
+    "fr": "En Guinée, l’essence et le gazole restent vendus à 12 000 francs guinéens (1,35 $) le litre à la pompe. Pour préserver ces prix malgré les ...",
+    "en": "En Guinée, l’essence et le gazole restent vendus à 12 000 francs guinéens (1,35 $) le litre à la pompe. Pour préserver ces prix malgré les ..."
+   }
   },
   {
    "id": "n8-2026-11-19",
@@ -1630,7 +1704,16 @@
    "source": "Business & Financial Times",
    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5EQ3JIbjBoVXRSOFNRZy1Eb3BuME5kM0Z3SFN1V1RtS1J6MHNrQ05QSjJ4Ylp5dTlpMjNtNy1WX2JtajV2VWYwSzRCaXZEdHJyYUFTa19pUEUwbDRNazFldUpPTGVmOEE?oc=5",
    "date": "2026-11-19T11:29:15.000Z",
-   "score": 3.7
+   "score": 3.7,
+   "desc": "Please keep comments respectful. Use plain English for our global readership and avoid using phrasing that could be misinterpreted as offensive. By commenting, you agree to abide by our community ...",
+   "t": {
+    "en": "EY 2027 Budget Insights : 2027 Budget statement and Economic Policy of the Government of Ghana",
+    "fr": "EY 2027 Budget Insights : 2027 Budget statement and Economic Policy of the Government of Ghana"
+   },
+   "d": {
+    "en": "Please keep comments respectful. Use plain English for our global readership and avoid using phrasing that could be misinterpreted as offensive. By commenting, you agree to abide by our community ...",
+    "fr": "Please keep comments respectful. Use plain English for our global readership and avoid using phrasing that could be misinterpreted as offensive. By commenting, you agree to abide by our community ..."
+   }
   },
   {
    "id": "n9-2026-11-20",
@@ -1641,7 +1724,16 @@
    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPa2pQX2dCbldEblRYRUVXRHhkaUFzV0w3U2V3NXlZSTl1ZnV6ODBVbDNURFdTN2Ixei01enFjV25MRU1iXzhQcmtuY0VudlpHSzFpemJ1c0VnNWVKTDhxR25BdjVzNFIzUmw1UDdmTHN2a1d3cWI2V2h4YXpBX2djdGZFOFh0dEd4ZzI0bHJZUW9Td3hIRzRSUFQ2RUswckZVR2c?oc=5",
    "date": "2026-11-20T14:52:33.000Z",
    "score": 3.2,
-   "img": "https://burkina24.com/wp-content/uploads/2026/11/Siege-Coris-bank-RCI.jpg"
+   "desc": "Coris Bank International Côte d’Ivoire a annoncé, vendredi 20 novembre 2026 à Abidjan, son projet d’introduction à la Bourse régionale des valeurs mobilières (BRVM), à travers une Offre publique de ve ...",
+   "img": "https://burkina24.com/wp-content/uploads/2026/11/Siege-Coris-bank-RCI.jpg",
+   "t": {
+    "fr": "Coris Bank Côte d’Ivoire ouvre 20 % de son capital au public",
+    "en": "Coris Bank Côte d’Ivoire ouvre 20 % de son capital au public"
+   },
+   "d": {
+    "fr": "Coris Bank International Côte d’Ivoire a annoncé, vendredi 20 novembre 2026 à Abidjan, son projet d’introduction à la Bourse régionale des valeurs mobilières (BRVM), à travers une Offre publique de ve ...",
+    "en": "Coris Bank International Côte d’Ivoire a annoncé, vendredi 20 novembre 2026 à Abidjan, son projet d’introduction à la Bourse régionale des valeurs mobilières (BRVM), à travers une Offre publique de ve ..."
+   }
   },
   {
    "id": "n10-2026-11-20",
@@ -1652,7 +1744,16 @@
    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQXzdoUUQ1TW5uUDNJUFhiQ0VtQk95YldJS2I4TGJEejRxNGtnYVM0NjBGOWpjdWtRV2VEaFF5UTJUYzlmX25TLWFMMWdwWmpRclkwSnV1QTdkXzRvZWpDaHl3SDZNTXlIT0V2Q0xfT0otcnRRMlZ6WVgtZjBRVGN1dllzZHdqazJsVzlwZlc3eUc3MG9oU29ESnc3Q1EyRnd3LUNIaU5CMV9QSFZYell4SGxEU2ZmYlUyYTR1LWsyRDFhTDBTSWxlWHRhWnczS1NNaXc?oc=5",
    "date": "2026-11-20T14:35:00.000Z",
    "score": 3.2,
-   "img": "http://www.bing.com/th?id=ONUT.WB_DhfkW6MdPzLqlt42i-A&pid=News&w=900&h=1200&c=7&rs=1"
+   "desc": "Le dispositif prévoit notamment de renforcer les contrôles, d'améliorer la traçabilité des marchandises et de démanteler les réseaux financiers liés ...",
+   "img": "http://www.bing.com/th?id=ONUT.WB_DhfkW6MdPzLqlt42i-A&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "fr": "Kenya : le gouvernement présente une stratégie pour lutter contre le commerce illicite",
+    "en": "Kenya : le gouvernement présente une stratégie pour lutter contre le commerce illicite"
+   },
+   "d": {
+    "fr": "Le dispositif prévoit notamment de renforcer les contrôles, d'améliorer la traçabilité des marchandises et de démanteler les réseaux financiers liés ...",
+    "en": "Le dispositif prévoit notamment de renforcer les contrôles, d'améliorer la traçabilité des marchandises et de démanteler les réseaux financiers liés ..."
+   }
   },
   {
    "id": "n11-2026-11-20",
@@ -1663,7 +1764,16 @@
    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPS3BFUDI0N3R0MU5kNW9MMnNjaHRLTnNfV1l5bFJZZFVobkdOM0NDczdkdVJQTmpld3pRSFdVd3dNLWxVMWR6cTF5VDQ5QjQ1bUJlTzhpaXR3ZnZkM3FNZGVkamxSR0xtVmpvS0Z4YV9qWlVSMDJCNU9Ed3pYV0ZtSi1iUmgtaWVhYjllLVotMk5nNnFfck5OZk9JS0NIYWFXQnVSMUpJaGhKUVBNcldfdnBpbE0wODBsY2JPb3I1Q1FUY2Vma1VYbmFfZlh6NFJkaXc?oc=5",
    "date": "2026-11-20T13:59:00.000Z",
    "score": 3.2,
-   "img": "http://www.bing.com/th?id=ONUT.zyk2V51Jknuq3j0LiHZqhA&pid=News&w=900&h=1200&c=7&rs=1"
+   "desc": "Le gouvernement burkinabè entend maintenir ses efforts d'investissement tout en renforçant la mobilisation des ressources intérieures. Les dépenses ...",
+   "img": "http://www.bing.com/th?id=ONUT.Di1QTGhGDUhT7QTvg4Qpqg&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "fr": "Burkina Faso : 3 milliards $ prévus pour les investissements publics dans le budget 2027",
+    "en": "Burkina Faso : 3 milliards $ prévus pour les investissements publics dans le budget 2027"
+   },
+   "d": {
+    "fr": "Le gouvernement burkinabè entend maintenir ses efforts d'investissement tout en renforçant la mobilisation des ressources intérieures. Les dépenses ...",
+    "en": "Le gouvernement burkinabè entend maintenir ses efforts d'investissement tout en renforçant la mobilisation des ressources intérieures. Les dépenses ..."
+   }
   },
   {
    "id": "n12-2026-11-20",
@@ -1674,7 +1784,16 @@
    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcFBGVERHZS1ielFVWkhHWnluUU1vZEpudmMtbEttbUJHSm1SUUVJVUFkeC1hdm9FeUxDUTk3TmttSDRlSzBEQlRETVliQlJGN3BhQTJHVkRKclVEMmpoT0dac01nOUxEOUJBQXVXQTAtZ1BtM2M0Q2N2V1lpcnB1Z2VJX1k5cmdpWHA3eGZ0VUpWcGNtN2RoZnlVa2NYZ0tpb0VzQXFXRDFYUUtTTWkyTmpkLWpEeWN1ZTgwdEZkRzY2aVdTSWhMQnRkVFZTbXJINGc?oc=5",
    "date": "2026-11-20T12:13:00.000Z",
    "score": 3.2,
-   "img": "http://www.bing.com/th?id=ONUT.tiO0I7oJZmqEjSdlbyQjiA&pid=News&w=900&h=1200&c=7&rs=1"
+   "desc": "Le secteur pétrolier sud-soudanais évolue dans un environnement marqué par des contraintes opérationnelles et logistiques. Les perturbations des ...",
+   "img": "http://www.bing.com/th?id=ONUT.tiO0I7oJZmqEjSdlbyQjiA&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "fr": "Soudan du Sud : le gouvernement ouvre 14 blocs pétroliers aux investisseurs",
+    "en": "Soudan du Sud : le gouvernement ouvre 14 blocs pétroliers aux investisseurs"
+   },
+   "d": {
+    "fr": "Le secteur pétrolier sud-soudanais évolue dans un environnement marqué par des contraintes opérationnelles et logistiques. Les perturbations des ...",
+    "en": "Le secteur pétrolier sud-soudanais évolue dans un environnement marqué par des contraintes opérationnelles et logistiques. Les perturbations des ..."
+   }
   },
   {
    "id": "n13-2026-11-20",
@@ -1684,7 +1803,11 @@
    "source": "AGENCE ECOFIN",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZjh1akt6VE1IRTFIQ3F3NU5ySHIyNXd2bHFBak5jQ2ZoMkFiLVRwRk81Vk1GQmp0dGEyZzd0dldOR1BfdXc4cXU1ZkVNNmJhUDFBcnd4Y2Jqc1JjX3k1X3JuNWpyWDRHS3RmLUUtOU44c25ickxISVM4b2hNV1pWeWRpakJHbk52WDNuOFpjRXk0YmtrUG9Zcm1fbzdsNUdqczVDMl9ScFFFYk5zQ3phWDBBQ2RDUW9ESEdVYVhVZTFTN2dhTktZ?oc=5",
    "date": "2026-11-20T12:11:00.000Z",
-   "score": 3.2
+   "score": 3.2,
+   "t": {
+    "fr": "Égypte : 2,3 milliards $ attendus du FMI pour la dernière revue de son programme",
+    "en": "Égypte : 2,3 milliards $ attendus du FMI pour la dernière revue de son programme"
+   }
   },
   {
    "id": "n14-2026-11-20",
@@ -1694,7 +1817,11 @@
    "source": "AGENCE ECOFIN",
    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOU1fZzJvLVNKMUFBbzdhbG10QjRFZ0NuRDFCVUFPMjQ2dWZXajQzSGRyZ21zUDZBRUxlcVdBeHpoMTBGV3hlVHo0ejJOLXZPX0liYU9nNW42ZGM4SlV3SlB4NEpDdmVCanFBblg1bHFKNDc0d1FVTUVEeDd2TlZBaU9ydFFQWmNOVDlEeWNsbDNTYXBLbEkyX3E5ODVXbHU3VzJ6b2ZFQlc4eUdTZzVFUGJtZjBOT0h4MFV5YnVtcjQwVXFmc1VQY0hBbmN2NjFZanZuZ2IzQnJjTG5pV19SQQ?oc=5",
    "date": "2026-11-20T10:16:00.000Z",
-   "score": 3.2
+   "score": 3.2,
+   "t": {
+    "fr": "Nigeria : la Banque centrale cherche à faciliter l’accès aux financements énergétiques",
+    "en": "Nigeria : la Banque centrale cherche à faciliter l’accès aux financements énergétiques"
+   }
   },
   {
    "id": "n15-2026-11-20",
@@ -1705,7 +1832,16 @@
    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZURFTzIwVzRuVWhUcWxJV1o1R3VzZkJXUGRndndnU2pLYlNGaGpMREY5cGZOOHp2aWdSdEwyNUdJRlc5Wm5jLUpDeXpUdmg3ME8ybmtJUWlwSTV3MVloSHFLbndNakNLa2hzMjF1cVljVnhUSm5KX20zanVWS19uM2M2dkY0ZVU3c2ZiV3J5dnZ2UG1JSDRIbjJxQnZqOFZBcTE4RVM4bHl6OFkwbzFQelVpRHZHRFVmX2JrTnZoT1psNm5uOUk2MXFWRzg3ZDZ2b29z?oc=5",
    "date": "2026-11-20T11:32:57.000Z",
    "score": 4.5,
-   "img": "https://io-fsly-bfmtv.cdn.nextradiotv.com/g9rjdxOCFt_aDGI-xLx4rbbf-V4=/0x106:2048x1258/2048x0/images/Le-marche-s-interroge-sur-des-rendements-obligataires-eleves-aux-Etats-Unis-2346594.jpg"
+   "desc": "La dette mondiale, publique et privée, a atteint un niveau record à 365.000 milliards de dollars mi-2026, selon l'Institut de la finance internationale. Mais c'est surtout l'envolée continue des coûts d'emprunt des pays…",
+   "img": "https://io-fsly-bfmtv.cdn.nextradiotv.com/g9rjdxOCFt_aDGI-xLx4rbbf-V4=/0x106:2048x1258/2048x0/images/Le-marche-s-interroge-sur-des-rendements-obligataires-eleves-aux-Etats-Unis-2346594.jpg",
+   "t": {
+    "fr": "Dette de la CEMAC : pourquoi les États se financent de plus en plus auprès de leurs propres banques",
+    "en": "Dette de la CEMAC : pourquoi les États se financent de plus en plus auprès de leurs propres banques"
+   },
+   "d": {
+    "fr": "La dette mondiale, publique et privée, a atteint un niveau record à 365.000 milliards de dollars mi-2026, selon l'Institut de la finance internationale. Mais c'est surtout l'envolée continue des coûts d'emprunt des pays…",
+    "en": "La dette mondiale, publique et privée, a atteint un niveau record à 365.000 milliards de dollars mi-2026, selon l'Institut de la finance internationale. Mais c'est surtout l'envolée continue des coûts d'emprunt des pays…"
+   }
   },
   {
    "id": "n16-2026-11-20",
@@ -1716,7 +1852,16 @@
    "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNRlRoVklnS3dGNnlnei0tcHpmZDA0VHBLQ3RnWGYybzloY3REeVh1VzkycnNONEs5aGRhRk0xSUFxb3FkdEVwWkZKTEdnMmotOWozTHlhM0p6Q2NNdEF6ZWFiYWZucjRadjZ1Vlo4TFlIaEEzcWhBdmNPZlN5VHJvSmlMRnlhUmFhaDhnQlF4RmtfQ2JUR2VKNjZDdXUwRXR2SmF1UzJhTmxXRzl3THBPbXMyQlBEdWx4MlhfaGJqcjhhOTJPa2FCR1duWUZCLUFHRjMwU19SVmkyemNBYzV3Z1FtZ0FpSmd2WjFnQUlIeXNXbFAtcW8tc2I4TnZ5emlZc2RCRGU2SGsxZ1lGYTR3ZEhlSQ?oc=5",
    "date": "2026-11-20T10:54:34.000Z",
    "score": 4.2,
-   "img": "https://www.sikafinance.com/i/info/x/BRVMC0_cbc7290a-1c79-4235-b8e8-474068258943_x.jpg"
+   "desc": "La Banque de développement des États de l'Afrique centrale (BDEAC) prévoit de mobiliser 298,3 milliards FCFA supplémentaires auprès de ...",
+   "img": "https://www.sikafinance.com/i/info/x/BRVMC0_cbc7290a-1c79-4235-b8e8-474068258943_x.jpg",
+   "t": {
+    "fr": "BDEAC : Après son premier Eurobond réussi, la banque ambitionne de lever près de 300 milliards FCFA supplémentaires sur les marchés internationaux",
+    "en": "BDEAC : Après son premier Eurobond réussi, la banque ambitionne de lever près de 300 milliards FCFA supplémentaires sur les marchés internationaux"
+   },
+   "d": {
+    "fr": "La Banque de développement des États de l'Afrique centrale (BDEAC) prévoit de mobiliser 298,3 milliards FCFA supplémentaires auprès de ...",
+    "en": "La Banque de développement des États de l'Afrique centrale (BDEAC) prévoit de mobiliser 298,3 milliards FCFA supplémentaires auprès de ..."
+   }
   },
   {
    "id": "n17-2026-11-20",
@@ -1726,7 +1871,11 @@
    "source": "EcoMatin",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdXltNFphTV90WGg4NzFqS1l1X1kyRDlIUG1JVUF2VHdzWDdLb010Wi1PeU1oOE9hc3lXLXpVak9aWXpJcUQwanFpS0piN3NSZVJfNURKNWxRUEY3aTV0dVFMSmEtLUZmNkJ6MzEwVVZWdE5ma3JDdmM2RklDRTBOMXVVeVg1UUFxUml3Yy1CMkxYYUpQOURpZHBSU2dlU1A1b0dGYTVYZzZtZjVWRHpIU3Z3?oc=5",
    "date": "2026-11-20T13:52:50.000Z",
-   "score": 3.9
+   "score": 3.9,
+   "t": {
+    "fr": "Logistique : le rachat de Portek soumis à l’examen du régulateur de la concurrence de la Cemac",
+    "en": "Logistique : le rachat de Portek soumis à l’examen du régulateur de la concurrence de la Cemac"
+   }
   },
   {
    "id": "n18-2026-11-20",
@@ -1737,7 +1886,16 @@
    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZXM1X2FsSXc5SkdnVFRnVXRuV2dFcjI3TWVhakF2Y0t2b3lSSTgtMkxnb1lzLUpQdFgtTDZiaEN3YzJkVDBueWpPRzZiOWU4V050YXQ1UGZ0enQweVlqekdZNkNCMUczRll6R3I5a1Fub3Y2dGtpUTR0cl9ETG51Z1ppNGNwRFZXQ0VmTndCZVR6dGFZU29YN24yV09tTlZwaVV0SVdHSTRDclMtcFI0QmZzLTFRWW04SllFMGsyYXE?oc=5",
    "date": "2026-11-20T11:29:36.000Z",
    "score": 3.2,
-   "img": "https://www.financialafrik.com/wp-content/uploads/2026/11/PI-BCEAO.jpg"
+   "desc": "Lancé le 30 septembre 2025 par la Banque centrale des États de l’Afrique de l’Ouest (BCEAO), le système de paiement instantané interopérable de l’UEMOA ...",
+   "img": "https://www.financialafrik.com/wp-content/uploads/2026/11/PI-BCEAO.jpg",
+   "t": {
+    "fr": "SIIPS 2026 : le PI-SPI dépasse les 4 millions de transactions en un an dans l’UEMOA",
+    "en": "SIIPS 2026 : le PI-SPI dépasse les 4 millions de transactions en un an dans l’UEMOA"
+   },
+   "d": {
+    "fr": "Lancé le 30 septembre 2025 par la Banque centrale des États de l’Afrique de l’Ouest (BCEAO), le système de paiement instantané interopérable de l’UEMOA ...",
+    "en": "Lancé le 30 septembre 2025 par la Banque centrale des États de l’Afrique de l’Ouest (BCEAO), le système de paiement instantané interopérable de l’UEMOA ..."
+   }
   },
   {
    "id": "n19-2026-11-20",
@@ -1748,7 +1906,16 @@
    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNRlhBWWtRbUtNMDk2WnJsU094RFlwSWw2eFJYdjluclVhaDQtbjRSVXRLWjhsSVRLekJrRm9lS1B0TnVqV3JSeEtBX3lVOHRURXY2WHh2eGtNd1pLVkxUbWNNLVpjQjBLa3kyWEZhT2d5UFR2ZVVsMklJQ1p5TFdzZi1QUFN3WW85Ql8zUGFFTlpMdGR6VXpZTmJzUURXOXk5M3dfd0I1V3BuUUxVa0hncWhIVW5pZC04ZWh4TmR6WmRpNzRGRkt1aU5pY2otQWlHNzltZU9BcE5EczZUVVJTSUFn?oc=5",
    "date": "2026-11-20T09:47:09.000Z",
    "score": 3.2,
-   "img": "http://www.bing.com/th?id=ONUT.oK281cIkScVDRUwIWUPmyA&pid=News&w=900&h=1200&c=7&rs=1"
+   "desc": "Face au rejet du Parlement, le président sénégalais a adopté par décret le budget rectificatif 2026. Un coup de force constitutionnel destiné à débloquer l’aide du FMI, mais qui pourrait bien raviver ...",
+   "img": "http://www.bing.com/th?id=ONUT.oK281cIkScVDRUwIWUPmyA&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "fr": "Comment Bassirou Diomaye Faye a contourné le Parlement pour imposer le budget révisé 2026",
+    "en": "Comment Bassirou Diomaye Faye a contourné le Parlement pour imposer le budget révisé 2026"
+   },
+   "d": {
+    "fr": "Face au rejet du Parlement, le président sénégalais a adopté par décret le budget rectificatif 2026. Un coup de force constitutionnel destiné à débloquer l’aide du FMI, mais qui pourrait bien raviver ...",
+    "en": "Face au rejet du Parlement, le président sénégalais a adopté par décret le budget rectificatif 2026. Un coup de force constitutionnel destiné à débloquer l’aide du FMI, mais qui pourrait bien raviver ..."
+   }
   },
   {
    "id": "n20-2026-11-20",
@@ -1759,7 +1926,16 @@
    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZkE2S2pKN1gyMGFhbDlnQ1JRelJadFB3MkRZZTJhX2x6a091Z3NVVE1WX0pPSmZyNFpKUGlpbC1pZDZub2pIVms2dzJIY0c5TWM2S3lxWXp3OVVhRUVYbEd4bVpVSDM2ek5ESDRCcHJnRXh0VHBhQmxCemNzNUoyOW12NUZUWGtMaXdDOW1R?oc=5",
    "date": "2026-11-20T03:30:00.000Z",
    "score": 3.1,
-   "img": "https://forbesafrique.com/wp-content/uploads/2026/11/IHS-TOWERS_1500-x-1000_forbesafrique.com-.jpg"
+   "desc": "Le Conseil communautaire de la concurrence de la Cemac a autorisé, sous conditions, le rachat du spécialiste des infrastructures télécoms par l’opérateur sud-africain. Une opération de 2,2 milliards d ...",
+   "img": "https://forbesafrique.com/wp-content/uploads/2026/11/IHS-TOWERS_1500-x-1000_forbesafrique.com-.jpg",
+   "t": {
+    "fr": "MTN franchit une étape décisive dans le rachat d’IHS Towers",
+    "en": "MTN franchit une étape décisive dans le rachat d’IHS Towers"
+   },
+   "d": {
+    "fr": "Le Conseil communautaire de la concurrence de la Cemac a autorisé, sous conditions, le rachat du spécialiste des infrastructures télécoms par l’opérateur sud-africain. Une opération de 2,2 milliards d ...",
+    "en": "Le Conseil communautaire de la concurrence de la Cemac a autorisé, sous conditions, le rachat du spécialiste des infrastructures télécoms par l’opérateur sud-africain. Une opération de 2,2 milliards d ..."
+   }
   },
   {
    "id": "n21-2026-11-19",
@@ -1769,7 +1945,11 @@
    "source": "Jeune Afrique",
    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNUlFTQ1Z1RllUQW5YbmVCNXhqTV9nR1Mwa3pPcmViUEtVWTB0RDhjbTR2Zkt1WHhrOTVOSWNnbUpyWFk5RjZiV2NieE43UkdpYzRtOGtNTU9pOExHYm9pcmZ0cjJMcU16T2lwWjg2clpHSVBVQmdwNXkyOUJ3SGU5MFRsZU13YnJjTUpYM09JRFlCQ2VoSk9pU1Q0aktORy1zY2dWRGJtVVVvVXNVVzY1ZXlRN2VVMEtJRVBmRmhBQzV2MnZDTWZHeTJ1dDZxU2NWRWc2bDJwRDdydw?oc=5",
    "date": "2026-11-19T07:43:46.000Z",
-   "score": 3
+   "score": 3,
+   "t": {
+    "fr": "Tours télécoms : le rachat du géant IHS par MTN franchit un cap décisif en zone Cemac",
+    "en": "Tours télécoms : le rachat du géant IHS par MTN franchit un cap décisif en zone Cemac"
+   }
   },
   {
    "id": "n22-2026-11-20",
@@ -1780,7 +1960,16 @@
    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSlVYc0FVS01yaVdTamxnbDJBcTRaRHhOTUVIaGtHUklWN2RXWmdDS2p2RThWMFNQVC1Wc3RxZFE1OG1adXhxNkx6RWFPRUVMbEZ2VGtDTWpDeU1aQkdwUnhGY2ltYUVMbWJ1bXNNR0NwaTZibVhLUVFEOHNVU1BpVlktMGZoVUZCTVYxcC1ycUphRmtlVG9KNThrWnF0d2ZHOWl2bFZ5Ukd6UTBjQkNPMmZBQU1GeVpaaU1ZN3BhVkhfYi1B?oc=5",
    "date": "2026-11-20T17:30:17.000Z",
    "score": 3,
-   "img": "http://www.bing.com/th?id=ONUT.EiDnYaXml6WQFAXqVMtrCQ&pid=News&w=900&h=1200&c=7&rs=1"
+   "desc": "The EUR/USD pair trades in positive territory near 1.0980 during the early European session on Friday. However, the potential upside for the major pair might be limited as hotter-than-expected US ...",
+   "img": "http://www.bing.com/th?id=ONUT.2MJiZD6z_4j9WqllYDiElg&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "EUR/USD Price Forecast — EURUSD (1.0981) 1.1073 Upside Target on Fed-ECB Rate Gap",
+    "fr": "EUR/USD Price Forecast — EURUSD (1.0981) 1.1073 Upside Target on Fed-ECB Rate Gap"
+   },
+   "d": {
+    "en": "The EUR/USD pair trades in positive territory near 1.0980 during the early European session on Friday. However, the potential upside for the major pair might be limited as hotter-than-expected US ...",
+    "fr": "The EUR/USD pair trades in positive territory near 1.0980 during the early European session on Friday. However, the potential upside for the major pair might be limited as hotter-than-expected US ..."
+   }
   },
   {
    "id": "n23-2026-11-19",
@@ -1790,7 +1979,11 @@
    "source": "www.tmgm.com",
    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOOTBrRXBHZF9DNnZXa054NmNyQTNzOWZOLTRfYUJqSTQ5dVRUbGtYWmE5TUE0NzU1VWdjQmp3cjFCSXFxbTRPZFBVYXhRMDlYZmEwU3FMb05LRGJ0R2tWWko5aHJybmt2UUM2bERtWWk3WVBwZ0h5QUJ5bUUyaHNRdGtfMXhSOUNzc1Y3Y25MdFhiMjRFRWV5d0p6bk1ibVB6MlNtYlFrLXRDdWJrZDZNd0ZDQ3o2NWV2WWxIZFhqWW9CRl9MOE5BaHVaY2d0ZVhEYU1HeA?oc=5",
    "date": "2026-11-19T23:09:50.000Z",
-   "score": 2.7
+   "score": 2.7,
+   "t": {
+    "en": "Euro trims losses amid stronger risk appetite and still-low Oil prices",
+    "fr": "Euro trims losses amid stronger risk appetite and still-low Oil prices"
+   }
   },
   {
    "id": "n24-2026-11-19",
@@ -1800,7 +1993,11 @@
    "source": "www.tmgm.com",
    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMGxjU1VYVWlzTmo3eUN1RmRIUm5GTlhTTEIwME5CQ2lXanZPa3ZCNmVKNGlCVXBlRWJfSGc5Qkl3XzN3Q2lTS0dNeW8xcFBCZklJeXBfMWlHMW9oeHRldFMyUjNTWXpPdVZhWDhneGdVaktCMnYyNEotOWE2RlJVMUlFVFpERFR1UXR1NEZudFZzZ0dLTHhwSWZ3NzFWTkI1X2s5MzZEVzRJckNQQm5lVmE5UkRjSnhWZ1hlYmFvdlZMa1ludldZbjJ5Wnp0dVZuRWJEWQ?oc=5",
    "date": "2026-11-19T22:54:38.000Z",
-   "score": 2.7
+   "score": 2.7,
+   "t": {
+    "en": "Euro trims losses as risk appetite strengthens and oil prices stay low",
+    "fr": "Euro trims losses as risk appetite strengthens and oil prices stay low"
+   }
   },
   {
    "id": "n25-2026-11-19",
@@ -1811,7 +2008,16 @@
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORGViZ0JLU3lkQ29GanpDcmZVWFlObjBPQmdkN3owMXUyQ3Jnc294TVVNcXBqTV9jLVFPNFg3NG9DaklZbGgxNmxBcW4zWnMwQU1SenNZcVJudDVWSDVRVmxxa0hMcnZmRkxpR1NwbnNfX05GVURZOE84ci1zWklEekVuRmNkamNnZ0JaYVppNkctZDdDLXZfUVVtU1FyZ3JzQVlUMG5hc3BuclZEaVdleXZn?oc=5",
    "date": "2026-11-19T09:56:08.000Z",
    "score": 2.2,
-   "img": "http://www.bing.com/th?id=ONUT.7q78wXNNQstNJqzhdr4bTg&pid=News&w=900&h=1200&c=7&rs=1"
+   "desc": "The Euro (EUR) posts mild gains against the US Dollar (USD) on Thursday, as a moderate risk appetite and lower Oil prices have put a lid on the US Dollar’s rally.",
+   "img": "http://www.bing.com/th?id=ONUT.7q78wXNNQstNJqzhdr4bTg&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "Euro pares losses as risk appetite improves and Oil prices remain low",
+    "fr": "Euro pares losses as risk appetite improves and Oil prices remain low"
+   },
+   "d": {
+    "en": "The Euro (EUR) posts mild gains against the US Dollar (USD) on Thursday, as a moderate risk appetite and lower Oil prices have put a lid on the US Dollar’s rally.",
+    "fr": "The Euro (EUR) posts mild gains against the US Dollar (USD) on Thursday, as a moderate risk appetite and lower Oil prices have put a lid on the US Dollar’s rally."
+   }
   },
   {
    "id": "n26-2026-11-19",
@@ -1821,7 +2027,11 @@
    "source": "www.tmgm.com",
    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMG1XbUlBWW51cEcxQUZmMnJQWU9MaDk5X3E3bGsxQ2pVNFRmUU1xcm1hNXcyRDJwYVRtTnkyVFNZa0hSUEJLMjg2S2xHZ1VHNG9fR0FxR1pmanlrcTh2QWsxU3RRZk5KNkNyb1hpbGxTM25fenZPQ2hwMmx0UEJtVGYybldXdjV6Q3hYZUpFbnA4ZFRzWF9pYVdzZ1BzZGhacE9XMlpETmJiNWdRR0RLajlYR1czajBzYTM1VTJJSWQ0X2dZaHFubXIxODZTNExUeXBHdElR?oc=5",
    "date": "2026-11-19T08:13:42.000Z",
-   "score": 2.1
+   "score": 2.1,
+   "t": {
+    "en": "Euro shows little movement amid steady US Dollar and hawkish Fed signals",
+    "fr": "Euro shows little movement amid steady US Dollar and hawkish Fed signals"
+   }
   },
   {
    "id": "n27-2026-11-19",
@@ -1832,7 +2042,16 @@
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQck0xeXplVHY4c3ZDcWVhc1MxcHFhZVpKMVc4R0NEeGlzQkRFQWdRS3NhS0dZZXdwM0ZTaWh1aDZLUEQ1STlZNzlmYjlYcDdtRWhrbDQ4NjNNWl9RQVdNemtrLTJ1RmlTeFloSWtsQ1l1ckJ0bnJPMmJpZTJfODB2eWRnQlNPYW1UUnljczZZRGcxNTVKRUlabTNoVl94d0dyTXN2S3Z0b2lRSWRkbmJLVXZ1Yw?oc=5",
    "date": "2026-11-19T01:07:10.000Z",
    "score": 1.8,
-   "img": "http://www.bing.com/th?id=ONUT.myN59FeNNt2T6LaVY41RzA&pid=News&w=900&h=1200&c=7&rs=1"
+   "desc": "EUR/USD remains flat after posting modest losses the previous day, trading around 1.0980 during Asian hours on Thursday. The currency pair may face downward pressure as the US Dollar (USD) gains ...",
+   "img": "http://www.bing.com/th?id=ONUT.myN59FeNNt2T6LaVY41RzA&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "Euro moves little as US Dollar remains stable amid hawkish Fed signals",
+    "fr": "Euro moves little as US Dollar remains stable amid hawkish Fed signals"
+   },
+   "d": {
+    "en": "EUR/USD remains flat after posting modest losses the previous day, trading around 1.0980 during Asian hours on Thursday. The currency pair may face downward pressure as the US Dollar (USD) gains ...",
+    "fr": "EUR/USD remains flat after posting modest losses the previous day, trading around 1.0980 during Asian hours on Thursday. The currency pair may face downward pressure as the US Dollar (USD) gains ..."
+   }
   },
   {
    "id": "n28-2026-11-18",
@@ -1842,7 +2061,11 @@
    "source": "BigGo Finance",
    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE55UTZ4ZEFVR3lKa0w5WVpmWlZqZ2ZDTTcxOUJWbnhMTkRsalJzRGVUSmstMlNvVEZkc2dhdFZYNUZuODVTT1NNWFFVTnlFeUhYZEp5UldGdDk3SGU1YWEwbnE2QmxfYk1NLXB6Mkp2VFlDclIzb3c?oc=5",
    "date": "2026-11-18T22:35:00.000Z",
-   "score": 1.7
+   "score": 1.7,
+   "t": {
+    "en": "Dollar-Yen Little Changed in Lower 159 Range as Oil Slump, Hawkish Fed Comments Offset",
+    "fr": "Dollar-Yen Little Changed in Lower 159 Range as Oil Slump, Hawkish Fed Comments Offset"
+   }
   },
   {
    "id": "n29-2026-11-19",
@@ -1852,18 +2075,31 @@
    "source": "TorFX News",
    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbFlCdC1iWEZfcXMxRTFpTGtOMGp4M1czd0dOX2tLT2lqTEt0eGtRQ2lKMHRCWWZPWXBiSGluMmMtdmUtQlJlY1kyOExQZ2V4Z29uOVUxY1VoT3JNRHI5MUFCeWpZeS1HazBaQUtpeG4wWGhCTHdlZVE4VEEySHhFX3liNE9QLWE3TDNpQzRUYlJTUUhuZ0ww?oc=5",
    "date": "2026-11-19T09:08:29.000Z",
-   "score": 1.5
+   "score": 1.5,
+   "t": {
+    "en": "US dollar hits multi-month highs on hawkish Fed bets",
+    "fr": "US dollar hits multi-month highs on hawkish Fed bets"
+   }
   },
   {
-   "id": "n30-2026-11-19",
+   "id": "n30-2026-11-20",
    "cat": "bev",
    "lang": "en",
-   "title": "Perspective - Chef Rachel Khoo: 'You don't need fancy kitchen gadgets to cook delicious food'",
-   "source": "France 24",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNU2I1UGV0TWlQYTl1ZnpsOFlZNW00VHNqTHIwM0FkNkFtMnkyRHNSRnRwU1plUnFtWmlKS0VIYnVqUmlabjBFTER0VEZaQ1F0Um5hSjUzNWVuZENyUFZqQnJWM18wakxHaE1wcWhnbnFXX3oweVlwYzNhZHFKZzRvVkF6TGJBaVpaYzRUcDJXeXhJc3F4RVIwVWJXOEktSHJXR1lha25wWWJKT2padm1pRi1ld3RuMzFhNjdZNllRbFFneHk3djVtaEN0RHRET1U?oc=5",
-   "date": "2026-11-19T14:24:12.000Z",
-   "score": 1.9,
-   "img": "http://www.bing.com/th?id=ONUT.wTV3lT74gOcw_INWH7Ytew&pid=News&w=900&h=1200&c=7&rs=1"
+   "title": "Pakistan Weekly Inflation Falls 0.65% as Tomato Prices Drop 30%",
+   "source": "Bloom Pakistan",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNDY0aWVuMWF0T1NzcmhQYmJWbGZwZm4wQ0p4RmtzRVk1OVc3dnhBejRlNlFzVW1oeFJkeGZMRnZtRjlOZU1HaG9va1JvTk9UU1BXaEdsMzFYMm9aZllZYURBVVVxdDJocmpDVXFkSWktTGZYQzlIT1dfWEV2OEhlaUpSX1Fxak5kNGg2NVk3VWFXdw?oc=5",
+   "date": "2026-11-20T12:16:19.000Z",
+   "score": 2.4,
+   "desc": "Pakistan's weekly inflation rate declined by 0.65 per cent, bringing annual inflation to 10.41 per cent. The Pakistan Bureau of Statistics (PBS) released its latest weekly price report on Friday. However, prices of several…",
+   "img": "https://dailytimes.com.pk/assets/uploads/2026/11/20/Pakistan-records-0.65-weekly-decline-in-inflation.jpg",
+   "t": {
+    "en": "Pakistan Weekly Inflation Falls 0.65% as Tomato Prices Drop 30%",
+    "fr": "Pakistan Weekly Inflation Falls 0.65% as Tomato Prices Drop 30%"
+   },
+   "d": {
+    "en": "Pakistan's weekly inflation rate declined by 0.65 per cent, bringing annual inflation to 10.41 per cent. The Pakistan Bureau of Statistics (PBS) released its latest weekly price report on Friday. However, prices of several…",
+    "fr": "Pakistan's weekly inflation rate declined by 0.65 per cent, bringing annual inflation to 10.41 per cent. The Pakistan Bureau of Statistics (PBS) released its latest weekly price report on Friday. However, prices of several…"
+   }
   },
   {
    "id": "n31-2026-11-19",
@@ -1873,10 +2109,34 @@
    "source": "Medias24",
    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9sWDhyX1NoLWlYV2RVS3VOQ0lFVjd1NW9WVk00dVB0dEpYRnA2WTU5bEExbTF0M05DdjhKa05WWVduUDJObDB1NHl5T2lYNzF1VXBPdTNYQWUybWx6U0ZBQ3NWRnRwazZ2emFPZg?oc=5",
    "date": "2026-11-19T16:08:21.000Z",
-   "score": 1.8
+   "score": 1.8,
+   "t": {
+    "en": "Bourse de Casablanca : Details de l'action cfg-bank",
+    "fr": "Bourse de Casablanca : Details de l'action cfg-bank"
+   }
   },
   {
-   "id": "n32-2026-11-20",
+   "id": "n32-2026-11-19",
+   "cat": "bev",
+   "lang": "en",
+   "title": "Perspective - Chef Rachel Khoo: 'You don't need fancy kitchen gadgets to cook delicious food'",
+   "source": "France 24",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNU2I1UGV0TWlQYTl1ZnpsOFlZNW00VHNqTHIwM0FkNkFtMnkyRHNSRnRwU1plUnFtWmlKS0VIYnVqUmlabjBFTER0VEZaQ1F0Um5hSjUzNWVuZENyUFZqQnJWM18wakxHaE1wcWhnbnFXX3oweVlwYzNhZHFKZzRvVkF6TGJBaVpaYzRUcDJXeXhJc3F4RVIwVWJXOEktSHJXR1lha25wWWJKT2padm1pRi1ld3RuMzFhNjdZNllRbFFneHk3djVtaEN0RHRET1U?oc=5",
+   "date": "2026-11-19T14:24:12.000Z",
+   "score": 1.8,
+   "desc": "One of the world's best-known chefs has spoken to FRANCE 24 about her new book that proves you certainly don't need fancy kitchen gadgets to cook delicious meals. The book \"The Smallest Restaurant in ...",
+   "img": "http://www.bing.com/th?id=ONUT.wTV3lT74gOcw_INWH7Ytew&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "Perspective - Chef Rachel Khoo: 'You don't need fancy kitchen gadgets to cook delicious food'",
+    "fr": "Perspective - Chef Rachel Khoo: 'You don't need fancy kitchen gadgets to cook delicious food'"
+   },
+   "d": {
+    "en": "One of the world's best-known chefs has spoken to FRANCE 24 about her new book that proves you certainly don't need fancy kitchen gadgets to cook delicious meals. The book \"The Smallest Restaurant in ...",
+    "fr": "One of the world's best-known chefs has spoken to FRANCE 24 about her new book that proves you certainly don't need fancy kitchen gadgets to cook delicious meals. The book \"The Smallest Restaurant in ..."
+   }
+  },
+  {
+   "id": "n33-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "Sugar Prices Fall on Abundant Global Supplies",
@@ -1884,20 +2144,59 @@
    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNcGsweXVXNmlnV0Fkc3dTSVcxeHJ4dzhLb2dMcWhkb2dVYW5UdHNuRGZUSUtwREJWdFNwSkdUb3lKX2p4eTlCa2hJSFpNMVRRU1g0S2xIOUlYUHFhRHM3UjlUcTJfLThjNW1ISXlHQjFPbWd1ZzNxUTNPR185VTVsQllGWWZxcjdVamMyb1pBNjhwNlE?oc=5",
    "date": "2026-11-20T17:22:35.000Z",
    "score": 1.7,
-   "img": "https://i2.wp.com/see.news/images/2026/11/erergergergjpg-1793997069-0.jpg?resize=701,394&quality=72&strip=all&ssl=1"
-  },
-  {
-   "id": "n33-2026-11-20",
-   "cat": "bev",
-   "lang": "en",
-   "title": "Brazilian Real Weakness Triggers Sharp Correction in Sugar Prices — CMB News",
-   "source": "CMB News",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOWWs0MUpmNGZVazctNG5yY2xRMFBGaVZiX3RFUDhuTXdWSVUzaWw3bVZKSXF0eFJ5ZV9iXzdYN01LTk5xREo4WjFHb0F1RjBTTHhnc0Y5dmFNNXQyODE4ZXJoLTZtQ1lQTVVKdkdocnlrdWNXTlk1YWFJc0VrYVhCYmhSOGVnUzNQVm1zcERLc3htQkt6YUZodWw3QkF6Zw?oc=5",
-   "date": "2026-11-20T13:33:38.000Z",
-   "score": 1.7
+   "desc": "Global food prices declined in October, falling 1.2% from September, as lower costs for cereals, dairy products and meat outweighed a continued surge in sugar prices, according to the latest report released Friday by the United…",
+   "img": "https://i2.wp.com/see.news/images/2026/11/erergergergjpg-1793997069-0.jpg?resize=701,394&quality=72&strip=all&ssl=1",
+   "t": {
+    "en": "Sugar Prices Fall on Abundant Global Supplies",
+    "fr": "Sugar Prices Fall on Abundant Global Supplies"
+   },
+   "d": {
+    "en": "Global food prices declined in October, falling 1.2% from September, as lower costs for cereals, dairy products and meat outweighed a continued surge in sugar prices, according to the latest report released Friday by the United…",
+    "fr": "Global food prices declined in October, falling 1.2% from September, as lower costs for cereals, dairy products and meat outweighed a continued surge in sugar prices, according to the latest report released Friday by the United…"
+   }
   },
   {
    "id": "n34-2026-11-20",
+   "cat": "bev",
+   "lang": "en",
+   "title": "Competitive Analysis of Bottles Market: FMI Examines Recycled",
+   "source": "openPR.com",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVXprNktMYlY0SUcwclpXWHhqbF8yX2FVbGhrTVFEUk5ZUktQUXBkVHBHdVRIanNiTTRtTXVJcEgxd1UyNHpuVVRrQ3dwTnFHWXd5S1ZleGZhSWZQMDBPX0dndlZrNV9CVlRoc0tPRXh1ZDVzQlA5cDZJVVFjdWhGZFgwUTk3MWRXdmV6UkJldFJuaXFFdGd3ZS14VG0?oc=5",
+   "date": "2026-11-20T16:19:37.000Z",
+   "score": 1.7,
+   "desc": "The global bottles market is projected to grow from USD 130.3 billion in 2026 to USD 185.6 billion by 2036, registering a compound annual growth rate (CAGR) of 3.6% during the forecast period, according to the latest market…",
+   "img": "http://www.bing.com/th?id=ONUT.1H7LqGbx9OFPqeHRbZwBsQ&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "Competitive Analysis of Bottles Market: FMI Examines Recycled",
+    "fr": "Competitive Analysis of Bottles Market: FMI Examines Recycled"
+   },
+   "d": {
+    "en": "The global bottles market is projected to grow from USD 130.3 billion in 2026 to USD 185.6 billion by 2036, registering a compound annual growth rate (CAGR) of 3.6% during the forecast period, according to the latest market…",
+    "fr": "The global bottles market is projected to grow from USD 130.3 billion in 2026 to USD 185.6 billion by 2036, registering a compound annual growth rate (CAGR) of 3.6% during the forecast period, according to the latest market…"
+   }
+  },
+  {
+   "id": "n35-2026-11-20",
+   "cat": "bev",
+   "lang": "en",
+   "title": "Brazilian Real Weakness Triggers Sharp Correction in Sugar Prices",
+   "source": "CMB News",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOWWs0MUpmNGZVazctNG5yY2xRMFBGaVZiX3RFUDhuTXdWSVUzaWw3bVZKSXF0eFJ5ZV9iXzdYN01LTk5xREo4WjFHb0F1RjBTTHhnc0Y5dmFNNXQyODE4ZXJoLTZtQ1lQTVVKdkdocnlrdWNXTlk1YWFJc0VrYVhCYmhSOGVnUzNQVm1zcERLc3htQkt6YUZodWw3QkF6Zw?oc=5",
+   "date": "2026-11-20T13:33:38.000Z",
+   "score": 1.7,
+   "desc": "March NY world sugar #11 (SBH27) closed down -0.88 (-4.88%) on Thursday, and March London ICE white sugar #5 (SWH27) closed down -18.90 (-3.73%). Sugar prices plummeted on Thursday, with NY sugar ...",
+   "img": "http://www.bing.com/th?id=ONUT.WxLDK1K6J8X4OPN2NK6GhQ&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "Brazilian Real Weakness Triggers Sharp Correction in Sugar Prices",
+    "fr": "Brazilian Real Weakness Triggers Sharp Correction in Sugar Prices"
+   },
+   "d": {
+    "en": "March NY world sugar #11 (SBH27) closed down -0.88 (-4.88%) on Thursday, and March London ICE white sugar #5 (SWH27) closed down -18.90 (-3.73%). Sugar prices plummeted on Thursday, with NY sugar ...",
+    "fr": "March NY world sugar #11 (SBH27) closed down -0.88 (-4.88%) on Thursday, and March London ICE white sugar #5 (SWH27) closed down -18.90 (-3.73%). Sugar prices plummeted on Thursday, with NY sugar ..."
+   }
+  },
+  {
+   "id": "n36-2026-11-20",
    "cat": "bev",
    "lang": "en",
    "title": "Union Minister Chirag Paswan Calls on Beverage Industry to Make India a Global Centre for Manufacturing, Innovation and Exports",
@@ -1905,38 +2204,24 @@
    "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQeDQyZnpzV0VsNTYxX1lHRzJtaEg3b2xpRWFqQnl2V0ZfYjRLZThXc0dxZ0FMR0FXR01zMkQ3UHh4Y0dRaWQ1NzBoeWFGdUJLdzROVUc0UUUwSllaRUNJaFJxMXB3UkhrSDVmYV9wV0REZDdpQXIzUlhEQ3JkMW0zRFlmT3pjeUdUVFdRRm10cmVGNjBpODJtZ1ZzS3ptNG8weTR4MmxMOXBvTVFyNGtkc1JMejFYTTRtWWkxV2F0ZnFlblZKMEZISjRPNjRYSVdTTmlwd2k1dGZpSS1TcGcwM2ZQQ0NHdVA1a1FuUVBvLUdiMFFkSkFkb2JSdVVYZ2dHOWc?oc=5",
    "date": "2026-11-20T12:30:00.000Z",
    "score": 1.7,
-   "img": "https://media.assettype.com/outlookbusiness/2026-11-20/3vcx0pkc/Chirag-Paswan?w=1200&amp;ar=40%3A21&amp;auto=format%2Ccompress&amp;ogImage=true&amp;mode=crop&amp;enlarge=true&amp;overlay=false&amp;overlay_position=bottom&amp;overlay_width=100"
-  },
-  {
-   "id": "n35-2026-11-20",
-   "cat": "bev",
-   "lang": "en",
-   "title": "Sugar Market Update: Maharashtra Output Rises, EU Prices Stabilise — CMB News",
-   "source": "CMB News",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNWxXckVfbHZCZGZLMDJkb2cySWRWSWM4X1RzcGtaRllGdzVKRVRwLW9xOXpIMkdUQ2tpY0RWbnFBek1XVktISlA1UFpyWnRDRVpMNlFjVTQ1ZHlELVFuS0RYTmJVUW9WZ2pfUlVDSmpxSHN5bVdHZzBuLUs5TXBiUDVhMkY2WXo5LWl6Y3FGUnlKZGltbnhxV2g2TXlEYVZXUEE?oc=5",
-   "date": "2026-11-20T09:07:44.000Z",
-   "score": 1.7,
-   "img": "http://www.bing.com/th?id=ONUT.ZgVsxTYJz6kRchsURfCQig&pid=News&w=900&h=1200&c=7&rs=1"
-  },
-  {
-   "id": "n36-2026-11-20",
-   "cat": "bev",
-   "lang": "en",
-   "title": "EU raw sugar import prices fall below global benchmarks",
-   "source": "УкрАгроКонсалт",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVzlCYnpSMU1ZZVN3RVNmN2paX1hyeTJPT2pNMGFiTWVVWFg3N2NRaUlYX0lkZ01QQmlGU3A5eS1lbXV6RE03cXlrVWhQTE1BRjFlZ0pjZlY1NzdDaExGT2JfLVd1SERqN09rcEZyRjlEenhrVjk4U1plZ3NYdHNPMm9fV1NRZ3VVSWtuVWVwd1JfMkdFOHc?oc=5",
-   "date": "2026-11-20T07:58:55.000Z",
-   "score": 1.7
+   "t": {
+    "en": "Union Minister Chirag Paswan Calls on Beverage Industry to Make India a Global Centre for Manufacturing, Innovation and Exports",
+    "fr": "Union Minister Chirag Paswan Calls on Beverage Industry to Make India a Global Centre for Manufacturing, Innovation and Exports"
+   }
   },
   {
    "id": "n37-2026-11-20",
    "cat": "bev",
    "lang": "en",
-   "title": "Commodity market: Raw sugar and copper prices plummet.",
-   "source": "Vietnam.vn",
-   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZmxWd2lxR3NpRmU1ZFdLU2hrTGMzcTlINFlSZ3VIVDhPTDFSbXRLbUFIdF9sQkM3NnhLdW1wUm1lM1B0ZkYxcUZEOFZsQTNGQnFxZlNnazNMbUdfcy1Xa3BDR1hDQ2NkNU5MSkdYQ3h0dE9UOHJkd2tIX29uTVBDLXd2QWpBWTA?oc=5",
-   "date": "2026-11-20T07:30:23.000Z",
-   "score": 1.7
+   "title": "Sugar Market Update: Maharashtra Output Rises, EU Prices Stabilise",
+   "source": "CMB News",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNWxXckVfbHZCZGZLMDJkb2cySWRWSWM4X1RzcGtaRllGdzVKRVRwLW9xOXpIMkdUQ2tpY0RWbnFBek1XVktISlA1UFpyWnRDRVpMNlFjVTQ1ZHlELVFuS0RYTmJVUW9WZ2pfUlVDSmpxSHN5bVdHZzBuLUs5TXBiUDVhMkY2WXo5LWl6Y3FGUnlKZGltbnhxV2g2TXlEYVZXUEE?oc=5",
+   "date": "2026-11-20T09:07:44.000Z",
+   "score": 1.7,
+   "t": {
+    "en": "Sugar Market Update: Maharashtra Output Rises, EU Prices Stabilise",
+    "fr": "Sugar Market Update: Maharashtra Output Rises, EU Prices Stabilise"
+   }
   },
   {
    "id": "n38-2026-11-18",
@@ -1947,7 +2232,16 @@
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbEx2em1ya2dGV2VUaUlPclp0S2NYT1Z3TXg4a3NnalNLUVMzaXVYeTNQMm9SRnVXd2ZnR1pqWUVBaWxtM0ZFTURLbjhWdEpmWE12TVNudU9GSnpmYVRYX0xneGdaTVpOMHQyTFVNZFFKUkhWdUVpc3MwVHVrSWhmS18yNkp6cUVhbFh2T0NEUU1PSnVzQzNVeXVMV1FibWctSzFTNA?oc=5",
    "date": "2026-11-18T12:39:05.000Z",
    "score": 3,
-   "img": "https://www.sikafinance.com/i/info/b/BRVMC0_3de3b261-3354-4399-ad64-05937c857755_b.jpg"
+   "desc": "Le financement des États prend une place grandissante dans les bilans bancaires de l'UEMOA, au risque de réduire les ressources disponibles pour les entreprises. En 2025, les émissions nettes de ...",
+   "img": "https://www.sikafinance.com/i/info/b/BRVMC0_3de3b261-3354-4399-ad64-05937c857755_b.jpg",
+   "t": {
+    "fr": "UEMOA : Le risque souverain pèse sur 37,6% des actifs bancaires",
+    "en": "UEMOA : Le risque souverain pèse sur 37,6% des actifs bancaires"
+   },
+   "d": {
+    "fr": "Le financement des États prend une place grandissante dans les bilans bancaires de l'UEMOA, au risque de réduire les ressources disponibles pour les entreprises. En 2025, les émissions nettes de ...",
+    "en": "Le financement des États prend une place grandissante dans les bilans bancaires de l'UEMOA, au risque de réduire les ressources disponibles pour les entreprises. En 2025, les émissions nettes de ..."
+   }
   },
   {
    "id": "n39-2026-11-17",
@@ -1958,7 +2252,16 @@
    "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQc2VENnZfQm1BNmFiX0N0LUJyYk0xNzJoU083dkV2aTNQLWtJajBYTW16QkFVOG1rcEJOTUM5UWw3Mk9fa1hVdnhrTHBkaFBUb1JBYWdZeEtTZjhSOGlaX0lZdEg1dHRRMFh0NkVDZERIQ2hEQ2U2endaUm5heU45YXQxRks0OGktQmo1Mk9NVU5PLXAydkhWRko4LVRPNm1qLUZJOXNSS3ctVlcySVBwOVZNMHhBT1pub0o5OWdZY0d6QTM1cUZ5Vy1EbXd0ZGxNZG9WZjctaDRzSHJER3oweHQxeXhzQ2dHMDVXdEQ1eEdydUVqS3hJSg?oc=5",
    "date": "2026-11-17T14:25:00.000Z",
    "score": 3,
-   "img": "https://www.investiraucameroun.com/media/k2/items/cache/b9e4e6e237018790f0a2e381138dacc5_L.jpg"
+   "desc": "Les organismes de placement collectif en valeurs mobilières (OPCVM) de la CEMAC détenaient, au 30 juin 2026, 925,3 milliards de FCFA de titres publics émis sur le marché des valeurs du Trésor de la BE ...",
+   "img": "https://www.investiraucameroun.com/media/k2/items/cache/b9e4e6e237018790f0a2e381138dacc5_L.jpg",
+   "t": {
+    "fr": "CEMAC : les fonds cumulent 925 milliards de FCFA de titres du Trésor, dont 177 milliards d’OTA en fonds monétaires",
+    "en": "CEMAC : les fonds cumulent 925 milliards de FCFA de titres du Trésor, dont 177 milliards d’OTA en fonds monétaires"
+   },
+   "d": {
+    "fr": "Les organismes de placement collectif en valeurs mobilières (OPCVM) de la CEMAC détenaient, au 30 juin 2026, 925,3 milliards de FCFA de titres publics émis sur le marché des valeurs du Trésor de la BE ...",
+    "en": "Les organismes de placement collectif en valeurs mobilières (OPCVM) de la CEMAC détenaient, au 30 juin 2026, 925,3 milliards de FCFA de titres publics émis sur le marché des valeurs du Trésor de la BE ..."
+   }
   },
   {
    "id": "n40-2026-11-19",
@@ -1968,7 +2271,11 @@
    "source": "Capmad",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNR2lKTVF6QUFPUUxXY21vNHlJNDQtN3BHS3JHVmpyLWthM01jYlBndlpCbURlZjg1b25VWnlnLWEyeTlKcE9lMHRnczFGV3dfMUw0NlhpaFNTdnhYclhuTEZ2YUdOMGpCRWZ0aUFsQXdPdHJ0SHZia3B3WEkxYjVwaXM1RTJ5N0hJay1ERUJ6UnpNVXowdmk4TmdiMzdRNFFCdDhMRGhVZXdycGM?oc=5",
    "date": "2026-11-19T23:56:00.000Z",
-   "score": 2.8
+   "score": 2.7,
+   "t": {
+    "fr": "UEMOA : la BCEAO reconstitue ses réserves de change à 41 milliards USD en 2025",
+    "en": "UEMOA : la BCEAO reconstitue ses réserves de change à 41 milliards USD en 2025"
+   }
   },
   {
    "id": "n41-2026-11-18",
@@ -1979,7 +2286,16 @@
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTW5VLTNGSXQyeVhDYTkwbTN3TWhWSWppbk52Z3VoR0h3U2lCbWIwNGFtY1BKT09Ob3J6RFk0X3ZidjB3OWd3cV9YcmJyRjhQNWRPSi1haTdyY3M5dVlYM3VTS3pNMC1abThYLVBvaWVKSHNOTzdNUnNsVVo4QUlEbFdJcWZ2cjNhVUd4aHV6SEFRcldQQjMtWnRLMS1tWG45VU5TaTgyUjJQUQ?oc=5",
    "date": "2026-11-18T17:09:06.000Z",
    "score": 2.4,
-   "img": "https://cdn.zonebourse.com/static/web-assets/images/editorial/fallback/twitter_zb_fdblanc.png"
+   "desc": "Les réserves de change de l'Indonésie ont progressé de 1,2 milliard de dollars en août pour atteindre 146,5 milliards de dollars, a annoncé lundi la banque centrale. L'institution a précisé que ce... -Le 07 septembre 2026 à 05:08…",
+   "img": "https://cdn.zonebourse.com/static/web-assets/images/editorial/fallback/twitter_zb_fdnoir.png",
+   "t": {
+    "fr": "UEMOA : Les réserves de change grimpent à 41 milliards USD en 2025",
+    "en": "UEMOA : Les réserves de change grimpent à 41 milliards USD en 2025"
+   },
+   "d": {
+    "fr": "Les réserves de change de l'Indonésie ont progressé de 1,2 milliard de dollars en août pour atteindre 146,5 milliards de dollars, a annoncé lundi la banque centrale. L'institution a précisé que ce... -Le 07 septembre 2026 à 05:08…",
+    "en": "Les réserves de change de l'Indonésie ont progressé de 1,2 milliard de dollars en août pour atteindre 146,5 milliards de dollars, a annoncé lundi la banque centrale. L'institution a précisé que ce... -Le 07 septembre 2026 à 05:08…"
+   }
   },
   {
    "id": "n42-2026-11-17",
@@ -1989,7 +2305,17 @@
    "source": "Investir au Cameroun",
    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNWnVBMi15SFFIYjFTTFRNenV3ZWRUREFfZGdWZW15M0dzRmdKTnBzRzFHNUFIM2tqQmNxMXJpM01zcjJxVDJUaERjbDZGLVM5OHc5M0JOWDkyeVlfNzRQRTN4ZWJKclQ0Q3hITURqUDBycU5tdU1iU2l0UUpLcDVPVGE4UTZhVGQ2TWt6eHdwVERuVS1yNFVCNXpaY2dqckV1Mm4tNF8zNnJNNGdXakxJUWVHbm9ZbXUzXzVoZHNqMzJCN1JVMFVzemlEWjAxUVRkbG9naVpJVUE5WDBwTXJvN1ZxVE5aSHJNc1VwNlVnRWRyZw?oc=5",
    "date": "2026-11-17T10:57:00.000Z",
-   "score": 2.4
+   "score": 2.4,
+   "desc": "La société américaine Aeternum Resources a signé huit accords de financement totalisant 1,91 million de dollars, soit environ 1,14 milliard de FCFA. Mais aucun des montants prévus par ces accords n'av ...",
+   "img": "https://www.investiraucameroun.com/media/k2/items/cache/ac4942b8815b47fb1d0027b1dc628604_L.jpg",
+   "t": {
+    "fr": "Nkamouna : Aeternum signe des accords de financement de 1,14 milliard de FCFA, le rachat d’ARM reste en suspens",
+    "en": "Nkamouna : Aeternum signe des accords de financement de 1,14 milliard de FCFA, le rachat d’ARM reste en suspens"
+   },
+   "d": {
+    "fr": "La société américaine Aeternum Resources a signé huit accords de financement totalisant 1,91 million de dollars, soit environ 1,14 milliard de FCFA. Mais aucun des montants prévus par ces accords n'av ...",
+    "en": "La société américaine Aeternum Resources a signé huit accords de financement totalisant 1,91 million de dollars, soit environ 1,14 milliard de FCFA. Mais aucun des montants prévus par ces accords n'av ..."
+   }
   },
   {
    "id": "n43-2026-11-16",
@@ -1999,7 +2325,11 @@
    "source": "EcoMatin",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPYTFuaXZOMnlDNExyVzFQWk9oWWRuMHdMYkc5TndTTmVNRF8yWE1uYklGdUVOdUdjNTYzZnhsQzZzM2I2ejFLMEFoVnlwdkdQQnFLUmRPYmE3NkFjYTZiQjB1RERMYmJmMko0bWRHbVVMQkk0SFo2c0c5LWVXd1JfVUl3anpjdG1EQkg3SUlZNENoYVEtMzJGOThGLTRGaklNLUx3QV9HcmNsbUVPN0pxeWM3SWlOQ1Q0ajZXZmNSVQ?oc=5",
    "date": "2026-11-16T23:49:39.000Z",
-   "score": 2.4
+   "score": 2.4,
+   "t": {
+    "fr": "Dette : le Cameroun, le Congo et le Gabon sollicitent 60 milliards FCFA sur le marché des titres publics",
+    "en": "Dette : le Cameroun, le Congo et le Gabon sollicitent 60 milliards FCFA sur le marché des titres publics"
+   }
   },
   {
    "id": "n44-2026-11-20",
@@ -2009,20 +2339,47 @@
    "source": "Daily Beirut",
    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdmc3a3VraTN0OGhnZ0lidzJFbko0TFRvMTg4WnpnYWRrVHlDU1BhZ2RwX041cUpmckt4VjhJVTFiZm5SdnZmdHpJcWFBdVprQ1RnLVZJUXhDNUdMQmhnUUtEMXJ4dTVCVkZ0YmYydzhsalBjeE5UODhQcjU3TUF0bXhfaDRMbnNJYjNpdzF1Qk9jNmw2TmtkNXpTa01VQmVEcDlYeEgwOXc2TXNVdDM1WnNieFRuRlhCQmFxR2J3?oc=5",
    "date": "2026-11-20T17:31:10.000Z",
-   "score": 1.7
+   "score": 1.7,
+   "t": {
+    "en": "International Decision to Update Lebanon's Communications; President Aoun Launches Battle to Protect Economy and Combat Smuggling",
+    "fr": "International Decision to Update Lebanon's Communications; President Aoun Launches Battle to Protect Economy and Combat Smuggling"
+   }
   },
   {
    "id": "n45-2026-11-20",
+   "cat": "lebanon",
+   "lang": "en",
+   "title": "Michel Issa Visits Zahle, Says Reforms and Peace Are Needed for U.S. Investment in Lebanon: 6 outlets compared",
+   "source": "NewsCord",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPRENqQkxWLXJDTFVRbDFDVGd6Nk1ENkUxYnVzT1ZWZ0ptQnV6TTR6TVFHZmhXRzRQcjZZdkQ3UTB6eUhsZ3VYS2lITTJUak5ZOGZzOVU5b1FobXdULW1JT3NHSUZQUC0zYUxQaUs1S0V1Rm9QZVRqZmdvV0pRODUyTThrbnlQcnZ6b1l1Q21NV3Jtbm1ueWcxc2hxNFRzQ1lPUkZ3R25XLWgzRGh2c2hQcUtJd201QkdsekhxWFg5S1ktUUtiWDlraF9tNml3Mnh3UHU4TExRb0Q4ZC1SNnVpN3p2aFlRSF9Z?oc=5",
+   "date": "2026-11-20T17:19:23.000Z",
+   "score": 1.7,
+   "desc": "U.S. Ambassador to Lebanon Michel Issa visited Zahle on November 19, and met with local political and business leaders to discuss recent political and economic developments as well as investment ...",
+   "t": {
+    "en": "Michel Issa Visits Zahle, Says Reforms and Peace Are Needed for U.S. Investment in Lebanon: 6 outlets compared",
+    "fr": "Michel Issa Visits Zahle, Says Reforms and Peace Are Needed for U.S. Investment in Lebanon: 6 outlets compared"
+   },
+   "d": {
+    "en": "U.S. Ambassador to Lebanon Michel Issa visited Zahle on November 19, and met with local political and business leaders to discuss recent political and economic developments as well as investment ...",
+    "fr": "U.S. Ambassador to Lebanon Michel Issa visited Zahle on November 19, and met with local political and business leaders to discuss recent political and economic developments as well as investment ..."
+   }
+  },
+  {
+   "id": "n46-2026-11-20",
    "cat": "lebanon",
    "lang": "en",
    "title": "Lebanon Discusses Electricity Financing and Port Expansion with European Bank Within Economic Recovery Path",
    "source": "Daily Beirut",
    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQT0R5NkxSYk96WEEtdDVBVllha2k3Z2hBaE9zalhyMVMxaUFMYnI4MjdOWnNqMWpIa1hKQVN2bWtNd0FwT0hTellRd3k1SlNlOFYzUTQ3ZEZCcUR4cEFGUEE4Z3IybERVUkZHRG94YV9XLUMzX3pLMUpraFBaUjRONUxGdnBYcXdyNEZkOEVSdHNUSjFla05WcERRN3lzeTN1Sm9ZSWs2WXYwQVJSaVZSdzUybGQwSEVvTVE?oc=5",
    "date": "2026-11-20T14:47:16.000Z",
-   "score": 1.7
+   "score": 1.7,
+   "t": {
+    "en": "Lebanon Discusses Electricity Financing and Port Expansion with European Bank Within Economic Recovery Path",
+    "fr": "Lebanon Discusses Electricity Financing and Port Expansion with European Bank Within Economic Recovery Path"
+   }
   },
   {
-   "id": "n46-2026-11-20",
+   "id": "n47-2026-11-20",
    "cat": "lebanon",
    "lang": "en",
    "title": "Yemen's Houthis threaten counter-strike if Saudi coalition hits Red Sea port",
@@ -2030,20 +2387,33 @@
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMzQ2c0tqVWtkQ3ZHaktHZnpCVG4tRXZFZlJXM25Fekc5RXFKYlJyOGhDZVR2Z215VFB6YndSZThaaHk1THZGN013NmJKd1dTaVZVcEtIdzBZMFVJdWNCRzY5UTJkY280SEh0LWpxX2tubmZDRC1nWkVqZmFON1kwYU5JaE9CQmhubHF6cG5JSW9FaXJhTVBrNE1yNnBZTTFUaFRvZm01eERDYi02aVNWSVROM1ZLZm0tTUVqSjVXaFBiUQ?oc=5",
    "date": "2026-11-20T11:34:02.000Z",
    "score": 1.7,
-   "img": "http://www.bing.com/th?id=ONUT.ULHHnrxpN7vGLGFMZcC5vw&pid=News&w=900&h=1200&c=7&rs=1"
+   "desc": "The Saudi-led coalition fighting Yemen's Iran-aligned Houthis said it had struck the Red Sea port of Hodeidah ‌to destroy Houthi capabilities on Friday, as the militants warned airlines to avoid Saudi ...",
+   "img": "http://www.bing.com/th?id=ONUT.ULHHnrxpN7vGLGFMZcC5vw&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "Yemen's Houthis threaten counter-strike if Saudi coalition hits Red Sea port",
+    "fr": "Yemen's Houthis threaten counter-strike if Saudi coalition hits Red Sea port"
+   },
+   "d": {
+    "en": "The Saudi-led coalition fighting Yemen's Iran-aligned Houthis said it had struck the Red Sea port of Hodeidah ‌to destroy Houthi capabilities on Friday, as the militants warned airlines to avoid Saudi ...",
+    "fr": "The Saudi-led coalition fighting Yemen's Iran-aligned Houthis said it had struck the Red Sea port of Hodeidah ‌to destroy Houthi capabilities on Friday, as the militants warned airlines to avoid Saudi ..."
+   }
   },
   {
-   "id": "n47-2026-11-20",
+   "id": "n48-2026-11-20",
    "cat": "lebanon",
    "lang": "en",
    "title": "Lebanon’s Economy Ministry Launches New Digital Platform for Intellectual Property Registration: 5 outlets compared",
    "source": "NewsCord",
    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPY2lkaGFaS1dubm5sdGJucHRUcXVSNzlrRGZxVk9PUGNQVmRNZ1l1UWxjNFZPX09FVFBxMzBWUjFsSHozNHBFR1NZRnEydjl3SlVocnd0WmU0cm5qQWVpTmtCZkFBM2NUVWxEblVJT2ZTeWstV0hkSUptV24wY2dJR09wMFNIelA1Y3VOVUtuRTJjNTU4UlVBajBXOWt4VTlaUFZJMFNsNGFpeG9QLVhFeHZQcWtfcWQ1dTRWbS1VYml6X2RIR29qdHpybEtLM09KT3ZHeVkwTVA0dEpNMXkyT3lxSWFyUUF0Tnc?oc=5",
    "date": "2026-11-20T11:22:53.000Z",
-   "score": 1.7
+   "score": 1.7,
+   "t": {
+    "en": "Lebanon’s Economy Ministry Launches New Digital Platform for Intellectual Property Registration: 5 outlets compared",
+    "fr": "Lebanon’s Economy Ministry Launches New Digital Platform for Intellectual Property Registration: 5 outlets compared"
+   }
   },
   {
-   "id": "n48-2026-11-20",
+   "id": "n49-2026-11-20",
    "cat": "lebanon",
    "lang": "en",
    "title": "Fuel prices drop across Lebanon",
@@ -2051,11 +2421,28 @@
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRS11SERTcTRwMGp2ekJjZkduZjVhNURITXNjSmNWU0k2QkhJcTZRaUtlY0dWRWtoSzY5NnVPTG1XX1pXcWxOVUNpVDJUR1hreTUzZFpNRUxCRU9LUXdQX2pDN3BNd2JzQXBHZ0hpaDFHeHgzaUd4eUdHRWZ2LTdTeXo4UnA?oc=5",
    "date": "2026-11-20T07:29:53.000Z",
    "score": 1.7,
-   "img": "https://www.lbcgroup.tv/uploadImages/DocumentImages/Doc-T-968344-639304975855928210.jpg"
+   "desc": "On Tuesday, November 17, 2026, 95- and 98-octane fuel prices fell by LBP 48,000, while diesel decreased by LBP 31,000 and gas by LBP 4,000. The current prices for hydrocarbon deri ...",
+   "img": "https://www.lbcgroup.tv/uploadImages/DocumentImages/Doc-T-968344-639304975855928210.jpg",
+   "t": {
+    "en": "Fuel prices drop across Lebanon",
+    "fr": "Fuel prices drop across Lebanon"
+   },
+   "d": {
+    "en": "On Tuesday, November 17, 2026, 95- and 98-octane fuel prices fell by LBP 48,000, while diesel decreased by LBP 31,000 and gas by LBP 4,000. The current prices for hydrocarbon deri ...",
+    "fr": "On Tuesday, November 17, 2026, 95- and 98-octane fuel prices fell by LBP 48,000, while diesel decreased by LBP 31,000 and gas by LBP 4,000. The current prices for hydrocarbon deri ..."
+   }
   }
  ],
  "log": [
-  "photos: 26/41 {\"nomatch\":14,\"empty\":33}",
-  "photos: 11/13 {\"nomatch\":17,\"empty\":36}"
+  "photos: 28/42 {\"nomatch\":15,\"empty\":28}",
+  "translate 429",
+  "translate 429",
+  "translate 429",
+  "translate 429",
+  "translate 429",
+  "translate 429",
+  "translate 429",
+  "translated 0/50",
+  "photos: 11/13 {\"nomatch\":18,\"empty\":31}"
  ]
 }
