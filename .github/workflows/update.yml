@@ -1,1 +1,40 @@
+name: Update Business Desk
 
+on:
+  schedule:
+    - cron: "15 7 * * *"   # 08:15 Brazzaville, ready before 09:00
+    - cron: "30 12 * * *"  # 13:30 Brazzaville, midday refresh
+    - cron: "30 17 * * *"  # 18:30 Brazzaville, evening refresh
+  workflow_dispatch: {}    # "Run workflow" button for a manual refresh
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-brief
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Build today's brief
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+        run: node scripts/update.mjs
+      - name: Save the brief
+        run: |
+          git config user.name "business-desk-bot"
+          git config user.email "business-desk-bot@users.noreply.github.com"
+          git add data/brief.json
+          git diff --cached --quiet && echo "No change" && exit 0
+          git commit -m "Brief $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git push
