@@ -68,6 +68,7 @@ function cleanTitle(t, source) {
 }
 function cleanDesc(d, title) {
   d = decode(String(d || "")).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  d = d.replace(/^By [A-Z][\w.'-]+(?: [A-Z][\w.'-]+){0,3}\s+(?=[A-Z]{2,})/, "").replace(/^[A-ZÀ-Ý][A-ZÀ-Ý .,'’-]{1,40}(?:,\s*\w{3,9}\.?\s*\d{1,2})?\s*\([^)]{2,30}\)\s*[-–—]\s*/, "");
   if (!d || d.length < 40) return null;
   const tw = title.toLowerCase().slice(0, 40);
   if (d.toLowerCase().startsWith(tw)) return null;                         // just repeats the headline
@@ -354,29 +355,67 @@ headlines = headlines.filter(h => { const k = h.title.toLowerCase().slice(0, 60)
 if (!MOCK) await addPhotos(cfg.news.flatMap(n => headlines.filter(h => h.cat === n.cat).slice(0, 6)));
 
 /* ---------- Both languages: every headline and summary in English and French ---------- */
+let gBlocked = false, mmLeft = 30;
+async function gTranslate(chunk, sl, tl) {
+  const q = encodeURIComponent(chunk.join("\n"));
+  const urls = [
+    `https://translate.googleapis.com/translate_a/single?client=gtx&sl=${sl}&tl=${tl}&dt=t&q=${q}`,
+    `https://translate.google.com/translate_a/single?client=gtx&sl=${sl}&tl=${tl}&dt=t&q=${q}`,
+    `https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=${sl}&tl=${tl}&q=${q}`
+  ];
+  for (const [k, u] of urls.entries()) {
+    for (let a = 0; a < 2; a++) {
+      try {
+        const r = await fetch(u, { headers: { "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15" }, signal: AbortSignal.timeout(10000) });
+        if (r.status === 429) { await new Promise(res => setTimeout(res, 2500 * (a + 1))); continue; }
+        if (!r.ok) break;
+        const j = await r.json();
+        const txt = k < 2 ? j[0].map(x => x[0]).join("") : (Array.isArray(j[0]) ? j[0][0] : j[0]);
+        const lines = String(txt).split("\n");
+        if (lines.length === chunk.length) return lines.map(l => l.trim());
+        break;
+      } catch { break; }
+    }
+  }
+  return null;
+}
+async function mmTranslate(text, sl, tl) {        // MyMemory fallback, one short text at a time
+  if (mmLeft-- <= 0 || text.length > 480) return null;
+  try {
+    const r = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${sl}|${tl}`, { signal: AbortSignal.timeout(8000) });
+    const j = await r.json();
+    const t = j && j.responseStatus == 200 && j.responseData && j.responseData.translatedText;
+    return t && !/MYMEMORY WARNING|QUERY LENGTH/i.test(t) ? decode(t) : null;
+  } catch { return null; }
+}
 async function translateBatch(texts, sl, tl) {
   const out = new Array(texts.length).fill(null);
   let i = 0;
   while (i < texts.length) {
-    const chunk = []; let len = 0;
-    while (i < texts.length && (len + texts[i].length < 1800 || !chunk.length)) { chunk.push(texts[i]); len += texts[i].length + 1; i++; }
-    try {
-      const r = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=${sl}&tl=${tl}&dt=t&q=${encodeURIComponent(chunk.join("\n"))}`, { signal: AbortSignal.timeout(10000) });
-      if (!r.ok) throw new Error("translate " + r.status);
-      const lines = (await r.json())[0].map(x => x[0]).join("").split("\n");
-      if (lines.length === chunk.length) lines.forEach((l, k) => out[i - chunk.length + k] = l.trim());
-      else log.push(`translate: ${lines.length}/${chunk.length} lines`);
-    } catch (e) { log.push(e.message); }
-    if (!MOCK) await new Promise(res => setTimeout(res, 300));
+    const start = i, chunk = []; let len = 0;
+    while (i < texts.length && (len + texts[i].length < 1500 || !chunk.length)) { chunk.push(texts[i]); len += texts[i].length + 1; i++; }
+    const got = gBlocked ? null : await gTranslate(chunk, sl, tl);
+    if (got) got.forEach((l, k) => out[start + k] = l);
+    else {
+      if (!gBlocked) log.push("translate: Google unavailable, using MyMemory");
+      gBlocked = true;
+      for (let k = 0; k < chunk.length; k++) if (chunk[k].length > 3) out[start + k] = await mmTranslate(chunk[k], sl, tl);
+    }
+    if (!MOCK) await new Promise(res => setTimeout(res, 400));
   }
   return out;
 }
 const isFrench = s => /[àâçéèêëîïôûùüœ]|\b(le|la|les|des|du|une|et|pour|dans|sur|avec|aux|au|est|sont)\b/i.test(s);
 async function bilingual(list) {
   if (MOCK) return;
-  let n = 0;
+  // Reuse translations from the previous run: most headlines stay the same from one hour to the next
+  const prevT = new Map((prevBrief.news || []).filter(h => h.t).map(h => [h.title, h]));
+  let n = 0, reused = 0;
+  for (const h of list) { const p = prevT.get(h.title); if (p && p.t && Object.values(p.t).some(v => v !== h.title)) { h.t = p.t; if (p.d) h.d = p.d; if (h.desc && !h.d) h.desc = h.desc; reused++; } }
+  // Translate the stories people actually see first (top 6 of each section), then the rest
+  const order = cfg.news.flatMap(c => list.filter(h => h.cat === c.cat)).sort((a, b) => (list.filter(x => x.cat === a.cat).indexOf(a) < 6 ? 0 : 1) - (list.filter(x => x.cat === b.cat).indexOf(b) < 6 ? 0 : 1));
   for (const [sl, tl] of [["en", "fr"], ["fr", "en"]]) {
-    const items = list.filter(h => (isFrench(h.title) ? "fr" : "en") === sl);
+    const items = order.filter(h => !h.t && (isFrench(h.title) ? "fr" : "en") === sl);
     const texts = items.flatMap(h => [h.title, h.desc || ""]).map(x => x || ".");
     const tr = await translateBatch(texts, sl, tl);
     items.forEach((h, k) => {
@@ -386,9 +425,39 @@ async function bilingual(list) {
       if (tt) n++;
     });
   }
-  log.push(`translated ${n}/${list.length}`);
+  log.push(`translated ${n} new, reused ${reused}, of ${list.length}`);
 }
 await bilingual(headlines);
+
+/* ---------- Markets: one line on why each price moved, from today's headlines ---------- */
+const MK_KEYS = {
+  usdxaf: /\b(dollar|greenback|euro|fed|federal reserve|ecb|bce|treasur(y|ies)|yields?|rendements?|forex|currenc(y|ies)|devises?|taux de change|rate cuts?|rate hikes?|baisse des taux|hausse des taux)\b/i,
+  eurusd: /\b(dollar|greenback|euro|fed|federal reserve|ecb|bce|treasur(y|ies)|yields?|forex|currenc(y|ies)|devises?|rate cuts?|rate hikes?)\b/i,
+  brent: /\b(oil|crude|brent|wti|opec\+?|opep|barrels?|barils?|pétrole|petrol|brut)\b/i,
+  wti: /\b(oil|crude|brent|wti|opec\+?|opep|barrels?|barils?|pétrole|brut|shale)\b/i,
+  gold: /\b(gold|bullion|precious metals?|safe[- ]haven|l'or|cours de l'or|métaux précieux|valeur refuge)\b/i,
+  silver: /\b(silver|precious metals?|argent métal|métaux précieux|gold)\b/i,
+  sugar: /\b(sugar|sucre)\b/i
+};
+for (const m of markets) {
+  const re = MK_KEYS[m.id]; if (!re || typeof m.change_pct !== "number") continue;
+  if (Math.abs(m.change_pct) < 0.2) { m.why = { en: "Little change since the previous close.", fr: "Peu de variation depuis la clôture précédente." }; continue; }
+  const cand = headlines.filter(h => re.test(h.title) || (h.t && re.test(h.t.en || "")) || (h.d && re.test((h.d.en || "") + " " + (h.d.fr || ""))))
+    .map(h => ({ h, s: (h.score || 0) + (re.test(h.title) || (h.t && re.test(h.t.en || "")) ? 1.5 : 0) + (h.cat === "markets" ? 1 : 0) - Math.max(0, (Date.now() - new Date(h.date)) / 36e5 - 24) / 12 }))
+    .sort((a, b) => b.s - a.s);
+  const best = cand[0] && cand[0].h;
+  if (best) { m.why = { en: (best.t && best.t.en) || best.title, fr: (best.t && best.t.fr) || best.title, source: best.source, url: best.url }; continue; }
+  // No headline: explain the move by what moved with it
+  const PEERS = { gold: ["silver", "eurusd"], silver: ["gold"], brent: ["wti"], wti: ["brent"], sugar: ["brent"], eurusd: ["gold"], usdxaf: ["eurusd"] };
+  const pc = x => (x > 0 ? "+" : "−") + Math.abs(x).toFixed(1) + "%";
+  const peers = (PEERS[m.id] || []).map(id => markets.find(x => x.id === id)).filter(x => x && typeof x.change_pct === "number");
+  const up = m.change_pct > 0, same = peers.filter(p => Math.sign(p.change_pct) === Math.sign(m.change_pct) && Math.abs(p.change_pct) >= 0.2);
+  const frName = { Gold: "l'or", Silver: "l'argent", Brent: "le Brent", "Crude Oil WTI": "le WTI", "EUR/USD": "l'EUR/USD", Sugar: "le sucre" };
+  m.why = same.length
+    ? { en: `${up ? "Up" : "Down"} ${pc(m.change_pct).slice(1)}, moving with ${same.map(p => p.name + " (" + pc(p.change_pct) + ")").join(" and ")}: a broad ${up ? "rally" : "sell-off"} rather than one-off news.`,
+        fr: `${up ? "En hausse" : "En baisse"} de ${pc(m.change_pct).slice(1).replace(".", ",")}, comme ${same.map(p => (frName[p.name] || p.name) + " (" + pc(p.change_pct).replace(".", ",") + ")").join(" et ")} : un mouvement d'ensemble plutôt qu'une nouvelle isolée.` }
+    : { en: `${up ? "Up" : "Down"} ${pc(m.change_pct).slice(1)} with no single headline behind it yet.`, fr: `${up ? "En hausse" : "En baisse"} de ${pc(m.change_pct).slice(1).replace(".", ",")}, sans actualité précise pour l'instant.` };
+}
 
 const otd = await onThisDay();
 // The briefing (Play video + article of the day) is rebuilt every 8 hours; news and markets every run.
