@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-20T11:50:59.187Z",
+ "generated_at": "2026-11-20T12:00:12.440Z",
  "summary_mode": "rules",
  "peg": 655.957,
  "fx": {
-  "eurusd": 1.0964912176132202,
-  "usdxaf": 598.2327897051924,
+  "eurusd": 1.0961307287216187,
+  "usdxaf": 598.4295329125762,
   "usdxaf_prev": 597.8457318897565,
   "date": "2026-11-20"
  },
@@ -16,10 +16,10 @@
    "unit": "XAF per USD",
    "dp": 1,
    "cost": 1,
-   "value": 598.2327897051924,
+   "value": 598.4295329125762,
    "prev": 597.8457318897565,
    "date": "2026-11-20",
-   "change_pct": 0.06474208893529898,
+   "change_pct": 0.09765078040688824,
    "series": [
     [
      "2026-10-21",
@@ -107,7 +107,7 @@
     ],
     [
      "2026-11-20",
-     598.2327897051924
+     598.4295329125762
     ]
    ],
    "source": "655.957 ÷ EUR/USD",
@@ -120,10 +120,10 @@
    "unit": "USD per EUR",
    "dp": 4,
    "cost": -1,
-   "value": 1.0964912176132202,
+   "value": 1.0961307287216187,
    "prev": 1.0972011089324951,
    "date": "2026-11-20",
-   "change_pct": -0.06470020067383953,
+   "change_pct": -0.09755551668352291,
    "series": [
     [
      "2026-10-21",
@@ -211,7 +211,7 @@
     ],
     [
      "2026-11-20",
-     1.0964912176132202
+     1.0961307287216187
     ]
    ],
    "source": "Yahoo Finance",
@@ -224,10 +224,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 89.29000091552734,
+   "value": 89.18000030517578,
    "prev": 91.9800033569336,
    "date": "2026-11-20",
-   "change_pct": -2.9245513625038133,
+   "change_pct": -3.044143237190633,
    "series": [
     [
      "2026-10-22",
@@ -315,7 +315,7 @@
     ],
     [
      "2026-11-20",
-     89.29000091552734
+     89.18000030517578
     ]
    ],
    "source": "Yahoo Finance",
@@ -328,10 +328,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 82.47000122070312,
+   "value": 82.33000183105469,
    "prev": 83.20999908447266,
    "date": "2026-11-20",
-   "change_pct": -0.8893136304668148,
+   "change_pct": -1.057561907343152,
    "series": [
     [
      "2026-10-22",
@@ -419,7 +419,7 @@
     ],
     [
      "2026-11-20",
-     82.47000122070312
+     82.33000183105469
     ]
    ],
    "source": "Yahoo Finance",
@@ -432,10 +432,10 @@
    "unit": "USD/oz",
    "dp": 0,
    "cost": 0,
-   "value": 3587.60009765625,
+   "value": 3582.699951171875,
    "prev": 3685.5,
    "date": "2026-11-20",
-   "change_pct": -2.656353339947093,
+   "change_pct": -2.789310780847243,
    "series": [
     [
      "2026-10-22",
@@ -523,7 +523,7 @@
     ],
     [
      "2026-11-20",
-     3587.60009765625
+     3582.699951171875
     ]
    ],
    "source": "Yahoo Finance",
@@ -536,10 +536,10 @@
    "unit": "USD/oz",
    "dp": 2,
    "cost": 0,
-   "value": 42.45500183105469,
+   "value": 42.310001373291016,
    "prev": 44.31800079345703,
    "date": "2026-11-20",
-   "change_pct": -4.203707137162627,
+   "change_pct": -4.530888993671556,
    "series": [
     [
      "2026-10-22",
@@ -627,7 +627,7 @@
     ],
     [
      "2026-11-20",
-     42.45500183105469
+     42.310001373291016
     ]
    ],
    "source": "Yahoo Finance",
@@ -867,7 +867,8 @@
     "source": "Bloomberg.com",
     "date": "2026-11-20T11:00:30.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9Bem9kWjBIcUtfa0xHOW0yQm1mV3A0VFVFZlh4X0hvWjlmckZSTDNGWlB1NGtzWFkyTTVSc0tNNW9tbUxGNURvNExmRTdTYnJyTTJtUGd1dkEyZklWR2xOSkphQ2s1d0NjZE9CRDc4SWtreWJxbDVoOFFnM2toQldLUHR5VUZFTDk4bDBXaWdodTh1?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9Bem9kWjBIcUtfa0xHOW0yQm1mV3A0VFVFZlh4X0hvWjlmckZSTDNGWlB1NGtzWFkyTTVSc0tNNW9tbUxGNURvNExmRTdTYnJyTTJtUGd1dkEyZklWR2xOSkphQ2s1d0NjZE9CRDc4SWtreWJxbDVoOFFnM2toQldLUHR5VUZFTDk4bDBXaWdodTh1?oc=5",
+    "img": null
    },
    {
     "level": "",
@@ -878,7 +879,8 @@
     "source": "Bénin Web TV",
     "date": "2026-11-20T11:34:21.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdGJEbWZGbURNUFIzYmZyVDBhb3F3aWQzcXJ5c2ZWdDh2X2FKdm1URndTS19yZlZaWGVTdkdoQ3lkazlsVHlja0VGWXEtekdxN0UzTHVjTnV5Ymc4T2FmYXRhbk96X29XMmZqSVp4SWlfLVhBOXhoYnlfeldTaTdjMTI3eGs0Mnp4YXc?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdGJEbWZGbURNUFIzYmZyVDBhb3F3aWQzcXJ5c2ZWdDh2X2FKdm1URndTS19yZlZaWGVTdkdoQ3lkazlsVHlja0VGWXEtekdxN0UzTHVjTnV5Ymc4T2FmYXRhbk96X29XMmZqSVp4SWlfLVhBOXhoYnlfeldTaTdjMTI3eGs0Mnp4YXc?oc=5",
+    "img": null
    },
    {
     "level": "",
@@ -889,7 +891,8 @@
     "source": "La Nouvelle Tribune",
     "date": "2026-11-20T11:32:57.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZURFTzIwVzRuVWhUcWxJV1o1R3VzZkJXUGRndndnU2pLYlNGaGpMREY5cGZOOHp2aWdSdEwyNUdJRlc5Wm5jLUpDeXpUdmg3ME8ybmtJUWlwSTV3MVloSHFLbndNakNLa2hzMjF1cVljVnhUSm5KX20zanVWS19uM2M2dkY0ZVU3c2ZiV3J5dnZ2UG1JSDRIbjJxQnZqOFZBcTE4RVM4bHl6OFkwbzFQelVpRHZHRFVmX2JrTnZoT1psNm5uOUk2MXFWRzg3ZDZ2b29z?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZURFTzIwVzRuVWhUcWxJV1o1R3VzZkJXUGRndndnU2pLYlNGaGpMREY5cGZOOHp2aWdSdEwyNUdJRlc5Wm5jLUpDeXpUdmg3ME8ybmtJUWlwSTV3MVloSHFLbndNakNLa2hzMjF1cVljVnhUSm5KX20zanVWS19uM2M2dkY0ZVU3c2ZiV3J5dnZ2UG1JSDRIbjJxQnZqOFZBcTE4RVM4bHl6OFkwbzFQelVpRHZHRFVmX2JrTnZoT1psNm5uOUk2MXFWRzg3ZDZ2b29z?oc=5",
+    "img": null
    },
    {
     "level": "",
@@ -900,18 +903,20 @@
     "source": "www.tmgm.com",
     "date": "2026-11-19T23:09:50.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOOTBrRXBHZF9DNnZXa054NmNyQTNzOWZOLTRfYUJqSTQ5dVRUbGtYWmE5TUE0NzU1VWdjQmp3cjFCSXFxbTRPZFBVYXhRMDlYZmEwU3FMb05LRGJ0R2tWWko5aHJybmt2UUM2bERtWWk3WVBwZ0h5QUJ5bUUyaHNRdGtfMXhSOUNzc1Y3Y25MdFhiMjRFRWV5d0p6bk1ibVB6MlNtYlFrLXRDdWJrZDZNd0ZDQ3o2NWV2WWxIZFhqWW9CRl9MOE5BaHVaY2d0ZVhEYU1HeA?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOOTBrRXBHZF9DNnZXa054NmNyQTNzOWZOLTRfYUJqSTQ5dVRUbGtYWmE5TUE0NzU1VWdjQmp3cjFCSXFxbTRPZFBVYXhRMDlYZmEwU3FMb05LRGJ0R2tWWko5aHJybmt2UUM2bERtWWk3WVBwZ0h5QUJ5bUUyaHNRdGtfMXhSOUNzc1Y3Y25MdFhiMjRFRWV5d0p6bk1ibVB6MlNtYlFrLXRDdWJrZDZNd0ZDQ3o2NWV2WWxIZFhqWW9CRl9MOE5BaHVaY2d0ZVhEYU1HeA?oc=5",
+    "img": null
    },
    {
     "level": "",
     "cat": "bev",
     "owner": "Beverages & packaging",
-    "title": "Transparent Plastic Packaging Market to Reach USD 157.7 Billion",
+    "title": "Why Is Chirag Paswan Supporting Review Of 40% GST On Beverages?",
     "detail": "",
-    "source": "openPR.com",
-    "date": "2026-11-20T10:26:21.000Z",
+    "source": "ETV Bharat",
+    "date": "2026-11-20T11:47:49.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSlpwMXRLY1BhNjduVmFJam56NmMtREtGMjFjU3V2ckdsUXJtM3J0RERDcTBnSmF0WWhvMTZuUXdWYUdEZVFZSzViNEtHTFlfVTB4OGlEMkVyWXF5enJfanhneVA3VS1tUVpsNzROaWYxQWYxZ29XUzJMR0t3VklReDNpblBIek5Ia0l2YjN2cUxSdGl6eV9PdEdKZ3dNTHY5?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVmx4WlpUaFpHU1NoczZVRHh2NUxpSWdqbWxfMlF1d1hoOTJYQ2l6UmJrSXcxTC1JZTFkaDZFU3VJYWRsY1R2RDB4MVBQbmpiQmFYdUc2VU5wUzRaYVMxdldpQ0w2NkVMUzBDcXVRb09ZaU9rQnlfbTVBbzc5a0lBZzh6Rm1yX2ZPejdraGEtdE5XV0M4Y0JTR2RFNGRmNUNvS3BIeUpZMEJhNmY3TEwwZ3dRcjFiampEUGhiZ2pDSdIBxAFBVV95cUxNOExWd2JZX0xja3FRRURCSURhemR4U3RzRkE1ZEdDWG14WlNkRHlqN3M2RUFTSTRZRHhKaXFjUXhVTEx1NDA2U2llTHI4TE9RNzE1MDZtSXRYc016MUV2cUFYczNGMTM0dUcyMjNFUHRlTHpCY2hTVE5nWjNxbUZmcDcxNWVLWEdwM0U4Z2RkWjVJbkxkU1k0NjVVS1NNVWNiMFZCUDhPdElXOElhNkhGR0ZWdkVXdFJzSjZKVnlFTXVDRVJs?oc=5",
+    "img": null
    },
    {
     "level": "",
@@ -922,18 +927,20 @@
     "source": "Capmad",
     "date": "2026-11-20T03:17:00.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQel9UeTFxQWJvTTFDaWtoU2dobVNTQ0V2UGdrMzVEV2cwcDU4bVNPMzhYcmJpNms0TEtDSEhJNmRLSVhhbWRVN3FXN1ZsRTNsNVluSHpRWTA5OUJ3eWY4UFVPMEJWQlVrQmdrMi11c3JJa0E1N21iN1pGb1Fpa0VRY0l0ZzItM1NDZW1kTGhrNGVmUFFLZy1RQkltNXB4a3ROdVI3S2x5ZWJ1TmhzaFE?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQel9UeTFxQWJvTTFDaWtoU2dobVNTQ0V2UGdrMzVEV2cwcDU4bVNPMzhYcmJpNms0TEtDSEhJNmRLSVhhbWRVN3FXN1ZsRTNsNVluSHpRWTA5OUJ3eWY4UFVPMEJWQlVrQmdrMi11c3JJa0E1N21iN1pGb1Fpa0VRY0l0ZzItM1NDZW1kTGhrNGVmUFFLZy1RQkltNXB4a3ROdVI3S2x5ZWJ1TmhzaFE?oc=5",
+    "img": null
    },
    {
     "level": "",
     "cat": "lebanon",
     "owner": "Lebanon",
-    "title": "Lebanon’s Economy Ministry Launches New Digital Platform for Intellectual Property Registration: 5 outlets compared",
+    "title": "UN Security Council Discusses Resolution 1701, Renews Support for UNIFIL and Lebanon’s Sovereignty",
     "detail": "",
     "source": "NewsCord",
-    "date": "2026-11-20T11:22:53.000Z",
+    "date": "2026-11-20T11:26:20.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPY2lkaGFaS1dubm5sdGJucHRUcXVSNzlrRGZxVk9PUGNQVmRNZ1l1UWxjNFZPX09FVFBxMzBWUjFsSHozNHBFR1NZRnEydjl3SlVocnd0WmU0cm5qQWVpTmtCZkFBM2NUVWxEblVJT2ZTeWstV0hkSUptV24wY2dJR09wMFNIelA1Y3VOVUtuRTJjNTU4UlVBajBXOWt4VTlaUFZJMFNsNGFpeG9QLVhFeHZQcWtfcWQ1dTRWbS1VYml6X2RIR29qdHpybEtLM09KT3ZHeVkwTVA0dEpNMXkyT3lxSWFyUUF0Tnc?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNRWFNWTkwcGhtREczVjJJRElabDJSUzYyb3B3bVgwZS05WTZzOFRtWU9VRXNxaUp2Um5JZ2xLVTcyR2dmSXZFWkN2ZVN1cm5QVHFLb25jbUtRaFA1bVh1TEFUbE40cUhGQW1LaTYybjd5R0JzNW9NTzI4Ym1QU2tKUU1BeDFoSHY1RTRCakxVZklsT1lZQmtzdzJxckRsSjQwSnEyWHZ3d1dFZ1N0ZWxkeVpJRkh4SC1vQURRTU1URDJQRWVGaVVPLWpQblpFclUzemhlX0V3WFpmX2pXVlotTUV6RlJRWjFFYmc?oc=5",
+    "img": null
    },
    {
     "level": "",
@@ -944,7 +951,8 @@
     "source": "eia.media",
     "date": "2026-11-20T10:02:21.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbGtKTzQwOHd6V29ST0Ryakt6bjJOMC05QWkySDhVVlZabzNadjVnclAzSWY3aFpZMGdKX2Q5TFNuZUJCcE1DbGJaU29BWFV4LUJQZEVPcnZzNm1oX3lFc2M4RXc3SXpNZVNzMGFQMFp3czJkSzQ0WWszRGJPcHVuVkNIWTgwZ3NkRkp1cGp6QkJSUGs?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbGtKTzQwOHd6V29ST0Ryakt6bjJOMC05QWkySDhVVlZabzNadjVnclAzSWY3aFpZMGdKX2Q5TFNuZUJCcE1DbGJaU29BWFV4LUJQZEVPcnZzNm1oX3lFc2M4RXc3SXpNZVNzMGFQMFp3czJkSzQ0WWszRGJPcHVuVkNIWTgwZ3NkRkp1cGp6QkJSUGs?oc=5",
+    "img": "https://i.guim.co.uk/img/media/4099c293fe0771f309ff9ec3954f9933d234c1a0/272_0_3245_2596/master/3245.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b4a187a4418875abc5ce4bc5ecd3d4ba"
    },
    {
     "level": "",
@@ -955,7 +963,8 @@
     "source": "Bénin Web TV",
     "date": "2026-11-20T11:29:54.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSHk0N1VPR3d3N2ptSzJXVW5mVFl5cHJsNW94WksyQXJVNmc2R3NHM19zYng2NHZBU0NJWTB5V2F2X1dNOGJCdGpxaTlqNzBsNDhndWZKZkVXcnZMaGZxeHdmRklDUFMwMzJmRXd1NHg5TGt2ZDRZSV9oUnpWdUNCMVJGWDREZ1FSQTBnTw?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSHk0N1VPR3d3N2ptSzJXVW5mVFl5cHJsNW94WksyQXJVNmc2R3NHM19zYng2NHZBU0NJWTB5V2F2X1dNOGJCdGpxaTlqNzBsNDhndWZKZkVXcnZMaGZxeHdmRklDUFMwMzJmRXd1NHg5TGt2ZDRZSV9oUnpWdUNCMVJGWDREZ1FSQTBnTw?oc=5",
+    "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625195-625194-1795174127.jpg"
    },
    {
     "level": "",
@@ -966,7 +975,8 @@
     "source": "237online.com",
     "date": "2026-11-20T09:41:34.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE92X252TEhxVkN0TUE3S1N3TmZxMEpBeVkxeEliSS1WNk81ZG50dzkzaWkyTDhaaEFMTUt3Ui1Bc2hEZlJrSWE4S0pkOE83ZTVxM3pYTGFQa1BVOUNoNzRveVkwMzQyVzhqMEExaEtudw?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE92X252TEhxVkN0TUE3S1N3TmZxMEpBeVkxeEliSS1WNk81ZG50dzkzaWkyTDhaaEFMTUt3Ui1Bc2hEZlJrSWE4S0pkOE83ZTVxM3pYTGFQa1BVOUNoNzRveVkwMzQyVzhqMEExaEtudw?oc=5",
+    "img": null
    }
   ],
   "fr": [
@@ -979,7 +989,8 @@
     "source": "Bloomberg.com",
     "date": "2026-11-20T11:00:30.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9Bem9kWjBIcUtfa0xHOW0yQm1mV3A0VFVFZlh4X0hvWjlmckZSTDNGWlB1NGtzWFkyTTVSc0tNNW9tbUxGNURvNExmRTdTYnJyTTJtUGd1dkEyZklWR2xOSkphQ2s1d0NjZE9CRDc4SWtreWJxbDVoOFFnM2toQldLUHR5VUZFTDk4bDBXaWdodTh1?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9Bem9kWjBIcUtfa0xHOW0yQm1mV3A0VFVFZlh4X0hvWjlmckZSTDNGWlB1NGtzWFkyTTVSc0tNNW9tbUxGNURvNExmRTdTYnJyTTJtUGd1dkEyZklWR2xOSkphQ2s1d0NjZE9CRDc4SWtreWJxbDVoOFFnM2toQldLUHR5VUZFTDk4bDBXaWdodTh1?oc=5",
+    "img": null
    },
    {
     "level": "",
@@ -990,7 +1001,8 @@
     "source": "Bénin Web TV",
     "date": "2026-11-20T11:34:21.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdGJEbWZGbURNUFIzYmZyVDBhb3F3aWQzcXJ5c2ZWdDh2X2FKdm1URndTS19yZlZaWGVTdkdoQ3lkazlsVHlja0VGWXEtekdxN0UzTHVjTnV5Ymc4T2FmYXRhbk96X29XMmZqSVp4SWlfLVhBOXhoYnlfeldTaTdjMTI3eGs0Mnp4YXc?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdGJEbWZGbURNUFIzYmZyVDBhb3F3aWQzcXJ5c2ZWdDh2X2FKdm1URndTS19yZlZaWGVTdkdoQ3lkazlsVHlja0VGWXEtekdxN0UzTHVjTnV5Ymc4T2FmYXRhbk96X29XMmZqSVp4SWlfLVhBOXhoYnlfeldTaTdjMTI3eGs0Mnp4YXc?oc=5",
+    "img": null
    },
    {
     "level": "",
@@ -1001,7 +1013,8 @@
     "source": "La Nouvelle Tribune",
     "date": "2026-11-20T11:32:57.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZURFTzIwVzRuVWhUcWxJV1o1R3VzZkJXUGRndndnU2pLYlNGaGpMREY5cGZOOHp2aWdSdEwyNUdJRlc5Wm5jLUpDeXpUdmg3ME8ybmtJUWlwSTV3MVloSHFLbndNakNLa2hzMjF1cVljVnhUSm5KX20zanVWS19uM2M2dkY0ZVU3c2ZiV3J5dnZ2UG1JSDRIbjJxQnZqOFZBcTE4RVM4bHl6OFkwbzFQelVpRHZHRFVmX2JrTnZoT1psNm5uOUk2MXFWRzg3ZDZ2b29z?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZURFTzIwVzRuVWhUcWxJV1o1R3VzZkJXUGRndndnU2pLYlNGaGpMREY5cGZOOHp2aWdSdEwyNUdJRlc5Wm5jLUpDeXpUdmg3ME8ybmtJUWlwSTV3MVloSHFLbndNakNLa2hzMjF1cVljVnhUSm5KX20zanVWS19uM2M2dkY0ZVU3c2ZiV3J5dnZ2UG1JSDRIbjJxQnZqOFZBcTE4RVM4bHl6OFkwbzFQelVpRHZHRFVmX2JrTnZoT1psNm5uOUk2MXFWRzg3ZDZ2b29z?oc=5",
+    "img": null
    },
    {
     "level": "",
@@ -1012,18 +1025,20 @@
     "source": "www.tmgm.com",
     "date": "2026-11-19T23:09:50.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOOTBrRXBHZF9DNnZXa054NmNyQTNzOWZOLTRfYUJqSTQ5dVRUbGtYWmE5TUE0NzU1VWdjQmp3cjFCSXFxbTRPZFBVYXhRMDlYZmEwU3FMb05LRGJ0R2tWWko5aHJybmt2UUM2bERtWWk3WVBwZ0h5QUJ5bUUyaHNRdGtfMXhSOUNzc1Y3Y25MdFhiMjRFRWV5d0p6bk1ibVB6MlNtYlFrLXRDdWJrZDZNd0ZDQ3o2NWV2WWxIZFhqWW9CRl9MOE5BaHVaY2d0ZVhEYU1HeA?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOOTBrRXBHZF9DNnZXa054NmNyQTNzOWZOLTRfYUJqSTQ5dVRUbGtYWmE5TUE0NzU1VWdjQmp3cjFCSXFxbTRPZFBVYXhRMDlYZmEwU3FMb05LRGJ0R2tWWko5aHJybmt2UUM2bERtWWk3WVBwZ0h5QUJ5bUUyaHNRdGtfMXhSOUNzc1Y3Y25MdFhiMjRFRWV5d0p6bk1ibVB6MlNtYlFrLXRDdWJrZDZNd0ZDQ3o2NWV2WWxIZFhqWW9CRl9MOE5BaHVaY2d0ZVhEYU1HeA?oc=5",
+    "img": null
    },
    {
     "level": "",
     "cat": "bev",
     "owner": "Boissons & emballage",
-    "title": "Transparent Plastic Packaging Market to Reach USD 157.7 Billion",
+    "title": "Why Is Chirag Paswan Supporting Review Of 40% GST On Beverages?",
     "detail": "",
-    "source": "openPR.com",
-    "date": "2026-11-20T10:26:21.000Z",
+    "source": "ETV Bharat",
+    "date": "2026-11-20T11:47:49.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSlpwMXRLY1BhNjduVmFJam56NmMtREtGMjFjU3V2ckdsUXJtM3J0RERDcTBnSmF0WWhvMTZuUXdWYUdEZVFZSzViNEtHTFlfVTB4OGlEMkVyWXF5enJfanhneVA3VS1tUVpsNzROaWYxQWYxZ29XUzJMR0t3VklReDNpblBIek5Ia0l2YjN2cUxSdGl6eV9PdEdKZ3dNTHY5?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVmx4WlpUaFpHU1NoczZVRHh2NUxpSWdqbWxfMlF1d1hoOTJYQ2l6UmJrSXcxTC1JZTFkaDZFU3VJYWRsY1R2RDB4MVBQbmpiQmFYdUc2VU5wUzRaYVMxdldpQ0w2NkVMUzBDcXVRb09ZaU9rQnlfbTVBbzc5a0lBZzh6Rm1yX2ZPejdraGEtdE5XV0M4Y0JTR2RFNGRmNUNvS3BIeUpZMEJhNmY3TEwwZ3dRcjFiampEUGhiZ2pDSdIBxAFBVV95cUxNOExWd2JZX0xja3FRRURCSURhemR4U3RzRkE1ZEdDWG14WlNkRHlqN3M2RUFTSTRZRHhKaXFjUXhVTEx1NDA2U2llTHI4TE9RNzE1MDZtSXRYc016MUV2cUFYczNGMTM0dUcyMjNFUHRlTHpCY2hTVE5nWjNxbUZmcDcxNWVLWEdwM0U4Z2RkWjVJbkxkU1k0NjVVS1NNVWNiMFZCUDhPdElXOElhNkhGR0ZWdkVXdFJzSjZKVnlFTXVDRVJs?oc=5",
+    "img": null
    },
    {
     "level": "",
@@ -1034,18 +1049,20 @@
     "source": "Capmad",
     "date": "2026-11-20T03:17:00.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQel9UeTFxQWJvTTFDaWtoU2dobVNTQ0V2UGdrMzVEV2cwcDU4bVNPMzhYcmJpNms0TEtDSEhJNmRLSVhhbWRVN3FXN1ZsRTNsNVluSHpRWTA5OUJ3eWY4UFVPMEJWQlVrQmdrMi11c3JJa0E1N21iN1pGb1Fpa0VRY0l0ZzItM1NDZW1kTGhrNGVmUFFLZy1RQkltNXB4a3ROdVI3S2x5ZWJ1TmhzaFE?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQel9UeTFxQWJvTTFDaWtoU2dobVNTQ0V2UGdrMzVEV2cwcDU4bVNPMzhYcmJpNms0TEtDSEhJNmRLSVhhbWRVN3FXN1ZsRTNsNVluSHpRWTA5OUJ3eWY4UFVPMEJWQlVrQmdrMi11c3JJa0E1N21iN1pGb1Fpa0VRY0l0ZzItM1NDZW1kTGhrNGVmUFFLZy1RQkltNXB4a3ROdVI3S2x5ZWJ1TmhzaFE?oc=5",
+    "img": null
    },
    {
     "level": "",
     "cat": "lebanon",
     "owner": "Liban",
-    "title": "Lebanon’s Economy Ministry Launches New Digital Platform for Intellectual Property Registration: 5 outlets compared",
+    "title": "UN Security Council Discusses Resolution 1701, Renews Support for UNIFIL and Lebanon’s Sovereignty",
     "detail": "",
     "source": "NewsCord",
-    "date": "2026-11-20T11:22:53.000Z",
+    "date": "2026-11-20T11:26:20.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPY2lkaGFaS1dubm5sdGJucHRUcXVSNzlrRGZxVk9PUGNQVmRNZ1l1UWxjNFZPX09FVFBxMzBWUjFsSHozNHBFR1NZRnEydjl3SlVocnd0WmU0cm5qQWVpTmtCZkFBM2NUVWxEblVJT2ZTeWstV0hkSUptV24wY2dJR09wMFNIelA1Y3VOVUtuRTJjNTU4UlVBajBXOWt4VTlaUFZJMFNsNGFpeG9QLVhFeHZQcWtfcWQ1dTRWbS1VYml6X2RIR29qdHpybEtLM09KT3ZHeVkwTVA0dEpNMXkyT3lxSWFyUUF0Tnc?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNRWFNWTkwcGhtREczVjJJRElabDJSUzYyb3B3bVgwZS05WTZzOFRtWU9VRXNxaUp2Um5JZ2xLVTcyR2dmSXZFWkN2ZVN1cm5QVHFLb25jbUtRaFA1bVh1TEFUbE40cUhGQW1LaTYybjd5R0JzNW9NTzI4Ym1QU2tKUU1BeDFoSHY1RTRCakxVZklsT1lZQmtzdzJxckRsSjQwSnEyWHZ3d1dFZ1N0ZWxkeVpJRkh4SC1vQURRTU1URDJQRWVGaVVPLWpQblpFclUzemhlX0V3WFpmX2pXVlotTUV6RlJRWjFFYmc?oc=5",
+    "img": null
    },
    {
     "level": "",
@@ -1056,7 +1073,8 @@
     "source": "eia.media",
     "date": "2026-11-20T10:02:21.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbGtKTzQwOHd6V29ST0Ryakt6bjJOMC05QWkySDhVVlZabzNadjVnclAzSWY3aFpZMGdKX2Q5TFNuZUJCcE1DbGJaU29BWFV4LUJQZEVPcnZzNm1oX3lFc2M4RXc3SXpNZVNzMGFQMFp3czJkSzQ0WWszRGJPcHVuVkNIWTgwZ3NkRkp1cGp6QkJSUGs?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbGtKTzQwOHd6V29ST0Ryakt6bjJOMC05QWkySDhVVlZabzNadjVnclAzSWY3aFpZMGdKX2Q5TFNuZUJCcE1DbGJaU29BWFV4LUJQZEVPcnZzNm1oX3lFc2M4RXc3SXpNZVNzMGFQMFp3czJkSzQ0WWszRGJPcHVuVkNIWTgwZ3NkRkp1cGp6QkJSUGs?oc=5",
+    "img": "https://i.guim.co.uk/img/media/4099c293fe0771f309ff9ec3954f9933d234c1a0/272_0_3245_2596/master/3245.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b4a187a4418875abc5ce4bc5ecd3d4ba"
    },
    {
     "level": "",
@@ -1067,7 +1085,8 @@
     "source": "Bénin Web TV",
     "date": "2026-11-20T11:29:54.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSHk0N1VPR3d3N2ptSzJXVW5mVFl5cHJsNW94WksyQXJVNmc2R3NHM19zYng2NHZBU0NJWTB5V2F2X1dNOGJCdGpxaTlqNzBsNDhndWZKZkVXcnZMaGZxeHdmRklDUFMwMzJmRXd1NHg5TGt2ZDRZSV9oUnpWdUNCMVJGWDREZ1FSQTBnTw?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSHk0N1VPR3d3N2ptSzJXVW5mVFl5cHJsNW94WksyQXJVNmc2R3NHM19zYng2NHZBU0NJWTB5V2F2X1dNOGJCdGpxaTlqNzBsNDhndWZKZkVXcnZMaGZxeHdmRklDUFMwMzJmRXd1NHg5TGt2ZDRZSV9oUnpWdUNCMVJGWDREZ1FSQTBnTw?oc=5",
+    "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625195-625194-1795174127.jpg"
    },
    {
     "level": "",
@@ -1078,7 +1097,8 @@
     "source": "237online.com",
     "date": "2026-11-20T09:41:34.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE92X252TEhxVkN0TUE3S1N3TmZxMEpBeVkxeEliSS1WNk81ZG50dzkzaWkyTDhaaEFMTUt3Ui1Bc2hEZlJrSWE4S0pkOE83ZTVxM3pYTGFQa1BVOUNoNzRveVkwMzQyVzhqMEExaEtudw?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE92X252TEhxVkN0TUE3S1N3TmZxMEpBeVkxeEliSS1WNk81ZG50dzkzaWkyTDhaaEFMTUt3Ui1Bc2hEZlJrSWE4S0pkOE83ZTVxM3pYTGFQa1BVOUNoNzRveVkwMzQyVzhqMEExaEtudw?oc=5",
+    "img": null
    }
   ]
  },
@@ -1087,55 +1107,69 @@
    {
     "year": 1994,
     "text": "In accordance with the Lusaka Protocol, the Angolan government signed a ceasefire with UNITA rebels in a failed attempt to end the Angolan Civil War.",
-    "url": "https://en.wikipedia.org/wiki/Lusaka_Protocol"
+    "url": "https://en.wikipedia.org/wiki/Lusaka_Protocol",
+    "img": "https://upload.wikimedia.org/wikipedia/en/5/57/UNITA_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
    },
    {
     "year": 1985,
     "text": "Windows 1.0, the first version of Microsoft Windows available to the public, was released.",
-    "url": "https://en.wikipedia.org/wiki/Windows_1.0"
+    "url": "https://en.wikipedia.org/wiki/Windows_1.0",
+    "img": "https://upload.wikimedia.org/wikipedia/en/4/4e/Windows1.0.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
    },
    {
     "year": 1969,
     "text": "A group of Native American activists began a 19-month occupation (graffiti pictured) of Alcatraz Island in San Francisco Bay.",
-    "url": "https://en.wikipedia.org/wiki/Native_Americans_in_the_United_States"
+    "url": "https://en.wikipedia.org/wiki/Native_Americans_in_the_United_States",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Indigenous_Americans_by_county.png/330px-Indigenous_Americans_by_county.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
    },
    {
     "year": 1947,
     "text": "Princess Elizabeth, daughter of King George VI, married Lieutenant Philip Mountbatten, who was given the title Duke of Edinburgh.",
-    "url": "https://en.wikipedia.org/wiki/Elizabeth_II"
+    "url": "https://en.wikipedia.org/wiki/Elizabeth_II",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/1/11/Queen_Elizabeth_II_official_portrait_for_1959_tour_%28retouched%29_%28cropped%29_%283-to-4_aspect_ratio%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
    }
   ],
   "fr": [
    {
     "year": 1989,
     "text": "adoption de la Convention relative aux droits de l'enfant par l'Assemblée générale des Nations unies.",
-    "url": "https://fr.wikipedia.org/wiki/Convention_relative_aux_droits_de_l'enfant"
+    "url": "https://fr.wikipedia.org/wiki/Convention_relative_aux_droits_de_l'enfant",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Convention_on_the_Rights_of_the_Child.svg/langfr-960px-Convention_on_the_Rights_of_the_Child.svg.png?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
    },
    {
     "year": 1959,
     "text": "proclamation de la Déclaration des droits de l'enfant par l'Assemblée générale des Nations unies.",
-    "url": "https://fr.wikipedia.org/wiki/D%C3%A9claration_des_droits_de_l'enfant"
+    "url": "https://fr.wikipedia.org/wiki/D%C3%A9claration_des_droits_de_l'enfant",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/NYC24-158_UN.jpg/330px-NYC24-158_UN.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
    },
    {
     "year": 1945,
     "text": "ouverture du procès de Nuremberg, intenté par les Alliés de la Seconde Guerre mondiale aux hauts responsables de l'Allemagne nazie.",
-    "url": "https://fr.wikipedia.org/wiki/Proc%C3%A8s_de_Nuremberg"
+    "url": "https://fr.wikipedia.org/wiki/Proc%C3%A8s_de_Nuremberg",
+    "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Defendants_in_the_dock_at_the_Nuremberg_Trials.jpg/330px-Defendants_in_the_dock_at_the_Nuremberg_Trials.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
    },
    {
     "year": 1917,
     "text": "début de la bataille de Cambrai, opposant le Royaume-Uni et l'Allemagne lors de la Première Guerre mondiale.",
-    "url": "https://fr.wikipedia.org/wiki/Bataille_de_Cambrai_(1917)"
+    "url": "https://fr.wikipedia.org/wiki/Bataille_de_Cambrai_(1917)",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/2/24/Bataille_de_Cambrai1.png?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
    }
   ]
  },
  "read": {
   "pick": {
-   "title": "The 6 a.m. CFO: How Basware’s Martti Nurminen starts his day",
+   "title": "JPMorgan names next CFO",
    "source": "CFO.com",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNYkNyaGF3UnNXY0QybGQtV0Vjb3NYblU4aXp1UkJEUEJyQTFsWEs0NmhqMExFbjV1WWdVbkJ1bUQ2S3R2cmZGcnQwTElya1JadkJsd01yZk5WQkNXTUduQXkxQklEWFdZQTB5ZFVMZjBydHhuXzkzY2k0cjYzTU9LMmZqZVRYZUZBa3RFS2dUbWVuVE0?oc=5",
-   "date": "2026-11-19T14:07:44.000Z"
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPN3ZIZjRBTzRaTml3MFMxSTZzczVXYUxVWWhNbE1HWHA1eGhaTWp5U3ZtSkxDOU93bU9QMll6SXl2NVhVTkNucE1vQkNhYVJQRUlnTkxRVlZNSUpacUJMX1lTTjFOVmtqa3RzZ19TbW43aVNPLWhBdTFWSVkzQTFBZW9HQ3QwYzNubDhCOTQ1M2tXMWYy?oc=5",
+   "date": "2026-11-17T16:48:21.000Z"
   },
   "more": [
+   {
+    "title": "Delivering the agentic supply chain",
+    "source": "McKinsey",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORUpWT2czeFdTQnBfWUROV0dKWG1uU0tyRGZuS0paeGpNcDEtMWNRdEIxWWhzU2I0Z1BWdTRfc0lhUTdNYkw5RzRsUW1PU1JRUzNta3dvVDZock1HOVFmZ0RYUzJ6M3VLbTNLY1NIdUQxZU9mSkRSOUJoYUFJYm92MG1jamJFNU1ZNlliWFJxS2FWcDZKZ0puZWstNUctMFU0dExGVXNENmstV09SUG9oNjZIWQ?oc=5",
+    "date": "2026-11-17T00:00:00.000Z"
+   },
    {
     "title": "Why CEOs Wait Too Long to Shake Up Leadership—and Regret It",
     "source": "Harvard Business Review",
@@ -1149,22 +1183,16 @@
     "date": "2026-11-19T14:01:02.000Z"
    },
    {
-    "title": "Why Baseball’s Best Decisions Go Beyond Data",
-    "source": "Knowledge at Wharton",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWjAxQjdHVG5TNEozUE1UYlZfUEpyNmpQXzBvWTR3S29nekRobkJoenlPYnpUTG5YaFZQbzNRMnNxeUhiV0MyQXNZeTNxWFhrVkp6MmhzV3F3YWI0XzhDU1F5dDdqZVAzaDY3Ri1ybWJGbUdBQ1hRQ0o5ZEI1bkhuYlpkZFZ1Q2NuTmJHNXJ1Um9RNGZKVTF1QkQwdUFreGc?oc=5",
-    "date": "2026-11-17T07:59:59.000Z"
-   },
-   {
-    "title": "Running Your Business, Owning Your Life",
-    "source": "MIT Sloan Management Review",
-    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNcmxYa0p1b0NNdnNIUkZqZDdkOFRrTjh0QmZnZlo2QUs2SjVyNXJUVEY0b3pTY0tiT2NMMjEzQ1lpTGRaWjJhVmlYZnBhZ1k4MHdHOW1XaHU1Tml1bTV2QlBldmxRLVItd0c4OW9ZTldiVHg5czBleDdVdEtZVEJ5Q25TQQ?oc=5",
-    "date": "2026-11-16T22:25:27.000Z"
-   },
-   {
-    "title": "Consumers fret about inflation as execs fixate on interest rates",
+    "title": "What Nvidia’s leadership shuffle illustrates for growing companies",
     "source": "CFO.com",
-    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcmhiMl90MjVwbzhoZElQR1YybWhaMUFXQlRHYTF0NXRlUnNSY3c0X2k4U0oxWXJSSm1KWUI1dDlQWGlEM3dfTG5UQ0FrRFM2NFVmQ283by02V2FFcEdBMG92b0dUWEJlbkxfdWFQWi1nc3JTZDRUcXdZajNXZ0I2dmFnZHFBT2JHQXBQSlgtckd3WFJ1YnlVbVhRcHRVQQ?oc=5",
-    "date": "2026-11-18T14:20:29.000Z"
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdGtFeXQ0WHg4TXI0X0dkNHh0OXp6VUxtWjZUek1STHpQZ05VTmJkclEyRURZZi1aSUpTMFdZc3ZuMGpyT1p2c29iTTZwYXNRTWVIN0lMXzB5aVFOekZSdjlwanBPMU5ZdlBYZUd3YWxsb3VqQmJxOVZzT1Rud3VHWEgxSFYxTDVoZmpVSFJobWU3Nm9TdTlQWHVZbGx5T0wxOEZFdFBhS2xoOE9WYlhZU0pEemVsdlJsZHZrcVZtQnJmdw?oc=5",
+    "date": "2026-11-17T14:05:16.000Z"
+   },
+   {
+    "title": "AI spurs finance headcount dip",
+    "source": "CFO.com",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9fMWFRNnNiMlN4ZjdEYXpSalVGbk93cElDNEY4aGJudy1aS1lxTmRtY0VTRnRnV3lqY1AycHlyWURtZE9YZ1JiVDFncktnZFFrcG4xbjN5cVVHS1VFX2tyTWtEdlVNeVIxa0RyR095X3g?oc=5",
+    "date": "2026-11-16T16:19:59.000Z"
    },
    {
     "title": "CFOs On the Move: Week ending Nov. 13",
@@ -1173,16 +1201,16 @@
     "date": "2026-11-13T14:41:23.000Z"
    },
    {
+    "title": "Separating signal from noise: The always-on finance intelligence layer",
+    "source": "McKinsey",
+    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNTmRrMW5jQUlmaEVtS1JKTlVrLVJIUFJPc1d5MkpqdENXY2FxVnR6QjlJSF9iVGhYWlRtbXJCOWdPRHc0OEV1MmRTR1RzQTJZLVRlLURmMGhST2ZyWmRwV2lybmxGUFB6TnB0VUVXWExOV2NFcllGaWpqb254QmVRTHh4U210MDA3U2x0X0RtLVFfNDVOOVBEclJkMDItZGF1T0VyTEY3UkFYb0V3Ql9hVnNjVEJEV1YzTVJjZS1PSlhINl9WbzItVWhUTFpfc1B0OEFJVUJrZG5YYVQyS2pyNWhqc1Q4dw?oc=5",
+    "date": "2026-11-13T00:00:00.000Z"
+   },
+   {
     "title": "How 3 Brands Bought in on the “Grand Theft Auto VI” Hype",
     "source": "Harvard Business Review",
     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVjUyX0NJdWFMbjBxV0ZNUThzWktfTVE4aFp5SGIzSzFXUFJTbGtWMFNyMEdVX3BrRWI3QmJvNXpWNHM0Vmg4WllJUktzUUg5c0c1WHpoRmkxa0lMbnNSVHEtU1pRTEQ2QVFzbHY1UlZwRGFNWnotWjM1SEVFR2hXams4LU0?oc=5",
     "date": "2026-11-19T17:38:19.000Z"
-   },
-   {
-    "title": "You don’t have to consolidate your ERPs to get value from AI",
-    "source": "CFO.com",
-    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNXZOVWlZWkE0Y2lqMkxwNDE4T2tPV1E0QjNabXFUN1RnSkhDVzFPM0ZZMkFsbU4wU1JPWXhEVzFWaTJ2ZmNxcDRKWTBxV296RTBrV0NEVjgxOVRVZmhUaHZJWFZDY0R3S1F3d2x2ZFFsaDU0a2Nra2VJY3c0MTVRN3ZfZjN6N2ZleVh6YS10Zlh5NVNha2o4?oc=5",
-    "date": "2026-11-19T14:27:46.000Z"
    }
   ]
  },
@@ -1190,6 +1218,7 @@
   {
    "id": "n0-2026-11-20",
    "cat": "worldwide",
+   "lang": "en",
    "title": "Stocks Hit Worst Run Since 2023 as AI Trade Cracks: Markets Wrap",
    "source": "Bloomberg.com",
    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9Bem9kWjBIcUtfa0xHOW0yQm1mV3A0VFVFZlh4X0hvWjlmckZSTDNGWlB1NGtzWFkyTTVSc0tNNW9tbUxGNURvNExmRTdTYnJyTTJtUGd1dkEyZklWR2xOSkphQ2s1d0NjZE9CRDc4SWtreWJxbDVoOFFnM2toQldLUHR5VUZFTDk4bDBXaWdodTh1?oc=5",
@@ -1198,14 +1227,17 @@
   {
    "id": "n1-2026-11-20",
    "cat": "worldwide",
+   "lang": "en",
    "title": "Global stock markets slump as Anthropic IPO fails to stem AI sell-off",
    "source": "eia.media",
    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbGtKTzQwOHd6V29ST0Ryakt6bjJOMC05QWkySDhVVlZabzNadjVnclAzSWY3aFpZMGdKX2Q5TFNuZUJCcE1DbGJaU29BWFV4LUJQZEVPcnZzNm1oX3lFc2M4RXc3SXpNZVNzMGFQMFp3czJkSzQ0WWszRGJPcHVuVkNIWTgwZ3NkRkp1cGp6QkJSUGs?oc=5",
-   "date": "2026-11-20T10:02:21.000Z"
+   "date": "2026-11-20T10:02:21.000Z",
+   "img": "https://i.guim.co.uk/img/media/4099c293fe0771f309ff9ec3954f9933d234c1a0/272_0_3245_2596/master/3245.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b4a187a4418875abc5ce4bc5ecd3d4ba"
   },
   {
    "id": "n2-2026-11-20",
    "cat": "worldwide",
+   "lang": "en",
    "title": "20th WAVES Film Bazaar Opens in Goa, Aims to Connect Filmmakers with Global Markets",
    "source": "DD News",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNd19fVmhrZGNlcW9lYVh5akd4a0lzSm5WYV9WckF5bDNORHY1eUduaXZMVl85VVpaMHBUdmVxd1ByeERueUhpNHVUYVd2cE5ucnp3OHB5ZTJJR0RHTXhzaTZLUU5PZjhvVjBXcDFYb2p1QjI4RFBheUlFZmVCQUM1dENUemtXdHBnX01Ia1dvR05oNnY0STVnSlNsQ0MwSGpJZ1EzSG9ZNlJHVU9a?oc=5",
@@ -1214,6 +1246,7 @@
   {
    "id": "n3-2026-11-20",
    "cat": "worldwide",
+   "lang": "en",
    "title": "Historic Trump–Xi–Putin Summit at APEC 2026: Key Agreements, Global Geopolitics and Implications for India",
    "source": "Sanskriti IAS",
    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOdlY4YjA0dThrZFFHbHNHd0g4X2pzaE5FM1hQQ093ZXExVml4LUdrLUd4VFNfajQ2WXpMVGQxckJEZmYxWldSdnZRdnVSYUxoaWRCSmZwRUZVQUNsN1RwWnI3WmM5LTY4b1UxdWNuanhSNmZqZGNmbHk4NXFxN3hxcndLejNoMzZVOGpJdmhWSWk0d2NaazFpVWFMUjFOcHJWanZ6SkE4WVA1TTlfZXlXVGlDUW8xendHSFB6Rm5KTG9NTFZGNVVZR1dMcXdrNGNaRGZfMi0wTlJnbW14SHc?oc=5",
@@ -1222,14 +1255,17 @@
   {
    "id": "n4-2026-11-20",
    "cat": "worldwide",
+   "lang": "en",
    "title": "Expand North Star 2026 to bring global AI startups, investors to Dubai in December",
    "source": "Gulf Business",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOcnR4aXh0dmhNay04RGJFQkY1ZWgtVGhra2dhU20xamxRRlVUMkJ4ODlNbGVWUUNraWdrQ290QVRrcEs2aDZhcENkUkg0ZkxublNmUEVJSFA0dFRtaVMybEwyalRhYk5iRm51Z293ZEs0NlotOEFoalZoS2hrLXBubFZyLUJ0YUFTa2pZUjdGNmtyWnJ3OWw0aG9oYjRzaWdPQzhQNV9vTjJvMEVFUjFSa1pFck1pUWZZU18zWGRwQQ?oc=5",
-   "date": "2026-11-20T07:02:02.000Z"
+   "date": "2026-11-20T07:02:02.000Z",
+   "img": "https://i0.wp.com/tbreak.com/wp-content/uploads/2026/11/gulfnewsthumb2209.jpg?fit=1200%2C826&ssl=1"
   },
   {
    "id": "n5-2026-11-19",
    "cat": "worldwide",
+   "lang": "en",
    "title": "Why $100 Oil is No Longer Spooking Equity Markets",
    "source": "EnergyNow.com",
    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZzBxc2IwVXpIRFdPNVVVRmpIMHp5bDN5Vzg4VjJ3NXp5Q3gxTm9GSlBOWW9xLTJCNVRzZUU4MVdPNmRvb1ZRcHUxR1pndGpZMmRrN2JuclFMdHNHRXZ0SExSdGJnR0tGT3cteUsxTXcwTUE0a0hIckdJRHVfQTVGNmQyeEtKSGhpSFpSZktCX09sRHBZb2c?oc=5",
@@ -1238,6 +1274,7 @@
   {
    "id": "n6-2026-11-19",
    "cat": "worldwide",
+   "lang": "en",
    "title": "Piyush Goyal urges FICCI to evolve into global chamber, strengthen India’s economic engagement with the world",
    "source": "DD News",
    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNVEhsQVZKOHBXOGtmeGVSdE1Na1kzaTc1eGl6WHBTdnp1ZkVPdUhiaklHM08tWEpUR01Bb3M4dV9QZUZQTGg0NF9tek0yN3g0WWZLWU1oUmRVRDNlM3JqSzJEQmxfWWF0V09TNFE2clNrd1ZRSUVydHp0Ti1fRUUxTmZWbmlxMVpocmM4YTBzMDBaQzduT3lKYzd5SEhxT0tPMnJTYTRfal9ZZHFQWmxWM3Rha3R6S012T1dHVDlKdmwtY0JiU0NjcHU5TUc4QQ?oc=5",
@@ -1246,6 +1283,7 @@
   {
    "id": "n7-2026-11-19",
    "cat": "worldwide",
+   "lang": "en",
    "title": "WAVES Film Bazaar celebrates 20 years of connecting Indian cinema with global markets",
    "source": "DD News",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbHFieFNmNWlobnFHd1NNUlVDbk9qMkhRaERsOUNXekdfZGlWRmQ2UDZoN2d5X21VaDBhOXRqMF9BME5iMl9HOEQwaGNwVzRZSnc0UkVyMGpZT2dyeTR1T2tUV0hlZUFsOXloNTJOOENwVGw3dlN2OW9mRlhUcjhUcC1ENndkYTN4QXJFWUpHSTRRd0c2WkpHbGVia3h0X0p4MVlhdEg3NENMcmtGSjVkOQ?oc=5",
@@ -1254,6 +1292,7 @@
   {
    "id": "n8-2026-11-20",
    "cat": "africa",
+   "lang": "fr",
    "title": "Côte d’Ivoire : un institut de recherche café-cacao de 800 hectares en chantier à Divo",
    "source": "Bénin Web TV",
    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdGJEbWZGbURNUFIzYmZyVDBhb3F3aWQzcXJ5c2ZWdDh2X2FKdm1URndTS19yZlZaWGVTdkdoQ3lkazlsVHlja0VGWXEtekdxN0UzTHVjTnV5Ymc4T2FmYXRhbk96X29XMmZqSVp4SWlfLVhBOXhoYnlfeldTaTdjMTI3eGs0Mnp4YXc?oc=5",
@@ -1262,14 +1301,17 @@
   {
    "id": "n9-2026-11-20",
    "cat": "africa",
+   "lang": "fr",
    "title": "Côte d’Ivoire : Endeavour présente une mine d’or à plus de 700 milliards de FCFA à Tanda",
    "source": "Bénin Web TV",
    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSHk0N1VPR3d3N2ptSzJXVW5mVFl5cHJsNW94WksyQXJVNmc2R3NHM19zYng2NHZBU0NJWTB5V2F2X1dNOGJCdGpxaTlqNzBsNDhndWZKZkVXcnZMaGZxeHdmRklDUFMwMzJmRXd1NHg5TGt2ZDRZSV9oUnpWdUNCMVJGWDREZ1FSQTBnTw?oc=5",
-   "date": "2026-11-20T11:29:54.000Z"
+   "date": "2026-11-20T11:29:54.000Z",
+   "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625195-625194-1795174127.jpg"
   },
   {
    "id": "n10-2026-11-20",
    "cat": "africa",
+   "lang": "fr",
    "title": "Côte d’Ivoire : Le Mercedes-Benz OF 1017 Midi Intégral officiellement présenté à Abidjan",
    "source": "afrik soir",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVHMtaG53bkFMYTAzeWlLQUdTemQ5Rnp5aEc5ZS1XTDJSZ2xFN3IyTkUzcUVXUF8zczVjQ0tOZnpTZ3NlZVJCZXVCd0VkajFfU3JrUDRvT085eGhaeTVWa2pHVi1LbVFDZWNyMGVZNnhyME5FTmlZY2kxVzJFYTBOb210WjZSV2Yxb1FlN2ZrRzJ0QWY2LXJjczNWa1pyaUNkR1FKUHlRdERpeHpv?oc=5",
@@ -1278,46 +1320,52 @@
   {
    "id": "n11-2026-11-20",
    "cat": "africa",
+   "lang": "fr",
+   "title": "Côte d'Ivoire : Primat 2026, les acteurs du transport plaident pour un secteur plus moderne et digitalisé",
+   "source": "Koaci",
+   "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNU1JXZFNyNGJ3TUluUWs0Mm1nWGloSTE3c1hLcmw0OEx0ajVuWnZXQ282UFZwNE1lQlMyUGs1RlNEZ0NSaGhheXZWcnR6enh2ZzJFd0YzU0kySXZOTjlFUHJJTjctaDVTQVhYOGg3ZVB0NENUc0pPanBBbnAxVUQtTF9oYmZxaTZpdU9KYVlFSTdVZDhGU0tRcEFBd1dFNDVVSFF6dUE3WUpMWDk2ajdyelhIQmtyWko0VmFXNGUwUmJJSnNOTGFiSUZFblNNWFpueGE2VEE0REdnMDZocTBzeEpnNXJucDFoejMtZ05EYnphWE1BdDdPT29VV1RqNGlzbnpPbkpNaw?oc=5",
+   "date": "2026-11-20T10:44:00.000Z"
+  },
+  {
+   "id": "n12-2026-11-20",
+   "cat": "africa",
+   "lang": "fr",
    "title": "Côte d'Ivoire : Éric Tenié Ouattara, DG de l'ADCI : « Comment les PME demeurent compétitives face à la concurrence…",
    "source": "Koaci",
    "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQdUVPellvR1FBdnNqNk9SYVVvenFxOXBrMF9IQ0hNcVluM3RhM0pia2pMTkIwZmRsRFVLcGY0UUhMdjAtTVBBcllTRHBNUDJmTzVpU2hFTXNUem1YVThwM2hGVEE1NFVsNm9hcHRoTUV3Z1Ixb1ppSVNHN0NCNWc2UzdtQzFmWTAwM1d4Z1BBZk00RjZfQ3R0dV9hcl9saGhWOXk2c0ZNLXQ4MFVRUWxCTFNDMWxBdHExZVEtWUtDa2taWEtkY3RVb0prSlU5aVl4djk0T3BwS3RzNUE5LVE4S1JUNzVYTHR6VnNaTG9pVHJLdHBsN1V2clhidm9RcHExYlUtNVRhOGpHT2hB?oc=5",
    "date": "2026-11-20T10:05:00.000Z"
   },
   {
-   "id": "n12-2026-11-20",
+   "id": "n13-2026-11-20",
    "cat": "africa",
+   "lang": "fr",
    "title": "Côte d’Ivoire : le groupe MAGGI-X remporte le « MAGGI Sustainability Challenge » de Nestlé",
    "source": "Abidjan.net News",
    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdlVUcGYxN2dQSXVtSFJmbnRyZUVhNXJPTzFjLXVDZTFDS3ZGNXhmSDNmTkpyUm1vSURkSHZ0YjJGY2N3Tk1leXlmbmE5MGJ5TTMtME5KNTItMTRZVXR6Qkd5RHpKVk9lbXpLS3h0RmFPdDdxOFRtTV9sMlRhQUllbFpINF9FemYtcFpLLW5VTjVKMU9IclJGM3F4UkNQUlZLMHZzTGYxZmJsdVE5NThqTUpBWDhzMTdVQ2hHNkFSSUNMUQ?oc=5",
    "date": "2026-11-20T09:46:57.000Z"
   },
   {
-   "id": "n13-2026-11-20",
+   "id": "n14-2026-11-20",
    "cat": "africa",
+   "lang": "en",
    "title": "Strong Institutions Will Drive Nigeria’s Economy, Says Shettima",
    "source": "https://thefact.ng/",
    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTjRZeTZOemRhUExkNU0wR0NfWXdfck1kcy1qbDNVcEVKa3JYM2c3RC1ta2laMjBEWS1JV0pXUTNTREZhOHRHcFpJeHBGcDEtdXpqMUFzb3FhQlY4V2hFNGRWWmVjLXRQTTJpM1BkSHlMblI4alZ5cVN0R0YyaThYLTZ3dy1vbV9J?oc=5",
    "date": "2026-11-20T09:05:13.000Z"
   },
   {
-   "id": "n14-2026-11-20",
+   "id": "n15-2026-11-20",
    "cat": "africa",
+   "lang": "fr",
    "title": "Côte d'Ivoire : construction d'un institut de recherche de référence mondiale dédié au café-cacao",
    "source": "Abidjan.net News",
    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPc3Q3TjhRMkNOQnFKSV9EOGw1MzN6Q2w3THBmOWFfbk95MFBBdHZkWE1hTE95Smh3MGlaMDJZQWRWc1lrLVNVcGNpU2k1U2l2MHBuQWlCTTVNZkt3SzN2S0hNZFRWbTU5ck5aX2F2ai0xY3BfbXdpTjlaTnNXZEJTN1I1Y2lRSTh4OVlTMjZMS2d1b1hmTWptek9BeWh0MmY2Z1hiaDdKMnAtQUNHX3ZoejFLVE5XTl9vNC1VdnYxRnlCaW1SYzdwRlFnaDRJZWM?oc=5",
    "date": "2026-11-20T09:00:38.000Z"
   },
   {
-   "id": "n15-2026-11-20",
-   "cat": "africa",
-   "title": "Nigeria’s economic future depends on strong institutions, visionary entrepreneurs — Shettima",
-   "source": "Head Topics",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQT2pGd1A2dEszZmk3dWJvbllsMUFjUFoxVk81cG1UbzBFRFo0VjV5a2hkTl9OX1FnNUMyRjhMU1ZldGVpZjMxQ21rTjBEem14c0RKbmcxQ1dsTUswSk82U1lPR3VGeERTMVZJRThzUmlFTmF2dUh3LWJfcUFhTGRVNjRBM1ZGRldYY0I3Y2ZkUnZzcW55T1RYWnpjQkY?oc=5",
-   "date": "2026-11-20T08:45:00.000Z"
-  },
-  {
    "id": "n16-2026-11-20",
    "cat": "congo",
+   "lang": "fr",
    "title": "Dette de la CEMAC : pourquoi les États se financent de plus en plus auprès de leurs propres banques",
    "source": "La Nouvelle Tribune",
    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZURFTzIwVzRuVWhUcWxJV1o1R3VzZkJXUGRndndnU2pLYlNGaGpMREY5cGZOOHp2aWdSdEwyNUdJRlc5Wm5jLUpDeXpUdmg3ME8ybmtJUWlwSTV3MVloSHFLbndNakNLa2hzMjF1cVljVnhUSm5KX20zanVWS19uM2M2dkY0ZVU3c2ZiV3J5dnZ2UG1JSDRIbjJxQnZqOFZBcTE4RVM4bHl6OFkwbzFQelVpRHZHRFVmX2JrTnZoT1psNm5uOUk2MXFWRzg3ZDZ2b29z?oc=5",
@@ -1326,6 +1374,7 @@
   {
    "id": "n17-2026-11-20",
    "cat": "congo",
+   "lang": "fr",
    "title": "Rachat d’IHS par MTN : le Cameroun face à un piège concurrentiel",
    "source": "237online.com",
    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE92X252TEhxVkN0TUE3S1N3TmZxMEpBeVkxeEliSS1WNk81ZG50dzkzaWkyTDhaaEFMTUt3Ui1Bc2hEZlJrSWE4S0pkOE83ZTVxM3pYTGFQa1BVOUNoNzRveVkwMzQyVzhqMEExaEtudw?oc=5",
@@ -1334,6 +1383,7 @@
   {
    "id": "n18-2026-11-20",
    "cat": "congo",
+   "lang": "fr",
    "title": "Green Diplomacy: L'Union européenne mobilise la jeunesse congolaise pour l'environnement",
    "source": "European External Action Service (EEAS)",
    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOVnQtSWlBSGFiX0pacmNVYUhYNjdFWHp4UE0wZEhYWmJrMFctcWJsamV0YzhZSWpVNGhMZWhLN3lORUFmeW1NQldWMEpiX2pTR0ptc3AtdE0wVkFMMnpmY2xvQWRwOTB2Y245QXBQQ1hjLTZOYjNpaEJyRjVaeEhQS1pvZkZhem84MERSNnJVS3NRb1RvY3EtZGJtZk54aWQzVTh6MzNjRlpReUFTTDhWUnREeHdLWm5MMlY1SU54N3dhTDkxLXJrTHpOcV9oWUxrZ3AwWVRBdURDZlpfMmc?oc=5",
@@ -1342,46 +1392,53 @@
   {
    "id": "n19-2026-11-20",
    "cat": "congo",
+   "lang": "fr",
    "title": "MTN franchit une étape décisive dans le rachat d’IHS Towers",
    "source": "Forbes Afrique",
    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZkE2S2pKN1gyMGFhbDlnQ1JRelJadFB3MkRZZTJhX2x6a091Z3NVVE1WX0pPSmZyNFpKUGlpbC1pZDZub2pIVms2dzJIY0c5TWM2S3lxWXp3OVVhRUVYbEd4bVpVSDM2ek5ESDRCcHJnRXh0VHBhQmxCemNzNUoyOW12NUZUWGtMaXdDOW1R?oc=5",
-   "date": "2026-11-20T03:30:00.000Z"
+   "date": "2026-11-20T03:30:00.000Z",
+   "img": "https://forbesafrique.com/wp-content/uploads/2026/11/IHS-TOWERS_1500-x-1000_forbesafrique.com-.jpg"
   },
   {
-   "id": "n20-2026-11-20",
+   "id": "n20-2026-11-19",
    "cat": "congo",
-   "title": "Météo à Bikakala, Niari heure par heure",
-   "source": "SpaceRef",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA3Yi1MUUpneUo2QXd3QVVFWVMxMWJvWFN0eXBybW1nUGJFM1BITGV4RWl1ejV2cVo2d1FxR1BmS3VKUFhCTHVRTDlCYlBoM1VZQXpDVWo5djVUa3MycmhsT2VpSk9CSW5K?oc=5",
-   "date": "2026-11-20T00:36:10.000Z"
-  },
-  {
-   "id": "n21-2026-11-19",
-   "cat": "congo",
+   "lang": "fr",
    "title": "Développement du secteur maritime: Wimowca restitue les travaux de son séminaire au préfet de Pointe-Noire",
    "source": "Adiac Congo",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWjQtRlNsN0lPdmRTc1UtMkdVT0JMSDg5SVd6eVBwRjFMNUROTHgzbHZ1dUNkRF94S3ViM0NxblkwUjJhbGRKU3R6cUQ0TUlDbEJiODBidFJQY3gzVUFxYXpIWDBRYlQ1S3hsdEQxZDR4bDI0djZaRTZLUFRaR0x0dmhlT3JkYnBiTnZkTVJKQS1VNWI4aEVITHc1LVpYMlowSTVOd2lPZ3VrdUhYUWthY0ZnZGE2V0lMUEVIZi11VmM3eHJpVEJr?oc=5",
    "date": "2026-11-19T21:18:00.000Z"
   },
   {
-   "id": "n22-2026-11-19",
+   "id": "n21-2026-11-19",
    "cat": "congo",
-   "title": "Météo Saint Pierre demain (Congo-Brazzaville) - Météo Saint Pierre vendredi - Prévisions heure par heure fiables",
-   "source": "Météocity",
-   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAyOEpyNXpsRXRJZDJvRUc2dXJweFgxZkJpSHh4ckIxN2J4S0hhbDVrMGI2R1U4MDZMTHVSNk82MjNhZTJxcTFXbGZNVWlMeUpjLXhGZ0k2WDk4NDFTSG9VSzVMMkk1MWNNODdEVGJaTTgxdi14?oc=5",
-   "date": "2026-11-19T15:32:33.000Z"
-  },
-  {
-   "id": "n23-2026-11-19",
-   "cat": "congo",
+   "lang": "fr",
    "title": "Handball : les qualifications du tournoi de gala avancent à Brazzaville et Pointe-Noire",
    "source": "Sport News Africa",
    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNRzBXaHVVX1M2X3ZmQ3VCRFFMMGJaclpSVEQwRGdKclQ2d2IyUkZ6MHI5LWxrN1VZM3JWd080NWN5eTF5RnpLNE1RcjJUSlUtaGJFZWZBX21tTk9lUmx2R0trVk85UzZRREhVc2gzeHF2U2VzWUZnY3NJbDg1ZUhRUWpIZTVuSEpQRkVtdDhDMURIazlrNFhRQUVBWldkNnFHdlRoRENpa1FmbHE1SUFuWW9FZzZDTl9QMUJVMEFDSmpyekE?oc=5",
    "date": "2026-11-19T14:54:00.000Z"
   },
   {
+   "id": "n22-2026-11-19",
+   "cat": "congo",
+   "lang": "fr",
+   "title": "Grand tournoi de gala de handball: la phase qualificative a livré son verdict à Pointe-Noire",
+   "source": "lhorizonafricain",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdnREUHphSUEwWGxyN2RLakV4RWhlbnB5ekgxV1RYOEE5S0lBVWlPR0JyaV91X2pCOWE0Z1hhXzY3a0xjLXljQkttWWNDZXJYRlAzQlN6MW04YWpDekZoWUYxeVhWUnFZWEpuLTBoRDNzMWlaR0JtTk9LZmhlQmkyMzNRMGhpdnAzbVp2eXY1YkQzWTdZVlEyaUlrT2pNQ09zZXBqclYtUmx3dlBwdlZPU1p6bUd4bzdrX2NTcVZrWW00TFZhM0c5S0E0NA?oc=5",
+   "date": "2026-11-19T12:04:41.000Z"
+  },
+  {
+   "id": "n23-2026-11-19",
+   "cat": "congo",
+   "lang": "fr",
+   "title": "Congo-Brazzaville: L'avocat Me William Bourdon porte plainte pour un projet d'assassinat sur sa personne",
+   "source": "allAfrica.fr",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9JWEZwUjFNUFZON2I0ZTFrcW5YRTZhNXIwaGtibFF3V2MwS3VDVXNwUl9mV3FkY1VudkF3dUtYbnhRa3JhaWViSkItVjJzUlNzSzVuRlIzLV9mVkQtZVBJ?oc=5",
+   "date": "2026-11-19T09:46:49.000Z"
+  },
+  {
    "id": "n24-2026-11-19",
    "cat": "markets",
+   "lang": "en",
    "title": "Euro trims losses amid stronger risk appetite and still-low Oil prices",
    "source": "www.tmgm.com",
    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOOTBrRXBHZF9DNnZXa054NmNyQTNzOWZOLTRfYUJqSTQ5dVRUbGtYWmE5TUE0NzU1VWdjQmp3cjFCSXFxbTRPZFBVYXhRMDlYZmEwU3FMb05LRGJ0R2tWWko5aHJybmt2UUM2bERtWWk3WVBwZ0h5QUJ5bUUyaHNRdGtfMXhSOUNzc1Y3Y25MdFhiMjRFRWV5d0p6bk1ibVB6MlNtYlFrLXRDdWJrZDZNd0ZDQ3o2NWV2WWxIZFhqWW9CRl9MOE5BaHVaY2d0ZVhEYU1HeA?oc=5",
@@ -1390,6 +1447,7 @@
   {
    "id": "n25-2026-11-19",
    "cat": "markets",
+   "lang": "en",
    "title": "Euro trims losses as risk appetite strengthens and oil prices stay low",
    "source": "www.tmgm.com",
    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMGxjU1VYVWlzTmo3eUN1RmRIUm5GTlhTTEIwME5CQ2lXanZPa3ZCNmVKNGlCVXBlRWJfSGc5Qkl3XzN3Q2lTS0dNeW8xcFBCZklJeXBfMWlHMW9oeHRldFMyUjNTWXpPdVZhWDhneGdVaktCMnYyNEotOWE2RlJVMUlFVFpERFR1UXR1NEZudFZzZ0dLTHhwSWZ3NzFWTkI1X2s5MzZEVzRJckNQQm5lVmE5UkRjSnhWZ1hlYmFvdlZMa1ludldZbjJ5Wnp0dVZuRWJEWQ?oc=5",
@@ -1398,6 +1456,7 @@
   {
    "id": "n26-2026-11-19",
    "cat": "markets",
+   "lang": "en",
    "title": "EUR/USD Holds 1.0979 off 19-Month Low as DXY Cools From 103.97; ECB Hike Bets Eye 1.1125",
    "source": "TradingNEWS",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWUFDY3JHbEZ5SThBaHFBNDEzeGdWNUN1SjR0UlRkWndkaVZjLTRzX0M5bFRvT3lxcFhpaXdNeHVuYTVmN1M0TnVtS2YwU1REd1IwQ3BYX24yN09WVWxRa096alkxYTczeWdjQ3FLMkI1RTV0YWRualdSaDNza3ZIY2RSZkVIWmNLY3RvMUlXd3VpSEctTG95QXBiYVNHLW1MSW1rb1kzVWNsZmlLamlPYVZ0ZlllZTVNMFEzTUc1OFpsMkUtUlM4?oc=5",
@@ -1406,6 +1465,7 @@
   {
    "id": "n27-2026-11-19",
    "cat": "markets",
+   "lang": "en",
    "title": "Dollar Slips as Stocks Rally",
    "source": "TradingView",
    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQcXkzeXRNSHlCQVNNN0dNbFJjLWMzc2pQVXRuaEZuR0R0eDcwTllJdGNBY2VHX1ZMSjRXU1owdkxhODZTVmRZWGJFTkNfbEVValZqT0V6S2NXUGx0aFdGbzZ5YXUxc0FwckdaaDlwVUJ5aWt0bmNtZTZQUzVEWm94YnVnaEFKX2hDTUM0eFY5ank?oc=5",
@@ -1414,6 +1474,7 @@
   {
    "id": "n28-2026-11-19",
    "cat": "markets",
+   "lang": "en",
    "title": "Euro pares losses as risk appetite improves and Oil prices remain low",
    "source": "FXStreet",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORGViZ0JLU3lkQ29GanpDcmZVWFlObjBPQmdkN3owMXUyQ3Jnc294TVVNcXBqTV9jLVFPNFg3NG9DaklZbGgxNmxBcW4zWnMwQU1SenNZcVJudDVWSDVRVmxxa0hMcnZmRkxpR1NwbnNfX05GVURZOE84ci1zWklEekVuRmNkamNnZ0JaYVppNkctZDdDLXZfUVVtU1FyZ3JzQVlUMG5hc3BuclZEaVdleXZn?oc=5",
@@ -1422,6 +1483,7 @@
   {
    "id": "n29-2026-11-19",
    "cat": "markets",
+   "lang": "en",
    "title": "US dollar hits multi-month highs on hawkish Fed bets",
    "source": "TorFX News",
    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbFlCdC1iWEZfcXMxRTFpTGtOMGp4M1czd0dOX2tLT2lqTEt0eGtRQ2lKMHRCWWZPWXBiSGluMmMtdmUtQlJlY1kyOExQZ2V4Z29uOVUxY1VoT3JNRHI5MUFCeWpZeS1HazBaQUtpeG4wWGhCTHdlZVE4VEEySHhFX3liNE9QLWE3TDNpQzRUYlJTUUhuZ0ww?oc=5",
@@ -1430,6 +1492,7 @@
   {
    "id": "n30-2026-11-19",
    "cat": "markets",
+   "lang": "en",
    "title": "Euro gains ground against Canadian Dollar ahead of ECB Lagarde’s speech",
    "source": "FXStreet",
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPVkpnLWpQYVFNQVhGMTcyUmgzdE1BLVhIdmFKbllsMFRFTFp4eTFpLXlkb3UzQUhmNUx5Q21XUHo5NmhzNkJJM2Vhc1MtMTJOTEliMU9ua3FXLUdVbGJJdGw0T2pXU0FzalJkMC15QW5aN1pyR2VqNG0wU2wtM2wxcFpjZ3pmUzR5Mk84ck5OYVZsV0FfWU9pOHhDMjF0ckk5Y3VYOU9wVUpOZGp2b0x1WWh6NA?oc=5",
@@ -1438,6 +1501,7 @@
   {
    "id": "n31-2026-11-19",
    "cat": "markets",
+   "lang": "en",
    "title": "Euro shows little movement amid steady US Dollar and hawkish Fed signals",
    "source": "www.tmgm.com",
    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMG1XbUlBWW51cEcxQUZmMnJQWU9MaDk5X3E3bGsxQ2pVNFRmUU1xcm1hNXcyRDJwYVRtTnkyVFNZa0hSUEJLMjg2S2xHZ1VHNG9fR0FxR1pmanlrcTh2QWsxU3RRZk5KNkNyb1hpbGxTM25fenZPQ2hwMmx0UEJtVGYybldXdjV6Q3hYZUpFbnA4ZFRzWF9pYVdzZ1BzZGhacE9XMlpETmJiNWdRR0RLajlYR1czajBzYTM1VTJJSWQ0X2dZaHFubXIxODZTNExUeXBHdElR?oc=5",
@@ -1446,70 +1510,79 @@
   {
    "id": "n32-2026-11-20",
    "cat": "bev",
+   "lang": "en",
+   "title": "Why Is Chirag Paswan Supporting Review Of 40% GST On Beverages?",
+   "source": "ETV Bharat",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVmx4WlpUaFpHU1NoczZVRHh2NUxpSWdqbWxfMlF1d1hoOTJYQ2l6UmJrSXcxTC1JZTFkaDZFU3VJYWRsY1R2RDB4MVBQbmpiQmFYdUc2VU5wUzRaYVMxdldpQ0w2NkVMUzBDcXVRb09ZaU9rQnlfbTVBbzc5a0lBZzh6Rm1yX2ZPejdraGEtdE5XV0M4Y0JTR2RFNGRmNUNvS3BIeUpZMEJhNmY3TEwwZ3dRcjFiampEUGhiZ2pDSdIBxAFBVV95cUxNOExWd2JZX0xja3FRRURCSURhemR4U3RzRkE1ZEdDWG14WlNkRHlqN3M2RUFTSTRZRHhKaXFjUXhVTEx1NDA2U2llTHI4TE9RNzE1MDZtSXRYc016MUV2cUFYczNGMTM0dUcyMjNFUHRlTHpCY2hTVE5nWjNxbUZmcDcxNWVLWEdwM0U4Z2RkWjVJbkxkU1k0NjVVS1NNVWNiMFZCUDhPdElXOElhNkhGR0ZWdkVXdFJzSjZKVnlFTXVDRVJs?oc=5",
+   "date": "2026-11-20T11:47:49.000Z"
+  },
+  {
+   "id": "n33-2026-11-20",
+   "cat": "bev",
+   "lang": "en",
    "title": "Transparent Plastic Packaging Market to Reach USD 157.7 Billion",
    "source": "openPR.com",
    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSlpwMXRLY1BhNjduVmFJam56NmMtREtGMjFjU3V2ckdsUXJtM3J0RERDcTBnSmF0WWhvMTZuUXdWYUdEZVFZSzViNEtHTFlfVTB4OGlEMkVyWXF5enJfanhneVA3VS1tUVpsNzROaWYxQWYxZ29XUzJMR0t3VklReDNpblBIek5Ia0l2YjN2cUxSdGl6eV9PdEdKZ3dNTHY5?oc=5",
    "date": "2026-11-20T10:26:21.000Z"
   },
   {
-   "id": "n33-2026-11-20",
+   "id": "n34-2026-11-20",
    "cat": "bev",
+   "lang": "en",
    "title": "From tubs to film: six years of evidence for food-grade recycled polypropylene",
    "source": "Plastics News",
    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNXJxd3dxTUQ4WUpJdklIclk5OWJsd0hNX2YxWTU3dHJESzltdTZ4b0lUdEotWHpzMVVwQlNabzlzeVpCTUFoNmt3ZjBoMGQyR0pQNjdGdTIyTVJ3WGN3eDUwak5uZUFhWWY0Y2dpVm11a3dtWWRPeWNmTVhhUzA3UW9YQXlnVzNZSklvTGwyVnV4dWJMYXliSDhzTW9LNkZGSnYtenhPOGJ2WjBCOHl6Qm1xc242Rl9UckRKLWdyYmh1R2dQaWJsS3hKTnRNREF5?oc=5",
    "date": "2026-11-20T10:22:00.000Z"
   },
   {
-   "id": "n34-2026-11-20",
+   "id": "n35-2026-11-20",
    "cat": "bev",
+   "lang": "en",
    "title": "Indian Sugar Market Softens as Mills Boost Supplies — CMB News",
    "source": "CMB News",
    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZFc4YnpEUmF6UDJHUFVpeU1hdktQZ0FrRjlyR1FEMV82R1p0Vjl1eDFWdlNRV2xYWmsyVXlWeWxLdFZQd0VhMVc0dGRyNll0S0Mxelk5ZWpTX2tNREJOVW5wWkxqSGZ0QXNhR2pZOXdmTjY0czAwZjdQNzBtZlJEeTZjdzhzSmFTWGlPZ0xpNEZxQXc3?oc=5",
    "date": "2026-11-20T09:08:37.000Z"
   },
   {
-   "id": "n35-2026-11-20",
+   "id": "n36-2026-11-20",
    "cat": "bev",
+   "lang": "en",
    "title": "EU Sugar Market Tightens on 2026/27 Beet Losses and Higher Import Demand — CMB News",
    "source": "CMB News",
    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdjYtSHYxRF9HYWJNdFhGTzZUbXpjdUVQZi1oazNxT292N0NfRzNiNkMwZXFiemo4VFVXU3kyXzBGaGw1TUFRdDM5Q0lqYkFDcml4WHlTVXV4R1BQd253YVNhWHM1ZU54UU1qNFdhTFJpZXJsdEhSMkN1aEtxOG1oSlVRR0dTV2VTUUVrM2N2c3lUOGFEdldXVGtlV3JGUQ?oc=5",
    "date": "2026-11-20T09:08:10.000Z"
   },
   {
-   "id": "n36-2026-11-20",
+   "id": "n37-2026-11-20",
    "cat": "bev",
+   "lang": "en",
    "title": "Sugar Market Update: Maharashtra Output Rises, EU Prices Stabilise — CMB News",
    "source": "CMB News",
    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNWxXckVfbHZCZGZLMDJkb2cySWRWSWM4X1RzcGtaRllGdzVKRVRwLW9xOXpIMkdUQ2tpY0RWbnFBek1XVktISlA1UFpyWnRDRVpMNlFjVTQ1ZHlELVFuS0RYTmJVUW9WZ2pfUlVDSmpxSHN5bVdHZzBuLUs5TXBiUDVhMkY2WXo5LWl6Y3FGUnlKZGltbnhxV2g2TXlEYVZXUEE?oc=5",
    "date": "2026-11-20T09:07:44.000Z"
   },
   {
-   "id": "n37-2026-11-20",
+   "id": "n38-2026-11-20",
    "cat": "bev",
+   "lang": "en",
    "title": "EU raw sugar import prices fall below global benchmarks",
    "source": "УкрАгроКонсалт",
    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVzlCYnpSMU1ZZVN3RVNmN2paX1hyeTJPT2pNMGFiTWVVWFg3N2NRaUlYX0lkZ01QQmlGU3A5eS1lbXV6RE03cXlrVWhQTE1BRjFlZ0pjZlY1NzdDaExGT2JfLVd1SERqN09rcEZyRjlEenhrVjk4U1plZ3NYdHNPMm9fV1NRZ3VVSWtuVWVwd1JfMkdFOHc?oc=5",
    "date": "2026-11-20T07:58:55.000Z"
   },
   {
-   "id": "n38-2026-11-20",
+   "id": "n39-2026-11-20",
    "cat": "bev",
+   "lang": "en",
    "title": "India’s Sugar Industry",
    "source": "www.pib.gov.in",
    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdjJvcE05UHpJZF9wWWFlWkdJX3RHTW9lNEVFMDQwRExtU0ZQajlWbXBfd2VXbFFvTGhyYW50YXNFQWQ3QWhRcDRCUllSSXFDVElWWEV6OXRvT3dqNEdGZXhOSldBT1hyU29KdlZlYW9DRVNrTVV5dF9qVTNvcFoyRXdZMFNvanVKcVFJZ1BGWWRJb08tOHNFTGFzdw?oc=5",
    "date": "2026-11-20T07:52:34.000Z"
   },
   {
-   "id": "n39-2026-11-20",
-   "cat": "bev",
-   "title": "Sugar cane market: ICE No.11 correction, Brazil weather, India policy — CMB News",
-   "source": "CMB News",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNEc1dzJWSTJtUVgyRGtKdExwbTdPN0d4QnE1UXZ5bmhtak5zMWtrQnZGLUgtNXNRQVRpOUJXbnFpSXgyMGJubFhyVl9ZSV9XUTJNenMyeXpqczUwNXg5LVh1Si1GYWtrOUZGbFFMb2dPNjgxd3QxWG1YeWhIVGtUd1p1SXlPdkdNLXFuT0NNcFBra2ZQQVMwOWpR?oc=5",
-   "date": "2026-11-20T07:41:23.000Z"
-  },
-  {
    "id": "n40-2026-11-20",
    "cat": "cfo",
+   "lang": "fr",
    "title": "La BAD approuve 20 M€ pour une cimenterie ivoirienne à faible empreinte carbone",
    "source": "Capmad",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQel9UeTFxQWJvTTFDaWtoU2dobVNTQ0V2UGdrMzVEV2cwcDU4bVNPMzhYcmJpNms0TEtDSEhJNmRLSVhhbWRVN3FXN1ZsRTNsNVluSHpRWTA5OUJ3eWY4UFVPMEJWQlVrQmdrMi11c3JJa0E1N21iN1pGb1Fpa0VRY0l0ZzItM1NDZW1kTGhrNGVmUFFLZy1RQkltNXB4a3ROdVI3S2x5ZWJ1TmhzaFE?oc=5",
@@ -1518,6 +1591,7 @@
   {
    "id": "n41-2026-11-19",
    "cat": "cfo",
+   "lang": "en",
    "title": "MinRes locks in successor to retiring CFO",
    "source": "Australian Mining",
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQkUycWtKOHRtSEpxelozN1lQQzQ4ek1NaWJyTElHSU9BcFB0U0gzNm45MnVaZUJ2WXpwRG1PNnZMTnlORWFxdG1zM0N1Y1IwRzgxV08yWUVSLUZIdzBWWnhUSzE0NzlIWlI0WWMxQ3FKQXRZd2dyYWwtcHhWSEZKOFVGMFo?oc=5",
@@ -1526,6 +1600,7 @@
   {
    "id": "n42-2026-11-19",
    "cat": "cfo",
+   "lang": "fr",
    "title": "Au Sénégal, le Pastef acte la perte du statut de membre de Diomaye Faye après la création de Kiraay",
    "source": "Capmad",
    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZWx4QzU4Q0w1bmtvUElucGFGSG1KM0FtYmZDLTdqLXM2VEN5aUU2dnVGWjNrbHF5dkUyODVpTHlNY0ZjMnFGclM5VlZaT2tOUWFkNUs1bUM5cWJKZFpVUHhTdGpDR0s5UVNlZ0RvVTRVZC02ZWcwRWVrWWJjQ0FoVEFZUENpZTJNS1ptUWFVX0pMU3MyWm9ITDJxZC1pbXNyN2JIZ0ZzUXdZT3VfbjBvVGdCQ1RjbjQzajRsUGRncGtpcGdfTkp5eg?oc=5",
@@ -1534,14 +1609,17 @@
   {
    "id": "n43-2026-11-19",
    "cat": "cfo",
+   "lang": "fr",
    "title": "Thiès : Une tontine à 34 000 dollars montée aux États-Unis tourne au vinaigre",
    "source": "Seneweb",
    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQZ2pJYTBSZk51VWlEdGx1d3Z0T1I1MndGcTg2MUxFTVdCdlBWTV9Cb29OZTVqaHhleS1ZOGpVdFRzQzJXallOTGhPdkxZX200ZVI1dU5iMURaeFJYSk94cllkdU1iTjJpS3g1cl95NWNCVHp6NHc2NlppREd5TmxBTmxnVGI3SWw2Q0Z0dC12dS0zQl9oT1l3bkZRNlFpR0pqX09KVkw5V2hYTTNZZGxBNmdhc3ZJSEJTak9MbGljQ2lQT0tiRUdaUUVpUmg?oc=5",
-   "date": "2026-11-19T09:58:13.000Z"
+   "date": "2026-11-19T09:58:13.000Z",
+   "img": "https://image.seneweb.com/content/news/2026-47-19/thumb_1260x800_6afec834a767f_80Xm1b4kRM.jpg"
   },
   {
    "id": "n44-2026-11-19",
    "cat": "cfo",
+   "lang": "fr",
    "title": "UEMOA : la BCEAO reconstitue ses réserves de change à 41 milliards USD en 2025",
    "source": "Capmad",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNR2lKTVF6QUFPUUxXY21vNHlJNDQtN3BHS3JHVmpyLWthM01jYlBndlpCbURlZjg1b25VWnlnLWEyeTlKcE9lMHRnczFGV3dfMUw0NlhpaFNTdnhYclhuTEZ2YUdOMGpCRWZ0aUFsQXdPdHJ0SHZia3B3WEkxYjVwaXM1RTJ5N0hJay1ERUJ6UnpNVXowdmk4TmdiMzdRNFFCdDhMRGhVZXdycGM?oc=5",
@@ -1550,6 +1628,7 @@
   {
    "id": "n45-2026-11-18",
    "cat": "cfo",
+   "lang": "fr",
    "title": "UEMOA : Les réserves de change grimpent à 41 milliards USD en 2025",
    "source": "Sika Finance",
    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTW5VLTNGSXQyeVhDYTkwbTN3TWhWSWppbk52Z3VoR0h3U2lCbWIwNGFtY1BKT09Ob3J6RFk0X3ZidjB3OWd3cV9YcmJyRjhQNWRPSi1haTdyY3M5dVlYM3VTS3pNMC1abThYLVBvaWVKSHNOTzdNUnNsVVo4QUlEbFdJcWZ2cjNhVUd4aHV6SEFRcldQQjMtWnRLMS1tWG45VU5TaTgyUjJQUQ?oc=5",
@@ -1558,6 +1637,7 @@
   {
    "id": "n46-2026-11-18",
    "cat": "cfo",
+   "lang": "fr",
    "title": "UEMOA : Le risque souverain pèse sur 37,6% des actifs bancaires",
    "source": "Sika Finance",
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbEx2em1ya2dGV2VUaUlPclp0S2NYT1Z3TXg4a3NnalNLUVMzaXVYeTNQMm9SRnVXd2ZnR1pqWUVBaWxtM0ZFTURLbjhWdEpmWE12TVNudU9GSnpmYVRYX0xneGdaTVpOMHQyTFVNZFFKUkhWdUVpc3MwVHVrSWhmS18yNkp6cUVhbFh2T0NEUU1PSnVzQzNVeXVMV1FibWctSzFTNA?oc=5",
@@ -1566,69 +1646,80 @@
   {
    "id": "n47-2026-11-20",
    "cat": "lebanon",
+   "lang": "en",
+   "title": "UN Security Council Discusses Resolution 1701, Renews Support for UNIFIL and Lebanon’s Sovereignty",
+   "source": "NewsCord",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNRWFNWTkwcGhtREczVjJJRElabDJSUzYyb3B3bVgwZS05WTZzOFRtWU9VRXNxaUp2Um5JZ2xLVTcyR2dmSXZFWkN2ZVN1cm5QVHFLb25jbUtRaFA1bVh1TEFUbE40cUhGQW1LaTYybjd5R0JzNW9NTzI4Ym1QU2tKUU1BeDFoSHY1RTRCakxVZklsT1lZQmtzdzJxckRsSjQwSnEyWHZ3d1dFZ1N0ZWxkeVpJRkh4SC1vQURRTU1URDJQRWVGaVVPLWpQblpFclUzemhlX0V3WFpmX2pXVlotTUV6RlJRWjFFYmc?oc=5",
+   "date": "2026-11-20T11:26:20.000Z"
+  },
+  {
+   "id": "n48-2026-11-20",
+   "cat": "lebanon",
+   "lang": "en",
    "title": "Lebanon’s Economy Ministry Launches New Digital Platform for Intellectual Property Registration: 5 outlets compared",
    "source": "NewsCord",
    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPY2lkaGFaS1dubm5sdGJucHRUcXVSNzlrRGZxVk9PUGNQVmRNZ1l1UWxjNFZPX09FVFBxMzBWUjFsSHozNHBFR1NZRnEydjl3SlVocnd0WmU0cm5qQWVpTmtCZkFBM2NUVWxEblVJT2ZTeWstV0hkSUptV24wY2dJR09wMFNIelA1Y3VOVUtuRTJjNTU4UlVBajBXOWt4VTlaUFZJMFNsNGFpeG9QLVhFeHZQcWtfcWQ1dTRWbS1VYml6X2RIR29qdHpybEtLM09KT3ZHeVkwTVA0dEpNMXkyT3lxSWFyUUF0Tnc?oc=5",
    "date": "2026-11-20T11:22:53.000Z"
   },
   {
-   "id": "n48-2026-11-20",
+   "id": "n49-2026-11-20",
    "cat": "lebanon",
+   "lang": "en",
    "title": "Fuel prices drop across Lebanon",
    "source": "LBCI Lebanon",
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRS11SERTcTRwMGp2ekJjZkduZjVhNURITXNjSmNWU0k2QkhJcTZRaUtlY0dWRWtoSzY5NnVPTG1XX1pXcWxOVUNpVDJUR1hreTUzZFpNRUxCRU9LUXdQX2pDN3BNd2JzQXBHZ0hpaDFHeHgzaUd4eUdHRWZ2LTdTeXo4UnA?oc=5",
-   "date": "2026-11-20T07:29:53.000Z"
+   "date": "2026-11-20T07:29:53.000Z",
+   "img": "https://www.lbcgroup.tv/uploadImages/DocumentImages/Doc-T-968344-639304975855928210.jpg"
   },
   {
-   "id": "n49-2026-11-20",
+   "id": "n50-2026-11-20",
    "cat": "lebanon",
+   "lang": "en",
    "title": "Lebanon launches new intellectual property platform as Madrid system remains in sight",
    "source": "L'Orient Today",
    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMTJKMFowOXVxVHFyR0tEb29jb3BYU1lSRENuVVdHOGtrMEwwVF9aZWJnOXVWZTh5OU5WMXJkMU5uanFrOEQzSW5zWWROenZHVXlWUm9TekdzR0lZenlMTWNvcDA1N0FoV2lUSS11QkJLN01kSExlVXp3dG9mLW5TQjA3ZEhjQVNSakl5YWhMQ05KR1ZGcURQVXVtWUplaEtiWjlWa3JtZmt5NF9rckhVOTVESG5vbEt3TmxmT2tqTjB0T0VvWWJCMTliRUlKOXNuLTVqUg?oc=5",
    "date": "2026-11-20T07:02:55.000Z"
   },
   {
-   "id": "n50-2026-11-20",
+   "id": "n51-2026-11-20",
    "cat": "lebanon",
+   "lang": "en",
    "title": "New federal data on job openings, employee turnover, shows sluggish Oregon economy",
    "source": "Lebanon Local",
    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTEMtRXdkYThvczZ5Snd0RTdvdXliUVI2UmI0SnQtSWcwYzBuaGpVaERGMUdMbXNLM3J6UDdSckhzLVRvMG5LSUNUS2dFUzgzNnJMcHpyQ2I3VDR3SzZiM3V3RWhGYzdLMmd5RVV4ei13b29hbVNOZVBIamxPdFQ1Y0pVRWxkTGpNOFZwMndOWXhGUXRLUmZUeHhlaEl4SHZpR1dQUTRXZkJvemtlaFUzeGNUZTE?oc=5",
    "date": "2026-11-20T00:36:17.000Z"
   },
   {
-   "id": "n51-2026-11-19",
+   "id": "n52-2026-11-19",
    "cat": "lebanon",
+   "lang": "en",
    "title": "Shafaq News..Iraq, Lebanon, Syria, Jordan move to deepen agricultural ties",
    "source": "شفق نيوز",
    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNlhLR1FvVEhSZ01pdnlpeUtDLXpManZPaE9xZXhCSUJILUJpRUh2RGhZWmUwamdjWDZWa3NfODh3Y1NPLTR2a1hhdHVRZTV5Q2dMdWF4VEtHSnZnaWVnWG5YTzdjdEI4Rmk2dUVEUk5UZHlBZ2Yzb1BCR1E5OFBxR1dkWmliMjJ1ZnJaa1RnakJJdw?oc=5",
    "date": "2026-11-19T23:20:13.000Z"
   },
   {
-   "id": "n52-2026-11-19",
+   "id": "n53-2026-11-19",
    "cat": "lebanon",
+   "lang": "en",
    "title": "Lebanese Army on Independence Day: Restoring sovereignty and placing...",
    "source": "LBCI Lebanon",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTkJrY2dqZ3k4QTViSlhaUEhrYXd4ZEdkQXgxZFl5Z3pVcllKdHRoM1kzZ0NVcDhlTnlWY2syU1laVjlhNW4zOGNfM2FaYmhSdl9ReFY2MTFpVkNnVHFuRWR0RjNCQjJId1o1TGg5YzhPWmN6SmNmOWR5bnNpa25MWmhEOFVQWENmek1BYmZ5a0xWd0QzRHBiQXpCT2JfU3h3UlNIN0ZBRmV5YTlhaDlyZzk5SU5Oa3FLVWNkdzZOUQ?oc=5",
    "date": "2026-11-19T17:11:31.000Z"
   },
   {
-   "id": "n53-2026-11-19",
+   "id": "n54-2026-11-19",
    "cat": "lebanon",
+   "lang": "en",
    "title": "Aoun Pushes for Arab Economic Bloc, Starting with Agricultural Cooperation",
    "source": "MTV Lebanon",
    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5TQ3JvdGRacDhJZmYxR3N5OWkwMEdtNmladDRLYkVwUVpqdmt1Qm1nLWhrcjFkM1dVckZlQVBySGRoeHVZRkd5OUpvWXVxOVk?oc=5",
    "date": "2026-11-19T12:32:14.000Z"
-  },
-  {
-   "id": "n54-2026-11-19",
-   "cat": "lebanon",
-   "title": "Ministers of Interior and Economy Discuss Procedures for Operating Beirut Vegetable Market",
-   "source": "Daily Beirut",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZWdmRTNCVFlQc2w2ZnRIZGNPeERSSlJaOEdxUXJETGJkNjhmTXVYTGVjQkYtdFpTT0dMR3VFaWowczRvOERjWVhyT1B4aTM0dE5wcFBhOFFBMTF3a3BuVHZ2WFg3YVZYcWJ4NXJxUzR3VFNmRHhsTUhSRFJkVF9MRDVIQVo3akRWNXZrMlBRSGJGNU5kZkd5YUtIYU9zNThka2ZnV1pZQl82bU1jTG1jZnAzLU9qcDh4eXppNw?oc=5",
-   "date": "2026-11-19T11:25:52.000Z"
   }
  ],
  "log": [
-  "read McKinsey: 429 https://news.google.com/rss/search?q=site%3Amckinsey.com%20insights%20when%3A10d&hl=en&gl=US&ceid=US:en"
+  "photos: 6/35",
+  "read MIT Sloan Management Review: 429 https://news.google.com/rss/search?q=site%3Asloanreview.mit.edu%20when%3A10d&hl=en&gl=US&ceid=US:en",
+  "read Knowledge at Wharton: 429 https://news.google.com/rss/search?q=site%3Aknowledge.wharton.upenn.edu%20when%3A10d&hl=en&gl=US&ceid=US:en"
  ]
 }
