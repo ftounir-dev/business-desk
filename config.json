@@ -79,6 +79,42 @@
       "note": "IMARC Q3 2026 (September). Update in config.json when a new figure is published.",
       "source": "IMARC",
       "url": "https://www.imarcgroup.com/pet-resin-price-trend"
+    },
+    {
+      "id": "pet_eu",
+      "group": "pack",
+      "name": "PET bottle grade · Europe (Germany)",
+      "value": 1281,
+      "dp": 0,
+      "unit": "USD/t",
+      "date": "2026-09-30",
+      "note": "IMARC Q3 2026 (September). Update in config.json when a new figure is published.",
+      "source": "IMARC",
+      "url": "https://www.imarcgroup.com/pet-resin-price-trend"
+    },
+    {
+      "id": "pet_in",
+      "group": "pack",
+      "name": "PET bottle grade · India",
+      "value": 948,
+      "dp": 0,
+      "unit": "USD/t",
+      "date": "2026-09-30",
+      "note": "IMARC Q3 2026 (September). Update in config.json when a new figure is published.",
+      "source": "IMARC",
+      "url": "https://www.imarcgroup.com/pet-resin-price-trend"
+    },
+    {
+      "id": "pet_us",
+      "group": "pack",
+      "name": "PET bottle grade · USA",
+      "value": 1143,
+      "dp": 0,
+      "unit": "USD/t",
+      "date": "2026-09-30",
+      "note": "IMARC Q3 2026 (September). Update in config.json when a new figure is published.",
+      "source": "IMARC",
+      "url": "https://www.imarcgroup.com/pet-resin-price-trend"
     }
   ],
   "news": [
