@@ -179,14 +179,9 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 <div class="view" id="v-today">
   <div class="banner" id="banner"><span class="dot"></span><div id="banner-text">Loading today's brief…</div></div>
   <section>
-    <div class="kicker" id="k-ite"></div>
     <h2 class="sec" data-t="sixty"></h2>
     <p class="sub" id="sixty-sub"></p>
     <div id="sixty"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
-    <div class="share">
-      <a class="btn primary" id="wa" href="#" target="_blank" rel="noopener" data-t="wa"></a>
-      <button class="btn" type="button" id="copy" data-t="copy"></button>
-    </div>
   </section>
   <div id="front"></div>
   <section>
@@ -343,14 +338,12 @@ function renderTop(){
   if(offline)$("#banner-text").innerHTML+="<br>"+t("offline");
 }
 function renderSixty(){
-  $("#k-ite").textContent=t("ite");
   $("#sixty-sub").textContent=B.summary_mode==="ai"?t("ai"):t("rules");
   const lv={high:{en:"High",fr:"Élevé"},med:{en:"Medium",fr:"Moyen"},low:{en:"Low",fr:"Faible"}};
   $("#sixty").innerHTML=(B.summary[lang]||B.summary.en).map((x,i)=>`<div class="lead"><div class="n">${i+1}</div>
     <h3>${esc(x.title)}</h3>${x.detail?`<p>${esc(x.detail)}</p>`:""}
     <div class="imp"><b>${t("impact")} ·</b> ${esc(x.impact)}</div>
     <div class="tags"><span class="tag ${esc(x.level)}">${(lv[x.level]||{})[lang]||esc(x.level)}</span>${x.owner?`<span class="tag">${esc(x.owner)}</span>`:""}${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">${t("source")} ↗</a>`:""}</div></div>`).join("");
-  $("#wa").href="https://wa.me/?text="+encodeURIComponent(waText());
 }
 function waText(){
   const fr=B.summary.fr||B.summary.en,g=new Date(B.generated_at);
@@ -431,7 +424,6 @@ $("#sheet-cancel").onclick=()=>$("#sheet").hidden=true;
 $("#sheet").onclick=e=>{if(e.target.id==="sheet")$("#sheet").hidden=true;};
 $("#sheet-save").onclick=()=>{alerts[sid]={dir:sdir,v:num($("#sheet-val").value)};store.set("alerts",alerts);$("#sheet").hidden=true;renderAll();toast("✓");};
 $("#sheet-clear").onclick=()=>{delete alerts[sid];store.set("alerts",alerts);$("#sheet").hidden=true;renderAll();};
-$("#copy").onclick=async()=>{try{await navigator.clipboard.writeText(waText());toast(lang==="fr"?"Texte copié":"Copied");}catch(e){toast("Copy blocked");}};
 
 function applyText(){
   document.documentElement.lang=lang;$("#lang").textContent=lang==="fr"?"EN":"FR";
