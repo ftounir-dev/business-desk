@@ -177,6 +177,65 @@ section{padding-top:26px}
 @keyframes toast{0%{opacity:0;transform:translate(-50%,10px)}15%,80%{opacity:1;transform:translate(-50%,0)}100%{opacity:0}}
 @media (prefers-reduced-motion:reduce){.wv.on .kb,.wv.on .w-emoji{animation:none}}
 /* News: a calm reading list built for a daily habit */
+/* News: no sideways scroll */
+.nx-row>div{min-width:0}.nx-meta .s{min-width:0;flex:0 1 auto}.view{overflow-x:clip}
+/* Today: energetic hero */
+.hero{position:relative;overflow:hidden;margin-top:14px;border-radius:24px;padding:20px 18px 18px;color:#fff;background:linear-gradient(135deg,#1b2a6b 0%,#5b2a86 45%,#c2410c 100%);background-size:220% 220%;animation:heroShift 14s ease-in-out infinite alternate;box-shadow:0 14px 34px rgba(91,42,134,.35)}
+@keyframes heroShift{from{background-position:0% 30%}to{background-position:100% 70%}}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(30px);opacity:.55;pointer-events:none}
+.hero::before{width:220px;height:220px;right:-60px;top:-70px;background:#f59e0b;animation:blob 9s ease-in-out infinite alternate}
+.hero::after{width:180px;height:180px;left:-50px;bottom:-80px;background:#06b6d4;animation:blob 11s ease-in-out infinite alternate-reverse}
+@keyframes blob{to{transform:translate(-30px,25px) scale(1.15)}}
+.hero>*{position:relative;z-index:1}
+.h-date{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.8}
+.h-hi{margin:6px 0 0;font-family:var(--display);font-size:clamp(1.7rem,8vw,2.3rem);line-height:1.08;font-weight:700}
+.h-sub{margin:8px 0 0;font-size:.95rem;opacity:.92;line-height:1.4}
+.h-flags{display:flex;flex-wrap:wrap;gap:4px;margin-top:10px;font-size:1.25rem;line-height:1}
+.h-play{display:flex;align-items:center;gap:14px;margin-top:16px;width:100%;border:0;border-radius:18px;padding:12px 14px;background:rgba(255,255,255,.14);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:#fff;cursor:pointer;text-align:left;font:inherit}
+.h-play:active{transform:scale(.98)}
+.h-btn{position:relative;flex:none;width:54px;height:54px;border-radius:50%;background:#fff;color:#c2410c;display:grid;place-items:center;font-size:1.25rem;padding-left:4px;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.h-btn::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid rgba(255,255,255,.7);animation:ring 1.8s ease-out infinite}
+@keyframes ring{from{transform:scale(.85);opacity:1}to{transform:scale(1.35);opacity:0}}
+.h-play b{display:block;font-size:1.02rem}.h-play span.s{font-size:.8rem;opacity:.85}
+.movers{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.mv{border:1px solid var(--line);border-radius:16px;padding:11px 11px 8px;background:var(--surface);text-decoration:none;color:inherit;display:grid;gap:3px;min-width:0;position:relative;overflow:hidden}
+.mv .n{font-size:.68rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mv .v{font-family:var(--mono);font-size:1.12rem;font-weight:700}
+.mv .c{justify-self:start;font-size:.72rem;font-weight:800;padding:2px 7px;border-radius:999px;background:var(--sunk)}
+.mv .c.up{background:rgba(29,122,76,.14);color:var(--relief)}.mv .c.down{background:rgba(180,86,26,.14);color:var(--pressure)}
+.mv svg{width:100%;height:24px;margin-top:2px}
+.mv.big{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.mv.big::after{content:"🔥";position:absolute;right:8px;top:8px;font-size:.8rem}
+.quick{display:flex;gap:8px;margin-top:12px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.quick::-webkit-scrollbar{display:none}
+.qk{flex:none;display:inline-flex;align-items:center;gap:6px;padding:9px 13px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font-size:.84rem;font-weight:700;color:var(--text);text-decoration:none;white-space:nowrap}
+.qk.hot{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.banner.quiet{display:none}
+@media (prefers-reduced-motion:reduce){.hero,.hero::before,.hero::after,.h-btn::after{animation:none}}
+/* Read */
+.rd-goal{display:flex;align-items:center;gap:12px;margin-top:12px;padding:12px 14px;border-radius:14px;background:var(--surface);border:1px solid var(--line);font-size:.88rem}
+.rd-goal .bar{flex:1;height:8px;border-radius:4px;background:var(--sunk);overflow:hidden}.rd-goal .bar i{display:block;height:100%;background:var(--accent);border-radius:4px;transition:width .5s}
+.rd-goal b{white-space:nowrap}
+.rd-hero{display:block;margin-top:14px;border-radius:20px;overflow:hidden;background:var(--surface);border:1px solid var(--line);text-decoration:none;color:inherit}
+.rd-hero .ph{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#1b2a6b,#5b2a86 55%,#a8741a)}
+.rd-hero .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.rd-hero .ph .badge{position:absolute;left:12px;top:12px;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:6px 10px;border-radius:999px;background:var(--accent);color:var(--on-accent)}
+.rd-hero .bd{padding:16px 16px 18px;display:grid;gap:10px}
+.rd-hero h3{margin:0;font-family:var(--display);font-size:clamp(1.4rem,6.4vw,1.9rem);line-height:1.14;text-wrap:balance}
+.rd-hero .why{margin:0;font-size:.94rem;line-height:1.45}.rd-hero .why b{color:var(--accent)}
+.rd-src{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:.74rem;color:var(--muted)}
+.rd-src b{color:var(--text);font-weight:800;letter-spacing:.02em}
+.rd-tp{font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--sunk);color:var(--text)}
+.rd-lock{font-size:.7rem}
+.rd-cta{justify-self:start;display:inline-flex;align-items:center;gap:6px;padding:11px 18px;border-radius:999px;background:var(--text);color:var(--bg);font-weight:700;font-size:.92rem}
+.rd-row{display:grid;grid-template-columns:1fr 92px;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.rd-row>div{min-width:0}
+.rd-row h4{margin:5px 0 0;font-size:1.02rem;line-height:1.32;font-weight:650}
+.rd-row img,.rd-row .ph0{width:92px;height:70px;border-radius:12px;object-fit:cover;background:var(--sunk);display:grid;place-items:center;font-size:1.6rem}
+.rd-row.read h4{color:var(--muted);font-weight:500}.rd-row.read img{opacity:.6}
+.rd-hist{margin-top:8px}
+.rd-hist a{display:flex;gap:10px;padding:10px 0;border-bottom:1px dashed var(--line);text-decoration:none;color:inherit;font-size:.9rem;line-height:1.35}
+.rd-hist a span.d{flex:none;width:52px;color:var(--muted);font-size:.76rem;padding-top:2px}
 .sig{margin:-4px auto 0;padding:0 18px calc(96px + env(safe-area-inset-bottom));max-width:640px;font-style:italic;font-size:.74rem;letter-spacing:.06em;color:var(--muted);text-align:right}
 .nx-ctry{font-weight:800;color:var(--text);letter-spacing:.02em}
 .nx-sec{margin-top:22px;display:flex;align-items:baseline;justify-content:space-between;gap:10px;border-bottom:2px solid var(--text);padding-bottom:6px}
@@ -355,6 +414,9 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 <main class="wrap">
 <!-- TODAY -->
 <div class="view" id="v-today">
+  <div class="hero" id="hero"></div>
+  <div class="movers" id="movers"></div>
+  <div class="quick" id="quick"></div>
   <div class="banner" id="banner"><span class="dot"></span><div id="banner-text">Loading today's brief…</div></div>
   <section>
     <h2 class="sec" data-t="sixty"></h2>
@@ -399,13 +461,18 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 <!-- READ -->
 <div class="view" id="v-read" hidden>
   <section>
-    <h2 class="sec" data-t="read_t"></h2>
-    <p class="sub" data-t="read_s"></p>
-    <article class="aotd" id="aotd"></article>
+    <h2 class="sec" data-t="t_read"></h2>
+    <div class="rd-goal" id="rd-goal"></div>
+    <div id="aotd"></div>
   </section>
   <section>
     <div class="sec-head"><h2 class="sec" data-t="more_t"></h2></div>
-    <ul class="stories" id="more"></ul>
+    <div class="chips" id="rd-chips" role="group" aria-label="Topics"></div>
+    <div id="more"></div>
+  </section>
+  <section id="rd-hist-wrap" hidden>
+    <div class="sec-head"><h2 class="sec" data-t="hist_t"></h2></div>
+    <div class="rd-hist" id="rd-hist"></div>
   </section>
 </div>
 
@@ -432,8 +499,8 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 <script>
 const T={
  en:{ite:"For ITE Congo · Brazzaville",sixty:"The last 24 hours",t_events:"Events",wa:"Send to WhatsApp · FR",copy:"Copy French text",
-  agenda_t:"Coming up",t_read:"Read",read_t:"Article of the day",read_s:"Chosen each morning for a CFO from Harvard Business Review, The Economist, McKinsey, MIT Sloan, Wharton and CFO.com. Some need a subscription.",more_t:"More good reads",readit:"Read the article",why:"Why read it",otd_t:"On this day",mk_t:"Markets",mk_s:"Last close for each. Tap a row for its chart, source and an alert.",lg_p:"Cost pressure for ITE",lg_r:"Cost relief",lg_n:"Context",
-  g_fx:"Currencies · XAF",g_commod:"Commodities",g_africa:"Africa FX",g_pack:"Packaging · PET bottle grade",ref:"Reference",g_rates:"Rates",
+  agenda_t:"Coming up",t_read:"Read",read_t:"Article of the day",read_s:"Chosen each morning for a CFO from Harvard Business Review, The Economist, McKinsey, MIT Sloan, Wharton and CFO.com. Some need a subscription.",more_t:"More good reads",hist_t:"Previous picks",readit:"Read the article",why:"Why read it",otd_t:"On this day",mk_t:"Markets",mk_s:"Last close for each. Tap a row for its chart, source and an alert.",lg_p:"Cost pressure for ITE",lg_r:"Cost relief",lg_n:"Context",
+  g_fx:"Currencies · XAF",g_commod:"Commodities",g_africa:"Africa FX",g_pack:"Packaging · PET bottle grade",ref:"Reference",g_rates:"BEAC rates · CEMAC interbank",
   news_t:"News",all:"All",tools_t:"Tools",pulse_t:"What the dollar costs ITE this month",pulse_s:"The franc CFA is pegged to the euro, so only USD invoices carry FX risk. Your figures stay on this phone.",
   f_usd:"USD purchases per month",f_budget:"Budget rate (XAF per USD)",o_label:"Monthly cost vs budget at today's rate",
   sugar_e:"Sugar landed-cost starter",f_t:"Tonnes per month",f_p:"Premium + freight ($/t)",s_label:"Raw sugar No.11 + your premium, in XAF",s_note:"Converts ¢/lb to $/t (× 22.046). Refining, duties and port charges not included.",
@@ -445,8 +512,8 @@ const T={
   stale:"This brief is more than a day old. The automatic update may have failed; check GitHub Actions.",armed:"alerts armed, none triggered",
   offline:"Offline: showing the last brief saved on this phone.",ago_m:"min ago",ago_h:"h ago",ago_d:"d ago",now:"now",chart:"Last month",nostories:"No stories in this section yet. It fills on the next update."},
  fr:{ite:"Pour ITE Congo · Brazzaville",sixty:"Les dernières 24 heures",t_events:"Événements",wa:"Envoyer sur WhatsApp",copy:"Copier le texte",
-  agenda_t:"À venir",t_read:"Lecture",read_t:"L'article du jour",read_s:"Choisi chaque matin pour un DAF parmi Harvard Business Review, The Economist, McKinsey, MIT Sloan, Wharton et CFO.com. Certains nécessitent un abonnement.",more_t:"Autres lectures",readit:"Lire l'article",why:"Pourquoi le lire",otd_t:"Ce jour-là",mk_t:"Marchés",mk_s:"Dernière clôture. Touchez une ligne pour le graphique, la source et une alerte.",lg_p:"Pression sur les coûts",lg_r:"Allègement",lg_n:"Contexte",
-  g_fx:"Devises · XAF",g_commod:"Matières premières",g_africa:"Devises africaines",g_pack:"Emballage · PET qualité bouteille",ref:"Référence",g_rates:"Taux",
+  agenda_t:"À venir",t_read:"Lecture",read_t:"L'article du jour",read_s:"Choisi chaque matin pour un DAF parmi Harvard Business Review, The Economist, McKinsey, MIT Sloan, Wharton et CFO.com. Certains nécessitent un abonnement.",more_t:"Autres lectures",hist_t:"Choix précédents",readit:"Lire l'article",why:"Pourquoi le lire",otd_t:"Ce jour-là",mk_t:"Marchés",mk_s:"Dernière clôture. Touchez une ligne pour le graphique, la source et une alerte.",lg_p:"Pression sur les coûts",lg_r:"Allègement",lg_n:"Contexte",
+  g_fx:"Devises · XAF",g_commod:"Matières premières",g_africa:"Devises africaines",g_pack:"Emballage · PET qualité bouteille",ref:"Référence",g_rates:"Taux BEAC · interbancaire CEMAC",
   news_t:"Actualités",all:"Tout",tools_t:"Outils",pulse_t:"Ce que le dollar coûte à ITE ce mois-ci",pulse_s:"Le franc CFA est arrimé à l'euro : seules les factures en USD portent un risque de change. Vos chiffres restent sur ce téléphone.",
   f_usd:"Achats en USD par mois",f_budget:"Taux budgétaire (XAF pour 1 USD)",o_label:"Coût mensuel vs budget au taux du jour",
   sugar_e:"Coût du sucre, première estimation",f_t:"Tonnes par mois",f_p:"Prime + fret ($/t)",s_label:"Sucre brut No.11 + votre prime, en XAF",s_note:"Conversion ¢/lb en $/t (× 22,046). Raffinage, droits et frais portuaires non inclus.",
@@ -500,8 +567,8 @@ function renderTop(){
   const hits=B.markets.filter(tripped);const old=(Date.now()-g)>26*3600e3;
   if(hits.length){bn.classList.add("hit");$("#banner-text").innerHTML=`<b>${t("alert")}:</b> `+hits.map(m=>`${esc(m.name)} ${fmt(m.value,m.dp)} ${alerts[m.id].dir==="above"?">":"<"} ${fmt(alerts[m.id].v,m.dp)}`).join(" · ");}
   else if(old){bn.classList.add("stale");$("#banner-text").textContent=t("stale");}
-  else{const a=B.markets.filter(m=>alerts[m.id]);$("#banner-text").innerHTML=`<b>${a.length} ${t("armed")}.</b> ${esc(a.map(m=>`${m.name} ${alerts[m.id].dir==="above"?">":"<"} ${fmt(alerts[m.id].v,m.dp)}`).join(" · "))}`;}
-  if(offline)$("#banner-text").innerHTML+="<br>"+t("offline");
+  else{bn.classList.add("quiet");const a=B.markets.filter(m=>alerts[m.id]);$("#banner-text").innerHTML=`<b>${a.length} ${t("armed")}.</b> ${esc(a.map(m=>`${m.name} ${alerts[m.id].dir==="above"?">":"<"} ${fmt(alerts[m.id].v,m.dp)}`).join(" · "))}`;}
+  if(offline){bn.classList.remove("quiet");$("#banner-text").innerHTML+="<br>"+t("offline");}
 }
 const REEL_CATS={worldwide:["🌐","linear-gradient(165deg,#2a4fb8,#0b1533)"],africa:["🌍","linear-gradient(165deg,#c8661f,#3b1606)"],congo:["🇨🇬","linear-gradient(165deg,#12895a,#05261a)"],markets:["📈","linear-gradient(165deg,#0e8a93,#04272b)"],bev:["🥤","linear-gradient(165deg,#c22a6a,#3b0a20)"],cfo:["💼","linear-gradient(165deg,#6740c4,#190c3a)"],lebanon:["🇱🇧","linear-gradient(165deg,#c42b2b,#360808)"]};
 const REEL_DUR=6500;
@@ -513,7 +580,7 @@ function renderSixty(){
   const catOf=x=>x.cat||((B.categories||[]).find(c=>c.en===x.owner||c.fr===x.owner)||{}).id||"worldwide";
   reel.n=items.length;if(!reel.n){$("#sixty").innerHTML="";return;}
   reel.i=Math.min(reel.i,reel.n-1);
-  $("#sixty").innerHTML=`<button class="w-open" type="button" id="w-open"><span class="pl">▶</span>${lang==="fr"?"Regarder avec le son":"Watch with sound"}</button><div class="reel" id="reel" tabindex="0" aria-roledescription="carousel" aria-label="${esc(t("sixty"))}">
+  $("#sixty").innerHTML=`<div class="reel" id="reel" tabindex="0" aria-roledescription="carousel" aria-label="${esc(t("sixty"))}">
   <div class="bars">${items.map(()=>"<i><b></b></i>").join("")}</div>
   ${items.map((x,k)=>{const c=REEL_CATS[catOf(x)]||REEL_CATS.worldwide;return `<article class="slide${x.img?" has-img":""}" style="background:${c[1]}" aria-label="${k+1} / ${items.length}">${bgImg(x.img)}
     <div class="s-top"><span class="s-cat">${esc(ctryLabel(x)||x.owner||"")}</span>${x.level==="high"?`<span class="s-hot">${lang==="fr"?"À la une":"Top story"}</span>`:""}</div>
@@ -660,7 +727,7 @@ function wireReel(){
   R.querySelector(".next").onclick=()=>reelGo(1);
   R.querySelector(".s-pp").onclick=()=>{if(reel.paused&&reel.i>=reel.n-1&&reel.el>=REEL_DUR)showSlide(0);reel.paused=!reel.paused;ppIcon();};
   R.querySelector(".s-full").onclick=()=>openWatch(reel.i);
-  $("#w-open").onclick=()=>openWatch(0);
+
   R.onkeydown=e=>{if(e.key==="ArrowRight"||e.key==="ArrowDown"){reelGo(1);e.preventDefault();}else if(e.key==="ArrowLeft"||e.key==="ArrowUp"){reelGo(-1);e.preventDefault();}else if(e.key==="Escape")reelFull(false);else if(e.key===" "){reel.paused=!reel.paused;ppIcon();e.preventDefault();}};
   let sx=0,sy=0,st=0,moved=false,hT=0;
   R.addEventListener("touchstart",e=>{const p=e.touches[0];sx=p.clientX;sy=p.clientY;st=Date.now();moved=false;hT=setTimeout(()=>{reel.hold=true;},220);},{passive:true});
@@ -704,15 +771,59 @@ function renderOTD(){
   $("#otd-wrap").hidden=!l.length;
   $("#otd").innerHTML=l.map(e=>`<li><span class="d">${esc(e.year)}</span><span>${esc(e.text)}${e.url?` <a class="see" href="${esc(e.url)}" target="_blank" rel="noopener">↗</a>`:""}</span></li>`).join("");
 }
+function renderHero(){
+  const fr=lang==="fr",hr=new Date().getHours(),items=B.summary[lang]||B.summary.en||[];
+  const hi=fr?(hr<12?"Bonjour":hr<18?"Bon après-midi":"Bonsoir"):(hr<12?"Good morning":hr<18?"Good afternoon":"Good evening");
+  const flags=[...new Set(items.flatMap(x=>countriesOf(x).map(c=>c[1])))].slice(0,10);
+  const nC=new Set(items.flatMap(x=>countriesOf(x).filter(c=>c[0].length===2).map(c=>c[0]))).size,mins=Math.max(1,Math.round(items.length*7.5/30)/2);
+  const d=new Date().toLocaleDateString(fr?"fr-FR":"en-GB",{weekday:"long",day:"numeric",month:"long"});
+  $("#hero").innerHTML=`<div class="h-date">${esc(d)} · ${fr?"mis à jour":"updated"} ${new Date(B.generated_at).toLocaleTimeString(fr?"fr-FR":"en-GB",{hour:"2-digit",minute:"2-digit"})}</div>
+    <h2 class="h-hi">${hi}, Rayan ${hr<12?"☀️":hr<18?"👋":"🌙"}</h2>
+    <p class="h-sub">${fr?`${items.length} histoires de ${nC} pays, en ${String(mins).replace(".",",")} minutes.`:`${items.length} stories from ${nC} countries, in ${mins} minutes.`}</p>
+    <div class="h-flags" aria-hidden="true">${flags.join("")}</div>
+    <button class="h-play" type="button" id="h-play"><span class="h-btn">▶</span><span><b>${fr?"Lancer le brief du jour":"Play today's brief"}</b><span class="s">${fr?"Vidéo avec voix · Monde, Afrique, Congo & CEMAC":"Video with voice · Worldwide, Africa, Congo & CEMAC"}</span></span></button>`;
+  $("#h-play").onclick=()=>openWatch(0);
+  const ids=["usdxaf","brent","gold"],ms=ids.map(id=>B.markets.find(m=>m.id===id)).filter(Boolean);
+  const big=ms.reduce((a,m)=>Math.abs(m.change_pct||0)>Math.abs(a.change_pct||0)?m:a,ms[0]||{});
+  $("#movers").innerHTML=ms.map(m=>{const ch=m.change_pct||0,e=effect(m);
+    return `<a class="mv${m===big&&Math.abs(ch)>=0.5?" big":""}" href="#markets"><span class="n">${esc(m.id==="usdxaf"?"USD/XAF":m.name)}</span><span class="v">${fmt(m.value,m.dp)}</span><span class="c ${e==="relief"?"up":e==="pressure"?"down":""}">${ch>0?"▲":ch<0?"▼":"•"} ${fmt(Math.abs(ch),2)}%</span>${spark((m.series||[]).slice(-20),e)}</a>`;}).join("");
+  const unseen=(typeof NX!=="undefined")?B.news.filter(n=>!NX.read[nxId(n)]&&new Date(n.date).getTime()>NX.prev).length:0;
+  const st=(typeof nxStreak==="function")?nxStreak():0,today=new Date().toISOString().slice(0,10),nx=(B.agenda||[]).find(a=>a.date>=today);
+  const days=nx?Math.round((new Date(nx.date+"T00:00:00")-new Date(today+"T00:00:00"))/864e5):0;
+  $("#quick").innerHTML=[
+    st?`<span class="qk hot">🔥 ${st} ${fr?(st>1?"jours":"jour"):(st>1?"days":"day")}</span>`:"",
+    `<a class="qk" href="#news">📰 ${unseen} ${fr?"nouveaux":"new"}</a>`,
+    nx?`<a class="qk" href="#events">📅 ${esc((nx[lang]||nx.en).replace(/\s*\(.*\)$/,""))} · ${days===0?(fr?"aujourd'hui":"today"):days===1?(fr?"demain":"tomorrow"):(fr?"J-"+days:"in "+days+"d")}</a>`:"",
+    `<a class="qk" href="#read">📚 ${fr?"Article du jour":"Article of the day"}</a>`].join("");
+}
+const RD={read:store.get("rd_read",{}),topic:"all"};
+const RD_TOPICS=[
+  ["fin","💰","Finance & treasury","Finance & trésorerie",/financ|cash|capital|treasur|cfo|debt|credit|bank|interest rate|valuation|budget|cost|pric|profit|margin|tax|invest|account|audit|fund/i],
+  ["econ","🌍","Economy & markets","Économie & marchés",/econom|inflation|tariff|trade|recession|gdp|central bank|currenc|dollar|oil|market|growth|imf|africa|afrique|emerging/i],
+  ["strat","♟️","Strategy","Stratégie",/strateg|compet|merger|acquisi|business model|innovat|brand|customer|consumer/i],
+  ["lead","🧭","Leadership","Leadership",/lead|ceo|board|manag|talent|team|culture|hiring|people|decision|career|employee|work/i],
+  ["ops","🏭","Operations & AI","Opérations & IA",/supply chain|operation|manufactur|logistic|procure|factory|automat|\bai\b|artificial|digital|data|tech/i]];
+const rdTopic=a=>RD_TOPICS.find(t=>t[4].test(a.title))||["idea","💡","Ideas","Idées"];
+const rdId=a=>(a.url||a.title).slice(-90);
+function rdMark(a){if(RD.read[rdId(a)])return;RD.read[rdId(a)]=Date.now();store.set("rd_read",RD.read);}
 function renderRead(){
-  const R=B.read;$("#aotd").innerHTML="";$("#more").innerHTML="";
+  const R=B.read,fr=lang==="fr";$("#aotd").innerHTML="";$("#more").innerHTML="";
+  const wk=Date.now()-7*864e5,nWeek=Object.values(RD.read).filter(t=>t>wk).length,goal=3;
+  $("#rd-goal").innerHTML=`<span>📚</span><div class="bar"><i style="width:${Math.min(100,nWeek/goal*100)}%"></i></div><b>${nWeek}/${goal} ${fr?"lectures cette semaine":"long reads this week"}${nWeek>=goal?" 🎯":""}</b>`;
   if(!R||!R.pick){$("#aotd").innerHTML=`<p class="empty">${t("nostories")}</p>`;return;}
-  const p=R.pick,ai=p.ai||{},title=(lang==="fr"&&ai.fr&&ai.fr.title)||p.title,why=(ai[lang]||{}).why;
-  $("#aotd").innerHTML=`<div class="kicker">${esc(p.source)}</div><h3>${esc(title)}</h3>
-    <div class="meta">${fdate(p.date,{day:"numeric",month:"long"})}</div>
-    ${why?`<p class="why"><b>${t("why")} ·</b> ${esc(why)}</p>`:""}
-    <a class="btn primary" href="${esc(p.url)}" target="_blank" rel="noopener">${t("readit")} ↗</a>`;
-  $("#more").innerHTML=(R.more||[]).map(n=>story(n)).join("");
+  const p=R.pick,ai=p.ai||{},title=(fr&&ai.fr&&ai.fr.title)||p.title,why=(ai[lang]||{}).why,tp=rdTopic(p);
+  const src=a=>`<div class="rd-src"><b>${esc(a.source)}</b>${a.paywall?`<span class="rd-lock" title="${fr?"Abonnement":"Subscription"}">🔒</span>`:""}<span>· ${ago(a.date)}</span><span class="rd-tp">${rdTopic(a)[1]} ${fr?rdTopic(a)[3]:rdTopic(a)[2]}</span></div>`;
+  $("#aotd").innerHTML=`<a class="rd-hero" href="${esc(p.url)}" target="_blank" rel="noopener" data-rid="pick"><div class="ph">${p.img?`<img src="${esc(p.img)}" alt="" decoding="async" onerror="this.remove()">`:""}<span class="badge">${fr?"Article du jour":"Article of the day"}</span></div>
+    <div class="bd">${src(p)}<h3>${esc(title)}</h3>${why?`<p class="why"><b>${t("why")} ·</b> ${esc(why)}</p>`:""}<span class="rd-cta">${t("readit")} ↗</span></div></a>`;
+  const more=R.more||[],topics=RD_TOPICS.filter(t=>more.some(a=>rdTopic(a)[0]===t[0]));
+  if(!["all",...topics.map(t=>t[0])].includes(RD.topic))RD.topic="all";
+  $("#rd-chips").innerHTML=[`<button class="chip" type="button" data-rt="all" aria-pressed="${RD.topic==="all"}">${t("all")}</button>`,...topics.map(t=>`<button class="chip" type="button" data-rt="${t[0]}" aria-pressed="${RD.topic===t[0]}">${t[1]} ${fr?t[3]:t[2]}</button>`)].join("");
+  document.querySelectorAll("[data-rt]").forEach(b=>b.onclick=()=>{RD.topic=b.dataset.rt;renderRead();});
+  const list=more.filter(a=>RD.topic==="all"||rdTopic(a)[0]===RD.topic);
+  $("#more").innerHTML=list.map((a,i)=>`<a class="rd-row${RD.read[rdId(a)]?" read":""}" href="${esc(a.url)}" target="_blank" rel="noopener" data-rid="${more.indexOf(a)}"><div>${src(a)}<h4>${esc(a.title)}</h4></div>${a.img?`<img src="${esc(a.img)}" alt="" loading="lazy" decoding="async" onerror="this.outerHTML='<span class=&quot;ph0&quot;>${rdTopic(a)[1]}</span>'">`:`<span class="ph0">${rdTopic(a)[1]}</span>`}</a>`).join("")||`<p class="empty">${t("nostories")}</p>`;
+  const H=R.history||[];$("#rd-hist-wrap").hidden=!H.length;
+  $("#rd-hist").innerHTML=H.map(a=>`<a href="${esc(a.url)}" target="_blank" rel="noopener"><span class="d">${fdate(a.date,{day:"numeric",month:"short"})}</span><span><b>${esc(a.source)}</b> · ${esc(a.title)}</span></a>`).join("");
+  document.querySelectorAll("#v-read [data-rid]").forEach(el=>el.onclick=()=>{const a=el.dataset.rid==="pick"?p:more[+el.dataset.rid];if(a){rdMark(a);setTimeout(renderRead,400);}});
 }
 function renderAgenda(){
   const today=new Date().toISOString().slice(0,10);
@@ -943,7 +1054,7 @@ function applyText(){
   if(theme)document.documentElement.dataset.theme=theme;else delete document.documentElement.dataset.theme;
   document.querySelectorAll("[data-t]").forEach(e=>e.textContent=t(e.dataset.t));
 }
-function renderAll(){applyText();if(!B)return;renderTop();renderSixty();renderFront();renderOTD();renderAgenda();renderMarkets();renderNews();renderRead();}
+function renderAll(){applyText();if(!B)return;renderTop();renderHero();renderSixty();renderFront();renderOTD();renderAgenda();renderMarkets();renderNews();renderRead();}
 $("#lang").onclick=()=>{lang=lang==="fr"?"en":"fr";store.set("lang",lang);renderAll();};
 $("#theme").onclick=()=>{const dark=theme?theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;theme=dark?"light":"dark";store.set("theme",theme);renderAll();};
 
