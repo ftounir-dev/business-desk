@@ -147,27 +147,33 @@ function ogImage(html, base) {
   if (!c) return null;
   try { const u = new URL(decode(c[1]), base); return /^https:/.test(u.href) && !/logo|placeholder|default/i.test(u.pathname) ? u.href : null; } catch { return null; }
 }
+const why = {};
 async function photoFor(h) {
-  const mkt = h.lang === "fr" ? "fr-FR" : "en-US";
-  const q = h.title.split(" ").slice(0, 14).join(" ");
-  const xml = await fetchText(`https://www.bing.com/news/search?q=${encodeURIComponent(q)}&format=rss&mkt=${mkt}`);
-  const want = new Set(words(h.title));
-  for (const b of [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].slice(0, 5).map(m => m[1])) {
-    const got = words(tag(b, "title")); const hit = got.filter(w => want.has(w)).length;
-    if (!want.size || hit / Math.max(want.size, 1) < 0.5) continue;           // must be the same story
-    const thumb = (b.match(/<News:Image>([\s\S]*?)<\/News:Image>/i) || [])[1];
-    let article = null; try { article = new URL(decode(tag(b, "link"))).searchParams.get("url"); } catch {}
-    if (article) { try { const og = ogImage(await fetchText(article, 6000), article); if (og) return og; } catch {} }
-    if (thumb) return decode(thumb) + "&w=900&h=1200&c=7&rs=1";
+  const mkt = h.lang === "fr" ? "fr-FR" : "en-US", want = new Set(words(h.title)), all = h.title.split(" ");
+  for (const q of [all.slice(0, 12).join(" "), all.slice(0, 7).join(" ") + " " + h.source]) {
+    let xml;
+    try { xml = await fetchText(`https://www.bing.com/news/search?q=${encodeURIComponent(q)}&format=rss&mkt=${mkt}`); }
+    catch (e) { why[e.message.slice(0, 3)] = (why[e.message.slice(0, 3)] || 0) + 1; continue; }
+    const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].slice(0, 8).map(m => m[1]);
+    if (!items.length) { why.empty = (why.empty || 0) + 1; continue; }
+    for (const b of items) {
+      const got = new Set(words(tag(b, "title"))); const hit = [...got].filter(w => want.has(w)).length;
+      if (hit < 3 && hit / Math.max(1, Math.min(want.size, got.size)) < 0.5) continue;   // must be the same story
+      const thumb = (b.match(/<News:Image>([\s\S]*?)<\/News:Image>/i) || [])[1];
+      let article = null; try { article = new URL(decode(tag(b, "link"))).searchParams.get("url"); } catch {}
+      if (article) { try { const og = ogImage(await fetchText(article, 6000), article); if (og) return og; } catch {} }
+      if (thumb) return decode(thumb) + "&w=900&h=1200&c=7&rs=1";
+    }
+    why.nomatch = (why.nomatch || 0) + 1;
   }
   return null;
 }
 async function addPhotos(list) {
   const queue = [...list]; let n = 0;
-  await Promise.all(Array.from({ length: 6 }, async () => {
+  await Promise.all(Array.from({ length: 4 }, async () => {
     while (queue.length) { const h = queue.shift(); try { const img = await photoFor(h); if (img) { h.img = img; n++; } } catch (e) {} }
   }));
-  log.push(`photos: ${n}/${list.length}`);
+  log.push(`photos: ${n}/${list.length} ${JSON.stringify(why)}`);
 }
 
 /* ---------- Read: article of the day ---------- */
