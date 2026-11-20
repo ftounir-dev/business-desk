@@ -67,7 +67,7 @@ section{padding-top:26px}
 .banner.hit .dot{background:var(--critical)} .banner.stale .dot{background:var(--pressure)}
 
 /* 60 seconds */
-.lead{display:grid;grid-template-columns:34px 1fr;gap:4px 12px;padding:16px 0;border-bottom:1px solid var(--line)}
+.lead{display:grid;gap:4px;padding:16px 0;border-bottom:1px solid var(--line)}
 .lead:last-child{border-bottom:0}
 .lead .n{font-family:var(--display);font-size:1.7rem;line-height:1;color:var(--accent);font-weight:700;grid-row:span 4}
 .lead h3{margin:0;font-size:1.04rem;line-height:1.35;font-weight:650;text-wrap:balance}
@@ -137,11 +137,12 @@ label.f input{background:var(--bg);border:1px solid var(--line);border-radius:10
 .agenda{list-style:none;margin:0;padding:0}
 .agenda li{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:.94rem}
 .agenda li:last-child{border-bottom:0}
+.otd li{font-size:.9rem;line-height:1.45}
 .agenda .d{font-family:var(--mono);font-size:.82rem;color:var(--accent);font-weight:600}
 
 /* Tab bar */
 nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
-nav.tabs .in{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+nav.tabs .in{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr)}
 nav.tabs a{display:grid;place-items:center;gap:2px;padding:9px 2px 8px;font-size:.7rem;font-weight:600;color:var(--muted);text-decoration:none}
 nav.tabs a[aria-current="page"]{color:var(--accent)}
 nav.tabs svg{width:22px;height:22px}
@@ -212,6 +213,10 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
     <div id="sixty"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
   </section>
   <div id="front"></div>
+  <section id="otd-wrap" hidden>
+    <div class="sec-head"><h2 class="sec" data-t="otd_t"></h2></div>
+    <ul class="agenda otd" id="otd"></ul>
+  </section>
   <section>
     <div class="sec-head"><h2 class="sec" data-t="agenda_t"></h2></div>
     <ul class="agenda" id="agenda"></ul>
@@ -238,15 +243,6 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
   </section>
 </div>
 
-<!-- SAVED -->
-<div class="view" id="v-saved" hidden>
-  <section>
-    <h2 class="sec" data-t="saved_t"></h2>
-    <p class="sub" data-t="saved_s"></p>
-    <ul class="stories" id="saved"></ul>
-  </section>
-</div>
-
 <footer data-t="foot"></footer>
 </main>
 
@@ -254,7 +250,6 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
   <a href="#today" data-v="today"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h8M8 17h4" stroke-linecap="round"/></svg><span data-t="t_today"></span></a>
   <a href="#markets" data-v="markets"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 18l5-6 4 3 7-9" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-t="t_markets"></span></a>
   <a href="#news" data-v="news"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 2.5 14.4 0 17M12 3.5c-2.5 2.6-2.5 14.4 0 17"/></svg><span data-t="t_news"></span></a>
-  <a href="#saved" data-v="saved"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 4h10v16l-5-3.5L7 20z" stroke-linejoin="round"/></svg><span id="saved-tab"></span></a>
 </div></nav>
 
 <div class="sheet" id="sheet" hidden><div class="box" role="dialog" aria-modal="true" aria-labelledby="sheet-h">
@@ -268,8 +263,8 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 <script>
 const T={
  en:{ite:"For ITE Congo · Brazzaville",sixty:"Overnight in 60 seconds",wa:"Send to WhatsApp · FR",copy:"Copy French text",
-  agenda_t:"Coming up",mk_t:"Markets",mk_s:"Last close for each. Tap a row for its chart, source and an alert.",lg_p:"Cost pressure for ITE",lg_r:"Cost relief",lg_n:"Context",
-  g_fx:"Currencies · XAF",g_commod:"Commodities · ITE inputs",g_africa:"Africa FX",g_pack:"Packaging · PET bottle grade",ref:"Reference",g_rates:"Rates",
+  agenda_t:"Coming up",otd_t:"On this day",mk_t:"Markets",mk_s:"Last close for each. Tap a row for its chart, source and an alert.",lg_p:"Cost pressure for ITE",lg_r:"Cost relief",lg_n:"Context",
+  g_fx:"Currencies · XAF",g_commod:"Commodities",g_africa:"Africa FX",g_pack:"Packaging · PET bottle grade",ref:"Reference",g_rates:"Rates",
   news_t:"News",all:"All",tools_t:"Tools",pulse_t:"What the dollar costs ITE this month",pulse_s:"The franc CFA is pegged to the euro, so only USD invoices carry FX risk. Your figures stay on this phone.",
   f_usd:"USD purchases per month",f_budget:"Budget rate (XAF per USD)",o_label:"Monthly cost vs budget at today's rate",
   sugar_e:"Sugar landed-cost starter",f_t:"Tonnes per month",f_p:"Premium + freight ($/t)",s_label:"Raw sugar No.11 + your premium, in XAF",s_note:"Converts ¢/lb to $/t (× 22.046). Refining, duties and port charges not included.",
@@ -281,8 +276,8 @@ const T={
   stale:"This brief is more than a day old. The automatic update may have failed; check GitHub Actions.",armed:"alerts armed, none triggered",
   offline:"Offline: showing the last brief saved on this phone.",ago_m:"min ago",ago_h:"h ago",ago_d:"d ago",now:"now",chart:"Last month",nostories:"No stories in this section yet. It fills on the next update."},
  fr:{ite:"Pour ITE Congo · Brazzaville",sixty:"La nuit en 60 secondes",wa:"Envoyer sur WhatsApp",copy:"Copier le texte",
-  agenda_t:"À venir",mk_t:"Marchés",mk_s:"Dernière clôture. Touchez une ligne pour le graphique, la source et une alerte.",lg_p:"Pression sur les coûts",lg_r:"Allègement",lg_n:"Contexte",
-  g_fx:"Devises · XAF",g_commod:"Matières premières · intrants ITE",g_africa:"Devises africaines",g_pack:"Emballage · PET qualité bouteille",ref:"Référence",g_rates:"Taux",
+  agenda_t:"À venir",otd_t:"Ce jour-là",mk_t:"Marchés",mk_s:"Dernière clôture. Touchez une ligne pour le graphique, la source et une alerte.",lg_p:"Pression sur les coûts",lg_r:"Allègement",lg_n:"Contexte",
+  g_fx:"Devises · XAF",g_commod:"Matières premières",g_africa:"Devises africaines",g_pack:"Emballage · PET qualité bouteille",ref:"Référence",g_rates:"Taux",
   news_t:"Actualités",all:"Tout",tools_t:"Outils",pulse_t:"Ce que le dollar coûte à ITE ce mois-ci",pulse_s:"Le franc CFA est arrimé à l'euro : seules les factures en USD portent un risque de change. Vos chiffres restent sur ce téléphone.",
   f_usd:"Achats en USD par mois",f_budget:"Taux budgétaire (XAF pour 1 USD)",o_label:"Coût mensuel vs budget au taux du jour",
   sugar_e:"Coût du sucre, première estimation",f_t:"Tonnes par mois",f_p:"Prime + fret ($/t)",s_label:"Sucre brut No.11 + votre prime, en XAF",s_note:"Conversion ¢/lb en $/t (× 22,046). Raffinage, droits et frais portuaires non inclus.",
@@ -330,7 +325,7 @@ function spark(series,cls,W=88,H=30){
 function renderTop(){
   const g=new Date(B.generated_at);
   $("#dateline").textContent=`${new Date().toLocaleDateString(loc(),{weekday:"long",day:"numeric",month:"long"})} · ${t("updated")} ${g.toLocaleTimeString(loc(),{hour:"2-digit",minute:"2-digit"})}`;
-  const tk=["usdxaf","eurusd","brent","sugar","alu","wheat","gold","usdngn"].map(M).filter(Boolean);
+  const tk=["usdxaf","eurusd","brent","wti","gold","silver"].map(M).filter(Boolean);
   $("#ticker").innerHTML=tk.map(m=>{const e=effect(m);return`<span class="tk"><b>${esc(m.name)}</b><span class="v">${fmt(m.value,m.dp)}</span><span class="${e}">${m.change_pct>0?"▲":m.change_pct<0?"▼":"·"}${fmt(Math.abs(m.change_pct),1)}%</span></span>`;}).join("");
   const bn=$("#banner");bn.className="banner";
   const hits=B.markets.filter(tripped);const old=(Date.now()-g)>26*3600e3;
@@ -342,10 +337,10 @@ function renderTop(){
 function renderSixty(){
   $("#sixty-sub").textContent=B.summary_mode==="ai"?t("ai"):t("rules");
   const lv={high:{en:"High",fr:"Élevé"},med:{en:"Medium",fr:"Moyen"},low:{en:"Low",fr:"Faible"}};
-  $("#sixty").innerHTML=(B.summary[lang]||B.summary.en).map((x,i)=>`<div class="lead"><div class="n">${i+1}</div>
+  $("#sixty").innerHTML=(B.summary[lang]||B.summary.en).map((x,i)=>`<div class="lead">
     <h3>${esc(x.title)}</h3>${x.detail?`<p>${esc(x.detail)}</p>`:""}
-    <div class="imp"><b>${t("impact")} ·</b> ${esc(x.impact)}</div>
-    <div class="tags"><span class="tag ${esc(x.level)}">${(lv[x.level]||{})[lang]||esc(x.level)}</span>${x.owner?`<span class="tag">${esc(x.owner)}</span>`:""}${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">${t("source")} ↗</a>`:""}</div></div>`).join("");
+    ${x.impact?`<div class="imp"><b>${t("impact")} ·</b> ${esc(x.impact)}</div>`:""}
+    <div class="tags">${x.level?`<span class="tag ${esc(x.level)}">${(lv[x.level]||{})[lang]||esc(x.level)}</span>`:""}${x.owner?`<span class="tag">${esc(x.owner)}</span>`:""}${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">${t("source")} ↗</a>`:""}</div></div>`).join("");
 }
 function waText(){
   const fr=B.summary.fr||B.summary.en,g=new Date(B.generated_at);
@@ -358,8 +353,7 @@ function waText(){
 function story(n,top){
   const on=!!saved[n.id];
   return`<li class="story${top?" top":""}"><div class="meta"><span class="src">${esc(n.source)}</span><span>· ${ago(n.date)}</span></div>
-    <div class="row"><h3><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a></h3>
-    <button class="save" type="button" data-save="${esc(n.id)}" aria-pressed="${on}" aria-label="${on?"Remove from saved":"Save story"}">${on?BMF:BM}</button></div></li>`;
+    <div class="row"><h3><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a></h3></div></li>`;
 }
 function byCat(c){return B.news.filter(n=>n.cat===c).sort((a,b)=>b.date.localeCompare(a.date));}
 function renderFront(){
@@ -368,14 +362,17 @@ function renderFront(){
     <ul class="stories">${list.length?list.map((n,i)=>story(n,i===0)).join(""):`<li class="empty">${t("nostories")}</li>`}</ul></section>`;}).join("");
   document.querySelectorAll("[data-go]").forEach(a=>a.onclick=()=>{cat=a.dataset.go;});
 }
+function renderOTD(){
+  const l=(B.on_this_day&&(B.on_this_day[lang]||B.on_this_day.en))||[];
+  $("#otd-wrap").hidden=!l.length;
+  $("#otd").innerHTML=l.map(e=>`<li><span class="d">${esc(e.year)}</span><span>${esc(e.text)}${e.url?` <a class="see" href="${esc(e.url)}" target="_blank" rel="noopener">↗</a>`:""}</span></li>`).join("");
+}
 function renderAgenda(){
   const today=new Date().toISOString().slice(0,10);
   $("#agenda").innerHTML=(B.agenda||[]).filter(a=>a.date>=today).map(a=>`<li><span class="d">${fdate(a.date)}</span><span>${esc(a[lang]||a.en)}</span></li>`).join("");
 }
 function renderMarkets(){
   const st=(B.static_rates||[]).map(r=>({...r,dp:r.dp??2,cost:0,change_pct:0,static:true}));
-  const pc=st.find(r=>r.id==="pet_cn");
-  if(pc&&B.fx)st.splice(st.indexOf(pc)+1,0,{id:"pet_xaf",group:"pack",name:lang==="fr"?"PET Chine en XAF":"PET China in XAF",unit:"XAF/t",value:pc.value*B.fx.usdxaf,dp:0,date:B.fx.date,static:true,cost:0,change_pct:0,note:lang==="fr"?`${fmt(pc.value)} $/t × ${fmt(B.fx.usdxaf,1)} XAF/$ au taux du jour.`:`$${fmt(pc.value)}/t × ${fmt(B.fx.usdxaf,1)} XAF/$ at today's rate.`});
   const rows=[...B.markets,...st];
   $("#mk").innerHTML=GROUPS.map(g=>{const list=rows.filter(m=>(m.group||"commod")===g);if(!list.length)return"";
     return`<div class="mgroup"><h3>${t("g_"+g)}</h3><div class="mlist">${list.map(m=>{const e=effect(m);
@@ -399,8 +396,7 @@ function pageHTML(p,i,n){
   if(!p)return`<div class="fp"><div class="fp-head"><span>${esc(t("news_t"))}</span><span></span></div><p class="empty">${t("nostories")}</p></div>`;
   const it=(x,big)=>{const on=!!saved[x.id];return`<article class="${big?"fp-lead":"fp-sm"}"><div class="meta"><span class="src">${esc(x.source)}</span><span>· ${ago(x.date)}</span></div>
     <h3><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></h3>
-    <div class="acts"><a class="read" href="${esc(x.url)}" target="_blank" rel="noopener">${lang==="fr"?"Lire l'article":"Read story"} ↗</a>
-    <button class="save" type="button" data-save="${esc(x.id)}" aria-pressed="${on}" aria-label="${on?"Remove from saved":"Save story"}">${on?BMF:BM}</button></div></article>`;};
+    <div class="acts"><a class="read" href="${esc(x.url)}" target="_blank" rel="noopener">${lang==="fr"?"Lire l'article":"Read story"} ↗</a></div></article>`;};
   return`<div class="fp"><div class="fp-head"><span>${esc(catLabel(p.cat))}</span><span>${i+1} / ${n}</span></div>
     ${p.items.map((x,k)=>it(x,k===0)).join("")}
     <div class="fp-foot">${i<n-1?(lang==="fr"?"Glissez vers le haut ↑":"Swipe up ↑"):(lang==="fr"?"Fin de la rubrique":"End of section")}</div></div>`;
@@ -449,14 +445,6 @@ function renderNews(){
   document.addEventListener("keydown",e=>{if($("#v-news").hidden)return;if(e.key==="ArrowDown"||e.key==="PageDown"){e.preventDefault();flipTo(1);}if(e.key==="ArrowUp"||e.key==="PageUp"){e.preventDefault();flipTo(-1);}});
   addEventListener("resize",()=>{if(B&&!$("#v-news").hidden&&!fBusy)drawFlip();});
 })();
-function renderSaved(){
-  const list=Object.values(saved).sort((a,b)=>b.date.localeCompare(a.date));
-  $("#saved").innerHTML=list.length?list.map(n=>story(n)).join(""):`<li class="empty">${t("nosaved")}</li>`;
-  $("#saved-tab").textContent=t("saved")+(list.length?` ${list.length}`:"");
-}
-document.addEventListener("click",e=>{const b=e.target.closest("[data-save]");if(!b)return;
-  const id=b.dataset.save;if(saved[id])delete saved[id];else{const n=B.news.find(x=>x.id===id);if(n)saved[id]=n;}
-  store.set("saved",saved);renderFront();renderNews();renderSaved();});
 
 let sid=null,sdir="above";
 function openSheet(id){const m=M(id);sid=id;const a=alerts[id]||{dir:"above",v:+m.value.toFixed(m.dp)};sdir=a.dir;
@@ -473,11 +461,11 @@ function applyText(){
   if(theme)document.documentElement.dataset.theme=theme;else delete document.documentElement.dataset.theme;
   document.querySelectorAll("[data-t]").forEach(e=>e.textContent=t(e.dataset.t));
 }
-function renderAll(){applyText();if(!B)return;renderTop();renderSixty();renderFront();renderAgenda();renderMarkets();renderNews();renderSaved();}
+function renderAll(){applyText();if(!B)return;renderTop();renderSixty();renderFront();renderOTD();renderAgenda();renderMarkets();renderNews();}
 $("#lang").onclick=()=>{lang=lang==="fr"?"en":"fr";store.set("lang",lang);renderAll();};
 $("#theme").onclick=()=>{const dark=theme?theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;theme=dark?"light":"dark";store.set("theme",theme);renderAll();};
 
-const V=["today","markets","news","saved"];
+const V=["today","markets","news"];
 function route(){const v=V.includes(location.hash.slice(1))?location.hash.slice(1):"today";
   V.forEach(n=>$("#v-"+n).hidden=n!==v);document.querySelectorAll("nav.tabs a").forEach(a=>a.setAttribute("aria-current",a.dataset.v===v?"page":"false"));
   scrollTo(0,0);if(v==="news"&&B)renderNews();}
