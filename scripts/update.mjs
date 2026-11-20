@@ -71,51 +71,32 @@ async function news(n) {
 }
 
 /* ---------- Summary: AI if a key is set, rules otherwise ---------- */
+const SIXTY_PICK = { worldwide: 2, congo: 2, lebanon: 1 }; // "Overnight in 60 seconds" draws only on these sections
 function rulesSummary(markets, fx, headlines) {
   const out = { en: [], fr: [] };
-  const usd = markets.find(m => m.id === "eurusd");
-  if (usd) {
-    const up = usd.change_pct < 0; // EUR/USD down = dollar up = USD bills dearer
-    out.en.push({ level: Math.abs(usd.change_pct) > 0.5 ? "high" : "med", owner: "Treasury",
-      title: `USD/XAF at ${fx.usdxaf.toFixed(1)} (${up ? "dollar firmer" : "dollar softer"})`,
-      detail: `EUR/USD ${usd.value.toFixed(4)}, ${usd.change_pct >= 0 ? "+" : ""}${usd.change_pct.toFixed(2)}% on the day.`,
-      impact: Math.abs(usd.change_pct) < 0.3 ? "Little change on the day. EUR invoices carry no FX risk under the peg; only USD bills move." : up ? "USD invoices cost more in XAF today. EUR invoices carry no FX risk under the peg." : "USD invoices are cheaper in XAF today; a good moment to settle USD bills." });
-    out.fr.push({ level: out.en[0].level, owner: "Trésorerie",
-      title: `USD/XAF à ${fx.usdxaf.toFixed(1).replace(".", ",")} (${up ? "dollar plus fort" : "dollar plus faible"})`,
-      detail: `EUR/USD ${usd.value.toFixed(4).replace(".", ",")}, ${usd.change_pct >= 0 ? "+" : ""}${usd.change_pct.toFixed(2).replace(".", ",")} % sur la journée.`,
-      impact: Math.abs(usd.change_pct) < 0.3 ? "Peu de variation. Les factures en EUR ne portent aucun risque de change ; seules les factures USD bougent." : up ? "Les factures en USD coûtent plus cher en XAF. Les factures en EUR ne portent aucun risque de change." : "Les factures en USD sont moins chères en XAF : bon moment pour les régler." });
-  }
-  const movers = markets.filter(m => m.cost === 1).sort((a, b) => Math.abs(b.change_pct) - Math.abs(a.change_pct)).slice(0, 3);
-  for (const m of movers) {
-    const bad = m.change_pct > 0;
-    out.en.push({ level: Math.abs(m.change_pct) > 2 ? "high" : "med", owner: m.id === "brent" ? "Operations" : "Procurement",
-      title: `${m.name} ${bad ? "up" : "down"} ${Math.abs(m.change_pct).toFixed(2)}% to ${m.value.toFixed(m.dp)} ${m.unit.split(" ·")[0]}`,
-      detail: `Last close ${m.date}.`,
-      impact: Math.abs(m.change_pct) < 0.5 ? "Small move; no action needed today." : bad ? "Cost pressure on ITE inputs; check supplier price clauses." : "Cost relief; consider fixing prices for the coming quarter." });
-    out.fr.push({ level: out.en[out.en.length - 1].level, owner: m.id === "brent" ? "Exploitation" : "Achats",
-      title: `${m.name} ${bad ? "en hausse" : "en baisse"} de ${Math.abs(m.change_pct).toFixed(2).replace(".", ",")} % à ${m.value.toFixed(m.dp).replace(".", ",")}`,
-      detail: `Dernière clôture ${m.date}.`,
-      impact: Math.abs(m.change_pct) < 0.5 ? "Faible variation ; pas d'action nécessaire aujourd'hui." : bad ? "Pression sur les coûts d'ITE ; vérifier les clauses de prix fournisseurs." : "Allègement des coûts ; envisager de fixer les prix du trimestre." });
-  }
-  const c = headlines.find(h => h.cat === "congo");
-  if (c) {
-    out.en.push({ level: "med", owner: "Finance", title: c.title, detail: c.source, impact: "Read the source for tax or payment implications.", url: c.url });
-    out.fr.push({ level: "med", owner: "Finance", title: c.title, detail: c.source, impact: "Lire la source pour les implications fiscales ou de paiement.", url: c.url });
+  for (const [cat, n] of Object.entries(SIXTY_PICK)) {
+    const lab = cfg.news.find(x => x.cat === cat) || { label_en: cat, label_fr: cat };
+    headlines.filter(h => h.cat === cat).slice(0, n).forEach(h => {
+      const it = { level: "", owner: lab.label_en, title: h.title, detail: h.source, impact: "", url: h.url };
+      out.en.push(it); out.fr.push({ ...it, owner: lab.label_fr });
+    });
   }
   return out;
 }
 
 async function aiSummary(markets, fx, headlines) {
-  const data = { company: cfg.company, eur_xaf_peg: cfg.eur_xaf_peg, usd_xaf: +fx.usdxaf.toFixed(2),
-    markets: markets.map(m => ({ name: m.name, value: m.value, unit: m.unit, change_pct: +m.change_pct.toFixed(2), date: m.date })),
-    static_rates: cfg.static_rates, headlines: headlines.map((h, i) => ({ i, cat: h.cat, title: h.title, source: h.source, date: h.date.slice(0, 10) })) };
-  const prompt = `You write the 09:00 morning brief for the CFO of ${cfg.company}, a beverage and FMCG manufacturer in ${cfg.city}, Republic of Congo (mineral water, juices, soft drinks, malt drinks, energy drinks, snacks, vinegar). Its region is West and Central Africa (CEMAC, UEMOA, Nigeria, Ghana, DRC), which matters for demand, competitors, regional FX and policy. Inputs: sugar, PET preforms, aluminium cans/closures, concentrates, malt, diesel. The XAF is pegged to the EUR at 655.957, so only non-EUR invoices carry FX risk.
+  const pool = headlines.map((h, i) => ({ i, cat: h.cat, title: h.title, source: h.source, date: h.date.slice(0, 10) }))
+                        .filter(h => h.cat in SIXTY_PICK);
+  if (!pool.length) return null;
+  const labels = Object.fromEntries(cfg.news.map(n => [n.cat, { en: n.label_en, fr: n.label_fr }]));
+  const prompt = `You edit "Overnight in 60 seconds", the top of a morning news brief read by the CFO of ${cfg.company}, a beverage manufacturer in ${cfg.city}, Republic of Congo.
 
-Using ONLY the data below, pick the 5 developments that matter most to ITE's costs, cash, financing or tax position today. For each, give: level ("high"|"med"|"low"), owner (Treasury, Procurement, Operations, Tax, Finance), title (max 16 words), detail (one sentence, with numbers from the data), impact (one or two sentences: what it means for ITE and what to consider doing), and source_index (the headline index i it rests on, or null if it rests on market data).
-Do not invent facts or numbers not in the data. Return JSON only: {"en":[...5 items],"fr":[...the same 5 items in natural business French, owners in French]}.
+From the headlines below, pick the 5 most important news stories of the last day: about 2 from "worldwide", 2 from "congo" (Republic of Congo and CEMAC) and 1 from "lebanon". Prefer major political, economic and security news over minor or promotional items; skip duplicates.
+For each give: cat (worldwide|congo|lebanon), level ("high" or "med"), title (clear, max 14 words, rewritten from the headline), detail (one sentence saying what happened, using only what the headline says; never invent facts or numbers), impact (one short sentence on why it matters for a Congolese company, or "" if it doesn't), source_index (the headline's i).
+Return JSON only: {"en":[5 items],"fr":[the same 5 items in natural French]}.
 
-DATA:
-${JSON.stringify(data)}`;
+HEADLINES:
+${JSON.stringify(pool)}`;
 
   let text;
   if (process.env.ANTHROPIC_API_KEY) {
@@ -141,11 +122,65 @@ ${JSON.stringify(data)}`;
     if (!Array.isArray(json[lang]) || json[lang].length === 0) throw new Error("AI output missing " + lang);
     json[lang] = json[lang].slice(0, 5).map(x => {
       const h = Number.isInteger(x.source_index) ? headlines[x.source_index] : null;
-      return { level: ["high", "med", "low"].includes(x.level) ? x.level : "med", owner: String(x.owner || ""), title: String(x.title || ""),
+      const cat = (h && h.cat) || x.cat;
+      return { level: x.level === "high" ? "high" : "med", owner: (labels[cat] || {})[lang] || "", title: String(x.title || ""),
                detail: String(x.detail || ""), impact: String(x.impact || ""), url: h ? h.url : null };
     });
   }
   return json;
+}
+
+/* ---------- Read: article of the day ---------- */
+async function reads() {
+  const rc = cfg.reads; if (!rc) return null;
+  const all = [];
+  for (const s of rc.sources) {
+    const url = `https://news.google.com/rss/search?q=${encodeURIComponent(s.q + " when:" + rc.max_age_days + "d")}&hl=en&gl=US&ceid=US:en`;
+    try {
+      const xml = await get(url, "xml");
+      [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].slice(0, rc.per_source).forEach(m => {
+        let title = tag(m[1], "title"); const src = tag(m[1], "source") || s.name;
+        if (title.endsWith(" - " + src)) title = title.slice(0, -(src.length + 3));
+        if (title && tag(m[1], "link")) all.push({ title, source: s.name, url: tag(m[1], "link"), date: new Date(tag(m[1], "pubDate") || Date.now()).toISOString() });
+      });
+    } catch (e) { log.push(`read ${s.name}: ${e.message}`); }
+  }
+  if (!all.length) return null;
+  const boost = new RegExp(rc.boost.map(w => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|"), "gi");
+  const score = a => (a.title.match(boost) || []).length;
+  const ranked = all.sort((a, b) => score(b) - score(a) || b.date.localeCompare(a.date));
+  const pick = ranked[0], rest = ranked.slice(1), more = [], used = new Set();
+  for (const a of rest) if (!used.has(a.source) && a.source !== pick.source) { more.push(a); used.add(a.source); }
+  for (const a of rest) if (more.length < 8 && !more.includes(a)) more.push(a);
+  return { pick, more: more.slice(0, 8) };
+}
+async function aiRead(pick) {
+  if (!pick || !process.env.ANTHROPIC_API_KEY) return null;
+  const prompt = `A CFO of a beverage manufacturer in Brazzaville, Republic of Congo, will read this article today: "${pick.title}" (${pick.source}). Using only the title, write JSON {"en":{"why":"..."},"fr":{"title":"...","why":"..."}} where "why" is one or two sentences on what a CFO can take from it, without inventing facts, and fr.title is a French translation of the title.`;
+  const r = await fetch("https://api.anthropic.com/v1/messages", { method: "POST",
+    headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
+    body: JSON.stringify({ model: process.env.ANTHROPIC_MODEL || "claude-sonnet-5-5", max_tokens: 600, messages: [{ role: "user", content: prompt }] }) });
+  if (!r.ok) throw new Error("Anthropic " + r.status);
+  const t = (await r.json()).content?.map(c => c.text || "").join("");
+  return JSON.parse(t.slice(t.indexOf("{"), t.lastIndexOf("}") + 1));
+}
+
+/* ---------- On this day (Wikipedia) ---------- */
+const OTD_BOOST = /congo|brazzaville|kinshasa|lebanon|liban|beirut|beyrouth|africa|afrique|cameroon|cameroun|gabon|nigeria|senegal|sénégal|ivory coast|côte d'ivoire/i;
+function pickEvents(list) {
+  return list.filter(e => e.year && e.text)
+    .map(e => ({ year: e.year, text: e.text, url: e.pages?.[0]?.content_urls?.desktop?.page || null, score: OTD_BOOST.test(e.text) ? 1 : 0 }))
+    .sort((a, b) => b.score - a.score || b.year - a.year).slice(0, 4)
+    .sort((a, b) => b.year - a.year).map(({ score, ...e }) => e);
+}
+async function onThisDay() {
+  const now = new Date(), mm = String(now.getUTCMonth() + 1).padStart(2, "0"), dd = String(now.getUTCDate()).padStart(2, "0");
+  const out = {};
+  for (const lang of ["en", "fr"]) {
+    try { out[lang] = pickEvents((await get(`https://${lang}.wikipedia.org/api/rest_v1/feed/onthisday/selected/${mm}/${dd}`)).selected || []); }
+    catch (e) { log.push(`on this day ${lang}: ${e.message}`); }
+  }
+  return out;
 }
 
 /* ---------- Main ---------- */
@@ -167,6 +202,10 @@ for (const n of cfg.news) {
 const seen = new Set();
 headlines = headlines.filter(h => { const k = h.title.toLowerCase().slice(0, 60); if (seen.has(k)) return false; seen.add(k); return true; });
 
+const otd = await onThisDay();
+const read = await reads();
+if (read) { try { const w = await aiRead(read.pick); if (w) read.pick.ai = w; } catch (e) { log.push("ai read: " + e.message); } }
+
 let summary = null, summaryMode = "rules";
 try { summary = await aiSummary(markets, fx, headlines); if (summary) summaryMode = "ai"; } catch (e) { log.push("ai: " + e.message); }
 if (!summary) summary = rulesSummary(markets, fx, headlines);
@@ -175,7 +214,7 @@ const brief = {
   generated_at: new Date().toISOString(), summary_mode: summaryMode, peg: cfg.eur_xaf_peg, fx,
   markets, static_rates: cfg.static_rates, agenda: cfg.agenda,
   categories: cfg.news.map(n => ({ id: n.cat, en: n.label_en, fr: n.label_fr })),
-  summary, news: headlines.map((h, i) => ({ id: "n" + i + "-" + h.date.slice(0, 10), ...h })), log
+  summary, on_this_day: otd, read, news: headlines.map((h, i) => ({ id: "n" + i + "-" + h.date.slice(0, 10), ...h })), log
 };
 await fs.mkdir(path.join(ROOT, "data"), { recursive: true });
 await fs.writeFile(path.join(ROOT, "data", "brief.json"), JSON.stringify(brief, null, 1));
