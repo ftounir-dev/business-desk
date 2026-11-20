@@ -66,12 +66,31 @@ async function newsQuery(cat, q) {
     return { cat, lang: q.hl, title, source: source || "Google News", url: tag(b, "link"), date: new Date(tag(b, "pubDate") || Date.now()).toISOString() };
   }).filter(x => x.title && x.url);
 }
+/* ---------- Importance score: keeps the big stories, drops the filler ---------- */
+const SRC_TOP = /\b(reuters|bloomberg|financial times|ft\.com|the economist|wall street journal|wsj|associated press|ap news|afp|bbc|cnbc|nikkei|le monde|les echos|jeune afrique|agence ecofin|ecofin|rfi|the africa report|african business|business insider africa|semafor|la tribune|france 24|tv5monde|imf|banque mondiale|world bank|beac|bceao|sika finance|financial afrik|investir au cameroun|ecomatin|la nouvelle tribune|forbes afrique|capital finance)\b/i;
+const SRC_LOW = /\b(blog|wordpress|medium|tv\b|web tv|radio|news24\.cd|benin web)\b/i;
+const KEY_UP = /\b(beac|cemac|cémac|réserves?|reserves|souverain\w*|sovereign|bancaires?|bourse|brvm|stock|fonds|funds?|rachat|takeover|bceao|uemoa|imf|fmi|world bank|banque mondiale|afdb|bad|bdeac|eurobonds?|bonds?|obligat\w*|debt|dette|budget|loi de finances|inflation|interest rates?|taux|central bank|banque centrale|fed|ecb|bce|gdp|pib|growth|croissance|recession|récession|oil|pétrole|brent|opec|opep|gas|gaz|dollar|euro|fcfa|cfa|devise|currency|exchange rate|tariffs?|droits de douane|sanctions|default|défaut|downgrade|rating|notation|moody'?s|fitch|s&p|banks?|banques?|bank\w*|treasury|trésor|liquidity|liquidité|investment|investissement|ipo|merger|fusion|acquisition|election|élection|coup|government|gouvernement|minist\w*|president|président|strike|grève|shortage|pénurie|prices?|prix)\b/i;
+const KEY_DOWN = /\b(football|soccer|basket\w*|can 20\d\d|ligue 1|match|sport\w*|concert|music|musique|festival|film|cinéma|miss|beauty|beauté|celebrity|célébrit\w*|horoscope|recipe|recette|fashion|mode|wedding|mariage|anniversary|anniversaire|célèbrent|celebrates?|award|prix d'excellence|gala|coconut|noix de coco|church|église|pilgrim\w*|obituary|nécrologie|lottery|loto)\b/i;
+function importance(h) {
+  let s = 1;
+  if (SRC_TOP.test(h.source)) s += 1.5; else if (SRC_LOW.test(h.source)) s -= 0.5;
+  const up = (h.title.match(new RegExp(KEY_UP.source, "gi")) || []).length;
+  s += Math.min(2, up * 0.7);
+  if (KEY_DOWN.test(h.title)) s -= 2;
+  if (cut(h.title)) s -= 0.3;
+  const ageH = (Date.now() - new Date(h.date)) / 36e5;
+  s -= Math.min(1.5, Math.max(0, ageH - 12) / 24);       // fresher is better, gently
+  return Math.round(Math.max(0, Math.min(5, s)) * 10) / 10;
+}
 async function news(n) {
   const all = [];
   for (const q of n.queries) {
     try { all.push(...await newsQuery(n.cat, q)); } catch (e) { log.push(`news ${n.cat} (${q.hl}): ${e.message}`); }
   }
-  return all.sort((a, b) => b.date.localeCompare(a.date)).slice(0, cfg.news_per_category);
+  all.forEach(h => h.score = importance(h));
+  const keep = all.filter(h => h.score >= 1.5);                 // drop the filler when there is enough real news
+  const pool = keep.length >= 5 ? keep : all;
+  return pool.sort((a, b) => b.score - a.score || b.date.localeCompare(a.date)).slice(0, cfg.news_per_category);
 }
 
 /* ---------- Summary: AI if a key is set, rules otherwise ---------- */
@@ -106,8 +125,12 @@ async function aiSummary(markets, fx, headlines) {
   const prompt = `You edit "Overnight in 60 seconds", the top of a morning news brief read by Rayan, a finance executive in ${cfg.city}, Republic of Congo.
 
 From the headlines below, pick the 20 most important news stories of the last 24 hours for a video news feed: 6 from "worldwide" (mostly economy, finance and banking), 5 from "africa" (West and Central Africa), 5 from "congo" (Republic of Congo and CEMAC) and 4 from "cfo" (treasury, FX, rates, BEAC). Prefer major political, economic and security news over minor or promotional items; skip duplicates. Order them as a mixed feed: the most important story first, and never two stories from the same category in a row.
-For each give: cat (worldwide|africa|congo|cfo), level ("high" or "med"), title (clear, max 14 words, rewritten from the headline), detail (one sentence saying what happened, using only what the headline says; never invent facts or numbers), impact (one short sentence on why it matters for a finance executive in Congo, or "" if it doesn't), source_index (the headline's i).
-Return JSON only: {"en":[20 items],"fr":[the same 20 items in natural French]}.
+Score every candidate's importance from 1 (filler) to 5 (market-moving); never pick a story scoring below 3 (sport, culture, ceremonies, anniversaries, PR, minor local items), even if a section then has fewer stories.
+For each give: cat (worldwide|africa|congo|cfo), score (3-5), level ("high" if score 5, else "med"), title (clear, max 14 words, rewritten from the headline), detail (one sentence saying what happened, using only what the headline says; never invent facts or numbers), impact (one short sentence on why it matters for a finance executive in Congo, or "" if it doesn't), source_index (the headline's i).
+Also write "takeaway": one line (max 22 words) that sums up the day for Rayan, mixing the biggest story with the key market move (oil, dollar, CFA), in English and French.
+Return JSON only: {"takeaway":{"en":"...","fr":"..."},"en":[up to 20 items],"fr":[the same items in natural French]}.
+
+MARKETS: ${JSON.stringify(markets.filter(m => ["usdxaf","brent","gold","eurusd"].includes(m.id)).map(m => ({ name: m.name, value: +m.value.toFixed(2), change_pct: +(m.change_pct || 0).toFixed(2) })))}
 
 HEADLINES:
 ${JSON.stringify(pool)}`;
@@ -137,11 +160,19 @@ ${JSON.stringify(pool)}`;
     json[lang] = json[lang].slice(0, 20).map(x => {
       const h = Number.isInteger(x.source_index) ? headlines[x.source_index] : null;
       const cat = (h && h.cat) || x.cat;
-      return { level: x.level === "high" ? "high" : "med", cat, source: h ? h.source : "", date: h ? h.date : null, img: h ? h.img || null : null, owner: (labels[cat] || {})[lang] || "", title: String(x.title || ""),
+      return { level: x.level === "high" || x.score >= 5 ? "high" : "med", score: Number(x.score) || null, cat, source: h ? h.source : "", date: h ? h.date : null, img: h ? h.img || null : null, owner: (labels[cat] || {})[lang] || "", title: String(x.title || ""),
                detail: String(x.detail || ""), impact: String(x.impact || ""), url: h ? h.url : null };
     });
   }
+  if (!json.takeaway || !json.takeaway.en) json.takeaway = null;
   return json;
+}
+function rulesTakeaway(markets, summary) {
+  const M = id => markets.find(m => m.id === id), p = m => m && typeof m.change_pct === "number" ? (m.change_pct > 0 ? "+" : m.change_pct < 0 ? "−" : "") + Math.abs(m.change_pct).toFixed(1) + "%" : null;
+  const b = M("brent"), u = M("usdxaf"), g = M("gold");
+  const mk = [b && p(b) && "Brent " + p(b), u && p(u) && "USD/XAF " + p(u), g && p(g) && "gold " + p(g)].filter(Boolean).join(", ");
+  const top = (summary.en || [])[0], topFr = (summary.fr || [])[0];
+  return { en: (mk ? "Markets: " + mk + "." : "") + (top ? " Top story: " + top.title : ""), fr: (mk ? "Marchés : " + mk.replace("gold", "or").replace(/\./g, ",") + "." : "") + (topFr ? " À la une : " + topFr.title : "") };
 }
 
 /* ---------- Photos for Today's cards (Bing News thumbnail, upgraded to the article's own og:image when possible) ---------- */
@@ -319,17 +350,21 @@ if (read && !keepBrief) {                      // keep the last week of "article
 }
 
 let summary = null, summaryMode = "rules", summaryAt = new Date().toISOString();
-if (keepBrief) { summary = old.summary; summaryMode = old.summary_mode || "ai"; summaryAt = old.summary_at; }
+let takeaway = null;
+if (keepBrief) { summary = old.summary; summaryMode = old.summary_mode || "ai"; summaryAt = old.summary_at; takeaway = old.takeaway || null; }
 else {
   try { summary = await aiSummary(markets, fx, headlines); if (summary) summaryMode = "ai"; } catch (e) { log.push("ai: " + e.message); }
+  if (summary && summary.takeaway) takeaway = summary.takeaway;
+  if (summary) delete summary.takeaway;
   if (!summary) summary = rulesSummary(markets, fx, headlines);
+  if (!takeaway) takeaway = rulesTakeaway(markets, summary);
 }
 
 const brief = {
   generated_at: new Date().toISOString(), summary_at: summaryAt, summary_mode: summaryMode, peg: cfg.eur_xaf_peg, fx,
   markets, static_rates: cfg.static_rates, agenda: cfg.agenda,
   categories: cfg.news.map(n => ({ id: n.cat, en: n.label_en, fr: n.label_fr })),
-  summary, on_this_day: otd, read, news: headlines.map((h, i) => ({ id: "n" + i + "-" + h.date.slice(0, 10), ...h })), log
+  summary, takeaway, on_this_day: otd, read, news: headlines.map((h, i) => ({ id: "n" + i + "-" + h.date.slice(0, 10), ...h })), log
 };
 await fs.mkdir(path.join(ROOT, "data"), { recursive: true });
 await fs.writeFile(path.join(ROOT, "data", "brief.json"), JSON.stringify(brief, null, 1));
