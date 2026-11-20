@@ -276,6 +276,43 @@ section{padding-top:26px}
 .nx-lead.read h3{color:var(--muted)}
 .nx-more{display:block;width:100%;margin:16px 0 4px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font:inherit;font-weight:700;color:var(--text);cursor:pointer}
 .nx-done{margin-top:18px;padding:16px;border-radius:14px;background:var(--accent-soft);text-align:center;font-weight:600;font-size:.92rem}
+/* v22: clean cards */
+.tl{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:12px 0 0;padding:2px 0 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.tl::-webkit-scrollbar{display:none}
+.tl-c{flex:0 0 78%;max-width:320px;scroll-snap-align:start;border-radius:16px;overflow:hidden;background:var(--surface);border:1px solid var(--line);text-decoration:none;color:inherit;display:flex;flex-direction:column;box-shadow:0 4px 14px rgba(15,27,51,.06)}
+.tl-ph{position:relative;aspect-ratio:16/9;overflow:hidden}
+.tl-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.tl-e{position:absolute;inset:0;display:grid;place-items:center;font-size:2.6rem;opacity:.85}
+.tl-n{z-index:2}
+.tl-n{position:absolute;right:8px;top:8px;font-size:.66rem;font-weight:700;font-family:var(--mono);color:#fff;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:999px}
+.tl-b{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1}
+.tl-k{font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.tl-b h3{margin:6px 0 0;font-size:1rem;line-height:1.35;font-weight:650;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.tl-m{margin-top:auto;padding-top:10px;font-size:.75rem;color:var(--muted)}
+.tl-play{display:block;width:100%;margin-top:10px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--text);font:inherit;font-weight:700;font-size:.9rem;cursor:pointer}
+.nh{display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.nh p{margin:4px 0 0;font-size:.8rem;color:var(--muted)}
+.nh-g{text-align:right;flex:none}.nh-g b{display:block;font-family:var(--mono);font-size:1.25rem;line-height:1}.nh-g span{font-size:.7rem;color:var(--muted)}
+.nh-g.done b{color:var(--relief)}
+.nh-bar{height:4px;border-radius:2px;background:var(--sunk);margin-top:10px;overflow:hidden}
+.nh-bar i{display:block;height:100%;background:var(--accent);border-radius:2px;transition:width .5s}.nh-bar.done i{background:var(--relief)}
+.ns2{display:flex;align-items:center;justify-content:space-between;margin-top:24px;padding-bottom:6px}
+.ns2 h4{margin:0;display:flex;align-items:center;gap:8px;font-size:1.05rem;font-weight:700}
+.ns2 h4 i{width:8px;height:8px;border-radius:50%}
+.ns2 span{font-size:.75rem;font-weight:600;color:var(--muted);font-family:var(--mono)}.ns2 span.done{color:var(--relief)}
+.nc{display:flex;gap:12px;padding:12px 0;border-top:1px solid var(--line);text-decoration:none;color:inherit}
+.nc-t{flex:1;min-width:0}
+.nc-m{font-size:.72rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nc-m .src{color:var(--text);font-weight:600}.nc-m .nw{color:var(--accent);font-weight:700}.nc-m .ok{color:var(--relief);font-weight:700}
+.nc h3{margin:4px 0 0;font-size:.98rem;line-height:1.35;font-weight:600;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.nc.read h3{color:var(--muted);font-weight:500}
+.nc-th{flex:none;width:76px;height:76px;border-radius:10px;overflow:hidden;background:var(--sunk)}
+.nc-th img{width:100%;height:100%;object-fit:cover;display:block}
+.nc.lead{display:block;border-top:0;padding-top:4px}
+.nc-ph{aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:var(--sunk);margin-bottom:10px}
+.nc-ph img{width:100%;height:100%;object-fit:cover;display:block}
+.nc.lead h3{font-size:1.18rem;line-height:1.3;font-weight:700;-webkit-line-clamp:4}
+.nc.read .nc-ph,.nc.read .nc-th{opacity:.6}
 /* News desk v20 */
 .nd{margin-top:2px;border-radius:18px;overflow:hidden;color:#eef2f8;background:linear-gradient(160deg,#0f1b33,#15284a 60%,#1c3157);box-shadow:0 10px 28px rgba(15,27,51,.25);position:relative;padding:14px 16px 14px 20px}
 .nd::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(#d9a441,#a8741a)}
@@ -506,7 +543,7 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 <!-- NEWS -->
 <div class="view" id="v-news" hidden>
   <section style="padding-top:18px">
-    <div class="nd" id="nx-habit"></div>
+    <div id="nx-habit"></div>
     <div class="nx-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5" stroke-linecap="round"/></svg><input id="nx-q" type="search" autocomplete="off" aria-label="Search news"></div>
     <div class="chips" id="chips" role="group" aria-label="Sections"></div>
     <div id="nx-list" aria-live="polite"></div>
@@ -562,7 +599,7 @@ const T={
   saved_t:"Saved",saved_s:"Stories you keep, on this phone only.",nosaved:"Nothing saved yet. Tap the bookmark on any story.",
   t_today:"Today",t_markets:"Markets",t_news:"News",t_tools:"Tools",saved:"Saved",
   above:"Alert above",below:"Alert below",threshold:"Threshold",save_alert:"Save alert",remove:"Remove",cancel:"Cancel",setalert:"Set alert",alert:"Alert",
-  foot:"Updates itself three times a day from public market data and news. Prices are last closes and can lag by a day. Not trading advice.",
+  foot:"News updates every hour from public market data and news. Prices are last closes and can lag by a day. Not trading advice.",
   impact:"Why it matters",source:"Source",see:"See all",updated:"Updated",ai:"Written by AI from today's data",rules:"Automatic summary",
   stale:"This brief is more than a day old. The automatic update may have failed; check GitHub Actions.",armed:"alerts armed, none triggered",
   offline:"Offline: showing the last brief saved on this phone.",ago_m:"min ago",ago_h:"h ago",ago_d:"d ago",now:"now",chart:"Last month",nostories:"No stories in this section yet. It fills on the next update."},
@@ -575,7 +612,7 @@ const T={
   saved_t:"Enregistrés",saved_s:"Articles gardés, sur ce téléphone uniquement.",nosaved:"Rien d'enregistré. Touchez le signet d'un article.",
   t_today:"Aujourd'hui",t_markets:"Marchés",t_news:"Actus",t_tools:"Outils",saved:"Enregistrés",
   above:"Alerte au-dessus",below:"Alerte en dessous",threshold:"Seuil",save_alert:"Enregistrer",remove:"Supprimer",cancel:"Annuler",setalert:"Créer une alerte",alert:"Alerte",
-  foot:"Mise à jour automatique trois fois par jour à partir de données de marché et d'actualités publiques. Prix de clôture, parfois avec un jour de décalage. Pas un conseil d'investissement.",
+  foot:"Actualités mises à jour toutes les heures à partir de données de marché et d'actualités publiques. Prix de clôture, parfois avec un jour de décalage. Pas un conseil d'investissement.",
   impact:"Pourquoi c'est important",source:"Source",see:"Tout voir",updated:"Mis à jour",ai:"Rédigé par IA à partir des données du jour",rules:"Résumé automatique",
   stale:"Ce brief date de plus d'un jour. La mise à jour automatique a peut-être échoué ; vérifiez GitHub Actions.",armed:"alertes actives, aucune déclenchée",
   offline:"Hors ligne : dernier brief enregistré sur ce téléphone.",ago_m:"min",ago_h:"h",ago_d:"j",now:"à l'instant",chart:"Dernier mois",nostories:"Pas encore d'articles dans cette rubrique. Elle se remplit à la prochaine mise à jour."}
@@ -633,19 +670,14 @@ function renderSixty(){
   $("#sixty-sub").textContent=(lang==="fr"?`Monde, Afrique, Congo & CEMAC, DAF · ${nItems} histoires · environ ${String(mins).replace(".",",")} min`:`Worldwide, Africa, Congo & CEMAC, CFO · ${nItems} stories · about ${mins} min`);
   const items=B.summary[lang]||B.summary.en||[];
   const catOf=x=>x.cat||((B.categories||[]).find(c=>c.en===x.owner||c.fr===x.owner)||{}).id||"worldwide";
-  reel.n=items.length;if(!reel.n){$("#sixty").innerHTML="";return;}
-  reel.i=Math.min(reel.i,reel.n-1);
-  $("#sixty").innerHTML=`<div class="reel" id="reel" tabindex="0" aria-roledescription="carousel" aria-label="${esc(t("sixty"))}">
-  <div class="bars">${items.map(()=>"<i><b></b></i>").join("")}</div>
-  ${items.map((x,k)=>{const c=REEL_CATS[catOf(x)]||REEL_CATS.worldwide;return `<article class="slide${x.img?" has-img":""}" style="background:${c[1]}" aria-label="${k+1} / ${items.length}">${bgImg(x.img)}
-    <div class="s-top"><span class="s-cat">${esc(ctryLabel(x)||x.owner||"")}</span>${x.level==="high"?`<span class="s-hot">${lang==="fr"?"À la une":"Top story"}</span>`:""}</div>
-    <div class="s-body"><div class="s-emoji" aria-hidden="true">${c[0]}</div><h3>${esc(x.title)}</h3>${x.detail?`<p>${esc(x.detail)}</p>`:""}${x.impact?`<p class="s-imp"><b>${t("impact")}</b>${esc(x.impact)}</p>`:""}</div>
-    <div class="s-foot"><span>${esc(x.source||"")}${x.date?" · "+ago(x.date):""}</span>${x.url?`<a class="s-go" href="${esc(x.url)}" target="_blank" rel="noopener">${lang==="fr"?"Lire":"Read"} ↗</a>`:""}</div>
-  </article>`}).join("")}
-  <button class="s-nav prev" aria-label="Previous"></button><button class="s-nav next" aria-label="Next"></button>
-  <button class="s-btn s-pp" aria-label="Pause">❚❚</button><button class="s-btn s-full" aria-label="Full screen">⤢</button>
-  </div>`;
-  wireReel();showSlide(reel.i);
+  if(!items.length){$("#sixty").innerHTML="";return;}
+  const fr=lang==="fr";
+  $("#sixty").innerHTML=`<div class="tl" role="list">${items.map((x,k)=>{const c=catOf(x),g=(REEL_CATS[c]||REEL_CATS.worldwide);
+    return `<a class="tl-c" role="listitem" ${x.url?`href="${esc(x.url)}" target="_blank" rel="noopener"`:""}>
+      <div class="tl-ph" style="background:${g[1]}">${x.img?`<img src="${esc(x.img)}" alt="" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">`:""}<span class="tl-e" aria-hidden="true">${g[0]}</span><span class="tl-n">${k+1}/${items.length}</span></div>
+      <div class="tl-b"><div class="tl-k" style="color:${catColor(c)}">${esc(catLabel(c))}</div><h3>${esc(x.title)}</h3><div class="tl-m">${esc(x.source||"")}${x.date?" · "+ago(x.date):""}</div></div></a>`;}).join("")}</div>
+  <button class="tl-play" type="button" id="tl-play">▶ ${fr?"Écouter les "+items.length+" sujets":"Listen to all "+items.length+" stories"}</button>`;
+  $("#tl-play").onclick=()=>openWatch(0);
 }
 function showSlide(k){
   const R=$("#reel");if(!R)return;k=Math.max(0,Math.min(reel.n-1,k));reel.i=k;reel.el=0;
@@ -691,7 +723,7 @@ function openWatch(start){
       <div class="w-meta">${esc(x.source||"")}${x.date?" · "+ago(x.date):""}${x.url?` · <a href="${esc(x.url)}" target="_blank" rel="noopener" data-act="read" style="color:#fff;font-weight:700">${fr?"Lire":"Read"} ↗</a>`:""}</div></div>
       <div class="w-bar"><b></b></div></section>`;}).join("")+
     `<section class="wv w-end" data-k="end"><div class="w-body"><div style="font-size:4.2rem">✅</div><h2>${fr?"Vous êtes à jour":"You're all caught up"}</h2>
-      <p class="w-imp">${fr?"Nouvelles histoires trois fois par jour.":"Fresh stories three times a day."}</p>
+      <p class="w-imp">${fr?"Nouvelles histoires toutes les 8 heures.":"Fresh stories every 8 hours."}</p>
       <div style="display:flex;gap:10px;justify-content:center"><button class="w-btn" type="button" data-act="replay">↺ ${fr?"Revoir":"Replay"}</button><button class="w-btn ghost" type="button" data-act="close">${fr?"Fermer":"Close"}</button></div></div></section>`;
   document.body.appendChild(el);document.body.style.overflow="hidden";
   const secs=[...el.querySelectorAll(".wv")];
@@ -843,8 +875,7 @@ function renderHero(){
   const stale=age>14;
   $("#hero").innerHTML=`<div class="h-top"><span>${part} · ${now.toLocaleDateString(fr?"fr-FR":"en-GB",{weekday:"short",day:"numeric",month:"short"})}</span><span>${esc(updTxt)}</span></div>
     <h2 class="h-hi">${hi}</h2>
-    ${stale?`<p class="h-sub">${fr?"Les données ont plus de 14 h : tirez vers le bas pour actualiser.":"Data is more than 14 hours old: pull down to refresh."}</p>`:(B.takeaway&&B.takeaway[lang]?`<p class="h-sub h-take">${esc(B.takeaway[lang])}</p>`:"")}
-    ${drivers.length?`<div class="h-sig ${sig}"><i></i><div><b>${sigHead}</b><br><span>${esc(why)}</span></div></div>`:""}
+    ${stale?`<p class="h-sub">${fr?"Les données ont plus de 14 h : tirez vers le bas pour actualiser.":"Data is more than 14 hours old: pull down to refresh."}</p>`:""}
     <button class="h-play" type="button" id="h-play" ${n?"":"disabled"}><span class="h-btn">▶</span><span><b>${n?(fr?`Écouter le briefing · ${String(mins).replace(".",",")} min`:`Play the briefing · ${mins} min`):(fr?"Briefing en préparation":"Briefing being prepared")}</b><span class="s">${n} ${fr?"sujets · Monde, Afrique, Congo & CEMAC, DAF":"stories · Worldwide, Africa, Congo & CEMAC, CFO"}</span></span></button>`;
   $("#h-play").onclick=()=>{if(n)openWatch(0);};
   const ids=["usdxaf","brent","gold"],ms=ids.map(id=>B.markets.find(m=>m.id===id)).filter(Boolean);
@@ -1052,42 +1083,31 @@ function nxNext(){ // hourly runs at :15 UTC, 05–21 UTC; GitHub adds a few min
   return null;}
 function nxHabit(newN){
   const fr=lang==="fr",today=NX.days[dayKey(Date.now())]||0,p=Math.min(1,today/NX.goal),st=nxStreak();
-  const L=fr?["L","M","M","J","V","S","D"]:["M","T","W","T","F","S","S"];
-  const wk=[...Array(7)].map((_,i)=>{const d=new Date();d.setDate(d.getDate()-(6-i));const v=NX.days[dayKey(d)]||0;
-    return `<i class="${v>=NX.goal?"ok":v>0?"part":""}${i===6?" today":""}" title="${dayKey(d)}: ${v}">${L[(d.getDay()+6)%7]}</i>`;}).join("");
-  const upd=B.generated_at?new Date(B.generated_at).toLocaleTimeString(fr?"fr-FR":"en-GB",{hour:"2-digit",minute:"2-digit"}):"";
-  const nx=nxNext(),nxt=nx?nx.toLocaleTimeString(fr?"fr-FR":"en-GB",{hour:"2-digit",minute:"2-digit"}):"";
-  const head=p>=1?(fr?"Objectif atteint. Vous êtes informé.":"Goal reached. You're informed."):newN?(fr?`${newN} nouveaux articles vous attendent`:`${newN} new stories waiting for you`):(fr?"Vous êtes à jour":"You're up to date");
-  $("#nx-habit").innerHTML=`<div class="nd-top"><span>${fr?"Fil d'actualité":"News desk"}</span><span class="nd-live"><i></i>${upd?(fr?"MAJ ":"Updated ")+upd:""}</span></div>
-    <h2>${head}</h2>
-    <div class="nd-kpi"><div><b>${today}<small>/${NX.goal}</small></b><span>${fr?"lus aujourd'hui":"read today"}</span></div>
-      <div><b>${newN}</b><span>${fr?"nouveaux depuis votre visite":"new since your last visit"}</span></div>
-      <div><b>${st}</b><span>${fr?(st>1?"jours de suite":"jour de suite"):(st===1?"day streak":"day streak")}</span></div></div>
-    <div class="nd-bar${p>=1?" done":""}"><i style="width:${Math.max(3,p*100)}%"></i></div>
-    <div class="nd-foot"><div class="nd-week" aria-label="${fr?"7 derniers jours":"Last 7 days"}">${wk}</div><span>${nxt?(fr?"Prochaine MAJ ≈ ":"Next update ≈ ")+nxt:""}</span></div>`;
+  const hm=d=>d.toLocaleTimeString(fr?"fr-FR":"en-GB",{hour:"2-digit",minute:"2-digit"});
+  const upd=B.generated_at?hm(new Date(B.generated_at)):"",nx=nxNext();
+  const line=[upd&&(fr?"Mis à jour ":"Updated ")+upd,nx&&(fr?"prochaine ≈ ":"next ≈ ")+hm(nx),st&&`🔥 ${st} ${fr?(st>1?"jours":"jour"):(st>1?"days":"day")}`].filter(Boolean).join(" · ");
+  $("#nx-habit").innerHTML=`<div class="nh"><div><h2 class="sec">${t("news_t")}</h2><p>${line}</p></div>
+    <div class="nh-g${p>=1?" done":""}"><b>${today}/${NX.goal}</b><span>${fr?"lus aujourd'hui":"read today"}</span></div></div>
+    <div class="nh-bar${p>=1?" done":""}"><i style="width:${Math.max(2,p*100)}%"></i></div>`;
 }
 function nxMarkRead(n){const id=nxId(n);if(NX.read[id])return;NX.read[id]=Date.now();store.set("nx_read",NX.read);
   const k=dayKey(Date.now()),before=NX.days[k]||0;NX.days[k]=before+1;store.set("nx_days",NX.days);
   if(before+1===NX.goal&&typeof wToast==="function")wToast(lang==="fr"?"🎯 Objectif du jour atteint !":"🎯 Daily goal reached!");}
 function nxMeta(n,withCat){
-  const cl=ctryLabel(n);
-  return [cl?`<span class="nx-ctry">${esc(cl)}</span>`:"",withCat?`<span class="c" style="color:${catColor(n.cat)}">${esc(catLabel(n.cat))}</span>`:"",`<span class="s">${esc(n.source)}</span>`,`<span>${ago(n.date)}</span>`].filter(Boolean).join("·");
+  const fr=lang==="fr",isRead=!!NX.read[nxId(n)],isNew=!isRead&&new Date(n.date).getTime()>NX.prev;
+  const ctry=countriesOf(n).map(c=>fr?c[3]:c[2]).slice(0,2).join(", ");
+  return [isRead?`<span class="ok">✓ ${fr?"Lu":"Read"}</span>`:isNew?`<span class="nw">${fr?"Nouveau":"New"}</span>`:"",withCat?`<span style="color:${catColor(n.cat)}">${esc(catLabel(n.cat))}</span>`:"",`<span class="src">${esc(n.source)}</span>`,ctry?esc(ctry):"",ago(n.date)].filter(Boolean).join(" · ");
 }
 function nxRow(n,lead,num,withCat){
-  const fr=lang==="fr",isRead=!!NX.read[nxId(n)],isNew=!isRead&&new Date(n.date).getTime()>NX.prev;
-  const tags=nxTags(n),tg=tags.length?`<div class="nx-tags">${tags.map(t=>`<span>${t[1]} ${fr?t[3]:t[2]}</span>`).join("")}</div>`:"";
+  const isRead=!!NX.read[nxId(n)];
   const href=`href="${esc(n.url)}" target="_blank" rel="noopener" data-nid="${esc(nxId(n))}"`;
-  if(lead){
-    const bg=n.img?`<img src="${esc(n.img)}" alt="" decoding="async" onerror="this.remove()">`:"";
-    const tag=isRead?(fr?"✓ Lu":"✓ Read"):isNew?(fr?"Nouveau":"New"):(fr?"À la une":"Top story");
-    return `<a class="nl${isRead?" read":""}" ${href} style="background:${(REEL_CATS[n.cat]||REEL_CATS.worldwide)[1]}">${bg}<div class="nl-ov"><span class="nl-tag${isNew?" new":""}">${tag}</span><h3>${esc(n.title)}</h3><div class="nl-m">${nxMeta(n,withCat).replace(/<[^>]+>/g,"").replace(/·/g," · ")}</div></div></a>`;
-  }
-  const img=n.img?`<img class="nx-th" src="${esc(n.img)}" alt="" loading="lazy" decoding="async" onerror="this.remove()">`:"";
-  return `<a class="nr${isRead?" read":""}" ${href}><span class="nr-n">${isRead?"✓":num}</span><div><div class="nx-meta">${nxMeta(n,withCat)}</div><h3>${isNew?`<span class="new-dot"></span>`:""}${esc(n.title)}</h3>${tg}</div>${img}</a>`;
+  const img=n.img?`<img src="${esc(n.img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.remove()">`:"";
+  if(lead&&n.img)return `<a class="nc lead${isRead?" read":""}" ${href}><div class="nc-ph">${img}</div><div class="nc-m">${nxMeta(n,withCat)}</div><h3>${esc(n.title)}</h3></a>`;
+  return `<a class="nc${isRead?" read":""}" ${href}><div class="nc-t"><div class="nc-m">${nxMeta(n,withCat)}</div><h3>${esc(n.title)}</h3></div>${img?`<div class="nc-th">${img}</div>`:""}</a>`;
 }
 function nxBlock(c,l){
-  const fr=lang==="fr",r=l.filter(n=>NX.read[nxId(n)]).length,done=r===l.length;
-  let h=`<div class="ns${done?" done":""}"><h4><i style="background:${catColor(c.id)}"></i>${esc(c[lang]||c.en)}</h4><span class="ns-p">${l.map(n=>`<i class="${NX.read[nxId(n)]?"on":""}"></i>`).join("")} ${done?"✓":r+"/"+l.length}</span></div>`;
+  const fr=lang==="fr",r=l.filter(n=>NX.read[nxId(n)]).length;
+  let h=`<div class="ns2"><h4><i style="background:${catColor(c.id)}"></i>${esc(c[lang]||c.en)}</h4><span${r===l.length?' class="done"':""}>${r===l.length?"✓ ":""}${r}/${l.length}</span></div>`;
   l.forEach((n,i)=>h+=nxRow(n,i===0,i+1,false));
   return h;
 }
@@ -1109,7 +1129,7 @@ function renderNews(){
   let html="";
   if(NX.q){const q=norm(NX.q);const l=all.filter(n=>(cat==="all"||n.cat===cat)&&norm(n.title+" "+n.source+" "+ctryWords(n)).includes(q)).slice(0,20);
     if(!l.length){$("#nx-list").innerHTML=`<p class="empty">${fr?"Aucun article ne correspond.":"No stories match."}</p>`;return;}
-    html=`<div class="ns"><h4>${fr?"Résultats":"Results"}</h4><span class="ns-p">${l.length}</span></div>`+l.map((n,i)=>nxRow(n,false,i+1,true)).join("");}
+    html=`<div class="ns2"><h4>${fr?"Résultats":"Results"}</h4><span>${l.length}</span></div>`+l.map((n,i)=>nxRow(n,false,i+1,true)).join("");}
   else{
     const cs=cat==="all"?B.categories:B.categories.filter(c=>c.id===cat);
     cs.forEach(c=>{if(top[c.id].length)html+=nxBlock(c,top[c.id]);});
