@@ -71,7 +71,7 @@ async function news(n) {
 }
 
 /* ---------- Summary: AI if a key is set, rules otherwise ---------- */
-const SIXTY_PICK = { worldwide: 5, africa: 5, congo: 5 }; // Today's video feed: 15 stories, about 2 minutes
+const SIXTY_PICK = { worldwide: 6, africa: 5, congo: 5, cfo: 4 }; // Today's video feed: 20 stories, about 2.5 minutes
 // A headline Google News cut short ends with "…" or a dangling small word ("…lever près de")
 function cut(t) { return /(\u2026|\.\.\.)\s*$/.test(t) || /\s(de|du|des|la|le|les|l'|d'|à|au|aux|et|en|pour|près|sur|par|avec|dans|un|une|of|the|to|a|an|and|for|in|on|with|at|by|from|as)$/i.test(t.trim()); }
 function fullTitle(h, cand) {           // use a longer title from Bing or the article if it continues ours
@@ -101,9 +101,9 @@ async function aiSummary(markets, fx, headlines) {
   const labels = Object.fromEntries(cfg.news.map(n => [n.cat, { en: n.label_en, fr: n.label_fr }]));
   const prompt = `You edit "Overnight in 60 seconds", the top of a morning news brief read by the CFO of ${cfg.company}, a beverage manufacturer in ${cfg.city}, Republic of Congo.
 
-From the headlines below, pick the 15 most important news stories of the last 24 hours for a 2-minute video news feed: 5 from "worldwide", 5 from "africa" (West and Central Africa) and 5 from "congo" (Republic of Congo and CEMAC). Prefer major political, economic and security news over minor or promotional items; skip duplicates. Order them as a mixed feed: the most important story first, and never two stories from the same category in a row.
-For each give: cat (worldwide|africa|congo), level ("high" or "med"), title (clear, max 14 words, rewritten from the headline), detail (one sentence saying what happened, using only what the headline says; never invent facts or numbers), impact (one short sentence on why it matters for a Congolese company, or "" if it doesn't), source_index (the headline's i).
-Return JSON only: {"en":[15 items],"fr":[the same 15 items in natural French]}.
+From the headlines below, pick the 20 most important news stories of the last 24 hours for a video news feed: 6 from "worldwide" (mostly economy, finance and banking), 5 from "africa" (West and Central Africa), 5 from "congo" (Republic of Congo and CEMAC) and 4 from "cfo" (treasury, FX, rates, BEAC). Prefer major political, economic and security news over minor or promotional items; skip duplicates. Order them as a mixed feed: the most important story first, and never two stories from the same category in a row.
+For each give: cat (worldwide|africa|congo|cfo), level ("high" or "med"), title (clear, max 14 words, rewritten from the headline), detail (one sentence saying what happened, using only what the headline says; never invent facts or numbers), impact (one short sentence on why it matters for a Congolese company, or "" if it doesn't), source_index (the headline's i).
+Return JSON only: {"en":[20 items],"fr":[the same 20 items in natural French]}.
 
 HEADLINES:
 ${JSON.stringify(pool)}`;
@@ -130,7 +130,7 @@ ${JSON.stringify(pool)}`;
   const json = JSON.parse(text.slice(text.indexOf("{"), text.lastIndexOf("}") + 1));
   for (const lang of ["en", "fr"]) {
     if (!Array.isArray(json[lang]) || json[lang].length === 0) throw new Error("AI output missing " + lang);
-    json[lang] = json[lang].slice(0, 15).map(x => {
+    json[lang] = json[lang].slice(0, 20).map(x => {
       const h = Number.isInteger(x.source_index) ? headlines[x.source_index] : null;
       const cat = (h && h.cat) || x.cat;
       return { level: x.level === "high" ? "high" : "med", cat, source: h ? h.source : "", date: h ? h.date : null, img: h ? h.img || null : null, owner: (labels[cat] || {})[lang] || "", title: String(x.title || ""),
