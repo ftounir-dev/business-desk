@@ -141,7 +141,7 @@ label.f input{background:var(--bg);border:1px solid var(--line);border-radius:10
 
 /* Tab bar */
 nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
-nav.tabs .in{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr)}
+nav.tabs .in{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
 nav.tabs a{display:grid;place-items:center;gap:2px;padding:9px 2px 8px;font-size:.7rem;font-weight:600;color:var(--muted);text-decoration:none}
 nav.tabs a[aria-current="page"]{color:var(--accent)}
 nav.tabs svg{width:22px;height:22px}
@@ -157,6 +157,34 @@ nav.tabs svg{width:22px;height:22px}
 .toast{position:fixed;left:50%;bottom:calc(86px + env(safe-area-inset-bottom));transform:translateX(-50%);background:var(--text);color:var(--bg);padding:8px 14px;border-radius:999px;font-size:.85rem;z-index:30;opacity:0;transition:opacity .2s;pointer-events:none}
 .toast.on{opacity:1}
 footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
+/* Flipboard-style pager: one page of stories at a time, the page folds along its middle */
+.flip{position:relative;perspective:1800px;margin-top:12px;touch-action:none;user-select:none;-webkit-user-select:none}
+.fp{position:absolute;inset:0;background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;padding:16px 18px}
+.half{position:absolute;left:0;right:0;height:50%;overflow:hidden}
+.half.top{top:0}.half.bot{bottom:0}
+.half>.fp{inset:auto;left:0;right:0}
+.leaf{position:absolute;left:0;right:0;height:50%;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.25,.1,.2,1);z-index:3}
+.leaf .face{position:absolute;inset:0;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.leaf .face.back{transform:rotateX(180deg)}
+.leaf .face>.fp{inset:auto;left:0;right:0}
+.shade{position:absolute;inset:0;background:#000;opacity:0;transition:opacity .6s;pointer-events:none;z-index:2}
+.fp-head{display:flex;justify-content:space-between;align-items:center;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--accent);padding-bottom:10px;border-bottom:2px solid var(--text)}
+.fp-head span:last-child{color:var(--muted);letter-spacing:.04em}
+.fp-lead{padding:16px 0 14px;border-bottom:1px solid var(--line);display:grid;gap:8px}
+.fp-lead h3{font-family:var(--display);font-size:clamp(1.45rem,6.4vw,2rem);line-height:1.12;margin:0;font-weight:700;text-wrap:balance}
+.fp-sm{padding:12px 0;border-bottom:1px solid var(--line);display:grid;gap:4px}
+.fp-sm:last-of-type{border-bottom:0}
+.fp-sm h3{font-size:1.02rem;line-height:1.32;margin:0;font-weight:600;text-wrap:balance}
+.fp h3 a{text-decoration:none}
+.fp .meta{font-size:.74rem;color:var(--muted);display:flex;gap:6px;align-items:center}
+.fp .meta .src{font-weight:700;color:var(--text);text-transform:uppercase;letter-spacing:.04em;font-size:.7rem}
+.fp .acts{display:flex;justify-content:space-between;align-items:center}
+.fp .read{font-size:.84rem;font-weight:600;color:var(--accent);text-decoration:none}
+.fp-foot{margin-top:auto;padding-top:10px;text-align:center;font-size:.74rem;color:var(--muted)}
+.dots{display:flex;justify-content:center;gap:5px;margin-top:10px}
+.dots i{width:6px;height:6px;border-radius:50%;background:var(--line)}
+.dots i.on{background:var(--accent);width:16px;border-radius:3px}
+@media (prefers-reduced-motion:reduce){.leaf,.shade{transition:none}}
 .skel{height:14px;border-radius:6px;background:var(--sunk);margin:10px 0}
 @media (max-width:370px){.fields{grid-template-columns:1fr}.mrow{grid-template-columns:1fr 92px}.mrow svg{display:none}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -205,33 +233,8 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
   <section style="padding-top:18px">
     <h2 class="sec" data-t="news_t"></h2>
     <div class="chips" id="chips" role="group" aria-label="Sections"></div>
-    <div id="news"></div>
-  </section>
-</div>
-
-<!-- TOOLS -->
-<div class="view" id="v-tools" hidden>
-  <section>
-    <h2 class="sec" data-t="tools_t"></h2>
-    <p class="sub" data-t="pulse_s"></p>
-    <div class="card">
-      <div class="kicker" data-t="pulse_t"></div>
-      <div class="fields">
-        <label class="f" for="in-usd"><span data-t="f_usd"></span><input id="in-usd" inputmode="decimal" value="250000"></label>
-        <label class="f" for="in-budget"><span data-t="f_budget"></span><input id="in-budget" inputmode="decimal" value="585"></label>
-      </div>
-      <div class="out"><small data-t="o_label"></small><div class="big" id="o-over"></div><small id="o-detail"></small></div>
-      <p class="note" id="o-sens"></p>
-    </div>
-    <div class="card">
-      <div class="kicker" data-t="sugar_e"></div>
-      <div class="fields">
-        <label class="f" for="in-t"><span data-t="f_t"></span><input id="in-t" inputmode="decimal" value="120"></label>
-        <label class="f" for="in-p"><span data-t="f_p"></span><input id="in-p" inputmode="decimal" value="180"></label>
-      </div>
-      <div class="out"><small data-t="s_label"></small><div class="big" id="s-out"></div><small id="s-detail"></small></div>
-      <p class="note" data-t="s_note"></p>
-    </div>
+    <div class="flip" id="flip" aria-live="polite"></div>
+    <div class="dots" id="dots" aria-hidden="true"></div>
   </section>
 </div>
 
@@ -251,7 +254,6 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
   <a href="#today" data-v="today"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h8M8 17h4" stroke-linecap="round"/></svg><span data-t="t_today"></span></a>
   <a href="#markets" data-v="markets"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 18l5-6 4 3 7-9" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-t="t_markets"></span></a>
   <a href="#news" data-v="news"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 2.5 14.4 0 17M12 3.5c-2.5 2.6-2.5 14.4 0 17"/></svg><span data-t="t_news"></span></a>
-  <a href="#tools" data-v="tools"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="3.5" width="14" height="17" rx="2"/><path d="M8.5 7.5h7M8.5 12h1M12 12h1M15.5 12h0M8.5 16h1M12 16h1M15.5 16h0" stroke-linecap="round"/></svg><span data-t="t_tools"></span></a>
   <a href="#saved" data-v="saved"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 4h10v16l-5-3.5L7 20z" stroke-linejoin="round"/></svg><span id="saved-tab"></span></a>
 </div></nav>
 
@@ -267,7 +269,7 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 const T={
  en:{ite:"For ITE Congo · Brazzaville",sixty:"Overnight in 60 seconds",wa:"Send to WhatsApp · FR",copy:"Copy French text",
   agenda_t:"Coming up",mk_t:"Markets",mk_s:"Last close for each. Tap a row for its chart, source and an alert.",lg_p:"Cost pressure for ITE",lg_r:"Cost relief",lg_n:"Context",
-  g_fx:"Currencies · XAF",g_commod:"Commodities · ITE inputs",g_africa:"Africa FX",g_rates:"Rates",
+  g_fx:"Currencies · XAF",g_commod:"Commodities · ITE inputs",g_africa:"Africa FX",g_pack:"Packaging · PET bottle grade",ref:"Reference",g_rates:"Rates",
   news_t:"News",all:"All",tools_t:"Tools",pulse_t:"What the dollar costs ITE this month",pulse_s:"The franc CFA is pegged to the euro, so only USD invoices carry FX risk. Your figures stay on this phone.",
   f_usd:"USD purchases per month",f_budget:"Budget rate (XAF per USD)",o_label:"Monthly cost vs budget at today's rate",
   sugar_e:"Sugar landed-cost starter",f_t:"Tonnes per month",f_p:"Premium + freight ($/t)",s_label:"Raw sugar No.11 + your premium, in XAF",s_note:"Converts ¢/lb to $/t (× 22.046). Refining, duties and port charges not included.",
@@ -280,7 +282,7 @@ const T={
   offline:"Offline: showing the last brief saved on this phone.",ago_m:"min ago",ago_h:"h ago",ago_d:"d ago",now:"now",chart:"Last month",nostories:"No stories in this section yet. It fills on the next update."},
  fr:{ite:"Pour ITE Congo · Brazzaville",sixty:"La nuit en 60 secondes",wa:"Envoyer sur WhatsApp",copy:"Copier le texte",
   agenda_t:"À venir",mk_t:"Marchés",mk_s:"Dernière clôture. Touchez une ligne pour le graphique, la source et une alerte.",lg_p:"Pression sur les coûts",lg_r:"Allègement",lg_n:"Contexte",
-  g_fx:"Devises · XAF",g_commod:"Matières premières · intrants ITE",g_africa:"Devises africaines",g_rates:"Taux",
+  g_fx:"Devises · XAF",g_commod:"Matières premières · intrants ITE",g_africa:"Devises africaines",g_pack:"Emballage · PET qualité bouteille",ref:"Référence",g_rates:"Taux",
   news_t:"Actualités",all:"Tout",tools_t:"Outils",pulse_t:"Ce que le dollar coûte à ITE ce mois-ci",pulse_s:"Le franc CFA est arrimé à l'euro : seules les factures en USD portent un risque de change. Vos chiffres restent sur ce téléphone.",
   f_usd:"Achats en USD par mois",f_budget:"Taux budgétaire (XAF pour 1 USD)",o_label:"Coût mensuel vs budget au taux du jour",
   sugar_e:"Coût du sucre, première estimation",f_t:"Tonnes par mois",f_p:"Prime + fret ($/t)",s_label:"Sucre brut No.11 + votre prime, en XAF",s_note:"Conversion ¢/lb en $/t (× 22,046). Raffinage, droits et frais portuaires non inclus.",
@@ -293,7 +295,7 @@ const T={
   offline:"Hors ligne : dernier brief enregistré sur ce téléphone.",ago_m:"min",ago_h:"h",ago_d:"j",now:"à l'instant",chart:"Dernier mois",nostories:"Pas encore d'articles dans cette rubrique. Elle se remplit à la prochaine mise à jour."}
 };
 const FRONT=["worldwide","africa","congo"]; // front-page sections, in reading order
-const GROUPS=["fx","commod","africa","rates"];
+const GROUPS=["fx","commod","pack","africa","rates"];
 const $=s=>document.querySelector(s);
 const store={get(k,d){try{const v=localStorage.getItem("bd:"+k);return v===null?d:JSON.parse(v);}catch(e){return d;}},set(k,v){try{localStorage.setItem("bd:"+k,JSON.stringify(v));}catch(e){}}};
 let lang=store.get("lang",(navigator.language||"").startsWith("fr")?"fr":"en");
@@ -371,28 +373,82 @@ function renderAgenda(){
   $("#agenda").innerHTML=(B.agenda||[]).filter(a=>a.date>=today).map(a=>`<li><span class="d">${fdate(a.date)}</span><span>${esc(a[lang]||a.en)}</span></li>`).join("");
 }
 function renderMarkets(){
-  const rows=[...B.markets,...(B.static_rates||[]).map(r=>({...r,dp:2,cost:0,change_pct:0,static:true}))];
+  const st=(B.static_rates||[]).map(r=>({...r,dp:r.dp??2,cost:0,change_pct:0,static:true}));
+  const pc=st.find(r=>r.id==="pet_cn");
+  if(pc&&B.fx)st.splice(st.indexOf(pc)+1,0,{id:"pet_xaf",group:"pack",name:lang==="fr"?"PET Chine en XAF":"PET China in XAF",unit:"XAF/t",value:pc.value*B.fx.usdxaf,dp:0,date:B.fx.date,static:true,cost:0,change_pct:0,note:lang==="fr"?`${fmt(pc.value)} $/t × ${fmt(B.fx.usdxaf,1)} XAF/$ au taux du jour.`:`$${fmt(pc.value)}/t × ${fmt(B.fx.usdxaf,1)} XAF/$ at today's rate.`});
+  const rows=[...B.markets,...st];
   $("#mk").innerHTML=GROUPS.map(g=>{const list=rows.filter(m=>(m.group||"commod")===g);if(!list.length)return"";
     return`<div class="mgroup"><h3>${t("g_"+g)}</h3><div class="mlist">${list.map(m=>{const e=effect(m);
       const row=`<button class="mrow${tripped(m)?" tripped":""}" type="button" data-m="${m.id}" aria-expanded="${open===m.id}">
         <div><div class="nm">${esc(m.name)}</div><div class="un">${esc(m.unit)} · ${fdate(m.date)}</div></div>
         ${m.static?"<span></span>":spark(m.series,e)}
-        <div class="px"><div class="v">${fmt(m.value,m.dp)}</div><div class="c ${e}">${m.static?esc(t("lg_n")):(m.change_pct>0?"+":m.change_pct<0?"−":"")+fmt(Math.abs(m.change_pct),2)+"%"}</div></div></button>`;
-      const det=open===m.id?`<div class="detail">${m.static?esc(m.note||""):`<div>${t("chart")}</div>${spark(m.series,e,600,90).replace("<svg",'<svg style="width:100%;height:90px"')}
+        <div class="px"><div class="v">${fmt(m.value,m.dp)}</div><div class="c ${e}">${m.static?esc(t("ref")):(m.change_pct>0?"+":m.change_pct<0?"−":"")+fmt(Math.abs(m.change_pct),2)+"%"}</div></div></button>`;
+      const det=open===m.id?`<div class="detail">${m.static?esc(m.note||"")+(m.url?` · <a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.source)} ↗</a>`:""):`<div>${t("chart")}</div>${spark(m.series,e,600,90).replace("<svg",'<svg style="width:100%;height:90px"')}
         <div class="share" style="padding:0"><button class="btn" type="button" data-alert="${m.id}">${alerts[m.id]?`${t("alert")} ${alerts[m.id].dir==="above"?">":"<"} ${fmt(alerts[m.id].v,m.dp)}`:t("setalert")}</button>${m.url?`<a class="btn" href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.source)} ↗</a>`:""}</div>`}</div>`:"";
       return row+det;}).join("")}</div></div>`;}).join("");
   document.querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>{open=open===b.dataset.m?null:b.dataset.m;renderMarkets();});
   document.querySelectorAll("[data-alert]").forEach(b=>b.onclick=e=>{e.stopPropagation();openSheet(b.dataset.alert);});
 }
+let fIdx=0,fCat=null,fBusy=false,fPages=[];
+function buildPages(){
+  const cats=cat==="all"?B.categories.map(c=>c.id):[cat];const P=[];
+  for(const c of cats){const l=byCat(c);for(let i=0;i<l.length;i+=3)P.push({cat:c,items:l.slice(i,i+3)});}
+  return P;
+}
+function pageHTML(p,i,n){
+  if(!p)return`<div class="fp"><div class="fp-head"><span>${esc(t("news_t"))}</span><span></span></div><p class="empty">${t("nostories")}</p></div>`;
+  const it=(x,big)=>{const on=!!saved[x.id];return`<article class="${big?"fp-lead":"fp-sm"}"><div class="meta"><span class="src">${esc(x.source)}</span><span>· ${ago(x.date)}</span></div>
+    <h3><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></h3>
+    <div class="acts"><a class="read" href="${esc(x.url)}" target="_blank" rel="noopener">${lang==="fr"?"Lire l'article":"Read story"} ↗</a>
+    <button class="save" type="button" data-save="${esc(x.id)}" aria-pressed="${on}" aria-label="${on?"Remove from saved":"Save story"}">${on?BMF:BM}</button></div></article>`;};
+  return`<div class="fp"><div class="fp-head"><span>${esc(catLabel(p.cat))}</span><span>${i+1} / ${n}</span></div>
+    ${p.items.map((x,k)=>it(x,k===0)).join("")}
+    <div class="fp-foot">${i<n-1?(lang==="fr"?"Glissez vers le haut ↑":"Swipe up ↑"):(lang==="fr"?"Fin de la rubrique":"End of section")}</div></div>`;
+}
+function flipH(){const f=$("#flip");const top=f.getBoundingClientRect().top;const tab=document.querySelector("nav.tabs").offsetHeight;return Math.max(420,innerHeight-top-tab-40);}
+function drawFlip(){
+  const f=$("#flip"),H=flipH();f.style.height=H+"px";
+  f.innerHTML=pageHTML(fPages[fIdx],fIdx,fPages.length);
+  $("#dots").innerHTML=fPages.length>1?fPages.slice(0,Math.min(fPages.length,12)).map((_,i)=>`<i class="${i===Math.min(fIdx,11)?"on":""}"></i>`).join(""):"";
+}
+function half(html,pos,H){return`<div class="half ${pos}"><div style="position:absolute;left:0;right:0;height:${H}px;top:${pos==="bot"?-H/2:0}px">${html}</div></div>`;}
+function face(html,cls,off,H){return`<div class="face ${cls}"><div style="position:absolute;left:0;right:0;height:${H}px;top:${off}px">${html}</div></div>`;}
+function flipTo(dir){
+  if(fBusy)return;const j=fIdx+dir;if(j<0||j>=fPages.length){nudge(dir);return;}
+  const f=$("#flip"),H=parseFloat(f.style.height),n=fPages.length;
+  const cur=pageHTML(fPages[fIdx],fIdx,n),nxt=pageHTML(fPages[j],j,n);
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){fIdx=j;drawFlip();return;}
+  fBusy=true;
+  if(dir>0){ // bottom half of this page folds up to reveal the next page
+    f.innerHTML=half(cur,"top",H)+half(nxt,"bot",H)+`<div class="shade"></div>`+
+      `<div class="leaf" style="top:50%;transform-origin:50% 0">${face(cur,"front",-H/2,H)}${face(nxt,"back",0,H)}</div>`;
+  }else{ // top half folds down to reveal the previous page
+    f.innerHTML=half(nxt,"top",H)+half(cur,"bot",H)+`<div class="shade"></div>`+
+      `<div class="leaf" style="top:0;transform-origin:50% 100%">${face(cur,"front",0,H)}${face(nxt,"back",-H/2,H)}</div>`;
+  }
+  const leaf=f.querySelector(".leaf"),sh=f.querySelector(".shade");
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{leaf.style.transform=`rotateX(${dir>0?180:-180}deg)`;sh.style.opacity=".18";setTimeout(()=>sh.style.opacity="0",300);}));
+  const done=()=>{fIdx=j;fBusy=false;drawFlip();};
+  leaf.addEventListener("transitionend",done,{once:true});setTimeout(()=>{if(fBusy)done();},900);
+}
+function nudge(dir){const f=$("#flip");f.animate([{transform:"translateY(0)"},{transform:`translateY(${dir>0?-14:14}px)`},{transform:"translateY(0)"}],{duration:280,easing:"ease-out"});}
 function renderNews(){
   const cats=[{id:"all",en:t("all"),fr:t("all")},...B.categories];
   $("#chips").innerHTML=cats.map(c=>`<button class="chip" type="button" data-cat="${c.id}" aria-pressed="${cat===c.id}">${esc(c[lang]||c.en)}</button>`).join("");
   document.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>{cat=b.dataset.cat;renderNews();});
-  const show=cat==="all"?B.categories.map(c=>c.id):[cat];
-  $("#news").innerHTML=show.map(c=>{const list=byCat(c);if(cat==="all"&&!list.length)return"";
-    return`<section style="padding-top:20px">${cat==="all"?`<div class="sec-head"><h2 class="sec">${esc(catLabel(c))}</h2></div>`:""}
-    <ul class="stories">${list.length?list.map((n,i)=>story(n,i===0)).join(""):`<li class="empty">${t("nostories")}</li>`}</ul></section>`;}).join("");
+  if(fCat!==cat){fIdx=0;fCat=cat;}
+  fPages=buildPages();if(fIdx>=fPages.length)fIdx=Math.max(0,fPages.length-1);
+  if(!$("#v-news").hidden)drawFlip();
 }
+(function(){
+  let y0=null,x0=0,t0=0;
+  document.addEventListener("pointerdown",e=>{if(!e.target.closest("#flip"))return;y0=e.clientY;x0=e.clientX;t0=Date.now();});
+  document.addEventListener("pointerup",e=>{if(y0===null)return;const dy=e.clientY-y0,dx=e.clientX-x0;y0=null;
+    if(Math.abs(dy)>40&&Math.abs(dy)>Math.abs(dx))flipTo(dy<0?1:-1);});
+  let wl=0;document.addEventListener("wheel",e=>{if(!e.target.closest("#flip"))return;e.preventDefault();const now=Date.now();if(now-wl<700||Math.abs(e.deltaY)<15)return;wl=now;flipTo(e.deltaY>0?1:-1);},{passive:false});
+  document.addEventListener("keydown",e=>{if($("#v-news").hidden)return;if(e.key==="ArrowDown"||e.key==="PageDown"){e.preventDefault();flipTo(1);}if(e.key==="ArrowUp"||e.key==="PageUp"){e.preventDefault();flipTo(-1);}});
+  addEventListener("resize",()=>{if(B&&!$("#v-news").hidden&&!fBusy)drawFlip();});
+})();
 function renderSaved(){
   const list=Object.values(saved).sort((a,b)=>b.date.localeCompare(a.date));
   $("#saved").innerHTML=list.length?list.map(n=>story(n)).join(""):`<li class="empty">${t("nosaved")}</li>`;
@@ -401,19 +457,6 @@ function renderSaved(){
 document.addEventListener("click",e=>{const b=e.target.closest("[data-save]");if(!b)return;
   const id=b.dataset.save;if(saved[id])delete saved[id];else{const n=B.news.find(x=>x.id===id);if(n)saved[id]=n;}
   store.set("saved",saved);renderFront();renderNews();renderSaved();});
-
-function renderCalc(){
-  const R=B.fx.usdxaf,u=num($("#in-usd").value),b=num($("#in-budget").value),d=u*(R-b);
-  $("#o-over").textContent=`${d>0?"+":d<0?"−":""}${fmt(Math.abs(d))} XAF`;
-  $("#o-over").className="big "+(d>0?"pressure":d<0?"relief":"");
-  $("#o-detail").textContent=`$${fmt(u)} × ${fmt(R,1)} = ${fmt(u*R)} XAF · budget ${fmt(u*b)} XAF`;
-  const pc=B.peg/(B.fx.eurusd-0.01)-R;
-  $("#o-sens").textContent=lang==="fr"?`Chaque baisse de 1 centime de l'EUR/USD ajoute ${fmt(pc,1)} XAF par dollar, soit ${fmt(pc*u)} XAF par mois.`:`Each 1-cent fall in EUR/USD adds ${fmt(pc,1)} XAF per dollar, or ${fmt(pc*u)} XAF a month.`;
-  store.set("calc",{u:$("#in-usd").value,b:$("#in-budget").value});
-  const s=M("sugar"),tn=num($("#in-t").value),p=num($("#in-p").value);
-  if(s){const raw=s.value*22.0462,pt=raw+p;$("#s-out").textContent=`${fmt(pt*R*tn)} XAF`;$("#s-detail").textContent=`$${fmt(raw)}/t + $${fmt(p)} = $${fmt(pt)}/t ≈ ${fmt(pt*R)} XAF/t × ${fmt(tn)} t · ${fmt(s.value,2)} ¢/lb (${fdate(s.date)})`;}
-  store.set("sugar",{t:$("#in-t").value,p:$("#in-p").value});
-}
 
 let sid=null,sdir="above";
 function openSheet(id){const m=M(id);sid=id;const a=alerts[id]||{dir:"above",v:+m.value.toFixed(m.dp)};sdir=a.dir;
@@ -430,19 +473,16 @@ function applyText(){
   if(theme)document.documentElement.dataset.theme=theme;else delete document.documentElement.dataset.theme;
   document.querySelectorAll("[data-t]").forEach(e=>e.textContent=t(e.dataset.t));
 }
-function renderAll(){applyText();if(!B)return;renderTop();renderSixty();renderFront();renderAgenda();renderMarkets();renderNews();renderSaved();renderCalc();}
+function renderAll(){applyText();if(!B)return;renderTop();renderSixty();renderFront();renderAgenda();renderMarkets();renderNews();renderSaved();}
 $("#lang").onclick=()=>{lang=lang==="fr"?"en":"fr";store.set("lang",lang);renderAll();};
 $("#theme").onclick=()=>{const dark=theme?theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;theme=dark?"light":"dark";store.set("theme",theme);renderAll();};
 
-const V=["today","markets","news","tools","saved"];
+const V=["today","markets","news","saved"];
 function route(){const v=V.includes(location.hash.slice(1))?location.hash.slice(1):"today";
   V.forEach(n=>$("#v-"+n).hidden=n!==v);document.querySelectorAll("nav.tabs a").forEach(a=>a.setAttribute("aria-current",a.dataset.v===v?"page":"false"));
-  if(v==="news"&&B)renderNews();scrollTo(0,0);}
+  scrollTo(0,0);if(v==="news"&&B)renderNews();}
 addEventListener("hashchange",route);
 
-const c=store.get("calc",null);if(c){$("#in-usd").value=c.u;$("#in-budget").value=c.b;}
-const sg=store.get("sugar",null);if(sg){$("#in-t").value=sg.t;$("#in-p").value=sg.p;}
-["#in-usd","#in-budget","#in-t","#in-p"].forEach(i=>$(i).addEventListener("input",()=>B&&renderCalc()));
 applyText();route();
 async function load(){
   try{const r=await fetch("data/brief.json?ts="+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;B=await r.json();store.set("last",B);offline=false;}
