@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-20T19:11:34.512Z",
+ "generated_at": "2026-11-20T20:10:06.564Z",
  "summary_at": "2026-11-20T18:28:12.534Z",
  "summary_mode": "rules",
  "peg": 655.957,
  "fx": {
-  "eurusd": 1.0970927476882935,
-  "usdxaf": 597.9047818720709,
+  "eurusd": 1.0972130298614502,
+  "usdxaf": 597.8392364542285,
   "usdxaf_prev": 597.8457318897565,
   "date": "2026-11-20"
  },
@@ -17,10 +17,10 @@
    "unit": "XAF per USD",
    "dp": 1,
    "cost": 1,
-   "value": 597.9047818720709,
+   "value": 597.8392364542285,
    "prev": 597.8457318897565,
    "date": "2026-11-20",
-   "change_pct": 0.00987712701865373,
+   "change_pct": -0.001086473513400854,
    "series": [
     [
      "2026-10-21",
@@ -108,7 +108,7 @@
     ],
     [
      "2026-11-20",
-     597.9047818720709
+     597.8392364542285
     ]
    ],
    "source": "655.957 ÷ EUR/USD",
@@ -125,10 +125,10 @@
    "unit": "USD per EUR",
    "dp": 4,
    "cost": -1,
-   "value": 1.0970927476882935,
+   "value": 1.0972130298614502,
    "prev": 1.0972011089324951,
    "date": "2026-11-20",
-   "change_pct": -0.009876151538623645,
+   "change_pct": 0.00108648531778055,
    "series": [
     [
      "2026-10-21",
@@ -216,7 +216,7 @@
     ],
     [
      "2026-11-20",
-     1.0970927476882935
+     1.0972130298614502
     ]
    ],
    "source": "Yahoo Finance",
@@ -233,10 +233,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 89.62000274658203,
+   "value": 89.52999877929688,
    "prev": 91.9800033569336,
    "date": "2026-11-20",
-   "change_pct": -2.565775738443332,
+   "change_pct": -2.663627406197555,
    "series": [
     [
      "2026-10-22",
@@ -324,7 +324,7 @@
     ],
     [
      "2026-11-20",
-     89.62000274658203
+     89.52999877929688
     ]
    ],
    "source": "Yahoo Finance",
@@ -343,10 +343,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 83.12999725341797,
+   "value": 83,
    "prev": 83.20999908447266,
    "date": "2026-11-20",
-   "change_pct": -0.09614449217031362,
+   "change_pct": -0.2523724153144946,
    "series": [
     [
      "2026-10-22",
@@ -434,14 +434,16 @@
     ],
     [
      "2026-11-20",
-     83.12999725341797
+     83
     ]
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/CL%3DF",
    "why": {
-    "en": "Little change since the previous close.",
-    "fr": "Peu de variation depuis la clôture précédente."
+    "en": "Oil Prices Retreat as Traders Assess Supply Outlook, Middle East Risks",
+    "fr": "Les prix du pétrole reculent alors que les traders évaluent les perspectives d'approvisionnement et les risques au Moyen-Orient",
+    "source": "WSJ",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUVE3WWhmSEFMaFZmRkVRTHN5R1N0V3lLbmdYYWsyZ0QxSnRqaFdkcktIS1JqTk5RRTI0ODREZV9jcldqb3BpMzhmN3BUOWhRaDI1bGdnMG45VDRxNFU1YXN4X2hEd1Y4RTRLMkdabDU1T2p1cnRpT2R1VUY1UElIS1h3Q3NtdlpEMFpoaHB6bXh5LUNFakwyLUYwWF9KVG9YRmRKT2xwcVp4WkQtYnBucFV5WWFfbDY1dDRlWW9halQwclNac2tubV9vQQ?oc=5"
    }
   },
   {
@@ -451,10 +453,10 @@
    "unit": "USD/oz",
    "dp": 0,
    "cost": 0,
-   "value": 3535.60009765625,
+   "value": 3522.699951171875,
    "prev": 3685.5,
    "date": "2026-11-20",
-   "change_pct": -4.06728808421517,
+   "change_pct": -4.417312408848872,
    "series": [
     [
      "2026-10-22",
@@ -542,14 +544,14 @@
     ],
     [
      "2026-11-20",
-     3535.60009765625
+     3522.699951171875
     ]
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/GC%3DF",
    "why": {
-    "en": "Down 4.1%, moving with Silver (−6.7%): a broad sell-off rather than one-off news.",
-    "fr": "En baisse de 4,1%, comme l'argent (−6,7%) : un mouvement d'ensemble plutôt qu'une nouvelle isolée."
+    "en": "Down 4.4%, moving with Silver (−7.5%): a broad sell-off rather than one-off news.",
+    "fr": "En baisse de 4,4%, comme l'argent (−7,5%) : un mouvement d'ensemble plutôt qu'une nouvelle isolée."
    }
   },
   {
@@ -559,10 +561,10 @@
    "unit": "USD/oz",
    "dp": 2,
    "cost": 0,
-   "value": 41.33000183105469,
+   "value": 40.97999954223633,
    "prev": 44.31800079345703,
    "date": "2026-11-20",
-   "change_pct": -6.7421790444199825,
+   "change_pct": -7.53193102454548,
    "series": [
     [
      "2026-10-22",
@@ -650,14 +652,14 @@
     ],
     [
      "2026-11-20",
-     41.33000183105469
+     40.97999954223633
     ]
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/SI%3DF",
    "why": {
-    "en": "Down 6.7%, moving with Gold (−4.1%): a broad sell-off rather than one-off news.",
-    "fr": "En baisse de 6,7%, comme l'or (−4,1%) : un mouvement d'ensemble plutôt qu'une nouvelle isolée."
+    "en": "Down 7.5%, moving with Gold (−4.4%): a broad sell-off rather than one-off news.",
+    "fr": "En baisse de 7,5%, comme l'or (−4,4%) : un mouvement d'ensemble plutôt qu'une nouvelle isolée."
    }
   }
  ],
@@ -1562,23 +1564,17 @@
    }
   },
   {
-   "id": "n2-2026-11-19",
+   "id": "n2-2026-11-20",
    "cat": "worldwide",
    "lang": "en",
-   "title": "Euro zone banks' data centre exposure small but growing, ECB says",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcm5Wc0JWdU5keDRHeFRNV0Izdl9IY3pCVzYwaEExN2F0cmo5MTAzMnZ5S3pFSW9zeU5ITVo1bF92OExlbmU0OW55cWR1b09NdGZWU29FTi1kVXBzTHBoSUtNdmRONlVaMUV1XzN5QTUwSWNWQm80YkV0NGpzcjNES195c1VVaS1sRElPVUU2RWJHZ0N3T3I2RGhfVGdTRTlnMkdJeTM0V21lczRyV054R3h3?oc=5",
-   "date": "2026-11-19T18:33:07.000Z",
-   "score": 4,
-   "desc": "Euro zone banks' credit exposure to data centres is relatively small but has been growing fast, requiring heightened attention from financial watchdogs, the European ...",
-   "img": "http://www.bing.com/th?id=ORMS.6ca565b3f1d6257c3e45c2eb7f69359b&pid=News&w=900&h=1200&c=7&rs=1",
+   "title": "Apollo Enlists 13 Wall Street Banks for $9 Billion ADT Debt Deal",
+   "source": "Bloomberg.com",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONGx6YW9EQWZDWTIxQjN0MWFDOHlMX2hFaDJsNWF4amtfRTEwZE5YS0tUeWdTYzhuRG9qUEcwZml6dkxfZTNURmhJb05YSkc4TkNGR3MtMDJuV09HQVpVYTB6S1QxQ3VVZ1NaaFhxTkZ4SkVyQWxoaFk2SVdWYkN4MURickFQREhMNExaTExjQllJRGdZdlU0M3huSHFIb1FuektjZURLOHVnRFJqb1U5NnN0dmo?oc=5",
+   "date": "2026-11-20T19:48:02.000Z",
+   "score": 3.9,
    "t": {
-    "en": "Euro zone banks' data centre exposure small but growing, ECB says",
-    "fr": "L'exposition aux centres de données des banques de la zone euro est faible mais croissante, selon la BCE"
-   },
-   "d": {
-    "en": "Euro zone banks' credit exposure to data centres is relatively small but has been growing fast, requiring heightened attention from financial watchdogs, the European ...",
-    "fr": "L'exposition au crédit des banques de la zone euro dans les centres de données est relativement faible mais a augmenté rapidement, nécessitant une attention accrue de la part des organismes de surveillance financière, de l'Union européenne..."
+    "en": "Apollo Enlists 13 Wall Street Banks for $9 Billion ADT Debt Deal",
+    "fr": "Apollo fait appel à 13 banques de Wall Street pour un accord de dette ADT de 9 milliards de dollars"
    }
   },
   {
@@ -1588,7 +1584,7 @@
    "title": "Skepticism About AI Is Crushing Stock Prices Around the World",
    "source": "Bloomberg.com",
    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPa0xuaEJvTjF2V01vTGdTNXdIdzZ5NklfbmVXVE9WeVBfVU1xRW1Hc2VWWnViUzNOaTl6M0hCSUJKazE1Vkc0NEljbW04b1FBVHZQUk9iZVJMUXN6YnVHQWhfMnl4cFZVU0QybDJBVUc3dXJZM2U3YkZ3OFZFeE5aM1Z0bEFScGNRa0UwY1gyUkJoX0FfRlNJYmhwWUl5eV9MalZsZzNyZDR4bjBoV29Ub1ZNclNvQQ?oc=5",
-   "date": "2026-11-20T17:42:23.000Z",
+   "date": "2026-11-20T19:12:25.000Z",
    "score": 3.9,
    "t": {
     "en": "Skepticism About AI Is Crushing Stock Prices Around the World",
@@ -1602,7 +1598,7 @@
    "title": "Week Ahead for FX, Bonds: Flash PMI Data to Provide Gauge on Economic Growth",
    "source": "WSJ",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUGRKVlM2NDJTdnJ2MW1LcHA4Z29OVTA3eEo0NFlsblNRRnBvcGVGZkVneWN1X1VWWVRWY1FTSm1jWHE0aV9IQzR5Sk9uWHpmdGdSb0VIR3hhal9YckR6QTVTeXhEWVRSTkQ2U2szTEdvQUtSYWVQSXU0LU1Pb3lzNmx6MHdNUmd4NTFHM2thTmpaN2xDclJSa1l1ZzQzRThSdnBPY0tKNC14WlNZRXNpeg?oc=5",
-   "date": "2026-11-20T15:14:00.000Z",
+   "date": "2026-11-20T15:18:18.000Z",
    "score": 3.9,
    "t": {
     "en": "Week Ahead for FX, Bonds: Flash PMI Data to Provide Gauge on Economic Growth",
@@ -1617,6 +1613,26 @@
    "id": "n5-2026-11-20",
    "cat": "worldwide",
    "lang": "en",
+   "title": "ECB to make euro swaps more accessible in global push, Lagarde says",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNY2NCeURnMlNOTWoyc0lXdTQ4dFM4aUNNTVVDaVI5TEFQY0ZCU3hXcEVIalBnRGFLOS1qM195dG9qTlB5R2pXcG93eVFuVElWTnpJbW4wbUxicUl1aWxITjRYeTZHZVFtc09ha0JiX0J3NDlFa0w5bmZtNXozSGtDd2lMVGRIeWFXb0M0dUJTWktGUjdKWGRUeUsxOGdQUVF1SFdSYVdneHVITVFkNC1wci1wUQ?oc=5",
+   "date": "2026-11-20T14:41:52.000Z",
+   "score": 3.9,
+   "desc": "The European Central Bank will make its currency swap lines with other countries more accessible to shield the euro area from outside financial shocks and boost the ...",
+   "img": "http://www.bing.com/th?id=ONUT.bufmcqIWPhf7N5ZMisdmbA&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "ECB to make euro swaps more accessible in global push, Lagarde says",
+    "fr": "La BCE va rendre les swaps en euros plus accessibles dans le cadre d'une initiative mondiale, dit Lagarde"
+   },
+   "d": {
+    "en": "The European Central Bank will make its currency swap lines with other countries more accessible to shield the euro area from outside financial shocks and boost the ...",
+    "fr": "La Banque centrale européenne rendra plus accessibles ses lignes de swap de devises avec d'autres pays pour protéger la zone euro des chocs financiers extérieurs et stimuler la ..."
+   }
+  },
+  {
+   "id": "n6-2026-11-20",
+   "cat": "worldwide",
+   "lang": "en",
    "title": "Dollar Heads for Fourth Week of Gains Following Anthropic IPO",
    "source": "Bloomberg.com",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZk10QjN0ZjR3OXFGdVI1OENkTC1WNzZFM2k4Z2VQMFk4bjFwalJtT2RxVTNFS2luNWUyYTVJZlpMcXduQmRnMHBtQ05ZTUlvUnJ3VGhGMlBRcUczbzZ2WkxEcXRadnFSckh5WWdaSnRVRHlTTGVqN0ZWdXl2NGFJYVVwTXJYYzFOVDNIZ2duSGttYklEYVZxamtWOExoT19yLW9XLVdKc1cwNDdHOTRUVVF3?oc=5",
@@ -1629,20 +1645,6 @@
    "d": {
     "en": "The dollar is headed for a fourth straight weekly gain as demand tied to the Anthropic PBC IPO further lifts the currency that has been supported by expectations of further Federal Reserve ...",
     "fr": "Le dollar se dirige vers un quatrième gain hebdomadaire consécutif alors que la demande liée à l'introduction en bourse d'Anthropic PBC fait encore grimper la monnaie qui a été soutenue par les attentes d'une nouvelle Réserve fédérale..."
-   }
-  },
-  {
-   "id": "n6-2026-11-19",
-   "cat": "worldwide",
-   "lang": "en",
-   "title": "ECB to Probe Riskier Private Credit and Hedge Fund Links at Banks",
-   "source": "Bloomberg.com",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNelZRLXNWLUdqaUxFZzVOOVR6T2tOQmx4RFA0dEF3MFdETnVTV01HY1R2cGpnUGlzVFdZUjh6a2U5d1JfSnZ6dUNwOG0yNEV2UFJKX010WUZlak1SMlFsLUJpcEl6Z2NCNlIwYUw5cGVnbUF6RVpQSzRTS3VGTEhWeWlSSXJCbXl6enptVTJONjRLR1NQeEtoLWNnLTBPMFNzVDVwcl95ZHl1dnRHTEQ0amd3?oc=5",
-   "date": "2026-11-19T09:28:33.000Z",
-   "score": 3.6,
-   "t": {
-    "en": "ECB to Probe Riskier Private Credit and Hedge Fund Links at Banks",
-    "fr": "La BCE va enquêter sur les liens plus risqués entre le crédit privé et les hedge funds dans les banques"
    }
   },
   {
@@ -1673,7 +1675,7 @@
    "source": "Business & Financial Times",
    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5EQ3JIbjBoVXRSOFNRZy1Eb3BuME5kM0Z3SFN1V1RtS1J6MHNrQ05QSjJ4Ylp5dTlpMjNtNy1WX2JtajV2VWYwSzRCaXZEdHJyYUFTa19pUEUwbDRNazFldUpPTGVmOEE?oc=5",
    "date": "2026-11-19T11:29:15.000Z",
-   "score": 3.7,
+   "score": 3.6,
    "desc": "Please keep comments respectful. Use plain English for our global readership and avoid using phrasing that could be misinterpreted as offensive. By commenting, you agree to abide by our community ...",
    "t": {
     "en": "EY 2027 Budget Insights : 2027 Budget statement and Economic Policy of the Government of Ghana",
@@ -1835,8 +1837,8 @@
    "title": "Logistique : le rachat de Portek soumis à l’examen du régulateur de la concurrence de la Cemac",
    "source": "EcoMatin",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdXltNFphTV90WGg4NzFqS1l1X1kyRDlIUG1JVUF2VHdzWDdLb010Wi1PeU1oOE9hc3lXLXpVak9aWXpJcUQwanFpS0piN3NSZVJfNURKNWxRUEY3aTV0dVFMSmEtLUZmNkJ6MzEwVVZWdE5ma3JDdmM2RklDRTBOMXVVeVg1UUFxUml3Yy1CMkxYYUpQOURpZHBSU2dlU1A1b0dGYTVYZzZtZjVWRHpIU3Z3?oc=5",
-   "date": "2026-11-20T13:52:50.000Z",
-   "score": 3.9,
+   "date": "2026-11-20T04:52:50.000Z",
+   "score": 3.8,
    "t": {
     "fr": "Logistique : le rachat de Portek soumis à l’examen du régulateur de la concurrence de la Cemac",
     "en": "Logistics: the takeover of Portek subject to examination by the Cemac competition regulator"
@@ -1884,20 +1886,6 @@
   },
   {
    "id": "n20-2026-11-20",
-   "cat": "congo",
-   "lang": "fr",
-   "title": "Guinée équatoriale : l’inflation repasse au-dessus du seuil communautaire après un an d’accalmie",
-   "source": "EcoMatin",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZDUtd3l5UmZ2b2pfcmZmcDN0M3NLVWE5dmNqcWE3Z1dxUWpGOVlfQVZxR29Ca0c3MzFOaXJuazNHclZCV3RYNTdCOUY3OHlDZGZ1OUROSDFaQVZWd2ZNMVZoU0RwTDJPY0RKMUlsMGdoMlZOYzFadG1kSl9MOF9jaGYtUXdIZE4yLXc2WUNkMVNLOE1hdFBlU1FGckVtM1h2UlEwUS13RklyMjJ2V2dXYXRydzNHOG02aUhZ?oc=5",
-   "date": "2026-11-20T06:54:14.000Z",
-   "score": 3.2,
-   "t": {
-    "fr": "Guinée équatoriale : l’inflation repasse au-dessus du seuil communautaire après un an d’accalmie",
-    "en": "Equatorial Guinea: inflation returns above the community threshold after a year of calm"
-   }
-  },
-  {
-   "id": "n21-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "MTN franchit une étape décisive dans le rachat d’IHS Towers",
@@ -1905,6 +1893,8 @@
    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZkE2S2pKN1gyMGFhbDlnQ1JRelJadFB3MkRZZTJhX2x6a091Z3NVVE1WX0pPSmZyNFpKUGlpbC1pZDZub2pIVms2dzJIY0c5TWM2S3lxWXp3OVVhRUVYbEd4bVpVSDM2ek5ESDRCcHJnRXh0VHBhQmxCemNzNUoyOW12NUZUWGtMaXdDOW1R?oc=5",
    "date": "2026-11-20T03:30:00.000Z",
    "score": 3,
+   "desc": "Le Conseil communautaire de la concurrence de la Cemac a autorisé, sous conditions, le rachat du spécialiste des infrastructures télécoms par l’opérateur sud-africain. Une opération de 2,2 milliards d ...",
+   "img": "https://forbesafrique.com/wp-content/uploads/2026/11/IHS-TOWERS_1500-x-1000_forbesafrique.com-.jpg",
    "t": {
     "fr": "MTN franchit une étape décisive dans le rachat d’IHS Towers",
     "en": "MTN takes a decisive step in the acquisition of IHS Towers"
@@ -1915,7 +1905,7 @@
    }
   },
   {
-   "id": "n22-2026-11-17",
+   "id": "n21-2026-11-17",
    "cat": "congo",
    "lang": "fr",
    "title": "CEMAC : les fonds cumulent 925 milliards de FCFA de titres du Trésor, dont 177 milliards d’OTA en fonds monétaires",
@@ -1930,6 +1920,20 @@
    "d": {
     "fr": "Les organismes de placement collectif en valeurs mobilières (OPCVM) de la CEMAC détenaient, au 30 juin 2026, 925,3 milliards de FCFA de titres publics émis sur le marché des valeurs du Trésor de la BE ...",
     "en": "CEMAC collective investment undertakings in transferable securities (UCITS) held, as of June 30, 2026, 925.3 billion FCFA of public securities issued on the BE Treasury securities market..."
+   }
+  },
+  {
+   "id": "n22-2026-11-17",
+   "cat": "congo",
+   "lang": "fr",
+   "title": "CEMAC : 521 milliards FCFA d’actions dans les portefeuilles des sociétés de Bourse, dont 77 % non cotées",
+   "source": "EcoMatin",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQT2pOa0xpek9tbllCWjgwNFByenFxY09mSWdOQ0FvWTktNXRXSlNlTXh4cUxiYkh5WXpSMERTUWtVZlVSVDFiQzhUZkNDNUhzM2tvSWFkZXo2WUkzSU1veGNla29BcDA3dF9VbG41dFZyVVRycVVnRlFqVWhvWmJMUkJ1bjBwMFpKQXVVRUhvVjByNVJYSjcwWVdEM091bDhCcE5sZWs2ZnVDNmJSYXp2V01FMTBUZWdiQkE0?oc=5",
+   "date": "2026-11-17T03:40:39.000Z",
+   "score": 3,
+   "t": {
+    "fr": "CEMAC : 521 milliards FCFA d’actions dans les portefeuilles des sociétés de Bourse, dont 77 % non cotées",
+    "en": "CEMAC: 521 billion FCFA of shares in the portfolios of stock exchange companies, including 77% unlisted"
    }
   },
   {
@@ -1996,7 +2000,7 @@
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQY2tBbkVxSjI5Z1puUmpGRW1GSmRoMVpEYm9rSFVZVVlWRTM0Tk5mOVJGbnQ3NkJLbk1hUXVqSkdqT2RTSUZZUHBwaHdlQ0hzdXU5YXpxUmJBVEVMT3JRQ0ZDMm1UWTBnZ2tCWWJhX3BYUzdCM09XWDZzVUwtb1FOTmpRU0oxYUsxeFpKVG05MFhMTTRud292T0c0ZF9HQmdIeng5Q00tUEtoZVJKSTBlVGtZRXpiMHJ3RWFNRA?oc=5",
    "date": "2026-11-19T18:08:07.000Z",
-   "score": 3.4,
+   "score": 3.3,
    "desc": "Nov 19 (Reuters) - Eastern Mediterranean gas producer Energean on Thursday posted a 54% jump in profit in the nine months to September 30 helped by higher oil prices and strong performance from its ...",
    "img": "http://www.bing.com/th?id=ONUT.03zE00bFWRRzxgSrblSjOw&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
@@ -2057,20 +2061,6 @@
   {
    "id": "n30-2026-11-19",
    "cat": "bev",
-   "lang": "fr",
-   "title": "Bourse de Casablanca : Details de l'action cfg-bank",
-   "source": "Medias24",
-   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9sWDhyX1NoLWlYV2RVS3VOQ0lFVjd1NW9WVk00dVB0dEpYRnA2WTU5bEExbTF0M05DdjhKa05WWVduUDJObDB1NHl5T2lYNzF1VXBPdTNYQWUybWx6U0ZBQ3NWRnRwazZ2emFPZg?oc=5",
-   "date": "2026-11-19T16:08:21.000Z",
-   "score": 1.8,
-   "t": {
-    "en": "Bourse de Casablanca : Details de l'action cfg-bank",
-    "fr": "Bourse de Casablanca : Détails de l'action cfg-bank"
-   }
-  },
-  {
-   "id": "n31-2026-11-19",
-   "cat": "bev",
    "lang": "en",
    "title": "Perspective - Chef Rachel Khoo: 'You don't need fancy kitchen gadgets to cook delicious food'",
    "source": "France 24",
@@ -2089,23 +2079,31 @@
    }
   },
   {
+   "id": "n31-2026-11-20",
+   "cat": "bev",
+   "lang": "en",
+   "title": "Savadi urges centre to fix approp prices for cane, sugar, ethanol",
+   "source": "The Times of India",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOXzlTdDZHWnRDc05NMHM2OXZRNHNGeGF6end6c3ViWU9OSHNFRjEyVW1mSl9haGcyTWtaaUFweklCYlJpWDZLb2ZYZjZad1psN2tWOFN0WjNQUmRheFlETnNwLVJtaWoyQTkwZGwxNTdQNnhUczFtMmZDN3FBUl92X2JJTDNQN3lBeG9aTm9pbk5DQktvWVh4UTRmODlrTHNuX0JDVjM0NzlLdGktYmx4N0hrZWpWVGVrcmlBcUlUeXVnVGpKSjIxWGJZMjJONEhYN000Ulczb9IB3AFBVV95cUxOTzR4MkdSemZ3NWZRdGtNTFJZNk5nVWs1Z3JsVHVMU2xodFBqNmlWUnZ0X1czTkpvZnZvZTZsZFZKSVlVelc2bUF1SHNoOHFmZHpIdW90U1UzTERWTmlXYzNKZ1JDUDdqLUg4SFhkalBCcmhKMkx4ZUsybmpVZkg0UjJfUmZmelF3Ykk1eFpTNkNuMmNwbXNGQWVBR2tTd3Zmb3hwVUR3RjZIek0xb0tMaWJPQm9yYkVtd2MxMjdVTW41N29uLUJYendFQlU1ZGVtcGtLUm4zbVl0WDBm?oc=5",
+   "date": "2026-11-20T19:54:00.000Z",
+   "score": 1.7,
+   "t": {
+    "en": "Savadi urges centre to fix approp prices for cane, sugar, ethanol",
+    "fr": "Savadi exhorte le centre à fixer des prix appropriés pour la canne, le sucre et l'éthanol"
+   }
+  },
+  {
    "id": "n32-2026-11-20",
    "cat": "bev",
    "lang": "en",
-   "title": "Sugar Prices Fall on Abundant Global Supplies",
+   "title": "Improved Supply Outlook Weighs on Sugar Prices",
    "source": "Barchart.com",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNcGsweXVXNmlnV0Fkc3dTSVcxeHJ4dzhLb2dMcWhkb2dVYW5UdHNuRGZUSUtwREJWdFNwSkdUb3lKX2p4eTlCa2hJSFpNMVRRU1g0S2xIOUlYUHFhRHM3UjlUcTJfLThjNW1ISXlHQjFPbWd1ZzNxUTNPR185VTVsQllGWWZxcjdVamMyb1pBNjhwNlE?oc=5",
-   "date": "2026-11-20T17:22:35.000Z",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSkM4SldfTzdZOUtnS3I4cXhzOXl0dG1pemMyTVFHeGY5MHYyZFo0QWhrTTBMdlZhNHY1QW9ndXpGM1RSRS1ySm5wdndVNkM4V1RQaHhCakRpOEcxb1BiRjJHcGJyTVNUcHA2WHBFVFI0RzNiTEFLQm1NLVBWczlROFBlV1MtM2lDcmpsalZtcmdoSXBP?oc=5",
+   "date": "2026-11-20T19:20:42.000Z",
    "score": 1.7,
-   "desc": "March NY world sugar #11 (SBH27) is up +0.19 (+1.04%) today, and March London ICE white sugar #5 (SWH27) is up +6.80 (+1.32%). Sugar prices are moving higher today. The International Sugar ...",
-   "img": "http://www.bing.com/th?id=ONUT.4HtrKn21UjFxKpQh1cdyBw&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
-    "en": "Sugar Prices Fall on Abundant Global Supplies",
-    "fr": "Les prix du sucre chutent en raison de l’abondance de l’offre mondiale"
-   },
-   "d": {
-    "en": "Global food prices declined in October, falling 1.2% from September, as lower costs for cereals, dairy products and meat outweighed a continued surge in sugar prices, according to the latest report released Friday by the United…",
-    "fr": "Les prix alimentaires mondiaux ont diminué en octobre, chutant de 1,2 % par rapport à septembre, la baisse des coûts des céréales, des produits laitiers et de la viande ayant compensé la hausse continue des prix du sucre, selon le dernier rapport publié vendredi par les États-Unis."
+    "en": "Improved Supply Outlook Weighs on Sugar Prices",
+    "fr": "L’amélioration des perspectives d’approvisionnement pèse sur les prix du sucre"
    }
   },
   {
@@ -2126,6 +2124,24 @@
    "id": "n34-2026-11-20",
    "cat": "bev",
    "lang": "en",
+   "title": "Union Minister Chirag Paswan Calls on Beverage Industry to Make India a Global Centre for Manufacturing, Innovation and Exports",
+   "source": "Big News Network.com",
+   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNczBnSGxWQWl2a0pNbUFwMTZnS3Q2QVRWc0dWS29WS2NSQXZNRnNHWkpzc1BpVlRPeklzNWoxRnBwV3phWkFSRU9DRXh1WV9WbzhISk1jWG56SDBudWtOM3BkR3dxeTJvZERzel9OczdscE5tdWg3OENsc2N4SF9uLURDWkd0ZG9aSW9rbWpRSE9INjd5eVVjbmpPUUw0Yi1YN19Sd2JOcXlPSXdCSG5Ja2dNTXlqaXNyTnRpeW5BMllqel91WWNTRlBhb3ZXNUNhRHJJWHFyeEttMFpoUDBGZUN6OTc0b2FqTDV4LXNvSGdDSW5WdkdXYVlSVC1tS0dhZXc?oc=5",
+   "date": "2026-11-20T14:34:00.000Z",
+   "score": 1.7,
+   "t": {
+    "en": "Union Minister Chirag Paswan Calls on Beverage Industry to Make India a Global Centre for Manufacturing, Innovation and Exports",
+    "fr": "Le ministre de l'Union, Chirag Paswan, appelle l'industrie des boissons à faire de l'Inde un centre mondial de fabrication, d'innovation et d'exportation"
+   },
+   "d": {
+    "en": "Welcoming both domestic enterprise and international investment, Shri Chirag Paswan emphasised that global companies manufacturing and innovating in India, as well as Indian entrepreneurs developing new products, contribute to…",
+    "fr": "Saluant à la fois les entreprises nationales et les investissements internationaux, Shri Chirag Paswan a souligné que les entreprises mondiales fabriquant et innovant en Inde, ainsi que les entrepreneurs indiens développant de nouveaux produits, contribuent à…"
+   }
+  },
+  {
+   "id": "n35-2026-11-20",
+   "cat": "bev",
+   "lang": "en",
    "title": "Brazilian Real Weakness Triggers Sharp Correction in Sugar Prices",
    "source": "CMB News",
    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOWWs0MUpmNGZVazctNG5yY2xRMFBGaVZiX3RFUDhuTXdWSVUzaWw3bVZKSXF0eFJ5ZV9iXzdYN01LTk5xREo4WjFHb0F1RjBTTHhnc0Y5dmFNNXQyODE4ZXJoLTZtQ1lQTVVKdkdocnlrdWNXTlk1YWFJc0VrYVhCYmhSOGVnUzNQVm1zcERLc3htQkt6YUZodWw3QkF6Zw?oc=5",
@@ -2141,35 +2157,17 @@
    }
   },
   {
-   "id": "n35-2026-11-20",
-   "cat": "bev",
-   "lang": "en",
-   "title": "Union Minister Chirag Paswan Calls on Beverage Industry to Make India a Global Centre for Manufacturing, Innovation and Exports",
-   "source": "Big News Network.com",
-   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQeDQyZnpzV0VsNTYxX1lHRzJtaEg3b2xpRWFqQnl2V0ZfYjRLZThXc0dxZ0FMR0FXR01zMkQ3UHh4Y0dRaWQ1NzBoeWFGdUJLdzROVUc0UUUwSllaRUNJaFJxMXB3UkhrSDVmYV9wV0REZDdpQXIzUlhEQ3JkMW0zRFlmT3pjeUdUVFdRRm10cmVGNjBpODJtZ1ZzS3ptNG8weTR4MmxMOXBvTVFyNGtkc1JMejFYTTRtWWkxV2F0ZnFlblZKMEZISjRPNjRYSVdTTmlwd2k1dGZpSS1TcGcwM2ZQQ0NHdVA1a1FuUVBvLUdiMFFkSkFkb2JSdVVYZ2dHOWc?oc=5",
-   "date": "2026-11-20T12:30:00.000Z",
-   "score": 1.7,
-   "t": {
-    "en": "Union Minister Chirag Paswan Calls on Beverage Industry to Make India a Global Centre for Manufacturing, Innovation and Exports",
-    "fr": "Le ministre de l'Union, Chirag Paswan, appelle l'industrie des boissons à faire de l'Inde un centre mondial de fabrication, d'innovation et d'exportation"
-   },
-   "d": {
-    "en": "Welcoming both domestic enterprise and international investment, Shri Chirag Paswan emphasised that global companies manufacturing and innovating in India, as well as Indian entrepreneurs developing new products, contribute to…",
-    "fr": "Saluant à la fois les entreprises nationales et les investissements internationaux, Shri Chirag Paswan a souligné que les entreprises mondiales fabriquant et innovant en Inde, ainsi que les entrepreneurs indiens développant de nouveaux produits, contribuent à…"
-   }
-  },
-  {
    "id": "n36-2026-11-20",
    "cat": "bev",
    "lang": "en",
-   "title": "Sugar Market Update: Maharashtra Output Rises, EU Prices Stabilise",
-   "source": "CMB News",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNWxXckVfbHZCZGZLMDJkb2cySWRWSWM4X1RzcGtaRllGdzVKRVRwLW9xOXpIMkdUQ2tpY0RWbnFBek1XVktISlA1UFpyWnRDRVpMNlFjVTQ1ZHlELVFuS0RYTmJVUW9WZ2pfUlVDSmpxSHN5bVdHZzBuLUs5TXBiUDVhMkY2WXo5LWl6Y3FGUnlKZGltbnhxV2g2TXlEYVZXUEE?oc=5",
-   "date": "2026-11-20T09:07:44.000Z",
+   "title": "Sugar prices fall 20% as Centre tightens supply monitoring, introduces fortnightly quota",
+   "source": "DD News",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSV9RQXlMN3JHX1ZxTHJEMXRNVDVfNmZtdm16THhWMFNHZmdCY0lVWFlvQ2cwRGE1V0N4aTdZRHZFVUhRMWlTa0RySjk5SVVVZVNfTk9jLTlad0drb25heWdIcS1kTjhyWlMyVEwtOGNLQ0oyLVAwUjZMUXVpbHpWYlN1Y0lLNEZsTHNjZGtDeVV6OUpxakZ0WjV4dWNjc2puYi00MlNkWXAzNDFjcm1qUXZB?oc=5",
+   "date": "2026-11-20T10:56:40.000Z",
    "score": 1.7,
    "t": {
-    "en": "Sugar Market Update: Maharashtra Output Rises, EU Prices Stabilise",
-    "fr": "Mise à jour du marché du sucre : la production du Maharashtra augmente et les prix de l'UE se stabilisent"
+    "en": "Sugar prices fall 20% as Centre tightens supply monitoring, introduces fortnightly quota",
+    "fr": "Les prix du sucre chutent de 20 % alors que le Centre renforce la surveillance de l'offre et introduit un quota bimensuel"
    }
   },
   {
@@ -2215,6 +2213,8 @@
    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNWnVBMi15SFFIYjFTTFRNenV3ZWRUREFfZGdWZW15M0dzRmdKTnBzRzFHNUFIM2tqQmNxMXJpM01zcjJxVDJUaERjbDZGLVM5OHc5M0JOWDkyeVlfNzRQRTN4ZWJKclQ0Q3hITURqUDBycU5tdU1iU2l0UUpLcDVPVGE4UTZhVGQ2TWt6eHdwVERuVS1yNFVCNXpaY2dqckV1Mm4tNF8zNnJNNGdXakxJUWVHbm9ZbXUzXzVoZHNqMzJCN1JVMFVzemlEWjAxUVRkbG9naVpJVUE5WDBwTXJvN1ZxVE5aSHJNc1VwNlVnRWRyZw?oc=5",
    "date": "2026-11-17T10:57:00.000Z",
    "score": 2.4,
+   "desc": "La société américaine Aeternum Resources a signé huit accords de financement totalisant 1,91 million de dollars, soit environ 1,14 milliard de FCFA. Mais aucun des montants prévus par ces accords n'av ...",
+   "img": "https://www.investiraucameroun.com/media/k2/items/cache/ac4942b8815b47fb1d0027b1dc628604_L.jpg",
    "t": {
     "fr": "Nkamouna : Aeternum signe des accords de financement de 1,14 milliard de FCFA, le rachat d’ARM reste en suspens",
     "en": "Nkamouna: Aeternum signs financing agreements of 1.14 billion FCFA, the takeover of ARM remains pending"
@@ -2256,24 +2256,6 @@
    "id": "n42-2026-11-20",
    "cat": "lebanon",
    "lang": "en",
-   "title": "Michel Issa Visits Zahle, Says Reforms and Peace Are Needed for U.S. Investment in Lebanon: 6 outlets compared",
-   "source": "NewsCord",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPRENqQkxWLXJDTFVRbDFDVGd6Nk1ENkUxYnVzT1ZWZ0ptQnV6TTR6TVFHZmhXRzRQcjZZdkQ3UTB6eUhsZ3VYS2lITTJUak5ZOGZzOVU5b1FobXdULW1JT3NHSUZQUC0zYUxQaUs1S0V1Rm9QZVRqZmdvV0pRODUyTThrbnlQcnZ6b1l1Q21NV3Jtbm1ueWcxc2hxNFRzQ1lPUkZ3R25XLWgzRGh2c2hQcUtJd201QkdsekhxWFg5S1ktUUtiWDlraF9tNml3Mnh3UHU4TExRb0Q4ZC1SNnVpN3p2aFlRSF9Z?oc=5",
-   "date": "2026-11-20T17:19:23.000Z",
-   "score": 1.7,
-   "t": {
-    "en": "Michel Issa Visits Zahle, Says Reforms and Peace Are Needed for U.S. Investment in Lebanon: 6 outlets compared",
-    "fr": "Michel Issa visite Zahlé et déclare que les réformes et la paix sont nécessaires pour les investissements américains au Liban : 6 médias comparés"
-   },
-   "d": {
-    "en": "U.S. Ambassador to Lebanon Michel Issa visited Zahle on November 19, and met with local political and business leaders to discuss recent political and economic developments as well as investment ...",
-    "fr": "L'ambassadeur des États-Unis au Liban, Michel Issa, s'est rendu à Zahlé le 19 novembre et a rencontré des dirigeants politiques et économiques locaux pour discuter des récents développements politiques et économiques ainsi que des investissements..."
-   }
-  },
-  {
-   "id": "n43-2026-11-20",
-   "cat": "lebanon",
-   "lang": "en",
    "title": "Lebanon Discusses Electricity Financing and Port Expansion with European Bank Within Economic Recovery Path",
    "source": "Daily Beirut",
    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQT0R5NkxSYk96WEEtdDVBVllha2k3Z2hBaE9zalhyMVMxaUFMYnI4MjdOWnNqMWpIa1hKQVN2bWtNd0FwT0hTellRd3k1SlNlOFYzUTQ3ZEZCcUR4cEFGUEE4Z3IybERVUkZHRG94YV9XLUMzX3pLMUpraFBaUjRONUxGdnBYcXdyNEZkOEVSdHNUSjFla05WcERRN3lzeTN1Sm9ZSWs2WXYwQVJSaVZSdzUybGQwSEVvTVE?oc=5",
@@ -2285,7 +2267,7 @@
    }
   },
   {
-   "id": "n44-2026-11-20",
+   "id": "n43-2026-11-20",
    "cat": "lebanon",
    "lang": "en",
    "title": "Yemen's Houthis threaten counter-strike if Saudi coalition hits Red Sea port",
@@ -2305,7 +2287,7 @@
    }
   },
   {
-   "id": "n45-2026-11-20",
+   "id": "n44-2026-11-20",
    "cat": "lebanon",
    "lang": "en",
    "title": "Lebanon’s Economy Ministry Launches New Digital Platform for Intellectual Property Registration: 5 outlets compared",
@@ -2319,7 +2301,7 @@
    }
   },
   {
-   "id": "n46-2026-11-20",
+   "id": "n45-2026-11-20",
    "cat": "lebanon",
    "lang": "en",
    "title": "Fuel prices drop across Lebanon",
@@ -2340,9 +2322,9 @@
   }
  ],
  "log": [
-  "photos: 17/41 {\"nomatch\":46,\"empty\":28,\"othersrc\":110}",
-  "translated 5 new, reused 44, of 49",
+  "photos: 18/40 {\"nomatch\":42,\"othersrc\":106,\"empty\":25}",
+  "translated 8 new, reused 40, of 48",
   "dedupe: 2 duplicates removed, 3 re-filed by region",
-  "briefing kept (0.7 h old)"
+  "briefing kept (1.7 h old)"
  ]
 }
