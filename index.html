@@ -14,7 +14,7 @@
 <link rel="icon" href="icons/icon-192.png">
 <style>
 /* Layout idea: an editorial front page. Ticker on top, numbered "60 seconds", then sections in reading order: Worldwide, Africa, Congo.
-   Colour in markets means effect on ITE's costs, never just up/down. */
+   Colour in markets means effect on costs, never just up/down. */
 :root{
   --bg:#f4f6f6; --surface:#ffffff; --sunk:#eaeeef; --line:#dde3e5; --text:#10181c; --muted:#5d6b71;
   --accent:#a8741a; --accent-soft:#f5ead6; --on-accent:#ffffff;
@@ -275,6 +275,54 @@ section{padding-top:26px}
 .nx-lead.read h3{color:var(--muted)}
 .nx-more{display:block;width:100%;margin:16px 0 4px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font:inherit;font-weight:700;color:var(--text);cursor:pointer}
 .nx-done{margin-top:18px;padding:16px;border-radius:14px;background:var(--accent-soft);text-align:center;font-weight:600;font-size:.92rem}
+/* News desk v20 */
+.nd{margin-top:2px;border-radius:18px;overflow:hidden;color:#eef2f8;background:linear-gradient(160deg,#0f1b33,#15284a 60%,#1c3157);box-shadow:0 10px 28px rgba(15,27,51,.25);position:relative;padding:14px 16px 14px 20px}
+.nd::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(#d9a441,#a8741a)}
+.nd-top{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#d9a441}
+.nd-live{display:inline-flex;align-items:center;gap:6px;color:#9fb0c8;font-family:var(--mono);font-weight:600;letter-spacing:.02em;text-transform:none;font-size:.74rem}
+.nd-live i{width:7px;height:7px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 0 rgba(74,222,128,.6);animation:ndPulse 2s infinite}
+@keyframes ndPulse{70%{box-shadow:0 0 0 7px rgba(74,222,128,0)}100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
+.nd h2{margin:6px 0 0;font-family:var(--display);font-size:1.5rem;line-height:1.15;color:#fff}
+.nd-kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.nd-kpi div{background:rgba(255,255,255,.06);border-radius:12px;padding:9px 10px}
+.nd-kpi b{display:block;font-family:var(--mono);font-size:1.25rem;color:#fff;line-height:1.1}
+.nd-kpi b small{font-size:.75rem;color:#9fb0c8}
+.nd-kpi span{display:block;font-size:.7rem;color:#b9c6d9;margin-top:3px;line-height:1.25}
+.nd-bar{height:6px;border-radius:3px;background:rgba(255,255,255,.1);margin-top:12px;overflow:hidden}
+.nd-bar i{display:block;height:100%;border-radius:3px;background:linear-gradient(90deg,#d9a441,#f3c76a);transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.nd-bar.done i{background:linear-gradient(90deg,#22c55e,#4ade80)}
+.nd-foot{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:10px;font-size:.74rem;color:#9fb0c8}
+.nd-week{display:flex;gap:4px}
+.nd-week i{display:grid;place-items:center;width:18px;height:18px;border-radius:5px;background:rgba(255,255,255,.08);font-style:normal;font-size:.58rem;font-weight:700;color:#9fb0c8}
+.nd-week i.ok{background:#d9a441;color:#14110a}.nd-week i.part{background:rgba(217,164,65,.35);color:#fff}
+.nd-week i.today{outline:1.5px solid #fff;outline-offset:1px}
+.ns{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:26px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.ns h4{margin:0;display:flex;align-items:center;gap:8px;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.ns h4 i{width:4px;height:16px;border-radius:2px}
+.ns-p{display:flex;align-items:center;gap:4px;font-size:.72rem;font-weight:700;color:var(--muted);font-family:var(--mono)}
+.ns-p i{width:6px;height:6px;border-radius:50%;background:var(--sunk)}.ns-p i.on{background:var(--relief)}
+.ns.done .ns-p{color:var(--relief)}
+.nl{display:block;margin-top:12px;border-radius:16px;overflow:hidden;text-decoration:none;color:#fff;position:relative;aspect-ratio:16/10;background:#15284a;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.nl img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.nl::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(5,10,20,.88))}
+.nl-ov{position:absolute;left:0;right:0;bottom:0;padding:14px;z-index:1}
+.nl-tag{display:inline-block;font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:4px 8px;border-radius:6px;color:#14110a;background:#d9a441}
+.nl-tag.new{background:#fff}
+.nl h3{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;margin:8px 0 0;font-family:var(--display);font-size:1.28rem;line-height:1.2;font-weight:700;text-wrap:balance;text-shadow:0 1px 8px rgba(0,0,0,.4)}
+.nl-m{margin-top:6px;font-size:.74rem;color:#d5deea;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nl.read{opacity:.62}.nl.read .nl-tag{background:#4ade80}
+.nr{display:grid;grid-template-columns:30px 1fr auto;gap:10px;align-items:start;padding:13px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.nr>div{min-width:0}
+.nr-n{font-family:var(--display);font-size:1.45rem;font-weight:700;line-height:1;color:var(--accent);padding-top:2px}
+.nr.read .nr-n{color:var(--relief);font-size:1.1rem;padding-top:5px}
+.nr h3{margin:4px 0 0;font-size:.98rem;line-height:1.34;font-weight:650;text-wrap:pretty}
+.nr.read h3{font-weight:500;color:var(--muted)}
+.nr .nx-th{width:68px;height:68px;margin-top:2px}
+.nr.read .nx-th{opacity:.55}
+.nr .new-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-right:6px;vertical-align:1px}
+.nd-end{margin-top:22px;padding:18px 16px;border-radius:16px;text-align:center;background:var(--surface);border:1px solid var(--line)}
+.nd-end b{display:block;font-family:var(--display);font-size:1.15rem}
+.nd-end span{display:block;margin-top:4px;font-size:.84rem;color:var(--muted)}
 .chip .n{margin-left:6px;font-size:.7rem;padding:1px 6px;border-radius:999px;background:var(--accent);color:var(--on-accent)}
 .share{display:flex;gap:8px;flex-wrap:wrap;padding-top:14px}
 .btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:9px 14px;font-size:.88rem;font-weight:600;cursor:pointer;text-decoration:none;color:var(--text)}
@@ -457,8 +505,7 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 <!-- NEWS -->
 <div class="view" id="v-news" hidden>
   <section style="padding-top:18px">
-    <h2 class="sec" data-t="news_t"></h2>
-    <div class="nx-habit" id="nx-habit"></div>
+    <div class="nd" id="nx-habit"></div>
     <div class="nx-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5" stroke-linecap="round"/></svg><input id="nx-q" type="search" autocomplete="off" aria-label="Search news"></div>
     <div class="chips" id="chips" role="group" aria-label="Sections"></div>
     <div id="nx-list" aria-live="polite"></div>
@@ -505,30 +552,30 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 
 <script>
 const T={
- en:{ite:"For ITE Congo · Brazzaville",sixty:"The last 24 hours",t_events:"Events",wa:"Send to WhatsApp · FR",copy:"Copy French text",
-  agenda_t:"Coming up",t_read:"Read",read_t:"Article of the day",read_s:"Chosen each morning for a CFO from Harvard Business Review, The Economist, McKinsey, MIT Sloan, Wharton and CFO.com. Some need a subscription.",more_t:"More good reads",hist_t:"Previous picks",readit:"Read the article",why:"Why read it",otd_t:"On this day in history",mk_t:"Markets",mk_s:"Last close for each. Tap a row for its chart, source and an alert.",lg_p:"Cost pressure for ITE",lg_r:"Cost relief",lg_n:"Context",
+ en:{ite:"Brazzaville",sixty:"The last 24 hours",t_events:"Events",wa:"Send to WhatsApp · FR",copy:"Copy French text",
+  agenda_t:"Coming up",t_read:"Read",read_t:"Article of the day",read_s:"Chosen each morning for a CFO from Harvard Business Review, The Economist, McKinsey, MIT Sloan, Wharton and CFO.com. Some need a subscription.",more_t:"More good reads",hist_t:"Previous picks",readit:"Read the article",why:"Why read it",otd_t:"On this day in history",mk_t:"Markets",mk_s:"Last close for each. Tap a row for its chart, source and an alert.",lg_p:"Cost pressure",lg_r:"Cost relief",lg_n:"Context",
   g_fx:"Currencies · XAF",g_commod:"Commodities",g_africa:"Africa FX",g_pack:"Packaging · PET bottle grade",ref:"Reference",g_rates:"BEAC rates · CEMAC interbank",
-  news_t:"News",all:"All",tools_t:"Tools",pulse_t:"What the dollar costs ITE this month",pulse_s:"The franc CFA is pegged to the euro, so only USD invoices carry FX risk. Your figures stay on this phone.",
+  news_t:"News",all:"All",tools_t:"Tools",pulse_t:"What the dollar costs this month",pulse_s:"The franc CFA is pegged to the euro, so only USD invoices carry FX risk. Your figures stay on this phone.",
   f_usd:"USD purchases per month",f_budget:"Budget rate (XAF per USD)",o_label:"Monthly cost vs budget at today's rate",
   sugar_e:"Sugar landed-cost starter",f_t:"Tonnes per month",f_p:"Premium + freight ($/t)",s_label:"Raw sugar No.11 + your premium, in XAF",s_note:"Converts ¢/lb to $/t (× 22.046). Refining, duties and port charges not included.",
   saved_t:"Saved",saved_s:"Stories you keep, on this phone only.",nosaved:"Nothing saved yet. Tap the bookmark on any story.",
   t_today:"Today",t_markets:"Markets",t_news:"News",t_tools:"Tools",saved:"Saved",
   above:"Alert above",below:"Alert below",threshold:"Threshold",save_alert:"Save alert",remove:"Remove",cancel:"Cancel",setalert:"Set alert",alert:"Alert",
   foot:"Updates itself three times a day from public market data and news. Prices are last closes and can lag by a day. Not trading advice.",
-  impact:"For ITE",source:"Source",see:"See all",updated:"Updated",ai:"Written by AI from today's data",rules:"Automatic summary",
+  impact:"Why it matters",source:"Source",see:"See all",updated:"Updated",ai:"Written by AI from today's data",rules:"Automatic summary",
   stale:"This brief is more than a day old. The automatic update may have failed; check GitHub Actions.",armed:"alerts armed, none triggered",
   offline:"Offline: showing the last brief saved on this phone.",ago_m:"min ago",ago_h:"h ago",ago_d:"d ago",now:"now",chart:"Last month",nostories:"No stories in this section yet. It fills on the next update."},
- fr:{ite:"Pour ITE Congo · Brazzaville",sixty:"Les dernières 24 heures",t_events:"Événements",wa:"Envoyer sur WhatsApp",copy:"Copier le texte",
+ fr:{ite:"Brazzaville",sixty:"Les dernières 24 heures",t_events:"Événements",wa:"Envoyer sur WhatsApp",copy:"Copier le texte",
   agenda_t:"À venir",t_read:"Lecture",read_t:"L'article du jour",read_s:"Choisi chaque matin pour un DAF parmi Harvard Business Review, The Economist, McKinsey, MIT Sloan, Wharton et CFO.com. Certains nécessitent un abonnement.",more_t:"Autres lectures",hist_t:"Choix précédents",readit:"Lire l'article",why:"Pourquoi le lire",otd_t:"Ce jour dans l'histoire",mk_t:"Marchés",mk_s:"Dernière clôture. Touchez une ligne pour le graphique, la source et une alerte.",lg_p:"Pression sur les coûts",lg_r:"Allègement",lg_n:"Contexte",
   g_fx:"Devises · XAF",g_commod:"Matières premières",g_africa:"Devises africaines",g_pack:"Emballage · PET qualité bouteille",ref:"Référence",g_rates:"Taux BEAC · interbancaire CEMAC",
-  news_t:"Actualités",all:"Tout",tools_t:"Outils",pulse_t:"Ce que le dollar coûte à ITE ce mois-ci",pulse_s:"Le franc CFA est arrimé à l'euro : seules les factures en USD portent un risque de change. Vos chiffres restent sur ce téléphone.",
+  news_t:"Actualités",all:"Tout",tools_t:"Outils",pulse_t:"Ce que le dollar coûte ce mois-ci",pulse_s:"Le franc CFA est arrimé à l'euro : seules les factures en USD portent un risque de change. Vos chiffres restent sur ce téléphone.",
   f_usd:"Achats en USD par mois",f_budget:"Taux budgétaire (XAF pour 1 USD)",o_label:"Coût mensuel vs budget au taux du jour",
   sugar_e:"Coût du sucre, première estimation",f_t:"Tonnes par mois",f_p:"Prime + fret ($/t)",s_label:"Sucre brut No.11 + votre prime, en XAF",s_note:"Conversion ¢/lb en $/t (× 22,046). Raffinage, droits et frais portuaires non inclus.",
   saved_t:"Enregistrés",saved_s:"Articles gardés, sur ce téléphone uniquement.",nosaved:"Rien d'enregistré. Touchez le signet d'un article.",
   t_today:"Aujourd'hui",t_markets:"Marchés",t_news:"Actus",t_tools:"Outils",saved:"Enregistrés",
   above:"Alerte au-dessus",below:"Alerte en dessous",threshold:"Seuil",save_alert:"Enregistrer",remove:"Supprimer",cancel:"Annuler",setalert:"Créer une alerte",alert:"Alerte",
   foot:"Mise à jour automatique trois fois par jour à partir de données de marché et d'actualités publiques. Prix de clôture, parfois avec un jour de décalage. Pas un conseil d'investissement.",
-  impact:"Pour ITE",source:"Source",see:"Tout voir",updated:"Mis à jour",ai:"Rédigé par IA à partir des données du jour",rules:"Résumé automatique",
+  impact:"Pourquoi c'est important",source:"Source",see:"Tout voir",updated:"Mis à jour",ai:"Rédigé par IA à partir des données du jour",rules:"Résumé automatique",
   stale:"Ce brief date de plus d'un jour. La mise à jour automatique a peut-être échoué ; vérifiez GitHub Actions.",armed:"alertes actives, aucune déclenchée",
   offline:"Hors ligne : dernier brief enregistré sur ce téléphone.",ago_m:"min",ago_h:"h",ago_d:"j",now:"à l'instant",chart:"Dernier mois",nostories:"Pas encore d'articles dans cette rubrique. Elle se remplit à la prochaine mise à jour."}
 };
@@ -784,7 +831,7 @@ function renderHero(){
   const hi=fr?(hr<18?"Bonjour Rayan.":"Bonsoir Rayan."):(hr<12?"Good morning, Rayan.":hr<18?"Good afternoon, Rayan.":"Good evening, Rayan.");
   const upd=B.generated_at?new Date(B.generated_at):null,age=upd?(Date.now()-upd)/36e5:99;
   const updTxt=upd?(fr?"MAJ ":"Updated ")+upd.toLocaleTimeString(fr?"fr-FR":"en-GB",{hour:"2-digit",minute:"2-digit"}):"";
-  // Cost signal for ITE: currency and energy moves (cost +1 = a rise costs ITE more)
+  // Cost signal: currency and energy moves (cost +1 = a rise means higher costs)
   const M=id=>B.markets.find(m=>m.id===id),drivers=["usdxaf","brent"].map(M).filter(m=>m&&typeof m.change_pct==="number");
   const score=drivers.reduce((s,m)=>s+(m.cost||0)*m.change_pct,0);
   const sig=Math.abs(score)<0.4?"neutral":score>0?"pressure":"relief";
@@ -793,9 +840,9 @@ function renderHero(){
   const why=drivers.map(m=>(m.id==="usdxaf"?"USD/XAF":m.name)+" "+pct(m)).join(" · ");
   const n=items.length,mins=Math.max(1,Math.round(n*7.5/30)/2);
   const stale=age>14;
-  $("#hero").innerHTML=`<div class="h-top"><span>${part} · ITE Congo</span><span>${esc(updTxt)}</span></div>
+  $("#hero").innerHTML=`<div class="h-top"><span>${part} · ${now.toLocaleDateString(fr?"fr-FR":"en-GB",{weekday:"short",day:"numeric",month:"short"})}</span><span>${esc(updTxt)}</span></div>
     <h2 class="h-hi">${hi}</h2>
-    <p class="h-sub">${stale?(fr?"Les données ont plus de 14 h : tirez vers le bas pour actualiser.":"Data is more than 14 hours old: pull down to refresh."):(fr?"Ce qui compte pour la trésorerie et les coûts d'ITE depuis hier.":"What matters for ITE's treasury and costs since yesterday.")}</p>
+    ${stale?`<p class="h-sub">${fr?"Les données ont plus de 14 h : tirez vers le bas pour actualiser.":"Data is more than 14 hours old: pull down to refresh."}</p>`:""}
     ${drivers.length?`<div class="h-sig ${sig}"><i></i><div><b>${sigHead}</b><br><span>${esc(why)}</span></div></div>`:""}
     <button class="h-play" type="button" id="h-play" ${n?"":"disabled"}><span class="h-btn">▶</span><span><b>${n?(fr?`Écouter le briefing · ${String(mins).replace(".",",")} min`:`Play the briefing · ${mins} min`):(fr?"Briefing en préparation":"Briefing being prepared")}</b><span class="s">${n} ${fr?"sujets · Monde, Afrique, Congo & CEMAC, DAF":"stories · Worldwide, Africa, Congo & CEMAC, CFO"}</span></span></button>`;
   $("#h-play").onclick=()=>{if(n)openWatch(0);};
@@ -998,51 +1045,78 @@ const nxId=n=>(n.url||n.title).slice(-90);
 const catColor=c=>((REEL_CATS[c]||REEL_CATS.worldwide)[1].match(/#[0-9a-f]{6}/i)||["#888"])[0];
 function nxStreak(){let d=new Date(),s=0;if((NX.days[dayKey(d)]||0)<NX.goal)d.setDate(d.getDate()-1);
   while((NX.days[dayKey(d)]||0)>=NX.goal){s++;d.setDate(d.getDate()-1);}return s;}
-function nxHabit(newN,iteN){
-  const fr=lang==="fr",today=NX.days[dayKey(Date.now())]||0,p=Math.min(1,today/NX.goal),C=2*Math.PI*26,st=nxStreak();
-  const wk=[...Array(7)].map((_,i)=>{const d=new Date();d.setDate(d.getDate()-(6-i));const v=NX.days[dayKey(d)]||0;return `<i class="${v>=NX.goal?"ok":v>0?"part":""}" title="${dayKey(d)}: ${v}"></i>`;}).join("");
-  const head=today>=NX.goal?(fr?"Objectif du jour atteint 🎯":"Daily goal reached 🎯"):(fr?`${today} sur ${NX.goal} articles lus aujourd'hui`:`${today} of ${NX.goal} stories read today`);
-  const sub=newN?(fr?`<b>${newN} nouveaux</b> depuis votre dernière visite${iteN?` · <b>${iteN}</b> concernent ITE`:""}`:`<b>${newN} new</b> since your last visit${iteN?` · <b>${iteN}</b> matter for ITE`:""}`):(fr?"Vous êtes à jour depuis votre dernière visite.":"You're up to date since your last visit.");
-  $("#nx-habit").innerHTML=`<div class="nx-ring${p>=1?" done":""}"><svg viewBox="0 0 64 64"><circle class="bgc" cx="32" cy="32" r="26" fill="none" stroke-width="7"/><circle class="fgc" cx="32" cy="32" r="26" fill="none" stroke-width="7" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-p)}"/></svg><b>${today}/${NX.goal}</b></div>
-    <div><div class="nx-h1">${head}${st?`<span class="nx-fire">🔥 ${st} ${fr?(st>1?"jours":"jour"):(st>1?"days":"day")}</span>`:""}</div><div class="nx-h2">${sub}</div><div class="nx-week" aria-label="${fr?"7 derniers jours":"Last 7 days"}">${wk}</div></div>`;
+function nxNext(){ // hourly runs at :15 UTC, 05–21 UTC; GitHub adds a few minutes
+  const d=new Date();d.setUTCSeconds(0,0);
+  for(let k=0;k<30;k++){const c=new Date(d.getTime()+k*36e5);c.setUTCMinutes(15);const h=c.getUTCHours();if(c>Date.now()&&h>=5&&h<=21)return c;}
+  return null;}
+function nxHabit(newN){
+  const fr=lang==="fr",today=NX.days[dayKey(Date.now())]||0,p=Math.min(1,today/NX.goal),st=nxStreak();
+  const L=fr?["L","M","M","J","V","S","D"]:["M","T","W","T","F","S","S"];
+  const wk=[...Array(7)].map((_,i)=>{const d=new Date();d.setDate(d.getDate()-(6-i));const v=NX.days[dayKey(d)]||0;
+    return `<i class="${v>=NX.goal?"ok":v>0?"part":""}${i===6?" today":""}" title="${dayKey(d)}: ${v}">${L[(d.getDay()+6)%7]}</i>`;}).join("");
+  const upd=B.generated_at?new Date(B.generated_at).toLocaleTimeString(fr?"fr-FR":"en-GB",{hour:"2-digit",minute:"2-digit"}):"";
+  const nx=nxNext(),nxt=nx?nx.toLocaleTimeString(fr?"fr-FR":"en-GB",{hour:"2-digit",minute:"2-digit"}):"";
+  const head=p>=1?(fr?"Objectif atteint. Vous êtes informé.":"Goal reached. You're informed."):newN?(fr?`${newN} nouveaux articles vous attendent`:`${newN} new stories waiting for you`):(fr?"Vous êtes à jour":"You're up to date");
+  $("#nx-habit").innerHTML=`<div class="nd-top"><span>${fr?"Fil d'actualité":"News desk"}</span><span class="nd-live"><i></i>${upd?(fr?"MAJ ":"Updated ")+upd:""}</span></div>
+    <h2>${head}</h2>
+    <div class="nd-kpi"><div><b>${today}<small>/${NX.goal}</small></b><span>${fr?"lus aujourd'hui":"read today"}</span></div>
+      <div><b>${newN}</b><span>${fr?"nouveaux depuis votre visite":"new since your last visit"}</span></div>
+      <div><b>${st}</b><span>${fr?(st>1?"jours de suite":"jour de suite"):(st===1?"day streak":"day streak")}</span></div></div>
+    <div class="nd-bar${p>=1?" done":""}"><i style="width:${Math.max(3,p*100)}%"></i></div>
+    <div class="nd-foot"><div class="nd-week" aria-label="${fr?"7 derniers jours":"Last 7 days"}">${wk}</div><span>${nxt?(fr?"Prochaine MAJ ≈ ":"Next update ≈ ")+nxt:""}</span></div>`;
 }
 function nxMarkRead(n){const id=nxId(n);if(NX.read[id])return;NX.read[id]=Date.now();store.set("nx_read",NX.read);
   const k=dayKey(Date.now()),before=NX.days[k]||0;NX.days[k]=before+1;store.set("nx_days",NX.days);
   if(before+1===NX.goal&&typeof wToast==="function")wToast(lang==="fr"?"🎯 Objectif du jour atteint !":"🎯 Daily goal reached!");}
-function nxRow(n,lead){
-  const fr=lang==="fr",tags=nxTags(n),isRead=!!NX.read[nxId(n)],isNew=!isRead&&new Date(n.date).getTime()>NX.prev;
-  const cl=ctryLabel(n),meta=`<div class="nx-meta">${cl?`<span class="nx-ctry">${esc(cl)}</span>·`:""}<span class="c" style="color:${catColor(n.cat)}">${esc(catLabel(n.cat))}</span>·<span class="s">${esc(n.source)}</span>·<span>${ago(n.date)}</span></div>`;
-  const tg=tags.length?`<div class="nx-tags">${tags.map(t=>`<span>${t[1]} ${fr?t[3]:t[2]}</span>`).join("")}</div>`:"";
-  const img=n.img?`<img src="${esc(n.img)}" alt="" loading="lazy" decoding="async" onerror="this.remove()">`:"";
-  if(lead&&n.img)return `<a class="nx-lead${isRead?" read":""}" href="${esc(n.url)}" target="_blank" rel="noopener" data-nid="${esc(nxId(n))}"><div class="ph">${img}<span>${fr?"À la une":"Top story"}</span></div>${meta}<h3>${esc(n.title)}</h3>${tg}</a>`;
-  return `<a class="nx-row${isRead?" read":""}${isNew?" new":""}" href="${esc(n.url)}" target="_blank" rel="noopener" data-nid="${esc(nxId(n))}"><div>${meta}<h3>${esc(n.title)}</h3>${tg}</div>${n.img?img.replace("<img","<img class=\"nx-th\""):""}</a>`;
+function nxMeta(n,withCat){
+  const cl=ctryLabel(n);
+  return [cl?`<span class="nx-ctry">${esc(cl)}</span>`:"",withCat?`<span class="c" style="color:${catColor(n.cat)}">${esc(catLabel(n.cat))}</span>`:"",`<span class="s">${esc(n.source)}</span>`,`<span>${ago(n.date)}</span>`].filter(Boolean).join("·");
+}
+function nxRow(n,lead,num,withCat){
+  const fr=lang==="fr",isRead=!!NX.read[nxId(n)],isNew=!isRead&&new Date(n.date).getTime()>NX.prev;
+  const tags=nxTags(n),tg=tags.length?`<div class="nx-tags">${tags.map(t=>`<span>${t[1]} ${fr?t[3]:t[2]}</span>`).join("")}</div>`:"";
+  const href=`href="${esc(n.url)}" target="_blank" rel="noopener" data-nid="${esc(nxId(n))}"`;
+  if(lead){
+    const bg=n.img?`<img src="${esc(n.img)}" alt="" decoding="async" onerror="this.remove()">`:"";
+    const tag=isRead?(fr?"✓ Lu":"✓ Read"):isNew?(fr?"Nouveau":"New"):(fr?"À la une":"Top story");
+    return `<a class="nl${isRead?" read":""}" ${href} style="background:${(REEL_CATS[n.cat]||REEL_CATS.worldwide)[1]}">${bg}<div class="nl-ov"><span class="nl-tag${isNew?" new":""}">${tag}</span><h3>${esc(n.title)}</h3><div class="nl-m">${nxMeta(n,withCat).replace(/<[^>]+>/g,"").replace(/·/g," · ")}</div></div></a>`;
+  }
+  const img=n.img?`<img class="nx-th" src="${esc(n.img)}" alt="" loading="lazy" decoding="async" onerror="this.remove()">`:"";
+  return `<a class="nr${isRead?" read":""}" ${href}><span class="nr-n">${isRead?"✓":num}</span><div><div class="nx-meta">${nxMeta(n,withCat)}</div><h3>${isNew?`<span class="new-dot"></span>`:""}${esc(n.title)}</h3>${tg}</div>${img}</a>`;
+}
+function nxBlock(c,l){
+  const fr=lang==="fr",r=l.filter(n=>NX.read[nxId(n)]).length,done=r===l.length;
+  let h=`<div class="ns${done?" done":""}"><h4><i style="background:${catColor(c.id)}"></i>${esc(c[lang]||c.en)}</h4><span class="ns-p">${l.map(n=>`<i class="${NX.read[nxId(n)]?"on":""}"></i>`).join("")} ${done?"✓":r+"/"+l.length}</span></div>`;
+  l.forEach((n,i)=>h+=nxRow(n,i===0,i+1,false));
+  return h;
 }
 function renderNews(){
   const fr=lang==="fr",all=[...B.news].sort((a,b)=>b.date.localeCompare(a.date));
   const TOP=5,top={};B.categories.forEach(c=>top[c.id]=all.filter(n=>n.cat===c.id).slice(0,TOP));
   const pool=B.categories.flatMap(c=>top[c.id]);
   const unseen=pool.filter(n=>!NX.read[nxId(n)]&&new Date(n.date).getTime()>NX.prev);
-  nxHabit(unseen.length,0);
+  nxHabit(unseen.length);
   if(cat==="ite")cat="all";
   const cats=[{id:"all",en:t("all"),fr:t("all")},...B.categories];
   $("#chips").innerHTML=cats.map(c=>{const n=c.id==="all"?unseen.length:unseen.filter(x=>x.cat===c.id).length;
     return `<button class="chip" type="button" data-cat="${c.id}" aria-pressed="${cat===c.id}">${esc(c[lang]||c.en)}${n?`<span class="n">${n}</span>`:""}</button>`;}).join("");
-  document.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>{cat=b.dataset.cat;NX.shown=30;renderNews();});
+  document.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>{cat=b.dataset.cat;renderNews();});
   const qi=$("#nx-q");qi.placeholder=fr?"Rechercher : BEAC, pétrole, Eurobond…":"Search: BEAC, oil, Eurobond…";
-  if(!qi.dataset.w){qi.dataset.w=1;let tm=0;qi.oninput=()=>{clearTimeout(tm);tm=setTimeout(()=>{NX.q=qi.value.trim();NX.shown=30;renderNews();},180);};}
-  const norm=s=>s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
-  let list=cat==="all"?pool:top[cat]||[];
-  if(NX.q){const q=norm(NX.q);list=all.filter(n=>(cat==="all"||n.cat===cat)&&norm(n.title+" "+n.source+" "+ctryWords(n)).includes(q)).slice(0,20);}
-  if(!list.length){$("#nx-list").innerHTML=`<p class="empty">${NX.q?(fr?"Aucun article ne correspond.":"No stories match."):t("nostories")}</p>`;return;}
-  const now=Date.now(),sod=new Date();sod.setHours(0,0,0,0);const yd=sod.getTime()-864e5;
-  const grp=n=>{const ts=new Date(n.date).getTime();return now-ts<2*36e5?0:ts>=sod.getTime()?1:ts>=yd?2:3;};
-  const GL=fr?["À l'instant","Plus tôt aujourd'hui","Hier","Plus ancien"]:["Just in","Earlier today","Yesterday","Older"];
-  let html="",g=-1;const shown=list;
-  if(cat==="all"&&!NX.q){B.categories.forEach(c=>{const l=top[c.id];if(!l.length)return;html+=`<div class="nx-sec"><h4>${esc(c[lang]||c.en)}</h4></div>`;l.forEach((n,i)=>html+=nxRow(n,false));});}
-  else shown.forEach((n,i)=>{const gi=grp(n);if(gi!==g){g=gi;html+=`<div class="nx-group">${GL[gi]}</div>`;}html+=nxRow(n,i===0&&!NX.q);});
-  if(!NX.q&&shown.every(n=>NX.read[nxId(n)]))html+=`<div class="nx-done">✅ ${fr?"Tout lu dans cette rubrique. Bravo !":"You've read everything here. Nice work!"}</div>`;
+  if(!qi.dataset.w){qi.dataset.w=1;let tm=0;qi.oninput=()=>{clearTimeout(tm);tm=setTimeout(()=>{NX.q=qi.value.trim();renderNews();},180);};}
+  const norm=s=>s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+  let html="";
+  if(NX.q){const q=norm(NX.q);const l=all.filter(n=>(cat==="all"||n.cat===cat)&&norm(n.title+" "+n.source+" "+ctryWords(n)).includes(q)).slice(0,20);
+    if(!l.length){$("#nx-list").innerHTML=`<p class="empty">${fr?"Aucun article ne correspond.":"No stories match."}</p>`;return;}
+    html=`<div class="ns"><h4>${fr?"Résultats":"Results"}</h4><span class="ns-p">${l.length}</span></div>`+l.map((n,i)=>nxRow(n,false,i+1,true)).join("");}
+  else{
+    const cs=cat==="all"?B.categories:B.categories.filter(c=>c.id===cat);
+    cs.forEach(c=>{if(top[c.id].length)html+=nxBlock(c,top[c.id]);});
+    if(!html){$("#nx-list").innerHTML=`<p class="empty">${t("nostories")}</p>`;return;}
+    const sc=cs.flatMap(c=>top[c.id]),left=sc.filter(n=>!NX.read[nxId(n)]).length,nx=nxNext();
+    const nxt=nx?nx.toLocaleTimeString(fr?"fr-FR":"en-GB",{hour:"2-digit",minute:"2-digit"}):"";
+    html+=`<div class="nd-end">${left?`<b>${fr?`Encore ${left} à lire`:`${left} left to read`}</b><span>${fr?"Les titres essentiels, 5 par rubrique.":"The essential headlines, 5 per section."}</span>`:`<b>✅ ${fr?"Tout lu. Bravo !":"All caught up. Well done!"}</b><span>${nxt?(fr?`Nouveaux titres vers ${nxt}.`:`Fresh headlines around ${nxt}.`):""}</span>`}</div>`;
+  }
   $("#nx-list").innerHTML=html;
-  $("#nx-list").querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>{cat=b.dataset.jump;renderNews();scrollTo({top:0,behavior:"smooth"});});
   $("#nx-list").querySelectorAll("[data-nid]").forEach(a=>a.onclick=()=>{const n=all.find(x=>nxId(x)===a.dataset.nid);if(n){nxMarkRead(n);setTimeout(renderNews,400);}});
 }
 (function(){
