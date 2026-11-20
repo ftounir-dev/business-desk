@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-20T12:00:12.440Z",
+ "generated_at": "2026-11-20T12:03:35.071Z",
  "summary_mode": "rules",
  "peg": 655.957,
  "fx": {
-  "eurusd": 1.0961307287216187,
-  "usdxaf": 598.4295329125762,
+  "eurusd": 1.0962508916854858,
+  "usdxaf": 598.3639374664189,
   "usdxaf_prev": 597.8457318897565,
   "date": "2026-11-20"
  },
@@ -16,10 +16,10 @@
    "unit": "XAF per USD",
    "dp": 1,
    "cost": 1,
-   "value": 598.4295329125762,
+   "value": 598.3639374664189,
    "prev": 597.8457318897565,
    "date": "2026-11-20",
-   "change_pct": 0.09765078040688824,
+   "change_pct": 0.08667881177713,
    "series": [
     [
      "2026-10-21",
@@ -107,7 +107,7 @@
     ],
     [
      "2026-11-20",
-     598.4295329125762
+     598.3639374664189
     ]
    ],
    "source": "655.957 ÷ EUR/USD",
@@ -120,10 +120,10 @@
    "unit": "USD per EUR",
    "dp": 4,
    "cost": -1,
-   "value": 1.0961307287216187,
+   "value": 1.0962508916854858,
    "prev": 1.0972011089324951,
    "date": "2026-11-20",
-   "change_pct": -0.09755551668352291,
+   "change_pct": -0.08660374468029142,
    "series": [
     [
      "2026-10-21",
@@ -211,7 +211,7 @@
     ],
     [
      "2026-11-20",
-     1.0961307287216187
+     1.0962508916854858
     ]
    ],
    "source": "Yahoo Finance",
@@ -224,10 +224,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 89.18000030517578,
+   "value": 89.25,
    "prev": 91.9800033569336,
    "date": "2026-11-20",
-   "change_pct": -3.044143237190633,
+   "change_pct": -2.9680400709920174,
    "series": [
     [
      "2026-10-22",
@@ -315,7 +315,7 @@
     ],
     [
      "2026-11-20",
-     89.18000030517578
+     89.25
     ]
    ],
    "source": "Yahoo Finance",
@@ -328,10 +328,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 82.33000183105469,
+   "value": 82.31999969482422,
    "prev": 83.20999908447266,
    "date": "2026-11-20",
-   "change_pct": -1.057561907343152,
+   "change_pct": -1.069582261075297,
    "series": [
     [
      "2026-10-22",
@@ -419,7 +419,7 @@
     ],
     [
      "2026-11-20",
-     82.33000183105469
+     82.31999969482422
     ]
    ],
    "source": "Yahoo Finance",
@@ -432,10 +432,10 @@
    "unit": "USD/oz",
    "dp": 0,
    "cost": 0,
-   "value": 3582.699951171875,
+   "value": 3583.800048828125,
    "prev": 3685.5,
    "date": "2026-11-20",
-   "change_pct": -2.789310780847243,
+   "change_pct": -2.759461434591648,
    "series": [
     [
      "2026-10-22",
@@ -523,7 +523,7 @@
     ],
     [
      "2026-11-20",
-     3582.699951171875
+     3583.800048828125
     ]
    ],
    "source": "Yahoo Finance",
@@ -536,10 +536,10 @@
    "unit": "USD/oz",
    "dp": 2,
    "cost": 0,
-   "value": 42.310001373291016,
+   "value": 42.32500076293945,
    "prev": 44.31800079345703,
    "date": "2026-11-20",
-   "change_pct": -4.530888993671556,
+   "change_pct": -4.49704407878394,
    "series": [
     [
      "2026-10-22",
@@ -627,7 +627,7 @@
     ],
     [
      "2026-11-20",
-     42.310001373291016
+     42.32500076293945
     ]
    ],
    "source": "Yahoo Finance",
@@ -868,19 +868,19 @@
     "date": "2026-11-20T11:00:30.000Z",
     "impact": "",
     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9Bem9kWjBIcUtfa0xHOW0yQm1mV3A0VFVFZlh4X0hvWjlmckZSTDNGWlB1NGtzWFkyTTVSc0tNNW9tbUxGNURvNExmRTdTYnJyTTJtUGd1dkEyZklWR2xOSkphQ2s1d0NjZE9CRDc4SWtreWJxbDVoOFFnM2toQldLUHR5VUZFTDk4bDBXaWdodTh1?oc=5",
-    "img": null
+    "img": "https://media.morningstar.com/resizer/v2/6EVBWPJ3TNFUNINJ3ERRKKF6YI.jpg?auth=f50a1a29d7f7b3b18e3539cbdaa3bbe7a63881d742c5ec9c092aa1c1c77ff154&quality=80&height=1350&width=2400&crop=0,0:2400,1350"
    },
    {
     "level": "",
     "cat": "africa",
     "owner": "Africa",
-    "title": "Côte d’Ivoire : un institut de recherche café-cacao de 800 hectares en chantier à Divo",
+    "title": "Gaz naturel : le Bénin, le Togo et la Côte d’Ivoire préparent des approvisionnements communs",
     "detail": "",
-    "source": "Bénin Web TV",
-    "date": "2026-11-20T11:34:21.000Z",
+    "source": "beninwebtv.com",
+    "date": "2026-11-20T11:57:07.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdGJEbWZGbURNUFIzYmZyVDBhb3F3aWQzcXJ5c2ZWdDh2X2FKdm1URndTS19yZlZaWGVTdkdoQ3lkazlsVHlja0VGWXEtekdxN0UzTHVjTnV5Ymc4T2FmYXRhbk96X29XMmZqSVp4SWlfLVhBOXhoYnlfeldTaTdjMTI3eGs0Mnp4YXc?oc=5",
-    "img": null
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOY1RoaFY0M2xCcGhOd25DdllZWHRDN0VXd0lPTGllZmx4Qk1HUlhVV2RhVndYc2ZqTEZuUy1BQ3NadTZOZlZia0FwbnlVdTU0Q2VSWmJFU21qWmpKNFBPZzYzbjRaY0Nuenl0ZVVYYWw0QWtQR1JKcEU0azA3STdrdVlSU1Q?oc=5",
+    "img": "https://media-files.abidjan.net/photo/cooperation-gaziere-sirexe-2026-la-cote-d-ivoire-le-benin-et-le-togo-signen_n2z19146rv.jpg"
    },
    {
     "level": "",
@@ -892,7 +892,7 @@
     "date": "2026-11-20T11:32:57.000Z",
     "impact": "",
     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZURFTzIwVzRuVWhUcWxJV1o1R3VzZkJXUGRndndnU2pLYlNGaGpMREY5cGZOOHp2aWdSdEwyNUdJRlc5Wm5jLUpDeXpUdmg3ME8ybmtJUWlwSTV3MVloSHFLbndNakNLa2hzMjF1cVljVnhUSm5KX20zanVWS19uM2M2dkY0ZVU3c2ZiV3J5dnZ2UG1JSDRIbjJxQnZqOFZBcTE4RVM4bHl6OFkwbzFQelVpRHZHRFVmX2JrTnZoT1psNm5uOUk2MXFWRzg3ZDZ2b29z?oc=5",
-    "img": null
+    "img": "https://io-fsly-bfmtv.cdn.nextradiotv.com/g9rjdxOCFt_aDGI-xLx4rbbf-V4=/0x106:2048x1258/2048x0/images/Le-marche-s-interroge-sur-des-rendements-obligataires-eleves-aux-Etats-Unis-2346594.jpg"
    },
    {
     "level": "",
@@ -958,13 +958,13 @@
     "level": "",
     "cat": "africa",
     "owner": "Africa",
-    "title": "Côte d’Ivoire : Endeavour présente une mine d’or à plus de 700 milliards de FCFA à Tanda",
+    "title": "Côte d’Ivoire : élue à la tête de la Communauté internationale de la noix de coco",
     "detail": "",
     "source": "Bénin Web TV",
-    "date": "2026-11-20T11:29:54.000Z",
+    "date": "2026-11-20T11:55:48.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSHk0N1VPR3d3N2ptSzJXVW5mVFl5cHJsNW94WksyQXJVNmc2R3NHM19zYng2NHZBU0NJWTB5V2F2X1dNOGJCdGpxaTlqNzBsNDhndWZKZkVXcnZMaGZxeHdmRklDUFMwMzJmRXd1NHg5TGt2ZDRZSV9oUnpWdUNCMVJGWDREZ1FSQTBnTw?oc=5",
-    "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625195-625194-1795174127.jpg"
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTlJhai1jN29SaEt3QW1WV2I3b1d4SHdKS1c2Q3NyandnWDE4WUhmTFZ6SWR3akx0T0hIRktERUNHUEVjZnlLMjdnT21mTUlmak1UQU16dVRUN011ek91ZTBpNzBzTF9oSk5ldnh3M1BPRWRoaVN4UDRBQWVXbXlrMHZ1LTBuZmJ1cndwR0dEaw?oc=5",
+    "img": null
    },
    {
     "level": "",
@@ -990,19 +990,19 @@
     "date": "2026-11-20T11:00:30.000Z",
     "impact": "",
     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9Bem9kWjBIcUtfa0xHOW0yQm1mV3A0VFVFZlh4X0hvWjlmckZSTDNGWlB1NGtzWFkyTTVSc0tNNW9tbUxGNURvNExmRTdTYnJyTTJtUGd1dkEyZklWR2xOSkphQ2s1d0NjZE9CRDc4SWtreWJxbDVoOFFnM2toQldLUHR5VUZFTDk4bDBXaWdodTh1?oc=5",
-    "img": null
+    "img": "https://media.morningstar.com/resizer/v2/6EVBWPJ3TNFUNINJ3ERRKKF6YI.jpg?auth=f50a1a29d7f7b3b18e3539cbdaa3bbe7a63881d742c5ec9c092aa1c1c77ff154&quality=80&height=1350&width=2400&crop=0,0:2400,1350"
    },
    {
     "level": "",
     "cat": "africa",
     "owner": "Afrique",
-    "title": "Côte d’Ivoire : un institut de recherche café-cacao de 800 hectares en chantier à Divo",
+    "title": "Gaz naturel : le Bénin, le Togo et la Côte d’Ivoire préparent des approvisionnements communs",
     "detail": "",
-    "source": "Bénin Web TV",
-    "date": "2026-11-20T11:34:21.000Z",
+    "source": "beninwebtv.com",
+    "date": "2026-11-20T11:57:07.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdGJEbWZGbURNUFIzYmZyVDBhb3F3aWQzcXJ5c2ZWdDh2X2FKdm1URndTS19yZlZaWGVTdkdoQ3lkazlsVHlja0VGWXEtekdxN0UzTHVjTnV5Ymc4T2FmYXRhbk96X29XMmZqSVp4SWlfLVhBOXhoYnlfeldTaTdjMTI3eGs0Mnp4YXc?oc=5",
-    "img": null
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOY1RoaFY0M2xCcGhOd25DdllZWHRDN0VXd0lPTGllZmx4Qk1HUlhVV2RhVndYc2ZqTEZuUy1BQ3NadTZOZlZia0FwbnlVdTU0Q2VSWmJFU21qWmpKNFBPZzYzbjRaY0Nuenl0ZVVYYWw0QWtQR1JKcEU0azA3STdrdVlSU1Q?oc=5",
+    "img": "https://media-files.abidjan.net/photo/cooperation-gaziere-sirexe-2026-la-cote-d-ivoire-le-benin-et-le-togo-signen_n2z19146rv.jpg"
    },
    {
     "level": "",
@@ -1014,7 +1014,7 @@
     "date": "2026-11-20T11:32:57.000Z",
     "impact": "",
     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZURFTzIwVzRuVWhUcWxJV1o1R3VzZkJXUGRndndnU2pLYlNGaGpMREY5cGZOOHp2aWdSdEwyNUdJRlc5Wm5jLUpDeXpUdmg3ME8ybmtJUWlwSTV3MVloSHFLbndNakNLa2hzMjF1cVljVnhUSm5KX20zanVWS19uM2M2dkY0ZVU3c2ZiV3J5dnZ2UG1JSDRIbjJxQnZqOFZBcTE4RVM4bHl6OFkwbzFQelVpRHZHRFVmX2JrTnZoT1psNm5uOUk2MXFWRzg3ZDZ2b29z?oc=5",
-    "img": null
+    "img": "https://io-fsly-bfmtv.cdn.nextradiotv.com/g9rjdxOCFt_aDGI-xLx4rbbf-V4=/0x106:2048x1258/2048x0/images/Le-marche-s-interroge-sur-des-rendements-obligataires-eleves-aux-Etats-Unis-2346594.jpg"
    },
    {
     "level": "",
@@ -1080,13 +1080,13 @@
     "level": "",
     "cat": "africa",
     "owner": "Afrique",
-    "title": "Côte d’Ivoire : Endeavour présente une mine d’or à plus de 700 milliards de FCFA à Tanda",
+    "title": "Côte d’Ivoire : élue à la tête de la Communauté internationale de la noix de coco",
     "detail": "",
     "source": "Bénin Web TV",
-    "date": "2026-11-20T11:29:54.000Z",
+    "date": "2026-11-20T11:55:48.000Z",
     "impact": "",
-    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQSHk0N1VPR3d3N2ptSzJXVW5mVFl5cHJsNW94WksyQXJVNmc2R3NHM19zYng2NHZBU0NJWTB5V2F2X1dNOGJCdGpxaTlqNzBsNDhndWZKZkVXcnZMaGZxeHdmRklDUFMwMzJmRXd1NHg5TGt2ZDRZSV9oUnpWdUNCMVJGWDREZ1FSQTBnTw?oc=5",
-    "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625195-625194-1795174127.jpg"
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTlJhai1jN29SaEt3QW1WV2I3b1d4SHdKS1c2Q3NyandnWDE4WUhmTFZ6SWR3akx0T0hIRktERUNHUEVjZnlLMjdnT21mTUlmak1UQU16dVRUN011ek91ZTBpNzBzTF9oSk5ldnh3M1BPRWRoaVN4UDRBQWVXbXlrMHZ1LTBuZmJ1cndwR0dEaw?oc=5",
+    "img": null
    },
    {
     "level": "",
@@ -1158,10 +1158,10 @@
  },
  "read": {
   "pick": {
-   "title": "JPMorgan names next CFO",
+   "title": "The 6 a.m. CFO: How Basware’s Martti Nurminen starts his day",
    "source": "CFO.com",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPN3ZIZjRBTzRaTml3MFMxSTZzczVXYUxVWWhNbE1HWHA1eGhaTWp5U3ZtSkxDOU93bU9QMll6SXl2NVhVTkNucE1vQkNhYVJQRUlnTkxRVlZNSUpacUJMX1lTTjFOVmtqa3RzZ19TbW43aVNPLWhBdTFWSVkzQTFBZW9HQ3QwYzNubDhCOTQ1M2tXMWYy?oc=5",
-   "date": "2026-11-17T16:48:21.000Z"
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNYkNyaGF3UnNXY0QybGQtV0Vjb3NYblU4aXp1UkJEUEJyQTFsWEs0NmhqMExFbjV1WWdVbkJ1bUQ2S3R2cmZGcnQwTElya1JadkJsd01yZk5WQkNXTUduQXkxQklEWFdZQTB5ZFVMZjBydHhuXzkzY2k0cjYzTU9LMmZqZVRYZUZBa3RFS2dUbWVuVE0?oc=5",
+   "date": "2026-11-19T14:07:44.000Z"
   },
   "more": [
    {
@@ -1183,34 +1183,34 @@
     "date": "2026-11-19T14:01:02.000Z"
    },
    {
+    "title": "Why Baseball’s Best Decisions Go Beyond Data",
+    "source": "Knowledge at Wharton",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWjAxQjdHVG5TNEozUE1UYlZfUEpyNmpQXzBvWTR3S29nekRobkJoenlPYnpUTG5YaFZQbzNRMnNxeUhiV0MyQXNZeTNxWFhrVkp6MmhzV3F3YWI0XzhDU1F5dDdqZVAzaDY3Ri1ybWJGbUdBQ1hRQ0o5ZEI1bkhuYlpkZFZ1Q2NuTmJHNXJ1Um9RNGZKVTF1QkQwdUFreGc?oc=5",
+    "date": "2026-11-17T07:59:59.000Z"
+   },
+   {
+    "title": "Running Your Business, Owning Your Life",
+    "source": "MIT Sloan Management Review",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNcmxYa0p1b0NNdnNIUkZqZDdkOFRrTjh0QmZnZlo2QUs2SjVyNXJUVEY0b3pTY0tiT2NMMjEzQ1lpTGRaWjJhVmlYZnBhZ1k4MHdHOW1XaHU1Tml1bTV2QlBldmxRLVItd0c4OW9ZTldiVHg5czBleDdVdEtZVEJ5Q25TQQ?oc=5",
+    "date": "2026-11-16T22:25:27.000Z"
+   },
+   {
+    "title": "JPMorgan names next CFO",
+    "source": "CFO.com",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPN3ZIZjRBTzRaTml3MFMxSTZzczVXYUxVWWhNbE1HWHA1eGhaTWp5U3ZtSkxDOU93bU9QMll6SXl2NVhVTkNucE1vQkNhYVJQRUlnTkxRVlZNSUpacUJMX1lTTjFOVmtqa3RzZ19TbW43aVNPLWhBdTFWSVkzQTFBZW9HQ3QwYzNubDhCOTQ1M2tXMWYy?oc=5",
+    "date": "2026-11-17T16:48:21.000Z"
+   },
+   {
     "title": "What Nvidia’s leadership shuffle illustrates for growing companies",
     "source": "CFO.com",
     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdGtFeXQ0WHg4TXI0X0dkNHh0OXp6VUxtWjZUek1STHpQZ05VTmJkclEyRURZZi1aSUpTMFdZc3ZuMGpyT1p2c29iTTZwYXNRTWVIN0lMXzB5aVFOekZSdjlwanBPMU5ZdlBYZUd3YWxsb3VqQmJxOVZzT1Rud3VHWEgxSFYxTDVoZmpVSFJobWU3Nm9TdTlQWHVZbGx5T0wxOEZFdFBhS2xoOE9WYlhZU0pEemVsdlJsZHZrcVZtQnJmdw?oc=5",
     "date": "2026-11-17T14:05:16.000Z"
    },
    {
-    "title": "AI spurs finance headcount dip",
-    "source": "CFO.com",
-    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9fMWFRNnNiMlN4ZjdEYXpSalVGbk93cElDNEY4aGJudy1aS1lxTmRtY0VTRnRnV3lqY1AycHlyWURtZE9YZ1JiVDFncktnZFFrcG4xbjN5cVVHS1VFX2tyTWtEdlVNeVIxa0RyR095X3g?oc=5",
-    "date": "2026-11-16T16:19:59.000Z"
-   },
-   {
     "title": "CFOs On the Move: Week ending Nov. 13",
     "source": "CFO.com",
     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSFUyNVZhWkJjQnVhYUJxVGxxbW9zdUVNTGp5LWNDMXhhUXhXdTAwbENLbng2X2V0dWZURnZDcjhwM0l3TUNWMTgweVFMQzhuY0hhNU1jVG9JOXRiRWhfdWU4N3RwMW9oSnl1SDJTdnpxTXBfSUswR0VPX0NwaGVhSnZ3RjN4UUV5eVZHNnhqYllTTVo2VV9oNkl6ZXNXYVZYUjJodDgzYXdRWnhZWVZOS0JRanI3N0s1Z3dr?oc=5",
     "date": "2026-11-13T14:41:23.000Z"
-   },
-   {
-    "title": "Separating signal from noise: The always-on finance intelligence layer",
-    "source": "McKinsey",
-    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNTmRrMW5jQUlmaEVtS1JKTlVrLVJIUFJPc1d5MkpqdENXY2FxVnR6QjlJSF9iVGhYWlRtbXJCOWdPRHc0OEV1MmRTR1RzQTJZLVRlLURmMGhST2ZyWmRwV2lybmxGUFB6TnB0VUVXWExOV2NFcllGaWpqb254QmVRTHh4U210MDA3U2x0X0RtLVFfNDVOOVBEclJkMDItZGF1T0VyTEY3UkFYb0V3Ql9hVnNjVEJEV1YzTVJjZS1PSlhINl9WbzItVWhUTFpfc1B0OEFJVUJrZG5YYVQyS2pyNWhqc1Q4dw?oc=5",
-    "date": "2026-11-13T00:00:00.000Z"
-   },
-   {
-    "title": "How 3 Brands Bought in on the “Grand Theft Auto VI” Hype",
-    "source": "Harvard Business Review",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVjUyX0NJdWFMbjBxV0ZNUThzWktfTVE4aFp5SGIzSzFXUFJTbGtWMFNyMEdVX3BrRWI3QmJvNXpWNHM0Vmg4WllJUktzUUg5c0c1WHpoRmkxa0lMbnNSVHEtU1pRTEQ2QVFzbHY1UlZwRGFNWnotWjM1SEVFR2hXams4LU0?oc=5",
-    "date": "2026-11-19T17:38:19.000Z"
    }
   ]
  },
@@ -1222,7 +1222,8 @@
    "title": "Stocks Hit Worst Run Since 2023 as AI Trade Cracks: Markets Wrap",
    "source": "Bloomberg.com",
    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUE9Bem9kWjBIcUtfa0xHOW0yQm1mV3A0VFVFZlh4X0hvWjlmckZSTDNGWlB1NGtzWFkyTTVSc0tNNW9tbUxGNURvNExmRTdTYnJyTTJtUGd1dkEyZklWR2xOSkphQ2s1d0NjZE9CRDc4SWtreWJxbDVoOFFnM2toQldLUHR5VUZFTDk4bDBXaWdodTh1?oc=5",
-   "date": "2026-11-20T11:00:30.000Z"
+   "date": "2026-11-20T11:00:30.000Z",
+   "img": "https://media.morningstar.com/resizer/v2/6EVBWPJ3TNFUNINJ3ERRKKF6YI.jpg?auth=f50a1a29d7f7b3b18e3539cbdaa3bbe7a63881d742c5ec9c092aa1c1c77ff154&quality=80&height=1350&width=2400&crop=0,0:2400,1350"
   },
   {
    "id": "n1-2026-11-20",
@@ -1250,7 +1251,8 @@
    "title": "Historic Trump–Xi–Putin Summit at APEC 2026: Key Agreements, Global Geopolitics and Implications for India",
    "source": "Sanskriti IAS",
    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOdlY4YjA0dThrZFFHbHNHd0g4X2pzaE5FM1hQQ093ZXExVml4LUdrLUd4VFNfajQ2WXpMVGQxckJEZmYxWldSdnZRdnVSYUxoaWRCSmZwRUZVQUNsN1RwWnI3WmM5LTY4b1UxdWNuanhSNmZqZGNmbHk4NXFxN3hxcndLejNoMzZVOGpJdmhWSWk0d2NaazFpVWFMUjFOcHJWanZ6SkE4WVA1TTlfZXlXVGlDUW8xendHSFB6Rm5KTG9NTFZGNVVZR1dMcXdrNGNaRGZfMi0wTlJnbW14SHc?oc=5",
-   "date": "2026-11-20T07:38:56.000Z"
+   "date": "2026-11-20T07:38:56.000Z",
+   "img": "https://cdn.newsday.com/ace/c:ZTkyZjRjZmUtYTFhYS00:YWY0NTZjODYtZjJjNC00/landscape/1280"
   },
   {
    "id": "n4-2026-11-20",
@@ -1293,13 +1295,33 @@
    "id": "n8-2026-11-20",
    "cat": "africa",
    "lang": "fr",
-   "title": "Côte d’Ivoire : un institut de recherche café-cacao de 800 hectares en chantier à Divo",
-   "source": "Bénin Web TV",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdGJEbWZGbURNUFIzYmZyVDBhb3F3aWQzcXJ5c2ZWdDh2X2FKdm1URndTS19yZlZaWGVTdkdoQ3lkazlsVHlja0VGWXEtekdxN0UzTHVjTnV5Ymc4T2FmYXRhbk96X29XMmZqSVp4SWlfLVhBOXhoYnlfeldTaTdjMTI3eGs0Mnp4YXc?oc=5",
-   "date": "2026-11-20T11:34:21.000Z"
+   "title": "Gaz naturel : le Bénin, le Togo et la Côte d’Ivoire préparent des approvisionnements communs",
+   "source": "beninwebtv.com",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOY1RoaFY0M2xCcGhOd25DdllZWHRDN0VXd0lPTGllZmx4Qk1HUlhVV2RhVndYc2ZqTEZuUy1BQ3NadTZOZlZia0FwbnlVdTU0Q2VSWmJFU21qWmpKNFBPZzYzbjRaY0Nuenl0ZVVYYWw0QWtQR1JKcEU0azA3STdrdVlSU1Q?oc=5",
+   "date": "2026-11-20T11:57:07.000Z",
+   "img": "https://media-files.abidjan.net/photo/cooperation-gaziere-sirexe-2026-la-cote-d-ivoire-le-benin-et-le-togo-signen_n2z19146rv.jpg"
   },
   {
    "id": "n9-2026-11-20",
+   "cat": "africa",
+   "lang": "fr",
+   "title": "Côte d’Ivoire : élue à la tête de la Communauté internationale de la noix de coco",
+   "source": "Bénin Web TV",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTlJhai1jN29SaEt3QW1WV2I3b1d4SHdKS1c2Q3NyandnWDE4WUhmTFZ6SWR3akx0T0hIRktERUNHUEVjZnlLMjdnT21mTUlmak1UQU16dVRUN011ek91ZTBpNzBzTF9oSk5ldnh3M1BPRWRoaVN4UDRBQWVXbXlrMHZ1LTBuZmJ1cndwR0dEaw?oc=5",
+   "date": "2026-11-20T11:55:48.000Z"
+  },
+  {
+   "id": "n10-2026-11-20",
+   "cat": "africa",
+   "lang": "fr",
+   "title": "Côte d’Ivoire : un institut de recherche café-cacao de 800 hectares en chantier à Divo",
+   "source": "Bénin Web TV",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdGJEbWZGbURNUFIzYmZyVDBhb3F3aWQzcXJ5c2ZWdDh2X2FKdm1URndTS19yZlZaWGVTdkdoQ3lkazlsVHlja0VGWXEtekdxN0UzTHVjTnV5Ymc4T2FmYXRhbk96X29XMmZqSVp4SWlfLVhBOXhoYnlfeldTaTdjMTI3eGs0Mnp4YXc?oc=5",
+   "date": "2026-11-20T11:34:21.000Z",
+   "img": "https://www.koaci.com/assets/news/thumbnails/600/2026/11/photo_1795164760.jpg"
+  },
+  {
+   "id": "n11-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "Côte d’Ivoire : Endeavour présente une mine d’or à plus de 700 milliards de FCFA à Tanda",
@@ -1309,7 +1331,7 @@
    "img": "https://beninwebtv.bj/wp-content/uploads/wpwap-preview/og-625195-625194-1795174127.jpg"
   },
   {
-   "id": "n10-2026-11-20",
+   "id": "n12-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "Côte d’Ivoire : Le Mercedes-Benz OF 1017 Midi Intégral officiellement présenté à Abidjan",
@@ -1318,7 +1340,7 @@
    "date": "2026-11-20T11:09:40.000Z"
   },
   {
-   "id": "n11-2026-11-20",
+   "id": "n13-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "Côte d'Ivoire : Primat 2026, les acteurs du transport plaident pour un secteur plus moderne et digitalisé",
@@ -1327,7 +1349,7 @@
    "date": "2026-11-20T10:44:00.000Z"
   },
   {
-   "id": "n12-2026-11-20",
+   "id": "n14-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "Côte d'Ivoire : Éric Tenié Ouattara, DG de l'ADCI : « Comment les PME demeurent compétitives face à la concurrence…",
@@ -1336,7 +1358,7 @@
    "date": "2026-11-20T10:05:00.000Z"
   },
   {
-   "id": "n13-2026-11-20",
+   "id": "n15-2026-11-20",
    "cat": "africa",
    "lang": "fr",
    "title": "Côte d’Ivoire : le groupe MAGGI-X remporte le « MAGGI Sustainability Challenge » de Nestlé",
@@ -1345,31 +1367,14 @@
    "date": "2026-11-20T09:46:57.000Z"
   },
   {
-   "id": "n14-2026-11-20",
-   "cat": "africa",
-   "lang": "en",
-   "title": "Strong Institutions Will Drive Nigeria’s Economy, Says Shettima",
-   "source": "https://thefact.ng/",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTjRZeTZOemRhUExkNU0wR0NfWXdfck1kcy1qbDNVcEVKa3JYM2c3RC1ta2laMjBEWS1JV0pXUTNTREZhOHRHcFpJeHBGcDEtdXpqMUFzb3FhQlY4V2hFNGRWWmVjLXRQTTJpM1BkSHlMblI4alZ5cVN0R0YyaThYLTZ3dy1vbV9J?oc=5",
-   "date": "2026-11-20T09:05:13.000Z"
-  },
-  {
-   "id": "n15-2026-11-20",
-   "cat": "africa",
-   "lang": "fr",
-   "title": "Côte d'Ivoire : construction d'un institut de recherche de référence mondiale dédié au café-cacao",
-   "source": "Abidjan.net News",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPc3Q3TjhRMkNOQnFKSV9EOGw1MzN6Q2w3THBmOWFfbk95MFBBdHZkWE1hTE95Smh3MGlaMDJZQWRWc1lrLVNVcGNpU2k1U2l2MHBuQWlCTTVNZkt3SzN2S0hNZFRWbTU5ck5aX2F2ai0xY3BfbXdpTjlaTnNXZEJTN1I1Y2lRSTh4OVlTMjZMS2d1b1hmTWptek9BeWh0MmY2Z1hiaDdKMnAtQUNHX3ZoejFLVE5XTl9vNC1VdnYxRnlCaW1SYzdwRlFnaDRJZWM?oc=5",
-   "date": "2026-11-20T09:00:38.000Z"
-  },
-  {
    "id": "n16-2026-11-20",
    "cat": "congo",
    "lang": "fr",
    "title": "Dette de la CEMAC : pourquoi les États se financent de plus en plus auprès de leurs propres banques",
    "source": "La Nouvelle Tribune",
    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZURFTzIwVzRuVWhUcWxJV1o1R3VzZkJXUGRndndnU2pLYlNGaGpMREY5cGZOOHp2aWdSdEwyNUdJRlc5Wm5jLUpDeXpUdmg3ME8ybmtJUWlwSTV3MVloSHFLbndNakNLa2hzMjF1cVljVnhUSm5KX20zanVWS19uM2M2dkY0ZVU3c2ZiV3J5dnZ2UG1JSDRIbjJxQnZqOFZBcTE4RVM4bHl6OFkwbzFQelVpRHZHRFVmX2JrTnZoT1psNm5uOUk2MXFWRzg3ZDZ2b29z?oc=5",
-   "date": "2026-11-20T11:32:57.000Z"
+   "date": "2026-11-20T11:32:57.000Z",
+   "img": "https://io-fsly-bfmtv.cdn.nextradiotv.com/g9rjdxOCFt_aDGI-xLx4rbbf-V4=/0x106:2048x1258/2048x0/images/Le-marche-s-interroge-sur-des-rendements-obligataires-eleves-aux-Etats-Unis-2346594.jpg"
   },
   {
    "id": "n17-2026-11-20",
@@ -1406,7 +1411,8 @@
    "title": "Développement du secteur maritime: Wimowca restitue les travaux de son séminaire au préfet de Pointe-Noire",
    "source": "Adiac Congo",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWjQtRlNsN0lPdmRTc1UtMkdVT0JMSDg5SVd6eVBwRjFMNUROTHgzbHZ1dUNkRF94S3ViM0NxblkwUjJhbGRKU3R6cUQ0TUlDbEJiODBidFJQY3gzVUFxYXpIWDBRYlQ1S3hsdEQxZDR4bDI0djZaRTZLUFRaR0x0dmhlT3JkYnBiTnZkTVJKQS1VNWI4aEVITHc1LVpYMlowSTVOd2lPZ3VrdUhYUWthY0ZnZGE2V0lMUEVIZi11VmM3eHJpVEJr?oc=5",
-   "date": "2026-11-19T21:18:00.000Z"
+   "date": "2026-11-19T21:18:00.000Z",
+   "img": "http://www.bing.com/th?id=ONUT.KHawWGj1oyHiZx0LbrhXEw&pid=News&w=900&h=1200&c=7&rs=1"
   },
   {
    "id": "n21-2026-11-19",
@@ -1448,49 +1454,43 @@
    "id": "n25-2026-11-19",
    "cat": "markets",
    "lang": "en",
-   "title": "Euro trims losses as risk appetite strengthens and oil prices stay low",
-   "source": "www.tmgm.com",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMGxjU1VYVWlzTmo3eUN1RmRIUm5GTlhTTEIwME5CQ2lXanZPa3ZCNmVKNGlCVXBlRWJfSGc5Qkl3XzN3Q2lTS0dNeW8xcFBCZklJeXBfMWlHMW9oeHRldFMyUjNTWXpPdVZhWDhneGdVaktCMnYyNEotOWE2RlJVMUlFVFpERFR1UXR1NEZudFZzZ0dLTHhwSWZ3NzFWTkI1X2s5MzZEVzRJckNQQm5lVmE5UkRjSnhWZ1hlYmFvdlZMa1ludldZbjJ5Wnp0dVZuRWJEWQ?oc=5",
-   "date": "2026-11-19T22:54:38.000Z"
-  },
-  {
-   "id": "n26-2026-11-19",
-   "cat": "markets",
-   "lang": "en",
    "title": "EUR/USD Holds 1.0979 off 19-Month Low as DXY Cools From 103.97; ECB Hike Bets Eye 1.1125",
    "source": "TradingNEWS",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWUFDY3JHbEZ5SThBaHFBNDEzeGdWNUN1SjR0UlRkWndkaVZjLTRzX0M5bFRvT3lxcFhpaXdNeHVuYTVmN1M0TnVtS2YwU1REd1IwQ3BYX24yN09WVWxRa096alkxYTczeWdjQ3FLMkI1RTV0YWRualdSaDNza3ZIY2RSZkVIWmNLY3RvMUlXd3VpSEctTG95QXBiYVNHLW1MSW1rb1kzVWNsZmlLamlPYVZ0ZlllZTVNMFEzTUc1OFpsMkUtUlM4?oc=5",
    "date": "2026-11-19T17:33:37.000Z"
   },
   {
-   "id": "n27-2026-11-19",
+   "id": "n26-2026-11-19",
    "cat": "markets",
    "lang": "en",
    "title": "Dollar Slips as Stocks Rally",
    "source": "TradingView",
    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQcXkzeXRNSHlCQVNNN0dNbFJjLWMzc2pQVXRuaEZuR0R0eDcwTllJdGNBY2VHX1ZMSjRXU1owdkxhODZTVmRZWGJFTkNfbEVValZqT0V6S2NXUGx0aFdGbzZ5YXUxc0FwckdaaDlwVUJ5aWt0bmNtZTZQUzVEWm94YnVnaEFKX2hDTUM0eFY5ank?oc=5",
-   "date": "2026-11-19T15:35:11.000Z"
+   "date": "2026-11-19T15:35:11.000Z",
+   "img": "http://www.bing.com/th?id=ONUT.ZX2DRv2dHkSIubhM-6jUCw&pid=News&w=900&h=1200&c=7&rs=1"
   },
   {
-   "id": "n28-2026-11-19",
+   "id": "n27-2026-11-19",
    "cat": "markets",
    "lang": "en",
    "title": "Euro pares losses as risk appetite improves and Oil prices remain low",
    "source": "FXStreet",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORGViZ0JLU3lkQ29GanpDcmZVWFlObjBPQmdkN3owMXUyQ3Jnc294TVVNcXBqTV9jLVFPNFg3NG9DaklZbGgxNmxBcW4zWnMwQU1SenNZcVJudDVWSDVRVmxxa0hMcnZmRkxpR1NwbnNfX05GVURZOE84ci1zWklEekVuRmNkamNnZ0JaYVppNkctZDdDLXZfUVVtU1FyZ3JzQVlUMG5hc3BuclZEaVdleXZn?oc=5",
-   "date": "2026-11-19T09:56:08.000Z"
+   "date": "2026-11-19T09:56:08.000Z",
+   "img": "http://www.bing.com/th?id=ONUT.7q78wXNNQstNJqzhdr4bTg&pid=News&w=900&h=1200&c=7&rs=1"
   },
   {
-   "id": "n29-2026-11-19",
+   "id": "n28-2026-11-19",
    "cat": "markets",
    "lang": "en",
    "title": "US dollar hits multi-month highs on hawkish Fed bets",
    "source": "TorFX News",
    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbFlCdC1iWEZfcXMxRTFpTGtOMGp4M1czd0dOX2tLT2lqTEt0eGtRQ2lKMHRCWWZPWXBiSGluMmMtdmUtQlJlY1kyOExQZ2V4Z29uOVUxY1VoT3JNRHI5MUFCeWpZeS1HazBaQUtpeG4wWGhCTHdlZVE4VEEySHhFX3liNE9QLWE3TDNpQzRUYlJTUUhuZ0ww?oc=5",
-   "date": "2026-11-19T09:08:29.000Z"
+   "date": "2026-11-19T09:08:29.000Z",
+   "img": "http://www.bing.com/th?id=ONUT.ZoB_ucwV8l3do7Q8DrZz0A&pid=News&w=900&h=1200&c=7&rs=1"
   },
   {
-   "id": "n30-2026-11-19",
+   "id": "n29-2026-11-19",
    "cat": "markets",
    "lang": "en",
    "title": "Euro gains ground against Canadian Dollar ahead of ECB Lagarde’s speech",
@@ -1499,13 +1499,22 @@
    "date": "2026-11-19T09:05:53.000Z"
   },
   {
-   "id": "n31-2026-11-19",
+   "id": "n30-2026-11-19",
    "cat": "markets",
    "lang": "en",
    "title": "Euro shows little movement amid steady US Dollar and hawkish Fed signals",
    "source": "www.tmgm.com",
    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMG1XbUlBWW51cEcxQUZmMnJQWU9MaDk5X3E3bGsxQ2pVNFRmUU1xcm1hNXcyRDJwYVRtTnkyVFNZa0hSUEJLMjg2S2xHZ1VHNG9fR0FxR1pmanlrcTh2QWsxU3RRZk5KNkNyb1hpbGxTM25fenZPQ2hwMmx0UEJtVGYybldXdjV6Q3hYZUpFbnA4ZFRzWF9pYVdzZ1BzZGhacE9XMlpETmJiNWdRR0RLajlYR1czajBzYTM1VTJJSWQ0X2dZaHFubXIxODZTNExUeXBHdElR?oc=5",
    "date": "2026-11-19T08:13:42.000Z"
+  },
+  {
+   "id": "n31-2026-11-19",
+   "cat": "markets",
+   "lang": "en",
+   "title": "US Dollar Price Forecast: DXY Holds 103.76 as Fed Minutes Back Hikes, EUR/USD and GBP/USD Stay Weak",
+   "source": "FXEmpire",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPQktTaXRud2g5d2pMSmhTYUZKMkg5VjFIS1J0TnZWSHFoLVBhMS04bkRSVVpKOXBhTjFHY2NvbENaY1JDNU1Eek9rT1Nzb0ZGVko5SWRCU2tORTRETmlWWVFnZkdiTHBaUHVJTUVzMzBudW5HdXdWZFJqUlMxMUZDNTh5blQ5dmNLU0lXV29QSHNyd0RRMUh4MjRfR0xnWDl3NGV6UDQ5dFVwamlRdjBVSVVZT1R3bEptNnJ5cnp5eUxPa3NybHJBNXZfQ0VGMDdIMlluWlVhTnB6MmZFZndwbHlB?oc=5",
+   "date": "2026-11-19T07:45:00.000Z"
   },
   {
    "id": "n32-2026-11-20",
@@ -1595,7 +1604,8 @@
    "title": "MinRes locks in successor to retiring CFO",
    "source": "Australian Mining",
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQkUycWtKOHRtSEpxelozN1lQQzQ4ek1NaWJyTElHSU9BcFB0U0gzNm45MnVaZUJ2WXpwRG1PNnZMTnlORWFxdG1zM0N1Y1IwRzgxV08yWUVSLUZIdzBWWnhUSzE0NzlIWlI0WWMxQ3FKQXRZd2dyYWwtcHhWSEZKOFVGMFo?oc=5",
-   "date": "2026-11-19T23:41:41.000Z"
+   "date": "2026-11-19T23:41:41.000Z",
+   "img": "https://www.australianmining.com.au/wp-content/uploads/2026/11/AdobeStock_1243359495_Editorial_Use_Only.jpg"
   },
   {
    "id": "n42-2026-11-19",
@@ -1604,7 +1614,8 @@
    "title": "Au Sénégal, le Pastef acte la perte du statut de membre de Diomaye Faye après la création de Kiraay",
    "source": "Capmad",
    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZWx4QzU4Q0w1bmtvUElucGFGSG1KM0FtYmZDLTdqLXM2VEN5aUU2dnVGWjNrbHF5dkUyODVpTHlNY0ZjMnFGclM5VlZaT2tOUWFkNUs1bUM5cWJKZFpVUHhTdGpDR0s5UVNlZ0RvVTRVZC02ZWcwRWVrWWJjQ0FoVEFZUENpZTJNS1ptUWFVX0pMU3MyWm9ITDJxZC1pbXNyN2JIZ0ZzUXdZT3VfbjBvVGdCQ1RjbjQzajRsUGRncGtpcGdfTkp5eg?oc=5",
-   "date": "2026-11-19T16:47:00.000Z"
+   "date": "2026-11-19T16:47:00.000Z",
+   "img": "https://www.dakarposte.com/photo/art/grande/98734376-68923649.jpg?v=1794945153"
   },
   {
    "id": "n43-2026-11-19",
@@ -1687,7 +1698,8 @@
    "title": "New federal data on job openings, employee turnover, shows sluggish Oregon economy",
    "source": "Lebanon Local",
    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTEMtRXdkYThvczZ5Snd0RTdvdXliUVI2UmI0SnQtSWcwYzBuaGpVaERGMUdMbXNLM3J6UDdSckhzLVRvMG5LSUNUS2dFUzgzNnJMcHpyQ2I3VDR3SzZiM3V3RWhGYzdLMmd5RVV4ei13b29hbVNOZVBIamxPdFQ1Y0pVRWxkTGpNOFZwMndOWXhGUXRLUmZUeHhlaEl4SHZpR1dQUTRXZkJvemtlaFUzeGNUZTE?oc=5",
-   "date": "2026-11-20T00:36:17.000Z"
+   "date": "2026-11-20T00:36:17.000Z",
+   "img": "http://www.bing.com/th?id=ONUT.xYLvOQf4n2ZmPT9vaMRqXA&pid=News&w=900&h=1200&c=7&rs=1"
   },
   {
    "id": "n52-2026-11-19",
@@ -1718,8 +1730,6 @@
   }
  ],
  "log": [
-  "photos: 6/35",
-  "read MIT Sloan Management Review: 429 https://news.google.com/rss/search?q=site%3Asloanreview.mit.edu%20when%3A10d&hl=en&gl=US&ceid=US:en",
-  "read Knowledge at Wharton: 429 https://news.google.com/rss/search?q=site%3Aknowledge.wharton.upenn.edu%20when%3A10d&hl=en&gl=US&ceid=US:en"
+  "photos: 18/35 {\"nomatch\":4,\"empty\":30}"
  ]
 }
