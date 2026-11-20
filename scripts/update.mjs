@@ -238,13 +238,34 @@ function pickEvents(list) {
     .sort((a, b) => b.score - a.score || b.year - a.year).slice(0, 4)
     .sort((a, b) => b.year - a.year).map(({ score, ...e }) => e);
 }
+// Worldwide = today's selected events. Congo and Lebanon = the best moments within ±3 days
+// (Wikipedia has too few for one date), preferring events over births/deaths and today over other days.
+const OTD_CG = /congo|brazzaville|pointe-noire|sassou|lissouba|ngouabi|massamba|youlou|kolélas|kolelas/i;
+const OTD_CG_STRONG = /brazzaville|pointe-noire|r[ée]publique du congo|republic of (the )?congo|congo-brazzaville|sassou|lissouba|ngouabi|massamba|youlou|kol[ée]las/i;
+const OTD_CG_NOT = /d[ée]mocratique|democratic|kinshasa|za[iï]re|l[ée]opoldville|katanga|belgian congo|congo belge|\brdc\b|\bdrc\b|kabila|lumumba|mobutu|tshisekedi|kasa[iï]/i;
+const OTD_LB = /\b(leban\w*|liban\w*|beirut|beyrouth|baalbek|byblos|hezbollah|fairuz|maronite)\b/i;
 async function onThisDay() {
-  const now = new Date(), mm = String(now.getUTCMonth() + 1).padStart(2, "0"), dd = String(now.getUTCDate()).padStart(2, "0");
-  const out = {};
-  for (const lang of ["en", "fr"]) {
-    try { out[lang] = pickEvents((await get(`https://${lang}.wikipedia.org/api/rest_v1/feed/onthisday/selected/${mm}/${dd}`)).selected || []); }
-    catch (e) { log.push(`on this day ${lang}: ${e.message}`); }
+  const now = new Date(), days = [];
+  for (let off = -3; off <= 3; off++) { const d = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + off)); days.push([off, String(d.getUTCMonth() + 1).padStart(2, "0"), String(d.getUTCDate()).padStart(2, "0")]); }
+  const raw = { en: [], fr: [] }, world = {};
+  for (const lang of ["en", "fr"]) for (const [off, mm, dd] of days) {
+    try {
+      const j = await get(`https://${lang}.wikipedia.org/api/rest_v1/feed/onthisday/all/${mm}/${dd}`);
+      if (off === 0) world[lang] = pickEvents((j.selected && j.selected.length ? j.selected : j.events) || []);
+      const add = (arr, kind) => (arr || []).forEach(e => e.text && e.year && raw[lang].push({ year: e.year, text: e.text, kind, off, md: mm + "-" + dd, url: e.pages?.[0]?.content_urls?.desktop?.page || null }));
+      add(j.selected, "event"); add(j.events, "event"); add(j.births, "born"); add(j.deaths, "died");
+    } catch (e) { log.push(`on this day ${lang} ${mm}/${dd}: ${e.message}`); }
   }
+  const pick = (lang, re, strong, not) => {
+    const ok = x => re.test(x.text) && !OTD_GRIM.test(x.text) && !/kidnap|hijack|enl[èe]v/i.test(x.text) && !(not && not.test(x.text) && !(strong && strong.test(x.text))) && (x.kind === "event" || !strong || strong.test(x.text));
+    let L = raw[lang].filter(ok); if (L.length < 2) L = L.concat(raw[lang === "en" ? "fr" : "en"].filter(ok));
+    const sc = x => (x.kind === "event" ? 3 : 0) + (3 - Math.abs(x.off)) + (strong && strong.test(x.text) ? 3 : 0);
+    const seen = new Set();
+    return L.sort((a, b) => sc(b) - sc(a)).filter(x => { const k = x.md + x.year + x.kind; if (seen.has(k)) return false; seen.add(k); return true; })
+      .slice(0, 3).sort((a, b) => a.off - b.off || b.year - a.year).map(({ off, ...x }) => x);
+  };
+  const out = {};
+  for (const lang of ["en", "fr"]) out[lang] = { world: world[lang] || [], congo: pick(lang, OTD_CG, OTD_CG_STRONG, OTD_CG_NOT), lebanon: pick(lang, OTD_LB, null, null) };
   return out;
 }
 
