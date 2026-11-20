@@ -157,6 +157,11 @@
           "q": "banking OR banks OR bond markets OR IMF OR \"World Bank\" OR \"Wall Street\"",
           "hl": "en",
           "gl": "GB"
+        },
+        {
+          "q": "(site:reuters.com OR site:ft.com OR site:bloomberg.com OR site:economist.com) (economy OR markets OR banks)",
+          "hl": "en",
+          "gl": "US"
         }
       ]
     },
@@ -172,6 +177,11 @@
         },
         {
           "q": "(Côte d'Ivoire OR Sénégal OR Cameroun OR Gabon OR RDC OR UEMOA OR BCEAO OR \"Afrique de l'Ouest\" OR \"Afrique centrale\") économie",
+          "hl": "fr",
+          "gl": "SN"
+        },
+        {
+          "q": "(site:jeuneafrique.com OR site:agenceecofin.com OR site:theafricareport.com) économie",
           "hl": "fr",
           "gl": "SN"
         }
@@ -191,6 +201,11 @@
           "q": "CEMAC OR BEAC",
           "hl": "fr",
           "gl": "CM"
+        },
+        {
+          "q": "(site:agenceecofin.com OR site:jeuneafrique.com OR site:financialafrik.com) (Congo OR CEMAC OR BEAC)",
+          "hl": "fr",
+          "gl": "CG"
         }
       ]
     },
