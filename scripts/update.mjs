@@ -72,11 +72,18 @@ async function news(n) {
 
 /* ---------- Summary: AI if a key is set, rules otherwise ---------- */
 const SIXTY_PICK = { worldwide: 5, africa: 5, congo: 5 }; // Today's video feed: 15 stories, about 2 minutes
+// A headline Google News cut short ends with "…" or a dangling small word ("…lever près de")
+function cut(t) { return /(\u2026|\.\.\.)\s*$/.test(t) || /\s(de|du|des|la|le|les|l'|d'|à|au|aux|et|en|pour|près|sur|par|avec|dans|un|une|of|the|to|a|an|and|for|in|on|with|at|by|from|as)$/i.test(t.trim()); }
+function fullTitle(h, cand) {           // use a longer title from Bing or the article if it continues ours
+  if (!cand || !cut(h.title)) return;
+  const a = h.title.replace(/(\u2026|\.\.\.)\s*$/, "").trim().toLowerCase().slice(0, 40), c = decode(cand).replace(/\s+[-|–]\s+[^-|–]{2,40}$/, "").trim();
+  if (c.toLowerCase().startsWith(a) && c.length > h.title.length && !cut(c)) h.title = c;
+}
 function rulesSummary(markets, fx, headlines) {
   const out = { en: [], fr: [] }, lists = [];
   for (const [cat, n] of Object.entries(SIXTY_PICK)) {
     const lab = cfg.news.find(x => x.cat === cat) || { label_en: cat, label_fr: cat };
-    lists.push(headlines.filter(h => h.cat === cat).slice(0, n).map(h => ({ lab, h })));
+    lists.push(headlines.filter(h => h.cat === cat && !cut(h.title)).slice(0, n).map(h => ({ lab, h })));
   }
   // Interleave sections so the feed is mixed: Worldwide, Africa, Congo, Markets, ... then the second round
   for (let r = 0; lists.some(l => l[r]); r++) for (const l of lists) if (l[r]) {
@@ -159,9 +166,10 @@ async function photoFor(h) {
     for (const b of items) {
       const got = new Set(words(tag(b, "title"))); const hit = [...got].filter(w => want.has(w)).length;
       if (hit < 3 && hit / Math.max(1, Math.min(want.size, got.size)) < 0.5) continue;   // must be the same story
+      fullTitle(h, tag(b, "title"));
       const thumb = (b.match(/<News:Image>([\s\S]*?)<\/News:Image>/i) || [])[1];
       let article = null; try { article = new URL(decode(tag(b, "link"))).searchParams.get("url"); } catch {}
-      if (article) { try { const og = ogImage(await fetchText(article, 6000), article); if (og) return og; } catch {} }
+      if (article) { try { const html = await fetchText(article, 6000); const ot = (html.match(/<meta[^>]+property=["']og:title["'][^>]*>/i) || [""])[0].match(/content=["']([^"']+)/i); if (ot) fullTitle(h, ot[1]); const og = ogImage(html, article); if (og) return og; } catch {} }
       if (thumb) return decode(thumb) + "&w=900&h=1200&c=7&rs=1";
     }
     why.nomatch = (why.nomatch || 0) + 1;
@@ -248,7 +256,7 @@ for (const n of cfg.news) {
 }
 const seen = new Set();
 headlines = headlines.filter(h => { const k = h.title.toLowerCase().slice(0, 60); if (seen.has(k)) return false; seen.add(k); return true; });
-if (!MOCK) await addPhotos(cfg.news.flatMap(n => headlines.filter(h => h.cat === n.cat).slice(0, 5)));
+if (!MOCK) await addPhotos(cfg.news.flatMap(n => headlines.filter(h => h.cat === n.cat).slice(0, 6)));
 
 const otd = await onThisDay();
 const read = await reads();
