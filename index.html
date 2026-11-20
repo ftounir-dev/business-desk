@@ -173,9 +173,49 @@ section{padding-top:26px}
 .w-end .w-body{align-items:center;text-align:center;margin-bottom:30vh}
 .w-btn{border:0;border-radius:999px;padding:12px 20px;font-weight:700;font-size:.95rem;cursor:pointer;background:#fff;color:#111}
 .w-btn.ghost{background:rgba(255,255,255,.18);color:#fff}
-.w-toast{position:fixed;left:50%;bottom:calc(30px + env(safe-area-inset-bottom));transform:translateX(-50%);background:rgba(0,0,0,.75);color:#fff;padding:9px 16px;border-radius:999px;font-size:.85rem;z-index:8;pointer-events:none;animation:toast 1.6s ease forwards}
+.w-toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom));transform:translateX(-50%);background:rgba(0,0,0,.75);color:#fff;padding:9px 16px;border-radius:999px;font-size:.85rem;z-index:8;pointer-events:none;animation:toast 1.6s ease forwards}
 @keyframes toast{0%{opacity:0;transform:translate(-50%,10px)}15%,80%{opacity:1;transform:translate(-50%,0)}100%{opacity:0}}
 @media (prefers-reduced-motion:reduce){.wv.on .kb,.wv.on .w-emoji{animation:none}}
+/* News: a calm reading list built for a daily habit */
+.nx-habit{display:grid;grid-template-columns:64px 1fr;gap:14px;align-items:center;margin-top:14px;padding:14px;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+.nx-ring{position:relative;width:64px;height:64px}
+.nx-ring svg{width:64px;height:64px;transform:rotate(-90deg)}
+.nx-ring .bgc{stroke:var(--sunk)}.nx-ring .fgc{stroke:var(--accent);transition:stroke-dashoffset .6s cubic-bezier(.2,.8,.2,1)}
+.nx-ring.done .fgc{stroke:var(--relief)}
+.nx-ring b{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--mono);font-size:.95rem}
+.nx-h1{font-weight:700;font-size:.98rem}
+.nx-h2{font-size:.84rem;color:var(--muted);margin-top:3px;line-height:1.4}
+.nx-h2 b{color:var(--text)}
+.nx-fire{display:inline-flex;align-items:center;gap:4px;font-size:.78rem;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent);margin-left:6px;vertical-align:1px}
+.nx-week{display:flex;gap:4px;margin-top:8px}
+.nx-week i{width:22px;height:6px;border-radius:3px;background:var(--sunk)}
+.nx-week i.ok{background:var(--accent)}.nx-week i.part{background:var(--accent-soft)}
+.nx-search{display:flex;align-items:center;gap:8px;margin-top:12px;padding:0 12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--muted)}
+.nx-search svg{width:17px;height:17px;flex:none}
+.nx-search input{flex:1;border:0;background:none;padding:11px 0;font:inherit;font-size:.95rem;color:var(--text);outline:none;min-width:0}
+.nx-group{margin-top:18px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:8px}
+.nx-group::after{content:"";flex:1;height:1px;background:var(--line)}
+.nx-row{display:grid;grid-template-columns:1fr auto;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;position:relative}
+.nx-row:last-child{border-bottom:0}
+.nx-meta{display:flex;align-items:center;gap:6px;font-size:.72rem;color:var(--muted);white-space:nowrap;overflow:hidden}
+.nx-meta .c{font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.nx-meta .s{font-weight:700;color:var(--text);overflow:hidden;text-overflow:ellipsis}
+.nx-row h3{margin:5px 0 0;font-size:1.02rem;line-height:1.34;font-weight:650;text-wrap:pretty}
+.nx-row.new h3::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-right:7px;vertical-align:2px}
+.nx-row.read h3{font-weight:500;color:var(--muted)}
+.nx-row.read .nx-th{opacity:.6}
+.nx-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.nx-tags span{font-size:.7rem;font-weight:700;padding:3px 8px;border-radius:999px;background:var(--sunk);color:var(--text)}
+.nx-th{width:84px;height:84px;border-radius:12px;object-fit:cover;background:var(--sunk);align-self:start;margin-top:4px}
+.nx-lead{display:block;text-decoration:none;color:inherit;padding:14px 0;border-bottom:1px solid var(--line)}
+.nx-lead .ph{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:16/9;background:var(--sunk);margin-bottom:12px}
+.nx-lead .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.nx-lead .ph span{position:absolute;left:10px;top:10px;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px;border-radius:999px;background:rgba(0,0,0,.55);color:#fff}
+.nx-lead h3{margin:5px 0 0;font-family:var(--display);font-size:1.38rem;line-height:1.2;font-weight:700;text-wrap:balance}
+.nx-lead.read h3{color:var(--muted)}
+.nx-more{display:block;width:100%;margin:16px 0 4px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font:inherit;font-weight:700;color:var(--text);cursor:pointer}
+.nx-done{margin-top:18px;padding:16px;border-radius:14px;background:var(--accent-soft);text-align:center;font-weight:600;font-size:.92rem}
+.chip .n{margin-left:6px;font-size:.7rem;padding:1px 6px;border-radius:999px;background:var(--accent);color:var(--on-accent)}
 .share{display:flex;gap:8px;flex-wrap:wrap;padding-top:14px}
 .btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:9px 14px;font-size:.88rem;font-weight:600;cursor:pointer;text-decoration:none;color:var(--text)}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
@@ -234,6 +274,7 @@ label.f input{background:var(--bg);border:1px solid var(--line);border-radius:10
 .agenda{list-style:none;margin:0;padding:0}
 .agenda li{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:.94rem}
 .agenda li:last-child{border-bottom:0}
+.ag-in{color:var(--muted);font-size:.84rem}
 .aotd{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px 20px;margin-top:14px;display:grid;gap:12px}
 .aotd h3{font-family:var(--display);font-size:clamp(1.5rem,6.6vw,2.1rem);line-height:1.12;margin:0;font-weight:700;text-wrap:balance}
 .aotd .meta{font-size:.8rem;color:var(--muted)}
@@ -321,11 +362,11 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 <div class="view" id="v-events" hidden>
   <section id="otd-wrap" hidden>
     <div class="sec-head"><h2 class="sec" data-t="otd_t"></h2></div>
-    <div class="rail" id="otd"></div>
+    <ul class="agenda otd" id="otd"></ul>
   </section>
   <section>
     <div class="sec-head"><h2 class="sec" data-t="agenda_t"></h2></div>
-    <div class="rail" id="agenda"></div>
+    <ul class="agenda" id="agenda"></ul>
   </section>
 </div>
 
@@ -343,9 +384,10 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 <div class="view" id="v-news" hidden>
   <section style="padding-top:18px">
     <h2 class="sec" data-t="news_t"></h2>
+    <div class="nx-habit" id="nx-habit"></div>
+    <div class="nx-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5" stroke-linecap="round"/></svg><input id="nx-q" type="search" autocomplete="off" aria-label="Search news"></div>
     <div class="chips" id="chips" role="group" aria-label="Sections"></div>
-    <div class="flip" id="flip" aria-live="polite"></div>
-    <div class="dots" id="dots" aria-hidden="true"></div>
+    <div id="nx-list" aria-live="polite"></div>
   </section>
 </div>
 
@@ -651,12 +693,10 @@ function renderFront(){
     ${list.length?`<div class="rail">${list.map(newsCard).join("")}</div>`:`<p class="empty">${t("nostories")}</p>`}</section>`;}).join("");
   document.querySelectorAll("[data-go]").forEach(a=>a.onclick=()=>{cat=a.dataset.go;});
 }
-const OTD_G=["linear-gradient(165deg,#6b5530,#1d160b)","linear-gradient(165deg,#3d5266,#0f161d)","linear-gradient(165deg,#5e3b55,#1c0f19)","linear-gradient(165deg,#3f5e45,#0f1a12)"];
 function renderOTD(){
   const l=(B.on_this_day&&(B.on_this_day[lang]||B.on_this_day.en))||[];
   $("#otd-wrap").hidden=!l.length;
-  $("#otd").innerHTML=l.map((e,i)=>`<a class="pc otd${e.img?" has-img":""}" ${e.url?`href="${esc(e.url)}" target="_blank" rel="noopener"`:""} style="background:${OTD_G[i%OTD_G.length]}">${bgImg(e.img)}
-    <div class="c-year">${esc(e.year)}</div><p>${esc(e.text)}</p></a>`).join("");
+  $("#otd").innerHTML=l.map(e=>`<li><span class="d">${esc(e.year)}</span><span>${esc(e.text)}${e.url?` <a class="see" href="${esc(e.url)}" target="_blank" rel="noopener">↗</a>`:""}</span></li>`).join("");
 }
 function renderRead(){
   const R=B.read;$("#aotd").innerHTML="";$("#more").innerHTML="";
@@ -668,16 +708,11 @@ function renderRead(){
     <a class="btn primary" href="${esc(p.url)}" target="_blank" rel="noopener">${t("readit")} ↗</a>`;
   $("#more").innerHTML=(R.more||[]).map(n=>story(n)).join("");
 }
-function agStyle(x){x=x.toLowerCase();
-  return /opec|opep|oil|pétrole|brent/.test(x)?["🛢️","linear-gradient(165deg,#4a4a4a,#111)"]:/fed|fomc|ecb|bce|beac|bank|banque|rate|taux/.test(x)?["🏦","linear-gradient(165deg,#1f5f8b,#0a1e2c)"]:/parliament|parlement|law|loi|budget|tax|impôt/.test(x)?["🏛️","linear-gradient(165deg,#8a6420,#2a1d08)"]:["📅","linear-gradient(165deg,#4a5f6a,#141d21)"];}
 function renderAgenda(){
-  const today=new Date().toISOString().slice(0,10),loc=lang==="fr"?"fr-FR":"en-GB";
-  $("#agenda").innerHTML=(B.agenda||[]).filter(a=>a.date>=today).map(a=>{const d=new Date(a.date+"T12:00:00"),txt=a[lang]||a.en,s=agStyle(a.en+" "+txt);
-    const days=Math.round((new Date(a.date+"T00:00:00")-new Date(today+"T00:00:00"))/864e5);
-    const inD=days===0?(lang==="fr"?"Aujourd'hui":"Today"):days===1?(lang==="fr"?"Demain":"Tomorrow"):(lang==="fr"?"dans "+days+" j":"in "+days+" days");
-    return`<div class="pc ag" style="background:${s[1]}"><span class="c-in">${inD}</span>
-      <div class="c-date"><div class="c-day">${d.getDate()}</div><div class="c-mon">${d.toLocaleDateString(loc,{weekday:"short"})} · ${d.toLocaleDateString(loc,{month:"long"})}</div></div>
-      <div class="c-emoji" aria-hidden="true">${s[0]}</div><p>${esc(txt)}</p></div>`;}).join("");
+  const today=new Date().toISOString().slice(0,10);
+  $("#agenda").innerHTML=(B.agenda||[]).filter(a=>a.date>=today).map(a=>{const days=Math.round((new Date(a.date+"T00:00:00")-new Date(today+"T00:00:00"))/864e5);
+    const inD=days===0?(lang==="fr"?"aujourd'hui":"today"):days===1?(lang==="fr"?"demain":"tomorrow"):(lang==="fr"?"dans "+days+" jours":"in "+days+" days");
+    return`<li><span class="d">${fdate(a.date)}</span><span>${esc(a[lang]||a.en)} <span class="ag-in">· ${inD}</span></span></li>`;}).join("");
 }
 function renderMarkets(){
   const st=(B.static_rates||[]).map(r=>({...r,dp:r.dp??2,cost:0,change_pct:0,static:true}));
@@ -736,13 +771,69 @@ function flipTo(dir){
   leaf.addEventListener("transitionend",done,{once:true});setTimeout(()=>{if(fBusy)done();},900);
 }
 function nudge(dir){const f=$("#flip");f.animate([{transform:"translateY(0)"},{transform:`translateY(${dir>0?-14:14}px)`},{transform:"translateY(0)"}],{duration:280,easing:"ease-out"});}
+/* ---------- News: reading list + daily habit ---------- */
+const NX={goal:5,shown:30,q:"",prev:store.get("nx_last",0)||Date.now()-12*36e5,read:store.get("nx_read",{}),days:store.get("nx_days",{})};
+store.set("nx_last",Date.now());
+(()=>{const cut=Date.now()-15*864e5;for(const k in NX.read)if(NX.read[k]<cut)delete NX.read[k];store.set("nx_read",NX.read);})();
+const dayKey=d=>{const x=new Date(d);return x.getFullYear()+"-"+String(x.getMonth()+1).padStart(2,"0")+"-"+String(x.getDate()).padStart(2,"0");};
+const NX_TAGS=[
+  ["oil","🛢️","Energy","Énergie",/\b(oil|brent|wti|crude|opec|opep|pétrole|petrol\w*|gaz|gas|lng|carburant|fuel)\b/i],
+  ["fx","💱","FX","Change",/\b(dollar|euro|currency|currencies|devises?|fcfa|xaf|cfa|exchange rate|taux de change|yuan|naira|cedi)\b/i],
+  ["rates","🏦","Rates","Taux",/\b(interest rates?|taux directeurs?|beac|fed|ecb|bce|inflation|central bank|banque centrale|yields?|rendements?)\b/i],
+  ["debt","📄","Debt","Dette",/\b(debt|dette|eurobonds?|bonds?|obligataire|obligations?|imf|fmi|loan|prêts?|bdeac|afdb|financement)\b/i],
+  ["inputs","🧴","Inputs","Intrants",/\b(sugar|sucre|plastics?|plastiques?|packaging|emballages?|bottles?|bouteilles?|resin|résine|aluminium|freight|fret|shipping|port)\b|\bPET\b/i],
+  ["tax","🧾","Tax & rules","Fiscalité",/\b(tax|taxes|impôts?|fiscal\w*|tariffs?|douanes?|customs|loi de finances|budget|régulat\w*|regulat\w*)\b/i],
+  ["bev","🥤","Beverages","Boissons",/\b(beverages?|boissons?|drinks?|beer|bière|brasser\w*|brewer\w*|soda|juice|jus|coca-cola|nestlé|heineken|castel)\b/i]
+];
+const nxTags=n=>NX_TAGS.filter(t=>t[4].test(n.title));
+const nxId=n=>(n.url||n.title).slice(-90);
+const catColor=c=>((REEL_CATS[c]||REEL_CATS.worldwide)[1].match(/#[0-9a-f]{6}/i)||["#888"])[0];
+function nxStreak(){let d=new Date(),s=0;if((NX.days[dayKey(d)]||0)<NX.goal)d.setDate(d.getDate()-1);
+  while((NX.days[dayKey(d)]||0)>=NX.goal){s++;d.setDate(d.getDate()-1);}return s;}
+function nxHabit(newN,iteN){
+  const fr=lang==="fr",today=NX.days[dayKey(Date.now())]||0,p=Math.min(1,today/NX.goal),C=2*Math.PI*26,st=nxStreak();
+  const wk=[...Array(7)].map((_,i)=>{const d=new Date();d.setDate(d.getDate()-(6-i));const v=NX.days[dayKey(d)]||0;return `<i class="${v>=NX.goal?"ok":v>0?"part":""}" title="${dayKey(d)}: ${v}"></i>`;}).join("");
+  const head=today>=NX.goal?(fr?"Objectif du jour atteint 🎯":"Daily goal reached 🎯"):(fr?`${today} sur ${NX.goal} articles lus aujourd'hui`:`${today} of ${NX.goal} stories read today`);
+  const sub=newN?(fr?`<b>${newN} nouveaux</b> depuis votre dernière visite${iteN?` · <b>${iteN}</b> concernent ITE`:""}`:`<b>${newN} new</b> since your last visit${iteN?` · <b>${iteN}</b> matter for ITE`:""}`):(fr?"Vous êtes à jour depuis votre dernière visite.":"You're up to date since your last visit.");
+  $("#nx-habit").innerHTML=`<div class="nx-ring${p>=1?" done":""}"><svg viewBox="0 0 64 64"><circle class="bgc" cx="32" cy="32" r="26" fill="none" stroke-width="7"/><circle class="fgc" cx="32" cy="32" r="26" fill="none" stroke-width="7" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-p)}"/></svg><b>${today}/${NX.goal}</b></div>
+    <div><div class="nx-h1">${head}${st?`<span class="nx-fire">🔥 ${st} ${fr?(st>1?"jours":"jour"):(st>1?"days":"day")}</span>`:""}</div><div class="nx-h2">${sub}</div><div class="nx-week" aria-label="${fr?"7 derniers jours":"Last 7 days"}">${wk}</div></div>`;
+}
+function nxMarkRead(n){const id=nxId(n);if(NX.read[id])return;NX.read[id]=Date.now();store.set("nx_read",NX.read);
+  const k=dayKey(Date.now()),before=NX.days[k]||0;NX.days[k]=before+1;store.set("nx_days",NX.days);
+  if(before+1===NX.goal&&typeof wToast==="function")wToast(lang==="fr"?"🎯 Objectif du jour atteint !":"🎯 Daily goal reached!");}
+function nxRow(n,lead){
+  const fr=lang==="fr",tags=nxTags(n),isRead=!!NX.read[nxId(n)],isNew=!isRead&&new Date(n.date).getTime()>NX.prev;
+  const meta=`<div class="nx-meta"><span class="c" style="color:${catColor(n.cat)}">${esc(catLabel(n.cat))}</span>·<span class="s">${esc(n.source)}</span>·<span>${ago(n.date)}</span></div>`;
+  const tg=tags.length?`<div class="nx-tags">${tags.map(t=>`<span>${t[1]} ${fr?t[3]:t[2]}</span>`).join("")}</div>`:"";
+  const img=n.img?`<img src="${esc(n.img)}" alt="" loading="lazy" decoding="async" onerror="this.remove()">`:"";
+  if(lead&&n.img)return `<a class="nx-lead${isRead?" read":""}" href="${esc(n.url)}" target="_blank" rel="noopener" data-nid="${esc(nxId(n))}"><div class="ph">${img}<span>${fr?"À la une":"Top story"}</span></div>${meta}<h3>${esc(n.title)}</h3>${tg}</a>`;
+  return `<a class="nx-row${isRead?" read":""}${isNew?" new":""}" href="${esc(n.url)}" target="_blank" rel="noopener" data-nid="${esc(nxId(n))}"><div>${meta}<h3>${esc(n.title)}</h3>${tg}</div>${n.img?img.replace("<img","<img class=\"nx-th\""):""}</a>`;
+}
 function renderNews(){
-  const cats=[{id:"all",en:t("all"),fr:t("all")},...B.categories];
-  $("#chips").innerHTML=cats.map(c=>`<button class="chip" type="button" data-cat="${c.id}" aria-pressed="${cat===c.id}">${esc(c[lang]||c.en)}</button>`).join("");
-  document.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>{cat=b.dataset.cat;renderNews();});
-  if(fCat!==cat){fIdx=0;fCat=cat;}
-  fPages=buildPages();if(fIdx>=fPages.length)fIdx=Math.max(0,fPages.length-1);
-  if(!$("#v-news").hidden)drawFlip();
+  const fr=lang==="fr",all=[...B.news].sort((a,b)=>b.date.localeCompare(a.date));
+  const iteAll=all.filter(n=>nxTags(n).length);
+  const unseen=all.filter(n=>!NX.read[nxId(n)]&&new Date(n.date).getTime()>NX.prev);
+  nxHabit(unseen.length,unseen.filter(n=>nxTags(n).length).length);
+  const cats=[{id:"all",en:t("all"),fr:t("all")},{id:"ite",en:"⭐ For ITE",fr:"⭐ Pour ITE"},...B.categories];
+  $("#chips").innerHTML=cats.map(c=>{const n=c.id==="all"?unseen.length:c.id==="ite"?unseen.filter(x=>nxTags(x).length).length:unseen.filter(x=>x.cat===c.id).length;
+    return `<button class="chip" type="button" data-cat="${c.id}" aria-pressed="${cat===c.id}">${esc(c[lang]||c.en)}${n?`<span class="n">${n}</span>`:""}</button>`;}).join("");
+  document.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>{cat=b.dataset.cat;NX.shown=30;renderNews();});
+  const qi=$("#nx-q");qi.placeholder=fr?"Rechercher : BEAC, pétrole, Eurobond…":"Search: BEAC, oil, Eurobond…";
+  if(!qi.dataset.w){qi.dataset.w=1;let tm=0;qi.oninput=()=>{clearTimeout(tm);tm=setTimeout(()=>{NX.q=qi.value.trim();NX.shown=30;renderNews();},180);};}
+  const norm=s=>s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+  let list=cat==="all"?all:cat==="ite"?iteAll:all.filter(n=>n.cat===cat);
+  if(NX.q){const q=norm(NX.q);list=list.filter(n=>norm(n.title+" "+n.source).includes(q));}
+  if(!list.length){$("#nx-list").innerHTML=`<p class="empty">${NX.q?(fr?"Aucun article ne correspond.":"No stories match."):t("nostories")}</p>`;return;}
+  const now=Date.now(),sod=new Date();sod.setHours(0,0,0,0);const yd=sod.getTime()-864e5;
+  const grp=n=>{const ts=new Date(n.date).getTime();return now-ts<2*36e5?0:ts>=sod.getTime()?1:ts>=yd?2:3;};
+  const GL=fr?["À l'instant","Plus tôt aujourd'hui","Hier","Plus ancien"]:["Just in","Earlier today","Yesterday","Older"];
+  let html="",g=-1;const shown=list.slice(0,NX.shown);
+  shown.forEach((n,i)=>{const gi=grp(n);if(gi!==g){g=gi;html+=`<div class="nx-group">${GL[gi]}</div>`;}html+=nxRow(n,i===0&&!NX.q);});
+  if(list.length>NX.shown)html+=`<button class="nx-more" type="button" id="nx-more">${fr?"Afficher plus":"Show more"} (${list.length-NX.shown})</button>`;
+  else if(!NX.q&&shown.every(n=>NX.read[nxId(n)]))html+=`<div class="nx-done">✅ ${fr?"Tout lu dans cette rubrique. Bravo !":"You've read everything here. Nice work!"}</div>`;
+  $("#nx-list").innerHTML=html;
+  const mb=$("#nx-more");if(mb)mb.onclick=()=>{NX.shown+=30;renderNews();};
+  $("#nx-list").querySelectorAll("[data-nid]").forEach(a=>a.onclick=()=>{const n=list.find(x=>nxId(x)===a.dataset.nid);if(n){nxMarkRead(n);setTimeout(renderNews,400);}});
 }
 (function(){
   let y0=null,x0=0,t0=0;
@@ -750,8 +841,8 @@ function renderNews(){
   document.addEventListener("pointerup",e=>{if(y0===null)return;const dy=e.clientY-y0,dx=e.clientX-x0;y0=null;
     if(Math.abs(dy)>40&&Math.abs(dy)>Math.abs(dx))flipTo(dy<0?1:-1);});
   let wl=0;document.addEventListener("wheel",e=>{if(!e.target.closest("#flip"))return;e.preventDefault();const now=Date.now();if(now-wl<700||Math.abs(e.deltaY)<15)return;wl=now;flipTo(e.deltaY>0?1:-1);},{passive:false});
-  document.addEventListener("keydown",e=>{if($("#v-news").hidden)return;if(e.key==="ArrowDown"||e.key==="PageDown"){e.preventDefault();flipTo(1);}if(e.key==="ArrowUp"||e.key==="PageUp"){e.preventDefault();flipTo(-1);}});
-  addEventListener("resize",()=>{if(B&&!$("#v-news").hidden&&!fBusy)drawFlip();});
+  document.addEventListener("keydown",e=>{if($("#v-news").hidden||!$("#flip"))return;if(e.key==="ArrowDown"||e.key==="PageDown"){e.preventDefault();flipTo(1);}if(e.key==="ArrowUp"||e.key==="PageUp"){e.preventDefault();flipTo(-1);}});
+  addEventListener("resize",()=>{if(B&&$("#flip")&&!$("#v-news").hidden&&!fBusy)drawFlip();});
 })();
 
 let sid=null,sdir="above";
