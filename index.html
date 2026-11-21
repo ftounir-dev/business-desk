@@ -1186,9 +1186,6 @@ function renderHero(){
   $("#h-play").onclick=()=>{if(n)openEdition(ed.done?0:Math.max(0,items.findIndex((x,k)=>!ed.seen[k])));};
   const hl=$("#h-listen");if(hl)hl.onclick=()=>openPod();
   if(B.alerts&&!$("#h-alert"))$("#hero").insertAdjacentHTML("beforeend",`<a class="h-listen" id="h-alert" href="${esc(B.alerts)}" target="_blank" rel="noopener">🔔 ${(lang==="ar"?"تنبيه عند صدور كل عدد":fr?"Recevoir une alerte à chaque édition":"Get an alert for each edition")}</a>`);
-  const cov=items.find(x=>x.img);
-  if(cov)$("#hero").insertAdjacentHTML("afterbegin",`<div class="h-cov" aria-hidden="true"><img src="${esc(cov.img)}" alt="" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></div>`);
-  $("#hero").classList.toggle("has-cov",!!cov);
   renderSince();
   const ids=["usdxaf","brent","gold"],ms=ids.map(id=>B.markets.find(m=>m.id===id)).filter(Boolean);
   const big=ms.reduce((a,m)=>Math.abs(m.change_pct||0)>Math.abs(a.change_pct||0)?m:a,ms[0]||{});
