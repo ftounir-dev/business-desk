@@ -661,8 +661,14 @@ Return JSON only: {"en":[{"k":"intro","text":"..."},...],"fr":[...],"ar":[...]} 
 MARKETS: ${JSON.stringify(mk)}
 STORIES: ${JSON.stringify(st)}
 AGENDA: ${JSON.stringify(ag)}`;
+  const parse = t => JSON.parse(t.slice(t.indexOf("{"), t.lastIndexOf("}") + 1));
+  const enWords = J => (J.en || []).reduce((a, x) => a + String(x.text || "").split(/\s+/).length, 0);
   const t = await llm(prompt, 12000); if (!t) return null;
-  const J = JSON.parse(t.slice(t.indexOf("{"), t.lastIndexOf("}") + 1));
+  let J = parse(t);
+  if (enWords(J) < 480) {   // too thin: ask once more for the full explanations
+    try { const t2 = await llm(prompt + `\n\nYour previous draft had only ${enWords(J)} English words. Write the FULL version now: at least 600 English words, with the markets segment explaining causes and consequences in depth and every story segment at least 70 words.`, 12000);
+      const J2 = t2 && parse(t2); if (J2 && enWords(J2) > enWords(J)) J = J2; log.push("podcast: longer retry " + enWords(J) + " words"); } catch (e) { log.push("podcast retry: " + e.message); }
+  }
   const ok = ["intro", "markets", "point", "number", "watch", "outro"];
   const P = { id: Date.now().toString(36), edition, ai: true };
   for (const lang of ["en", "fr", "ar"]) {
