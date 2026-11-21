@@ -56,12 +56,12 @@
       "id": "beac_timp",
       "group": "rates",
       "name": "Interbank rate · TIMP 7 days",
-      "value": 6.56,
+      "value": 5.61,
       "unit": "%",
-      "date": "2026-08-31",
-      "note": "Taux interbancaire moyen pondéré: the average rate CEMAC banks charge each other for 7-day unsecured loans. BEAC publishes it monthly; latest is end of August 2026 (6.53% at end of May).",
-      "source": "BEAC",
-      "url": "https://www.beac.int/"
+      "date": "2026-11-10",
+      "note": "Taux interbancaire moyen pondéré: the average rate CEMAC banks charge each other for 7-day unsecured loans. 5.61% around 10 November 2026, 111 bp above the 4.50% tender rate, as banks kept bidding for BEAC liquidity (6.56% at end of August).",
+      "source": "Sika Finance (BEAC data)",
+      "url": "https://www.sikafinance.com/marches/cemac-la-soif-de-liquidite-des-banques-ne-faiblit-pas-la-beac-remet-800-milliards-fcfa-sur-la-table_65651"
     },
     {
       "id": "beac",
