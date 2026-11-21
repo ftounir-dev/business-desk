@@ -276,6 +276,37 @@ section{padding-top:26px}
 .nx-lead.read h3{color:var(--muted)}
 .nx-more{display:block;width:100%;margin:16px 0 4px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font:inherit;font-weight:700;color:var(--text);cursor:pointer}
 .nx-done{margin-top:18px;padding:16px;border-radius:14px;background:var(--accent-soft);text-align:center;font-weight:600;font-size:.92rem}
+/* v39: Today's 10 */
+.t10{margin-top:4px;padding:16px;border-radius:18px;background:var(--surface);border:1px solid var(--line)}
+.t10-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.t10 h2{margin:0;font-family:var(--display);font-size:1.5rem;line-height:1.15}
+.t10-top p{margin:4px 0 0;font-size:.85rem;color:var(--muted)}
+.t10-s{flex:none;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--text);display:grid;place-items:center;cursor:pointer}.t10-s svg{width:17px;height:17px}
+.t10-bar{display:flex;gap:4px;margin-top:14px}.t10-bar i{flex:1;height:6px;border-radius:3px;background:var(--sunk);transition:background .4s}.t10-bar i.on{background:var(--accent)}
+.t10-m{display:flex;justify-content:space-between;margin-top:8px;font-size:.84rem}.t10-m span{font-weight:700}
+.t10-g{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:6px;font-size:.78rem;color:var(--muted)}.t10-g .nx-week{margin-top:0}
+.t10-i{display:flex;gap:14px;padding:16px 2px;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.t10-n{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-family:var(--mono);font-size:.85rem;font-weight:700;background:var(--sunk);color:var(--muted);margin-top:2px}
+.t10-i.next .t10-n{background:var(--accent);color:#fff}
+.t10-i.read .t10-n{background:color-mix(in srgb,var(--relief) 18%,transparent);color:var(--relief)}
+.t10-b{min-width:0;flex:1}
+.t10-up{display:inline-block;margin-bottom:6px;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.t10-c{display:flex;align-items:center;gap:6px;font-size:.72rem;font-weight:700;color:var(--muted)}.t10-c i,.t10-sec summary i{width:8px;height:8px;border-radius:50%;flex:none}
+.t10-i h3{margin:4px 0 0;font-size:1.06rem;line-height:1.38;font-weight:650;text-wrap:pretty}
+.t10-i p{margin:6px 0 0;font-size:.9rem;line-height:1.5;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.t10-src{margin-top:6px;font-size:.74rem;color:var(--muted)}
+.t10-i.read h3{font-weight:500;color:var(--muted)}
+.t10-h{margin-top:16px;font-size:.78rem;font-weight:700;color:var(--muted)}
+.t10-left{margin:16px 0 4px;text-align:center;font-size:.85rem;color:var(--muted)}
+.t10-done{margin-top:18px;padding:18px;border-radius:16px;background:color-mix(in srgb,var(--relief) 12%,var(--surface));text-align:center}.t10-done b{display:block;font-size:1.05rem}.t10-done span{display:block;margin-top:4px;font-size:.84rem;color:var(--muted)}
+.t10-more{margin-top:20px;border-top:1px solid var(--line)}
+.t10-more>summary{list-style:none;cursor:pointer;padding:16px 2px;font-weight:700;font-size:.95rem;display:flex;justify-content:space-between}.t10-more>summary::after{content:"›";transform:rotate(90deg);color:var(--muted)}.t10-more[open]>summary::after{transform:rotate(-90deg)}
+.t10-more summary::-webkit-details-marker{display:none}
+.t10-sec{border-top:1px solid var(--line)}
+.t10-sec>summary{list-style:none;cursor:pointer;padding:13px 2px;display:flex;align-items:center;gap:10px;font-size:.92rem;font-weight:600}.t10-sec>summary span{margin-inline-start:auto;font-size:.76rem;color:var(--muted)}
+.t10-row{display:block;padding:10px 2px 10px 18px;text-decoration:none;color:inherit;border-top:1px dashed var(--line)}
+.t10-row h3{margin:0;font-size:.94rem;line-height:1.4;font-weight:600}.t10-row span{font-size:.72rem;color:var(--muted)}.t10-row.read h3{color:var(--muted);font-weight:500}
+#nx-habit .nx-habit{display:none}
 /* v37: audit fixes */
 .ag2 li{grid-template-columns:70px 1fr}
 .ag-t{font-weight:600;line-height:1.35}
@@ -842,7 +873,7 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 <div class="view" id="v-news" hidden>
   <section style="padding-top:18px">
     <div id="nx-habit"></div>
-    <div class="nx-tabs"><div class="chips" id="chips" role="group" aria-label="Sections"></div><button class="nx-sbtn" id="nx-sbtn" type="button" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5" stroke-linecap="round"/></svg></button></div>
+    <div class="nx-tabs" hidden><div class="chips" id="chips"></div></div>
     <div class="nx-search" id="nx-sbox" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5" stroke-linecap="round"/></svg><input id="nx-q" type="search" autocomplete="off" aria-label="Search news"><button type="button" class="nx-sx" id="nx-sx" aria-label="Close">✕</button></div>
     <div id="nx-list" aria-live="polite"></div>
   </section>
@@ -1666,54 +1697,57 @@ function nxBlock(c,l,skipLead){
   (skipLead?l.slice(1):l).forEach((n,i)=>h+=nxRow(n,!skipLead&&i===0,skipLead?i+2:(i?i+1:0),false));
   return `<section class="nsb">${h}</section>`;
 }
-function renderNews(){
-  const fr=lang==="fr",all=[...B.news].sort((a,b)=>b.date.localeCompare(a.date));
-  const TOP=5,top={},rank=(a,b)=>(b.score||0)-(a.score||0)||b.date.localeCompare(a.date);
-  B.categories.forEach(c=>top[c.id]=all.filter(n=>n.cat===c.id).sort(rank).slice(0,TOP));
-  const pool=B.categories.flatMap(c=>top[c.id]);
-  const unseen=pool.filter(n=>!NX.read[nxId(n)]&&new Date(n.date).getTime()>NX.prev);
-  nxHabit(unseen.length);
-  if(cat==="ite")cat="all";
-  const cats=[{id:"all",en:t("all"),fr:t("all"),ar:t("all")},{id:"follow",en:"★ Following",fr:"★ Suivis",ar:"★ متابَعة"},...B.categories];
-  $("#chips").innerHTML=cats.map(c=>{const n=c.id==="all"?unseen.length:unseen.filter(x=>x.cat===c.id).length;
-    return `<button class="chip" type="button" data-cat="${c.id}" aria-pressed="${cat===c.id}">${esc(c[lang]||c.en)}${n?`<span class="n">${n}</span>`:""}</button>`;}).join("");
-  document.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>{cat=b.dataset.cat;renderNews();});
-  const qi=$("#nx-q");qi.placeholder=(lang==="ar"?"ابحث: BEAC، النفط، سندات اليورو…":fr?"Rechercher : BEAC, pétrole, Eurobond…":"Search: BEAC, oil, Eurobond…");
-  const sb=$("#nx-sbox");if(!$("#nx-sbtn").dataset.w){$("#nx-sbtn").dataset.w=1;
-    $("#nx-sbtn").onclick=()=>{sb.hidden=!sb.hidden;if(!sb.hidden)qi.focus();};
-    $("#nx-sx").onclick=()=>{qi.value="";NX.q="";sb.hidden=true;renderNews();};}
+function renderNews(){ // v39: "Today's 10" — one short list, one next step, visible progress
+  const fr=lang==="fr",ar=lang==="ar",L=(e,f,a)=>ar?a:fr?f:e,all=[...B.news].sort((a,b)=>b.date.localeCompare(a.date));
+  const now=Date.now(),day=dayKey(now),ageH=n=>(now-new Date(n.date))/36e5;
+  const rank=n=>(n.score||0)+(isFollowed(n)?1:0)+(ageH(n)<24?1:ageH(n)<48?.4:0)+(["worldwide","africa","congo","cfo"].includes(n.cat)?.3:0);
+  // Keep today's list stable while you read; top it up with the best new stories
+  let saved=store.get("nx_today",null);if(!saved||saved.day!==day)saved={day,ids:[]};
+  const byId={};all.forEach(n=>byId[nxId(n)]=n);
+  let picks=saved.ids.map(id=>byId[id]).filter(Boolean);
+  const per={};picks.forEach(n=>per[n.cat]=(per[n.cat]||0)+1);
+  for(const n of [...all].filter(n=>ageH(n)<72).sort((a,b)=>rank(b)-rank(a))){if(picks.length>=10)break;
+    if(picks.includes(n)||(per[n.cat]||0)>=2)continue;picks.push(n);per[n.cat]=(per[n.cat]||0)+1;}
+  saved.ids=picks.map(nxId);store.set("nx_today",saved);
+  const isR=n=>!!NX.read[nxId(n)],done=picks.filter(isR).length,total=picks.length,st=nxStreak(),todayN=NX.days[day]||0;
+  const nextI=picks.findIndex(n=>!isR(n)),mins=Math.max(1,Math.round(picks.filter(n=>!isR(n)).length*.7));
+  const hm=d=>d.toLocaleTimeString((ar?"ar-u-nu-latn":fr?"fr-FR":"en-GB"),{hour:"2-digit",minute:"2-digit"}),nx=nxNext();
+  const week=[...Array(7)].map((_,k)=>{const d=new Date(now-(6-k)*864e5),v=NX.days[dayKey(d)]||0;return `<i class="${v>=NX.goal?"ok":v?"part":""}"></i>`;}).join("");
+  const goalTxt=todayN>=NX.goal?L("Streak kept for today ✓","Série gardée aujourd'hui ✓","حافظت على السلسلة اليوم ✓"):L(`Read ${NX.goal-todayN} more to keep your streak`,`Encore ${NX.goal-todayN} pour garder votre série`,`اقرأ ${NX.goal-todayN} لتحافظ على سلسلتك`);
+  $("#nx-habit").innerHTML=`<div class="t10">
+    <div class="t10-top"><div><h2>${L("Today's 10","Les 10 du jour","أهم 10 اليوم")}</h2><p>${done>=total&&total?L("All done for today","Terminé pour aujourd'hui","انتهيت لليوم"):L(`About ${mins} min · the stories that matter most`,`Environ ${mins} min · l'essentiel du jour`,`حوالي ${mins} د · الأهم اليوم`)}</p></div>
+      <button class="t10-s" id="nx-sbtn" type="button" aria-label="${L("Search","Rechercher","بحث")}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5" stroke-linecap="round"/></svg></button></div>
+    <div class="t10-bar">${picks.map(n=>`<i class="${isR(n)?"on":""}"></i>`).join("")}</div>
+    <div class="t10-m"><b>${done}/${total} ${L("read","lus","مقروء")}</b><span>${st?`🔥 ${st} ${L(st>1?"days":"day",st>1?"jours":"jour","يوم")}`:""}</span></div>
+    <div class="t10-g"><span>${goalTxt}</span><span class="nx-week">${week}</span></div></div>`;
+  const qi=$("#nx-q");qi.placeholder=L("Search: BEAC, oil, Eurobond…","Rechercher : BEAC, pétrole, Eurobond…","ابحث: BEAC، النفط، سندات اليورو…");
+  const sb=$("#nx-sbox");
+  $("#nx-sbtn").onclick=()=>{sb.hidden=!sb.hidden;if(!sb.hidden)qi.focus();};
+  if(!$("#nx-sx").dataset.w){$("#nx-sx").dataset.w=1;$("#nx-sx").onclick=()=>{qi.value="";NX.q="";sb.hidden=true;renderNews();};}
   if(NX.q)sb.hidden=false;
   if(!qi.dataset.w){qi.dataset.w=1;let tm=0;qi.oninput=()=>{clearTimeout(tm);tm=setTimeout(()=>{NX.q=qi.value.trim();renderNews();},180);};}
-  const norm=s=>s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+  const norm=x=>x.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+  const tag=n=>`<span class="t10-c"><i style="background:${catColor(n.cat)}"></i>${esc(catLabel(n.cat))}</span>`;
+  const card=(n,k,next)=>{const r=isR(n),ds=nxDs(n);
+    return `<a class="t10-i${r?" read":""}${next?" next":""}" href="${esc(n.url)}" target="_blank" rel="noopener" data-nid="${esc(nxId(n))}">
+      <span class="t10-n">${r?"✓":k+1}</span><div class="t10-b">${next?`<span class="t10-up">${L("Up next","À lire maintenant","التالي")}</span>`:""}${tag(n)}
+      <h3>${esc(nxTi(n))}</h3>${ds&&!r?`<p>${esc(ds)}</p>`:""}<div class="t10-src">${esc(n.source)} · ${ago(n.date)}</div></div></a>`;};
   let html="";
-  if(NX.q){const q=norm(NX.q);const l=all.filter(n=>(cat==="all"||n.cat===cat)&&norm(n.title+" "+((n.t&&n.t.en)||"")+" "+((n.t&&n.t.fr)||"")+" "+n.source+" "+ctryWords(n)).includes(q)).slice(0,20);
-    if(!l.length){$("#nx-list").innerHTML=`<p class="empty">${(lang==="ar"?"لا توجد أخبار مطابقة.":fr?"Aucun article ne correspond.":"No stories match.")}</p>`;return;}
-    html=`<div class="ns2"><h4>${(lang==="ar"?"النتائج":fr?"Résultats":"Results")}</h4><span>${l.length}</span></div>`+l.map((n,i)=>nxRow(n,false,i+1,true)).join("");}
-  else if(cat==="follow"){
-    const F=followList(),l=all.filter(isFollowed).sort((a,b)=>(b.score||0)-(a.score||0)||b.date.localeCompare(a.date)).slice(0,20);
-    html=`<div class="fw"><div class="fw-l">${F.map((w,k)=>`<span class="fw-c">${esc(w)}<button type="button" data-fx="${k}" aria-label="${(lang==="ar"?"إزالة":fr?"Retirer":"Remove")} ${esc(w)}">×</button></span>`).join("")}</div>
-      <form class="fw-add" id="fw-add"><input id="fw-in" type="text" autocomplete="off" placeholder="${(lang==="ar"?"أضف موضوعًا: BEAC، لبنان، الكاكاو…":fr?"Ajouter un sujet : BEAC, Liban, cacao…":"Add a topic: BEAC, Lebanon, cocoa…")}"><button type="submit">${(lang==="ar"?"متابعة":fr?"Suivre":"Follow")}</button></form></div>`;
-    html+=l.length?`<div class="ns2"><h4>${(lang==="ar"?"مواضيعك":fr?"Vos sujets":"Your topics")}</h4><span>${l.length}</span></div>`+l.map((n,i)=>nxRow(n,i===0,i+1,true)).join(""):`<p class="empty">${(lang==="ar"?"لا أخبار عن مواضيعك حاليًا.":fr?"Aucun article sur vos sujets pour le moment.":"No stories on your topics right now.")}</p>`;
-    $("#nx-list").innerHTML=html;
-    $("#nx-list").querySelectorAll("[data-fx]").forEach(b=>b.onclick=()=>{const F=followList();F.splice(+b.dataset.fx,1);store.set("follow",F);renderNews();});
-    $("#fw-add").onsubmit=e=>{e.preventDefault();const v=$("#fw-in").value.trim();if(v&&v.length<40){const F=followList();if(!F.some(x=>x.toLowerCase()===v.toLowerCase()))F.push(v);store.set("follow",F);}renderNews();};
-    $("#nx-list").querySelectorAll("[data-nid]").forEach(a=>a.onclick=()=>{const n=all.find(x=>nxId(x)===a.dataset.nid);if(n){nxMarkRead(n);setTimeout(()=>{renderNews();renderSixty();},400);}});
-    return;
-  }
+  if(NX.q){const q=norm(NX.q),l=all.filter(n=>norm(n.title+" "+((n.t&&n.t.en)||"")+" "+((n.t&&n.t.fr)||"")+" "+n.source+" "+ctryWords(n)).includes(q)).slice(0,20);
+    html=l.length?`<div class="t10-h">${L("Results","Résultats","النتائج")} · ${l.length}</div>`+l.map((n,k)=>card(n,k,false)).join(""):`<p class="empty">${L("No stories match.","Aucun article ne correspond.","لا توجد أخبار مطابقة.")}</p>`;}
+  else if(!total)html=`<p class="empty">${t("nostories")}</p>`;
   else{
-    const cs=cat==="all"?B.categories:B.categories.filter(c=>c.id===cat);
-    const lead=cat==="all"?cs.map(c=>top[c.id][0]).filter(Boolean):[];
-    if(lead.length)html+=nxCar(lead);
-    cs.forEach(c=>{if(top[c.id].length>(cat==="all"?1:0))html+=nxBlock(c,top[c.id],cat==="all");});
-    if(!html){$("#nx-list").innerHTML=`<p class="empty">${t("nostories")}</p>`;return;}
-    const sc=cs.flatMap(c=>top[c.id]),left=sc.filter(n=>!NX.read[nxId(n)]).length,nx=nxNext();
-    const nxt=nx?nx.toLocaleTimeString((lang==="ar"?"ar-u-nu-latn":fr?"fr-FR":"en-GB"),{hour:"2-digit",minute:"2-digit"}):"";
-    html+=`<div class="nd-end">${left?`<b>${(lang==="ar"?`${left} متبقية للقراءة`:fr?`Encore ${left} à lire`:`${left} left to read`)}</b><span>${(lang==="ar"?"أهم العناوين، 5 في كل قسم.":fr?"Les titres essentiels, 5 par rubrique.":"The essential headlines, 5 per section.")}</span>`:`<b>✅ ${(lang==="ar"?"قرأت كل شيء. أحسنت!":fr?"Tout lu. Bravo !":"All caught up. Well done!")}</b><span>${nxt?((lang==="ar"?`عناوين جديدة حوالي ${nxt}.`:fr?`Nouveaux titres vers ${nxt}.`:`Fresh headlines around ${nxt}.`)):""}</span>`}</div>`;
+    html=picks.map((n,k)=>card(n,k,k===nextI)).join("");
+    html+=done>=total?`<div class="t10-done"><b>✅ ${L("You're up to date","Vous êtes à jour","أنت على اطلاع")}</b><span>${nx?L(`New stories around ${hm(nx)}.`,`Nouveaux articles vers ${hm(nx)}.`,`أخبار جديدة حوالي ${hm(nx)}.`):""}</span></div>`
+      :`<div class="t10-left">${L(`${total-done} left · about ${mins} min`,`Encore ${total-done} · environ ${mins} min`,`${total-done} متبقية · حوالي ${mins} د`)}</div>`;
+    // Everything else, one tap away
+    const secs=B.categories.map(c=>({c,l:all.filter(n=>n.cat===c.id).sort((a,b)=>(b.score||0)-(a.score||0)||b.date.localeCompare(a.date)).slice(0,8)})).filter(x=>x.l.length);
+    html+=`<details class="t10-more"><summary>${L("Browse by section","Parcourir par rubrique","تصفح حسب القسم")}</summary>${secs.map(({c,l})=>`<details class="t10-sec"><summary><i style="background:${catColor(c.id)}"></i>${esc(c[lang]||c.en)}<span>${l.length}</span></summary>${l.map(n=>`<a class="t10-row${isR(n)?" read":""}" href="${esc(n.url)}" target="_blank" rel="noopener" data-nid="${esc(nxId(n))}"><h3>${esc(nxTi(n))}</h3><span>${esc(n.source)} · ${ago(n.date)}</span></a>`).join("")}</details>`).join("")}</details>`;
   }
+  const open=[...document.querySelectorAll("#nx-list details[open] > summary")].map(x=>x.textContent);
   $("#nx-list").innerHTML=html;
+  document.querySelectorAll("#nx-list details > summary").forEach(x=>{if(open.includes(x.textContent))x.parentElement.open=true;});
   $("#nx-list").querySelectorAll("[data-nid]").forEach(a=>a.onclick=()=>{const n=all.find(x=>nxId(x)===a.dataset.nid);if(n){nxMarkRead(n);setTimeout(()=>{renderNews();renderSixty();},400);}});
-  $("#nx-list").querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{cat=b.dataset.go;renderNews();scrollTo({top:0,behavior:"smooth"});});
-  const tc=$("#tsc");if(tc){const d=[...$("#tsd").children];tc.onscroll=()=>{const w=tc.firstElementChild.offsetWidth+12,k=Math.round(Math.abs(tc.scrollLeft)/w);d.forEach((e,j)=>e.classList.toggle("on",j===k));};}
 }
 (function(){
   let y0=null,x0=0,t0=0;
