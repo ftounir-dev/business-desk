@@ -86,17 +86,6 @@
       "url": "https://www.beac.int/"
     },
     {
-      "id": "beac_fd",
-      "group": "rates",
-      "name": "Deposit facility",
-      "value": 0,
-      "unit": "%",
-      "date": "2026-09-28",
-      "note": "Taux de la facilité de dépôt: the floor of BEAC’s corridor, what banks earn on deposits at BEAC.",
-      "source": "BEAC",
-      "url": "https://www.beac.int/"
-    },
-    {
       "id": "pet_cn",
       "group": "pack",
       "name": "PET bottle grade · China",
