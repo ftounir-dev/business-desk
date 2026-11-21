@@ -1508,6 +1508,7 @@ async function load(manual){
   const before=B&&B.generated_at;
   try{const r=await fetch("data/brief.json?ts="+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;B=await r.json();store.set("last",B);offline=false;}
   catch(e){B=B||store.get("last",null);offline=true;if(!B){$("#banner-text").textContent="Couldn't load the brief. Check your connection and reopen the app.";loading=false;if(rb)rb.classList.remove("spin");return;}}
+  if(B&&B.categories){const O=["worldwide","africa","congo","lebanon"],r=id=>{const i=O.indexOf(id);return i<0?O.length:i;};B.categories=B.categories.map((c,i)=>[c,i]).sort((a,b)=>r(a[0].id)-r(b[0].id)||a[1]-b[1]).map(x=>x[0]);}
   lastLoad=Date.now();renderAll();loading=false;if(rb)rb.classList.remove("spin");
   if(manual){const t=document.createElement("div");t.className="toast-up";t.textContent=offline?((lang==="ar"?"غير متصل · عرض آخر نسخة":lang==="fr"?"Hors ligne · dernière version affichée":"Offline · showing the last version")):before&&before===B.generated_at?((lang==="ar"?"محدّث بالفعل ✓":lang==="fr"?"Déjà à jour ✓":"Already up to date ✓")):((lang==="ar"?"تم التحديث ✓":lang==="fr"?"Mis à jour ✓":"Updated ✓"));document.body.appendChild(t);setTimeout(()=>t.remove(),1900);}
 }
