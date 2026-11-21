@@ -1,4 +1,7 @@
 {
+  "ntfy_topic": "bd-rayan-fc9d86a0e5",
+  "app_url": "https://ftounir-dev.github.io/business-desk/",
+  "follow": ["BEAC", "CEMAC", "Congo", "Brazzaville", "Eurobond", "oil", "pétrole", "Brent", "dollar", "Lebanon", "Liban", "inflation"],
   "city": "Brazzaville",
   "eur_xaf_peg": 655.957,
   "markets": [
@@ -293,21 +296,25 @@
   "agenda": [
     {
       "date": "2026-11-29",
+      "ar": "اجتماع أوبك+",
       "en": "OPEC+ meeting",
       "fr": "Réunion de l'OPEP+"
     },
     {
       "date": "2026-12-09",
+      "ar": "قرار الاحتياطي الفيدرالي (8–9 ديسمبر)",
       "en": "Fed decision (FOMC, 8–9 Dec)",
       "fr": "Décision de la Fed (FOMC, 8–9 déc.)"
     },
     {
       "date": "2026-12-15",
+      "ar": "لجنة السياسة النقدية لـ BEAC (الموعد يُؤكَّد)",
       "en": "BEAC policy committee (date to confirm)",
       "fr": "Comité de politique monétaire BEAC (date à confirmer)"
     },
     {
       "date": "2026-12-23",
+      "ar": "تصويت البرلمان على قانون مالية 2027 (متوقع)",
       "en": "Parliament votes 2027 finance law (expected)",
       "fr": "Vote de la loi de finances 2027 (attendu)"
     }
