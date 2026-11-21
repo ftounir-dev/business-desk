@@ -276,6 +276,15 @@ section{padding-top:26px}
 .nx-lead.read h3{color:var(--muted)}
 .nx-more{display:block;width:100%;margin:16px 0 4px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font:inherit;font-weight:700;color:var(--text);cursor:pointer}
 .nx-done{margin-top:18px;padding:16px;border-radius:14px;background:var(--accent-soft);text-align:center;font-weight:600;font-size:.92rem}
+/* v36: auto-playing stories */
+.edv .ed-seg{padding:6px 16px 2px}.edv .ed-seg i{height:4px;background:color-mix(in srgb,var(--text) 20%,transparent)}.edv .ed-seg i.on{background:var(--accent)}.ed-seg i{position:relative;overflow:hidden}.ed-seg i b{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--accent);border-radius:2px}
+[dir=rtl] .ed-seg i b{left:auto;right:0}
+.ev-pp{font-size:.78rem;letter-spacing:-1px}
+.edv.ev-paused .ed-top>span::after{content:" · ❚❚";color:var(--accent)}
+.edv .ed-body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.ev-help{position:absolute;left:50%;bottom:calc(18px + env(safe-area-inset-bottom));transform:translateX(-50%);padding:8px 14px;border-radius:999px;background:rgba(0,0,0,.72);color:#fff;font-size:.78rem;font-weight:600;white-space:nowrap;opacity:0;pointer-events:none}
+.ev-help.show{animation:evHelp 4.5s ease both}
+@keyframes evHelp{0%,100%{opacity:0}10%,80%{opacity:1}}
 /* v35: visual edition (story cards) */
 .edv .ed-body{padding-top:0}
 .ev-hero{position:relative;height:clamp(190px,34vh,290px);margin:0 -22px;overflow:hidden}
@@ -988,9 +997,17 @@ function openEdition(start){
   let i=Math.min(Math.max(0,start||0),n),ed=edState(),dir=1;
   const el=document.createElement("div");el.className="ed edv";el.setAttribute("role","dialog");el.setAttribute("aria-label",edLabel());
   document.body.appendChild(el);document.body.style.overflow="hidden";
-  const close=()=>{document.removeEventListener("keydown",onKey);el.remove();document.body.style.overflow="";renderHero();renderSixty();try{renderNews();}catch(e){}};
+  const close=()=>{document.removeEventListener("keydown",onKey);if(raf)cancelAnimationFrame(raf);raf=0;el.remove();document.body.style.overflow="";renderHero();renderSixty();try{renderNews();}catch(e){}};
   const cleanImp=s=>String(s||"").replace(/^\s*(?:impact(?: pour [^:]{0,30})?|الأثر|التأثير|الأثر المتوقع)\s*[:：]\s*/i,"");
-  const seg=()=>`<div class="ed-seg">${items.map((x,k)=>`<i class="${k<i||(k===i&&i<n)?"on":""}${k===i?" cur":""}"></i>`).join("")}<i class="${i>=n?"on cur":""}"></i></div>`;
+  const seg=()=>`<div class="ed-seg">${items.map((x,k)=>`<i class="${k<i||i>=n?"on":""}${k===i?" cur":""}">${k===i&&i<n?'<b id="ev-fill"></b>':""}</i>`).join("")}</div>`;
+  // v36: stories play by themselves; hold to pause, swipe to move
+  let paused=false,holding=false,elapsed=0,dur=10,raf=0,last=0;
+  const readSecs=x=>{const w=[x.title,x.detail,x.impact||x.ctx].join(" ").split(/\s+/).filter(Boolean).length;return Math.min(28,Math.max(9,w/3.3+3));};
+  const tick=now=>{raf=0;if(!el.isConnected||i>=n)return;const dt=last?Math.min(100,now-last):0;last=now;
+    if(!paused&&!holding&&!document.hidden){elapsed+=dt/1000;const f=el.querySelector("#ev-fill");if(f)f.style.width=Math.min(100,elapsed/dur*100)+"%";if(elapsed>=dur){go(1);return;}}
+    raf=requestAnimationFrame(tick);};
+  const startTimer=()=>{elapsed=0;last=0;if(i<n){dur=readSecs(items[i]);if(!raf)raf=requestAnimationFrame(tick);}};
+  const setPaused=v=>{paused=v;const b=el.querySelector("#ev-pp");if(b){b.textContent=v?"▶":"❚❚";b.setAttribute("aria-label",v?L("Play","Lecture","تشغيل"):L("Pause","Pause","إيقاف مؤقت"));}el.classList.toggle("ev-paused",v||holding);};
   function story(){const x=items[i],c=catOf(x),cc=catColor(c),sum=cleanDl(x.detail)||"",imp=cleanImp(x.impact),cs=countriesOf((B.summary.en||[])[i]||x),ic=(REEL_CATS[c]||REEL_CATS.worldwide)[0];
     ed.seen[i]=1;edSave(ed);
     const left=n-i-1,ml=Math.max(1,Math.round(left*.45));
@@ -1019,28 +1036,35 @@ function openEdition(start){
       <p class="ev-next">⏰ ${L("Next edition around","Prochaine édition vers","العدد التالي حوالي")} <b>${nx}</b></p>
       ${B.podcast&&B.podcast[lang]?`<button type="button" class="ed-btn ev-pod" id="ed-pod">🎧 ${L("Listen to the Morning Brief","Écouter le brief audio","استمع إلى موجز الصباح")} · ${minTxt(podMins())}</button>`:""}
       <button type="button" class="ed-b2 ed-out" id="ed-news">${L("See all the news","Voir toutes les actualités","كل الأخبار")}</button></div>`;}
-  function go(d){const j=i+d;if(j<0||j>n)return;dir=d;i=j;draw();}
+  function go(d){const j=i+d;if(j<0||j>n)return;dir=d;i=j;paused=false;holding=false;draw();}
   function draw(){
     const last=i>=n;
-    el.innerHTML=`<div class="ed-top"><button class="ed-x" type="button" aria-label="${L("Close","Fermer","إغلاق")}">✕</button><span>${esc(edLabel())}</span><span></span></div>${seg()}
+    const hint=!last&&!store.get("ev_hint",false);if(hint)store.set("ev_hint",true);
+    el.innerHTML=`<div class="ed-top"><button class="ed-x" type="button" aria-label="${L("Close","Fermer","إغلاق")}">✕</button><span>${esc(edLabel())}</span>${last?"<span></span>":`<button class="ed-x ev-pp" id="ev-pp" type="button" aria-label="${L("Pause","Pause","إيقاف مؤقت")}">${paused?"▶":"❚❚"}</button>`}</div>${seg()}
       <div class="ed-body ${dir>0?"ev-in":"ev-back"}">${last?finish():story()}</div>
-      <div class="ed-nav">${i>0&&!last?`<button type="button" class="ed-b2" id="ed-prev">‹ ${L("Back","Retour","رجوع")}</button>`:"<span></span>"}
-        ${last?`<button type="button" class="ed-btn" id="ed-close">${L("Close","Fermer","إغلاق")}</button>`:`<button type="button" class="ed-btn" id="ed-next">${i+1<n?L("Next","Suivant","التالي"):L("Finish","Terminer","إنهاء")} ›</button>`}</div>`;
+      ${last?`<div class="ed-nav"><span></span><button type="button" class="ed-btn" id="ed-close">${L("Close","Fermer","إغلاق")}</button></div>`:`<div class="ev-help${hint?" show":""}">${L("Hold to pause · swipe to move","Maintenez pour mettre en pause · glissez pour avancer","اضغط مطولًا للإيقاف · اسحب للتنقل")}</div>`}`;
     el.querySelector(".ed-x").onclick=close;
     const q=s=>el.querySelector(s);
     if(q("#ed-close"))q("#ed-close").onclick=close;
     if(q("#ed-news"))q("#ed-news").onclick=()=>{close();location.hash="#news";};
     if(q("#ed-pod"))q("#ed-pod").onclick=()=>{close();openPod();};
-    if(q("#ed-read"))q("#ed-read").onclick=()=>nxMarkRead(items[i]);
+    if(q("#ed-read"))q("#ed-read").onclick=()=>{nxMarkRead(items[i]);setPaused(true);};
+    if(q("#ev-pp"))q("#ev-pp").onclick=()=>setPaused(!paused);
+    el.classList.toggle("ev-paused",paused);startTimer();
     if(q("#ed-prev"))q("#ed-prev").onclick=()=>go(-1);
     if(q("#ed-next"))q("#ed-next").onclick=()=>go(1);
     const rtl=ar;if(q(".ev-tap.prev"))q(".ev-tap.prev").onclick=()=>go(rtl?1:-1);if(q(".ev-tap.next"))q(".ev-tap.next").onclick=()=>go(rtl?-1:1);
   }
-  let tx=0,ty=0;
-  el.addEventListener("touchstart",e=>{tx=e.touches[0].clientX;ty=e.touches[0].clientY;},{passive:true});
-  el.addEventListener("touchend",e=>{const dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;
+  let tx=0,ty=0,ht=0;
+  const ctl=t=>t.closest&&t.closest("button,a,.ed-top");
+  const holdOn=t=>{if(ctl(t))return;ht=setTimeout(()=>{holding=true;el.classList.add("ev-paused");},160);};
+  const holdOff=()=>{clearTimeout(ht);if(holding){holding=false;el.classList.toggle("ev-paused",paused);last=0;}};
+  el.addEventListener("touchstart",e=>{tx=e.touches[0].clientX;ty=e.touches[0].clientY;holdOn(e.target);},{passive:true});
+  el.addEventListener("touchend",e=>{holdOff();const dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;
     if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.5&&i<=n){const d=dx<0?1:-1;go(ar?-d:d);}},{passive:true});
-  function onKey(e){if(e.key==="ArrowRight")go(ar?-1:1);else if(e.key==="ArrowLeft")go(ar?1:-1);else if(e.key==="Escape")close();}
+  el.addEventListener("touchcancel",holdOff,{passive:true});
+  el.addEventListener("mousedown",e=>holdOn(e.target));el.addEventListener("mouseup",holdOff);el.addEventListener("mouseleave",holdOff);
+  function onKey(e){if(e.key==="ArrowRight")go(ar?-1:1);else if(e.key==="ArrowLeft")go(ar?1:-1);else if(e.key===" "&&i<n){e.preventDefault();setPaused(!paused);}else if(e.key==="Escape")close();}
   document.addEventListener("keydown",onKey);
   draw();
 }
