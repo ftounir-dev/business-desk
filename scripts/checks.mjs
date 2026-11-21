@@ -28,6 +28,10 @@ ok(sectionOk("bev", "EU deposit return rules push brands toward rPET bottles"), 
 ok(sectionOk("bev", "Raw sugar futures hit three-month high on Brazil output worries"), "Beverages: world sugar market kept");
 ok(!sectionOk("cfo", "60 100 dollars découverts sur un voyageur à Godomey"), "CFO: cash found on a traveller excluded");
 ok(!sectionOk("cfo", "Police seize $2 million in counterfeit notes"), "CFO: crime excluded");
+ok(!sectionOk("cfo", "PayPal taps Xero's Claire Bramley as CFO, succeeding Jamie Miller"), "CFO: executive appointments excluded");
+ok(!sectionOk("bev", "Coca-Cola stock: TD Cowen names 2027 top pick, lifts target to $112"), "Beverages: share-price stories excluded");
+ok(!sectionOk("bev", "Coca-Cola Company Price Today | KO Live Price, Chart & Market Cap"), "Beverages: stock quote pages excluded");
+ok(sectionOk("bev", "Ball increases investment by 37% as aluminum beverage can capacity tightens"), "Beverages: can capacity kept");
 ok(sectionOk("cfo", "UEMOA : Le risque souverain pèse sur 37,6% des actifs bancaires"), "CFO: banking risk kept");
 ok(sectionOk("cfo", "Cameroun : les SVT boudent les émissions obligataires du Trésor"), "CFO: Treasury bond market kept");
 
