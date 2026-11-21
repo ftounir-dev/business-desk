@@ -276,6 +276,78 @@ section{padding-top:26px}
 .nx-lead.read h3{color:var(--muted)}
 .nx-more{display:block;width:100%;margin:16px 0 4px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font:inherit;font-weight:700;color:var(--text);cursor:pointer}
 .nx-done{margin-top:18px;padding:16px;border-radius:14px;background:var(--accent-soft);text-align:center;font-weight:600;font-size:.92rem}
+/* v35: visual edition (story cards) */
+.edv .ed-body{padding-top:0}
+.ev-hero{position:relative;height:clamp(190px,34vh,290px);margin:0 -22px;overflow:hidden}
+.ev-hero .nv{position:absolute;inset:0}.ev-hero .nv-fl{font-size:3.6rem}.ev-hero .nv-fig{left:22px;bottom:auto;top:56px;font-size:2.7rem}
+.ev-sh{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 35%,rgba(0,0,0,0) 65%,rgba(0,0,0,.25) 100%);pointer-events:none}
+.ev-tags{position:absolute;top:14px;left:18px;right:70px;display:flex;flex-wrap:wrap;gap:6px}
+[dir=rtl] .ev-tags{left:70px;right:18px}
+.ev-cat,.ev-ct{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border-radius:999px;font-size:.68rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#fff}
+.ev-ct{background:rgba(0,0,0,.45);backdrop-filter:blur(6px)}
+[dir=rtl] .ev-cat,[dir=rtl] .ev-ct{letter-spacing:0}
+.ev-n{position:absolute;top:14px;right:18px;padding:5px 10px;border-radius:999px;background:rgba(0,0,0,.45);color:#fff;font-family:var(--mono);font-size:.72rem;font-weight:700}
+[dir=rtl] .ev-n{right:auto;left:18px}
+.ev-tap{position:absolute;top:0;bottom:0;border:0;background:transparent;cursor:pointer;padding:0}
+.ev-tap.prev{left:0;width:30%}.ev-tap.next{right:0;width:70%}
+.ev-main{padding-top:18px}
+.ev-main .ed-ti{margin-top:0}
+.ev-blk{display:flex;gap:12px;align-items:flex-start;margin-top:16px}
+.ev-ic{flex:none;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:var(--sunk);font-size:1rem}
+.ev-blk b{display:block;font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
+[dir=rtl] .ev-blk b{letter-spacing:0}
+.ev-blk p{margin:0;font-size:1rem;line-height:1.55}
+.ev-imp{padding:14px;border-radius:16px;background:color-mix(in srgb,var(--cc) 13%,var(--surface));border:1px solid color-mix(in srgb,var(--cc) 35%,transparent)}
+.ev-imp .ev-ic{background:var(--cc);color:#fff}.ev-imp b{color:var(--cc)}
+.ev-imp p{font-weight:600}
+@media (prefers-reduced-motion:no-preference){.ed-body.ev-in{animation:evIn .28s ease both}.ed-body.ev-back{animation:evBack .28s ease both}}
+@keyframes evIn{from{opacity:0;transform:translateX(26px)}to{opacity:1;transform:none}}
+@keyframes evBack{from{opacity:0;transform:translateX(-26px)}to{opacity:1;transform:none}}
+.ed-seg i{transition:background .3s}
+.ev-done{position:relative;text-align:center;padding:34px 0 10px;overflow:hidden}
+.ev-conf{position:absolute;inset:0 0 auto 0;height:260px;pointer-events:none}
+.ev-conf i{position:absolute;top:-12px;width:8px;height:12px;border-radius:2px;opacity:0}
+@media (prefers-reduced-motion:no-preference){.ev-conf i{animation:evConf 2s ease-in forwards}}
+@keyframes evConf{0%{opacity:1;transform:translateY(0) rotate(0)}100%{opacity:0;transform:translateY(250px) rotate(540deg)}}
+.ev-flame{position:relative;width:104px;height:104px;margin:0 auto;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 50% 60%,rgba(217,164,65,.35),rgba(217,164,65,.08) 70%)}
+.ev-flame span{font-size:3.2rem;line-height:1}
+.ev-flame b{position:absolute;bottom:4px;right:6px;min-width:34px;height:34px;padding:0 6px;border-radius:17px;display:grid;place-items:center;background:var(--accent);color:#fff;font-family:var(--mono);font-size:1rem;box-shadow:0 4px 12px rgba(0,0,0,.2)}
+@media (prefers-reduced-motion:no-preference){.ev-flame{animation:evPop .5s cubic-bezier(.3,1.6,.5,1) both}}
+@keyframes evPop{from{transform:scale(.4);opacity:0}to{transform:none;opacity:1}}
+.ev-streak{margin:10px 0 0;font-weight:800;color:var(--accent)}
+.ev-done .ed-ti{margin-top:8px}
+.ev-sub{margin:6px 0 0;color:var(--muted);font-size:.92rem}
+.ev-wk{display:flex;gap:6px;max-width:320px;margin:18px auto 0}
+.ev-wk span{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;font-size:.62rem;font-weight:700;color:var(--muted)}
+.ev-wk i{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--line);font-style:normal;font-size:.72rem;font-weight:800;color:#fff}
+.ev-wk .on i{background:var(--accent);border-color:var(--accent)}.ev-wk .td{color:var(--text)}.ev-wk .td i{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}.ev-wk .fu{opacity:.45}
+.ev-next{margin:18px 0 0;font-size:.9rem;color:var(--muted)}.ev-next b{color:var(--text)}
+.ev-pod{display:block;width:100%;margin-top:20px}
+/* v35: Morning Brief player */
+.pd-card{text-align:center;padding:8px 0 4px}
+.pd-art{position:relative;width:118px;height:118px;margin:6px auto 0;border-radius:30px;display:grid;place-items:center;background:linear-gradient(150deg,#1c3157,#0f1b33);box-shadow:0 14px 30px rgba(15,27,51,.3);overflow:hidden}
+.pd-art span{font-size:2.8rem;position:relative;z-index:1}
+.pd-art i{position:absolute;bottom:14px;width:6px;border-radius:3px;background:#d9a441;height:10px;opacity:.85}
+.pd-art i:nth-of-type(1){left:34px}.pd-art i:nth-of-type(2){left:46px}.pd-art i:nth-of-type(3){left:58px}.pd-art i:nth-of-type(4){left:70px}.pd-art i:nth-of-type(5){left:82px}
+@media (prefers-reduced-motion:no-preference){.pd-art.on i{animation:pdEq .9s ease-in-out infinite alternate}.pd-art.on i:nth-of-type(2){animation-delay:.15s}.pd-art.on i:nth-of-type(3){animation-delay:.3s}.pd-art.on i:nth-of-type(4){animation-delay:.45s}.pd-art.on i:nth-of-type(5){animation-delay:.6s}}
+@keyframes pdEq{from{height:6px}to{height:26px}}
+.pd-ti{margin:16px 0 0;font-family:var(--display);font-size:1.5rem;font-weight:700}
+.pd-sub{margin:4px 0 0;font-size:.84rem;color:var(--muted)}
+.pd-ch{margin:14px 0 0;font-size:.74rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);min-height:1em}
+[dir=rtl] .pd-ch{letter-spacing:0}
+.pd-seek{width:100%;margin:10px 0 0;accent-color:var(--accent);height:24px}
+.pd-time{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.74rem;color:var(--muted)}
+.pd-seek,.pd-time{direction:ltr}
+.pd-ctl{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px;direction:ltr}
+.pd-ctl .pod-play{width:66px;height:66px;font-size:1.4rem}
+.pd-j{position:relative;width:52px;height:52px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--text);cursor:pointer;display:grid;place-items:center}
+.pd-j b{font-size:1.5rem;line-height:1;font-weight:400}.pd-j small{position:absolute;font-size:.56rem;font-weight:800;top:50%;left:50%;transform:translate(-50%,-38%)}
+.pd-sp{width:52px;height:34px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--text);font:inherit;font-weight:800;font-size:.86rem;cursor:pointer}
+.pd-sp.on{background:var(--accent);border-color:var(--accent);color:#fff}.pd-sp.ghost{visibility:hidden}
+.pd-note{margin:10px 0 0;font-size:.74rem;color:var(--muted);min-height:1em}
+.pd-h{margin:22px 0 0;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.pod-s li{display:block}.pod-s li .pd-tag{display:block;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:3px}
+.pod-s li.on{background:var(--accent-soft);border-radius:12px;padding-left:10px;padding-right:10px}
 /* v33: cover photo, week view, since-last-visit */
 .h-cov{position:absolute;inset:0;z-index:0;pointer-events:none}
 .h-cov img{width:100%;height:68%;object-fit:cover;opacity:.9;-webkit-mask-image:linear-gradient(#000 30%,transparent 100%);mask-image:linear-gradient(#000 30%,transparent 100%)}
@@ -911,40 +983,65 @@ function edNext(){const d=new Date(),c=new Date(d);c.setUTCSeconds(0,0);c.setUTC
   if(d.getUTCHours()<6||(d.getUTCHours()===6&&d.getUTCMinutes()<15))c.setUTCHours(6);else if(d.getUTCHours()<17||(d.getUTCHours()===17&&d.getUTCMinutes()<15))c.setUTCHours(17);else{c.setUTCDate(c.getUTCDate()+1);c.setUTCHours(6);}return c;}
 function edStreak(){const D=store.get("ed_days",{});let d=new Date(),s=0;if(!D[dayKey(d)])d.setDate(d.getDate()-1);while(D[dayKey(d)]){s++;d.setDate(d.getDate()-1);}return s;}
 function openEdition(start){
-  const fr=lang==="fr",items=B.summary[lang]||B.summary.en||[],n=items.length;if(!n)return;
-  let i=Math.min(Math.max(0,start||0),n),ed=edState();
-  const el=document.createElement("div");el.className="ed";el.setAttribute("role","dialog");el.setAttribute("aria-label",edLabel());
+  const fr=lang==="fr",ar=lang==="ar",items=B.summary[lang]||B.summary.en||[],n=items.length;if(!n)return;
+  const L=(e,f,a)=>ar?a:fr?f:e;
+  let i=Math.min(Math.max(0,start||0),n),ed=edState(),dir=1;
+  const el=document.createElement("div");el.className="ed edv";el.setAttribute("role","dialog");el.setAttribute("aria-label",edLabel());
   document.body.appendChild(el);document.body.style.overflow="hidden";
-  const close=()=>{el.remove();document.body.style.overflow="";renderHero();renderSixty();try{renderNews();}catch(e){}};
+  const close=()=>{document.removeEventListener("keydown",onKey);el.remove();document.body.style.overflow="";renderHero();renderSixty();try{renderNews();}catch(e){}};
+  const cleanImp=s=>String(s||"").replace(/^\s*(?:impact(?: pour [^:]{0,30})?|الأثر|التأثير|الأثر المتوقع)\s*[:：]\s*/i,"");
   const seg=()=>`<div class="ed-seg">${items.map((x,k)=>`<i class="${k<i||(k===i&&i<n)?"on":""}${k===i?" cur":""}"></i>`).join("")}<i class="${i>=n?"on cur":""}"></i></div>`;
-  function story(){const x=items[i],c=catOf(x),f=figOf(x.title),sum=cleanDl(x.detail)||"";
+  function story(){const x=items[i],c=catOf(x),cc=catColor(c),sum=cleanDl(x.detail)||"",imp=cleanImp(x.impact),cs=countriesOf((B.summary.en||[])[i]||x),ic=(REEL_CATS[c]||REEL_CATS.worldwide)[0];
     ed.seen[i]=1;edSave(ed);
-    return `<div class="ed-k" style="color:${catColor(c)}">${esc(catLabel(c))}${countriesOf(x).length?" · "+esc(countriesOf(x).map(q=>L3(q)).slice(0,1)[0]):""} <span>· ${i+1} / ${n}</span></div>
-      ${f?`<div class="ed-fig" style="color:${catColor(c)}">${esc(f)}</div>`:""}
-      <h2 class="ed-ti">${esc(x.title)}</h2>
-      ${sum?`<p class="ed-p"><b>${(lang==="ar"?"ماذا حدث":fr?"Ce qui s'est passé":"What happened")}</b>${esc(sum)}</p>`:""}
-      ${x.impact?`<p class="ed-p"><b>${t("impact")}</b>${esc(String(x.impact).replace(/^\s*(?:impact(?: pour [^:]{0,30})?|الأثر)\s*[:：]\s*/i,""))}</p>`:x.ctx?`<p class="ed-p"><b>${(lang==="ar"?"سياق السوق":fr?"Contexte de marché":"Market context")}</b>${esc(x.ctx)}</p>`:""}
-      <div class="ed-src"><span>${esc(x.source||"")}${x.date?" · "+ago(x.date):""}</span>${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener" id="ed-read">${(lang==="ar"?"اقرأ المقال":fr?"Lire l'article":"Read the article")} ↗</a>`:""}</div>`;}
+    const left=n-i-1,ml=Math.max(1,Math.round(left*.45));
+    return `<div class="ev-hero">${nxArt({...x,cat:c},true,cs)}<div class="ev-sh"></div>
+        <div class="ev-tags"><span class="ev-cat" style="background:${cc}">${ic} ${esc(catLabel(c))}</span>${cs.length?`<span class="ev-ct">${cs[0][1]} ${esc(L3(cs[0]))}</span>`:""}</div>
+        <span class="ev-n">${i+1} / ${n}</span>
+        <button type="button" class="ev-tap prev" aria-label="${L("Previous","Précédent","السابق")}"></button><button type="button" class="ev-tap next" aria-label="${L("Next","Suivant","التالي")}"></button></div>
+      <div class="ev-main" style="--cc:${cc}">
+        <h2 class="ed-ti">${esc(x.title)}</h2>
+        ${sum?`<div class="ev-blk"><span class="ev-ic">📰</span><div><b>${L("What happened","Ce qui s'est passé","ماذا حدث")}</b><p>${esc(sum)}</p></div></div>`:""}
+        ${imp?`<div class="ev-blk ev-imp"><span class="ev-ic">⚡</span><div><b>${t("impact")}</b><p>${esc(imp)}</p></div></div>`:x.ctx?`<div class="ev-blk ev-imp"><span class="ev-ic">📈</span><div><b>${L("Market context","Contexte de marché","سياق السوق")}</b><p>${esc(x.ctx)}</p></div></div>`:""}
+        <div class="ed-src"><span>${esc(x.source||"")}${x.date?" · "+ago(x.date):""}${left?` · ${L("about","encore","حوالي")} ${minTxt(ml)} ${L("left","","متبقية")}`:""}</span>${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener" id="ed-read">${L("Read the article","Lire l'article","اقرأ المقال")} ↗</a>`:""}</div>
+      </div>`;}
   function finish(){
-    const D=store.get("ed_days",{});D[dayKey(new Date())]=1;store.set("ed_days",D);ed.done=true;edSave(ed);
-    const st=edStreak(),nx=edNext().toLocaleTimeString((lang==="ar"?"ar-u-nu-latn":fr?"fr-FR":"en-GB"),{hour:"2-digit",minute:"2-digit"});
-    return `<div class="ed-done"><div class="ed-big">✓</div><h2 class="ed-ti">${(lang==="ar"?"اكتمل العدد":fr?"Édition terminée":"Edition complete")}</h2>
-      <p class="ed-p">🔥 ${st} ${lang==="ar"?"يوم متتالٍ":fr?(st>1?"jours de suite":"jour de suite"):(st>1?"days in a row":"day in a row")}</p>
-      <p class="ed-p">${(lang==="ar"?"العدد التالي حوالي":fr?"Prochaine édition vers":"Next edition around")} ${nx}</p>
-      <button type="button" class="ed-b2 ed-out" id="ed-news">${(lang==="ar"?"كل الأخبار":fr?"Voir toutes les actualités":"See all the news")}</button></div>`;}
+    const D=store.get("ed_days",{}),first=!D[dayKey(new Date())];D[dayKey(new Date())]=1;store.set("ed_days",D);ed.done=true;edSave(ed);
+    const st=edStreak(),nx=edNext().toLocaleTimeString(loc(),{hour:"2-digit",minute:"2-digit"});
+    if(first)try{navigator.vibrate&&navigator.vibrate([18,40,18]);}catch(e){}
+    const cols=["#d9a441","#2a4fb8","#12895a","#c8661f","#c22a6a","#6740c4"];
+    const conf=Array.from({length:26},(_,k)=>`<i style="left:${(k*37)%100}%;background:${cols[k%cols.length]};animation-delay:${(k%9)*.07}s;animation-duration:${1.6+(k%5)*.25}s"></i>`).join("");
+    return `<div class="ev-done"><div class="ev-conf" aria-hidden="true">${conf}</div>
+      <div class="ev-flame"><span>🔥</span><b>${st}</b></div>
+      <p class="ev-streak">${st} ${ar?"يوم متتالٍ":fr?(st>1?"jours de suite":"jour de suite"):(st>1?"days in a row":"day in a row")}</p>
+      <h2 class="ed-ti">${L("Edition complete","Édition terminée","اكتمل العدد")}</h2>
+      <p class="ev-sub">${n} ${L("stories · you're up to date","sujets · vous êtes à jour","أخبار · أنت على اطلاع")}</p>
+      <div class="ev-wk">${edWeek()}</div>
+      <p class="ev-next">⏰ ${L("Next edition around","Prochaine édition vers","العدد التالي حوالي")} <b>${nx}</b></p>
+      ${B.podcast&&B.podcast[lang]?`<button type="button" class="ed-btn ev-pod" id="ed-pod">🎧 ${L("Listen to the Morning Brief","Écouter le brief audio","استمع إلى موجز الصباح")} · ${minTxt(podMins())}</button>`:""}
+      <button type="button" class="ed-b2 ed-out" id="ed-news">${L("See all the news","Voir toutes les actualités","كل الأخبار")}</button></div>`;}
+  function go(d){const j=i+d;if(j<0||j>n)return;dir=d;i=j;draw();}
   function draw(){
-    const last=i>=n,quizDone=last;
-    el.innerHTML=`<div class="ed-top"><button class="ed-x" type="button" aria-label="${(lang==="ar"?"إغلاق":fr?"Fermer":"Close")}">✕</button><span>${esc(edLabel())}</span><span></span></div>${seg()}
-      <div class="ed-body">${last?finish():story()}</div>
-      <div class="ed-nav">${i>0&&!quizDone?`<button type="button" class="ed-b2" id="ed-prev">‹ ${(lang==="ar"?"رجوع":fr?"Retour":"Back")}</button>`:"<span></span>"}
-        ${quizDone?`<button type="button" class="ed-btn" id="ed-close">${(lang==="ar"?"إغلاق":fr?"Fermer":"Close")}</button>`:`<button type="button" class="ed-btn" id="ed-next">${i+1<n?((lang==="ar"?"التالي":fr?"Suivant":"Next")):((lang==="ar"?"إنهاء":fr?"Terminer":"Finish"))} ›</button>`}</div>`;
+    const last=i>=n;
+    el.innerHTML=`<div class="ed-top"><button class="ed-x" type="button" aria-label="${L("Close","Fermer","إغلاق")}">✕</button><span>${esc(edLabel())}</span><span></span></div>${seg()}
+      <div class="ed-body ${dir>0?"ev-in":"ev-back"}">${last?finish():story()}</div>
+      <div class="ed-nav">${i>0&&!last?`<button type="button" class="ed-b2" id="ed-prev">‹ ${L("Back","Retour","رجوع")}</button>`:"<span></span>"}
+        ${last?`<button type="button" class="ed-btn" id="ed-close">${L("Close","Fermer","إغلاق")}</button>`:`<button type="button" class="ed-btn" id="ed-next">${i+1<n?L("Next","Suivant","التالي"):L("Finish","Terminer","إنهاء")} ›</button>`}</div>`;
     el.querySelector(".ed-x").onclick=close;
-    const cl=el.querySelector("#ed-close");if(cl)cl.onclick=close;
-    const nw=el.querySelector("#ed-news");if(nw)nw.onclick=()=>{close();location.hash="#news";};
-    const rd=el.querySelector("#ed-read");if(rd)rd.onclick=()=>nxMarkRead(items[i]);
-    const pv=el.querySelector("#ed-prev");if(pv)pv.onclick=()=>{i=Math.max(0,i-1);draw();};
-    const nb=el.querySelector("#ed-next");if(nb)nb.onclick=()=>{if(i<n){i++;draw();el.querySelector(".ed-body").scrollTop=0;}};
+    const q=s=>el.querySelector(s);
+    if(q("#ed-close"))q("#ed-close").onclick=close;
+    if(q("#ed-news"))q("#ed-news").onclick=()=>{close();location.hash="#news";};
+    if(q("#ed-pod"))q("#ed-pod").onclick=()=>{close();openPod();};
+    if(q("#ed-read"))q("#ed-read").onclick=()=>nxMarkRead(items[i]);
+    if(q("#ed-prev"))q("#ed-prev").onclick=()=>go(-1);
+    if(q("#ed-next"))q("#ed-next").onclick=()=>go(1);
+    const rtl=ar;if(q(".ev-tap.prev"))q(".ev-tap.prev").onclick=()=>go(rtl?1:-1);if(q(".ev-tap.next"))q(".ev-tap.next").onclick=()=>go(rtl?-1:1);
   }
+  let tx=0,ty=0;
+  el.addEventListener("touchstart",e=>{tx=e.touches[0].clientX;ty=e.touches[0].clientY;},{passive:true});
+  el.addEventListener("touchend",e=>{const dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;
+    if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.5&&i<=n){const d=dx<0?1:-1;go(ar?-d:d);}},{passive:true});
+  function onKey(e){if(e.key==="ArrowRight")go(ar?-1:1);else if(e.key==="ArrowLeft")go(ar?1:-1);else if(e.key==="Escape")close();}
+  document.addEventListener("keydown",onKey);
   draw();
 }
 function showSlide(k){
@@ -977,35 +1074,79 @@ function pickVoice(l){const vs=(window.speechSynthesis&&speechSynthesis.getVoice
 if(window.speechSynthesis)speechSynthesis.onvoiceschanged=()=>{};
 /* ---------- The Morning Brief (audio) ---------- */
 function podMins(){const P=B.podcast||{};const s=P.audio_secs&&P.audio_secs[lang];return s?Math.max(1,Math.round(s/60)):(P["mins_"+lang]||2);}
+/* v35: Morning Brief player: speed 1x/1.5x/2x, scrub, ±15 s, chapters, resume, lock-screen controls */
 function openPod(){
   const P=B.podcast,S=(P&&P[lang])||[];if(!S.length)return;
   const fr=lang==="fr",ar=lang==="ar",src=P.audio&&P.audio[lang];
+  const L=(e,f,a)=>ar?a:fr?f:e;
   const el=document.createElement("div");el.className="ed pod";document.body.appendChild(el);document.body.style.overflow="hidden";
-  let i=0,playing=false,audio=null,stopped=false;
-  const title=ar?"موجز الصباح الصوتي":fr?"Le brief audio":"The Morning Brief";
-  el.innerHTML=`<div class="ed-top"><button class="ed-x" type="button" aria-label="${ar?"إغلاق":fr?"Fermer":"Close"}">✕</button><span>${esc(edLabel())}</span><span></span></div>
-    <div class="ed-body"><div class="ed-k">🎧 ${title} <span>· ${minTxt(podMins())}</span></div>
-    <div class="pod-ctl"><button type="button" class="pod-play" id="pod-play" aria-label="Play">▶</button>
-      <div class="pod-bar"><i id="pod-fill"></i></div></div>
-    <p class="pod-src">${src?(ar?"صوت طبيعي":fr?"Voix naturelle":"Natural voice"):(ar?"صوت الهاتف":fr?"Voix du téléphone":"Phone voice")}</p>
-    <ol class="pod-s">${S.map((x,k)=>`<li data-k="${k}" class="pk-${x.k}">${esc(x.text)}</li>`).join("")}</ol></div>`;
-  const li=[...el.querySelectorAll(".pod-s li")],btn=el.querySelector("#pod-play"),fill=el.querySelector("#pod-fill");
-  const mark=k=>{li.forEach((e,j)=>e.classList.toggle("on",j===k));const e=li[k];if(e)e.scrollIntoView({block:"nearest",behavior:"smooth"});fill.style.width=Math.round(k/Math.max(1,S.length-1)*100)+"%";};
-  const close=()=>{stopped=true;if(audio){audio.pause();audio=null;}try{speechSynthesis.cancel();}catch(e){}el.remove();document.body.style.overflow="";};
+  let audio=null,speaking=false,si=0,rate=store.get("pod_rate",1);
+  const title=L("The Morning Brief","Le brief audio","موجز الصباح الصوتي");
+  let pn=0;const chap=S.map(x=>x.k==="point"?L("Story ","Sujet ","خبر ")+(++pn):x.k==="markets"?L("Markets","Marchés","الأسواق"):x.k==="number"?L("Number of the day","Le chiffre du jour","رقم اليوم"):x.k==="watch"?L("What to watch","À surveiller","ما يجب متابعته"):x.k==="intro"?L("Welcome","Introduction","مقدمة"):x.k==="outro"?L("Sign-off","Conclusion","الختام"):"");
+  const lens=S.map(x=>x.text.length),tot=lens.reduce((a,b)=>a+b,0);
+  const mm=s=>{s=Math.max(0,Math.round(s||0));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0");};
+  const rl=r=>(r===1?"1":String(r).replace(".",fr?",":"."))+"×";
+  el.innerHTML=`<div class="ed-top"><button class="ed-x" type="button" aria-label="${L("Close","Fermer","إغلاق")}">✕</button><span>${esc(edLabel())}</span><span></span></div>
+    <div class="ed-body"><div class="pd-card"><div class="pd-art" aria-hidden="true"><span>🎧</span><i></i><i></i><i></i><i></i><i></i></div>
+      <h2 class="pd-ti">${title}</h2><p class="pd-sub">${esc(new Date(B.summary_at||Date.now()).toLocaleDateString(loc(),{weekday:"long",day:"numeric",month:"long"}))} · ${minTxt(podMins())}</p>
+      <p class="pd-ch" id="pd-ch">${esc(chap[0]||"")}</p>
+      <input type="range" class="pd-seek" id="pd-seek" min="0" max="1000" value="0" step="1" aria-label="${L("Position","Position","الموضع")}">
+      <div class="pd-time"><span id="pd-cur">0:00</span><span id="pd-dur">${src&&P.audio_secs&&P.audio_secs[lang]?mm(P.audio_secs[lang]):""}</span></div>
+      <div class="pd-ctl">
+        <button type="button" class="pd-sp" id="pd-rate" aria-label="${L("Playback speed","Vitesse de lecture","سرعة التشغيل")}">${rl(rate)}</button>
+        <button type="button" class="pd-j" id="pd-back" aria-label="${L("Back 15 seconds","Reculer de 15 secondes","رجوع 15 ثانية")}"><b>↺</b><small>15</small></button>
+        <button type="button" class="pod-play" id="pod-play" aria-label="Play">▶</button>
+        <button type="button" class="pd-j" id="pd-fwd" aria-label="${L("Forward 15 seconds","Avancer de 15 secondes","تقديم 15 ثانية")}"><b>↻</b><small>15</small></button>
+        <span class="pd-sp ghost"></span>
+      </div>
+      <p class="pd-note" id="pd-note">${src?"":L("Phone voice","Voix du téléphone","صوت الهاتف")}</p></div>
+    <h3 class="pd-h">${L("Chapters","Chapitres","الفصول")}</h3>
+    <ol class="pod-s">${S.map((x,k)=>`<li data-k="${k}" class="pk-${x.k}">${chap[k]?`<b class="pd-tag">${esc(chap[k])}</b>`:""}<span>${esc(x.text)}</span></li>`).join("")}</ol></div>`;
+  const li=[...el.querySelectorAll(".pod-s li")],btn=el.querySelector("#pod-play"),seek=el.querySelector("#pd-seek"),cur=el.querySelector("#pd-cur"),dur=el.querySelector("#pd-dur"),ch=el.querySelector("#pd-ch"),rb=el.querySelector("#pd-rate"),art=el.querySelector(".pd-art");
+  let lastK=-1;const mark=k=>{if(k===lastK)return;lastK=k;li.forEach((e,j)=>e.classList.toggle("on",j===k));ch.textContent=chap[k]||"";};
+  const playingUI=on=>{btn.textContent=on?"❚❚":"▶";btn.setAttribute("aria-label",on?"Pause":"Play");art.classList.toggle("on",on);};
+  const posKey="pod_pos";
+  const close=()=>{if(audio){store.set(posKey,{id:P.id,lang,t:audio.currentTime});audio.pause();audio=null;}speaking=false;try{speechSynthesis.cancel();}catch(e){}
+    try{navigator.mediaSession.metadata=null;}catch(e){}el.remove();document.body.style.overflow="";};
   el.querySelector(".ed-x").onclick=close;
-  if(src){audio=new Audio(src);audio.preload="auto";
-    // spread the highlight over the segments by text length
-    const lens=S.map(x=>x.text.length),tot=lens.reduce((a,b)=>a+b,0);
-    audio.ontimeupdate=()=>{if(!audio.duration)return;const p=audio.currentTime/audio.duration;fill.style.width=(p*100)+"%";let acc=0,k=0;for(;k<lens.length;k++){acc+=lens[k]/tot;if(p<acc)break;}li.forEach((e,j)=>e.classList.toggle("on",j===Math.min(k,S.length-1)));};
-    audio.onended=()=>{playing=false;btn.textContent="↺";};
-    audio.onerror=()=>{audio=null;btn.textContent="▶";};
-    btn.onclick=()=>{if(!audio){speak();return;}if(audio.paused){audio.play();btn.textContent="❚❚";}else{audio.pause();btn.textContent="▶";}};}
-  else btn.onclick=()=>{if(playing){speechSynthesis.cancel();playing=false;btn.textContent="▶";return;}speak();};
-  function speak(){if(!window.speechSynthesis)return;stopped=false;playing=true;btn.textContent="❚❚";speechSynthesis.cancel();
-    const L=ar?"ar-SA":fr?"fr-FR":"en-GB",v=pickVoice(L);
-    const next=()=>{if(stopped||!playing)return;if(i>=S.length){playing=false;btn.textContent="↺";i=0;return;}mark(i);
-      const u=new SpeechSynthesisUtterance(S[i].text);u.lang=L;if(v)u.voice=v;u.rate=1;u.onend=()=>{i++;next();};speechSynthesis.speak(u);};next();}
-  li.forEach(e=>e.onclick=()=>{const k=+e.dataset.k;if(audio&&audio.duration){const lens=S.map(x=>x.text.length),tot=lens.reduce((a,b)=>a+b,0);audio.currentTime=audio.duration*lens.slice(0,k).reduce((a,b)=>a+b,0)/tot;audio.play();btn.textContent="❚❚";}else{i=k;speechSynthesis.cancel();playing=true;speak();}});
+  rb.onclick=()=>{rate=rate===1?1.5:rate===1.5?2:1;store.set("pod_rate",rate);rb.textContent=rl(rate);rb.classList.toggle("on",rate!==1);
+    if(audio)audio.playbackRate=rate;else if(speaking){speechSynthesis.cancel();speakFrom(si);}};
+  rb.classList.toggle("on",rate!==1);
+  if(src){
+    audio=new Audio(src);audio.preload="metadata";audio.playbackRate=rate;
+    const marks=(P.marks&&P.marks[lang]&&P.marks[lang].length===S.length)?P.marks[lang]:null;
+    const startOf=k=>marks?marks[k]:(audio.duration||0)*lens.slice(0,k).reduce((a,b)=>a+b,0)/tot;
+    const segAt=t=>{if(marks){let k=0;while(k+1<marks.length&&marks[k+1]<=t+.05)k++;return k;}const p=t/(audio.duration||1);let acc=0;for(let k=0;k<lens.length;k++){acc+=lens[k]/tot;if(p<acc)return k;}return S.length-1;};
+    let dragging=false;
+    audio.onloadedmetadata=()=>{dur.textContent=mm(audio.duration);
+      const sp=store.get(posKey,null);if(sp&&sp.id===P.id&&sp.lang===lang&&sp.t>5&&sp.t<audio.duration-5){audio.currentTime=sp.t;el.querySelector("#pd-note").textContent=L("Resumed at ","Reprise à ","استئناف من ")+mm(sp.t);}};
+    audio.ontimeupdate=()=>{if(!audio)return;const d=audio.duration||1;if(!dragging)seek.value=Math.round(audio.currentTime/d*1000);cur.textContent=mm(audio.currentTime);mark(segAt(audio.currentTime));
+      if(Math.round(audio.currentTime)%5===0)store.set(posKey,{id:P.id,lang,t:audio.currentTime});};
+    audio.onplay=()=>{audio.playbackRate=rate;playingUI(true);};audio.onpause=()=>playingUI(false);
+    audio.onended=()=>{playingUI(false);btn.textContent="↺";store.set(posKey,null);};
+    audio.onerror=()=>{audio=null;el.querySelector("#pd-note").textContent=L("Phone voice","Voix du téléphone","صوت الهاتف");};
+    const jump=s=>{if(!audio)return;audio.currentTime=Math.min(Math.max(0,audio.currentTime+s),(audio.duration||1e9)-.2);};
+    btn.onclick=()=>{if(!audio){speakFrom(si);return;}if(audio.paused)audio.play();else audio.pause();};
+    el.querySelector("#pd-back").onclick=()=>audio?jump(-15):speakFrom(Math.max(0,si-1));
+    el.querySelector("#pd-fwd").onclick=()=>audio?jump(15):speakFrom(Math.min(S.length-1,si+1));
+    seek.oninput=()=>{dragging=true;if(audio&&audio.duration)cur.textContent=mm(seek.value/1000*audio.duration);};
+    seek.onchange=()=>{dragging=false;if(audio&&audio.duration)audio.currentTime=seek.value/1000*audio.duration;};
+    li.forEach(e=>e.onclick=()=>{const k=+e.dataset.k;if(audio){audio.currentTime=startOf(k)+.05;audio.play();}else speakFrom(k);});
+    try{const ms=navigator.mediaSession;ms.metadata=new MediaMetadata({title,artist:"Business Desk",album:edLabel()});
+      ms.setActionHandler("play",()=>audio&&audio.play());ms.setActionHandler("pause",()=>audio&&audio.pause());
+      ms.setActionHandler("seekbackward",()=>jump(-15));ms.setActionHandler("seekforward",()=>jump(15));}catch(e){}
+  }else{
+    btn.onclick=()=>{if(speaking){speaking=false;speechSynthesis.cancel();playingUI(false);return;}speakFrom(si);};
+    el.querySelector("#pd-back").onclick=()=>speakFrom(Math.max(0,si-1));
+    el.querySelector("#pd-fwd").onclick=()=>speakFrom(Math.min(S.length-1,si+1));
+    seek.max=String(S.length-1);seek.step="1";seek.onchange=()=>speakFrom(+seek.value);
+    li.forEach(e=>e.onclick=()=>speakFrom(+e.dataset.k));
+  }
+  function speakFrom(k){if(!window.speechSynthesis)return;si=k;speaking=true;playingUI(true);speechSynthesis.cancel();
+    const Lg=ar?"ar-SA":fr?"fr-FR":"en-GB",v=pickVoice(Lg);
+    const next=()=>{if(!speaking)return;if(si>=S.length){speaking=false;playingUI(false);btn.textContent="↺";si=0;return;}mark(si);if(!audio)seek.value=si;
+      const u=new SpeechSynthesisUtterance(S[si].text);u.lang=Lg;if(v)u.voice=v;u.rate=rate;u.onend=()=>{if(!speaking)return;si++;next();};speechSynthesis.speak(u);};next();}
+  mark(0);
 }
 function wToast(s){const t=document.createElement("div");t.className="w-toast";t.textContent=s;document.body.appendChild(t);setTimeout(()=>t.remove(),1700);}
 function openWatch(start){
@@ -1448,7 +1589,7 @@ function isFollowed(n){const F=followList();if(!F.length)return false;const tx=(
 // Drop wire-service datelines ("By X NEW YORK, Nov 19 (Reuters) - ")
 function cleanDl(d){if(!d)return d;return d.replace(/^By [A-Z][\w.'-]+(?: [A-Z][\w.'-]+){0,3}\s+(?=[A-Z]{2,})/,"").replace(/^[A-ZÀ-Ý][A-ZÀ-Ý .,'’-]{1,40}(?:,\s*\w{3,9}\.?\s*\d{1,2})?\s*\([^)]{2,30}\)\s*[-–—]\s*/,"").trim()||null;}
 function nxSa(src){let h=0;for(const ch of String(src||"?"))h=(h*31+ch.charCodeAt(0))%360;return `<i class="sa" style="background:hsl(${h},48%,42%)">${esc(String(src||"?").replace(/^the\s+/i,"").charAt(0).toUpperCase())}</i>`;}
-function nxArt(n,big){const c=REEL_CATS[n.cat]||REEL_CATS.worldwide,cs=countriesOf(n),fl=cs.length?cs[0][1]:c[0],f=big?figOf((n.t&&n.t[lang])||n.title):null;
+function nxArt(n,big,cs0){const c=REEL_CATS[n.cat]||REEL_CATS.worldwide,cs=cs0||countriesOf(n),fl=cs.length?cs[0][1]:c[0],f=big?figOf((n.t&&n.t[lang])||n.title):null;
   return `<div class="nv" style="background:${c[1]}"><span class="nv-fl">${fl}</span>${f?`<b class="nv-fig">${esc(f)}</b>`:""}${n.img?`<img src="${esc(n.img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">`:""}</div>`;}
 function nxTi(n){return (n.t&&n.t[lang])||(lang==="ar"&&n.t&&n.t.en)||n.title;}
 function nxDs(n){return cleanDl((n.d&&n.d[lang])||(lang==="ar"&&n.d&&n.d.en)||n.desc);}
