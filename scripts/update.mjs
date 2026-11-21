@@ -3,6 +3,7 @@
 // Env: ANTHROPIC_API_KEY, or free GEMINI_API_KEY / GROQ_API_KEY, or (OPENAI_API_KEY + OPENAI_MODEL). Optional: ANTHROPIC_MODEL. MOCK_DIR for offline tests.
 import fs from "node:fs/promises";
 import path from "node:path";
+import { assetHeadlineOk, sectionOk, isRepCongo, readScore, sameStory, actorSwap, SECTION } from "./rules.mjs";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const cfg = JSON.parse(await fs.readFile(path.join(ROOT, "config.json"), "utf8"));
@@ -110,9 +111,12 @@ async function news(n) {
   for (const q of n.queries) {
     try { all.push(...await newsQuery(n.cat, q)); } catch (e) { log.push(`news ${n.cat} (${q.hl}): ${e.message}`); }
   }
-  all.forEach(h => h.score = importance(h));
-  const keep = all.filter(h => h.score >= 1.5);                 // drop the filler when there is enough real news
-  const pool = keep.length >= 5 ? keep : all;
+  const strict = !!SECTION[n.cat];
+  const rel = strict ? all.filter(h => sectionOk(n.cat, h.title)) : all;   // v37: on-topic only (Beverages & packaging, CFO & treasury)
+  if (strict) log.push(`${n.cat}: ${rel.length}/${all.length} on topic`);
+  rel.forEach(h => h.score = importance(h));
+  const keep = rel.filter(h => h.score >= 1.5);                 // drop the filler when there is enough real news
+  const pool = strict ? keep : keep.length >= 5 ? keep : rel;   // strict sections: fewer stories rather than off-topic ones
   return pool.sort((a, b) => b.score - a.score || b.date.localeCompare(a.date)).slice(0, cfg.news_per_category);
 }
 
@@ -137,7 +141,7 @@ function rulesSummary(markets, fx, headlines) {
   const out = { en: [], fr: [] };
   pick.forEach((h, k) => {
     const lab = cfg.news.find(x => x.cat === h.cat) || { label_en: h.cat, label_fr: h.cat };
-    const it = { level: k < 3 ? "high" : "", cat: h.cat, owner: lab.label_en, title: (h.t && h.t.en) || h.title, detail: (h.d && h.d.en) || "", source: h.source, date: h.date, impact: "", url: h.url, img: h.img || null };
+    const it = { level: k < 3 ? "high" : "", kind: (Date.now() - new Date(h.date)) / 36e5 > 72 ? "analysis" : "news", cat: h.cat, owner: lab.label_en, title: (h.t && h.t.en) || h.title, detail: (h.d && h.d.en) || "", source: h.source, date: h.date, impact: "", url: h.url, img: h.img || null };
     out.en.push(it); out.fr.push({ ...it, owner: lab.label_fr, title: (h.t && h.t.fr) || h.title, detail: (h.d && h.d.fr) || "" });
     (out.ar = out.ar || []).push({ ...it, owner: lab.label_ar || lab.label_en, title: (h.t && h.t.ar) || it.title, detail: (h.d && h.d.ar) || it.detail });
   });
@@ -184,7 +188,7 @@ async function llm(prompt, maxTokens = 3000) {
   throw new Error(p + " " + last);
 }
 async function aiSummary(markets, fx, headlines) {
-  const pool = headlines.map((h, i) => ({ i, cat: h.cat, title: h.title, source: h.source, date: h.date.slice(0, 10) }))
+  const pool = headlines.map((h, i) => ({ i, cat: h.cat, title: (h.t && h.t.en) || h.title, description: String((h.d && h.d.en) || h.desc || "").slice(0, 400), source: h.source, date: h.date.slice(0, 10), hours_ago: Math.round((Date.now() - new Date(h.date)) / 36e5) }))
                         .filter(h => h.cat in SIXTY_PICK);
   if (!pool.length) return null;
   const labels = Object.fromEntries(cfg.news.map(n => [n.cat, { en: n.label_en, fr: n.label_fr }]));
@@ -192,9 +196,9 @@ async function aiSummary(markets, fx, headlines) {
 
 From the headlines below, pick the 20 most important news stories of the last 24 hours for a video news feed: 6 from "worldwide" (mostly economy, finance and banking), 5 from "africa" (West and Central Africa), 5 from "congo" (Republic of Congo and CEMAC) and 4 from "cfo" (treasury, FX, rates, BEAC). Prefer major political, economic and security news over minor or promotional items; skip duplicates. Order them as a mixed feed: the most important story first, and never two stories from the same category in a row.
 Score every candidate's importance from 1 (filler) to 5 (market-moving); never pick a story scoring below 3 (sport, culture, ceremonies, anniversaries, PR, minor local items), even if a section then has fewer stories.
-For each give: cat (worldwide|africa|congo|cfo), score (3-5), level ("high" if score 5, else "med"), title (clear, max 14 words, rewritten from the headline), detail (one sentence saying what happened, using only what the headline says; never invent facts or numbers), impact ("Impact": one short factual sentence on the consequence for markets, prices, rates, budgets or the region, only if the headline supports it; otherwise ""; never speculate, never mention any company that is not in the story), source_index (the headline's i).
+For each give: cat (worldwide|africa|congo|cfo), score (3-5), level ("high" if score 5, else "med"), kind ("news" for a new development, "analysis" for commentary, explainers or data older than 48 hours), title (clear, max 14 words, rewritten from the headline), detail (REPORTED FACTS ONLY: one or two sentences that explain the development using the headline and its description — who did what, how much, and the context — without simply repeating the title; never invent facts or numbers), impact (INFERRED IMPLICATION: one short sentence on the likely consequence for markets, prices, rates, budgets or the region; keep the same actors as the story — investment funds are not banks, a government is not a company; leave "" if the facts do not support an implication), source_index (the headline's i). Every item must describe its own headline: never mix facts from two headlines.
 Also write "takeaway": one line (max 22 words) that sums up the day for Rayan, mixing the biggest story with the key market move (oil, dollar, CFA), in English and French.
-Pick 8 stories: put the 3 most important first (one per section where possible), prefer the last 24 hours, and prefer stories with a hard number (rate, amount, %).
+Pick 8 stories: put the 3 most important first (one per section where possible), strongly prefer consequential developments from the last 24-48 hours (hours_ago), use older items only when nothing recent matters as much, and prefer stories with a hard number (rate, amount, %).
 Return JSON only: {"takeaway":{"en":"...","fr":"..."},"en":[8 items],"fr":[the same items in natural French]}.
 
 MARKETS: ${JSON.stringify(markets.filter(m => ["usdxaf","brent","gold","eurusd"].includes(m.id)).map(m => ({ name: m.name, value: +m.value.toFixed(2), change_pct: +(m.change_pct || 0).toFixed(2) })))}
@@ -211,10 +215,20 @@ ${JSON.stringify(pool)}`;
     json[lang] = json[lang].slice(0, 20).map(x => {
       const h = Number.isInteger(x.source_index) ? headlines[x.source_index] : null;
       const cat = (h && h.cat) || x.cat;
+      const ageH = h ? (Date.now() - new Date(h.date)) / 36e5 : 0, clean = s => String(s || "").replace(/^\s*(?:impact(?: (?:pour|on) [^:]{0,30})?|implication|الأثر|التأثير|الأثر المتوقع)\s*[:：]\s*/i, "");
       return { level: x.level === "high" || x.score >= 5 ? "high" : "med", score: Number(x.score) || null, cat, source: h ? h.source : "", date: h ? h.date : null, img: h ? h.img || null : null, owner: (labels[cat] || {})[lang] || "", title: String(x.title || ""),
-               detail: String(x.detail || ""), impact: String(x.impact || "").replace(/^\s*(?:impact(?: pour [^:]{0,30})?|الأثر|التأثير|الأثر المتوقع)\s*[:：]\s*/i, ""), url: h ? h.url : null };
+               kind: x.kind === "analysis" || ageH > 72 ? "analysis" : "news", detail: String(x.detail || ""), impact: clean(x.impact), url: h ? h.url : null, _h: h };
     });
   }
+  // v37: every summary must belong to its own article, and no implication may swap the actors
+  const keepIdx = json.en.map((x, k) => { const h = x._h; if (!h) return false;
+    const src = [(h.t && h.t.en) || h.title, (h.d && h.d.en) || h.desc || ""].join(" ");
+    if (!sameStory(x.title, src)) { log.push("ai: dropped mismatched summary " + x.title); return false; }
+    if (actorSwap(src + " " + x.title + " " + x.detail, x.impact)) { log.push("ai: removed actor-swapping implication on " + x.title); x.impact = ""; if (json.fr[k]) json.fr[k].impact = ""; }
+    if (x.detail.trim().toLowerCase() === x.title.trim().toLowerCase()) { x.detail = ((h.d && h.d.en) || h.desc || ""); }
+    return true; });
+  for (const lang of ["en", "fr"]) json[lang] = json[lang].filter((x, k) => keepIdx[k]).map(({ _h, ...x }) => x);
+  if (json.en.length < 3) throw new Error("too few matching summaries");
   if (!json.takeaway || !json.takeaway.en) json.takeaway = null;
   return json;
 }
@@ -341,15 +355,15 @@ async function reads() {
   if (!all.length) return null;
   const boost = new RegExp(rc.boost.map(w => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|"), "gi");
   const ageDays = a => (Date.now() - new Date(a.date)) / 864e5;
-  const score = a => (a.title.match(boost) || []).length * 2 + (a.paywall ? 0 : 0.5) + Math.max(0, 3 - ageDays(a) / 2);
+  const score = a => readScore(a, ageDays(a)) + (a.title.match(boost) || []).length * 0.5;   // v37: politics and appointments rank last
   const ranked = all.sort((a, b) => score(b) - score(a) || b.date.localeCompare(a.date));
-  const pick = ranked[0], rest = ranked.slice(1), more = [], per = {};
+  const pick = ranked[0], rest = ranked.slice(1).filter(a => readScore(a, ageDays(a)) > -2), more = [], per = {};
   for (const a of rest) { if (more.length >= (rc.more || 12)) break; if ((per[a.source] || 0) < 2) { more.push(a); per[a.source] = (per[a.source] || 0) + 1; } }
   return { pick, more };
 }
 async function aiRead(pick) {
-  if (!pick || !aiProvider()) return null;
-  const prompt = `A finance executive in Brazzaville, Republic of Congo, will read this article today: "${pick.title}" (${pick.source}). Using only the title, write JSON {"en":{"why":"..."},"fr":{"title":"...","why":"..."}} where "why" is one or two sentences on what a CFO can take from it, without inventing facts, and fr.title is a French translation of the title.`;
+  if (!pick || !aiProvider() || !pick.desc) return null;   // v37: "why read it" only from the article's own description
+  const prompt = `A finance executive in Brazzaville, Republic of Congo, will read this article today: "${pick.title}" (${pick.source}). Its own description says: "${String(pick.desc).slice(0, 600)}". Using only the title and that description, write JSON {"en":{"why":"..."},"fr":{"title":"...","why":"..."}} where "why" is one or two sentences on what a CFO can take from it, without inventing facts, and fr.title is a French translation of the title.`;
   const t = await llm(prompt, 1200); if (!t) return null;
   return JSON.parse(t.slice(t.indexOf("{"), t.lastIndexOf("}") + 1));
 }
@@ -382,7 +396,7 @@ async function onThisDay() {
     } catch (e) { log.push(`on this day ${lang} ${mm}/${dd}: ${e.message}`); }
   }
   const pick = (lang, re, strong, not) => {
-    const ok = x => re.test(x.text) && !OTD_GRIM.test(x.text) && !/kidnap|hijack|enl[èe]v/i.test(x.text) && !(not && not.test(x.text) && !(strong && strong.test(x.text))) && (x.kind === "event" || !strong || strong.test(x.text));
+    const ok = x => re.test(x.text) && (re !== OTD_CG || isRepCongo(x.text)) && !OTD_GRIM.test(x.text) && !/kidnap|hijack|enl[èe]v/i.test(x.text) && !(not && not.test(x.text) && !(strong && strong.test(x.text))) && (x.kind === "event" || !strong || strong.test(x.text));
     let L = raw[lang].filter(ok); if (L.length < 2) L = L.concat(raw[lang === "en" ? "fr" : "en"].filter(ok));
     const sc = x => (x.kind === "event" ? 3 : 0) + (3 - Math.abs(x.off)) + (strong && strong.test(x.text) ? 3 : 0);
     const seen = new Set();
@@ -390,7 +404,7 @@ async function onThisDay() {
       .slice(0, 3).sort((a, b) => a.off - b.off || b.year - a.year).map(({ off, ...x }) => x);
   };
   const out = {};
-  for (const lang of ["en", "fr"]) out[lang] = { world: world[lang] || [], congo: pick(lang, OTD_CG, OTD_CG_STRONG, OTD_CG_NOT), lebanon: pick(lang, OTD_LB, null, null) };
+  for (const lang of ["en", "fr"]) out[lang] = { world: world[lang] || [], congo: pick(lang, OTD_CG, OTD_CG_STRONG, OTD_CG_NOT).filter(x => isRepCongo(x.text)), lebanon: pick(lang, OTD_LB, null, null) };
   return out;
 }
 
@@ -415,7 +429,7 @@ for (const n of cfg.news) {
   const fresh = got.length;
   // Never leave a section empty: if a source failed, keep the last good stories for that section
   if (got.length < 3) {
-    const old = (prevBrief.news || []).filter(h => h.cat === n.cat && !got.some(g => g.title === h.title));
+    const old = (prevBrief.news || []).filter(h => h.cat === n.cat && !got.some(g => g.title === h.title) && sectionOk(n.cat, h.title) && (Date.now() - new Date(h.date)) / 864e5 <= cfg.news_max_age_days);
     if (old.length) { got = [...got, ...old].slice(0, cfg.news_per_category || 8); log.push(`reused ${old.length} earlier ${n.cat} stories`); }
   }
   // A section is "fresh" when its feed answered and its newest story is under 36 hours old
@@ -550,11 +564,12 @@ const MK_KEYS = {
 for (const m of markets) {
   const re = MK_KEYS[m.id]; if (!re || typeof m.change_pct !== "number") continue;
   if (Math.abs(m.change_pct) < 0.2) { m.why = { en: "Little change since the previous close.", fr: "Peu de variation depuis la clôture précédente.", ar: "تغيّر طفيف منذ الإغلاق السابق." }; continue; }
-  const cand = headlines.filter(h => re.test(h.title) || (h.t && re.test(h.t.en || "")) || (h.d && re.test((h.d.en || "") + " " + (h.d.fr || ""))))
-    .map(h => ({ h, s: (h.score || 0) + (re.test(h.title) || (h.t && re.test(h.t.en || "")) ? 1.5 : 0) + (h.cat === "markets" ? 1 : 0) - Math.max(0, (Date.now() - new Date(h.date)) / 36e5 - 24) / 12 }))
+  const tEn = h => (h.t && h.t.en) || h.title;
+  const cand = headlines.filter(h => assetHeadlineOk(m.id, tEn(h), h.cat) && (Date.now() - new Date(h.date)) / 36e5 < 48)
+    .map(h => ({ h, s: (h.score || 0) + (h.cat === "markets" ? 1 : 0) - Math.max(0, (Date.now() - new Date(h.date)) / 36e5 - 24) / 12 }))
     .sort((a, b) => b.s - a.s);
   const best = cand[0] && cand[0].h;
-  if (best) { m.why = { en: (best.t && best.t.en) || best.title, fr: (best.t && best.t.fr) || best.title, ar: (best.t && best.t.ar) || (best.t && best.t.en) || best.title, source: best.source, url: best.url }; continue; }
+  if (best) { m.why = { en: tEn(best), fr: (best.t && best.t.fr) || best.title, ar: (best.t && best.t.ar) || tEn(best), source: best.source, url: best.url, date: best.date, related: true }; continue; }
   // No headline: explain the move by what moved with it
   const PEERS = { gold: ["silver", "eurusd"], silver: ["gold"], brent: ["wti"], wti: ["brent"], sugar: ["brent"], eurusd: ["gold"], usdxaf: ["eurusd"] };
   const pc = x => (x > 0 ? "+" : "−") + Math.abs(x).toFixed(1) + "%";
@@ -587,8 +602,8 @@ const briefAge = old.summary_at ? (Date.now() - new Date(old.summary_at)) / 36e5
 const keepBrief = !forced && old.summary_at && new Date(old.summary_at) >= slotStart && (old.summary?.en || []).length >= 5;
 if (keepBrief) log.push(`edition kept (${briefAge.toFixed(1)} h old)`);
 const read = keepBrief && old.read ? old.read : await reads();
+if (read && !keepBrief && !MOCK) await addPhotos([read.pick, ...read.more]);   // also fetches each article's own description
 if (read && !keepBrief) { try { const w = await aiRead(read.pick); if (w) read.pick.ai = w; } catch (e) { log.push("ai read: " + e.message); } }
-if (read && !keepBrief && !MOCK) await addPhotos([read.pick, ...read.more]);
 if (read && !keepBrief && !MOCK) {                     // reading list in both languages
   const all = [read.pick, ...read.more];
   for (const [sl, tl] of [["en", "fr"], ["fr", "en"]]) {
@@ -624,8 +639,8 @@ else {
   // Market context: a story about oil, gold, the dollar... gets today's move for that market
   const fmtP = (x, fr) => (x > 0 ? "+" : "−") + Math.abs(x).toFixed(1).replace(".", fr ? "," : ".") + (fr ? " %" : "%");
   for (const lang of ["en", "fr", "ar"]) (summary[lang] || []).forEach((it, k) => {
-    const en = (summary.en[k] || it).title + " " + ((summary.en[k] || it).detail || "");
-    const m = markets.find(m => MK_KEYS[m.id] && typeof m.change_pct === "number" && Math.abs(m.change_pct) >= 0.2 && MK_KEYS[m.id].test(en));
+    const en = (summary.en[k] || it).title;
+    const m = markets.find(m => MK_KEYS[m.id] && typeof m.change_pct === "number" && Math.abs(m.change_pct) >= 0.2 && assetHeadlineOk(m.id, en, null));
     if (m && lang === "ar") { it.ctx = `${{ Gold: "الذهب", Silver: "الفضة", Brent: "برنت", "Crude Oil WTI": "خام WTI", "EUR/USD": "اليورو/الدولار", "USD/XAF": "الدولار/الفرنك" }[m.name] || m.name} ${fmtP(m.change_pct)} عند آخر إغلاق`; return; }
     if (m) it.ctx = lang === "fr" ? `${m.name === "Gold" ? "Or" : m.name === "Silver" ? "Argent" : m.name} ${fmtP(m.change_pct, true)} à la dernière clôture` : `${m.name} ${fmtP(m.change_pct)} at the last close`;
   });
@@ -734,10 +749,10 @@ if (!podcast) {
 
 const brief = {
   health: (() => { health.markets_total = markets.length; health.markets_ok = markets.filter(m => m.date && (Date.now() - new Date(m.date)) / 864e5 < 5).length;
-    health.translate = !gBlocked ? "google" : mmLeft < 30 ? "fallback" : "off"; health.static_days = Math.max(...(cfg.static_rates || []).map(r => r.date ? (Date.now() - new Date(r.date)) / 864e5 : 0), 0) | 0; return health; })(),
+    health.translate = !gBlocked ? "google" : mmLeft < 30 ? "fallback" : "off"; health.static_days = Math.max(...(cfg.static_rates || []).filter(r => !r.historical).map(r => r.date ? (Date.now() - new Date(r.date)) / 864e5 : 0), 0) | 0; return health; })(),
   generated_at: new Date().toISOString(), follow: cfg.follow || [], alerts: cfg.ntfy_topic ? "https://ntfy.sh/" + cfg.ntfy_topic : null, summary_at: summaryAt, edition: keepBrief ? (old.edition || edition) : edition, summary_mode: summaryMode, peg: cfg.eur_xaf_peg, fx,
   markets, static_rates: cfg.static_rates, agenda: cfg.agenda,
-  categories: cfg.news.map(n => ({ id: n.cat, en: n.label_en, fr: n.label_fr, ar: n.label_ar || { worldwide: "العالم", africa: "أفريقيا", congo: "الكونغو وCEMAC", markets: "الأسواق", bev: "المشروبات والتغليف", cfo: "المالية والخزينة", lebanon: "لبنان" }[n.cat] || n.label_en })),
+  categories: cfg.news.map(n => ({ id: n.cat, en: n.label_en, fr: n.label_fr, ar: n.label_ar || { worldwide: "العالم", africa: "أفريقيا", congo: "الكونغو وCEMAC", markets: "الأسواق", bev: "المشروبات والتغليف", cfo: "المالية والخزينة", lebanon: "لبنان", tech: "التكنولوجيا" }[n.cat] || n.label_en })),
   summary, takeaway, podcast, on_this_day: otd, read, news: headlines.map((h, i) => ({ id: "n" + i + "-" + h.date.slice(0, 10), ...h })), log,
   gn_cache: Object.fromEntries(headlines.filter(h => h.url && GN[h.url]).map(h => [h.url, GN[h.url]]))
 };
