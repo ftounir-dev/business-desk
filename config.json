@@ -1,7 +1,20 @@
 {
   "ntfy_topic": "bd-rayan-fc9d86a0e5",
   "app_url": "https://ftounir-dev.github.io/business-desk/",
-  "follow": ["BEAC", "CEMAC", "Congo", "Brazzaville", "Eurobond", "oil", "pétrole", "Brent", "dollar", "Lebanon", "Liban", "inflation"],
+  "follow": [
+    "BEAC",
+    "CEMAC",
+    "Congo",
+    "Brazzaville",
+    "Eurobond",
+    "oil",
+    "pétrole",
+    "Brent",
+    "dollar",
+    "Lebanon",
+    "Liban",
+    "inflation"
+  ],
   "city": "Brazzaville",
   "eur_xaf_peg": 655.957,
   "markets": [
@@ -88,50 +101,96 @@
     {
       "id": "pet_cn",
       "group": "pack",
-      "name": "PET bottle grade · China",
+      "name": "Virgin PET · China",
+      "grade": "Virgin PET, bottle grade",
+      "region": "China",
       "value": 875,
       "dp": 0,
       "unit": "USD/t",
+      "currency": "USD",
       "date": "2026-09-30",
-      "note": "IMARC Q3 2026 (September). Update in config.json when a new figure is published.",
+      "period": "Sep 2026",
+      "basis": "Regional market price as published by IMARC (delivery basis not stated by the source)",
+      "historical": true,
+      "note": "Historical reference: IMARC's latest free figure (Q3 2026, September). No newer free figure is published; update in config.json when one is.",
       "source": "IMARC",
       "url": "https://www.imarcgroup.com/pet-resin-price-trend"
     },
     {
       "id": "pet_eu",
       "group": "pack",
-      "name": "PET bottle grade · Europe (Germany)",
+      "name": "Virgin PET · Europe",
+      "grade": "Virgin PET, bottle grade",
+      "region": "Europe (Germany)",
       "value": 1281,
       "dp": 0,
       "unit": "USD/t",
+      "currency": "USD",
       "date": "2026-09-30",
-      "note": "IMARC Q3 2026 (September). Update in config.json when a new figure is published.",
+      "period": "Sep 2026",
+      "basis": "Regional market price as published by IMARC (delivery basis not stated by the source)",
+      "historical": true,
+      "note": "Historical reference: IMARC's latest free figure (Q3 2026, September). No newer free figure is published; update in config.json when one is.",
       "source": "IMARC",
       "url": "https://www.imarcgroup.com/pet-resin-price-trend"
     },
     {
       "id": "pet_in",
       "group": "pack",
-      "name": "PET bottle grade · India",
+      "name": "Virgin PET · India",
+      "grade": "Virgin PET, bottle grade",
+      "region": "India",
       "value": 948,
       "dp": 0,
       "unit": "USD/t",
+      "currency": "USD",
       "date": "2026-09-30",
-      "note": "IMARC Q3 2026 (September). Update in config.json when a new figure is published.",
+      "period": "Sep 2026",
+      "basis": "Regional market price as published by IMARC (delivery basis not stated by the source)",
+      "historical": true,
+      "note": "Historical reference: IMARC's latest free figure (Q3 2026, September). No newer free figure is published; update in config.json when one is.",
       "source": "IMARC",
       "url": "https://www.imarcgroup.com/pet-resin-price-trend"
     },
     {
-      "id": "pet_us",
+      "id": "rpet_eu_fgp",
       "group": "pack",
-      "name": "PET bottle grade · USA",
-      "value": 1143,
+      "name": "rPET pellet · NW Europe",
+      "grade": "Recycled PET, food-grade pellet",
+      "region": "Northwest Europe",
+      "value": 1400,
+      "low": 1350,
+      "high": 1450,
       "dp": 0,
-      "unit": "USD/t",
-      "date": "2026-09-30",
-      "note": "IMARC Q3 2026 (September). Update in config.json when a new figure is published.",
-      "source": "IMARC",
-      "url": "https://www.imarcgroup.com/pet-resin-price-trend"
+      "unit": "EUR/t",
+      "currency": "EUR",
+      "date": "2026-02-06",
+      "period": "6 Feb 2026",
+      "basis": "Delivered NW Europe (del NWE), weekly assessment, midpoint of €1,350–1,450",
+      "historical": true,
+      "note": "Historical reference: latest free rPET price found (Argus Recycled Polymers sample, 6 Feb 2026). Current rPET prices are behind paid services (Argus, ICIS, Platts).",
+      "source": "Argus Media",
+      "url": "https://view.argusmedia.com/rs/584-BUW-606/images/CHE-Sample-CN-Argus-Recycled-Polymers.pdf?version=0"
+    },
+    {
+      "id": "rpet_eu_flake",
+      "group": "pack",
+      "name": "rPET flake · NW Europe",
+      "grade": "Recycled PET, colourless bottle flake",
+      "region": "Northwest Europe",
+      "value": 970,
+      "low": 950,
+      "high": 990,
+      "dp": 0,
+      "unit": "EUR/t",
+      "currency": "EUR",
+      "date": "2026-03-06",
+      "period": "early Mar 2026",
+      "basis": "Spot, NW Europe, midpoint of €950–990 (virgin PET spot then €1,000–1,100/t)",
+      "historical": true,
+      "note": "Historical reference from Argus market news (March 2026). No newer free figure found.",
+      "source": "Argus Media",
+      "url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2798903-nwe-vpet-outstrips-rpet-for-first-time-in-2-years"
     }
   ],
   "news": [
@@ -224,22 +283,27 @@
       "label_fr": "Boissons & emballage",
       "queries": [
         {
-          "q": "sugar prices",
-          "hl": "en",
-          "gl": "US"
-        },
-        {
-          "q": "beverage industry Africa",
+          "q": "beverage industry OR bottler OR \"soft drinks\" OR brewery OR \"bottled water\" Africa",
           "hl": "en",
           "gl": "NG"
         },
         {
-          "q": "PET packaging bottles",
+          "q": "PET OR rPET OR preforms OR \"plastic packaging\" OR \"beverage cans\" bottles",
+          "hl": "en",
+          "gl": "GB"
+        },
+        {
+          "q": "Coca-Cola OR PepsiCo OR Heineken OR Diageo OR \"AB InBev\" OR Castel bottling",
           "hl": "en",
           "gl": "US"
         },
         {
-          "q": "boissons industrie Afrique",
+          "q": "\"raw sugar\" OR \"sugar futures\" OR \"white sugar\" market",
+          "hl": "en",
+          "gl": "GB"
+        },
+        {
+          "q": "boissons OR brasserie OR embouteillage OR emballage plastique Afrique",
           "hl": "fr",
           "gl": "CI"
         }
@@ -251,19 +315,24 @@
       "label_fr": "DAF & trésorerie",
       "queries": [
         {
-          "q": "BEAC taux",
+          "q": "BEAC taux OR COBAC OR \"marché monétaire\" CEMAC",
           "hl": "fr",
           "gl": "CM"
         },
         {
-          "q": "FCFA dollar",
+          "q": "trésorerie OR \"financement bancaire\" OR \"crédit bancaire\" OR \"émission obligataire\" Afrique centrale",
           "hl": "fr",
-          "gl": "SN"
+          "gl": "CM"
         },
         {
-          "q": "CFO treasury dollar",
+          "q": "\"corporate treasury\" OR \"cash management\" OR \"working capital\" OR CFO",
           "hl": "en",
           "gl": "US"
+        },
+        {
+          "q": "IFRS OR SYSCOHADA OR OHADA OR \"fiscalité des entreprises\" OR \"loi de finances\" Congo",
+          "hl": "fr",
+          "gl": "CG"
         }
       ]
     },
@@ -278,6 +347,29 @@
           "gl": "US"
         }
       ]
+    },
+    {
+      "cat": "tech",
+      "label_en": "Technology",
+      "label_fr": "Technologie",
+      "label_ar": "التكنولوجيا",
+      "queries": [
+        {
+          "q": "\"artificial intelligence\" OR semiconductors OR \"big tech\" OR Nvidia OR OpenAI OR Apple OR Microsoft OR Google",
+          "hl": "en",
+          "gl": "US"
+        },
+        {
+          "q": "fintech OR \"mobile money\" OR \"tech startup\" OR telecoms OR \"data centre\" Africa",
+          "hl": "en",
+          "gl": "NG"
+        },
+        {
+          "q": "technologie OR \"intelligence artificielle\" OR numérique OR fintech Afrique",
+          "hl": "fr",
+          "gl": "CI"
+        }
+      ]
     }
   ],
   "news_per_category": 8,
@@ -285,27 +377,53 @@
   "agenda": [
     {
       "date": "2026-11-29",
-      "ar": "اجتماع أوبك+",
-      "en": "OPEC+ meeting",
-      "fr": "Réunion de l'OPEP+"
+      "time": null,
+      "tz": null,
+      "status": "confirmed",
+      "institution": "OPEC+",
+      "country": "International",
+      "en": "42nd OPEC and non-OPEC Ministerial Meeting: 2027 production framework",
+      "fr": "42e réunion ministérielle OPEP et non-OPEP : cadre de production 2027",
+      "ar": "الاجتماع الوزاري الـ42 لأوبك وخارجها: إطار الإنتاج لعام 2027",
+      "source": "OPEC press release, 7 June 2026",
+      "url": "https://opec.org/pr-detail/605-7-june-2026.html"
     },
     {
       "date": "2026-12-09",
-      "ar": "قرار الاحتياطي الفيدرالي (8–9 ديسمبر)",
-      "en": "Fed decision (FOMC, 8–9 Dec)",
-      "fr": "Décision de la Fed (FOMC, 8–9 déc.)"
+      "time": "14:00",
+      "tz": "ET (20:00 Brazzaville)",
+      "status": "confirmed",
+      "institution": "US Federal Reserve (FOMC)",
+      "country": "United States",
+      "en": "Fed interest-rate decision (FOMC meeting 8–9 Dec, with projections)",
+      "fr": "Décision de taux de la Fed (réunion du FOMC des 8–9 déc., avec projections)",
+      "ar": "قرار الفائدة للاحتياطي الفيدرالي (اجتماع 8–9 ديسمبر مع التوقعات)",
+      "source": "Federal Reserve calendar",
+      "url": "https://www.federalreserve.gov/newsevents/2026-december.htm"
     },
     {
-      "date": "2026-12-15",
-      "ar": "لجنة السياسة النقدية لـ BEAC (الموعد يُؤكَّد)",
-      "en": "BEAC policy committee (date to confirm)",
-      "fr": "Comité de politique monétaire BEAC (date à confirmer)"
+      "date": null,
+      "month": "2026-12",
+      "status": "tentative",
+      "institution": "BEAC — Monetary Policy Committee (CPM)",
+      "country": "CEMAC",
+      "en": "BEAC policy committee, 4th session of 2026 — date not yet announced (held 15 Dec in 2025)",
+      "fr": "Comité de politique monétaire de la BEAC, 4e session 2026 — date non annoncée (15 déc. en 2025)",
+      "ar": "لجنة السياسة النقدية لـ BEAC، الدورة الرابعة 2026 — لم يُعلن الموعد بعد (15 ديسمبر في 2025)",
+      "source": "BEAC — CPM press releases",
+      "url": "https://www.beac.int/"
     },
     {
-      "date": "2026-12-23",
-      "ar": "تصويت البرلمان على قانون مالية 2027 (متوقع)",
-      "en": "Parliament votes 2027 finance law (expected)",
-      "fr": "Vote de la loi de finances 2027 (attendu)"
+      "date": null,
+      "month": "2026-12",
+      "status": "tentative",
+      "institution": "Parliament of the Republic of Congo (National Assembly and Senate)",
+      "country": "Republic of Congo",
+      "en": "Republic of Congo Parliament votes the 2027 finance law — vote date not announced (2026 law adopted at the session closing 23 Dec 2025)",
+      "fr": "Le Parlement de la République du Congo vote la loi de finances 2027 — date non annoncée (loi 2026 adoptée à la clôture de session du 23 déc. 2025)",
+      "ar": "برلمان جمهورية الكونغو يصوّت على قانون مالية 2027 — لم يُعلن موعد التصويت (اعتُمد قانون 2026 في ختام الدورة في 23 ديسمبر 2025)",
+      "source": "EcoMatin: 2027 finance bill presented to the Council of Ministers on 8 Oct 2026",
+      "url": "https://ecomatin.net/le-congo-table-sur-3-121-milliards-fcfa-de-recettes-budgetaires-en-2027-en-hausse-de-12"
     }
   ],
   "reads": {
@@ -324,7 +442,7 @@
       },
       {
         "name": "Financial Times",
-        "q": "site:ft.com CFO OR finance OR Africa",
+        "q": "site:ft.com CFO OR treasury OR \"supply chain\" OR manufacturing OR \"corporate finance\"",
         "paywall": true
       },
       {
@@ -365,7 +483,7 @@
       },
       {
         "name": "The Africa Report",
-        "q": "site:theafricareport.com business OR economy"
+        "q": "site:theafricareport.com business OR finance OR industry OR investment"
       },
       {
         "name": "Jeune Afrique",
