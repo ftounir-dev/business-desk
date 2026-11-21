@@ -1,6 +1,6 @@
 // Business Desk: builds data/brief.json from live prices, news and an optional AI summary.
 // Runs on GitHub Actions (Node 20+). No npm packages needed.
-// Env: ANTHROPIC_API_KEY or (OPENAI_API_KEY + OPENAI_MODEL). Optional: ANTHROPIC_MODEL. MOCK_DIR for offline tests.
+// Env: ANTHROPIC_API_KEY, or free GEMINI_API_KEY / GROQ_API_KEY, or (OPENAI_API_KEY + OPENAI_MODEL). Optional: ANTHROPIC_MODEL. MOCK_DIR for offline tests.
 import fs from "node:fs/promises";
 import path from "node:path";
 
@@ -144,6 +144,39 @@ function rulesSummary(markets, fx, headlines) {
   return out;
 }
 
+/* v34: one AI caller for every provider. Free options: Gemini (Google AI Studio) or Groq. */
+function aiProvider() {
+  if (process.env.ANTHROPIC_API_KEY) return "anthropic";
+  if (process.env.GEMINI_API_KEY) return "gemini";
+  if (process.env.GROQ_API_KEY) return "groq";
+  if (process.env.OPENAI_API_KEY && process.env.OPENAI_MODEL) return "openai";
+  return null;
+}
+async function llm(prompt, maxTokens = 3000) {
+  const p = aiProvider(); if (!p) return null;
+  if (p === "anthropic") {
+    const r = await fetch("https://api.anthropic.com/v1/messages", { method: "POST", signal: AbortSignal.timeout(120e3),
+      headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
+      body: JSON.stringify({ model: process.env.ANTHROPIC_MODEL || "claude-sonnet-5-5", max_tokens: maxTokens, messages: [{ role: "user", content: prompt }] }) });
+    if (!r.ok) throw new Error("Anthropic " + r.status + " " + (await r.text()).slice(0, 300));
+    return (await r.json()).content?.map(c => c.text || "").join("");
+  }
+  const C = {
+    gemini: { url: "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions", key: process.env.GEMINI_API_KEY, models: [process.env.GEMINI_MODEL, "gemini-flash-latest", "gemini-flash-lite-latest"] },
+    groq: { url: "https://api.groq.com/openai/v1/chat/completions", key: process.env.GROQ_API_KEY, models: [process.env.GROQ_MODEL, "openai/gpt-oss-120b", "llama-3.3-70b-versatile"] },
+    openai: { url: "https://api.openai.com/v1/chat/completions", key: process.env.OPENAI_API_KEY, models: [process.env.OPENAI_MODEL] }
+  }[p];
+  let last = "";
+  for (const model of C.models.filter(Boolean)) {
+    const r = await fetch(C.url, { method: "POST", signal: AbortSignal.timeout(120e3),
+      headers: { "authorization": "Bearer " + C.key, "content-type": "application/json" },
+      body: JSON.stringify({ model, max_tokens: maxTokens, messages: [{ role: "user", content: prompt }] }) });
+    if (r.ok) { const t = (await r.json()).choices?.[0]?.message?.content; if (t) { log.push(`ai: ${p} ${model}`); return t; } last = model + " empty"; continue; }
+    last = `${model} ${r.status} ${(await r.text()).slice(0, 200)}`;
+    if (r.status === 401 || r.status === 403) break;   // bad key: no point trying other models
+  }
+  throw new Error(p + " " + last);
+}
 async function aiSummary(markets, fx, headlines) {
   const pool = headlines.map((h, i) => ({ i, cat: h.cat, title: h.title, source: h.source, date: h.date.slice(0, 10) }))
                         .filter(h => h.cat in SIXTY_PICK);
@@ -163,24 +196,8 @@ MARKETS: ${JSON.stringify(markets.filter(m => ["usdxaf","brent","gold","eurusd"]
 HEADLINES:
 ${JSON.stringify(pool)}`;
 
-  let text;
-  if (process.env.ANTHROPIC_API_KEY) {
-    const r = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
-      body: JSON.stringify({ model: process.env.ANTHROPIC_MODEL || "claude-sonnet-5-5", max_tokens: 3000, messages: [{ role: "user", content: prompt }] })
-    });
-    if (!r.ok) throw new Error("Anthropic " + r.status + " " + (await r.text()).slice(0, 300));
-    text = (await r.json()).content?.map(c => c.text || "").join("");
-  } else if (process.env.OPENAI_API_KEY && process.env.OPENAI_MODEL) {
-    const r = await fetch("https://api.openai.com/v1/chat/completions", {
-      method: "POST",
-      headers: { "authorization": "Bearer " + process.env.OPENAI_API_KEY, "content-type": "application/json" },
-      body: JSON.stringify({ model: process.env.OPENAI_MODEL, response_format: { type: "json_object" }, messages: [{ role: "user", content: prompt }] })
-    });
-    if (!r.ok) throw new Error("OpenAI " + r.status + " " + (await r.text()).slice(0, 300));
-    text = (await r.json()).choices?.[0]?.message?.content;
-  } else return null;
+  const text = await llm(prompt, 6000);
+  if (!text) return null;
 
   const json = JSON.parse(text.slice(text.indexOf("{"), text.lastIndexOf("}") + 1));
   for (const lang of ["en", "fr"]) {
@@ -325,13 +342,9 @@ async function reads() {
   return { pick, more };
 }
 async function aiRead(pick) {
-  if (!pick || !process.env.ANTHROPIC_API_KEY) return null;
+  if (!pick || !aiProvider()) return null;
   const prompt = `A finance executive in Brazzaville, Republic of Congo, will read this article today: "${pick.title}" (${pick.source}). Using only the title, write JSON {"en":{"why":"..."},"fr":{"title":"...","why":"..."}} where "why" is one or two sentences on what a CFO can take from it, without inventing facts, and fr.title is a French translation of the title.`;
-  const r = await fetch("https://api.anthropic.com/v1/messages", { method: "POST",
-    headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
-    body: JSON.stringify({ model: process.env.ANTHROPIC_MODEL || "claude-sonnet-5-5", max_tokens: 600, messages: [{ role: "user", content: prompt }] }) });
-  if (!r.ok) throw new Error("Anthropic " + r.status);
-  const t = (await r.json()).content?.map(c => c.text || "").join("");
+  const t = await llm(prompt, 1200); if (!t) return null;
   return JSON.parse(t.slice(t.indexOf("{"), t.lastIndexOf("}") + 1));
 }
 
