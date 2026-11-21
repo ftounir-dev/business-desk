@@ -1697,7 +1697,7 @@ function nxBlock(c,l,skipLead){
   (skipLead?l.slice(1):l).forEach((n,i)=>h+=nxRow(n,!skipLead&&i===0,skipLead?i+2:(i?i+1:0),false));
   return `<section class="nsb">${h}</section>`;
 }
-function renderNews(){ // v39: "Today's 10" — one short list, one next step, visible progress
+function renderNews(){ // v40: "Today's 15" — one short list, one next step, visible progress
   const fr=lang==="fr",ar=lang==="ar",L=(e,f,a)=>ar?a:fr?f:e,all=[...B.news].sort((a,b)=>b.date.localeCompare(a.date));
   const now=Date.now(),day=dayKey(now),ageH=n=>(now-new Date(n.date))/36e5;
   const rank=n=>(n.score||0)+(isFollowed(n)?1:0)+(ageH(n)<24?1:ageH(n)<48?.4:0)+(["worldwide","africa","congo","cfo"].includes(n.cat)?.3:0);
@@ -1706,8 +1706,10 @@ function renderNews(){ // v39: "Today's 10" — one short list, one next step, v
   const byId={};all.forEach(n=>byId[nxId(n)]=n);
   let picks=saved.ids.map(id=>byId[id]).filter(Boolean);
   const per={};picks.forEach(n=>per[n.cat]=(per[n.cat]||0)+1);
-  for(const n of [...all].filter(n=>ageH(n)<72).sort((a,b)=>rank(b)-rank(a))){if(picks.length>=10)break;
+  for(const n of [...all].filter(n=>ageH(n)<72).sort((a,b)=>rank(b)-rank(a))){if(picks.length>=15)break;
     if(picks.includes(n)||(per[n.cat]||0)>=2)continue;picks.push(n);per[n.cat]=(per[n.cat]||0)+1;}
+  for(const n of [...all].filter(n=>ageH(n)<72).sort((a,b)=>rank(b)-rank(a))){if(picks.length>=15)break;   // still short: allow a 3rd per section
+    if(picks.includes(n)||(per[n.cat]||0)>=3)continue;picks.push(n);per[n.cat]=(per[n.cat]||0)+1;}
   saved.ids=picks.map(nxId);store.set("nx_today",saved);
   const isR=n=>!!NX.read[nxId(n)],done=picks.filter(isR).length,total=picks.length,st=nxStreak(),todayN=NX.days[day]||0;
   const nextI=picks.findIndex(n=>!isR(n)),mins=Math.max(1,Math.round(picks.filter(n=>!isR(n)).length*.7));
@@ -1715,7 +1717,7 @@ function renderNews(){ // v39: "Today's 10" — one short list, one next step, v
   const week=[...Array(7)].map((_,k)=>{const d=new Date(now-(6-k)*864e5),v=NX.days[dayKey(d)]||0;return `<i class="${v>=NX.goal?"ok":v?"part":""}"></i>`;}).join("");
   const goalTxt=todayN>=NX.goal?L("Streak kept for today ✓","Série gardée aujourd'hui ✓","حافظت على السلسلة اليوم ✓"):L(`Read ${NX.goal-todayN} more to keep your streak`,`Encore ${NX.goal-todayN} pour garder votre série`,`اقرأ ${NX.goal-todayN} لتحافظ على سلسلتك`);
   $("#nx-habit").innerHTML=`<div class="t10">
-    <div class="t10-top"><div><h2>${L("Today's 10","Les 10 du jour","أهم 10 اليوم")}</h2><p>${done>=total&&total?L("All done for today","Terminé pour aujourd'hui","انتهيت لليوم"):L(`About ${mins} min · the stories that matter most`,`Environ ${mins} min · l'essentiel du jour`,`حوالي ${mins} د · الأهم اليوم`)}</p></div>
+    <div class="t10-top"><div><h2>${L(`Today's ${total}`,`Les ${total} du jour`,`أهم ${total} اليوم`)}</h2><p>${done>=total&&total?L("All done for today","Terminé pour aujourd'hui","انتهيت لليوم"):L(`About ${mins} min · the stories that matter most`,`Environ ${mins} min · l'essentiel du jour`,`حوالي ${mins} د · الأهم اليوم`)}</p></div>
       <button class="t10-s" id="nx-sbtn" type="button" aria-label="${L("Search","Rechercher","بحث")}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5" stroke-linecap="round"/></svg></button></div>
     <div class="t10-bar">${picks.map(n=>`<i class="${isR(n)?"on":""}"></i>`).join("")}</div>
     <div class="t10-m"><b>${done}/${total} ${L("read","lus","مقروء")}</b><span>${st?`🔥 ${st} ${L(st>1?"days":"day",st>1?"jours":"jour","يوم")}`:""}</span></div>
