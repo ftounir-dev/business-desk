@@ -168,12 +168,18 @@ async function llm(prompt, maxTokens = 3000) {
   }[p];
   let last = "";
   for (const model of C.models.filter(Boolean)) {
-    const r = await fetch(C.url, { method: "POST", signal: AbortSignal.timeout(120e3),
-      headers: { "authorization": "Bearer " + C.key, "content-type": "application/json" },
-      body: JSON.stringify({ model, max_tokens: maxTokens, messages: [{ role: "user", content: prompt }] }) });
-    if (r.ok) { const t = (await r.json()).choices?.[0]?.message?.content; if (t) { log.push(`ai: ${p} ${model}`); return t; } last = model + " empty"; continue; }
-    last = `${model} ${r.status} ${(await r.text()).slice(0, 200)}`;
-    if (r.status === 401 || r.status === 403) break;   // bad key: no point trying other models
+    for (const extra of p === "gemini" ? [{ reasoning_effort: "low" }, {}] : [{}]) {   // less "thinking" = faster answers
+      let r;
+      try {
+        r = await fetch(C.url, { method: "POST", signal: AbortSignal.timeout(240e3),
+          headers: { "authorization": "Bearer " + C.key, "content-type": "application/json" },
+          body: JSON.stringify({ model, max_tokens: maxTokens, ...extra, messages: [{ role: "user", content: prompt }] }) });
+      } catch (e) { last = `${model}: ${e.message}`; log.push("ai try " + last); break; }   // timeout: move on to the next model
+      if (r.ok) { const t = (await r.json()).choices?.[0]?.message?.content; if (t) { log.push(`ai: ${p} ${model}`); return t; } last = model + " empty"; log.push("ai try " + last); break; }
+      last = `${model} ${r.status} ${(await r.text()).slice(0, 160).replace(/\s+/g, " ")}`; log.push("ai try " + last);
+      if (r.status === 401 || r.status === 403) throw new Error(p + " " + last);   // bad key
+      if (r.status !== 400) break;   // 400 may be the reasoning option: retry once without it
+    }
   }
   throw new Error(p + " " + last);
 }
