@@ -276,6 +276,14 @@ section{padding-top:26px}
 .nx-lead.read h3{color:var(--muted)}
 .nx-more{display:block;width:100%;margin:16px 0 4px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font:inherit;font-weight:700;color:var(--text);cursor:pointer}
 .nx-done{margin-top:18px;padding:16px;border-radius:14px;background:var(--accent-soft);text-align:center;font-weight:600;font-size:.92rem}
+/* v41: Read */
+.rd2-hero{display:block;margin-top:14px;border-radius:18px;overflow:hidden;background:var(--surface);border:1px solid var(--line);text-decoration:none;color:inherit}
+.rd2-ph{aspect-ratio:16/9;background:var(--sunk)}.rd2-ph img{width:100%;height:100%;object-fit:cover;display:block}
+.rd2-b{padding:16px}
+.rd2-b h3{margin:2px 0 0;font-family:var(--display);font-size:1.3rem;line-height:1.25;font-weight:700;text-wrap:balance}
+.rd2-b p{margin:10px 0 0;font-size:.92rem;line-height:1.5;color:var(--muted)}.rd2-b p b{color:var(--text);font-weight:600}
+.rd2-hero.read h3{color:var(--muted)}
+#v-read .t10-h{margin:22px 0 2px}
 /* v39: Today's 10 */
 .t10{margin-top:4px;padding:16px;border-radius:18px;background:var(--surface);border:1px solid var(--line)}
 .t10-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
@@ -881,19 +889,11 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 
 <!-- READ -->
 <div class="view" id="v-read" hidden>
-  <section>
-    <h2 class="sec" data-t="t_read"></h2>
-    <div class="rd-goal" id="rd-goal"></div>
+  <section style="padding-top:18px">
+    <div id="rd-goal"></div>
     <div id="aotd"></div>
-  </section>
-  <section>
-    <div class="sec-head"><h2 class="sec" data-t="more_t"></h2></div>
-    <div class="chips" id="rd-chips" role="group" aria-label="Topics"></div>
     <div id="more"></div>
-  </section>
-  <section id="rd-hist-wrap" hidden>
-    <div class="sec-head"><h2 class="sec" data-t="hist_t"></h2></div>
-    <div class="rd-hist" id="rd-hist"></div>
+    <div id="rd-chips" hidden></div><div id="rd-hist-wrap" hidden><div id="rd-hist"></div></div>
   </section>
 </div>
 
@@ -1456,24 +1456,42 @@ const RD_TOPICS=[
 const rdTopic=a=>RD_TOPICS.find(t=>t[4].test(a.title))||["idea","💡","Ideas","Idées"];
 const rdId=a=>(a.url||a.title).slice(-90);
 function rdMark(a){if(RD.read[rdId(a)])return;RD.read[rdId(a)]=Date.now();store.set("rd_read",RD.read);}
-function renderRead(){
-  const R=B.read,fr=lang==="fr";$("#aotd").innerHTML="";$("#more").innerHTML="";
-  const wk=Date.now()-7*864e5,nWeek=Object.values(RD.read).filter(t=>t>wk).length,goal=3;
-  $("#rd-goal").innerHTML=`<span>📚</span><div class="bar"><i style="width:${Math.min(100,nWeek/goal*100)}%"></i></div><b>${nWeek}/${goal} ${(lang==="ar"?"قراءات مطوّلة هذا الأسبوع":fr?"lectures cette semaine":"long reads this week")}${nWeek>=goal?" 🎯":""}</b>`;
-  if(!R||!R.pick){$("#aotd").innerHTML=`<p class="empty">${t("nostories")}</p>`;return;}
-  const p=R.pick,ai=p.ai||{},title=(fr&&ai.fr&&ai.fr.title)||(p.t&&p.t[lang])||p.title,why=(ai[lang]||{}).why,tp=rdTopic(p);
-  const src=a=>`<div class="rd-src"><b>${esc(a.source)}</b>${a.paywall?`<span class="rd-lock" title="${(lang==="ar"?"اشتراك":fr?"Abonnement":"Subscription")}">🔒</span>`:""}<span>· ${ago(a.date)}</span><span class="rd-tp">${rdTopic(a)[1]} ${L3(rdTopic(a))}</span></div>`;
-  $("#aotd").innerHTML=`<a class="rd-hero" href="${esc(p.url)}" target="_blank" rel="noopener" data-rid="pick"><div class="ph">${p.img?`<img src="${esc(p.img)}" alt="" decoding="async" onerror="this.remove()">`:""}<span class="badge">${(lang==="ar"?"مقال اليوم":fr?"Article du jour":"Article of the day")}</span></div>
-    <div class="bd">${src(p)}<h3>${esc(title)}</h3>${why?`<p class="why"><b>${t("why")} ·</b> ${esc(why)}</p>`:""}<span class="rd-cta">${t("readit")} ↗</span></div></a>`;
-  const more=R.more||[],topics=RD_TOPICS.filter(t=>more.some(a=>rdTopic(a)[0]===t[0]));
-  if(!["all",...topics.map(t=>t[0])].includes(RD.topic))RD.topic="all";
-  $("#rd-chips").innerHTML=[`<button class="chip" type="button" data-rt="all" aria-pressed="${RD.topic==="all"}">${t("all")}</button>`,...topics.map(t=>`<button class="chip" type="button" data-rt="${t[0]}" aria-pressed="${RD.topic===t[0]}">${t[1]} ${L3(t)}</button>`)].join("");
-  document.querySelectorAll("[data-rt]").forEach(b=>b.onclick=()=>{RD.topic=b.dataset.rt;renderRead();});
-  const list=more.filter(a=>RD.topic==="all"||rdTopic(a)[0]===RD.topic);
-  $("#more").innerHTML=list.map((a,i)=>`<a class="rd-row${RD.read[rdId(a)]?" read":""}" href="${esc(a.url)}" target="_blank" rel="noopener" data-rid="${more.indexOf(a)}"><div>${src(a)}<h4>${esc((a.t&&a.t[lang])||a.title)}</h4></div>${a.img?`<img src="${esc(a.img)}" alt="" loading="lazy" decoding="async" onerror="this.outerHTML='<span class=&quot;ph0&quot;>${rdTopic(a)[1]}</span>'">`:`<span class="ph0">${rdTopic(a)[1]}</span>`}</a>`).join("")||`<p class="empty">${t("nostories")}</p>`;
-  const H=R.history||[];$("#rd-hist-wrap").hidden=!H.length;
-  $("#rd-hist").innerHTML=H.map(a=>`<a href="${esc(a.url)}" target="_blank" rel="noopener"><span class="d">${fdate(a.date,{day:"numeric",month:"short"})}</span><span><b>${esc(a.source)}</b> · ${esc(a.title)}</span></a>`).join("");
-  document.querySelectorAll("#v-read [data-rid]").forEach(el=>el.onclick=()=>{const a=el.dataset.rid==="pick"?p:more[+el.dataset.rid];if(a){rdMark(a);setTimeout(renderRead,400);}});
+function renderRead(){ // v41: one pick, a short list, a weekly goal
+  const R=B.read,fr=lang==="fr",ar=lang==="ar",L=(e,f,a)=>ar?a:fr?f:e;$("#aotd").innerHTML="";$("#more").innerHTML="";
+  const goal=3,now=Date.now(),wk=now-7*864e5,nWeek=Object.values(RD.read).filter(t=>t>wk).length;
+  // weeks in a row with at least 3 long reads
+  const inWk=w=>Object.values(RD.read).filter(t=>t>now-(w+1)*7*864e5&&t<=now-w*7*864e5).length;
+  let wstreak=0;for(let w=inWk(0)>=goal?0:1;w<52&&inWk(w)>=goal;w++)wstreak++;
+  const isR=a=>!!RD.read[rdId(a)];
+  const lock=a=>a.paywall?` · 🔒 ${L("subscription","abonnement","اشتراك")}`:"";
+  const tp=a=>{const x=rdTopic(a);return `<span class="t10-c"><i style="background:var(--accent)"></i>${x[1]} ${esc(L3(x))}</span>`;};
+  if(!R||!R.pick){$("#rd-goal").innerHTML="";$("#aotd").innerHTML=`<p class="empty">${t("nostories")}</p>`;return;}
+  const p=R.pick,ai=p.ai||{},title=(fr&&ai.fr&&ai.fr.title)||(p.t&&p.t[lang])||p.title,why=(ai[lang]||{}).why;
+  const more=(R.more||[]).slice(0,5),rest=(R.more||[]).slice(5);
+  const list=[p,...more],done=list.filter(isR).length,nextI=list.findIndex(a=>!isR(a));
+  $("#rd-goal").innerHTML=`<div class="t10">
+    <div class="t10-top"><div><h2>${L("Today's reading","La lecture du jour","قراءة اليوم")}</h2><p>${L("One article worth your time, and five more if you want them","Un article qui vaut votre temps, et cinq autres si vous voulez","مقال يستحق وقتك، وخمسة أخرى إن أردت")}</p></div></div>
+    <div class="t10-bar">${[...Array(goal)].map((_,k)=>`<i class="${k<nWeek?"on":""}"></i>`).join("")}</div>
+    <div class="t10-m"><b>${Math.min(nWeek,goal)}/${goal} ${L("long reads this week","lectures cette semaine","قراءات هذا الأسبوع")}${nWeek>=goal?" ✓":""}</b><span>${wstreak?`🔥 ${wstreak} ${L(wstreak>1?"weeks":"week",wstreak>1?"semaines":"semaine","أسبوع")}`:""}</span></div></div>`;
+  const pr=isR(p);
+  $("#aotd").innerHTML=`<a class="rd2-hero${pr?" read":""}" href="${esc(p.url)}" target="_blank" rel="noopener" data-rid="pick">
+    ${p.img?`<div class="rd2-ph"><img src="${esc(p.img)}" alt="" decoding="async" onerror="this.parentElement.remove()"></div>`:""}
+    <div class="rd2-b"><span class="t10-up">${pr?"✓ "+L("Read","Lu","مقروء"):L("Article of the day","Article du jour","مقال اليوم")}</span>
+    <h3>${esc(title)}</h3>${why?`<p><b>${L("Why read it","Pourquoi le lire","لماذا تقرأه")}:</b> ${esc(why)}</p>`:""}
+    <div class="t10-src">${esc(p.source)} · ${ago(p.date)}${lock(p)}</div></div></a>`;
+  let html=more.length?`<div class="t10-h">${L("If you have more time","Si vous avez plus de temps","إن كان لديك وقت أطول")}</div>`:"";
+  html+=more.map((a,k)=>{const r=isR(a),nx=k+1===nextI;
+    return `<a class="t10-i${r?" read":""}${nx?" next":""}" href="${esc(a.url)}" target="_blank" rel="noopener" data-rid="${k}"><span class="t10-n">${r?"✓":k+1}</span><div class="t10-b">${nx?`<span class="t10-up">${L("Up next","À lire ensuite","التالي")}</span>`:""}${tp(a)}<h3>${esc((a.t&&a.t[lang])||a.title)}</h3><div class="t10-src">${esc(a.source)} · ${ago(a.date)}${lock(a)}</div></div></a>`;}).join("");
+  if(done>=list.length)html+=`<div class="t10-done"><b>✅ ${L("All read for today","Tout lu pour aujourd'hui","قرأت كل شيء اليوم")}</b><span>${L("A new pick arrives tomorrow morning.","Un nouvel article arrive demain matin.","مقال جديد صباح الغد.")}</span></div>`;
+  const H=R.history||[];
+  if(rest.length||H.length)html+=`<details class="t10-more"><summary>${L("More to browse","Plus à parcourir","المزيد للتصفح")}</summary>
+    ${rest.length?`<details class="t10-sec"><summary><i style="background:var(--accent)"></i>${L("More articles","Autres articles","مقالات أخرى")}<span>${rest.length}</span></summary>${rest.map((a,k)=>`<a class="t10-row${isR(a)?" read":""}" href="${esc(a.url)}" target="_blank" rel="noopener" data-rid="${k+5}"><h3>${esc((a.t&&a.t[lang])||a.title)}</h3><span>${esc(a.source)} · ${ago(a.date)}${lock(a)}</span></a>`).join("")}</details>`:""}
+    ${H.length?`<details class="t10-sec"><summary><i style="background:var(--muted)"></i>${L("Past articles of the day","Anciens articles du jour","مقالات الأيام السابقة")}<span>${H.length}</span></summary>${H.map(a=>`<a class="t10-row" href="${esc(a.url)}" target="_blank" rel="noopener"><h3>${esc(a.title)}</h3><span>${esc(a.source)} · ${fdate(a.date,{day:"numeric",month:"short"})}</span></a>`).join("")}</details>`:""}</details>`;
+  const open=[...document.querySelectorAll("#more details[open] > summary")].map(x=>x.textContent);
+  $("#more").innerHTML=html;
+  document.querySelectorAll("#more details > summary").forEach(x=>{if(open.includes(x.textContent))x.parentElement.open=true;});
+  const all=R.more||[];
+  document.querySelectorAll("#v-read [data-rid]").forEach(el=>el.onclick=()=>{const a=el.dataset.rid==="pick"?p:all[+el.dataset.rid];if(a){rdMark(a);setTimeout(renderRead,400);}});
 }
 function renderAgenda(){
   const today=new Date().toISOString().slice(0,10),fr=lang==="fr",ar=lang==="ar",L=(e,f,a)=>ar?a:fr?f:e;
