@@ -218,7 +218,39 @@ function ogImage(html, base) {
   try { const u = new URL(decode(c[1]), base); return /^https:/.test(u.href) && !/logo|placeholder|default/i.test(u.pathname) ? u.href : null; } catch { return null; }
 }
 const why = {};
+/* v33: real photos. Google News links are redirects: decode them to the publisher's page and read its cover photo (og:image). */
+let GN = {}, photoDeadline = 0;
+const bump = k => { why[k] = (why[k] || 0) + 1; };
+async function gnDecode(u) {
+  const id = (u.match(/\/articles\/([^?#]+)/) || [])[1]; if (!id) return null;
+  const html = await fetchText(`https://news.google.com/rss/articles/${id}`, 8000);
+  const sg = (html.match(/data-n-a-sg="([^"]+)"/) || [])[1], ts = (html.match(/data-n-a-ts="([^"]+)"/) || [])[1];
+  if (!sg || !ts) { bump("gnsig"); return null; }
+  const req = [[["Fbv4je", JSON.stringify(["garturlreq", [["X", "X", ["X", "X"], null, null, 1, 1, "US:en", null, 1, null, null, null, null, null, 0, 1], "X", "X", 1, [1, 1, 1], 1, 1, null, 0, 0, null, 0], id, Number(ts), sg]), null, "generic"]]];
+  const r = await fetch("https://news.google.com/_/DotsSplashUi/data/batchexecute", { method: "POST", signal: AbortSignal.timeout(8000),
+    headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8", "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15" },
+    body: "f.req=" + encodeURIComponent(JSON.stringify(req)) });
+  const t = await r.text(), part = t.split("\n\n")[1]; if (!part) { bump("gnresp"); return null; }
+  const inner = JSON.parse(JSON.parse(part)[0][2]); const art = inner && inner[1];
+  return typeof art === "string" && /^https?:/.test(art) ? art : null;
+}
+async function publisherPhoto(h) {
+  if (!/news\.google\.com\/rss\/articles\//.test(h.url || "")) return null;
+  const art = await gnDecode(h.url); if (!art) return null;
+  const html = await fetchText(art, 7000);
+  const od = (html.match(/<meta[^>]+(?:property|name)=["'](?:og:description|description)["'][^>]*>/i) || [""])[0].match(/content=["']([^"']+)/i);
+  const dd = od && cleanDesc(od[1], h.title); if (dd && (!h.desc || dd.length > h.desc.length)) h.desc = dd;
+  return ogImage(html, art);
+}
 async function photoFor(h) {
+  const c = GN[h.url];
+  if (c && c.img) { bump("cached"); return c.img; }
+  if (!c || Date.now() - c.at > 6 * 36e5) {
+    if (Date.now() < photoDeadline) {
+      try { const img = await publisherPhoto(h); if (img) { bump("publisher"); return img; } } catch (e) { bump("gnerr"); }
+    }
+  }
+  let alt = null;
   const mkt = h.lang === "fr" ? "fr-FR" : "en-US", want = new Set(words(h.title)), all = h.title.split(" ");
   for (const q of [all.slice(0, 12).join(" "), [...want].slice(0, 5).join(" "), all.slice(0, 7).join(" ") + " " + h.source]) {
     let xml;
@@ -230,7 +262,11 @@ async function photoFor(h) {
       const got = new Set(words(tag(b, "title"))); const hit = [...got].filter(w => want.has(w)).length;
       if (hit < 3 && hit / Math.max(1, Math.min(want.size, got.size)) < 0.5) continue;   // must be the same story
       const bsrc = tag(b, "News:Source").toLowerCase().replace(/[^a-z0-9]/g, ""), hsrc = (h.source || "").toLowerCase().replace(/[^a-z0-9]/g, "").replace(/com$/, "");
-      if (!bsrc || !hsrc || !(bsrc.includes(hsrc.slice(0, 8)) || hsrc.includes(bsrc.slice(0, 8)))) { why.othersrc = (why.othersrc || 0) + 1; continue; }   // same publisher only
+      if (!bsrc || !hsrc || !(bsrc.includes(hsrc.slice(0, 8)) || hsrc.includes(bsrc.slice(0, 8)))) {   // another outlet's photo of the same story: keep only as a last resort
+        why.othersrc = (why.othersrc || 0) + 1;
+        const th = (b.match(/<News:Image>([\s\S]*?)<\/News:Image>/i) || [])[1];
+        if (!alt && th && hit >= 4 && hit / Math.max(1, Math.min(want.size, got.size)) >= 0.6) alt = decode(th) + "&w=900&h=1200&c=7&rs=1";
+        continue; }
       fullTitle(h, tag(b, "title"));
       if (!h.desc) h.desc = cleanDesc(tag(b, "description"), h.title);
       const thumb = (b.match(/<News:Image>([\s\S]*?)<\/News:Image>/i) || [])[1];
@@ -243,12 +279,13 @@ async function photoFor(h) {
     }
     why.nomatch = (why.nomatch || 0) + 1;
   }
-  return null;
+  if (alt) bump("sameStoryOtherOutlet");
+  return alt;
 }
 async function addPhotos(list) {
   const queue = [...list]; let n = 0;
   await Promise.all(Array.from({ length: 4 }, async () => {
-    while (queue.length) { const h = queue.shift(); try { const img = await photoFor(h); if (img) { h.img = img; n++; } } catch (e) {} }
+    while (queue.length) { const h = queue.shift(); try { const img = await photoFor(h); if (img) { h.img = img; n++; } if (h.url) GN[h.url] = { img: img || null, at: img && GN[h.url] && GN[h.url].img === img ? GN[h.url].at : Date.now() }; } catch (e) {} }
   }));
   log.push(`photos: ${n}/${list.length} ${JSON.stringify(why)}`);
 }
@@ -366,7 +403,8 @@ for (const n of cfg.news) {
 }
 const seen = new Set();
 headlines = headlines.filter(h => { const k = h.title.toLowerCase().slice(0, 60); if (seen.has(k)) return false; seen.add(k); return true; });
-if (!MOCK) await addPhotos(cfg.news.flatMap(n => headlines.filter(h => h.cat === n.cat).slice(0, 6)));
+GN = prevBrief.gn_cache || {}; photoDeadline = Date.now() + 150e3;
+if (!MOCK) await addPhotos(headlines.filter(h => !h.img));
 
 /* ---------- Both languages: every headline and summary in English and French ---------- */
 let gBlocked = false, mmLeft = 30;
@@ -624,7 +662,8 @@ const brief = {
   generated_at: new Date().toISOString(), follow: cfg.follow || [], alerts: cfg.ntfy_topic ? "https://ntfy.sh/" + cfg.ntfy_topic : null, summary_at: summaryAt, edition: keepBrief ? (old.edition || edition) : edition, summary_mode: summaryMode, peg: cfg.eur_xaf_peg, fx,
   markets, static_rates: cfg.static_rates, agenda: cfg.agenda,
   categories: cfg.news.map(n => ({ id: n.cat, en: n.label_en, fr: n.label_fr, ar: n.label_ar || { worldwide: "العالم", africa: "أفريقيا", congo: "الكونغو وCEMAC", markets: "الأسواق", bev: "المشروبات والتغليف", cfo: "المالية والخزينة", lebanon: "لبنان" }[n.cat] || n.label_en })),
-  summary, takeaway, podcast, on_this_day: otd, read, news: headlines.map((h, i) => ({ id: "n" + i + "-" + h.date.slice(0, 10), ...h })), log
+  summary, takeaway, podcast, on_this_day: otd, read, news: headlines.map((h, i) => ({ id: "n" + i + "-" + h.date.slice(0, 10), ...h })), log,
+  gn_cache: Object.fromEntries(headlines.filter(h => h.url && GN[h.url]).map(h => [h.url, GN[h.url]]))
 };
 await fs.mkdir(path.join(ROOT, "data"), { recursive: true });
 await fs.writeFile(path.join(ROOT, "data", "brief.json"), JSON.stringify(brief, null, 1));
