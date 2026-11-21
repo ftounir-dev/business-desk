@@ -1334,7 +1334,7 @@ function renderOTD(){
   const G=[["world","🌍",(lang==="ar"?"العالم":fr?"Monde":"Worldwide"),""],["congo","🇨🇬","Congo",(lang==="ar"?"هذا الأسبوع في التاريخ":fr?"cette semaine dans l'histoire":"this week in history")],["lebanon","🇱🇧",(lang==="ar"?"لبنان":fr?"Liban":"Lebanon"),(lang==="ar"?"هذا الأسبوع في التاريخ":fr?"cette semaine dans l'histoire":"this week in history")]];
   $("#otd-wrap").hidden=!G.some(x=>(g[x[0]]||[]).length);
   $("#otd").innerHTML=G.map(([k,f,name,sub])=>{const l=g[k]||[];
-    return `<h4 class="otd-h">${f} ${name}${sub?`<span>· ${sub}</span>`:""}</h4>`+(l.length?`<ul class="agenda otd">${l.map(e=>`<li><span class="d">${esc(lab(e))}</span><span>${esc(pre(e)+e.text)}${e.url?` <a class="see" href="${esc(e.url)}" target="_blank" rel="noopener">↗</a>`:""}</span></li>`).join("")}</ul>`:`<p class="empty">${(lang==="ar"?"لا أحداث بارزة مسجلة لهذه التواريخ.":fr?"Rien de marquant pour ces dates.":"Nothing notable recorded for these dates.")}</p>`);}).join("");
+    return `<h4 class="otd-h">${f} ${name}${sub?`<span>· ${sub}</span>`:""}</h4>`+(l.length?`<ul class="agenda otd">${l.map(e=>`<li><span class="d">${esc(lab(e))}</span><span>${esc(pre(e)+e.text.replace(/\s*\((pictured|illustré|en photo)\)/gi,""))}</span></li>`).join("")}</ul>`:`<p class="empty">${(lang==="ar"?"لا أحداث بارزة مسجلة لهذه التواريخ.":fr?"Rien de marquant pour ces dates.":"Nothing notable recorded for these dates.")}</p>`);}).join("");
 }
 function renderHero(){
   const fr=lang==="fr",now=new Date(),hr=now.getHours(),items=B.summary[lang]||B.summary.en||[];
