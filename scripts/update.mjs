@@ -212,7 +212,7 @@ ${JSON.stringify(pool)}`;
       const h = Number.isInteger(x.source_index) ? headlines[x.source_index] : null;
       const cat = (h && h.cat) || x.cat;
       return { level: x.level === "high" || x.score >= 5 ? "high" : "med", score: Number(x.score) || null, cat, source: h ? h.source : "", date: h ? h.date : null, img: h ? h.img || null : null, owner: (labels[cat] || {})[lang] || "", title: String(x.title || ""),
-               detail: String(x.detail || ""), impact: String(x.impact || "").replace(/^\s*(?:impact(?: pour [^:]{0,30})?|الأثر)\s*[:：]\s*/i, ""), url: h ? h.url : null };
+               detail: String(x.detail || ""), impact: String(x.impact || "").replace(/^\s*(?:impact(?: pour [^:]{0,30})?|الأثر|التأثير|الأثر المتوقع)\s*[:：]\s*/i, ""), url: h ? h.url : null };
     });
   }
   if (!json.takeaway || !json.takeaway.en) json.takeaway = null;
@@ -631,8 +631,55 @@ else {
   });
 }
 
+/* ---------- v35: the Morning Brief written by AI — explained, not just headlines ---------- */
+async function aiPodcast(edition) {
+  if (!aiProvider()) return null;
+  const now = new Date(), ago = h => (Date.now() - new Date(h.date)) / 36e5;
+  const mk = ["brent", "gold", "usdxaf", "eurusd"].map(id => markets.find(m => m.id === id)).filter(m => m && typeof m.change_pct === "number").map(m => {
+    const s = m.series || [], first = s.length ? s[0][1] : null;
+    return { name: m.id === "usdxaf" ? "US dollar in CFA francs (USD/XAF)" : m.name, last: +m.value.toFixed(2), day_change_pct: +m.change_pct.toFixed(2), month_change_pct: first ? +((m.value / first - 1) * 100).toFixed(1) : null };
+  });
+  const st = headlines.filter(h => ago(h) < 48).sort((a, b) => (b.score || 0) - (a.score || 0)).slice(0, 30)
+    .map(h => ({ section: h.cat, title: (h.t && h.t.en) || h.title, detail: String((h.d && h.d.en) || h.desc || "").slice(0, 300), hours_ago: Math.round(ago(h)) }));
+  const ag = (cfg.agenda || []).filter(a => { const d = (new Date(a.date) - now) / 864e5; return d > -1 && d < 8; }).slice(0, 3).map(a => ({ date: a.date, what: a.en }));
+  const prompt = `You write and voice "The Morning Brief", a spoken audio briefing for Rayan, a finance executive in ${cfg.city}, Republic of Congo (CEMAC, CFA franc pegged to the euro, oil-exporting economy). It is the ${edition} edition, ${now.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", year: "numeric" })}.
+
+Write a script of about 600 words in English (about 4 minutes spoken), then the same script in natural French and in Modern Standard Arabic. Spoken style: short clear sentences, warm and professional, like a radio economics correspondent. Plain text only: no markdown, no bullet symbols, no emojis, no URLs.
+
+Structure, as segments:
+1. "intro": greet Rayan (Good ${edition === "morning" ? "morning" : "evening"}), say the date, one sentence on the big theme of the day.
+2. "markets": Brent oil, gold, and the dollar against the CFA franc. For each: the move, WHY it moved (use the headlines below; if they do not explain it, say what traders are weighing in general terms, without inventing specific events or figures), and WHAT IT MEANS for the world economy and for Central Africa (for example: oil revenue for Congo's budget, fuel and import costs, inflation, the euro-dollar rate for CFA importers). 120 to 170 words.
+3. Five "point" segments: the five most important stories for Rayan, mixing world, Africa and Congo/CEMAC. For each: what happened, why it happened, and why it matters (consequences for markets, prices, rates, budgets or the region). 60 to 90 words each. Start each with a short spoken label such as "First, in Congo," or "Second, in global markets,".
+4. "number": the number of the day, a striking figure from the stories, and what it tells us. 30 to 50 words.
+5. "watch": what to watch next${ag.length ? " (use the agenda)" : ""}. 25 to 50 words.
+6. "outro": one short sign-off.
+
+Strict rules: NEVER mention news outlets, agencies, newspapers, websites, journalists or "according to" sources. Use only facts and numbers present in the data below; never invent numbers, quotes or events. Say numbers the way a presenter would ("one point two percent", not "1.2%") in each language. Do not mention any company that is not in the stories.
+
+Return JSON only: {"en":[{"k":"intro","text":"..."},...],"fr":[...],"ar":[...]} with the same segments in the same order in all three languages.
+
+MARKETS: ${JSON.stringify(mk)}
+STORIES: ${JSON.stringify(st)}
+AGENDA: ${JSON.stringify(ag)}`;
+  const t = await llm(prompt, 12000); if (!t) return null;
+  const J = JSON.parse(t.slice(t.indexOf("{"), t.lastIndexOf("}") + 1));
+  const ok = ["intro", "markets", "point", "number", "watch", "outro"];
+  const P = { id: Date.now().toString(36), edition, ai: true };
+  for (const lang of ["en", "fr", "ar"]) {
+    const S = (J[lang] || []).map(x => ({ k: ok.includes(x.k) ? x.k : "point", text: String(x.text || "").replace(/[*#_`]/g, "").replace(/\s+/g, " ").trim() })).filter(x => x.text.length > 10);
+    if (S.length < 5) { if (lang === "ar" && P.en) { const tr = await translateBatch(P.en.map(x => x.text), "en", "ar"); P.ar = P.en.map((x, i) => ({ k: x.k, text: tr[i] || x.text })); P.mins_ar = P.mins_en; continue; } throw new Error("podcast " + lang + " too short"); }
+    P[lang] = S;
+    P["mins_" + lang] = Math.max(1, Math.round(S.reduce((a, x) => a + x.text.split(/\s+/).length, 0) / (lang === "ar" ? 120 : 150)));
+  }
+  return P;
+}
+
 /* ---------- The Morning Brief: a short spoken rundown, independent from the edition ---------- */
 let podcast = keepBrief && old.podcast ? old.podcast : null;
+if (!podcast && !MOCK) {
+  try { podcast = await aiPodcast(edition); if (podcast) log.push(`podcast: AI, ${podcast.en.length} parts, ~${podcast.mins_en} min`); }
+  catch (e) { log.push("podcast ai: " + e.message); podcast = null; }
+}
 if (!podcast) {
   const L3 = { en: "en", fr: "fr", ar: "ar" }, now = new Date();
   const day = { en: now.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" }), fr: now.toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long" }), ar: now.toLocaleDateString("ar", { weekday: "long", day: "numeric", month: "long", numberingSystem: "latn" }) };
@@ -642,7 +689,7 @@ if (!podcast) {
     const nm = { en: { brent: "Brent crude", gold: "Gold", eurusd: "The euro", usdxaf: "The dollar" }, fr: { brent: "Le Brent", gold: "L'or", eurusd: "L'euro", usdxaf: "Le dollar" }, ar: { brent: "خام برنت", gold: "الذهب", eurusd: "اليورو", usdxaf: "الدولار" } }[lang][m.id];
     if (Math.abs(m.change_pct) < 0.2) return { en: `${nm} is flat.`, fr: `${nm} est stable.`, ar: `${nm} مستقر.` }[lang];
     return { en: `${nm} is ${up ? "up" : "down"} ${p} percent.`, fr: `${nm} ${up ? "gagne" : "perd"} ${p.replace(".", ",")} pour cent.`, ar: `${nm} ${up ? "يرتفع" : "ينخفض"} ${p} بالمئة.` }[lang]; };
-  const why = (m, lang) => m && m.why && m.why.source && m.why[lang] ? { en: " Behind it: ", fr: " En cause : ", ar: " السبب: " }[lang] + m.why[lang].replace(/[.…]+$/, "") + "." : "";
+  const why = () => "";
   // five points: the strongest stories from five different sections, fresh first
   const ageH = h => (Date.now() - new Date(h.date)) / 36e5, used = new Set(), pts = [];
   const pool = headlines.filter(h => h.cat !== "markets");
