@@ -276,6 +276,18 @@ section{padding-top:26px}
 .nx-lead.read h3{color:var(--muted)}
 .nx-more{display:block;width:100%;margin:16px 0 4px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font:inherit;font-weight:700;color:var(--text);cursor:pointer}
 .nx-done{margin-top:18px;padding:16px;border-radius:14px;background:var(--accent-soft);text-align:center;font-weight:600;font-size:.92rem}
+/* v37: audit fixes */
+.ag2 li{grid-template-columns:70px 1fr}
+.ag-t{font-weight:600;line-height:1.35}
+.ag-m{display:flex;flex-wrap:wrap;gap:6px 10px;margin-top:5px;font-size:.78rem;color:var(--muted)}
+.ag-st{font-size:.66rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:2px 8px;border-radius:999px}
+.ag-st.ok{color:var(--relief);background:color-mix(in srgb,var(--relief) 14%,transparent)}.ag-st.tb{color:#b7791f;background:color-mix(in srgb,#d9a441 18%,transparent)}
+.ag-s{margin-top:4px;font-size:.76rem;color:var(--muted)}.ag-s a{color:var(--accent);font-weight:600;text-decoration:none}
+.ag-empty{color:var(--muted);font-size:.9rem;display:block!important}
+.mrow .un .hist{color:#b7791f;font-weight:700}
+.mdl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0 0 8px;font-size:.82rem}.mdl dt{color:var(--muted)}.mdl dd{margin:0}
+.mnews{margin-bottom:10px;font-size:.84rem}.mnews a{color:var(--accent);font-weight:600;text-decoration:none}.mnews span{color:var(--muted);font-size:.76rem}
+.ev-old{display:inline-block;margin-bottom:8px;padding:3px 10px;border-radius:999px;background:var(--sunk);color:var(--muted);font-size:.72rem;font-weight:700}
 /* v36: auto-playing stories */
 .edv .ed-seg{padding:6px 16px 2px}.edv .ed-seg i{height:4px;background:color-mix(in srgb,var(--text) 20%,transparent)}.edv .ed-seg i.on{background:var(--accent)}.ed-seg i{position:relative;overflow:hidden}.ed-seg i b{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--accent);border-radius:2px}
 [dir=rtl] .ed-seg i b{left:auto;right:0}
@@ -807,13 +819,13 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 
 <!-- EVENTS -->
 <div class="view" id="v-events" hidden>
+  <section>
+    <div class="sec-head"><h2 class="sec" data-t="agenda_t"></h2></div>
+    <ul class="agenda ag2" id="agenda"></ul>
+  </section>
   <section id="otd-wrap" hidden>
     <div class="sec-head"><h2 class="sec" data-t="otd_t"></h2></div>
     <div id="otd"></div>
-  </section>
-  <section>
-    <div class="sec-head"><h2 class="sec" data-t="agenda_t"></h2></div>
-    <ul class="agenda" id="agenda"></ul>
   </section>
 </div>
 
@@ -951,7 +963,7 @@ function renderTop(){
   else{bn.classList.add("quiet");const a=B.markets.filter(m=>alerts[m.id]);$("#banner-text").innerHTML=`<b>${a.length} ${t("armed")}.</b> ${esc(a.map(m=>`${m.name} ${alerts[m.id].dir==="above"?">":"<"} ${fmt(alerts[m.id].v,m.dp)}`).join(" · "))}`;}
   if(offline){bn.classList.remove("quiet");$("#banner-text").innerHTML+="<br>"+t("offline");}
 }
-const REEL_CATS={worldwide:["🌐","linear-gradient(165deg,#2a4fb8,#0b1533)"],africa:["🌍","linear-gradient(165deg,#c8661f,#3b1606)"],congo:["🇨🇬","linear-gradient(165deg,#12895a,#05261a)"],markets:["📈","linear-gradient(165deg,#0e8a93,#04272b)"],bev:["🥤","linear-gradient(165deg,#c22a6a,#3b0a20)"],cfo:["💼","linear-gradient(165deg,#6740c4,#190c3a)"],lebanon:["🇱🇧","linear-gradient(165deg,#c42b2b,#360808)"]};
+const REEL_CATS={worldwide:["🌐","linear-gradient(165deg,#2a4fb8,#0b1533)"],africa:["🌍","linear-gradient(165deg,#c8661f,#3b1606)"],congo:["🇨🇬","linear-gradient(165deg,#12895a,#05261a)"],markets:["📈","linear-gradient(165deg,#0e8a93,#04272b)"],bev:["🥤","linear-gradient(165deg,#c22a6a,#3b0a20)"],cfo:["💼","linear-gradient(165deg,#6740c4,#190c3a)"],lebanon:["🇱🇧","linear-gradient(165deg,#c42b2b,#360808)"],tech:["💻","linear-gradient(165deg,#0f766e,#052e2b)"]};
 const REEL_DUR=6500;
 const reel={i:0,el:0,last:0,paused:false,hold:false,vis:false,n:0,raf:0,io:null};
 const BF={open:null,all:false};
@@ -1010,15 +1022,16 @@ function openEdition(start){
   const setPaused=v=>{paused=v;const b=el.querySelector("#ev-pp");if(b){b.textContent=v?"▶":"❚❚";b.setAttribute("aria-label",v?L("Play","Lecture","تشغيل"):L("Pause","Pause","إيقاف مؤقت"));}el.classList.toggle("ev-paused",v||holding);};
   function story(){const x=items[i],c=catOf(x),cc=catColor(c),sum=cleanDl(x.detail)||"",imp=cleanImp(x.impact),cs=countriesOf((B.summary.en||[])[i]||x),ic=(REEL_CATS[c]||REEL_CATS.worldwide)[0];
     ed.seen[i]=1;edSave(ed);
-    const left=n-i-1,ml=Math.max(1,Math.round(left*.45));
+    const leftS=items.slice(i+1).reduce((a,y)=>a+readSecs(y),0),left=n-i-1,ml=Math.max(1,Math.round(leftS/60));
     return `<div class="ev-hero">${nxArt({...x,cat:c},true,cs)}<div class="ev-sh"></div>
         <div class="ev-tags"><span class="ev-cat" style="background:${cc}">${ic} ${esc(catLabel(c))}</span>${cs.length?`<span class="ev-ct">${cs[0][1]} ${esc(L3(cs[0]))}</span>`:""}</div>
         <span class="ev-n">${i+1} / ${n}</span>
         <button type="button" class="ev-tap prev" aria-label="${L("Previous","Précédent","السابق")}"></button><button type="button" class="ev-tap next" aria-label="${L("Next","Suivant","التالي")}"></button></div>
       <div class="ev-main" style="--cc:${cc}">
+        ${x.kind==="analysis"||(x.date&&(Date.now()-new Date(x.date))/36e5>72)?`<div class="ev-old">🕰 ${L("Older analysis","Analyse plus ancienne","تحليل أقدم")} · ${x.date?ago(x.date):""}</div>`:""}
         <h2 class="ed-ti">${esc(x.title)}</h2>
-        ${sum?`<div class="ev-blk"><span class="ev-ic">📰</span><div><b>${L("What happened","Ce qui s'est passé","ماذا حدث")}</b><p>${esc(sum)}</p></div></div>`:""}
-        ${imp?`<div class="ev-blk ev-imp"><span class="ev-ic">⚡</span><div><b>${t("impact")}</b><p>${esc(imp)}</p></div></div>`:x.ctx?`<div class="ev-blk ev-imp"><span class="ev-ic">📈</span><div><b>${L("Market context","Contexte de marché","سياق السوق")}</b><p>${esc(x.ctx)}</p></div></div>`:""}
+        ${sum?`<div class="ev-blk"><span class="ev-ic">📰</span><div><b>${L("What happened · reported","Ce qui s'est passé · faits rapportés","ماذا حدث · وقائع")}</b><p>${esc(sum)}</p></div></div>`:""}
+        ${imp?`<div class="ev-blk ev-imp"><span class="ev-ic">⚡</span><div><b>${L("Likely implication · analysis","Implication probable · analyse","الأثر المحتمل · تحليل")}</b><p>${esc(imp)}</p></div></div>`:x.ctx?`<div class="ev-blk ev-imp"><span class="ev-ic">📈</span><div><b>${L("Market context","Contexte de marché","سياق السوق")}</b><p>${esc(x.ctx)}</p></div></div>`:""}
         <div class="ed-src"><span>${esc(x.source||"")}${x.date?" · "+ago(x.date):""}${left?` · ${L("about","encore","حوالي")} ${minTxt(ml)} ${L("left","","متبقية")}`:""}</span>${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener" id="ed-read">${L("Read the article","Lire l'article","اقرأ المقال")} ↗</a>`:""}</div>
       </div>`;}
   function finish(){
@@ -1428,10 +1441,20 @@ function renderRead(){
   document.querySelectorAll("#v-read [data-rid]").forEach(el=>el.onclick=()=>{const a=el.dataset.rid==="pick"?p:more[+el.dataset.rid];if(a){rdMark(a);setTimeout(renderRead,400);}});
 }
 function renderAgenda(){
-  const today=new Date().toISOString().slice(0,10);
-  $("#agenda").innerHTML=(B.agenda||[]).filter(a=>a.date>=today).map(a=>{const days=Math.round((new Date(a.date+"T00:00:00")-new Date(today+"T00:00:00"))/864e5);
-    const inD=days===0?((lang==="ar"?"اليوم":lang==="fr"?"aujourd'hui":"today")):days===1?((lang==="ar"?"غدًا":lang==="fr"?"demain":"tomorrow")):(lang==="ar"?"بعد "+days+" يوم":lang==="fr"?"dans "+days+" jours":"in "+days+" days");
-    return`<li><span class="d">${fdate(a.date)}</span><span>${esc(a[lang]||a.en)} <span class="ag-in">· ${inD}</span></span></li>`;}).join("");
+  const today=new Date().toISOString().slice(0,10),fr=lang==="fr",ar=lang==="ar",L=(e,f,a)=>ar?a:fr?f:e;
+  const key=a=>a.date||((a.month||"9999-12")+"-28");
+  const list=(B.agenda||[]).filter(a=>a.date?a.date>=today:(a.month||"")>=today.slice(0,7)).sort((a,b)=>key(a).localeCompare(key(b)));
+  if(!list.length){$("#agenda").innerHTML=`<li class="ag-empty">${L("No upcoming events with a confirmed source.","Aucun événement à venir avec une source confirmée.","لا أحداث قادمة بمصدر مؤكد.")}</li>`;return;}
+  $("#agenda").innerHTML=list.map(a=>{
+    let when,inD="";
+    if(a.date){const days=Math.round((new Date(a.date+"T00:00:00")-new Date(today+"T00:00:00"))/864e5);when=fdate(a.date);
+      inD=days===0?L("today","aujourd'hui","اليوم"):days===1?L("tomorrow","demain","غدًا"):L("in "+days+" days","dans "+days+" jours","بعد "+days+" يوم");}
+    else when=new Date(a.month+"-15T12:00:00").toLocaleDateString(loc(),{month:"short",year:"numeric"});
+    const conf=a.status==="confirmed";
+    return`<li><span class="d">${esc(when)}</span><div class="ag-b">
+      <div class="ag-t">${esc(a[lang]||a.en)}</div>
+      <div class="ag-m"><span class="ag-st ${conf?"ok":"tb"}">${conf?L("Confirmed","Confirmé","مؤكد"):L("Tentative","Provisoire","مبدئي")}</span>${a.time?`<span>🕑 ${esc(a.time)}${a.tz?" "+esc(a.tz):""}</span>`:a.date?"":`<span>${L("Date not announced","Date non annoncée","لم يُعلن الموعد")}</span>`}${inD?`<span>${inD}</span>`:""}</div>
+      <div class="ag-s">${esc(a.institution||"")}${a.country?" · "+esc(a.country):""}${a.url?` · <a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.source||L("Source","Source","المصدر"))} ↗</a>`:""}</div></div></li>`;}).join("");
 }
 function renderMarkets(){
   const st=(B.static_rates||[]).map(r=>({...r,dp:r.dp??2,cost:0,change_pct:0,static:true}));
@@ -1439,10 +1462,10 @@ function renderMarkets(){
   $("#mk").innerHTML=GROUPS.map(g=>{const list=rows.filter(m=>(m.group||"commod")===g);if(!list.length)return"";
     return`<div class="mgroup"><h3>${t("g_"+g)}</h3><div class="mlist">${list.map(m=>{const e=effect(m);
       const row=`<button class="mrow${tripped(m)?" tripped":""}" type="button" data-m="${m.id}" aria-expanded="${open===m.id}">
-        <div><div class="nm">${esc(m.name)}</div><div class="un">${esc(m.unit)} · ${fdate(m.date)}${m.date&&(Date.now()-new Date(m.date))/864e5>(m.static?(/^(beac|beac_fpm|beac_fd|pet_\w+)$/.test(m.id)?120:45):5)?` <span class="stale">⚠ ${lang==="ar"?"قد لا يكون محدّثًا":lang==="fr"?"peut-être pas à jour":"may be out of date"}</span>`:""}</div></div>
+        <div><div class="nm">${esc(m.name)}</div><div class="un">${esc(m.unit)} · ${m.period?esc(m.period):fdate(m.date)}${m.historical?` · <span class="hist">${lang==="ar"?"تاريخي":lang==="fr"?"historique":"historical"}</span>`:""}${!m.historical&&m.date&&(Date.now()-new Date(m.date))/864e5>(m.static?(/^(beac|beac_fpm|beac_fd|pet_\w+)$/.test(m.id)?120:45):5)?` <span class="stale">⚠ ${lang==="ar"?"قد لا يكون محدّثًا":lang==="fr"?"peut-être pas à jour":"may be out of date"}</span>`:""}</div></div>
         ${m.static?"<span></span>":spark(m.series,e)}
-        <div class="px"><div class="v">${fmt(m.value,m.dp)}</div><div class="c ${e}">${m.static?esc(t("ref")):(m.change_pct>0?"+":m.change_pct<0?"−":"")+fmt(Math.abs(m.change_pct),2)+"%"}</div></div>${m.why&&m.why[lang]?`<div class="mwhy"><b>${Math.abs(m.change_pct)<0.2?"•":m.change_pct>0?"▲":"▼"}</b> ${esc(m.why[lang])}${m.why.source?` <span>· ${esc(m.why.source)}</span>`:""}</div>`:""}</button>`;
-      const det=open===m.id?`<div class="detail">${m.static?esc(m.note||"")+(m.url?` · <a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.source)} ↗</a>`:""):`<div>${t("chart")}</div>${spark(m.series,e,600,90).replace("<svg",'<svg style="width:100%;height:90px"')}
+        <div class="px"><div class="v">${fmt(m.value,m.dp)}</div><div class="c ${e}">${m.static?esc(t("ref")):(m.change_pct>0?"+":m.change_pct<0?"−":"")+fmt(Math.abs(m.change_pct),2)+"%"}</div></div>${m.why&&m.why[lang]?`<div class="mwhy">${m.why.source?`<b>${lang==="ar"?"في الأخبار:":lang==="fr"?"Dans l'actualité :":"In the news:"}</b> ${esc(m.why[lang])} <span>· ${esc(m.why.source)}</span>`:`<b>${Math.abs(m.change_pct)<0.2?"•":m.change_pct>0?"▲":"▼"}</b> ${esc(m.why[lang])}`}</div>`:""}</button>`;
+      const det=open===m.id?`<div class="detail">${m.static?(m.grade?`<dl class="mdl"><dt>${lang==="fr"?"Produit":lang==="ar"?"المنتج":"Product"}</dt><dd>${esc(m.grade)}</dd><dt>${lang==="fr"?"Région":lang==="ar"?"المنطقة":"Region"}</dt><dd>${esc(m.region||"")}</dd><dt>${lang==="fr"?"Prix":lang==="ar"?"السعر":"Price"}</dt><dd>${m.low?fmt(m.low,0)+"–"+fmt(m.high,0)+" ":""}${esc(m.unit)}${m.currency?" ("+esc(m.currency)+")":""}</dd><dt>${lang==="fr"?"Base":lang==="ar"?"الأساس":"Basis"}</dt><dd>${esc(m.basis||"")}</dd><dt>${lang==="fr"?"Période":lang==="ar"?"الفترة":"Period"}</dt><dd>${esc(m.period||"")}</dd></dl>`:"")+esc(m.note||"")+(m.url?` · <a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.source)} ↗</a>`:""):(m.why&&m.why.url?`<div class="mnews">${lang==="fr"?"Dans l'actualité":lang==="ar"?"في الأخبار":"In the news"}: <a href="${esc(m.why.url)}" target="_blank" rel="noopener">${esc(m.why[lang]||m.why.en)} ↗</a> <span>(${lang==="fr"?"pas nécessairement la cause du mouvement":lang==="ar"?"ليس بالضرورة سبب الحركة":"not necessarily the cause of the move"})</span></div>`:"")+`<div>${t("chart")}</div>${spark(m.series,e,600,90).replace("<svg",'<svg style="width:100%;height:90px"')}
         <div class="share" style="padding:0"><button class="btn" type="button" data-alert="${m.id}">${alerts[m.id]?`${t("alert")} ${alerts[m.id].dir==="above"?">":"<"} ${fmt(alerts[m.id].v,m.dp)}`:t("setalert")}</button>${m.url?`<a class="btn" href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.source)} ↗</a>`:""}</div>`}</div>`:"";
       return row+det;}).join("")}</div></div>`;}).join("");
   document.querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>{open=open===b.dataset.m?null:b.dataset.m;renderMarkets();});
