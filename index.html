@@ -923,7 +923,7 @@ function openEdition(start){
       ${f?`<div class="ed-fig" style="color:${catColor(c)}">${esc(f)}</div>`:""}
       <h2 class="ed-ti">${esc(x.title)}</h2>
       ${sum?`<p class="ed-p"><b>${(lang==="ar"?"ماذا حدث":fr?"Ce qui s'est passé":"What happened")}</b>${esc(sum)}</p>`:""}
-      ${x.impact?`<p class="ed-p"><b>${t("impact")}</b>${esc(x.impact)}</p>`:x.ctx?`<p class="ed-p"><b>${(lang==="ar"?"سياق السوق":fr?"Contexte de marché":"Market context")}</b>${esc(x.ctx)}</p>`:""}
+      ${x.impact?`<p class="ed-p"><b>${t("impact")}</b>${esc(String(x.impact).replace(/^\s*(?:impact(?: pour [^:]{0,30})?|الأثر)\s*[:：]\s*/i,""))}</p>`:x.ctx?`<p class="ed-p"><b>${(lang==="ar"?"سياق السوق":fr?"Contexte de marché":"Market context")}</b>${esc(x.ctx)}</p>`:""}
       <div class="ed-src"><span>${esc(x.source||"")}${x.date?" · "+ago(x.date):""}</span>${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener" id="ed-read">${(lang==="ar"?"اقرأ المقال":fr?"Lire l'article":"Read the article")} ↗</a>`:""}</div>`;}
   function finish(){
     const D=store.get("ed_days",{});D[dayKey(new Date())]=1;store.set("ed_days",D);ed.done=true;edSave(ed);
