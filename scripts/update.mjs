@@ -223,9 +223,13 @@ let GN = {}, photoDeadline = 0;
 const bump = k => { why[k] = (why[k] || 0) + 1; };
 async function gnDecode(u) {
   const id = (u.match(/\/articles\/([^?#]+)/) || [])[1]; if (!id) return null;
-  const html = await fetchText(`https://news.google.com/rss/articles/${id}`, 8000);
-  const sg = (html.match(/data-n-a-sg="([^"]+)"/) || [])[1], ts = (html.match(/data-n-a-ts="([^"]+)"/) || [])[1];
-  if (!sg || !ts) { bump("gnsig"); return null; }
+  let sg, ts, html = "";
+  for (const base of ["https://news.google.com/articles/", "https://news.google.com/rss/articles/"]) {
+    try { html = await fetchText(base + id + "?hl=en-US&gl=US&ceid=US:en", 8000); } catch (e) { continue; }
+    sg = (html.match(/data-n-a-sg="([^"]+)"/) || [])[1]; ts = (html.match(/data-n-a-ts="([^"]+)"/) || [])[1];
+    if (sg && ts) break;
+  }
+  if (!sg || !ts) { bump("gnsig"); if (!why.gnpage) why.gnpage = ((html.match(/<title>([^<]{0,60})/i) || [])[1] || html.slice(0, 60)).replace(/\s+/g, " "); return null; }
   const req = [[["Fbv4je", JSON.stringify(["garturlreq", [["X", "X", ["X", "X"], null, null, 1, 1, "US:en", null, 1, null, null, null, null, null, 0, 1], "X", "X", 1, [1, 1, 1], 1, 1, null, 0, 0, null, 0], id, Number(ts), sg]), null, "generic"]]];
   const r = await fetch("https://news.google.com/_/DotsSplashUi/data/batchexecute", { method: "POST", signal: AbortSignal.timeout(8000),
     headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8", "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15" },
@@ -244,8 +248,8 @@ async function publisherPhoto(h) {
 }
 async function photoFor(h) {
   const c = GN[h.url];
-  if (c && c.img) { bump("cached"); return c.img; }
-  if (!c || Date.now() - c.at > 6 * 36e5) {
+  if (c && c.img) { bump("cached"); return c.img.replace(/^http:\/\/www\.bing\.com/, "https://www.bing.com"); }
+  if (!c || c.v !== 2 || Date.now() - c.at > 6 * 36e5) {
     if (Date.now() < photoDeadline) {
       try { const img = await publisherPhoto(h); if (img) { bump("publisher"); return img; } } catch (e) { bump("gnerr"); }
     }
@@ -265,7 +269,7 @@ async function photoFor(h) {
       if (!bsrc || !hsrc || !(bsrc.includes(hsrc.slice(0, 8)) || hsrc.includes(bsrc.slice(0, 8)))) {   // another outlet's photo of the same story: keep only as a last resort
         why.othersrc = (why.othersrc || 0) + 1;
         const th = (b.match(/<News:Image>([\s\S]*?)<\/News:Image>/i) || [])[1];
-        if (!alt && th && hit >= 4 && hit / Math.max(1, Math.min(want.size, got.size)) >= 0.6) alt = decode(th) + "&w=900&h=1200&c=7&rs=1";
+        if (!alt && th && hit >= 4 && hit / Math.max(1, Math.min(want.size, got.size)) >= 0.6) alt = decode(th).replace(/^http:/, "https:") + "&w=900&h=1200&c=7&rs=1";
         continue; }
       fullTitle(h, tag(b, "title"));
       if (!h.desc) h.desc = cleanDesc(tag(b, "description"), h.title);
@@ -275,7 +279,7 @@ async function photoFor(h) {
         const od = (html.match(/<meta[^>]+(?:property|name)=["'](?:og:description|description)["'][^>]*>/i) || [""])[0].match(/content=["']([^"']+)/i);
         const dd = od && cleanDesc(od[1], h.title); if (dd && (!h.desc || dd.length > h.desc.length)) h.desc = dd;
         const og = ogImage(html, article); if (og) return og; } catch {} }
-      if (thumb) return decode(thumb) + "&w=900&h=1200&c=7&rs=1";
+      if (thumb) return decode(thumb).replace(/^http:/, "https:") + "&w=900&h=1200&c=7&rs=1";
     }
     why.nomatch = (why.nomatch || 0) + 1;
   }
@@ -285,7 +289,7 @@ async function photoFor(h) {
 async function addPhotos(list) {
   const queue = [...list]; let n = 0;
   await Promise.all(Array.from({ length: 4 }, async () => {
-    while (queue.length) { const h = queue.shift(); try { const img = await photoFor(h); if (img) { h.img = img; n++; } if (h.url) GN[h.url] = { img: img || null, at: img && GN[h.url] && GN[h.url].img === img ? GN[h.url].at : Date.now() }; } catch (e) {} }
+    while (queue.length) { const h = queue.shift(); try { const img = await photoFor(h); if (img) { h.img = img; n++; } if (h.url) GN[h.url] = { v: 2, img: img || null, at: img && GN[h.url] && GN[h.url].img === img ? GN[h.url].at : Date.now() }; } catch (e) {} }
   }));
   log.push(`photos: ${n}/${list.length} ${JSON.stringify(why)}`);
 }
