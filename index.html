@@ -276,6 +276,59 @@ section{padding-top:26px}
 .nx-lead.read h3{color:var(--muted)}
 .nx-more{display:block;width:100%;margin:16px 0 4px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font:inherit;font-weight:700;color:var(--text);cursor:pointer}
 .nx-done{margin-top:18px;padding:16px;border-radius:14px;background:var(--accent-soft);text-align:center;font-weight:600;font-size:.92rem}
+/* v32: price tiles removed from Today (the ticker shows them) */
+#movers{display:none}
+/* v32: attractive News */
+.nsa,.sa{flex:none;display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;color:#fff;font-style:normal;font-size:.62rem;font-weight:800;line-height:1}
+.nk{display:flex;align-items:center;gap:6px;min-width:0;font-size:.72rem;color:var(--muted)}
+.nk-s{font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:45%}
+.nk-t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.nk-t em{font-style:normal;font-weight:700}
+.nv{position:relative;overflow:hidden;display:grid;place-items:center}
+.nv img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.nv-fl{font-size:2rem;line-height:1;filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}
+.nv-fig{position:absolute;left:14px;bottom:12px;color:#fff;font-family:var(--display);font-size:2rem;font-weight:700;line-height:1;text-shadow:0 2px 10px rgba(0,0,0,.35)}
+.nv::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 90% at 80% 0%,rgba(255,255,255,.16),transparent 60%);pointer-events:none}
+.tsh{display:flex;justify-content:space-between;align-items:baseline;margin-top:20px}
+.tsh h4{margin:0;font-family:var(--display);font-size:1.3rem;font-weight:700}
+.tsh span{font-size:.75rem;font-weight:600;color:var(--muted)}
+.tsc{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:10px -16px 0;padding:0 16px 4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.tsc::-webkit-scrollbar{display:none}
+.tsk{position:relative;flex:none;width:84%;max-width:420px;height:min(330px,78vw);border-radius:20px;overflow:hidden;scroll-snap-align:center;text-decoration:none;color:#fff;box-shadow:0 10px 26px rgba(10,20,40,.22)}
+.tsk .nv{position:absolute;inset:0}.tsk .nv-fl{font-size:3.4rem;margin-bottom:70px}
+.tsk .nv-fig{left:18px;bottom:auto;top:52px;font-size:2.6rem}
+.tsk-o{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 25%,rgba(0,0,0,.82) 100%)}
+.tsk-b{position:absolute;left:0;right:0;bottom:0;padding:16px 18px 18px}
+.tsk-c{display:inline-block;padding:4px 10px;border-radius:999px;font-size:.68rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#fff}
+.tsk-r{display:inline-grid;place-items:center;width:22px;height:22px;margin-inline-start:6px;border-radius:50%;background:var(--relief);font-size:.72rem;font-weight:800;vertical-align:middle}
+.tsk h3{margin:10px 0 0;font-family:var(--display);font-size:1.32rem;line-height:1.22;font-weight:700;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-wrap:balance}
+.tsk-m{margin-top:8px;font-size:.76rem;color:rgba(255,255,255,.78);font-weight:600}
+.tsk.read h3{color:rgba(255,255,255,.72)}
+.tsd{display:flex;justify-content:center;gap:6px;margin-top:10px}.tsd i{width:6px;height:6px;border-radius:3px;background:var(--line);transition:width .25s,background .25s}.tsd i.on{width:18px;background:var(--accent)}
+.nsb{margin-top:22px;padding:4px 14px 6px;border-radius:18px;background:var(--surface);border:1px solid var(--line)}
+.nsh{display:flex;align-items:center;gap:10px;width:100%;padding:12px 0 10px;border:0;border-bottom:1px solid var(--line);background:none;color:var(--text);font:inherit;cursor:pointer;text-align:start}
+.nsh-i{display:grid;place-items:center;width:30px;height:30px;border-radius:9px;background:color-mix(in srgb,var(--cc) 18%,transparent);font-size:1rem;flex:none}
+.nsh h4{flex:1;margin:0;font-family:var(--display);font-size:1.12rem;font-weight:700;color:var(--text)}
+.nsh-p{font-family:var(--mono);font-size:.72rem;font-weight:700;color:var(--cc);padding:3px 8px;border-radius:999px;background:color-mix(in srgb,var(--cc) 14%,transparent)}
+.nsh-p.done{color:var(--relief);background:color-mix(in srgb,var(--relief) 14%,transparent)}
+.nsh-a{color:var(--muted);font-size:1.2rem;line-height:1}[dir=rtl] .nsh-a{transform:scaleX(-1)}
+.nrw{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.nsb .nrw:last-child{border-bottom:0}
+.nrw-th{position:relative;flex:none;width:84px;height:84px}
+.nrw-th .nv{width:100%;height:100%;border-radius:14px}.nrw-th .nv-fl{font-size:1.7rem}
+.nrw-n{position:absolute;top:-5px;inset-inline-start:-5px;display:grid;place-items:center;min-width:22px;height:22px;padding:0 4px;border-radius:11px;background:var(--text);color:var(--bg);font-size:.7rem;font-weight:800;border:2px solid var(--surface)}
+.nrw-b{flex:1;min-width:0;display:flex;flex-direction:column}
+.nrw h3{margin:5px 0 0;font-size:.97rem;line-height:1.33;font-weight:650;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.nrw-f{margin-top:6px}
+.nf{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:999px}
+.nf.nw{color:#fff;background:var(--accent)}.nf.ok{color:var(--relief);background:color-mix(in srgb,var(--relief) 14%,transparent)}
+.nrw.read h3,.nfe.read h3{color:var(--muted);font-weight:500}.nrw.read .nv,.nfe.read .nv{opacity:.55;filter:saturate(.6)}
+.nfe{display:block;margin:12px 0 4px;text-decoration:none;color:inherit;border-bottom:1px solid var(--line);padding-bottom:14px}
+.nfe .nv{aspect-ratio:16/9;border-radius:16px}.nfe .nv-fl{font-size:3rem}
+.nfe-b{padding-top:10px}
+.nfe h3{margin:6px 0 0;font-family:var(--display);font-size:1.28rem;line-height:1.25;font-weight:700;text-wrap:balance}
+.nfe-f{display:flex;justify-content:space-between;align-items:center;margin-top:8px}.nfe-r{font-size:.78rem;font-weight:700;color:var(--cc)}
+#v-news .ns2+.nrw,#v-news .ns2+.nfe{margin-top:4px}
+@media (prefers-reduced-motion:no-preference){.tsk,.nsb{animation:viewIn .35s ease both}}
 /* v31: Morning Brief audio */
 .h-pod{display:flex;align-items:center;gap:12px;width:calc(100% - 36px);margin:-4px 16px 16px 20px;padding:10px 12px;border:1px solid rgba(255,255,255,.14);border-radius:12px;background:rgba(255,255,255,.06);color:#eef2f8;font:inherit;text-align:left;cursor:pointer}
 .h-pod b{display:block;font-size:.95rem}.h-pod .s{display:block;font-size:.76rem;color:#b9c6d9;margin-top:1px}
@@ -1337,19 +1390,32 @@ function isFollowed(n){const F=followList();if(!F.length)return false;const tx=(
   return F.some(w=>{const k=w.toLowerCase();return new RegExp("(^|[^a-zà-ÿ])"+k.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")).test(tx);});}
 // Drop wire-service datelines ("By X NEW YORK, Nov 19 (Reuters) - ")
 function cleanDl(d){if(!d)return d;return d.replace(/^By [A-Z][\w.'-]+(?: [A-Z][\w.'-]+){0,3}\s+(?=[A-Z]{2,})/,"").replace(/^[A-ZÀ-Ý][A-ZÀ-Ý .,'’-]{1,40}(?:,\s*\w{3,9}\.?\s*\d{1,2})?\s*\([^)]{2,30}\)\s*[-–—]\s*/,"").trim()||null;}
+function nxSa(src){let h=0;for(const ch of String(src||"?"))h=(h*31+ch.charCodeAt(0))%360;return `<i class="sa" style="background:hsl(${h},48%,42%)">${esc(String(src||"?").replace(/^the\s+/i,"").charAt(0).toUpperCase())}</i>`;}
+function nxArt(n,big){const c=REEL_CATS[n.cat]||REEL_CATS.worldwide,cs=countriesOf(n),fl=cs.length?cs[0][1]:c[0],f=big?figOf((n.t&&n.t[lang])||n.title):null;
+  return `<div class="nv" style="background:${c[1]}"><span class="nv-fl">${fl}</span>${f?`<b class="nv-fig">${esc(f)}</b>`:""}${n.img?`<img src="${esc(n.img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">`:""}</div>`;}
+function nxTi(n){return (n.t&&n.t[lang])||(lang==="ar"&&n.t&&n.t.en)||n.title;}
+function nxDs(n){return cleanDl((n.d&&n.d[lang])||(lang==="ar"&&n.d&&n.d.en)||n.desc);}
+function nxFlags(n){const fr=lang==="fr",isRead=!!NX.read[nxId(n)],isNew=!isRead&&new Date(n.date).getTime()>NX.prev;
+  return isRead?`<span class="nf ok">✓ ${(lang==="ar"?"مقروء":fr?"Lu":"Read")}</span>`:isNew?`<span class="nf nw">${(lang==="ar"?"جديد":fr?"Nouveau":"New")}</span>`:"";}
+function nxSrc(n,withCat){const ctry=countriesOf(n).map(c=>L3(c)).slice(0,1)[0];
+  return `<div class="nk">${nxSa(n.source)}<span class="nk-s">${isFollowed(n)?'<b class="fw-s">★</b> ':""}${esc(n.source)}</span><span class="nk-t">${withCat?`<em style="color:${catColor(n.cat)}">${esc(catLabel(n.cat))}</em> · `:""}${ctry?esc(ctry)+" · ":""}${ago(n.date)}</span></div>`;}
 function nxRow(n,lead,num,withCat){
-  const isRead=!!NX.read[nxId(n)];
-  const href=`href="${esc(n.url)}" target="_blank" rel="noopener" data-nid="${esc(nxId(n))}"`;
-  const img=n.img?`<img src="${esc(n.img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.remove()">`:"";
-  const ti=esc((n.t&&n.t[lang])||(lang==="ar"&&n.t&&n.t.en)||n.title),ds=cleanDl((n.d&&n.d[lang])||(lang==="ar"&&n.d&&n.d.en)||n.desc),dh=ds?`<p class="nc-d">${esc(ds)}</p>`:"";
-  if(lead&&n.img)return `<a class="nc lead${isRead?" read":""}" ${href}><div class="nc-ph">${img}</div><div class="nc-m">${nxMeta(n,withCat)}</div><h3>${ti}</h3>${dh}</a>`;
-  return `<a class="nc${isRead?" read":""}" ${href}><div class="nc-t"><div class="nc-m">${nxMeta(n,withCat)}</div><h3>${ti}</h3>${dh}</div></a>`;
+  const isRead=!!NX.read[nxId(n)],href=`href="${esc(n.url)}" target="_blank" rel="noopener" data-nid="${esc(nxId(n))}"`,ds=nxDs(n);
+  if(lead)return `<a class="nfe${isRead?" read":""}" ${href} style="--cc:${catColor(n.cat)}">${nxArt(n,true)}<div class="nfe-b">${nxSrc(n,withCat)}<h3>${esc(nxTi(n))}</h3>${ds?`<p class="nc-d">${esc(ds)}</p>`:""}<div class="nfe-f">${nxFlags(n)}<span class="nfe-r">${(lang==="ar"?"اقرأ":lang==="fr"?"Lire":"Read")} ↗</span></div></div></a>`;
+  return `<a class="nrw${isRead?" read":""}" ${href}><div class="nrw-th">${nxArt(n,false)}${num?`<span class="nrw-n">${num}</span>`:""}</div><div class="nrw-b">${nxSrc(n,withCat)}<h3>${esc(nxTi(n))}</h3>${nxFlags(n)?`<div class="nrw-f">${nxFlags(n)}</div>`:""}</div></a>`;
 }
-function nxBlock(c,l){
-  const fr=lang==="fr",r=l.filter(n=>NX.read[nxId(n)]).length;
-  let h=`<div class="ns2"><h4><i style="background:${catColor(c.id)}"></i>${esc(c[lang]||c.en)}</h4><span${r===l.length?' class="done"':""}>${r===l.length?"✓ ":""}${r}/${l.length}</span></div>`;
-  l.forEach((n,i)=>h+=nxRow(n,i===0,i+1,false));
-  return h;
+function nxCar(items){const fr=lang==="fr";
+  return `<div class="tsh"><h4>${(lang==="ar"?"أبرز الأخبار":fr?"À la une":"Top stories")}</h4><span>${(lang==="ar"?"اسحب ←":fr?"Glissez →":"Swipe →")}</span></div>
+  <div class="tsc" id="tsc">${items.map((n,k)=>{const c=REEL_CATS[n.cat]||REEL_CATS.worldwide,isRead=!!NX.read[nxId(n)];
+    return `<a class="tsk${isRead?" read":""}" href="${esc(n.url)}" target="_blank" rel="noopener" data-nid="${esc(nxId(n))}">${nxArt(n,true)}<div class="tsk-o"></div>
+      <div class="tsk-b"><span class="tsk-c" style="background:${catColor(n.cat)}">${c[0]} ${esc(catLabel(n.cat))}</span>${isRead?`<span class="tsk-r">✓</span>`:""}
+      <h3>${esc(nxTi(n))}</h3><div class="tsk-m">${esc(n.source)} · ${ago(n.date)}</div></div></a>`;}).join("")}</div>
+  <div class="tsd" id="tsd">${items.map((x,k)=>`<i class="${k?"":"on"}"></i>`).join("")}</div>`;}
+function nxBlock(c,l,skipLead){
+  const fr=lang==="fr",r=l.filter(n=>NX.read[nxId(n)]).length,ic=(REEL_CATS[c.id]||REEL_CATS.worldwide)[0],done=r===l.length;
+  let h=`<button type="button" class="nsh" data-go="${c.id}" style="--cc:${catColor(c.id)}"><span class="nsh-i">${ic}</span><h4>${esc(c[lang]||c.en)}</h4><span class="nsh-p${done?" done":""}">${done?"✓ ":""}${r}/${l.length}</span><span class="nsh-a">›</span></button>`;
+  (skipLead?l.slice(1):l).forEach((n,i)=>h+=nxRow(n,!skipLead&&i===0,skipLead?i+2:(i?i+1:0),false));
+  return `<section class="nsb">${h}</section>`;
 }
 function renderNews(){
   const fr=lang==="fr",all=[...B.news].sort((a,b)=>b.date.localeCompare(a.date));
@@ -1387,7 +1453,9 @@ function renderNews(){
   }
   else{
     const cs=cat==="all"?B.categories:B.categories.filter(c=>c.id===cat);
-    cs.forEach(c=>{if(top[c.id].length)html+=nxBlock(c,top[c.id]);});
+    const lead=cat==="all"?cs.map(c=>top[c.id][0]).filter(Boolean):[];
+    if(lead.length)html+=nxCar(lead);
+    cs.forEach(c=>{if(top[c.id].length>(cat==="all"?1:0))html+=nxBlock(c,top[c.id],cat==="all");});
     if(!html){$("#nx-list").innerHTML=`<p class="empty">${t("nostories")}</p>`;return;}
     const sc=cs.flatMap(c=>top[c.id]),left=sc.filter(n=>!NX.read[nxId(n)]).length,nx=nxNext();
     const nxt=nx?nx.toLocaleTimeString((lang==="ar"?"ar-u-nu-latn":fr?"fr-FR":"en-GB"),{hour:"2-digit",minute:"2-digit"}):"";
@@ -1395,6 +1463,8 @@ function renderNews(){
   }
   $("#nx-list").innerHTML=html;
   $("#nx-list").querySelectorAll("[data-nid]").forEach(a=>a.onclick=()=>{const n=all.find(x=>nxId(x)===a.dataset.nid);if(n){nxMarkRead(n);setTimeout(()=>{renderNews();renderSixty();},400);}});
+  $("#nx-list").querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{cat=b.dataset.go;renderNews();scrollTo({top:0,behavior:"smooth"});});
+  const tc=$("#tsc");if(tc){const d=[...$("#tsd").children];tc.onscroll=()=>{const w=tc.firstElementChild.offsetWidth+12,k=Math.round(Math.abs(tc.scrollLeft)/w);d.forEach((e,j)=>e.classList.toggle("on",j===k));};}
 }
 (function(){
   let y0=null,x0=0,t0=0;
