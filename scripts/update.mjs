@@ -92,8 +92,10 @@ const SRC_TOP = /\b(reuters|bloomberg|financial times|ft\.com|the economist|wall
 const SRC_LOW = /\b(blog|wordpress|medium|tv\b|web tv|radio|news24\.cd|benin web)\b/i;
 const KEY_UP = /\b(beac|cemac|cémac|réserves?|reserves|souverain\w*|sovereign|bancaires?|bourse|brvm|stock|fonds|funds?|rachat|takeover|bceao|uemoa|imf|fmi|world bank|banque mondiale|afdb|bad|bdeac|eurobonds?|bonds?|obligat\w*|debt|dette|budget|loi de finances|inflation|interest rates?|taux|central bank|banque centrale|fed|ecb|bce|gdp|pib|growth|croissance|recession|récession|oil|pétrole|brent|opec|opep|gas|gaz|dollar|euro|fcfa|cfa|devise|currency|exchange rate|tariffs?|droits de douane|sanctions|default|défaut|downgrade|rating|notation|moody'?s|fitch|s&p|banks?|banques?|bank\w*|treasury|trésor|liquidity|liquidité|investment|investissement|ipo|merger|fusion|acquisition|election|élection|coup|government|gouvernement|minist\w*|president|président|strike|grève|shortage|pénurie|prices?|prix)\b/i;
 const KEY_DOWN = /\b(football|soccer|basket\w*|can 20\d\d|ligue 1|match|sport\w*|concert|music|musique|festival|film|cinéma|miss|beauty|beauté|celebrity|célébrit\w*|horoscope|recipe|recette|fashion|mode|wedding|mariage|anniversary|anniversaire|célèbrent|celebrates?|award|prix d'excellence|gala|coconut|noix de coco|church|église|pilgrim\w*|obituary|nécrologie|lottery|loto)\b/i;
+const FOLLOW_RE = (cfg.follow || []).length ? new RegExp("\\b(" + cfg.follow.map(w => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|") + ")", "i") : null;
 function importance(h) {
   let s = 1;
+  if (FOLLOW_RE && FOLLOW_RE.test(h.title)) s += 1;                 // topics Rayan follows
   if (SRC_TOP.test(h.source)) s += 1.5; else if (SRC_LOW.test(h.source)) s -= 0.5;
   const up = (h.title.match(new RegExp(KEY_UP.source, "gi")) || []).length;
   s += Math.min(2, up * 0.7);
@@ -115,7 +117,7 @@ async function news(n) {
 }
 
 /* ---------- Summary: AI if a key is set, rules otherwise ---------- */
-const SIXTY_PICK = { worldwide: 6, africa: 5, congo: 5, cfo: 4 }; // Today's video feed: 20 stories, about 2.5 minutes
+const SIXTY_PICK = { worldwide: 3, africa: 2, congo: 2, cfo: 1 }; // the edition: 8 stories, about 4 minutes
 // A headline Google News cut short ends with "…" or a dangling small word ("…lever près de")
 function cut(t) { return /(\u2026|\.\.\.)\s*$/.test(t) || /\s(de|du|des|la|le|les|l'|d'|à|au|aux|et|en|pour|près|sur|par|avec|dans|un|une|of|the|to|a|an|and|for|in|on|with|at|by|from|as)$/i.test(t.trim()); }
 function fullTitle(h, cand) {           // use a longer title from Bing or the article if it continues ours
@@ -124,17 +126,21 @@ function fullTitle(h, cand) {           // use a longer title from Bing or the a
   if (c.toLowerCase().startsWith(a) && c.length > h.title.length && !cut(c)) h.title = c;
 }
 function rulesSummary(markets, fx, headlines) {
-  const out = { en: [], fr: [] }, lists = [];
-  for (const [cat, n] of Object.entries(SIXTY_PICK)) {
-    const lab = cfg.news.find(x => x.cat === cat) || { label_en: cat, label_fr: cat };
-    lists.push(headlines.filter(h => h.cat === cat && !cut(h.title)).slice(0, n).map(h => ({ lab, h })));
-  }
-  // Interleave sections so the feed is mixed: Worldwide, Africa, Congo, Markets, ... then the second round
-  for (let r = 0; lists.some(l => l[r]); r++) for (const l of lists) if (l[r]) {
-    const { lab, h } = l[r];
-    const it = { level: "", cat: h.cat, owner: lab.label_en, title: (h.t && h.t.en) || h.title, detail: (h.d && h.d.en) || "", source: h.source, date: h.date, impact: "", url: h.url, img: h.img || null };
+  // A short, fresh briefing: rank by importance, freshness, a real summary and a hard number
+  const ageH = h => (Date.now() - new Date(h.date)) / 36e5;
+  const rank = h => (h.score || 0) + (h.desc ? 1 : 0) + (ageH(h) < 24 ? 1 : ageH(h) > 48 ? -2 : 0) + (/\d/.test(h.title) ? 0.5 : 0) + (h.cat === "worldwide" ? 0.3 : 0);
+  const pool = headlines.filter(h => h.cat in SIXTY_PICK && !cut(h.title)).sort((a, b) => rank(b) - rank(a));
+  const pick = [], per = {};
+  const take = (max, n) => { for (const h of pool) { if (pick.length >= n) break; if (pick.includes(h) || (per[h.cat] || 0) >= max) continue; pick.push(h); per[h.cat] = (per[h.cat] || 0) + 1; } };
+  take(1, Object.keys(SIXTY_PICK).length);                    // one per section first: the top 3 come from here
+  take(3, Object.values(SIXTY_PICK).reduce((a, b) => a + b, 0));   // then the rest, at most 3 per section
+  const out = { en: [], fr: [] };
+  pick.forEach((h, k) => {
+    const lab = cfg.news.find(x => x.cat === h.cat) || { label_en: h.cat, label_fr: h.cat };
+    const it = { level: k < 3 ? "high" : "", cat: h.cat, owner: lab.label_en, title: (h.t && h.t.en) || h.title, detail: (h.d && h.d.en) || "", source: h.source, date: h.date, impact: "", url: h.url, img: h.img || null };
     out.en.push(it); out.fr.push({ ...it, owner: lab.label_fr, title: (h.t && h.t.fr) || h.title, detail: (h.d && h.d.fr) || "" });
-  }
+    (out.ar = out.ar || []).push({ ...it, owner: lab.label_ar || lab.label_en, title: (h.t && h.t.ar) || it.title, detail: (h.d && h.d.ar) || it.detail });
+  });
   return out;
 }
 
@@ -147,9 +153,10 @@ async function aiSummary(markets, fx, headlines) {
 
 From the headlines below, pick the 20 most important news stories of the last 24 hours for a video news feed: 6 from "worldwide" (mostly economy, finance and banking), 5 from "africa" (West and Central Africa), 5 from "congo" (Republic of Congo and CEMAC) and 4 from "cfo" (treasury, FX, rates, BEAC). Prefer major political, economic and security news over minor or promotional items; skip duplicates. Order them as a mixed feed: the most important story first, and never two stories from the same category in a row.
 Score every candidate's importance from 1 (filler) to 5 (market-moving); never pick a story scoring below 3 (sport, culture, ceremonies, anniversaries, PR, minor local items), even if a section then has fewer stories.
-For each give: cat (worldwide|africa|congo|cfo), score (3-5), level ("high" if score 5, else "med"), title (clear, max 14 words, rewritten from the headline), detail (one sentence saying what happened, using only what the headline says; never invent facts or numbers), impact ("Impact on ITE": one short factual sentence ONLY when the story directly affects ITE Congo, a beverage and packaging manufacturer in Brazzaville — its inputs (sugar, PET resin, aluminium, CO2, fuel/electricity), USD/XAF or EUR costs, CEMAC/BEAC rates and liquidity, Congolese tax or customs rules, or Congolese consumer demand — and only if the headline supports it; otherwise ""; never speculate), source_index (the headline's i).
+For each give: cat (worldwide|africa|congo|cfo), score (3-5), level ("high" if score 5, else "med"), title (clear, max 14 words, rewritten from the headline), detail (one sentence saying what happened, using only what the headline says; never invent facts or numbers), impact ("Impact": one short factual sentence on the consequence for markets, prices, rates, budgets or the region, only if the headline supports it; otherwise ""; never speculate, never mention any company that is not in the story), source_index (the headline's i).
 Also write "takeaway": one line (max 22 words) that sums up the day for Rayan, mixing the biggest story with the key market move (oil, dollar, CFA), in English and French.
-Return JSON only: {"takeaway":{"en":"...","fr":"..."},"en":[up to 20 items],"fr":[the same items in natural French]}.
+Pick 8 stories: put the 3 most important first (one per section where possible), prefer the last 24 hours, and prefer stories with a hard number (rate, amount, %).
+Return JSON only: {"takeaway":{"en":"...","fr":"..."},"en":[8 items],"fr":[the same items in natural French]}.
 
 MARKETS: ${JSON.stringify(markets.filter(m => ["usdxaf","brent","gold","eurusd"].includes(m.id)).map(m => ({ name: m.name, value: +m.value.toFixed(2), change_pct: +(m.change_pct || 0).toFixed(2) })))}
 
@@ -250,7 +257,7 @@ async function addPhotos(list) {
 async function reads() {
   const rc = cfg.reads; if (!rc) return null;
   const all = [], seen = new Set();
-  const generic = /^(business|finance|economics|the world (ahead|this week)|briefing|leaders|letters|podcast|video|newsletter)\b/i;
+  const generic = /^(business|finance|economics|the world (ahead|this week)|briefing|leaders|letters|podcast|video|newsletter)\b|check out this job|\bjobs? at\b|we('| a)re hiring|apply now|job opening|offre d'emploi|\brecrute\b|webinar|sponsored|partner content/i;
   for (const s of rc.sources) {
     const hl = s.hl || "en", gl = s.gl || "US";
     const url = `https://news.google.com/rss/search?q=${encodeURIComponent(s.q + " when:" + rc.max_age_days + "d")}&hl=${hl}&gl=${gl}&ceid=${gl}:${hl}`;
@@ -342,13 +349,18 @@ markets.unshift({ id: "usdxaf", group: "fx", name: "USD/XAF", unit: "XAF per USD
 let prevBrief = {};
 try { prevBrief = JSON.parse(await fs.readFile(path.join(ROOT, "data", "brief.json"), "utf8")); } catch {}
 let headlines = [];
+const health = { sections: {}, markets_ok: 0, markets_total: 0 };
 for (const n of cfg.news) {
   let got = await news(n);
+  const fresh = got.length;
   // Never leave a section empty: if a source failed, keep the last good stories for that section
   if (got.length < 3) {
     const old = (prevBrief.news || []).filter(h => h.cat === n.cat && !got.some(g => g.title === h.title));
     if (old.length) { got = [...got, ...old].slice(0, cfg.news_per_category || 8); log.push(`reused ${old.length} earlier ${n.cat} stories`); }
   }
+  // A section is "fresh" when its feed answered and its newest story is under 36 hours old
+  const newest = got.reduce((m, h) => h.date > m ? h.date : m, "");
+  health.sections[n.cat] = { fresh, total: got.length, ok: fresh >= 3 && newest && (Date.now() - new Date(newest)) / 36e5 < 36 };
   headlines.push(...got);
   if (!MOCK) await new Promise(res => setTimeout(res, 800));   // space out Google News requests
 }
@@ -413,7 +425,7 @@ async function bilingual(list) {
   // Reuse translations from the previous run: most headlines stay the same from one hour to the next
   const prevT = new Map((prevBrief.news || []).filter(h => h.t).map(h => [h.title, h]));
   let n = 0, reused = 0;
-  for (const h of list) { const p = prevT.get(h.title); if (p && p.t && Object.values(p.t).some(v => v !== h.title)) { h.t = p.t; if (p.d) h.d = p.d; if (h.desc && !h.d) h.desc = h.desc; reused++; } }
+  for (const h of list) { const p = prevT.get(h.title); if (p && p.t && p.t.ar && Object.values(p.t).some(v => v !== h.title)) { h.t = p.t; if (p.d) h.d = p.d; reused++; } }
   // Translate the stories people actually see first (top 6 of each section), then the rest
   const order = cfg.news.flatMap(c => list.filter(h => h.cat === c.cat)).sort((a, b) => (list.filter(x => x.cat === a.cat).indexOf(a) < 6 ? 0 : 1) - (list.filter(x => x.cat === b.cat).indexOf(b) < 6 ? 0 : 1));
   for (const [sl, tl] of [["en", "fr"], ["fr", "en"]]) {
@@ -426,6 +438,12 @@ async function bilingual(list) {
       if (h.desc) h.d = { [sl]: h.desc, [tl]: td && td.length > 10 ? td : h.desc };
       if (tt) n++;
     });
+  }
+  // Arabic, from the English version
+  const needAr = list.filter(h => h.t && !h.t.ar);
+  if (needAr.length) {
+    const tr = await translateBatch(needAr.flatMap(h => [h.t.en || h.title, (h.d && h.d.en) || h.desc || "."]), "en", "ar");
+    needAr.forEach((h, k) => { const tt = tr[2 * k], td = tr[2 * k + 1]; h.t.ar = tt && tt.length > 3 ? tt : (h.t.en || h.title); if (h.d || h.desc) { h.d = h.d || { en: h.desc }; h.d.ar = td && td.length > 10 ? td : (h.d.en || h.desc); } });
   }
   log.push(`translated ${n} new, reused ${reused}, of ${list.length}`);
 }
@@ -470,12 +488,12 @@ const MK_KEYS = {
 };
 for (const m of markets) {
   const re = MK_KEYS[m.id]; if (!re || typeof m.change_pct !== "number") continue;
-  if (Math.abs(m.change_pct) < 0.2) { m.why = { en: "Little change since the previous close.", fr: "Peu de variation depuis la clôture précédente." }; continue; }
+  if (Math.abs(m.change_pct) < 0.2) { m.why = { en: "Little change since the previous close.", fr: "Peu de variation depuis la clôture précédente.", ar: "تغيّر طفيف منذ الإغلاق السابق." }; continue; }
   const cand = headlines.filter(h => re.test(h.title) || (h.t && re.test(h.t.en || "")) || (h.d && re.test((h.d.en || "") + " " + (h.d.fr || ""))))
     .map(h => ({ h, s: (h.score || 0) + (re.test(h.title) || (h.t && re.test(h.t.en || "")) ? 1.5 : 0) + (h.cat === "markets" ? 1 : 0) - Math.max(0, (Date.now() - new Date(h.date)) / 36e5 - 24) / 12 }))
     .sort((a, b) => b.s - a.s);
   const best = cand[0] && cand[0].h;
-  if (best) { m.why = { en: (best.t && best.t.en) || best.title, fr: (best.t && best.t.fr) || best.title, source: best.source, url: best.url }; continue; }
+  if (best) { m.why = { en: (best.t && best.t.en) || best.title, fr: (best.t && best.t.fr) || best.title, ar: (best.t && best.t.ar) || (best.t && best.t.en) || best.title, source: best.source, url: best.url }; continue; }
   // No headline: explain the move by what moved with it
   const PEERS = { gold: ["silver", "eurusd"], silver: ["gold"], brent: ["wti"], wti: ["brent"], sugar: ["brent"], eurusd: ["gold"], usdxaf: ["eurusd"] };
   const pc = x => (x > 0 ? "+" : "−") + Math.abs(x).toFixed(1) + "%";
@@ -486,19 +504,40 @@ for (const m of markets) {
     ? { en: `${up ? "Up" : "Down"} ${pc(m.change_pct).slice(1)}, moving with ${same.map(p => p.name + " (" + pc(p.change_pct) + ")").join(" and ")}: a broad ${up ? "rally" : "sell-off"} rather than one-off news.`,
         fr: `${up ? "En hausse" : "En baisse"} de ${pc(m.change_pct).slice(1).replace(".", ",")}, comme ${same.map(p => (frName[p.name] || p.name) + " (" + pc(p.change_pct).replace(".", ",") + ")").join(" et ")} : un mouvement d'ensemble plutôt qu'une nouvelle isolée.` }
     : { en: `${up ? "Up" : "Down"} ${pc(m.change_pct).slice(1)} with no single headline behind it yet.`, fr: `${up ? "En hausse" : "En baisse"} de ${pc(m.change_pct).slice(1).replace(".", ",")}, sans actualité précise pour l'instant.` };
+  if (!m.why.ar) m.why.ar = same.length ? `${up ? "ارتفاع" : "انخفاض"} ${pc(m.change_pct).slice(1)} بالتوازي مع ${same.map(p => p.name + " (" + pc(p.change_pct) + ")").join(" و")}: حركة عامة وليست خبرًا منفردًا.` : `${up ? "ارتفاع" : "انخفاض"} ${pc(m.change_pct).slice(1)} دون خبر محدد حتى الآن.`;
 }
 
 const otd = await onThisDay();
+if (otd && otd.en && !MOCK) {
+  const groups = Object.keys(otd.en), flat = groups.flatMap(g => otd.en[g] || []);
+  const tr = flat.length ? await translateBatch(flat.map(x => x.text || "."), "en", "ar") : [];
+  let k = 0; otd.ar = {};
+  for (const g of groups) otd.ar[g] = (otd.en[g] || []).map(x => ({ ...x, text: tr[k++] || x.text }));
+}
 // The briefing (Play video + article of the day) is rebuilt every 8 hours; news and markets every run.
 let old = {};
 try { old = JSON.parse(await fs.readFile(path.join(ROOT, "data", "brief.json"), "utf8")); } catch {}
 const BRIEF_EVERY_H = 8, forced = process.env.GITHUB_EVENT_NAME === "workflow_dispatch";
+// Two editions a day: a new one from 06:00 UTC (07:00 Brazzaville) and from 17:00 UTC (18:00)
+const slotStart = (() => { const d = new Date(), h = d.getUTCHours(), s = new Date(d); s.setUTCMinutes(0, 0, 0);
+  if (h >= 17) s.setUTCHours(17); else if (h >= 6) s.setUTCHours(6); else { s.setUTCDate(s.getUTCDate() - 1); s.setUTCHours(17); } return s; })();
+const edition = slotStart.getUTCHours() === 6 ? "morning" : "evening";
 const briefAge = old.summary_at ? (Date.now() - new Date(old.summary_at)) / 36e5 : 99;
-const keepBrief = !forced && briefAge < BRIEF_EVERY_H - 0.5 && (old.summary?.en || []).length >= 10;
-if (keepBrief) log.push(`briefing kept (${briefAge.toFixed(1)} h old)`);
+const keepBrief = !forced && old.summary_at && new Date(old.summary_at) >= slotStart && (old.summary?.en || []).length >= 5;
+if (keepBrief) log.push(`edition kept (${briefAge.toFixed(1)} h old)`);
 const read = keepBrief && old.read ? old.read : await reads();
 if (read && !keepBrief) { try { const w = await aiRead(read.pick); if (w) read.pick.ai = w; } catch (e) { log.push("ai read: " + e.message); } }
 if (read && !keepBrief && !MOCK) await addPhotos([read.pick, ...read.more]);
+if (read && !keepBrief && !MOCK) {                     // reading list in both languages
+  const all = [read.pick, ...read.more];
+  for (const [sl, tl] of [["en", "fr"], ["fr", "en"]]) {
+    const items = all.filter(a => (isFrench(a.title) ? "fr" : "en") === sl);
+    const tr = await translateBatch(items.map(a => a.title), sl, tl);
+    items.forEach((a, k) => { a.t = { [sl]: a.title, [tl]: tr[k] && tr[k].length > 3 ? cleanTitle(tr[k]) : a.title }; });
+  }
+  const trA = await translateBatch(all.map(a => (a.t && a.t.en) || a.title), "en", "ar");
+  all.forEach((a, k) => { a.t = a.t || {}; a.t.ar = trA[k] || a.t.en || a.title; });
+}
 if (read && !keepBrief) {                      // keep the last week of "article of the day" picks
   try {
     const prev = JSON.parse(await fs.readFile(path.join(ROOT, "data", "brief.json"), "utf8")).read || {};
@@ -517,15 +556,86 @@ else {
   if (summary) delete summary.takeaway;
   if (!summary) summary = rulesSummary(markets, fx, headlines);
   if (!takeaway) takeaway = rulesTakeaway(markets, summary);
+  if (summary && summary.en && !summary.ar && !MOCK) {
+    const E = summary.en, tr = await translateBatch(E.flatMap(x => [x.title || ".", x.detail || ".", x.impact || "."]), "en", "ar");
+    summary.ar = E.map((x, k) => ({ ...x, title: tr[3 * k] || x.title, detail: x.detail ? (tr[3 * k + 1] || x.detail) : "", impact: x.impact ? (tr[3 * k + 2] || x.impact) : "" }));
+  }
+  // Market context: a story about oil, gold, the dollar... gets today's move for that market
+  const fmtP = (x, fr) => (x > 0 ? "+" : "−") + Math.abs(x).toFixed(1).replace(".", fr ? "," : ".") + (fr ? " %" : "%");
+  for (const lang of ["en", "fr", "ar"]) (summary[lang] || []).forEach((it, k) => {
+    const en = (summary.en[k] || it).title + " " + ((summary.en[k] || it).detail || "");
+    const m = markets.find(m => MK_KEYS[m.id] && typeof m.change_pct === "number" && Math.abs(m.change_pct) >= 0.2 && MK_KEYS[m.id].test(en));
+    if (m && lang === "ar") { it.ctx = `${{ Gold: "الذهب", Silver: "الفضة", Brent: "برنت", "Crude Oil WTI": "خام WTI", "EUR/USD": "اليورو/الدولار", "USD/XAF": "الدولار/الفرنك" }[m.name] || m.name} ${fmtP(m.change_pct)} عند آخر إغلاق`; return; }
+    if (m) it.ctx = lang === "fr" ? `${m.name === "Gold" ? "Or" : m.name === "Silver" ? "Argent" : m.name} ${fmtP(m.change_pct, true)} à la dernière clôture` : `${m.name} ${fmtP(m.change_pct)} at the last close`;
+  });
+}
+
+/* ---------- The Morning Brief: a short spoken rundown, independent from the edition ---------- */
+let podcast = keepBrief && old.podcast ? old.podcast : null;
+if (!podcast) {
+  const L3 = { en: "en", fr: "fr", ar: "ar" }, now = new Date();
+  const day = { en: now.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" }), fr: now.toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long" }), ar: now.toLocaleDateString("ar", { weekday: "long", day: "numeric", month: "long", numberingSystem: "latn" }) };
+  const ev = edition === "morning";
+  const M = id => markets.find(m => m.id === id && typeof m.change_pct === "number");
+  const mv = (m, lang) => { if (!m) return null; const p = Math.abs(m.change_pct).toFixed(1); const up = m.change_pct > 0;
+    const nm = { en: { brent: "Brent crude", gold: "Gold", eurusd: "The euro", usdxaf: "The dollar" }, fr: { brent: "Le Brent", gold: "L'or", eurusd: "L'euro", usdxaf: "Le dollar" }, ar: { brent: "خام برنت", gold: "الذهب", eurusd: "اليورو", usdxaf: "الدولار" } }[lang][m.id];
+    if (Math.abs(m.change_pct) < 0.2) return { en: `${nm} is flat.`, fr: `${nm} est stable.`, ar: `${nm} مستقر.` }[lang];
+    return { en: `${nm} is ${up ? "up" : "down"} ${p} percent.`, fr: `${nm} ${up ? "gagne" : "perd"} ${p.replace(".", ",")} pour cent.`, ar: `${nm} ${up ? "يرتفع" : "ينخفض"} ${p} بالمئة.` }[lang]; };
+  const why = (m, lang) => m && m.why && m.why.source && m.why[lang] ? { en: " Behind it: ", fr: " En cause : ", ar: " السبب: " }[lang] + m.why[lang].replace(/[.…]+$/, "") + "." : "";
+  // five points: the strongest stories from five different sections, fresh first
+  const ageH = h => (Date.now() - new Date(h.date)) / 36e5, used = new Set(), pts = [];
+  const pool = headlines.filter(h => h.cat !== "markets");
+  for (const h of [...pool].filter(h => ageH(h) < 36).sort((a, b) => (b.score || 0) - (a.score || 0))) { if (pts.length >= 5) break; if (used.has(h.cat)) continue; used.add(h.cat); pts.push(h); }
+  for (const h of [...pool].sort((a, b) => (b.score || 0) - (a.score || 0))) { if (pts.length >= 5) break; if (!pts.includes(h)) pts.push(h); }
+  const first = (t) => { t = String(t || "").replace(/\s+/g, " ").trim(); const m = t.match(/^(.{40,220}?[.!?])(\s|$)/); return m ? m[1] : (t.length > 200 ? "" : t); };
+  // add the first sentence of the summary only when it is clearly about the same story
+  const kw = t => new Set(words(t || ""));
+  const point = (h, lang) => { const ti = ((h.t && h.t[lang]) || h.title).replace(/\s*[:|–—]\s*/g, lang === "ar" ? "، " : ", ").replace(/[.…]+$/, "") + ".";
+    const dEn = (h.d && h.d.en) || h.desc || "", a = kw((h.t && h.t.en) || h.title), b = kw(dEn), common = [...a].filter(x => b.has(x)).length;
+    const d = common >= 3 ? first(String((h.d && h.d[lang]) || "").replace(/^By [A-Z][\w.'-]+(?: [A-Z][\w.'-]+){0,3}\s+/, "").replace(/^[A-Z][A-Za-z .,'-]{1,40}\s*\([^)]{2,30}\)\s*[-–—]\s*/, "").replace(/^[A-Z][a-z]+ \d{1,2} \([^)]+\)\s*[-–—]\s*/, "").replace(/^(?:[A-Z][a-z]{2,8}\.? )?\d{1,2}\s*\([^)]+\)\s*[-–—]\s*/, "")) : "";
+    return d && !d.toLowerCase().startsWith(ti.slice(0, 25).toLowerCase()) ? ti + " " + d : ti; };
+  // number of the day: the biggest money figure in the headlines
+  const figRe = /(?:US\$|\$|€|USD\s?)?\d[\d.,]*\s?(?:%|bn|billion|milliards?|trillion|millions?)(?:\s?(?:FCFA|XAF|USD|dollars?|euros?))?/i;
+  const fh = headlines.filter(h => !pts.includes(h) && ageH(h) < 48).sort((a, b) => (b.score || 0) - (a.score || 0)).find(h => figRe.test(h.title)) || pts.find(h => figRe.test(h.title));
+  const ag = (cfg.agenda || []).filter(a => { const d = (new Date(a.date) - now) / 864e5; return d > -1 && d < 8; }).slice(0, 3);
+  podcast = { id: Date.now().toString(36), edition };
+  for (const lang of ["en", "fr", "ar"]) {
+    const S = [];
+    S.push({ k: "intro", text: { en: `Good ${ev ? "morning" : "evening"} Rayan. It's ${day.en}. Here is your Business Desk brief.`, fr: `${ev ? "Bonjour" : "Bonsoir"} Rayan. Nous sommes le ${day.fr}. Voici votre brief Business Desk.`, ar: `${ev ? "صباح الخير" : "مساء الخير"} يا ريان. اليوم ${day.ar}. إليك موجز Business Desk.` }[lang] });
+    const mk = ["brent", "gold", "usdxaf"].map(id => M(id)).filter(Boolean);
+    if (mk.length) S.push({ k: "markets", text: { en: "First, the markets. ", fr: "D'abord, les marchés. ", ar: "أولًا، الأسواق. " }[lang] + mk.map(m => mv(m, lang) + why(m, lang)).join(" ") });
+    const ord = { en: ["First", "Second", "Third", "Fourth", "Finally"], fr: ["Premier point", "Deuxième point", "Troisième point", "Quatrième point", "Enfin"], ar: ["أولًا", "ثانيًا", "ثالثًا", "رابعًا", "وأخيرًا"] }[lang];
+    const secName = (c) => ((cfg.news.find(n => n.cat === c) || {})["label_" + lang]) || { worldwide: { ar: "العالم" }, africa: { ar: "أفريقيا" }, congo: { ar: "الكونغو وCEMAC" }, markets: { ar: "الأسواق" }, bev: { ar: "المشروبات والتغليف" }, cfo: { ar: "المالية والخزينة" }, lebanon: { ar: "لبنان" } }[c]?.[lang] || c;
+    S.push({ k: "lead", text: { en: "Now, five things to know.", fr: "Maintenant, cinq choses à savoir.", ar: "والآن، خمسة أمور يجب معرفتها." }[lang] });
+    pts.forEach((h, i) => S.push({ k: "point", cat: h.cat, url: h.url, text: `${ord[i]}${lang === "ar" ? "،" : ","} ${secName(h.cat)}. ${point(h, lang)}` }));
+    if (fh) { const f = fh.title.match(figRe)[0]; S.push({ k: "number", text: { en: `The number of the day: ${f}. `, fr: `Le chiffre du jour : ${f}. `, ar: `رقم اليوم: ${f}. ` }[lang] + ((fh.t && fh.t[lang]) || fh.title).replace(/[.…]+$/, "") + "." }); }
+    if (ag.length) S.push({ k: "watch", text: { en: "What to watch: ", fr: "À surveiller : ", ar: "ما يجب متابعته: " }[lang] + ag.map(a => { const d = new Date(a.date).toLocaleDateString(lang === "ar" ? "ar" : lang === "fr" ? "fr-FR" : "en-GB", { weekday: "long", day: "numeric", month: "long", numberingSystem: "latn" }); return `${a[lang] || a.en}, ${d}`; }).join(lang === "ar" ? "؛ " : "; ") + "." });
+    S.push({ k: "outro", text: { en: "That's your brief. The full edition is in the app. Have a good day.", fr: "C'est tout pour ce brief. L'édition complète est dans l'application. Bonne journée.", ar: "هذا هو موجزك. العدد الكامل في التطبيق. يومًا موفقًا." }[lang] });
+    podcast[lang] = S;
+    const nWords = S.reduce((a, x) => a + x.text.split(/\s+/).length, 0);
+    podcast["mins_" + lang] = Math.max(1, Math.round(nWords / 150));
+  }
+  log.push(`podcast: ${pts.length} points, ${podcast.mins_en} min`);
 }
 
 const brief = {
-  generated_at: new Date().toISOString(), summary_at: summaryAt, summary_mode: summaryMode, peg: cfg.eur_xaf_peg, fx,
+  health: (() => { health.markets_total = markets.length; health.markets_ok = markets.filter(m => m.date && (Date.now() - new Date(m.date)) / 864e5 < 5).length;
+    health.translate = !gBlocked ? "google" : mmLeft < 30 ? "fallback" : "off"; health.static_days = Math.max(...(cfg.static_rates || []).map(r => r.date ? (Date.now() - new Date(r.date)) / 864e5 : 0), 0) | 0; return health; })(),
+  generated_at: new Date().toISOString(), follow: cfg.follow || [], alerts: cfg.ntfy_topic ? "https://ntfy.sh/" + cfg.ntfy_topic : null, summary_at: summaryAt, edition: keepBrief ? (old.edition || edition) : edition, summary_mode: summaryMode, peg: cfg.eur_xaf_peg, fx,
   markets, static_rates: cfg.static_rates, agenda: cfg.agenda,
-  categories: cfg.news.map(n => ({ id: n.cat, en: n.label_en, fr: n.label_fr })),
-  summary, takeaway, on_this_day: otd, read, news: headlines.map((h, i) => ({ id: "n" + i + "-" + h.date.slice(0, 10), ...h })), log
+  categories: cfg.news.map(n => ({ id: n.cat, en: n.label_en, fr: n.label_fr, ar: n.label_ar || { worldwide: "العالم", africa: "أفريقيا", congo: "الكونغو وCEMAC", markets: "الأسواق", bev: "المشروبات والتغليف", cfo: "المالية والخزينة", lebanon: "لبنان" }[n.cat] || n.label_en })),
+  summary, takeaway, podcast, on_this_day: otd, read, news: headlines.map((h, i) => ({ id: "n" + i + "-" + h.date.slice(0, 10), ...h })), log
 };
 await fs.mkdir(path.join(ROOT, "data"), { recursive: true });
 await fs.writeFile(path.join(ROOT, "data", "brief.json"), JSON.stringify(brief, null, 1));
 console.log(`brief.json written: ${markets.length} markets, ${headlines.length} headlines, summary=${summaryMode}`);
+// Phone alert when a new edition is ready (ntfy app, free)
+if (!keepBrief && !MOCK && cfg.ntfy_topic && (summary.en || []).length) {
+  const top = summary.en[0], name = edition === "morning" ? "Morning edition" : "Evening edition";
+  try {
+    const r = await fetch("https://ntfy.sh", { method: "POST", headers: { "Content-Type": "application/json" }, signal: AbortSignal.timeout(10000),
+      body: JSON.stringify({ topic: cfg.ntfy_topic, title: `${name} ready · ${summary.en.length} stories`, message: top.title, click: cfg.app_url || "https://ftounir-dev.github.io/business-desk/", tags: ["newspaper"] }) });
+    console.log("alert sent: " + r.status);
+  } catch (e) { console.log("alert failed: " + e.message); }
+}
 if (log.length) console.log("warnings:\n" + log.join("\n"));
