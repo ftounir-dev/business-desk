@@ -212,7 +212,7 @@ ${JSON.stringify(pool)}`;
       const h = Number.isInteger(x.source_index) ? headlines[x.source_index] : null;
       const cat = (h && h.cat) || x.cat;
       return { level: x.level === "high" || x.score >= 5 ? "high" : "med", score: Number(x.score) || null, cat, source: h ? h.source : "", date: h ? h.date : null, img: h ? h.img || null : null, owner: (labels[cat] || {})[lang] || "", title: String(x.title || ""),
-               detail: String(x.detail || ""), impact: String(x.impact || ""), url: h ? h.url : null };
+               detail: String(x.detail || ""), impact: String(x.impact || "").replace(/^\s*(?:impact(?: pour [^:]{0,30})?|الأثر)\s*[:：]\s*/i, ""), url: h ? h.url : null };
     });
   }
   if (!json.takeaway || !json.takeaway.en) json.takeaway = null;
