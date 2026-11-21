@@ -276,6 +276,91 @@ section{padding-top:26px}
 .nx-lead.read h3{color:var(--muted)}
 .nx-more{display:block;width:100%;margin:16px 0 4px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font:inherit;font-weight:700;color:var(--text);cursor:pointer}
 .nx-done{margin-top:18px;padding:16px;border-radius:14px;background:var(--accent-soft);text-align:center;font-weight:600;font-size:.92rem}
+/* v31: Morning Brief audio */
+.h-pod{display:flex;align-items:center;gap:12px;width:calc(100% - 36px);margin:-4px 16px 16px 20px;padding:10px 12px;border:1px solid rgba(255,255,255,.14);border-radius:12px;background:rgba(255,255,255,.06);color:#eef2f8;font:inherit;text-align:left;cursor:pointer}
+.h-pod b{display:block;font-size:.95rem}.h-pod .s{display:block;font-size:.76rem;color:#b9c6d9;margin-top:1px}
+.h-pi{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#d9a441;font-size:1rem}
+[dir=rtl] .h-pod{text-align:right;margin-left:16px;margin-right:20px}
+.pod-ctl{display:flex;align-items:center;gap:14px;margin-top:18px}
+.pod-play{flex:none;width:58px;height:58px;border-radius:50%;border:0;background:var(--accent);color:#fff;font-size:1.3rem;cursor:pointer}
+.pod-bar{flex:1;height:6px;border-radius:3px;background:var(--sunk);overflow:hidden}.pod-bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+.pod-src{margin:8px 0 0;font-size:.74rem;color:var(--muted)}
+.pod-s{list-style:none;margin:18px 0 0;padding:0}
+.pod-s li{padding:12px 0;border-top:1px solid var(--line);font-size:.98rem;line-height:1.55;color:var(--muted);cursor:pointer}
+.pod-s li.on{color:var(--text)}.pod-s li.pk-intro,.pod-s li.pk-lead,.pod-s li.pk-outro{font-style:italic}
+.pod-s li.pk-number{font-weight:700}
+/* v30: source health */
+.nh-h{margin:3px 0 0;font-size:.74rem;font-weight:600}.nh-h.ok{color:var(--relief)}.nh-h.warn{color:#d9822b}
+.un .stale{color:#d9822b;font-weight:600}
+/* v29: Arabic (RTL) */
+[dir=rtl] body{font-family:"Segoe UI","Noto Sans Arabic","Geeza Pro",system-ui,sans-serif}
+[dir=rtl] .h-hi,[dir=rtl] h2.sec,[dir=rtl] .ed-ti,[dir=rtl] .ed-fig,[dir=rtl] .mast h1{font-family:"Noto Naskh Arabic","Geeza Pro","Times New Roman",serif}
+[dir=rtl] .mast h1{direction:ltr}
+[dir=rtl] .hero::before{left:auto;right:0}
+[dir=rtl] .h-top,[dir=rtl] .h-hi,[dir=rtl] .h-sub,[dir=rtl] .h-seg,[dir=rtl] .h-play,[dir=rtl] .h-listen{margin-left:16px;margin-right:20px}
+[dir=rtl] .h-top{padding:14px 20px 0 16px}
+[dir=rtl] .h-play,[dir=rtl] .bf-h,[dir=rtl] .ed-opts button,[dir=rtl] .h-listen{text-align:right}
+[dir=rtl] .bf-i::before{left:auto;right:0}
+[dir=rtl] .bf-h{padding:14px 16px 14px 14px}
+[dir=rtl] .bf-k .st{margin-left:0;margin-right:8px}
+[dir=rtl] .bf-k,[dir=rtl] .ed-k,[dir=rtl] .tl-k,[dir=rtl] .ed-p b,[dir=rtl] .h-top,[dir=rtl] .ed-top{letter-spacing:0}
+[dir=rtl] .tk,[dir=rtl] .ticker,[dir=rtl] .px,[dir=rtl] .mv .v{direction:ltr}
+/* v28: Following */
+.fw{margin-top:14px}.fw-l{display:flex;flex-wrap:wrap;gap:6px}
+.fw-c{display:inline-flex;align-items:center;gap:4px;padding:5px 6px 5px 11px;border-radius:999px;background:var(--sunk);font-size:.82rem;font-weight:600}
+.fw-c button{border:0;background:none;color:var(--muted);font-size:1rem;line-height:1;cursor:pointer;padding:0 4px}
+.fw-add{display:flex;gap:8px;margin-top:10px}.fw-add input{flex:1;min-width:0;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--text);font:inherit;font-size:.9rem}
+.fw-add button{flex:none;padding:10px 14px;border:0;border-radius:10px;background:var(--accent);color:#fff;font:inherit;font-weight:700;font-size:.88rem;cursor:pointer}
+.fw-s{color:var(--accent);font-weight:800}
+a.h-listen{text-decoration:none;margin-top:-10px}
+/* v27: the Daily Edition */
+.h-seg{display:flex;gap:3px;margin:12px 16px 0 20px}.h-seg i{flex:1;height:4px;border-radius:2px;background:rgba(255,255,255,.18)}.h-seg i.on{background:#d9a441}
+.h-listen{display:block;margin:-6px 16px 14px 20px;padding:6px 0;border:0;background:none;color:#b9c6d9;font:inherit;font-size:.82rem;font-weight:600;cursor:pointer;text-align:left}
+.ed{position:fixed;inset:0;z-index:60;background:var(--bg);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top);animation:viewIn .2s ease}
+.ed-top{display:flex;justify-content:space-between;align-items:center;padding:10px 16px 6px;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.ed-x{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--text);font-size:.9rem;cursor:pointer}
+.ed-seg{display:flex;gap:3px;padding:4px 16px 0}.ed-seg i{flex:1;height:4px;border-radius:2px;background:var(--sunk)}.ed-seg i.on{background:var(--accent)}
+.ed-body{flex:1;overflow-y:auto;padding:22px 22px 12px;max-width:640px;width:100%;margin:0 auto;box-sizing:border-box}
+.ed-k{font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.ed-k span{color:var(--muted);letter-spacing:.04em}
+.ed-fig{margin-top:18px;font-family:var(--display);font-size:clamp(2.4rem,12vw,3.2rem);line-height:1;font-weight:700;letter-spacing:-.01em}
+.ed-ti{margin:14px 0 0;font-family:var(--display);font-size:clamp(1.45rem,6.4vw,1.8rem);line-height:1.22;font-weight:700;text-wrap:balance}
+.ed-q{font-size:1.25rem}
+.ed-p{margin:16px 0 0;font-size:1rem;line-height:1.55;color:var(--text)}.ed-p b{display:block;font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.ed-src{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:22px;padding-top:14px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}
+.ed-src a{flex:none;font-weight:700;color:var(--accent);text-decoration:none}
+.ed-nav{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 16px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--line);max-width:640px;width:100%;margin:0 auto;box-sizing:border-box}
+.ed-btn{padding:13px 22px;border:0;border-radius:12px;background:var(--accent);color:#fff;font:inherit;font-weight:700;font-size:.95rem;cursor:pointer}
+.ed-b2{padding:12px 4px;border:0;background:none;color:var(--muted);font:inherit;font-weight:600;cursor:pointer}
+.ed-opts{display:grid;gap:10px;margin-top:18px}.ed-opts button{padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--text);font:inherit;font-size:1rem;font-weight:600;text-align:left;cursor:pointer}
+.ed-opts button.ok{border-color:var(--relief);color:var(--relief)}.ed-opts button.no{border-color:#e05a4f;color:#e05a4f}
+.ed-fb{margin:14px 0 0;font-weight:600}
+.ed-done{text-align:center;padding-top:30px}.ed-done .ed-big{width:64px;height:64px;margin:0 auto;border-radius:50%;display:grid;place-items:center;background:var(--relief);color:#fff;font-size:1.8rem;font-weight:800}
+.ed-done .ed-out{margin-top:22px;padding:12px 18px;border:1px solid var(--line);border-radius:12px;color:var(--text)}
+/* v27: calmer Read tab */
+#v-read .rd-row{grid-template-columns:1fr}
+#v-read .rd-row img,#v-read .rd-row .ph0{display:none}
+#v-read .rd-hero .ph:not(:has(img)){aspect-ratio:auto;height:44px;background:none}
+#v-read .rd-hero .ph:not(:has(img)) .badge{top:14px;left:16px}
+#v-read .chips{gap:20px;padding:0;margin-top:10px;border-bottom:1px solid var(--line)}
+#v-read .chip{border:0;background:none;border-radius:0;padding:12px 0 11px;font-size:.88rem;font-weight:600;color:var(--muted);box-shadow:none}
+#v-read .chip[aria-pressed="true"]{background:none;color:var(--text);box-shadow:inset 0 -2px 0 var(--accent)}
+/* v26: briefing with top 3 */
+.bf-lbl{margin:18px 0 0;font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.bts{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:12px}
+.bt{position:relative;border-radius:18px;background:var(--surface);border:1px solid var(--line);overflow:hidden;box-shadow:0 6px 18px rgba(15,27,51,.06)}
+.bt::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--cc)}
+.bt-h{display:block;width:100%;padding:16px 16px 14px;border:0;background:none;text-align:left;font:inherit;color:inherit;cursor:pointer}
+.bt-top{display:flex;align-items:center;gap:10px}
+.bt-rank{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--cc);color:#fff;font-size:.78rem;font-weight:800;flex:none}
+.bt.done .bt-rank{background:var(--relief)}
+.bt-fig{display:block;margin-top:12px;font-family:var(--display);font-size:2.1rem;line-height:1;font-weight:700;color:var(--cc);letter-spacing:-.01em}
+.bt-ti{display:block;margin-top:10px;font-family:var(--display);font-size:1.22rem;line-height:1.25;font-weight:700}
+.bt.done .bt-ti{color:var(--muted)}
+.bt-sum{display:block;margin-top:8px;font-size:.92rem;line-height:1.5;color:var(--muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.bt-sum.full{-webkit-line-clamp:unset;display:block;color:var(--text)}
+.bt-cta{display:block;margin-top:10px;font-size:.78rem;font-weight:700;color:var(--accent)}
+.bt-x{padding:0 16px 16px;animation:viewIn .25s ease}
+.bt-x .bf-imp{margin:0 0 10px;font-size:.9rem;line-height:1.5}
 /* v25: compact masthead */
 .mast{align-items:center;padding:10px 16px 6px;gap:8px}
 .mast .grow{display:flex;flex-direction:column-reverse}
@@ -645,9 +730,10 @@ const T={
   t_today:"Today",t_markets:"Markets",t_news:"News",t_tools:"Tools",saved:"Saved",
   above:"Alert above",below:"Alert below",threshold:"Threshold",save_alert:"Save alert",remove:"Remove",cancel:"Cancel",setalert:"Set alert",alert:"Alert",
   foot:"News updates every hour from public market data and news. Prices are last closes and can lag by a day. Not trading advice.",
-  impact:"Impact on ITE",source:"Source",see:"See all",updated:"Updated",ai:"Written by AI from today's data",rules:"Automatic summary",
+  impact:"Impact",source:"Source",see:"See all",updated:"Updated",ai:"Written by AI from today's data",rules:"Automatic summary",
   stale:"This brief is more than a day old. The automatic update may have failed; check GitHub Actions.",armed:"alerts armed, none triggered",
   offline:"Offline: showing the last brief saved on this phone.",ago_m:"min ago",ago_h:"h ago",ago_d:"d ago",now:"now",chart:"Last month",nostories:"No stories in this section yet. It fills on the next update."},
+ ar:{"ite": "برازافيل", "sixty": "آخر 24 ساعة", "t_events": "أحداث", "wa": "إرسال عبر واتساب", "copy": "نسخ النص", "agenda_t": "قادم", "t_read": "قراءة", "read_t": "مقال اليوم", "read_s": "مختار كل صباح لمديري المالية من Harvard Business Review وThe Economist وMcKinsey وMIT Sloan وWharton وCFO.com. بعضها يتطلب اشتراكًا.", "more_t": "قراءات جيدة أخرى", "hist_t": "اختيارات سابقة", "readit": "اقرأ المقال", "why": "لماذا تقرؤه", "otd_t": "في مثل هذا اليوم", "mk_t": "الأسواق", "mk_s": "آخر إغلاق لكل سوق. اضغط على سطر لرؤية الرسم والمصدر والتنبيه.", "lg_p": "ضغط على التكاليف", "lg_r": "انفراج في التكاليف", "lg_n": "سياق", "g_fx": "العملات · XAF", "g_commod": "السلع", "g_africa": "عملات أفريقيا", "g_pack": "التغليف · PET للعبوات", "ref": "مرجع", "g_rates": "أسعار BEAC · سوق ما بين البنوك CEMAC", "news_t": "الأخبار", "all": "الكل", "tools_t": "أدوات", "pulse_t": "كلفة الدولار هذا الشهر", "pulse_s": "الفرنك الأفريقي مرتبط باليورو، لذا تحمل فواتير الدولار وحدها مخاطر الصرف. أرقامك تبقى على هذا الهاتف.", "f_usd": "المشتريات بالدولار شهريًا", "f_budget": "سعر الموازنة (XAF لكل USD)", "o_label": "الكلفة الشهرية مقابل الموازنة بسعر اليوم", "sugar_e": "تقدير كلفة السكر", "f_t": "طن شهريًا", "f_p": "العلاوة + الشحن ($/طن)", "s_label": "السكر الخام رقم 11 + علاوتك، بالفرنك", "s_note": "يحوّل سنت/رطل إلى $/طن (× 22.046). لا يشمل التكرير والرسوم وتكاليف الميناء.", "saved_t": "المحفوظات", "saved_s": "الأخبار التي تحتفظ بها، على هذا الهاتف فقط.", "nosaved": "لا شيء محفوظ بعد.", "t_today": "اليوم", "t_markets": "الأسواق", "t_news": "الأخبار", "t_tools": "أدوات", "saved": "محفوظ", "above": "تنبيه فوق", "below": "تنبيه تحت", "threshold": "الحد", "save_alert": "حفظ التنبيه", "remove": "إزالة", "cancel": "إلغاء", "setalert": "ضبط تنبيه", "alert": "تنبيه", "foot": "تُحدَّث الأخبار كل ساعة من بيانات الأسواق والأخبار العامة. الأسعار هي آخر إغلاق وقد تتأخر يومًا. ليست نصيحة استثمارية.", "impact": "الأثر", "source": "المصدر", "see": "عرض الكل", "updated": "تحديث", "ai": "مكتوب بالذكاء الاصطناعي من بيانات اليوم", "rules": "ملخص تلقائي", "stale": "هذا الموجز أقدم من يوم. ربما فشل التحديث التلقائي.", "armed": "تنبيهات مفعّلة، لم يُطلق أي منها", "offline": "غير متصل: عرض آخر موجز محفوظ على هذا الهاتف.", "ago_m": "د", "ago_h": "س", "ago_d": "ي", "now": "الآن", "chart": "الشهر الماضي", "nostories": "لا أخبار في هذا القسم بعد. تمتلئ في التحديث القادم."},
  fr:{ite:"Brazzaville",sixty:"Les dernières 24 heures",t_events:"Événements",wa:"Envoyer sur WhatsApp",copy:"Copier le texte",
   agenda_t:"À venir",t_read:"Lecture",read_t:"L'article du jour",read_s:"Choisi chaque matin pour un DAF parmi Harvard Business Review, The Economist, McKinsey, MIT Sloan, Wharton et CFO.com. Certains nécessitent un abonnement.",more_t:"Autres lectures",hist_t:"Choix précédents",readit:"Lire l'article",why:"Pourquoi le lire",otd_t:"Ce jour dans l'histoire",mk_t:"Marchés",mk_s:"Dernière clôture. Touchez une ligne pour le graphique, la source et une alerte.",lg_p:"Pression sur les coûts",lg_r:"Allègement",lg_n:"Contexte",
   g_fx:"Devises · XAF",g_commod:"Matières premières",g_africa:"Devises africaines",g_pack:"Emballage · PET qualité bouteille",ref:"Référence",g_rates:"Taux BEAC · interbancaire CEMAC",
@@ -658,7 +744,7 @@ const T={
   t_today:"Aujourd'hui",t_markets:"Marchés",t_news:"Actus",t_tools:"Outils",saved:"Enregistrés",
   above:"Alerte au-dessus",below:"Alerte en dessous",threshold:"Seuil",save_alert:"Enregistrer",remove:"Supprimer",cancel:"Annuler",setalert:"Créer une alerte",alert:"Alerte",
   foot:"Actualités mises à jour toutes les heures à partir de données de marché et d'actualités publiques. Prix de clôture, parfois avec un jour de décalage. Pas un conseil d'investissement.",
-  impact:"Impact pour ITE",source:"Source",see:"Tout voir",updated:"Mis à jour",ai:"Rédigé par IA à partir des données du jour",rules:"Résumé automatique",
+  impact:"Impact",source:"Source",see:"Tout voir",updated:"Mis à jour",ai:"Rédigé par IA à partir des données du jour",rules:"Résumé automatique",
   stale:"Ce brief date de plus d'un jour. La mise à jour automatique a peut-être échoué ; vérifiez GitHub Actions.",armed:"alertes actives, aucune déclenchée",
   offline:"Hors ligne : dernier brief enregistré sur ce téléphone.",ago_m:"min",ago_h:"h",ago_d:"j",now:"à l'instant",chart:"Dernier mois",nostories:"Pas encore d'articles dans cette rubrique. Elle se remplit à la prochaine mise à jour."}
 };
@@ -671,8 +757,10 @@ let theme=store.get("theme",null);
 let saved=store.get("saved",{});
 let alerts=store.get("alerts",{brent:{dir:"above",v:95},usdxaf:{dir:"above",v:600}});
 let cat="all",open=null,B=null,offline=false;
-const t=k=>T[lang][k]??T.en[k]??k;
-const loc=()=>lang==="fr"?"fr-FR":"en-GB";
+const t=k=>(T[lang]||T.en)[k]??T.en[k]??k;
+const ARN={"ng": "نيجيريا", "gh": "غانا", "ci": "ساحل العاج", "sn": "السنغال", "cm": "الكاميرون", "ga": "الغابون", "cg": "الكونغو", "cd": "الكونغو الديمقراطية", "td": "تشاد", "cf": "أفريقيا الوسطى", "gq": "غينيا الاستوائية", "bj": "بنين", "tg": "توغو", "ml": "مالي", "bf": "بوركينا فاسو", "ne": "النيجر", "gn": "غينيا", "ao": "أنغولا", "za": "جنوب أفريقيا", "ke": "كينيا", "et": "إثيوبيا", "eg": "مصر", "ma": "المغرب", "dz": "الجزائر", "rw": "رواندا", "mr": "موريتانيا", "lb": "لبنان", "us": "الولايات المتحدة", "cn": "الصين", "ru": "روسيا", "ua": "أوكرانيا", "fr": "فرنسا", "gb": "المملكة المتحدة", "de": "ألمانيا", "eu": "الاتحاد الأوروبي", "in": "الهند", "jp": "اليابان", "sa": "السعودية", "ae": "الإمارات", "il": "إسرائيل", "ir": "إيران", "hk": "هونغ كونغ", "ug": "أوغندا", "mg": "مدغشقر", "asia": "آسيا", "tr": "تركيا", "br": "البرازيل", "cemac": "CEMAC", "uemoa": "UEMOA", "afr": "أفريقيا (إقليمي)", "fin": "المالية والخزينة", "econ": "الاقتصاد والأسواق", "strat": "الاستراتيجية", "lead": "القيادة", "ops": "العمليات والذكاء الاصطناعي", "idea": "أفكار", "oil": "الطاقة", "fx": "العملات", "rates": "الفوائد", "debt": "الديون", "inputs": "المدخلات", "tax": "الضرائب والقواعد", "bev": "المشروبات"};
+const L3=a=>lang==="ar"?(ARN[a[0]]||a[2]):lang==="fr"?a[3]:a[2];
+const loc=()=>(lang==="ar"?"ar-u-nu-latn":lang==="fr"?"fr-FR":"en-GB");
 const fmt=(n,dp=0)=>Number(n).toLocaleString(loc(),{minimumFractionDigits:dp,maximumFractionDigits:dp});
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const num=v=>{const n=parseFloat(String(v).replace(/\s/g,"").replace(",","."));return isFinite(n)?n:0;};
@@ -713,45 +801,76 @@ const reel={i:0,el:0,last:0,paused:false,hold:false,vis:false,n:0,raf:0,io:null}
 const BF={open:null,all:false};
 const OPENED=store.get("bf_open",{});
 function bfTitle(items){const fr=lang==="fr",ok=items.length&&items.every(x=>x.date&&Date.now()-new Date(x.date)<=864e5);
-  return ok?(fr?"Les dernières 24 heures":"The last 24 hours"):(fr?"Votre dernier briefing":"Your latest briefing");}
+  return ok?((lang==="ar"?"آخر 24 ساعة":fr?"Les dernières 24 heures":"The last 24 hours")):((lang==="ar"?"آخر موجز لك":fr?"Votre dernier briefing":"Your latest briefing"));}
 const wc=s=>String(s||"").trim().split(/\s+/).filter(Boolean).length;
 function bfStats(items){ // audio = what the voice actually reads; reading = headline + summary
   const say=items.reduce((a,x)=>a+wc((ctryWords(x)||x.owner||""))+wc(x.title)+wc(x.detail)+wc(x.impact),0);
   const read=items.reduce((a,x)=>a+wc(x.title)+wc(x.detail)+wc(x.impact),0);
   const full=items.filter(x=>x.detail).length>=items.length/2;
   return {listen:Math.max(1,Math.round(say/155+items.length*1.2/60)),read:Math.max(1,Math.round(read/220)),full};}
-function minTxt(m){return m+" min";}
+function minTxt(m){return m+(lang==="ar"?" د":" min");}
+function figOf(t){const re=/(?:US\$|\$|€|USD\s?|EUR\s?)?\d[\d.,]*(?:\s?%|\s?(?:bn|billion|milliards?|trillion|millions?|Md)\b)?(?:\s?(?:FCFA|XAF|USD|dollars?|euros?))?/gi;
+  for(const m of String(t||"").matchAll(re)){const f=m[0].trim().replace(/[.,]$/,"");if(/[%$€]|bn|billion|milliard|trillion|million|FCFA|XAF|USD|EUR|dollar|euro|Md/i.test(f)&&/\d/.test(f))return f;}return null;}
 function renderSixty(){
-  const fr=lang==="fr",items=B.summary[lang]||B.summary.en||[],n=items.length;
-  const catOf=x=>x.cat||((B.categories||[]).find(c=>c.en===x.owner||c.fr===x.owner)||{}).id||"worldwide";
-  if(!n){$("#sixty").innerHTML="";$("#bf-ring").innerHTML="";$("#sixty-sub").textContent="";return;}
-  const seen=x=>NX.read[nxId(x)]||OPENED[nxId(x)];
-  const done=items.filter(seen).length,nRead=items.filter(x=>NX.read[nxId(x)]).length,p=done/n,C=2*Math.PI*20;
-  const next=items.findIndex(x=>!seen(x)),st=bfStats(items);
-  $("#sixty-h").textContent=bfTitle(items);
-  $("#sixty-sub").textContent=done===n?(fr?`Tous les sujets ouverts · ${nRead} articles lus`:`All stories opened · ${nRead} articles read`):(fr?`${done} sur ${n} ouverts · ${nRead} lus · lecture ${minTxt(st.read)}`:`${done} of ${n} opened · ${nRead} read · ${minTxt(st.read)} read`);
-  $("#bf-ring").innerHTML=`<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20" fill="none" stroke="var(--sunk)" stroke-width="5"/><circle cx="24" cy="24" r="20" fill="none" stroke="${done===n?"var(--relief)":"var(--accent)"}" stroke-width="5" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-p)}" transform="rotate(-90 24 24)" style="transition:stroke-dashoffset .6s"/></svg><b>${done}<small>/${n}</small></b>`;
-  const seg=items.map(x=>`<i style="background:${seen(x)?catColor(catOf(x)):"var(--sunk)"}"></i>`).join("");
-  const show=BF.all?items:items.slice(0,Math.max(6,next>=0?next+3:6));
-  $("#sixty").innerHTML=`<div class="bf-seg" aria-hidden="true">${seg}</div>
-    <ol class="bf">${show.map((x,k)=>{const id=nxId(x),d=!!NX.read[id],op=!d&&!!OPENED[id],o=BF.open===id,c=catOf(x);
-      return `<li class="bf-i${d?" done":""}${op?" opened":""}${o?" open":""}${k===next?" next":""}" style="--cc:${catColor(c)}">
-        <button class="bf-h" type="button" data-bf="${k}" aria-expanded="${o}">
-          <span class="bf-n">${d?"✓":String(k+1).padStart(2,"0")}</span>
-          <span class="bf-t"><span class="bf-k">${esc(catLabel(c))}${countriesOf(x).length?" · "+esc(countriesOf(x).map(q=>fr?q[3]:q[2]).slice(0,1)[0]):""}${d?`<em class="st rd">${fr?"Lu":"Read"}</em>`:op?`<em class="st">${fr?"Ouvert":"Opened"}</em>`:""}</span><span class="bf-ti">${esc(x.title)}</span></span>
-          <span class="bf-ch" aria-hidden="true">${o?"−":"+"}</span></button>
-        ${o?`<div class="bf-x">${x.detail?`<p>${esc(cleanDl(x.detail)||"")}</p>`:""}${x.impact?`<p class="bf-imp"><b>${t("impact")} ·</b> ${esc(x.impact)}</p>`:""}
-          <div class="bf-a"><span>${esc(x.source||"")}${x.date?" · "+ago(x.date):""}</span>${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener" data-bfread="${k}">${fr?"Lire l'article":"Read the article"} ↗</a>`:""}</div></div>`:""}
-      </li>`;}).join("")}</ol>
-    ${show.length<n?`<button class="bf-more" type="button" id="bf-more">${fr?`Voir les ${n} sujets`:`Show all ${n} stories`}</button>`:""}
-    <button class="tl-play" type="button" id="tl-play">▶ ${st.full?(fr?"Écouter le briefing":"Listen to the briefing"):(fr?"Écouter les titres":"Listen to the headlines")} · ${minTxt(st.listen)}</button>`;
-  $("#sixty").querySelectorAll("[data-bf]").forEach(b=>b.onclick=()=>{const x=show[+b.dataset.bf],id=nxId(x);
-    BF.open=BF.open===id?null:id;
-    if(!OPENED[id]&&!NX.read[id]){OPENED[id]=Date.now();store.set("bf_open",OPENED);if(!items.filter(y=>!seen(y)).length&&typeof wToast==="function")wToast(fr?"✅ Tous les sujets ouverts":"✅ All stories opened");}
-    renderSixty();});
-  $("#sixty").querySelectorAll("[data-bfread]").forEach(a=>a.onclick=()=>{nxMarkRead(show[+a.dataset.bfread]);setTimeout(()=>{renderSixty();try{renderNews();}catch(e){}},300);});
-  const mb=$("#bf-more");if(mb)mb.onclick=()=>{BF.all=true;renderSixty();};
-  $("#tl-play").onclick=()=>openWatch(0);
+  const fr=lang==="fr",items=B.summary[lang]||B.summary.en||[],n=items.length,ed=edState();
+  $("#sixty-h").textContent=(lang==="ar"?"في هذا العدد":fr?"Dans cette édition":"In this edition");
+  $("#sixty-sub").textContent=n?`${bfTitle(items)} · ${(lang==="ar"?"اضغط على خبر لفتحه":fr?"touchez un sujet pour l'ouvrir":"tap a story to open it")}`:"";
+  $("#bf-ring").innerHTML="";
+  if(!n){$("#sixty").innerHTML="";return;}
+  $("#sixty").innerHTML=`<ol class="bf">${items.map((x,k)=>{const c=catOf(x),d=!!NX.read[nxId(x)],op=!!ed.seen[k];
+    return `<li class="bf-i${d?" done":""}" style="--cc:${catColor(c)}"><button class="bf-h" type="button" data-ed="${k}">
+      <span class="bf-n">${op?"✓":String(k+1).padStart(2,"0")}</span>
+      <span class="bf-t"><span class="bf-k">${esc(catLabel(c))}${d?`<em class="st rd">${(lang==="ar"?"مقروء":fr?"Lu":"Read")}</em>`:op?`<em class="st">${(lang==="ar"?"مفتوح":fr?"Ouvert":"Opened")}</em>`:""}</span><span class="bf-ti">${esc(x.title)}</span></span>
+      <span class="bf-ch" aria-hidden="true">›</span></button></li>`;}).join("")}</ol>`;
+  $("#sixty").querySelectorAll("[data-ed]").forEach(b=>b.onclick=()=>openEdition(+b.dataset.ed));
+}
+const catOf=x=>x.cat||((B.categories||[]).find(c=>c.en===x.owner||c.fr===x.owner)||{}).id||"worldwide";
+/* ---------- The Daily Edition ---------- */
+function edKey(){return (B&&B.summary_at)||"";}
+function edState(){const s=store.get("ed",{});if(s.key!==edKey())return {key:edKey(),seen:{},done:false,quiz:null};s.seen=s.seen||{};return s;}
+function edSave(s){store.set("ed",s);}
+function edLabel(){const fr=lang==="fr",e=B.edition||(new Date(B.summary_at||Date.now()).getUTCHours()>=17||new Date(B.summary_at||Date.now()).getUTCHours()<6?"evening":"morning");
+  const d=new Date(B.summary_at||Date.now()).toLocaleDateString((lang==="ar"?"ar-u-nu-latn":fr?"fr-FR":"en-GB"),{weekday:"short",day:"numeric",month:"short"});
+  return (e==="morning"?((lang==="ar"?"العدد الصباحي":fr?"Édition du matin":"Morning edition")):((lang==="ar"?"العدد المسائي":fr?"Édition du soir":"Evening edition")))+" · "+d;}
+function edNext(){const d=new Date(),c=new Date(d);c.setUTCSeconds(0,0);c.setUTCMinutes(15);
+  if(d.getUTCHours()<6||(d.getUTCHours()===6&&d.getUTCMinutes()<15))c.setUTCHours(6);else if(d.getUTCHours()<17||(d.getUTCHours()===17&&d.getUTCMinutes()<15))c.setUTCHours(17);else{c.setUTCDate(c.getUTCDate()+1);c.setUTCHours(6);}return c;}
+function edStreak(){const D=store.get("ed_days",{});let d=new Date(),s=0;if(!D[dayKey(d)])d.setDate(d.getDate()-1);while(D[dayKey(d)]){s++;d.setDate(d.getDate()-1);}return s;}
+function openEdition(start){
+  const fr=lang==="fr",items=B.summary[lang]||B.summary.en||[],n=items.length;if(!n)return;
+  let i=Math.min(Math.max(0,start||0),n),ed=edState();
+  const el=document.createElement("div");el.className="ed";el.setAttribute("role","dialog");el.setAttribute("aria-label",edLabel());
+  document.body.appendChild(el);document.body.style.overflow="hidden";
+  const close=()=>{el.remove();document.body.style.overflow="";renderHero();renderSixty();try{renderNews();}catch(e){}};
+  const seg=()=>`<div class="ed-seg">${items.map((x,k)=>`<i class="${k<i||(k===i&&i<n)?"on":""}${k===i?" cur":""}"></i>`).join("")}<i class="${i>=n?"on cur":""}"></i></div>`;
+  function story(){const x=items[i],c=catOf(x),f=figOf(x.title),sum=cleanDl(x.detail)||"";
+    ed.seen[i]=1;edSave(ed);
+    return `<div class="ed-k" style="color:${catColor(c)}">${esc(catLabel(c))}${countriesOf(x).length?" · "+esc(countriesOf(x).map(q=>L3(q)).slice(0,1)[0]):""} <span>· ${i+1} / ${n}</span></div>
+      ${f?`<div class="ed-fig" style="color:${catColor(c)}">${esc(f)}</div>`:""}
+      <h2 class="ed-ti">${esc(x.title)}</h2>
+      ${sum?`<p class="ed-p"><b>${(lang==="ar"?"ماذا حدث":fr?"Ce qui s'est passé":"What happened")}</b>${esc(sum)}</p>`:""}
+      ${x.impact?`<p class="ed-p"><b>${t("impact")}</b>${esc(x.impact)}</p>`:x.ctx?`<p class="ed-p"><b>${(lang==="ar"?"سياق السوق":fr?"Contexte de marché":"Market context")}</b>${esc(x.ctx)}</p>`:""}
+      <div class="ed-src"><span>${esc(x.source||"")}${x.date?" · "+ago(x.date):""}</span>${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener" id="ed-read">${(lang==="ar"?"اقرأ المقال":fr?"Lire l'article":"Read the article")} ↗</a>`:""}</div>`;}
+  function finish(){
+    const D=store.get("ed_days",{});D[dayKey(new Date())]=1;store.set("ed_days",D);ed.done=true;edSave(ed);
+    const st=edStreak(),nx=edNext().toLocaleTimeString((lang==="ar"?"ar-u-nu-latn":fr?"fr-FR":"en-GB"),{hour:"2-digit",minute:"2-digit"});
+    return `<div class="ed-done"><div class="ed-big">✓</div><h2 class="ed-ti">${(lang==="ar"?"اكتمل العدد":fr?"Édition terminée":"Edition complete")}</h2>
+      <p class="ed-p">🔥 ${st} ${lang==="ar"?"يوم متتالٍ":fr?(st>1?"jours de suite":"jour de suite"):(st>1?"days in a row":"day in a row")}</p>
+      <p class="ed-p">${(lang==="ar"?"العدد التالي حوالي":fr?"Prochaine édition vers":"Next edition around")} ${nx}</p>
+      <button type="button" class="ed-b2 ed-out" id="ed-news">${(lang==="ar"?"كل الأخبار":fr?"Voir toutes les actualités":"See all the news")}</button></div>`;}
+  function draw(){
+    const last=i>=n,quizDone=last;
+    el.innerHTML=`<div class="ed-top"><button class="ed-x" type="button" aria-label="${(lang==="ar"?"إغلاق":fr?"Fermer":"Close")}">✕</button><span>${esc(edLabel())}</span><span></span></div>${seg()}
+      <div class="ed-body">${last?finish():story()}</div>
+      <div class="ed-nav">${i>0&&!quizDone?`<button type="button" class="ed-b2" id="ed-prev">‹ ${(lang==="ar"?"رجوع":fr?"Retour":"Back")}</button>`:"<span></span>"}
+        ${quizDone?`<button type="button" class="ed-btn" id="ed-close">${(lang==="ar"?"إغلاق":fr?"Fermer":"Close")}</button>`:`<button type="button" class="ed-btn" id="ed-next">${i+1<n?((lang==="ar"?"التالي":fr?"Suivant":"Next")):((lang==="ar"?"إنهاء":fr?"Terminer":"Finish"))} ›</button>`}</div>`;
+    el.querySelector(".ed-x").onclick=close;
+    const cl=el.querySelector("#ed-close");if(cl)cl.onclick=close;
+    const nw=el.querySelector("#ed-news");if(nw)nw.onclick=()=>{close();location.hash="#news";};
+    const rd=el.querySelector("#ed-read");if(rd)rd.onclick=()=>nxMarkRead(items[i]);
+    const pv=el.querySelector("#ed-prev");if(pv)pv.onclick=()=>{i=Math.max(0,i-1);draw();};
+    const nb=el.querySelector("#ed-next");if(nb)nb.onclick=()=>{if(i<n){i++;draw();el.querySelector(".ed-body").scrollTop=0;}};
+  }
+  draw();
 }
 function showSlide(k){
   const R=$("#reel");if(!R)return;k=Math.max(0,Math.min(reel.n-1,k));reel.i=k;reel.el=0;
@@ -781,24 +900,56 @@ function pickVoice(l){const vs=(window.speechSynthesis&&speechSynthesis.getVoice
   const m=vs.filter(v=>v.lang.replace("_","-").toLowerCase().startsWith(p));
   return m.find(v=>v.lang.toLowerCase()===l.toLowerCase()&&/premium|enhanced|natural|siri|google/i.test(v.name))||m.find(v=>v.lang.toLowerCase()===l.toLowerCase())||m[0]||null;}
 if(window.speechSynthesis)speechSynthesis.onvoiceschanged=()=>{};
+/* ---------- The Morning Brief (audio) ---------- */
+function podMins(){const P=B.podcast||{};const s=P.audio_secs&&P.audio_secs[lang];return s?Math.max(1,Math.round(s/60)):(P["mins_"+lang]||2);}
+function openPod(){
+  const P=B.podcast,S=(P&&P[lang])||[];if(!S.length)return;
+  const fr=lang==="fr",ar=lang==="ar",src=P.audio&&P.audio[lang];
+  const el=document.createElement("div");el.className="ed pod";document.body.appendChild(el);document.body.style.overflow="hidden";
+  let i=0,playing=false,audio=null,stopped=false;
+  const title=ar?"موجز الصباح الصوتي":fr?"Le brief audio":"The Morning Brief";
+  el.innerHTML=`<div class="ed-top"><button class="ed-x" type="button" aria-label="${ar?"إغلاق":fr?"Fermer":"Close"}">✕</button><span>${esc(edLabel())}</span><span></span></div>
+    <div class="ed-body"><div class="ed-k">🎧 ${title} <span>· ${minTxt(podMins())}</span></div>
+    <div class="pod-ctl"><button type="button" class="pod-play" id="pod-play" aria-label="Play">▶</button>
+      <div class="pod-bar"><i id="pod-fill"></i></div></div>
+    <p class="pod-src">${src?(ar?"صوت طبيعي":fr?"Voix naturelle":"Natural voice"):(ar?"صوت الهاتف":fr?"Voix du téléphone":"Phone voice")}</p>
+    <ol class="pod-s">${S.map((x,k)=>`<li data-k="${k}" class="pk-${x.k}">${esc(x.text)}</li>`).join("")}</ol></div>`;
+  const li=[...el.querySelectorAll(".pod-s li")],btn=el.querySelector("#pod-play"),fill=el.querySelector("#pod-fill");
+  const mark=k=>{li.forEach((e,j)=>e.classList.toggle("on",j===k));const e=li[k];if(e)e.scrollIntoView({block:"nearest",behavior:"smooth"});fill.style.width=Math.round(k/Math.max(1,S.length-1)*100)+"%";};
+  const close=()=>{stopped=true;if(audio){audio.pause();audio=null;}try{speechSynthesis.cancel();}catch(e){}el.remove();document.body.style.overflow="";};
+  el.querySelector(".ed-x").onclick=close;
+  if(src){audio=new Audio(src);audio.preload="auto";
+    // spread the highlight over the segments by text length
+    const lens=S.map(x=>x.text.length),tot=lens.reduce((a,b)=>a+b,0);
+    audio.ontimeupdate=()=>{if(!audio.duration)return;const p=audio.currentTime/audio.duration;fill.style.width=(p*100)+"%";let acc=0,k=0;for(;k<lens.length;k++){acc+=lens[k]/tot;if(p<acc)break;}li.forEach((e,j)=>e.classList.toggle("on",j===Math.min(k,S.length-1)));};
+    audio.onended=()=>{playing=false;btn.textContent="↺";};
+    audio.onerror=()=>{audio=null;btn.textContent="▶";};
+    btn.onclick=()=>{if(!audio){speak();return;}if(audio.paused){audio.play();btn.textContent="❚❚";}else{audio.pause();btn.textContent="▶";}};}
+  else btn.onclick=()=>{if(playing){speechSynthesis.cancel();playing=false;btn.textContent="▶";return;}speak();};
+  function speak(){if(!window.speechSynthesis)return;stopped=false;playing=true;btn.textContent="❚❚";speechSynthesis.cancel();
+    const L=ar?"ar-SA":fr?"fr-FR":"en-GB",v=pickVoice(L);
+    const next=()=>{if(stopped||!playing)return;if(i>=S.length){playing=false;btn.textContent="↺";i=0;return;}mark(i);
+      const u=new SpeechSynthesisUtterance(S[i].text);u.lang=L;if(v)u.voice=v;u.rate=1;u.onend=()=>{i++;next();};speechSynthesis.speak(u);};next();}
+  li.forEach(e=>e.onclick=()=>{const k=+e.dataset.k;if(audio&&audio.duration){const lens=S.map(x=>x.text.length),tot=lens.reduce((a,b)=>a+b,0);audio.currentTime=audio.duration*lens.slice(0,k).reduce((a,b)=>a+b,0)/tot;audio.play();btn.textContent="❚❚";}else{i=k;speechSynthesis.cancel();playing=true;speak();}});
+}
 function wToast(s){const t=document.createElement("div");t.className="w-toast";t.textContent=s;document.body.appendChild(t);setTimeout(()=>t.remove(),1700);}
 function openWatch(start){
   if($("#watch"))return;
   reel.paused=true;ppIcon();
   const fr=lang==="fr";W.items=(B.summary[lang]||B.summary.en||[]).map(x=>({...x,cat:catOfX(x)}));W.paused=false;
   const el=document.createElement("div");el.className="watch";el.id="watch";el.setAttribute("role","dialog");el.setAttribute("aria-label",t("sixty"));
-  el.innerHTML=`<div class="w-top"><button class="w-x" aria-label="${fr?"Fermer":"Close"}">✕</button><span class="w-title">${esc(bfTitle(W.items))}</span><button class="w-snd" aria-label="${fr?"Son":"Sound"}">${W.muted?"🔇":"🔊"}</button></div>`+
+  el.innerHTML=`<div class="w-top"><button class="w-x" aria-label="${(lang==="ar"?"إغلاق":fr?"Fermer":"Close")}">✕</button><span class="w-title">${esc(bfTitle(W.items))}</span><button class="w-snd" aria-label="${(lang==="ar"?"الصوت":fr?"Son":"Sound")}">${W.muted?"🔇":"🔊"}</button></div>`+
     W.items.map((x,k)=>{const c=REEL_CATS[x.cat]||REEL_CATS.worldwide,id=wid(x);
       return `<section class="wv" data-k="${k}" style="background:${c[1]}">
       ${x.img?`<img class="kb" src="${esc(x.img)}" alt="" decoding="async" onerror="this.insertAdjacentHTML('afterend','<div class=&quot;w-emoji&quot;>${c[0]}</div>');this.remove()">`:`<div class="w-emoji" aria-hidden="true">${c[0]}</div>`}<i class="ov2"></i>
       <div class="w-pause"><i>▶</i></div>
       <div class="w-body"><span class="w-cat">${esc([ctryLabel(x),x.owner].filter(Boolean).join(" · "))}</span><h2>${x.title.split(/\s+/).map(w=>`<span>${esc(w)}</span>`).join(" ")}</h2>
       ${x.detail?`<p class="w-imp">${esc(x.detail)}</p>`:""}${x.impact?`<p class="w-imp"><b>${t("impact")} ·</b> ${esc(x.impact)}</p>`:""}
-      <div class="w-meta">${esc(x.source||"")}${x.date?" · "+ago(x.date):""}${x.url?` · <a href="${esc(x.url)}" target="_blank" rel="noopener" data-act="read" style="color:#fff;font-weight:700">${fr?"Lire":"Read"} ↗</a>`:""}</div></div>
+      <div class="w-meta">${esc(x.source||"")}${x.date?" · "+ago(x.date):""}${x.url?` · <a href="${esc(x.url)}" target="_blank" rel="noopener" data-act="read" style="color:#fff;font-weight:700">${(lang==="ar"?"اقرأ":fr?"Lire":"Read")} ↗</a>`:""}</div></div>
       <div class="w-bar"><b></b></div></section>`;}).join("")+
-    `<section class="wv w-end" data-k="end"><div class="w-body"><div style="font-size:4.2rem">✅</div><h2>${fr?"Vous êtes à jour":"You're all caught up"}</h2>
-      <p class="w-imp">${fr?"Nouvelles histoires toutes les 8 heures.":"Fresh stories every 8 hours."}</p>
-      <div style="display:flex;gap:10px;justify-content:center"><button class="w-btn" type="button" data-act="replay">↺ ${fr?"Revoir":"Replay"}</button><button class="w-btn ghost" type="button" data-act="close">${fr?"Fermer":"Close"}</button></div></div></section>`;
+    `<section class="wv w-end" data-k="end"><div class="w-body"><div style="font-size:4.2rem">✅</div><h2>${(lang==="ar"?"أنت على اطلاع بكل شيء":fr?"Vous êtes à jour":"You're all caught up")}</h2>
+      <p class="w-imp">${(lang==="ar"?"أخبار جديدة كل 8 ساعات.":fr?"Nouvelles histoires toutes les 8 heures.":"Fresh stories every 8 hours.")}</p>
+      <div style="display:flex;gap:10px;justify-content:center"><button class="w-btn" type="button" data-act="replay">↺ ${(lang==="ar"?"إعادة":fr?"Revoir":"Replay")}</button><button class="w-btn ghost" type="button" data-act="close">${(lang==="ar"?"إغلاق":fr?"Fermer":"Close")}</button></div></div></section>`;
   document.body.appendChild(el);document.body.style.overflow="hidden";
   const secs=[...el.querySelectorAll(".wv")];
   if(start>0&&secs[start])el.scrollTop=secs[start].offsetTop;
@@ -821,7 +972,7 @@ function wActivate(sec,restart){
   clearTimeout(W.timer);clearInterval(W.lt);if(window.speechSynthesis)speechSynthesis.cancel();
   document.querySelectorAll("#watch .wv.on").forEach(s=>{if(s!==sec)s.classList.remove("on","paused");});
   W.cur=sec;W.paused=false;sec.classList.remove("paused");void sec.offsetWidth;sec.classList.add("on");
-  const k=sec.dataset.k;if(k==="end"){if(!W.muted)wSay(lang==="fr"?"Vous êtes à jour. À tout à l'heure.":"You're all caught up. See you later.",lang==="fr");return;}
+  const k=sec.dataset.k;if(k==="end"){if(!W.muted)wSay((lang==="ar"?"أنت على اطلاع بكل شيء. إلى اللقاء.":lang==="fr"?"Vous êtes à jour. À tout à l'heure.":"You're all caught up. See you later."),lang==="fr");return;}
   const x=W.items[+k],spans=[...sec.querySelectorAll("h2 span")];spans.forEach(s=>s.classList.remove("lit"));
   const fr=isFr(x.title),words=x.title.split(/\s+/);
   const light=n=>spans.forEach((s,j)=>s.classList.toggle("lit",j<n));
@@ -837,7 +988,7 @@ function wActivate(sec,restart){
   W.timer=setTimeout(()=>{if(W.cur===sec&&!W.paused&&!speechSynthesis.speaking)wNext(sec);},est+4000);
 }
 function wSay(text,fr,onB,onEnd){
-  const u=new SpeechSynthesisUtterance(text);u.lang=fr?"fr-FR":"en-GB";u.rate=1.05;u.pitch=1;const v=pickVoice(u.lang);if(v)u.voice=v;
+  const u=new SpeechSynthesisUtterance(text);u.lang=(lang==="ar"?"ar-u-nu-latn":fr?"fr-FR":"en-GB");u.rate=1.05;u.pitch=1;const v=pickVoice(u.lang);if(v)u.voice=v;
   if(onB)u.onboundary=e=>{if(!e.name||e.name==="word")onB(e);};if(onEnd){u.onend=onEnd;u.onerror=onEnd;}
   speechSynthesis.speak(u);return u;
 }
@@ -859,7 +1010,7 @@ function wClick(e){
   const sec=e.target.closest(".wv");if(!sec)return;const act=e.target.closest("[data-act]");
   if(act){const a=act.dataset.act,x=W.items[+sec.dataset.k],fr=lang==="fr";
     if(a==="like"){wLike(sec);if(sec.querySelector('[data-act="like"]').classList.contains("liked")){const r=act.getBoundingClientRect();wBurst(sec,r.left+r.width/2,r.top);}}
-    else if(a==="save"){const id=wid(x),v=!W.saves[id];if(v)W.saves[id]={title:x.title,url:x.url,source:x.source,date:x.date};else delete W.saves[id];store.set("w_saves",W.saves);act.classList.toggle("saved",v);wToast(v?(fr?"Gardé pour plus tard":"Saved for later"):(fr?"Retiré":"Removed"));}
+    else if(a==="save"){const id=wid(x),v=!W.saves[id];if(v)W.saves[id]={title:x.title,url:x.url,source:x.source,date:x.date};else delete W.saves[id];store.set("w_saves",W.saves);act.classList.toggle("saved",v);wToast(v?((lang==="ar"?"محفوظ لوقت لاحق":fr?"Gardé pour plus tard":"Saved for later")):((lang==="ar"?"أُزيل":fr?"Retiré":"Removed")));}
     else if(a==="share")wShare(x);
     else if(a==="replay"){$("#watch").scrollTo({top:0,behavior:"smooth"});}
     else if(a==="close")closeWatch();
@@ -914,7 +1065,7 @@ function bgImg(src){return src?`<img class="bg" src="${esc(src)}" alt="" decodin
 function newsCard(n){const c=REEL_CATS[n.cat]||REEL_CATS.worldwide;
   return `<a class="pc${n.img?" has-img":""}" href="${esc(n.url)}" target="_blank" rel="noopener" style="background:${c[1]}">${bgImg(n.img)}
     <div class="c-top"><span class="c-chip">${esc(n.source)}</span></div><div class="c-emoji" aria-hidden="true">${c[0]}</div>
-    <h3>${esc(n.title)}</h3><div class="c-meta"><span>${ago(n.date)}</span><span>· ${lang==="fr"?"Lire":"Read"} ↗</span></div></a>`;}
+    <h3>${esc(n.title)}</h3><div class="c-meta"><span>${ago(n.date)}</span><span>· ${(lang==="ar"?"اقرأ":lang==="fr"?"Lire":"Read")} ↗</span></div></a>`;}
 function renderFront(){
   if(!$("#front"))return;
   $("#front").innerHTML=FRONT.map(c=>{const list=byCat(c).slice(0,5);
@@ -925,33 +1076,40 @@ function renderFront(){
 function renderOTD(){
   const fr=lang==="fr",O=B.on_this_day&&(B.on_this_day[lang]||B.on_this_day.en),g=Array.isArray(O)?{world:O}:(O||{});
   const n=new Date(),md=String(n.getMonth()+1).padStart(2,"0")+"-"+String(n.getDate()).padStart(2,"0");
-  const lab=e=>(e.md&&e.md!==md?new Date("2000-"+e.md+"T12:00:00").toLocaleDateString(fr?"fr-FR":"en-GB",{day:"numeric",month:"short"})+" ":"")+e.year;
-  const pre=e=>e.kind==="born"?(fr?"Naissance : ":"Born: "):e.kind==="died"?(fr?"Décès : ":"Died: "):"";
-  const G=[["world","🌍",fr?"Monde":"Worldwide",""],["congo","🇨🇬","Congo",fr?"cette semaine dans l'histoire":"this week in history"],["lebanon","🇱🇧",fr?"Liban":"Lebanon",fr?"cette semaine dans l'histoire":"this week in history"]];
+  const lab=e=>(e.md&&e.md!==md?new Date("2000-"+e.md+"T12:00:00").toLocaleDateString((lang==="ar"?"ar-u-nu-latn":fr?"fr-FR":"en-GB"),{day:"numeric",month:"short"})+" ":"")+e.year;
+  const pre=e=>e.kind==="born"?((lang==="ar"?"وُلد: ":fr?"Naissance : ":"Born: ")):e.kind==="died"?((lang==="ar"?"توفي: ":fr?"Décès : ":"Died: ")):"";
+  const G=[["world","🌍",(lang==="ar"?"العالم":fr?"Monde":"Worldwide"),""],["congo","🇨🇬","Congo",(lang==="ar"?"هذا الأسبوع في التاريخ":fr?"cette semaine dans l'histoire":"this week in history")],["lebanon","🇱🇧",(lang==="ar"?"لبنان":fr?"Liban":"Lebanon"),(lang==="ar"?"هذا الأسبوع في التاريخ":fr?"cette semaine dans l'histoire":"this week in history")]];
   $("#otd-wrap").hidden=!G.some(x=>(g[x[0]]||[]).length);
   $("#otd").innerHTML=G.map(([k,f,name,sub])=>{const l=g[k]||[];
-    return `<h4 class="otd-h">${f} ${name}${sub?`<span>· ${sub}</span>`:""}</h4>`+(l.length?`<ul class="agenda otd">${l.map(e=>`<li><span class="d">${esc(lab(e))}</span><span>${esc(pre(e)+e.text)}${e.url?` <a class="see" href="${esc(e.url)}" target="_blank" rel="noopener">↗</a>`:""}</span></li>`).join("")}</ul>`:`<p class="empty">${fr?"Rien de marquant pour ces dates.":"Nothing notable recorded for these dates."}</p>`);}).join("");
+    return `<h4 class="otd-h">${f} ${name}${sub?`<span>· ${sub}</span>`:""}</h4>`+(l.length?`<ul class="agenda otd">${l.map(e=>`<li><span class="d">${esc(lab(e))}</span><span>${esc(pre(e)+e.text)}${e.url?` <a class="see" href="${esc(e.url)}" target="_blank" rel="noopener">↗</a>`:""}</span></li>`).join("")}</ul>`:`<p class="empty">${(lang==="ar"?"لا أحداث بارزة مسجلة لهذه التواريخ.":fr?"Rien de marquant pour ces dates.":"Nothing notable recorded for these dates.")}</p>`);}).join("");
 }
 function renderHero(){
   const fr=lang==="fr",now=new Date(),hr=now.getHours(),items=B.summary[lang]||B.summary.en||[];
-  const part=hr<12?(fr?"Briefing du matin":"Morning briefing"):hr<18?(fr?"Briefing de mi-journée":"Midday briefing"):(fr?"Briefing du soir":"Evening briefing");
-  const hi=fr?(hr<18?"Bonjour Rayan.":"Bonsoir Rayan."):(hr<12?"Good morning, Rayan.":hr<18?"Good afternoon, Rayan.":"Good evening, Rayan.");
+  const part=hr<12?((lang==="ar"?"موجز الصباح":fr?"Briefing du matin":"Morning briefing")):hr<18?((lang==="ar"?"موجز الظهيرة":fr?"Briefing de mi-journée":"Midday briefing")):((lang==="ar"?"موجز المساء":fr?"Briefing du soir":"Evening briefing"));
+  const hi=lang==="ar"?(hr<12?"صباح الخير يا ريان.":"مساء الخير يا ريان."):fr?(hr<18?"Bonjour Rayan.":"Bonsoir Rayan."):(hr<12?"Good morning, Rayan.":hr<18?"Good afternoon, Rayan.":"Good evening, Rayan.");
   const upd=B.generated_at?new Date(B.generated_at):null,age=upd?(Date.now()-upd)/36e5:99;
-  const updTxt=upd?(fr?"MAJ ":"Updated ")+upd.toLocaleTimeString(fr?"fr-FR":"en-GB",{hour:"2-digit",minute:"2-digit"}):"";
+  const updTxt=upd?((lang==="ar"?"تحديث ":fr?"MAJ ":"Updated "))+upd.toLocaleTimeString((lang==="ar"?"ar-u-nu-latn":fr?"fr-FR":"en-GB"),{hour:"2-digit",minute:"2-digit"}):"";
   // Cost signal: currency and energy moves (cost +1 = a rise means higher costs)
   const M=id=>B.markets.find(m=>m.id===id),drivers=["usdxaf","brent"].map(M).filter(m=>m&&typeof m.change_pct==="number");
   const score=drivers.reduce((s,m)=>s+(m.cost||0)*m.change_pct,0);
   const sig=Math.abs(score)<0.4?"neutral":score>0?"pressure":"relief";
-  const sigHead=sig==="relief"?(fr?"Signal coûts : allègement":"Cost signal: relief"):sig==="pressure"?(fr?"Signal coûts : pression":"Cost signal: pressure"):(fr?"Signal coûts : stable":"Cost signal: stable");
+  const sigHead=sig==="relief"?((lang==="ar"?"مؤشر التكاليف: انفراج":fr?"Signal coûts : allègement":"Cost signal: relief")):sig==="pressure"?((lang==="ar"?"مؤشر التكاليف: ضغط":fr?"Signal coûts : pression":"Cost signal: pressure")):((lang==="ar"?"مؤشر التكاليف: مستقر":fr?"Signal coûts : stable":"Cost signal: stable"));
   const pct=m=>(m.change_pct>0?"+":m.change_pct<0?"−":"")+fmt(Math.abs(m.change_pct),1)+"%";
   const why=drivers.map(m=>(m.id==="usdxaf"?"USD/XAF":m.name)+" "+pct(m)).join(" · ");
   const n=items.length,bst=bfStats(items),mins=bst.listen;
   const stale=age>14;
-  $("#hero").innerHTML=`<div class="h-top"><span>${part}</span><span>${esc(updTxt)}</span></div>
+  const ed=edState(),edName=edLabel(),seenN=items.filter((x,k)=>ed.seen[k]).length,est=edStreak();
+  const nextEd=edNext(),nextTxt=nextEd.toLocaleTimeString((lang==="ar"?"ar-u-nu-latn":fr?"fr-FR":"en-GB"),{hour:"2-digit",minute:"2-digit"});
+  const cta=ed.done?((lang==="ar"?"مراجعة العدد":fr?"Revoir l'édition":"Review the edition")):seenN?((lang==="ar"?`متابعة · ${seenN} من ${n}`:fr?`Reprendre · ${seenN}/${n}`:`Continue · ${seenN} of ${n}`)):((lang==="ar"?"ابدأ العدد":fr?"Commencer l'édition":"Start the edition"));
+  $("#hero").innerHTML=`<div class="h-top"><span>${esc(edName.split(" · ")[0])}</span><span>${esc(updTxt)}</span></div>
     <h2 class="h-hi">${hi}</h2>
-    ${stale?`<p class="h-sub">${fr?"Les données ont plus de 14 h : tirez vers le bas pour actualiser.":"Data is more than 14 hours old: pull down to refresh."}</p>`:""}
-    <button class="h-play" type="button" id="h-play" ${n?"":"disabled"}><span class="h-btn">▶</span><span><b>${n?(bst.full?(fr?`Écouter le briefing · ${mins} min`:`Listen to the briefing · ${mins} min`):(fr?`Écouter les titres · ${mins} min`:`Listen to the headlines · ${mins} min`)):(fr?"Briefing en préparation":"Briefing being prepared")}</b><span class="s">${n} ${fr?"sujets":"stories"} · ${fr?"lecture":"read"} ${bst.read} min</span></span></button>`;
-  $("#h-play").onclick=()=>{if(n)openWatch(0);};
+    <p class="h-sub">${n} ${(lang==="ar"?"أخبار":fr?"sujets":"stories")} · ${minTxt(bst.read)}${est?` · 🔥 ${est} ${lang==="ar"?"يوم":fr?(est>1?"jours":"jour"):(est>1?"days":"day")}`:""}${ed.done?` · ${(lang==="ar"?"العدد التالي حوالي":fr?"Prochaine édition vers":"Next edition around")} ${nextTxt}`:""}</p>
+    <div class="h-seg">${items.map((x,k)=>`<i class="${ed.seen[k]?"on":""}"></i>`).join("")}</div>
+    <button class="h-play" type="button" id="h-play" ${n?"":"disabled"}><span class="h-btn">${ed.done?"↺":"▶"}</span><span><b>${n?cta:((lang==="ar"?"العدد قيد الإعداد":fr?"Édition en préparation":"Edition being prepared"))}</b><span class="s">${ed.done?((lang==="ar"?"اكتمل العدد ✓":fr?"Édition terminée ✓":"Edition complete ✓")):((lang==="ar"?"خبر واحد في كل شاشة: ماذا حدث والأثر":fr?"Une histoire par écran : ce qui s'est passé et l'impact":"One story per screen: what happened and the impact"))}</span></span></button>
+    ${B.podcast&&B.podcast[lang]?`<button class="h-pod" type="button" id="h-listen"><span class="h-pi">🎧</span><span><b>${lang==="ar"?"موجز الصباح الصوتي":fr?"Le brief audio":"The Morning Brief"}</b><span class="s">${lang==="ar"?"استمع":fr?"À écouter":"Listen"} · ${minTxt(podMins())} · ${lang==="ar"?"الأسواق، 5 نقاط، رقم اليوم":fr?"Marchés, 5 points, le chiffre du jour":"Markets, 5 points, number of the day"}</span></span></button>`:""}`;
+  $("#h-play").onclick=()=>{if(n)openEdition(ed.done?0:Math.max(0,items.findIndex((x,k)=>!ed.seen[k])));};
+  const hl=$("#h-listen");if(hl)hl.onclick=()=>openPod();
+  if(B.alerts&&!$("#h-alert"))$("#hero").insertAdjacentHTML("beforeend",`<a class="h-listen" id="h-alert" href="${esc(B.alerts)}" target="_blank" rel="noopener">🔔 ${(lang==="ar"?"تنبيه عند صدور كل عدد":fr?"Recevoir une alerte à chaque édition":"Get an alert for each edition")}</a>`);
   const ids=["usdxaf","brent","gold"],ms=ids.map(id=>B.markets.find(m=>m.id===id)).filter(Boolean);
   const big=ms.reduce((a,m)=>Math.abs(m.change_pct||0)>Math.abs(a.change_pct||0)?m:a,ms[0]||{});
   $("#movers").innerHTML=ms.map(m=>{const ch=m.change_pct||0,e=effect(m);
@@ -960,10 +1118,10 @@ function renderHero(){
   const st=(typeof nxStreak==="function")?nxStreak():0,today=new Date().toISOString().slice(0,10),nx=(B.agenda||[]).find(a=>a.date>=today);
   const days=nx?Math.round((new Date(nx.date+"T00:00:00")-new Date(today+"T00:00:00"))/864e5):0;
   $("#quick").innerHTML=[
-    st?`<span class="qk hot">🔥 ${st} ${fr?(st>1?"jours":"jour"):(st>1?"days":"day")}</span>`:"",
-    `<a class="qk" href="#news">📰 ${unseen} ${fr?"nouveaux":"new"}</a>`,
-    nx?`<a class="qk" href="#events">📅 ${esc((nx[lang]||nx.en).replace(/\s*\(.*\)$/,""))} · ${days===0?(fr?"aujourd'hui":"today"):days===1?(fr?"demain":"tomorrow"):(fr?"J-"+days:"in "+days+"d")}</a>`:"",
-    `<a class="qk" href="#read">📚 ${fr?"Article du jour":"Article of the day"}</a>`].join("");
+    st?`<span class="qk hot">🔥 ${st} ${lang==="ar"?"يوم":fr?(st>1?"jours":"jour"):(st>1?"days":"day")}</span>`:"",
+    `<a class="qk" href="#news">📰 ${unseen} ${(lang==="ar"?"جديد":fr?"nouveaux":"new")}</a>`,
+    nx?`<a class="qk" href="#events">📅 ${esc((nx[lang]||nx.en).replace(/\s*\(.*\)$/,""))} · ${days===0?((lang==="ar"?"اليوم":fr?"aujourd'hui":"today")):days===1?((lang==="ar"?"غدًا":fr?"demain":"tomorrow")):(lang==="ar"?"بعد "+days+" ي":fr?"J-"+days:"in "+days+"d")}</a>`:"",
+    `<a class="qk" href="#read">📚 ${(lang==="ar"?"مقال اليوم":fr?"Article du jour":"Article of the day")}</a>`].join("");
 }
 const RD={read:store.get("rd_read",{}),topic:"all"};
 const RD_TOPICS=[
@@ -978,18 +1136,18 @@ function rdMark(a){if(RD.read[rdId(a)])return;RD.read[rdId(a)]=Date.now();store.
 function renderRead(){
   const R=B.read,fr=lang==="fr";$("#aotd").innerHTML="";$("#more").innerHTML="";
   const wk=Date.now()-7*864e5,nWeek=Object.values(RD.read).filter(t=>t>wk).length,goal=3;
-  $("#rd-goal").innerHTML=`<span>📚</span><div class="bar"><i style="width:${Math.min(100,nWeek/goal*100)}%"></i></div><b>${nWeek}/${goal} ${fr?"lectures cette semaine":"long reads this week"}${nWeek>=goal?" 🎯":""}</b>`;
+  $("#rd-goal").innerHTML=`<span>📚</span><div class="bar"><i style="width:${Math.min(100,nWeek/goal*100)}%"></i></div><b>${nWeek}/${goal} ${(lang==="ar"?"قراءات مطوّلة هذا الأسبوع":fr?"lectures cette semaine":"long reads this week")}${nWeek>=goal?" 🎯":""}</b>`;
   if(!R||!R.pick){$("#aotd").innerHTML=`<p class="empty">${t("nostories")}</p>`;return;}
-  const p=R.pick,ai=p.ai||{},title=(fr&&ai.fr&&ai.fr.title)||p.title,why=(ai[lang]||{}).why,tp=rdTopic(p);
-  const src=a=>`<div class="rd-src"><b>${esc(a.source)}</b>${a.paywall?`<span class="rd-lock" title="${fr?"Abonnement":"Subscription"}">🔒</span>`:""}<span>· ${ago(a.date)}</span><span class="rd-tp">${rdTopic(a)[1]} ${fr?rdTopic(a)[3]:rdTopic(a)[2]}</span></div>`;
-  $("#aotd").innerHTML=`<a class="rd-hero" href="${esc(p.url)}" target="_blank" rel="noopener" data-rid="pick"><div class="ph">${p.img?`<img src="${esc(p.img)}" alt="" decoding="async" onerror="this.remove()">`:""}<span class="badge">${fr?"Article du jour":"Article of the day"}</span></div>
+  const p=R.pick,ai=p.ai||{},title=(fr&&ai.fr&&ai.fr.title)||(p.t&&p.t[lang])||p.title,why=(ai[lang]||{}).why,tp=rdTopic(p);
+  const src=a=>`<div class="rd-src"><b>${esc(a.source)}</b>${a.paywall?`<span class="rd-lock" title="${(lang==="ar"?"اشتراك":fr?"Abonnement":"Subscription")}">🔒</span>`:""}<span>· ${ago(a.date)}</span><span class="rd-tp">${rdTopic(a)[1]} ${L3(rdTopic(a))}</span></div>`;
+  $("#aotd").innerHTML=`<a class="rd-hero" href="${esc(p.url)}" target="_blank" rel="noopener" data-rid="pick"><div class="ph">${p.img?`<img src="${esc(p.img)}" alt="" decoding="async" onerror="this.remove()">`:""}<span class="badge">${(lang==="ar"?"مقال اليوم":fr?"Article du jour":"Article of the day")}</span></div>
     <div class="bd">${src(p)}<h3>${esc(title)}</h3>${why?`<p class="why"><b>${t("why")} ·</b> ${esc(why)}</p>`:""}<span class="rd-cta">${t("readit")} ↗</span></div></a>`;
   const more=R.more||[],topics=RD_TOPICS.filter(t=>more.some(a=>rdTopic(a)[0]===t[0]));
   if(!["all",...topics.map(t=>t[0])].includes(RD.topic))RD.topic="all";
-  $("#rd-chips").innerHTML=[`<button class="chip" type="button" data-rt="all" aria-pressed="${RD.topic==="all"}">${t("all")}</button>`,...topics.map(t=>`<button class="chip" type="button" data-rt="${t[0]}" aria-pressed="${RD.topic===t[0]}">${t[1]} ${fr?t[3]:t[2]}</button>`)].join("");
+  $("#rd-chips").innerHTML=[`<button class="chip" type="button" data-rt="all" aria-pressed="${RD.topic==="all"}">${t("all")}</button>`,...topics.map(t=>`<button class="chip" type="button" data-rt="${t[0]}" aria-pressed="${RD.topic===t[0]}">${t[1]} ${L3(t)}</button>`)].join("");
   document.querySelectorAll("[data-rt]").forEach(b=>b.onclick=()=>{RD.topic=b.dataset.rt;renderRead();});
   const list=more.filter(a=>RD.topic==="all"||rdTopic(a)[0]===RD.topic);
-  $("#more").innerHTML=list.map((a,i)=>`<a class="rd-row${RD.read[rdId(a)]?" read":""}" href="${esc(a.url)}" target="_blank" rel="noopener" data-rid="${more.indexOf(a)}"><div>${src(a)}<h4>${esc(a.title)}</h4></div>${a.img?`<img src="${esc(a.img)}" alt="" loading="lazy" decoding="async" onerror="this.outerHTML='<span class=&quot;ph0&quot;>${rdTopic(a)[1]}</span>'">`:`<span class="ph0">${rdTopic(a)[1]}</span>`}</a>`).join("")||`<p class="empty">${t("nostories")}</p>`;
+  $("#more").innerHTML=list.map((a,i)=>`<a class="rd-row${RD.read[rdId(a)]?" read":""}" href="${esc(a.url)}" target="_blank" rel="noopener" data-rid="${more.indexOf(a)}"><div>${src(a)}<h4>${esc((a.t&&a.t[lang])||a.title)}</h4></div>${a.img?`<img src="${esc(a.img)}" alt="" loading="lazy" decoding="async" onerror="this.outerHTML='<span class=&quot;ph0&quot;>${rdTopic(a)[1]}</span>'">`:`<span class="ph0">${rdTopic(a)[1]}</span>`}</a>`).join("")||`<p class="empty">${t("nostories")}</p>`;
   const H=R.history||[];$("#rd-hist-wrap").hidden=!H.length;
   $("#rd-hist").innerHTML=H.map(a=>`<a href="${esc(a.url)}" target="_blank" rel="noopener"><span class="d">${fdate(a.date,{day:"numeric",month:"short"})}</span><span><b>${esc(a.source)}</b> · ${esc(a.title)}</span></a>`).join("");
   document.querySelectorAll("#v-read [data-rid]").forEach(el=>el.onclick=()=>{const a=el.dataset.rid==="pick"?p:more[+el.dataset.rid];if(a){rdMark(a);setTimeout(renderRead,400);}});
@@ -997,7 +1155,7 @@ function renderRead(){
 function renderAgenda(){
   const today=new Date().toISOString().slice(0,10);
   $("#agenda").innerHTML=(B.agenda||[]).filter(a=>a.date>=today).map(a=>{const days=Math.round((new Date(a.date+"T00:00:00")-new Date(today+"T00:00:00"))/864e5);
-    const inD=days===0?(lang==="fr"?"aujourd'hui":"today"):days===1?(lang==="fr"?"demain":"tomorrow"):(lang==="fr"?"dans "+days+" jours":"in "+days+" days");
+    const inD=days===0?((lang==="ar"?"اليوم":lang==="fr"?"aujourd'hui":"today")):days===1?((lang==="ar"?"غدًا":lang==="fr"?"demain":"tomorrow")):(lang==="ar"?"بعد "+days+" يوم":lang==="fr"?"dans "+days+" jours":"in "+days+" days");
     return`<li><span class="d">${fdate(a.date)}</span><span>${esc(a[lang]||a.en)} <span class="ag-in">· ${inD}</span></span></li>`;}).join("");
 }
 function renderMarkets(){
@@ -1006,7 +1164,7 @@ function renderMarkets(){
   $("#mk").innerHTML=GROUPS.map(g=>{const list=rows.filter(m=>(m.group||"commod")===g);if(!list.length)return"";
     return`<div class="mgroup"><h3>${t("g_"+g)}</h3><div class="mlist">${list.map(m=>{const e=effect(m);
       const row=`<button class="mrow${tripped(m)?" tripped":""}" type="button" data-m="${m.id}" aria-expanded="${open===m.id}">
-        <div><div class="nm">${esc(m.name)}</div><div class="un">${esc(m.unit)} · ${fdate(m.date)}</div></div>
+        <div><div class="nm">${esc(m.name)}</div><div class="un">${esc(m.unit)} · ${fdate(m.date)}${m.date&&(Date.now()-new Date(m.date))/864e5>(m.static?(/^(beac|beac_fpm|beac_fd)$/.test(m.id)?120:45):5)?` <span class="stale">⚠ ${lang==="ar"?"قد لا يكون محدّثًا":lang==="fr"?"peut-être pas à jour":"may be out of date"}</span>`:""}</div></div>
         ${m.static?"<span></span>":spark(m.series,e)}
         <div class="px"><div class="v">${fmt(m.value,m.dp)}</div><div class="c ${e}">${m.static?esc(t("ref")):(m.change_pct>0?"+":m.change_pct<0?"−":"")+fmt(Math.abs(m.change_pct),2)+"%"}</div></div>${m.why&&m.why[lang]?`<div class="mwhy"><b>${Math.abs(m.change_pct)<0.2?"•":m.change_pct>0?"▲":"▼"}</b> ${esc(m.why[lang])}${m.why.source?` <span>· ${esc(m.why.source)}</span>`:""}</div>`:""}</button>`;
       const det=open===m.id?`<div class="detail">${m.static?esc(m.note||"")+(m.url?` · <a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.source)} ↗</a>`:""):`<div>${t("chart")}</div>${spark(m.series,e,600,90).replace("<svg",'<svg style="width:100%;height:90px"')}
@@ -1025,10 +1183,10 @@ function pageHTML(p,i,n){
   if(!p)return`<div class="fp"><div class="fp-head"><span>${esc(t("news_t"))}</span><span></span></div><p class="empty">${t("nostories")}</p></div>`;
   const it=(x,big)=>{const on=!!saved[x.id];return`<article class="${big?"fp-lead":"fp-sm"}"><div class="meta"><span class="src">${esc(x.source)}</span><span>· ${ago(x.date)}</span></div>
     <h3><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></h3>
-    <div class="acts"><a class="read" href="${esc(x.url)}" target="_blank" rel="noopener">${lang==="fr"?"Lire l'article":"Read story"} ↗</a></div></article>`;};
+    <div class="acts"><a class="read" href="${esc(x.url)}" target="_blank" rel="noopener">${(lang==="ar"?"اقرأ الخبر":lang==="fr"?"Lire l'article":"Read story")} ↗</a></div></article>`;};
   return`<div class="fp"><div class="fp-head"><span>${esc(catLabel(p.cat))}</span><span>${i+1} / ${n}</span></div>
     ${p.items.map((x,k)=>it(x,k===0)).join("")}
-    <div class="fp-foot">${i<n-1?(lang==="fr"?"Glissez vers le haut ↑":"Swipe up ↑"):(lang==="fr"?"Fin de la rubrique":"End of section")}</div></div>`;
+    <div class="fp-foot">${i<n-1?((lang==="ar"?"اسحب للأعلى ↑":lang==="fr"?"Glissez vers le haut ↑":"Swipe up ↑")):((lang==="ar"?"نهاية القسم":lang==="fr"?"Fin de la rubrique":"End of section"))}</div></div>`;
 }
 function flipH(){const f=$("#flip");const top=f.getBoundingClientRect().top;const tab=document.querySelector("nav.tabs").offsetHeight;return Math.max(420,innerHeight-top-tab-40);}
 function drawFlip(){
@@ -1129,8 +1287,8 @@ function countriesOf(n){
   if(!out.length&&/\b(global|world|worldwide|mondial\w*|international\w*)\b/i.test(n.title))out=[["gl","🌐","Global","Monde"]];
   return out.filter((c,i,a)=>a.indexOf(c)===i).slice(0,3);
 }
-const ctryLabel=n=>countriesOf(n).map(c=>c[1]+" "+(lang==="fr"?c[3]:c[2])).join(" · ");
-const ctryWords=n=>countriesOf(n).map(c=>lang==="fr"?c[3]:c[2]).join(", ");
+const ctryLabel=n=>countriesOf(n).map(c=>c[1]+" "+(L3(c))).join(" · ");
+const ctryWords=n=>countriesOf(n).map(c=>L3(c)).join(", ");
 
 /* ---------- News: reading list + daily habit ---------- */
 const NX={goal:5,shown:30,q:"",prev:store.get("nx_last",0)||Date.now()-12*36e5,read:store.get("nx_read",{}),days:store.get("nx_days",{})};
@@ -1157,28 +1315,33 @@ function nxNext(){ // hourly runs at :15 UTC, 05–21 UTC; GitHub adds a few min
   return null;}
 function nxHabit(newN){
   const fr=lang==="fr",today=NX.days[dayKey(Date.now())]||0,p=Math.min(1,today/NX.goal),st=nxStreak();
-  const hm=d=>d.toLocaleTimeString(fr?"fr-FR":"en-GB",{hour:"2-digit",minute:"2-digit"});
+  const hm=d=>d.toLocaleTimeString((lang==="ar"?"ar-u-nu-latn":fr?"fr-FR":"en-GB"),{hour:"2-digit",minute:"2-digit"});
   const upd=B.generated_at?hm(new Date(B.generated_at)):"",nx=nxNext();
-  const line=[upd&&(fr?"Mis à jour ":"Updated ")+upd,nx&&(fr?"prochaine ≈ ":"next ≈ ")+hm(nx),st&&`🔥 ${st} ${fr?(st>1?"jours":"jour"):(st>1?"days":"day")}`].filter(Boolean).join(" · ");
-  $("#nx-habit").innerHTML=`<div class="nh"><div><h2 class="sec">${t("news_t")}</h2><p>${line}</p></div>
-    <div class="nh-g${p>=1?" done":""}"><b>${today}/${NX.goal}</b><span>${fr?"lus aujourd'hui":"read today"}</span></div></div>
+  const line=[upd&&((lang==="ar"?"تحديث ":fr?"Mis à jour ":"Updated "))+upd,nx&&((lang==="ar"?"التالي ≈ ":fr?"prochaine ≈ ":"next ≈ "))+hm(nx),st&&`🔥 ${st} ${lang==="ar"?"يوم":fr?(st>1?"jours":"jour"):(st>1?"days":"day")}`].filter(Boolean).join(" · ");
+  const H=B.health&&B.health.sections,hk=H?Object.keys(H):[],bad=hk.filter(k=>!H[k].ok);
+  const hl=!H?"":bad.length?`<p class="nh-h warn">⚠ ${lang==="ar"?"أقسام متأخرة":lang==="fr"?"Rubriques en retard":"Delayed sections"}: ${bad.map(k=>esc(catLabel(k))).join(", ")}</p>`:`<p class="nh-h ok">● ${hk.length}/${hk.length} ${lang==="ar"?"أقسام محدّثة":lang==="fr"?"rubriques à jour":"sections up to date"}</p>`;
+  $("#nx-habit").innerHTML=`<div class="nh"><div><h2 class="sec">${t("news_t")}</h2><p>${line}</p>${hl}</div>
+    <div class="nh-g${p>=1?" done":""}"><b>${today}/${NX.goal}</b><span>${(lang==="ar"?"مقروءة اليوم":fr?"lus aujourd'hui":"read today")}</span></div></div>
     <div class="nh-bar${p>=1?" done":""}"><i style="width:${Math.max(2,p*100)}%"></i></div>`;
 }
 function nxMarkRead(n){const id=nxId(n);if(NX.read[id])return;NX.read[id]=Date.now();store.set("nx_read",NX.read);
   const k=dayKey(Date.now()),before=NX.days[k]||0;NX.days[k]=before+1;store.set("nx_days",NX.days);
-  if(before+1===NX.goal&&typeof wToast==="function")wToast(lang==="fr"?"🎯 Objectif du jour atteint !":"🎯 Daily goal reached!");}
+  if(before+1===NX.goal&&typeof wToast==="function")wToast((lang==="ar"?"🎯 حققت هدف اليوم!":lang==="fr"?"🎯 Objectif du jour atteint !":"🎯 Daily goal reached!"));}
 function nxMeta(n,withCat){
   const fr=lang==="fr",isRead=!!NX.read[nxId(n)],isNew=!isRead&&new Date(n.date).getTime()>NX.prev;
-  const ctry=countriesOf(n).map(c=>fr?c[3]:c[2]).slice(0,2).join(", ");
-  return [isRead?`<span class="ok">✓ ${fr?"Lu":"Read"}</span>`:isNew?`<span class="nw">${fr?"Nouveau":"New"}</span>`:"",withCat?`<span style="color:${catColor(n.cat)}">${esc(catLabel(n.cat))}</span>`:"",`<span class="src">${esc(n.source)}</span>`,ctry?esc(ctry):"",ago(n.date)].filter(Boolean).join(" · ");
+  const ctry=countriesOf(n).map(c=>L3(c)).slice(0,2).join(", ");
+  return [isRead?`<span class="ok">✓ ${(lang==="ar"?"مقروء":fr?"Lu":"Read")}</span>`:isNew?`<span class="nw">${(lang==="ar"?"جديد":fr?"Nouveau":"New")}</span>`:"",withCat?`<span style="color:${catColor(n.cat)}">${esc(catLabel(n.cat))}</span>`:"",`<span class="src">${isFollowed(n)?'<b class="fw-s">★</b> ':""}${esc(n.source)}</span>`,ctry?esc(ctry):"",ago(n.date)].filter(Boolean).join(" · ");
 }
+function followList(){return store.get("follow",null)||(B&&B.follow)||[];}
+function isFollowed(n){const F=followList();if(!F.length)return false;const tx=(n.title+" "+((n.t&&n.t.en)||"")+" "+((n.t&&n.t.fr)||"")).toLowerCase();
+  return F.some(w=>{const k=w.toLowerCase();return new RegExp("(^|[^a-zà-ÿ])"+k.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")).test(tx);});}
 // Drop wire-service datelines ("By X NEW YORK, Nov 19 (Reuters) - ")
 function cleanDl(d){if(!d)return d;return d.replace(/^By [A-Z][\w.'-]+(?: [A-Z][\w.'-]+){0,3}\s+(?=[A-Z]{2,})/,"").replace(/^[A-ZÀ-Ý][A-ZÀ-Ý .,'’-]{1,40}(?:,\s*\w{3,9}\.?\s*\d{1,2})?\s*\([^)]{2,30}\)\s*[-–—]\s*/,"").trim()||null;}
 function nxRow(n,lead,num,withCat){
   const isRead=!!NX.read[nxId(n)];
   const href=`href="${esc(n.url)}" target="_blank" rel="noopener" data-nid="${esc(nxId(n))}"`;
   const img=n.img?`<img src="${esc(n.img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.remove()">`:"";
-  const ti=esc((n.t&&n.t[lang])||n.title),ds=cleanDl((n.d&&n.d[lang])||n.desc),dh=ds?`<p class="nc-d">${esc(ds)}</p>`:"";
+  const ti=esc((n.t&&n.t[lang])||(lang==="ar"&&n.t&&n.t.en)||n.title),ds=cleanDl((n.d&&n.d[lang])||(lang==="ar"&&n.d&&n.d.en)||n.desc),dh=ds?`<p class="nc-d">${esc(ds)}</p>`:"";
   if(lead&&n.img)return `<a class="nc lead${isRead?" read":""}" ${href}><div class="nc-ph">${img}</div><div class="nc-m">${nxMeta(n,withCat)}</div><h3>${ti}</h3>${dh}</a>`;
   return `<a class="nc${isRead?" read":""}" ${href}><div class="nc-t"><div class="nc-m">${nxMeta(n,withCat)}</div><h3>${ti}</h3>${dh}</div></a>`;
 }
@@ -1196,11 +1359,11 @@ function renderNews(){
   const unseen=pool.filter(n=>!NX.read[nxId(n)]&&new Date(n.date).getTime()>NX.prev);
   nxHabit(unseen.length);
   if(cat==="ite")cat="all";
-  const cats=[{id:"all",en:t("all"),fr:t("all")},...B.categories];
+  const cats=[{id:"all",en:t("all"),fr:t("all"),ar:t("all")},{id:"follow",en:"★ Following",fr:"★ Suivis",ar:"★ متابَعة"},...B.categories];
   $("#chips").innerHTML=cats.map(c=>{const n=c.id==="all"?unseen.length:unseen.filter(x=>x.cat===c.id).length;
     return `<button class="chip" type="button" data-cat="${c.id}" aria-pressed="${cat===c.id}">${esc(c[lang]||c.en)}${n?`<span class="n">${n}</span>`:""}</button>`;}).join("");
   document.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>{cat=b.dataset.cat;renderNews();});
-  const qi=$("#nx-q");qi.placeholder=fr?"Rechercher : BEAC, pétrole, Eurobond…":"Search: BEAC, oil, Eurobond…";
+  const qi=$("#nx-q");qi.placeholder=(lang==="ar"?"ابحث: BEAC، النفط، سندات اليورو…":fr?"Rechercher : BEAC, pétrole, Eurobond…":"Search: BEAC, oil, Eurobond…");
   const sb=$("#nx-sbox");if(!$("#nx-sbtn").dataset.w){$("#nx-sbtn").dataset.w=1;
     $("#nx-sbtn").onclick=()=>{sb.hidden=!sb.hidden;if(!sb.hidden)qi.focus();};
     $("#nx-sx").onclick=()=>{qi.value="";NX.q="";sb.hidden=true;renderNews();};}
@@ -1209,15 +1372,26 @@ function renderNews(){
   const norm=s=>s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
   let html="";
   if(NX.q){const q=norm(NX.q);const l=all.filter(n=>(cat==="all"||n.cat===cat)&&norm(n.title+" "+((n.t&&n.t.en)||"")+" "+((n.t&&n.t.fr)||"")+" "+n.source+" "+ctryWords(n)).includes(q)).slice(0,20);
-    if(!l.length){$("#nx-list").innerHTML=`<p class="empty">${fr?"Aucun article ne correspond.":"No stories match."}</p>`;return;}
-    html=`<div class="ns2"><h4>${fr?"Résultats":"Results"}</h4><span>${l.length}</span></div>`+l.map((n,i)=>nxRow(n,false,i+1,true)).join("");}
+    if(!l.length){$("#nx-list").innerHTML=`<p class="empty">${(lang==="ar"?"لا توجد أخبار مطابقة.":fr?"Aucun article ne correspond.":"No stories match.")}</p>`;return;}
+    html=`<div class="ns2"><h4>${(lang==="ar"?"النتائج":fr?"Résultats":"Results")}</h4><span>${l.length}</span></div>`+l.map((n,i)=>nxRow(n,false,i+1,true)).join("");}
+  else if(cat==="follow"){
+    const F=followList(),l=all.filter(isFollowed).sort((a,b)=>(b.score||0)-(a.score||0)||b.date.localeCompare(a.date)).slice(0,20);
+    html=`<div class="fw"><div class="fw-l">${F.map((w,k)=>`<span class="fw-c">${esc(w)}<button type="button" data-fx="${k}" aria-label="${(lang==="ar"?"إزالة":fr?"Retirer":"Remove")} ${esc(w)}">×</button></span>`).join("")}</div>
+      <form class="fw-add" id="fw-add"><input id="fw-in" type="text" autocomplete="off" placeholder="${(lang==="ar"?"أضف موضوعًا: BEAC، لبنان، الكاكاو…":fr?"Ajouter un sujet : BEAC, Liban, cacao…":"Add a topic: BEAC, Lebanon, cocoa…")}"><button type="submit">${(lang==="ar"?"متابعة":fr?"Suivre":"Follow")}</button></form></div>`;
+    html+=l.length?`<div class="ns2"><h4>${(lang==="ar"?"مواضيعك":fr?"Vos sujets":"Your topics")}</h4><span>${l.length}</span></div>`+l.map((n,i)=>nxRow(n,i===0,i+1,true)).join(""):`<p class="empty">${(lang==="ar"?"لا أخبار عن مواضيعك حاليًا.":fr?"Aucun article sur vos sujets pour le moment.":"No stories on your topics right now.")}</p>`;
+    $("#nx-list").innerHTML=html;
+    $("#nx-list").querySelectorAll("[data-fx]").forEach(b=>b.onclick=()=>{const F=followList();F.splice(+b.dataset.fx,1);store.set("follow",F);renderNews();});
+    $("#fw-add").onsubmit=e=>{e.preventDefault();const v=$("#fw-in").value.trim();if(v&&v.length<40){const F=followList();if(!F.some(x=>x.toLowerCase()===v.toLowerCase()))F.push(v);store.set("follow",F);}renderNews();};
+    $("#nx-list").querySelectorAll("[data-nid]").forEach(a=>a.onclick=()=>{const n=all.find(x=>nxId(x)===a.dataset.nid);if(n){nxMarkRead(n);setTimeout(()=>{renderNews();renderSixty();},400);}});
+    return;
+  }
   else{
     const cs=cat==="all"?B.categories:B.categories.filter(c=>c.id===cat);
     cs.forEach(c=>{if(top[c.id].length)html+=nxBlock(c,top[c.id]);});
     if(!html){$("#nx-list").innerHTML=`<p class="empty">${t("nostories")}</p>`;return;}
     const sc=cs.flatMap(c=>top[c.id]),left=sc.filter(n=>!NX.read[nxId(n)]).length,nx=nxNext();
-    const nxt=nx?nx.toLocaleTimeString(fr?"fr-FR":"en-GB",{hour:"2-digit",minute:"2-digit"}):"";
-    html+=`<div class="nd-end">${left?`<b>${fr?`Encore ${left} à lire`:`${left} left to read`}</b><span>${fr?"Les titres essentiels, 5 par rubrique.":"The essential headlines, 5 per section."}</span>`:`<b>✅ ${fr?"Tout lu. Bravo !":"All caught up. Well done!"}</b><span>${nxt?(fr?`Nouveaux titres vers ${nxt}.`:`Fresh headlines around ${nxt}.`):""}</span>`}</div>`;
+    const nxt=nx?nx.toLocaleTimeString((lang==="ar"?"ar-u-nu-latn":fr?"fr-FR":"en-GB"),{hour:"2-digit",minute:"2-digit"}):"";
+    html+=`<div class="nd-end">${left?`<b>${(lang==="ar"?`${left} متبقية للقراءة`:fr?`Encore ${left} à lire`:`${left} left to read`)}</b><span>${(lang==="ar"?"أهم العناوين، 5 في كل قسم.":fr?"Les titres essentiels, 5 par rubrique.":"The essential headlines, 5 per section.")}</span>`:`<b>✅ ${(lang==="ar"?"قرأت كل شيء. أحسنت!":fr?"Tout lu. Bravo !":"All caught up. Well done!")}</b><span>${nxt?((lang==="ar"?`عناوين جديدة حوالي ${nxt}.`:fr?`Nouveaux titres vers ${nxt}.`:`Fresh headlines around ${nxt}.`)):""}</span>`}</div>`;
   }
   $("#nx-list").innerHTML=html;
   $("#nx-list").querySelectorAll("[data-nid]").forEach(a=>a.onclick=()=>{const n=all.find(x=>nxId(x)===a.dataset.nid);if(n){nxMarkRead(n);setTimeout(()=>{renderNews();renderSixty();},400);}});
@@ -1243,12 +1417,12 @@ $("#sheet-save").onclick=()=>{alerts[sid]={dir:sdir,v:num($("#sheet-val").value)
 $("#sheet-clear").onclick=()=>{delete alerts[sid];store.set("alerts",alerts);$("#sheet").hidden=true;renderAll();};
 
 function applyText(){
-  document.documentElement.lang=lang;$("#lang").textContent=lang==="fr"?"EN":"FR";
+  document.documentElement.lang=lang;document.documentElement.dir=lang==="ar"?"rtl":"ltr";$("#lang").textContent=lang==="en"?"FR":lang==="fr"?"ع":"EN";
   if(theme)document.documentElement.dataset.theme=theme;else delete document.documentElement.dataset.theme;
   document.querySelectorAll("[data-t]").forEach(e=>e.textContent=t(e.dataset.t));
 }
 function renderAll(){applyText();if(!B)return;renderTop();renderHero();renderSixty();renderFront();renderOTD();renderAgenda();renderMarkets();renderNews();renderRead();}
-$("#lang").onclick=()=>{lang=lang==="fr"?"en":"fr";store.set("lang",lang);renderAll();};
+$("#lang").onclick=()=>{lang=lang==="en"?"fr":lang==="fr"?"ar":"en";store.set("lang",lang);renderAll();};
 $("#theme").onclick=()=>{const dark=theme?theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;theme=dark?"light":"dark";store.set("theme",theme);renderAll();};
 
 const V=["today","events","markets","news","read"];
@@ -1265,7 +1439,7 @@ async function load(manual){
   try{const r=await fetch("data/brief.json?ts="+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;B=await r.json();store.set("last",B);offline=false;}
   catch(e){B=B||store.get("last",null);offline=true;if(!B){$("#banner-text").textContent="Couldn't load the brief. Check your connection and reopen the app.";loading=false;if(rb)rb.classList.remove("spin");return;}}
   lastLoad=Date.now();renderAll();loading=false;if(rb)rb.classList.remove("spin");
-  if(manual){const t=document.createElement("div");t.className="toast-up";t.textContent=offline?(lang==="fr"?"Hors ligne · dernière version affichée":"Offline · showing the last version"):before&&before===B.generated_at?(lang==="fr"?"Déjà à jour ✓":"Already up to date ✓"):(lang==="fr"?"Mis à jour ✓":"Updated ✓");document.body.appendChild(t);setTimeout(()=>t.remove(),1900);}
+  if(manual){const t=document.createElement("div");t.className="toast-up";t.textContent=offline?((lang==="ar"?"غير متصل · عرض آخر نسخة":lang==="fr"?"Hors ligne · dernière version affichée":"Offline · showing the last version")):before&&before===B.generated_at?((lang==="ar"?"محدّث بالفعل ✓":lang==="fr"?"Déjà à jour ✓":"Already up to date ✓")):((lang==="ar"?"تم التحديث ✓":lang==="fr"?"Mis à jour ✓":"Updated ✓"));document.body.appendChild(t);setTimeout(()=>t.remove(),1900);}
 }
 load();
 $("#refresh").onclick=()=>load(true);
