@@ -276,6 +276,26 @@ section{padding-top:26px}
 .nx-lead.read h3{color:var(--muted)}
 .nx-more{display:block;width:100%;margin:16px 0 4px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font:inherit;font-weight:700;color:var(--text);cursor:pointer}
 .nx-done{margin-top:18px;padding:16px;border-radius:14px;background:var(--accent-soft);text-align:center;font-weight:600;font-size:.92rem}
+/* v33: cover photo, week view, since-last-visit */
+.h-cov{position:absolute;inset:0;z-index:0;pointer-events:none}
+.h-cov img{width:100%;height:100%;object-fit:cover;opacity:.55;filter:saturate(.95)}
+.h-cov::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,22,42,.35) 0%,rgba(12,22,42,.82) 45%,rgba(12,22,42,.96) 100%)}
+.hero>*:not(.h-cov){position:relative;z-index:1}.hero::before{z-index:2}
+.hero.has-cov .h-hi{text-shadow:0 2px 14px rgba(0,0,0,.45)}
+.h-wk{display:flex;gap:6px;margin:12px 16px 0 20px}
+.h-wk span{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:.6rem;font-weight:700;color:#9fb0c8}
+.h-wk i{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;border:1.5px solid rgba(255,255,255,.22);font-style:normal;font-size:.68rem;font-weight:800;color:#1b2233}
+.h-wk .on i{background:#d9a441;border-color:#d9a441}
+.h-wk .td{color:#eef2f8}.h-wk .td i{border-color:#d9a441;box-shadow:0 0 0 3px rgba(217,164,65,.18)}
+.h-wk .fu{opacity:.4}
+[dir=rtl] .h-wk{margin-left:16px;margin-right:20px}
+.since:not([hidden]){display:block;margin-top:14px}
+.si-k{font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.si-k span{color:var(--text);letter-spacing:.02em}
+[dir=rtl] .si-k{letter-spacing:0}
+.si-c{display:flex;gap:8px;margin-top:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}.si-c::-webkit-scrollbar{display:none}
+.sc{flex:none;display:inline-flex;align-items:center;gap:5px;padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--text);font:inherit;font-size:.82rem;font-weight:600;text-decoration:none;cursor:pointer;white-space:nowrap}
+.sc b{font-weight:800}.sc.hot{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+.sc.up b{color:var(--relief)}.sc.down b{color:#e05a4f}.sc.quiet{color:var(--muted);cursor:default}
 /* v32: price tiles removed from Today (the ticker shows them) */
 #movers{display:none}
 /* v32: attractive News */
@@ -692,6 +712,7 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 <main class="wrap">
 <!-- TODAY -->
 <div class="view" id="v-today">
+  <div class="since" id="since" hidden></div>
   <div class="hero" id="hero"></div>
   <div class="movers" id="movers"></div>
   <div class="quick" id="quick"></div>
@@ -1157,12 +1178,17 @@ function renderHero(){
   $("#hero").innerHTML=`<div class="h-top"><span>${esc(edName.split(" · ")[0])}</span><span>${esc(updTxt)}</span></div>
     <h2 class="h-hi">${hi}</h2>
     <p class="h-sub">${n} ${(lang==="ar"?"أخبار":fr?"sujets":"stories")} · ${minTxt(bst.read)}${est?` · 🔥 ${est} ${lang==="ar"?"يوم":fr?(est>1?"jours":"jour"):(est>1?"days":"day")}`:""}${ed.done?` · ${(lang==="ar"?"العدد التالي حوالي":fr?"Prochaine édition vers":"Next edition around")} ${nextTxt}`:""}</p>
+    <div class="h-wk" aria-label="${lang==="ar"?"هذا الأسبوع":fr?"Cette semaine":"This week"}">${edWeek()}</div>
     <div class="h-seg">${items.map((x,k)=>`<i class="${ed.seen[k]?"on":""}"></i>`).join("")}</div>
     <button class="h-play" type="button" id="h-play" ${n?"":"disabled"}><span class="h-btn">${ed.done?"↺":"▶"}</span><span><b>${n?cta:((lang==="ar"?"العدد قيد الإعداد":fr?"Édition en préparation":"Edition being prepared"))}</b><span class="s">${ed.done?((lang==="ar"?"اكتمل العدد ✓":fr?"Édition terminée ✓":"Edition complete ✓")):((lang==="ar"?"خبر واحد في كل شاشة: ماذا حدث والأثر":fr?"Une histoire par écran : ce qui s'est passé et l'impact":"One story per screen: what happened and the impact"))}</span></span></button>
     ${B.podcast&&B.podcast[lang]?`<button class="h-pod" type="button" id="h-listen"><span class="h-pi">🎧</span><span><b>${lang==="ar"?"موجز الصباح الصوتي":fr?"Le brief audio":"The Morning Brief"}</b><span class="s">${lang==="ar"?"استمع":fr?"À écouter":"Listen"} · ${minTxt(podMins())} · ${lang==="ar"?"الأسواق، 5 نقاط، رقم اليوم":fr?"Marchés, 5 points, le chiffre du jour":"Markets, 5 points, number of the day"}</span></span></button>`:""}`;
   $("#h-play").onclick=()=>{if(n)openEdition(ed.done?0:Math.max(0,items.findIndex((x,k)=>!ed.seen[k])));};
   const hl=$("#h-listen");if(hl)hl.onclick=()=>openPod();
   if(B.alerts&&!$("#h-alert"))$("#hero").insertAdjacentHTML("beforeend",`<a class="h-listen" id="h-alert" href="${esc(B.alerts)}" target="_blank" rel="noopener">🔔 ${(lang==="ar"?"تنبيه عند صدور كل عدد":fr?"Recevoir une alerte à chaque édition":"Get an alert for each edition")}</a>`);
+  const cov=items.find(x=>x.img);
+  if(cov)$("#hero").insertAdjacentHTML("afterbegin",`<div class="h-cov" aria-hidden="true"><img src="${esc(cov.img)}" alt="" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></div>`);
+  $("#hero").classList.toggle("has-cov",!!cov);
+  renderSince();
   const ids=["usdxaf","brent","gold"],ms=ids.map(id=>B.markets.find(m=>m.id===id)).filter(Boolean);
   const big=ms.reduce((a,m)=>Math.abs(m.change_pct||0)>Math.abs(a.change_pct||0)?m:a,ms[0]||{});
   $("#movers").innerHTML=ms.map(m=>{const ch=m.change_pct||0,e=effect(m);
@@ -1175,6 +1201,39 @@ function renderHero(){
     `<a class="qk" href="#news">📰 ${unseen} ${(lang==="ar"?"جديد":fr?"nouveaux":"new")}</a>`,
     nx?`<a class="qk" href="#events">📅 ${esc((nx[lang]||nx.en).replace(/\s*\(.*\)$/,""))} · ${days===0?((lang==="ar"?"اليوم":fr?"aujourd'hui":"today")):days===1?((lang==="ar"?"غدًا":fr?"demain":"tomorrow")):(lang==="ar"?"بعد "+days+" ي":fr?"J-"+days:"in "+days+"d")}</a>`:"",
     `<a class="qk" href="#read">📚 ${(lang==="ar"?"مقال اليوم":fr?"Article du jour":"Article of the day")}</a>`].join("");
+}
+
+/* ---------- v33: week view + since your last visit ---------- */
+function edWeek(){const D=store.get("ed_days",{}),L=lang==="ar"?["ن","ث","ر","خ","ج","س","ح"]:lang==="fr"?["L","M","M","J","V","S","D"]:["M","T","W","T","F","S","S"];
+  const d=new Date(),mon=new Date(d);mon.setHours(12,0,0,0);mon.setDate(mon.getDate()-((d.getDay()+6)%7));const tk=dayKey(d);
+  return L.map((l,i)=>{const x=new Date(mon);x.setDate(mon.getDate()+i);const k=dayKey(x),done=!!D[k],td=k===tk,fu=!td&&x>d;
+    return `<span class="${done?"on":""}${td?" td":""}${fu?" fu":""}"><i>${done?"✓":""}</i>${l}</span>`;}).join("");}
+const VISIT=(()=>{const v=store.get("visit",null),now=Date.now();if(!v||!v.at)return {at:now,prev:null,mk:{},pmk:{}};
+  if(now-v.at>20*6e4){v.prev=v.at;v.pmk=v.mk||{};}return v;})();
+function visitSave(){VISIT.at=Date.now();if(B&&B.markets){VISIT.mk={};["usdxaf","brent","gold"].forEach(id=>{const m=B.markets.find(x=>x.id===id);if(m)VISIT.mk[id]=m.value;});}store.set("visit",VISIT);}
+document.addEventListener("visibilitychange",()=>{if(document.hidden){visitSave();return;}
+  if(Date.now()-VISIT.at>20*6e4){VISIT.prev=VISIT.at;VISIT.pmk=VISIT.mk||{};if(B)renderSince();}});
+function renderSince(){
+  const el=$("#since");if(!el)return;const fr=lang==="fr",ar=lang==="ar";
+  if(!VISIT.prev){el.hidden=true;visitSave();return;}
+  const p=new Date(VISIT.prev),d0=new Date();d0.setHours(0,0,0,0);const y0=new Date(d0);y0.setDate(y0.getDate()-1);
+  const tm=p.toLocaleTimeString(loc(),{hour:"2-digit",minute:"2-digit"});
+  const when=p>=d0?tm:p>=y0?(ar?"أمس ":fr?"hier ":"yesterday ")+tm:p.toLocaleDateString(loc(),{weekday:"short",day:"numeric",month:"short"});
+  const newN=(B.news||[]).filter(n=>new Date(n.date).getTime()>VISIT.prev).length;
+  const newEd=B.summary_at&&new Date(B.summary_at).getTime()>VISIT.prev;
+  const mv=["usdxaf","brent","gold"].map(id=>{const m=B.markets.find(x=>x.id===id),o=VISIT.pmk&&VISIT.pmk[id];return m&&o?{m,pc:(m.value/o-1)*100}:null;})
+    .filter(x=>x&&Math.abs(x.pc)>=0.05).sort((a,b)=>Math.abs(b.pc)-Math.abs(a.pc)).slice(0,2);
+  const t0=new Date().toISOString().slice(0,10),ev=(B.agenda||[]).find(a=>a.date>=t0),evD=ev?Math.round((new Date(ev.date+"T00:00:00")-new Date(t0+"T00:00:00"))/864e5):9;
+  const ch=[];
+  if(newEd)ch.push(`<button type="button" class="sc hot" id="sc-ed">✨ ${ar?"عدد جديد":fr?"Nouvelle édition":"New edition"}</button>`);
+  if(newN)ch.push(`<a class="sc" href="#news">📰 <b>${newN}</b> ${ar?"أخبار جديدة":fr?(newN>1?"nouveaux sujets":"nouveau sujet"):(newN>1?"new stories":"new story")}</a>`);
+  mv.forEach(({m,pc})=>{const e=effect({...m,change_pct:pc});ch.push(`<a class="sc ${e==="relief"?"up":e==="pressure"?"down":""}" href="#markets">${esc(m.id==="usdxaf"?"USD/XAF":m.name)} <b>${pc>0?"▲":"▼"} ${fmt(Math.abs(pc),1)}%</b></a>`);});
+  if(ev&&evD<=1)ch.push(`<a class="sc" href="#events">📅 ${esc((ev[lang]||ev.en).replace(/\s*\(.*\)$/,""))} · ${evD===0?(ar?"اليوم":fr?"aujourd'hui":"today"):(ar?"غدًا":fr?"demain":"tomorrow")}</a>`);
+  el.innerHTML=`<div class="si-k">${ar?"منذ زيارتك الأخيرة":fr?"Depuis votre dernière visite":"Since your last visit"} · <span>${esc(when)}</span></div>
+    <div class="si-c">${ch.length?ch.join(""):`<span class="sc quiet">${ar?"لا جديد. كل شيء هادئ.":fr?"Rien de neuf, tout est calme.":"Nothing new. All quiet."}</span>`}</div>`;
+  el.hidden=false;
+  const se=$("#sc-ed");if(se)se.onclick=()=>{const it=B.summary[lang]||B.summary.en||[];if(it.length)openEdition(0);};
+  visitSave();
 }
 const RD={read:store.get("rd_read",{}),topic:"all"};
 const RD_TOPICS=[
