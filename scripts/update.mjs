@@ -10,6 +10,8 @@ const cfg = JSON.parse(await fs.readFile(path.join(ROOT, "config.json"), "utf8")
 const MOCK = process.env.MOCK_DIR;
 const UA = "Mozilla/5.0 (BusinessDesk; +https://github.com)";
 const log = [];
+const T0 = Date.now(), AI_BUDGET_MS = 11 * 60e3;   // AI calls stop after 11 min; the rules-based versions take over so the run always finishes
+{ const push = log.push.bind(log); log.push = (...a) => { console.log(`[${((Date.now() - T0) / 1000).toFixed(0)}s]`, ...a); return push(...a); }; }   // live progress in the run log
 
 async function get(url, kind = "json") {
   if (MOCK) {
@@ -159,8 +161,10 @@ function aiProvider() {
 }
 async function llm(prompt, maxTokens = 3000) {
   const p = aiProvider(); if (!p) return null;
+  const left = () => AI_BUDGET_MS - (Date.now() - T0);
+  if (left() < 20e3) throw new Error("AI time budget used up");
   if (p === "anthropic") {
-    const r = await fetch("https://api.anthropic.com/v1/messages", { method: "POST", signal: AbortSignal.timeout(120e3),
+    const r = await fetch("https://api.anthropic.com/v1/messages", { method: "POST", signal: AbortSignal.timeout(Math.min(120e3, left())),
       headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
       body: JSON.stringify({ model: process.env.ANTHROPIC_MODEL || "claude-sonnet-5-5", max_tokens: maxTokens, messages: [{ role: "user", content: prompt }] }) });
     if (!r.ok) throw new Error("Anthropic " + r.status + " " + (await r.text()).slice(0, 300));
@@ -176,7 +180,8 @@ async function llm(prompt, maxTokens = 3000) {
     for (const extra of p === "gemini" ? [{ reasoning_effort: "low" }, {}] : [{}]) {   // less "thinking" = faster answers
       let r;
       try {
-        r = await fetch(C.url, { method: "POST", signal: AbortSignal.timeout(240e3),
+        if (left() < 20e3) throw new Error("AI time budget used up");
+        r = await fetch(C.url, { method: "POST", signal: AbortSignal.timeout(Math.min(150e3, left())),
           headers: { "authorization": "Bearer " + C.key, "content-type": "application/json" },
           body: JSON.stringify({ model, max_tokens: maxTokens, ...extra, messages: [{ role: "user", content: prompt }] }) });
       } catch (e) { last = `${model}: ${e.message}`; log.push("ai try " + last); break; }   // timeout: move on to the next model
@@ -769,11 +774,11 @@ if ((isFriEve || (forced && !weekly)) && !(weekly && weekly.week === weekKey && 
     const beac = (cfg.static_rates || []).find(r => r.id === "beac");
     const pool = weekLog.map((x, i) => ({ i, cat: x.cat, score: x.score, date: (x.date || x.at || "").slice(0, 10), title: x.t.en, detail: x.d.en.slice(0, 300) }));
     let picks = null, takeaway5 = null;
-    if (aiProvider()) {
+    if (aiProvider()) try {
       const t = await llm(`You write "The week in 5" for Rayan, a finance executive in Brazzaville. From these stories of the past week, pick the 5 most consequential, distinct events (no two about the same event; prefer one per section where possible). For each give i (the story's index) and why: one sentence, using only the facts given, on why it mattered this week. Also write takeaway: one sentence summing up the week. Return JSON only: {"picks":[{"i":0,"why":{"en":"...","fr":"..."}}],"takeaway":{"en":"...","fr":"..."}}.\nStories: ${JSON.stringify(pool)}`, 2500);
       const j = JSON.parse(t.slice(t.indexOf("{"), t.lastIndexOf("}") + 1));
       picks = (j.picks || []).filter(p => weekLog[p.i]).slice(0, 5); takeaway5 = j.takeaway || null;
-    }
+    } catch (e) { log.push("weekly ai: " + e.message); }
     if (!picks || picks.length < 3) {
       const per = {}; picks = [];
       for (const x of [...weekLog].sort((a, b) => b.score - a.score || String(b.date).localeCompare(String(a.date)))) {
