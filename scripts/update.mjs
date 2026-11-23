@@ -112,7 +112,8 @@ async function news(n) {
     try { all.push(...await newsQuery(n.cat, q)); } catch (e) { log.push(`news ${n.cat} (${q.hl}): ${e.message}`); }
   }
   const strict = !!SECTION[n.cat];
-  const rel = strict ? all.filter(h => sectionOk(n.cat, h.title)) : all;   // v37: on-topic only (Beverages & packaging, CFO & treasury)
+  const fresh = all.filter(h => (Date.now() - new Date(h.date)) / 36e5 <= 48);   // nothing older than 48 hours
+  const rel = strict ? fresh.filter(h => sectionOk(n.cat, h.title)) : fresh;   // v37: on-topic only (Beverages & packaging, CFO & treasury)
   if (strict) log.push(`${n.cat}: ${rel.length}/${all.length} on topic`);
   rel.forEach(h => h.score = importance(h));
   const keep = rel.filter(h => h.score >= 1.5);                 // drop the filler when there is enough real news
@@ -189,7 +190,7 @@ async function llm(prompt, maxTokens = 3000) {
 }
 async function aiSummary(markets, fx, headlines) {
   const pool = headlines.map((h, i) => ({ i, cat: h.cat, title: (h.t && h.t.en) || h.title, description: String((h.d && h.d.en) || h.desc || "").slice(0, 400), source: h.source, date: h.date.slice(0, 10), hours_ago: Math.round((Date.now() - new Date(h.date)) / 36e5) }))
-                        .filter(h => h.cat in SIXTY_PICK);
+                        .filter(h => h.cat in SIXTY_PICK && h.hours_ago <= 48);
   if (!pool.length) return null;
   const labels = Object.fromEntries(cfg.news.map(n => [n.cat, { en: n.label_en, fr: n.label_fr }]));
   const prompt = `You edit "Overnight in 60 seconds", the top of a morning news brief read by Rayan, a finance executive in ${cfg.city}, Republic of Congo.
@@ -429,7 +430,7 @@ for (const n of cfg.news) {
   const fresh = got.length;
   // Never leave a section empty: if a source failed, keep the last good stories for that section
   if (got.length < 3) {
-    const old = (prevBrief.news || []).filter(h => h.cat === n.cat && !got.some(g => g.title === h.title) && sectionOk(n.cat, h.title) && (Date.now() - new Date(h.date)) / 864e5 <= cfg.news_max_age_days);
+    const old = (prevBrief.news || []).filter(h => h.cat === n.cat && !got.some(g => g.title === h.title) && sectionOk(n.cat, h.title) && (Date.now() - new Date(h.date)) / 36e5 <= 48);
     if (old.length) { got = [...got, ...old].slice(0, cfg.news_per_category || 8); log.push(`reused ${old.length} earlier ${n.cat} stories`); }
   }
   // A section is "fresh" when its feed answered and its newest story is under 36 hours old
@@ -594,10 +595,10 @@ if (otd && otd.en && !MOCK) {
 let old = {};
 try { old = JSON.parse(await fs.readFile(path.join(ROOT, "data", "brief.json"), "utf8")); } catch {}
 const BRIEF_EVERY_H = 8, forced = process.env.GITHUB_EVENT_NAME === "workflow_dispatch";
-// Two editions a day: a new one from 06:00 UTC (07:00 Brazzaville) and from 17:00 UTC (18:00)
-const slotStart = (() => { const d = new Date(), h = d.getUTCHours(), s = new Date(d); s.setUTCMinutes(0, 0, 0);
-  if (h >= 17) s.setUTCHours(17); else if (h >= 6) s.setUTCHours(6); else { s.setUTCDate(s.getUTCDate() - 1); s.setUTCHours(17); } return s; })();
-const edition = slotStart.getUTCHours() === 6 ? "morning" : "evening";
+// Two editions a day. Morning: built from 04:30 UTC (05:30 Brazzaville) so it is ready before 07:00; evening: from 17:00 UTC (18:00)
+const slotStart = (() => { const d = new Date(), m = d.getUTCHours() * 60 + d.getUTCMinutes(), s = new Date(d); s.setUTCSeconds(0, 0);
+  if (m >= 17 * 60) s.setUTCHours(17, 0); else if (m >= 4 * 60 + 30) s.setUTCHours(4, 30); else { s.setUTCDate(s.getUTCDate() - 1); s.setUTCHours(17, 0); } return s; })();
+const edition = slotStart.getUTCHours() === 4 ? "morning" : "evening";
 const briefAge = old.summary_at ? (Date.now() - new Date(old.summary_at)) / 36e5 : 99;
 const keepBrief = !forced && old.summary_at && new Date(old.summary_at) >= slotStart && (old.summary?.en || []).length >= 5;
 if (keepBrief) log.push(`edition kept (${briefAge.toFixed(1)} h old)`);
@@ -747,13 +748,53 @@ if (!podcast) {
   log.push(`podcast: ${pts.length} points, ${podcast.mins_en} min`);
 }
 
+/* ---------- The week in 5: a log of every edition, and a recap on Friday evening ---------- */
+const DAY = 864e5;
+let weekLog = (old.week_log || []).filter(x => Date.now() - new Date(x.date || x.at) < 8 * DAY);
+if (!keepBrief && summary && summary.en) summary.en.forEach((x, k) => {
+  if (!x.url || weekLog.some(y => y.url === x.url || y.title === x.title)) return;
+  const f = (summary.fr || [])[k] || {}, a = (summary.ar || [])[k] || {};
+  weekLog.push({ at: summaryAt, date: x.date, cat: x.cat, score: x.score || (x.level === "high" ? 5 : 3), url: x.url, source: x.source, img: x.img || null,
+    t: { en: x.title, fr: f.title || x.title, ar: a.title || x.title }, d: { en: x.detail || "", fr: f.detail || x.detail || "", ar: a.detail || x.detail || "" } });
+});
+weekLog = weekLog.slice(-80);
+const nowD = new Date(), isFriEve = nowD.getUTCDay() === 5 && edition === "evening";
+const weekKey = (() => { const d = new Date(nowD); d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 2) % 7)); return d.toISOString().slice(0, 10); })();   // the Friday on or before today: one recap per week
+let weekly = old.weekly && old.weekly.week === weekKey ? old.weekly : (old.weekly && Date.now() - new Date(old.weekly.at) < 3.5 * DAY ? old.weekly : null);
+if ((isFriEve || (forced && !weekly)) && !(weekly && weekly.week === weekKey && !forced) && weekLog.length >= 3) {   // a manual run makes a first preview
+  try {
+    const moves = ["brent", "usdxaf", "eurusd", "gold"].map(id => markets.find(m => m.id === id)).filter(Boolean).map(m => {
+      const s = m.series || [], last = s[s.length - 1], wk = s.filter(p => Date.now() - new Date(p[0]) >= 6.5 * DAY).pop() || s[0];
+      return last && wk ? { id: m.id, name: m.name, from: wk[1], to: last[1], pct: (last[1] / wk[1] - 1) * 100, dp: m.dp ?? 2 } : null; }).filter(Boolean);
+    const beac = (cfg.static_rates || []).find(r => r.id === "beac");
+    const pool = weekLog.map((x, i) => ({ i, cat: x.cat, score: x.score, date: (x.date || x.at || "").slice(0, 10), title: x.t.en, detail: x.d.en.slice(0, 300) }));
+    let picks = null, takeaway5 = null;
+    if (aiProvider()) {
+      const t = await llm(`You write "The week in 5" for Rayan, a finance executive in Brazzaville. From these stories of the past week, pick the 5 most consequential, distinct events (no two about the same event; prefer one per section where possible). For each give i (the story's index) and why: one sentence, using only the facts given, on why it mattered this week. Also write takeaway: one sentence summing up the week. Return JSON only: {"picks":[{"i":0,"why":{"en":"...","fr":"..."}}],"takeaway":{"en":"...","fr":"..."}}.\nStories: ${JSON.stringify(pool)}`, 2500);
+      const j = JSON.parse(t.slice(t.indexOf("{"), t.lastIndexOf("}") + 1));
+      picks = (j.picks || []).filter(p => weekLog[p.i]).slice(0, 5); takeaway5 = j.takeaway || null;
+    }
+    if (!picks || picks.length < 3) {
+      const per = {}; picks = [];
+      for (const x of [...weekLog].sort((a, b) => b.score - a.score || String(b.date).localeCompare(String(a.date)))) {
+        if (picks.length >= 5) break; if ((per[x.cat] || 0) >= 2) continue; per[x.cat] = (per[x.cat] || 0) + 1; picks.push({ i: weekLog.indexOf(x), why: { en: x.d.en, fr: x.d.fr } }); }
+    }
+    const stories = picks.map(p => { const x = weekLog[p.i]; return { cat: x.cat, url: x.url, source: x.source, date: x.date, img: x.img, t: x.t, why: { en: (p.why && p.why.en) || x.d.en, fr: (p.why && p.why.fr) || x.d.fr, ar: "" } }; });
+    const tr = await translateBatch([...stories.map(s => s.why.en || "."), (takeaway5 && takeaway5.en) || "."], "en", "ar");
+    stories.forEach((s, k) => s.why.ar = tr[k] || s.why.en);
+    if (takeaway5) takeaway5.ar = tr[stories.length] || takeaway5.en;
+    weekly = { week: weekKey, at: new Date().toISOString(), stories, moves, takeaway: takeaway5, beac: beac ? { value: beac.value, unit: beac.unit, date: beac.date } : null };
+    log.push(`weekly: ${stories.length} stories from ${weekLog.length} logged`);
+  } catch (e) { log.push("weekly: " + e.message); }
+}
+
 const brief = {
   health: (() => { health.markets_total = markets.length; health.markets_ok = markets.filter(m => m.date && (Date.now() - new Date(m.date)) / 864e5 < 5).length;
     health.translate = !gBlocked ? "google" : mmLeft < 30 ? "fallback" : "off"; health.static_days = Math.max(...(cfg.static_rates || []).filter(r => !r.historical).map(r => r.date ? (Date.now() - new Date(r.date)) / 864e5 : 0), 0) | 0; return health; })(),
   generated_at: new Date().toISOString(), follow: cfg.follow || [], alerts: cfg.ntfy_topic ? "https://ntfy.sh/" + cfg.ntfy_topic : null, summary_at: summaryAt, edition: keepBrief ? (old.edition || edition) : edition, summary_mode: summaryMode, peg: cfg.eur_xaf_peg, fx,
   markets, static_rates: cfg.static_rates, agenda: cfg.agenda,
   categories: cfg.news.map(n => ({ id: n.cat, en: n.label_en, fr: n.label_fr, ar: n.label_ar || { worldwide: "العالم", africa: "أفريقيا", congo: "الكونغو وCEMAC", markets: "الأسواق", bev: "المشروبات والتغليف", cfo: "المالية والخزينة", lebanon: "لبنان", tech: "التكنولوجيا" }[n.cat] || n.label_en })),
-  summary, takeaway, podcast, on_this_day: otd, read, news: headlines.map((h, i) => ({ id: "n" + i + "-" + h.date.slice(0, 10), ...h })), log,
+  summary, takeaway, podcast, week_log: weekLog, weekly, on_this_day: otd, read, news: headlines.map((h, i) => ({ id: "n" + i + "-" + h.date.slice(0, 10), ...h })), log,
   gn_cache: Object.fromEntries(headlines.filter(h => h.url && GN[h.url]).map(h => [h.url, GN[h.url]]))
 };
 await fs.mkdir(path.join(ROOT, "data"), { recursive: true });
