@@ -276,6 +276,25 @@ section{padding-top:26px}
 .nx-lead.read h3{color:var(--muted)}
 .nx-more{display:block;width:100%;margin:16px 0 4px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font:inherit;font-weight:700;color:var(--text);cursor:pointer}
 .nx-done{margin-top:18px;padding:16px;border-radius:14px;background:var(--accent-soft);text-align:center;font-weight:600;font-size:.92rem}
+/* v43: week in 5 */
+.wk-card{display:block;width:100%;margin-top:14px;padding:16px;border-radius:18px;border:1px solid var(--line);background:var(--surface);color:inherit;font:inherit;text-align:start;cursor:pointer}
+.wk-k{display:block;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.wk-card b{display:block;margin-top:4px;font-family:var(--display);font-size:1.3rem}
+.wk-t{display:block;margin-top:6px;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.wk-go{display:block;margin-top:10px;font-size:.85rem;font-weight:700;color:var(--accent)}
+.wks{position:fixed;inset:0;z-index:62;background:var(--bg);overflow-y:auto;padding-top:env(safe-area-inset-top);animation:viewIn .2s ease}
+.wks-top{position:sticky;top:0;display:flex;justify-content:flex-end;padding:10px 14px;background:var(--bg);z-index:2}
+.wks-x{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--text);font-size:1rem;cursor:pointer}
+.wks-in{max-width:640px;margin:0 auto;padding:0 18px calc(40px + env(safe-area-inset-bottom))}
+.wks-in h2{margin:4px 0 0;font-family:var(--display);font-size:1.8rem}
+.wks-tk{margin:10px 0 4px;font-size:1rem;line-height:1.55}
+.wks-i{display:flex;gap:14px;padding:16px 2px;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.wks-i h3{margin:4px 0 0;font-size:1.06rem;line-height:1.38;font-weight:650}
+.wks-i p{margin:6px 0 0;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.wks-in h4{margin:24px 0 8px;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.wks-m>div{display:grid;grid-template-columns:1fr auto 74px;gap:10px;padding:10px 2px;border-bottom:1px dashed var(--line);font-size:.92rem}
+.wks-m .v{font-family:var(--mono)}.wks-m span:last-child{text-align:end;font-weight:700}.wks-m .up{color:var(--relief)}.wks-m .dn{color:var(--critical)}
+.wks-n{margin:6px 0 0;font-size:.74rem;color:var(--muted)}
 /* v41: Read */
 .rd2-hero{display:block;margin-top:14px;border-radius:18px;overflow:hidden;background:var(--surface);border:1px solid var(--line);text-decoration:none;color:inherit}
 .rd2-ph{aspect-ratio:16/9;background:var(--sunk)}.rd2-ph img{width:100%;height:100%;object-fit:cover;display:block}
@@ -847,6 +866,7 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
 <div class="view" id="v-today">
   <div class="since" id="since" hidden></div>
   <div class="hero" id="hero"></div>
+  <div id="wk5"></div>
   <div class="movers" id="movers"></div>
   <div class="quick" id="quick"></div>
   <div class="banner" id="banner"><span class="dot"></span><div id="banner-text">Loading today's brief…</div></div>
@@ -1028,11 +1048,11 @@ const catOf=x=>x.cat||((B.categories||[]).find(c=>c.en===x.owner||c.fr===x.owner
 function edKey(){return (B&&B.summary_at)||"";}
 function edState(){const s=store.get("ed",{});if(s.key!==edKey())return {key:edKey(),seen:{},done:false,quiz:null};s.seen=s.seen||{};return s;}
 function edSave(s){store.set("ed",s);}
-function edLabel(){const fr=lang==="fr",e=B.edition||(new Date(B.summary_at||Date.now()).getUTCHours()>=17||new Date(B.summary_at||Date.now()).getUTCHours()<6?"evening":"morning");
+function edLabel(){const fr=lang==="fr",e=B.edition||(new Date(B.summary_at||Date.now()).getUTCHours()>=17||new Date(B.summary_at||Date.now()).getUTCHours()<4?"evening":"morning");
   const d=new Date(B.summary_at||Date.now()).toLocaleDateString((lang==="ar"?"ar-u-nu-latn":fr?"fr-FR":"en-GB"),{weekday:"short",day:"numeric",month:"short"});
   return (e==="morning"?((lang==="ar"?"العدد الصباحي":fr?"Édition du matin":"Morning edition")):((lang==="ar"?"العدد المسائي":fr?"Édition du soir":"Evening edition")))+" · "+d;}
-function edNext(){const d=new Date(),c=new Date(d);c.setUTCSeconds(0,0);c.setUTCMinutes(15);
-  if(d.getUTCHours()<6||(d.getUTCHours()===6&&d.getUTCMinutes()<15))c.setUTCHours(6);else if(d.getUTCHours()<17||(d.getUTCHours()===17&&d.getUTCMinutes()<15))c.setUTCHours(17);else{c.setUTCDate(c.getUTCDate()+1);c.setUTCHours(6);}return c;}
+function edNext(){const d=new Date(),c=new Date(d),m=d.getUTCHours()*60+d.getUTCMinutes();c.setUTCSeconds(0,0);   // morning edition ready by 07:00 Brazzaville
+  if(m<5*60)c.setUTCHours(5,0);else if(m<17*60+15)c.setUTCHours(17,15);else{c.setUTCDate(c.getUTCDate()+1);c.setUTCHours(5,0);}return c;}
 function edStreak(){const D=store.get("ed_days",{});let d=new Date(),s=0;if(!D[dayKey(d)])d.setDate(d.getDate()-1);while(D[dayKey(d)]){s++;d.setDate(d.getDate()-1);}return s;}
 function openEdition(start){
   const fr=lang==="fr",ar=lang==="ar",items=B.summary[lang]||B.summary.en||[],n=items.length;if(!n)return;
@@ -1370,6 +1390,33 @@ function renderOTD(){
   $("#otd-wrap").hidden=!G.some(x=>(g[x[0]]||[]).length);
   $("#otd").innerHTML=G.map(([k,f,name,sub])=>{const l=g[k]||[];
     return `<h4 class="otd-h">${f} ${name}${sub?`<span>· ${sub}</span>`:""}</h4>`+(l.length?`<ul class="agenda otd">${l.map(e=>`<li><span class="d">${esc(lab(e))}</span><span>${esc(pre(e)+e.text.replace(/\s*\((pictured|illustré|en photo)\)/gi,""))}</span></li>`).join("")}</ul>`:`<p class="empty">${(lang==="ar"?"لا أحداث بارزة مسجلة لهذه التواريخ.":fr?"Rien de marquant pour ces dates.":"Nothing notable recorded for these dates.")}</p>`);}).join("");
+}
+/* ---------- The week in 5 (Friday evening to Monday morning) ---------- */
+function weekRange(w){const f=new Date(w.week+"T12:00:00Z"),a=new Date(f-4*864e5),lc=lang==="ar"?"ar-u-nu-latn":lang==="fr"?"fr-FR":"en-GB";return a.toLocaleDateString(lc,{day:"numeric"})+"–"+f.toLocaleDateString(lc,{day:"numeric",month:"short"});}
+function renderWeek(){
+  const W5=B.weekly,box=$("#wk5");if(!box)return;
+  if(!W5||!W5.stories||!W5.stories.length||Date.now()-new Date(W5.at)>3.5*864e5){box.innerHTML="";return;}
+  const fr=lang==="fr",ar=lang==="ar",L=(e,f,a)=>ar?a:fr?f:e,seen=store.get("wk_seen","")===W5.week;
+  box.innerHTML=`<button class="wk-card" type="button" id="wk-open"><span class="wk-k">${seen?"✓ ":""}${L("This week","Cette semaine","هذا الأسبوع")} · ${esc(weekRange(W5))}</span>
+    <b>${L("Your week in 5","Votre semaine en 5","أسبوعك في 5")}</b><span class="wk-t">${esc((W5.takeaway&&(W5.takeaway[lang]||W5.takeaway.en))||L("The five stories that mattered most, and how markets moved.","Les cinq faits marquants et l'évolution des marchés.","أهم خمس قصص وتحركات الأسواق."))}</span><span class="wk-go">${L("Open","Ouvrir","افتح")} →</span></button>`;
+  $("#wk-open").onclick=openWeek;
+}
+function openWeek(){
+  const W5=B.weekly;if(!W5||$(".wks"))return;const fr=lang==="fr",ar=lang==="ar",L=(e,f,a)=>ar?a:fr?f:e;
+  store.set("wk_seen",W5.week);
+  const lc=ar?"ar-u-nu-latn":fr?"fr-FR":"en-GB",day=d=>d?new Date(d).toLocaleDateString(lc,{weekday:"short",day:"numeric"}):"";
+  const el=document.createElement("div");el.className="wks";el.setAttribute("role","dialog");
+  el.innerHTML=`<div class="wks-top"><button type="button" class="wks-x" aria-label="${L("Close","Fermer","إغلاق")}">✕</button></div>
+    <div class="wks-in"><span class="wk-k">${esc(weekRange(W5))}</span><h2>${L("Your week in 5","Votre semaine en 5","أسبوعك في 5")}</h2>
+    ${W5.takeaway?`<p class="wks-tk">${esc(W5.takeaway[lang]||W5.takeaway.en)}</p>`:""}
+    ${W5.stories.map((x,k)=>`<a class="wks-i" href="${esc(x.url)}" target="_blank" rel="noopener"><span class="t10-n">${k+1}</span><div class="t10-b"><span class="t10-c"><i style="background:${catColor(x.cat)}"></i>${esc(catLabel(x.cat))}</span>
+      <h3>${esc((x.t&&(x.t[lang]||x.t.en))||"")}</h3>${x.why&&(x.why[lang]||x.why.en)?`<p>${esc(x.why[lang]||x.why.en)}</p>`:""}<div class="t10-src">${esc(x.source||"")} · ${day(x.date)} ↗</div></div></a>`).join("")}
+    ${W5.moves&&W5.moves.length?`<h4>${L("Markets this week","Les marchés cette semaine","الأسواق هذا الأسبوع")}</h4><div class="wks-m">${W5.moves.map(m=>{const up=m.pct>0;return `<div><span>${esc(m.name)}</span><span class="v">${fmt(m.to,m.dp)}</span><span class="${Math.abs(m.pct)<.05?"":up?"up":"dn"}">${up?"▲":m.pct<0?"▼":"•"} ${fmt(Math.abs(m.pct),1)}%</span></div>`;}).join("")}${W5.beac?`<div><span>${L("BEAC policy rate","Taux directeur BEAC","سعر فائدة BEAC")}</span><span class="v">${fmt(W5.beac.value,2)}%</span><span></span></div>`:""}</div><p class="wks-n">${L("Change over the last 7 days, to the latest close.","Variation sur 7 jours, à la dernière clôture.","التغير خلال 7 أيام حتى آخر إغلاق.")}</p>`:""}
+    <div class="t10-done"><b>✅ ${L("That was your week","C'était votre semaine","هذا كان أسبوعك")}</b><span>${L("Next recap: Friday evening.","Prochain récap : vendredi soir.","الملخص القادم: مساء الجمعة.")}</span></div></div>`;
+  document.body.appendChild(el);document.body.style.overflow="hidden";
+  const k=e=>{if(e.key==="Escape")close();};
+  const close=()=>{el.remove();document.body.style.overflow="";document.removeEventListener("keydown",k);renderWeek();};
+  document.addEventListener("keydown",k);el.querySelector(".wks-x").onclick=close;
 }
 function renderHero(){
   const fr=lang==="fr",now=new Date(),hr=now.getHours(),items=B.summary[lang]||B.summary.en||[];
@@ -1724,9 +1771,9 @@ function renderNews(){ // v40: "Today's 15" — one short list, one next step, v
   const byId={};all.forEach(n=>byId[nxId(n)]=n);
   let picks=saved.ids.map(id=>byId[id]).filter(Boolean);
   const per={};picks.forEach(n=>per[n.cat]=(per[n.cat]||0)+1);
-  for(const n of [...all].filter(n=>ageH(n)<72).sort((a,b)=>rank(b)-rank(a))){if(picks.length>=15)break;
+  for(const n of [...all].filter(n=>ageH(n)<=48).sort((a,b)=>rank(b)-rank(a))){if(picks.length>=15)break;
     if(picks.includes(n)||(per[n.cat]||0)>=2)continue;picks.push(n);per[n.cat]=(per[n.cat]||0)+1;}
-  for(const n of [...all].filter(n=>ageH(n)<72).sort((a,b)=>rank(b)-rank(a))){if(picks.length>=15)break;   // still short: allow a 3rd per section
+  for(const n of [...all].filter(n=>ageH(n)<=48).sort((a,b)=>rank(b)-rank(a))){if(picks.length>=15)break;   // still short: allow a 3rd per section
     if(picks.includes(n)||(per[n.cat]||0)>=3)continue;picks.push(n);per[n.cat]=(per[n.cat]||0)+1;}
   saved.ids=picks.map(nxId);store.set("nx_today",saved);
   const isR=n=>!!NX.read[nxId(n)],done=picks.filter(isR).length,total=picks.length,st=nxStreak(),todayN=NX.days[day]||0;
@@ -1794,7 +1841,7 @@ function applyText(){
   if(theme)document.documentElement.dataset.theme=theme;else delete document.documentElement.dataset.theme;
   document.querySelectorAll("[data-t]").forEach(e=>e.textContent=t(e.dataset.t));
 }
-function renderAll(){applyText();if(!B)return;renderTop();renderHero();renderSixty();renderFront();renderOTD();renderAgenda();renderMarkets();renderNews();renderRead();}
+function renderAll(){applyText();if(!B)return;renderTop();renderHero();renderWeek();renderSixty();renderFront();renderOTD();renderAgenda();renderMarkets();renderNews();renderRead();}
 $("#lang").onclick=()=>{lang=lang==="en"?"fr":lang==="fr"?"ar":"en";store.set("lang",lang);renderAll();};
 $("#theme").onclick=()=>{const dark=theme?theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;theme=dark?"light":"dark";store.set("theme",theme);renderAll();};
 
@@ -1812,6 +1859,8 @@ async function load(manual){
   try{const r=await fetch("data/brief.json?ts="+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;B=await r.json();store.set("last",B);offline=false;}
   catch(e){B=B||store.get("last",null);offline=true;if(!B){$("#banner-text").textContent="Couldn't load the brief. Check your connection and reopen the app.";loading=false;if(rb)rb.classList.remove("spin");return;}}
   if(B&&B.categories){const O=["worldwide","africa","congo","lebanon"],r=id=>{const i=O.indexOf(id);return i<0?O.length:i;};B.categories=B.categories.map((c,i)=>[c,i]).sort((a,b)=>r(a[0].id)-r(b[0].id)||a[1]-b[1]).map(x=>x[0]);}
+  if(B){const fresh=x=>!x.date||(Date.now()-new Date(x.date))/36e5<=48;   // nothing older than 48 hours on Today or News
+    if(B.news)B.news=B.news.filter(fresh);if(B.summary)for(const k of Object.keys(B.summary))if(Array.isArray(B.summary[k]))B.summary[k]=B.summary[k].filter(fresh);}
   lastLoad=Date.now();renderAll();loading=false;if(rb)rb.classList.remove("spin");
   if(manual){const t=document.createElement("div");t.className="toast-up";t.textContent=offline?((lang==="ar"?"غير متصل · عرض آخر نسخة":lang==="fr"?"Hors ligne · dernière version affichée":"Offline · showing the last version")):before&&before===B.generated_at?((lang==="ar"?"محدّث بالفعل ✓":lang==="fr"?"Déjà à jour ✓":"Already up to date ✓")):((lang==="ar"?"تم التحديث ✓":lang==="fr"?"Mis à jour ✓":"Updated ✓"));document.body.appendChild(t);setTimeout(()=>t.remove(),1900);}
 }
@@ -1821,7 +1870,7 @@ document.addEventListener("visibilitychange",()=>{if(document.visibilityState===
 /* Pull down to refresh (the home-screen app has no browser refresh) */
 (()=>{const p=document.createElement("div");p.className="ptr";p.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg>';document.body.appendChild(p);
   let y0=null,dy=0;
-  addEventListener("touchstart",e=>{if(scrollY>2||$("#watch")||$(".ed")||e.target.closest(".reel,.sheet,.ed"))return;y0=e.touches[0].clientY;dy=0;},{passive:true});
+  addEventListener("touchstart",e=>{if(scrollY>2||$("#watch")||$(".ed")||$(".wks")||e.target.closest(".reel,.sheet,.ed,.wks"))return;y0=e.touches[0].clientY;dy=0;},{passive:true});
   addEventListener("touchmove",e=>{if(y0===null)return;dy=Math.max(0,e.touches[0].clientY-y0);if(scrollY>2){y0=null;dy=0;}p.style.transform=`translate(-50%,${Math.min(dy*.6,70)-70}px) rotate(${dy*2}deg)`;},{passive:true});
   addEventListener("touchend",async()=>{if(y0===null)return;y0=null;if(dy>90){p.classList.add("go");p.style.transform="translate(-50%,0)";await load(true);}p.classList.remove("go");p.style.transform="";dy=0;});
 })();
