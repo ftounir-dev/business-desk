@@ -2,6 +2,7 @@ name: Update Business Desk
 
 on:
   schedule:
+    - cron: "40 4 * * *"      # morning edition + Morning Brief, 05:40 Brazzaville (ready before 07:00)
     - cron: "15 5-21 * * *"   # every hour at :15, 06:15 to 22:15 Brazzaville
   workflow_dispatch: {}    # "Run workflow" button for a manual refresh
 
