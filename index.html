@@ -276,6 +276,13 @@ section{padding-top:26px}
 .nx-lead.read h3{color:var(--muted)}
 .nx-more{display:block;width:100%;margin:16px 0 4px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font:inherit;font-weight:700;color:var(--text);cursor:pointer}
 .nx-done{margin-top:18px;padding:16px;border-radius:14px;background:var(--accent-soft);text-align:center;font-weight:600;font-size:.92rem}
+/* v44: notifications */
+.push-card{position:relative;margin-top:14px;padding:16px 44px 16px 16px;border-radius:18px;border:1px solid var(--line);background:var(--surface)}
+.push-card b{display:block;font-size:1rem}.push-card p{margin:6px 0 0;font-size:.88rem;line-height:1.5;color:var(--muted)}
+.push-on{margin-top:12px;padding:10px 14px;border:0;border-radius:12px;background:var(--accent);color:#fff;font:inherit;font-weight:700;cursor:pointer}
+.push-x{position:absolute;top:10px;right:10px;width:30px;height:30px;border-radius:50%;border:0;background:var(--sunk);color:var(--muted);cursor:pointer}
+[dir=rtl] .push-x{right:auto;left:10px}[dir=rtl] .push-card{padding:16px 16px 16px 44px}
+.push-msg:empty{display:none}
 /* v43: week in 5 */
 .wk-card{display:block;width:100%;margin-top:14px;padding:16px;border-radius:18px;border:1px solid var(--line);background:var(--surface);color:inherit;font:inherit;text-align:start;cursor:pointer}
 .wk-k{display:block;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
@@ -867,6 +874,7 @@ footer{color:var(--muted);font-size:.76rem;padding:30px 0 0}
   <div class="since" id="since" hidden></div>
   <div class="hero" id="hero"></div>
   <div id="wk5"></div>
+  <div id="pushc"></div>
   <div class="movers" id="movers"></div>
   <div class="quick" id="quick"></div>
   <div class="banner" id="banner"><span class="dot"></span><div id="banner-text">Loading today's brief…</div></div>
@@ -1418,6 +1426,37 @@ function openWeek(){
   const close=()=>{el.remove();document.body.style.overflow="";document.removeEventListener("keydown",k);renderWeek();};
   document.addEventListener("keydown",k);el.querySelector(".wks-x").onclick=close;
 }
+/* ---------- Phone notifications (iPhone: only when opened from the Home Screen) ---------- */
+function pushB64(s){const p="=".repeat((4-s.length%4)%4),b=atob((s+p).replace(/-/g,"+").replace(/_/g,"/"));return Uint8Array.from(b,c=>c.charCodeAt(0));}
+async function pushSend(sub){await fetch("https://ntfy.sh/"+B.push.sub_topic,{method:"POST",body:JSON.stringify(sub)});store.set("push_at",Date.now());}
+async function pushOn(){
+  const fr=lang==="fr",ar=lang==="ar",L=(e,f,a)=>ar?a:fr?f:e,msg=$("#push-msg");
+  try{
+    const perm=await Notification.requestPermission();
+    if(perm!=="granted"){if(msg)msg.textContent=L("Notifications are blocked. Turn them on in Settings → Notifications → Business Desk.","Notifications bloquées. Activez-les dans Réglages → Notifications → Business Desk.","الإشعارات محظورة. فعّلها من الإعدادات ← الإشعارات ← Business Desk.");return;}
+    const reg=await navigator.serviceWorker.ready;
+    const sub=(await reg.pushManager.getSubscription())||(await reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:pushB64(B.push.vapid_public)}));
+    await pushSend(sub);store.set("push_on",true);
+    reg.showNotification(L("Notifications are on","Notifications activées","تم تفعيل الإشعارات"),{body:L("You'll get one when each edition is ready, starting with the next.","Vous serez prévenu à chaque nouvelle édition, dès la prochaine.","ستصلك رسالة عند جاهزية كل عدد، بدءًا من القادم."),icon:"icons/icon-192.png",tag:"bd-on"});
+    renderPush();
+  }catch(e){if(msg)msg.textContent=L("Couldn't turn on notifications: ","Impossible d'activer les notifications : ","تعذّر تفعيل الإشعارات: ")+e.message;}
+}
+function renderPush(){
+  const box=$("#pushc");if(!box||!B.push)return;
+  const fr=lang==="fr",ar=lang==="ar",L=(e,f,a)=>ar?a:fr?f:e;
+  const ok="serviceWorker" in navigator&&"PushManager" in window&&"Notification" in window;
+  const standalone=matchMedia("(display-mode: standalone)").matches||navigator.standalone===true,ios=/iPhone|iPad|iPod/.test(navigator.userAgent);
+  const on=store.get("push_on",false)&&ok&&Notification.permission==="granted";
+  if(on){if(Date.now()-store.get("push_at",0)>7*864e5)navigator.serviceWorker.ready.then(r=>r.pushManager.getSubscription()).then(s=>s&&pushSend(s)).catch(()=>{});box.innerHTML="";return;}
+  if(store.get("push_x","")===dayKey(new Date())){box.innerHTML="";return;}
+  let body,btn="";
+  if(ios&&!standalone)body=L("To get a notification when the Morning Brief is ready, first add Business Desk to your Home Screen: tap Share ⬆, then “Add to Home Screen”, and open it from there.","Pour être prévenu quand le Morning Brief est prêt, ajoutez d'abord Business Desk à l'écran d'accueil : Partager ⬆, puis « Sur l'écran d'accueil », et ouvrez-le depuis là.","لتصلك رسالة عند جاهزية الموجز الصباحي، أضف Business Desk إلى الشاشة الرئيسية أولًا: مشاركة ⬆ ثم «إضافة إلى الشاشة الرئيسية» وافتحه من هناك.");
+  else if(ok){body=L("Get a notification when the Morning Brief is ready, and if it's ever delayed.","Recevez une notification quand le Morning Brief est prêt, ou s'il est retardé.","تلقَّ إشعارًا عند جاهزية الموجز الصباحي، أو إذا تأخر.");btn=`<button class="push-on" type="button" id="push-go">🔔 ${L("Turn on notifications","Activer les notifications","فعّل الإشعارات")}</button>`;}
+  else{box.innerHTML="";return;}
+  box.innerHTML=`<div class="push-card"><button class="push-x" type="button" id="push-x" aria-label="${L("Not now","Plus tard","ليس الآن")}">✕</button><b>${L("Never miss the Morning Brief","Ne manquez plus le Morning Brief","لا تفوّت الموجز الصباحي")}</b><p>${body}</p>${btn}<p class="push-msg" id="push-msg"></p></div>`;
+  $("#push-x").onclick=()=>{store.set("push_x",dayKey(new Date()));renderPush();};
+  const g=$("#push-go");if(g)g.onclick=pushOn;
+}
 function renderHero(){
   const fr=lang==="fr",now=new Date(),hr=now.getHours(),items=B.summary[lang]||B.summary.en||[];
   const part=hr<12?((lang==="ar"?"موجز الصباح":fr?"Briefing du matin":"Morning briefing")):hr<18?((lang==="ar"?"موجز الظهيرة":fr?"Briefing de mi-journée":"Midday briefing")):((lang==="ar"?"موجز المساء":fr?"Briefing du soir":"Evening briefing"));
@@ -1841,7 +1880,7 @@ function applyText(){
   if(theme)document.documentElement.dataset.theme=theme;else delete document.documentElement.dataset.theme;
   document.querySelectorAll("[data-t]").forEach(e=>e.textContent=t(e.dataset.t));
 }
-function renderAll(){applyText();if(!B)return;renderTop();renderHero();renderWeek();renderSixty();renderFront();renderOTD();renderAgenda();renderMarkets();renderNews();renderRead();}
+function renderAll(){applyText();if(!B)return;renderTop();renderHero();renderWeek();renderPush();renderSixty();renderFront();renderOTD();renderAgenda();renderMarkets();renderNews();renderRead();}
 $("#lang").onclick=()=>{lang=lang==="en"?"fr":lang==="fr"?"ar":"en";store.set("lang",lang);renderAll();};
 $("#theme").onclick=()=>{const dark=theme?theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;theme=dark?"light":"dark";store.set("theme",theme);renderAll();};
 

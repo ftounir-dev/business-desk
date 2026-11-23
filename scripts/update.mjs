@@ -796,7 +796,7 @@ if ((isFriEve || (forced && !weekly)) && !(weekly && weekly.week === weekKey && 
 const brief = {
   health: (() => { health.markets_total = markets.length; health.markets_ok = markets.filter(m => m.date && (Date.now() - new Date(m.date)) / 864e5 < 5).length;
     health.translate = !gBlocked ? "google" : mmLeft < 30 ? "fallback" : "off"; health.static_days = Math.max(...(cfg.static_rates || []).filter(r => !r.historical).map(r => r.date ? (Date.now() - new Date(r.date)) / 864e5 : 0), 0) | 0; return health; })(),
-  generated_at: new Date().toISOString(), follow: cfg.follow || [], alerts: cfg.ntfy_topic ? "https://ntfy.sh/" + cfg.ntfy_topic : null, summary_at: summaryAt, edition: keepBrief ? (old.edition || edition) : edition, summary_mode: summaryMode, peg: cfg.eur_xaf_peg, fx,
+  generated_at: new Date().toISOString(), follow: cfg.follow || [], push: cfg.push || null, alerts: cfg.ntfy_topic ? "https://ntfy.sh/" + cfg.ntfy_topic : null, summary_at: summaryAt, edition: keepBrief ? (old.edition || edition) : edition, summary_mode: summaryMode, peg: cfg.eur_xaf_peg, fx,
   markets, static_rates: cfg.static_rates, agenda: cfg.agenda,
   categories: cfg.news.map(n => ({ id: n.cat, en: n.label_en, fr: n.label_fr, ar: n.label_ar || { worldwide: "العالم", africa: "أفريقيا", congo: "الكونغو وCEMAC", markets: "الأسواق", bev: "المشروبات والتغليف", cfo: "المالية والخزينة", lebanon: "لبنان", tech: "التكنولوجيا" }[n.cat] || n.label_en })),
   summary, takeaway, podcast, week_log: weekLog, weekly, on_this_day: otd, read, news: headlines.map((h, i) => ({ id: "n" + i + "-" + h.date.slice(0, 10), ...h })), log,
