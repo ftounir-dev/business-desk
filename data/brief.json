@@ -47,7 +47,7 @@
   "translate": "google",
   "static_days": 57
  },
- "generated_at": "2026-11-24T20:14:03.438Z",
+ "generated_at": "2026-11-24T21:07:58.668Z",
  "follow": [
   "BEAC",
   "CEMAC",
@@ -72,8 +72,8 @@
  "summary_mode": "rules",
  "peg": 655.957,
  "fx": {
-  "eurusd": 1.0969723463058472,
-  "usdxaf": 597.9704066460691,
+  "eurusd": 1.0968520641326904,
+  "usdxaf": 598.0359808309084,
   "usdxaf_prev": 597.8720398470813,
   "date": "2026-11-24"
  },
@@ -85,10 +85,10 @@
    "unit": "XAF per USD",
    "dp": 1,
    "cost": 1,
-   "value": 597.9704066460691,
+   "value": 598.0359808309084,
    "prev": 597.8720398470813,
    "date": "2026-11-24",
-   "change_pct": 0.016452818066725605,
+   "change_pct": 0.02742074773542935,
    "series": [
     [
      "2026-10-26",
@@ -176,7 +176,7 @@
     ],
     [
      "2026-11-24",
-     597.9704066460691
+     598.0359808309084
     ]
    ],
    "source": "655.957 ÷ EUR/USD",
@@ -194,10 +194,10 @@
    "unit": "USD per EUR",
    "dp": 4,
    "cost": -1,
-   "value": 1.0969723463058472,
+   "value": 1.0968520641326904,
    "prev": 1.097152829170227,
    "date": "2026-11-24",
-   "change_pct": -0.01645011155978482,
+   "change_pct": -0.02741323082255942,
    "series": [
     [
      "2026-10-26",
@@ -285,7 +285,7 @@
     ],
     [
      "2026-11-24",
-     1.0969723463058472
+     1.0968520641326904
     ]
    ],
    "source": "Yahoo Finance",
@@ -303,10 +303,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 88.41000366210938,
+   "value": 88.23999786376953,
    "prev": 89.37000274658203,
    "date": "2026-11-24",
-   "change_pct": -1.0741849110096124,
+   "change_pct": -1.264411825091638,
    "series": [
     [
      "2026-10-26",
@@ -394,18 +394,18 @@
     ],
     [
      "2026-11-24",
-     88.41000366210938
+     88.23999786376953
     ]
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/BZ%3DF",
    "why": {
-    "en": "Brazil's tax revenue extends record run in October, buoyed by higher oil prices",
-    "fr": "Les recettes fiscales du Brésil prolongent leur niveau record en octobre, soutenues par la hausse des prix du pétrole",
-    "ar": "تواصل إيرادات الضرائب في البرازيل تسجيلها لمستوى قياسي خلال شهر أكتوبر، مدعومة بارتفاع أسعار النفط",
-    "source": "Reuters",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORmVvMEdpSWJqdEg5V2VKRlRfYlYzcTY0c3p0RU5PVk9ORHZ5S3E2NUxRYjVZYVFPUVlhY2ZRbDR2d3l3ZGpTc3VvNkNDd3B5bFA2azFNX0ExZWtXUWxFemFuWEMzNXBQaFV0eTgtVjVLMDNfek5qc1E5cUZvaEdYTThmSVZZZDJraXJYTEtZUXY3UmRnN2dKeEdFakJEbHBZcmdPaEZNS3pOY1oyLV9hZW85X0NmSmJwcWU4UDZGR0hkaG8?oc=5",
-    "date": "2026-11-24T15:03:45.000Z",
+    "en": "Iraq Rejects OPEC+ Assessment of Its Oil Production Capacity",
+    "fr": "L’Irak rejette l’évaluation OPEP+ de sa capacité de production pétrolière",
+    "ar": "العراق يرفض تقييم أوبك+ لقدرته على إنتاج النفط",
+    "source": "Bloomberg.com",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPalAzWlRlOWZNWE5rTXFHTmp4TmNfdlZOS2VJa0pZck8tZmczNGgtSl81VFB4bFpTcXVHMmwxV0ZuRVhlOGh0MUtrWTIydGo1NlYyVXZsNXdxSXdEbEpuY3ZacjRlV2hUOGJER0ljZzUyMDk1TVFkbXhwZktvQk5aSDBPUEdTRVYyaVR3eVdDaVdWR1RYOXB4UmJfOUdvY0t3bk9rZFlFUjBBTFYtdFVr?oc=5",
+    "date": "2026-11-24T18:01:45.000Z",
     "related": true
    }
   },
@@ -416,10 +416,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 81.68000030517578,
+   "value": 81.41000366210938,
    "prev": 80.16999816894531,
    "date": "2026-11-24",
-   "change_pct": 1.8835002753129437,
+   "change_pct": 1.5467201215982884,
    "series": [
     [
      "2026-10-26",
@@ -507,18 +507,18 @@
     ],
     [
      "2026-11-24",
-     81.68000030517578
+     81.41000366210938
     ]
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/CL%3DF",
    "why": {
-    "en": "Brazil's tax revenue extends record run in October, buoyed by higher oil prices",
-    "fr": "Les recettes fiscales du Brésil prolongent leur niveau record en octobre, soutenues par la hausse des prix du pétrole",
-    "ar": "تواصل إيرادات الضرائب في البرازيل تسجيلها لمستوى قياسي خلال شهر أكتوبر، مدعومة بارتفاع أسعار النفط",
-    "source": "Reuters",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORmVvMEdpSWJqdEg5V2VKRlRfYlYzcTY0c3p0RU5PVk9ORHZ5S3E2NUxRYjVZYVFPUVlhY2ZRbDR2d3l3ZGpTc3VvNkNDd3B5bFA2azFNX0ExZWtXUWxFemFuWEMzNXBQaFV0eTgtVjVLMDNfek5qc1E5cUZvaEdYTThmSVZZZDJraXJYTEtZUXY3UmRnN2dKeEdFakJEbHBZcmdPaEZNS3pOY1oyLV9hZW85X0NmSmJwcWU4UDZGR0hkaG8?oc=5",
-    "date": "2026-11-24T15:03:45.000Z",
+    "en": "Iraq Rejects OPEC+ Assessment of Its Oil Production Capacity",
+    "fr": "L’Irak rejette l’évaluation OPEP+ de sa capacité de production pétrolière",
+    "ar": "العراق يرفض تقييم أوبك+ لقدرته على إنتاج النفط",
+    "source": "Bloomberg.com",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPalAzWlRlOWZNWE5rTXFHTmp4TmNfdlZOS2VJa0pZck8tZmczNGgtSl81VFB4bFpTcXVHMmwxV0ZuRVhlOGh0MUtrWTIydGo1NlYyVXZsNXdxSXdEbEpuY3ZacjRlV2hUOGJER0ljZzUyMDk1TVFkbXhwZktvQk5aSDBPUEdTRVYyaVR3eVdDaVdWR1RYOXB4UmJfOUdvY0t3bk9rZFlFUjBBTFYtdFVr?oc=5",
+    "date": "2026-11-24T18:01:45.000Z",
     "related": true
    }
   },
@@ -529,10 +529,10 @@
    "unit": "USD/oz",
    "dp": 0,
    "cost": 0,
-   "value": 3555.39990234375,
+   "value": 3552.89990234375,
    "prev": 3651.39990234375,
    "date": "2026-11-24",
-   "change_pct": -2.62912862374729,
+   "change_pct": -2.6975955149907027,
    "series": [
     [
      "2026-10-26",
@@ -620,15 +620,15 @@
     ],
     [
      "2026-11-24",
-     3555.39990234375
+     3552.89990234375
     ]
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/GC%3DF",
    "why": {
-    "en": "Gold ticks lower on hawkish Fed bets, US inflation data in focus",
-    "fr": "L'or baisse en raison des paris bellicistes de la Fed, les données sur l'inflation américaine étant au centre de l'attention",
-    "ar": "الذهب يتراجع بسبب رهانات بنك الاحتياطي الفيدرالي المتشددة، وبيانات التضخم الأمريكية تحت التركيز",
+    "en": "Gold falls 2% on hawkish Fed bets, US inflation data in focus",
+    "fr": "L'or chute de 2% suite aux paris bellicistes de la Fed et aux données sur l'inflation américaine au centre de l'attention",
+    "ar": "الذهب يهبط 2% وسط رهانات بنك الاحتياطي الفيدرالي المتشددة، وبيانات التضخم الأمريكية في التركيز",
     "source": "Reuters",
     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOX2lLRXdXdmpCM0FsdHVpNkdYTWttMDRZd294U3VSZGtqczloSEN5N1VfTzBpbjJLZGYwWm55RDlXSmY0b2tod0tBUl9lbkl4TW13VDBuWEVDYjgxamc4anBNdGhtWTdvUUNiYUp5MDlJVU81Sl9qa283bUIzTUNCU0lZZ1VBdXo2UW5hQmoyT191dFpWODY2aldnOVJmRzVaaV9tZDF2U0hKbmRubUg0TllIendaRzg?oc=5",
     "date": "2026-11-24T00:57:00.000Z",
@@ -642,10 +642,10 @@
    "unit": "USD/oz",
    "dp": 2,
    "cost": 0,
-   "value": 40.650001525878906,
+   "value": 40.654998779296875,
    "prev": 43.14699935913086,
    "date": "2026-11-24",
-   "change_pct": -5.787187684752714,
+   "change_pct": -5.775605759028579,
    "series": [
     [
      "2026-10-26",
@@ -733,15 +733,15 @@
     ],
     [
      "2026-11-24",
-     40.650001525878906
+     40.654998779296875
     ]
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/SI%3DF",
    "why": {
-    "en": "Down 5.8%, moving with Gold (−2.6%): a broad sell-off rather than one-off news.",
-    "fr": "En baisse de 5,8%, comme l'or (−2,6%) : un mouvement d'ensemble plutôt qu'une nouvelle isolée.",
-    "ar": "انخفاض 5.8% بالتوازي مع Gold (−2.6%): حركة عامة وليست خبرًا منفردًا."
+    "en": "Down 5.8%, moving with Gold (−2.7%): a broad sell-off rather than one-off news.",
+    "fr": "En baisse de 5,8%, comme l'or (−2,7%) : un mouvement d'ensemble plutôt qu'une nouvelle isolée.",
+    "ar": "انخفاض 5.8% بالتوازي مع Gold (−2.7%): حركة عامة وليست خبرًا منفردًا."
    }
   }
  ],
@@ -2339,7 +2339,7 @@
    "lebanon": [
     {
      "year": 1989,
-     "text": "رينيه معوض، محامي وسياسي لبناني، رئيس لبنان الثالث عشر (من مواليد 1925)",
+     "text": "رينيه معوض، محامي وسياسي لبناني، رئيس لبنان الثالث عشر (مواليد 1925)",
      "kind": "died",
      "md": "11-22",
      "url": "https://en.wikipedia.org/wiki/Ren%C3%A9_Moawad"
@@ -2645,16 +2645,16 @@
    "id": "n0-2026-11-24",
    "cat": "worldwide",
    "lang": "en",
-   "title": "Bank of Canada Warns of Oil Passthrough, Sticky Inflation",
+   "title": "Bank of Canada Warns of Broadening Inflation; Bonds Decline",
    "source": "Bloomberg.com",
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZjlZeVdJWEZiVnUyT3ItWjQ0MzNiS1JUX3RzT2M4NDN5Y2tjM0VOZGhhLUZsMS1YZG54ci1raFdQVnRucy1VYVdWMVpjVUFEY08ySGNXWU5EV2Q2Z1Q2WkdKTXdmeFU2NWdNbEdaRGVLT1lfbldUWGtXbDl1RVJPZzk4dm1QdjRZeTRuMjR3dDM0QnJ0SVZwR0VVdHdDVHZwaTI0RzZQZkptdnltRWtGS1Ixbw?oc=5",
    "date": "2026-11-24T17:45:29.000Z",
    "score": 5,
    "img": "https://www.bing.com/th?id=ONUT.CCci64xyyHyfsgPmy_lsgA&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
-    "en": "Bank of Canada Warns of Oil Passthrough, Sticky Inflation",
-    "fr": "La Banque du Canada met en garde contre le transfert du pétrole et une inflation persistante",
-    "ar": "بنك كندا يحذر من عبور النفط والتضخم اللزج"
+    "en": "Bank of Canada Warns of Broadening Inflation; Bonds Decline",
+    "fr": "La Banque du Canada met en garde contre une inflation croissante ; Déclin des obligations",
+    "ar": "بنك كندا يحذر من اتساع نطاق التضخم؛ تراجع السندات"
    }
   },
   {
@@ -2677,32 +2677,38 @@
    "id": "n2-2026-11-24",
    "cat": "worldwide",
    "lang": "en",
-   "title": "South Korea Considers Potential $3 Billion Dollar Bond Sale",
-   "source": "Bloomberg.com",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVWt1Q241a09DQXB0MnV4TmhXRjNBTUVtQVNHd29vSUZzd0dMWVl3RV9NQUh1SHE5U081WDRIZzNPOFFabEd6TjliX1ZMS2FKLXAydG5IaTUxaEFuRW1VMGpuNklCQ2doM1FzSm9LQ2FKNzBMUnc3dC1GR2NadmdXeVVSelFKb1M4dm5TZDN5UTl5Qmp1NEtEMTdoVHEzb0lJVkk3Y29fNW91RUhuOHc?oc=5",
-   "date": "2026-11-24T06:20:00.000Z",
-   "score": 4.8,
-   "img": "https://www.bing.com/th?id=ONUT.HM0THnd_KmCYZJ_oC5hc0w&pid=News&w=900&h=1200&c=7&rs=1",
+   "title": "AI boom looms over Warsh's Fed as inflation worries grow",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQLTBqVnllWWdXMThBVk1EbTYyUVgwVW9RYTR6TW1faTkwM2R3eV9yRVQ4VUkteFBMbS1TdDRCb2VzZXNCT0kySThGTUg2d3EyalZpMHZrZEltcko1Ui1lTGdlSS1PZUpiQlo1WGlxbG1hclV2NC1pUU5YU01GbjB2R2dPMFZQUVBoSGRBMXBhNnRDZ1JUdURuamtRWkpTdw?oc=5",
+   "date": "2026-11-24T11:25:29.000Z",
+   "score": 4.9,
+   "desc": "Federal Reserve Chairman Kevin Warsh has called artificial intelligence a \"hinge\" of history critical to US leadership, but the technology has also ...",
+   "img": "https://www.bing.com/th?id=ONUT.t-C8uywRA6mV_y4dmKAcbQ&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
-    "en": "South Korea Considers Potential $3 Billion Dollar Bond Sale",
-    "fr": "La Corée du Sud envisage une vente potentielle d'obligations pour 3 milliards de dollars",
-    "ar": "كوريا الجنوبية تدرس إمكانية بيع سندات بقيمة 3 مليارات دولار"
+    "en": "AI boom looms over Warsh's Fed as inflation worries grow",
+    "fr": "Le boom de l'IA menace la Fed de Warsh alors que les craintes d'inflation grandissent",
+    "ar": "طفرة الذكاء الاصطناعي تلوح في الأفق فوق الاحتياطي الفيدرالي في عهد وارش مع تزايد المخاوف من التضخم"
+   },
+   "d": {
+    "en": "Federal Reserve Chairman Kevin Warsh has called artificial intelligence a \"hinge\" of history critical to US leadership, but the technology has also ...",
+    "fr": "Le président de la Réserve fédérale, Kevin Warsh, a qualifié l'intelligence artificielle de « charnière » de l'histoire essentielle au leadership américain, mais la technologie a également...",
+    "ar": "وصف رئيس الاحتياطي الفيدرالي كيفن وارش الذكاء الاصطناعي بأنه \"مفصل\" تاريخي بالغ الأهمية للقيادة الأمريكية، لكن التكنولوجيا أيضًا..."
    }
   },
   {
    "id": "n3-2026-11-24",
    "cat": "worldwide",
    "lang": "en",
-   "title": "Gold ticks lower on hawkish Fed bets, US inflation data in focus",
+   "title": "Gold falls 2% on hawkish Fed bets, US inflation data in focus",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOX2lLRXdXdmpCM0FsdHVpNkdYTWttMDRZd294U3VSZGtqczloSEN5N1VfTzBpbjJLZGYwWm55RDlXSmY0b2tod0tBUl9lbkl4TW13VDBuWEVDYjgxamc4anBNdGhtWTdvUUNiYUp5MDlJVU81Sl9qa283bUIzTUNCU0lZZ1VBdXo2UW5hQmoyT191dFpWODY2aldnOVJmRzVaaV9tZDF2U0hKbmRubUg0TllIendaRzg?oc=5",
    "date": "2026-11-24T00:57:00.000Z",
    "score": 4.6,
    "img": "https://www.bing.com/th?id=ONUT.5PlJlYahMbgSwS-uAiBWcw&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
-    "en": "Gold ticks lower on hawkish Fed bets, US inflation data in focus",
-    "fr": "L'or baisse en raison des paris bellicistes de la Fed, les données sur l'inflation américaine étant au centre de l'attention",
-    "ar": "الذهب يتراجع بسبب رهانات بنك الاحتياطي الفيدرالي المتشددة، وبيانات التضخم الأمريكية تحت التركيز"
+    "en": "Gold falls 2% on hawkish Fed bets, US inflation data in focus",
+    "fr": "L'or chute de 2% suite aux paris bellicistes de la Fed et aux données sur l'inflation américaine au centre de l'attention",
+    "ar": "الذهب يهبط 2% وسط رهانات بنك الاحتياطي الفيدرالي المتشددة، وبيانات التضخم الأمريكية في التركيز"
    }
   },
   {
@@ -2761,15 +2767,22 @@
    "id": "n7-2026-11-24",
    "cat": "worldwide",
    "lang": "en",
-   "title": "Europe's growth to stabilise in 2027 amid inflation: S&P Global",
-   "source": "Fibre2Fashion",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPVHF4NmhNSkZJR2dLNnpGaFhkS0VRSVZUbGE0b3pMTGxRSGlFUXhjcmttQXp2QUlIM2g5OGdSY3poSjh5QXZZbTVEU2dVUjNtMk9jRmVIZWVQMTRjRW1XLV9ybW4tcUkyczhBcVZWbU0yVTF3N2VuZ1BEc3RpZTN2U0oyU1BqT2F2TkdDTVlUOU1IdThxUmxUa1F6ZzcyQUlqVklZd2Q3TjVETWpjWk02TXplYVNuYXZ4TXNleEtZcGxVb2xOZl9hSGh1RV9oWGVMZVV3blQ0MVdUU09SZDVF?oc=5",
-   "date": "2026-11-24T11:51:27.000Z",
-   "score": 4,
+   "title": "Pound claws above 19-month low, as dollar pauses after Nvidia-driven rally",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOckQ1czl5VWFleEFFSV9DVFV3NVVMWkN3eTk1MjJ2OVBtSzBPZVVQMGdtRDdUcHlMbWQzSEFLLVJPcHJTcmYwRXJfb1BRME1qT2U2ck16UEZ4ZmJlSElTTnZxMWc2cWRZSUtLcG90WFBlQVFBUkVYRnRPczd6dVVuaGlobzd3dGhvX1pjUHJLa0pPblI1Q3pFaEtyeDZzMXB5aVY1MW5aQjNiQUREOHpLOGhienhDdnhwUl9nSTRR?oc=5",
+   "date": "2026-11-24T12:09:43.000Z",
+   "score": 4.2,
+   "desc": "The pound edged up on Tuesday, set for only its third daily gain in the last two weeks, as the dollar paused following a rally driven by revived investor ...",
+   "img": "https://www.bing.com/th?id=ONUT._h8-U4UcbFgj6eSvI5tS8w&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
-    "en": "Europe's growth to stabilise in 2027 amid inflation: S&P Global",
-    "fr": "La croissance européenne devrait se stabiliser en 2027 dans un contexte d'inflation, selon S&P Global",
-    "ar": "نمو أوروبا يستقر في عام 2027 وسط التضخم: S&P Global"
+    "en": "Pound claws above 19-month low, as dollar pauses after Nvidia-driven rally",
+    "fr": "La livre sterling grimpe au-dessus du plus bas de 19 mois, alors que le dollar fait une pause après le rallye entraîné par Nvidia",
+    "ar": "مخالب الجنيه الاسترليني فوق أدنى مستوى له في 19 شهرًا، مع توقف الدولار مؤقتًا بعد الارتفاع الذي يقوده نفيديا"
+   },
+   "d": {
+    "en": "The pound edged up on Tuesday, set for only its third daily gain in the last two weeks, as the dollar paused following a rally driven by revived investor ...",
+    "fr": "La livre sterling a légèrement augmenté mardi, ne réalisant que son troisième gain quotidien au cours des deux dernières semaines, alors que le dollar a fait une pause suite à un rallye entraîné par le regain d'intérêt des investisseurs...",
+    "ar": "ارتفع الجنيه الاسترليني، اليوم الثلاثاء، متجها لتحقيق ثالث مكسب يومي له في الأسبوعين الماضيين، مع توقف الدولار بعد صعود مدفوع بتحفيز المستثمرين."
    }
   },
   {
@@ -2809,7 +2822,50 @@
    }
   },
   {
-   "id": "n10-2026-11-24",
+   "id": "n10-2026-11-23",
+   "cat": "africa",
+   "lang": "en",
+   "title": "GCB Bank Reinforces Industry Leadership with Top Banking Ranking in Ghana Club 100",
+   "source": "Business & Financial Times",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQ1BBbUdWUGl2Mkt2S3YxZTUyZ1hUcU4yQ2NMbUZmbUYtbE0za18wOXFtNl9sQkhCd29LX2I2U1I0T2laWFJ1aEh4VDJLc09fdE1pUHNycFc4aGNtcEVWTVdmY210bUFaVUJSQktNN0o0eHU2WGZIbHZCOXBSbzVNZDlnYWN5dVJtam5BNk4xTWgxMy00cHFqSXJ5RE0yVXpVMW9fcExiaGt3Rl91QTdZWU1Cc3F3dw?oc=5",
+   "date": "2026-11-23T15:59:24.000Z",
+   "score": 3.2,
+   "desc": "Please keep comments respectful. Use plain English for our global readership and avoid using phrasing that could be misinterpreted as offensive. By commenting, you agree to abide by our community ...",
+   "t": {
+    "en": "GCB Bank Reinforces Industry Leadership with Top Banking Ranking in Ghana Club 100",
+    "fr": "GCB Bank renforce son leadership dans le secteur en se classant au premier rang du Ghana Club 100",
+    "ar": "بنك GCB يعزز ريادة الصناعة بحصوله على أعلى تصنيف مصرفي في نادي غانا 100"
+   },
+   "d": {
+    "en": "Please keep comments respectful. Use plain English for our global readership and avoid using phrasing that could be misinterpreted as offensive. By commenting, you agree to abide by our community ...",
+    "fr": "Merci de garder les commentaires respectueux. Utilisez un anglais simple pour notre lectorat mondial et évitez d'utiliser des formulations qui pourraient être interprétées à tort comme offensantes. En commentant, vous acceptez de respecter notre communauté...",
+    "ar": "يرجى الحفاظ على تعليقات محترمة. استخدم اللغة الإنجليزية البسيطة لقرائنا العالميين وتجنب استخدام العبارات التي يمكن تفسيرها بشكل خاطئ على أنها مسيئة. بتعليقك فإنك توافق على التزام مجتمعنا..."
+   }
+  },
+  {
+   "id": "n11-2026-11-23",
+   "cat": "africa",
+   "lang": "en",
+   "title": "Senegal’s Debt: 31.25 million dollars in interest paid on the 2033 bonds",
+   "source": "beninwebtv.com",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQa0M2alRzSUhKSVFCOW9mRlR1Q0pTSDQ3TkhvTThWSTFHTktTVF9tMmJpQndyT2xSbUJwLXM3NzZ4cEh1dU9OUmJ0ZFZFNXZaZnBqT3AxVjJod3FhTlR0UnVnVkNuSXpfbHAxYzVqcjZ6a1FORlUzRTI2Y1dsLS1HbERCUVFQNlB1MmVYdGhuaC1DX1ZCRXZ0eGNyaUtiQQ?oc=5",
+   "date": "2026-11-23T19:55:22.000Z",
+   "score": 2.9,
+   "desc": "The Treasury has honored a new payment in foreign currency while the financing agreement of 2.2 billion dollars with the IMF awaits its validation.",
+   "img": "https://beninwebtv.com/en/wp-content/uploads/sites/3/2026/10/fmi-siege-washington-marek-slusarczyk-archive-2013-en-ce971ec0fdda.webp",
+   "t": {
+    "en": "Senegal’s Debt: 31.25 million dollars in interest paid on the 2033 bonds",
+    "fr": "Dette du Sénégal : 31,25 millions de dollars d’intérêts payés sur les obligations 2033",
+    "ar": "ديون السنغال: 31.25 مليون دولار فوائد مدفوعة على سندات 2033"
+   },
+   "d": {
+    "en": "The Treasury has honored a new payment in foreign currency while the financing agreement of 2.2 billion dollars with the IMF awaits its validation.",
+    "fr": "Le Trésor a honoré un nouveau paiement en devises tandis que l'accord de financement de 2,2 milliards de dollars avec le FMI attend sa validation.",
+    "ar": "وقامت وزارة الخزانة بدفع دفعة جديدة بالعملة الأجنبية بينما تنتظر اتفاقية التمويل البالغة 2.2 مليار دولار مع صندوق النقد الدولي المصادقة عليها."
+   }
+  },
+  {
+   "id": "n12-2026-11-24",
    "cat": "africa",
    "lang": "en",
    "title": "Naira hits eight-month low as dollar transactions surge despite CBN support",
@@ -2824,7 +2880,29 @@
    }
   },
   {
-   "id": "n11-2026-11-23",
+   "id": "n13-2026-11-24",
+   "cat": "africa",
+   "lang": "en",
+   "title": "From oil to diversification: Opportunities shaping Nigeria’s green transition",
+   "source": "Business News Nigeria",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPeUljbXlOajE1OU5Kenh1aF9NUS1jNnFwVFFtbmtzYzVLLWxRUFJkQkRBZlN1TEYzUWwyal96MU52Ympnbk9kNHpBbWVnX0c3dEJnTUp5SHh6VVFVVGRhTGxrcjJscDI2dWVBdEtzSkdKLUxNZWNnUzZLenNYTFE1UTZRdjhXUk56bTFKZEZZUEYyczZVdlBDbndQWTFlaEVBM1NuT0pWUUFzVm1yRUtaVDBsTUVzNU1KY2xVVw?oc=5",
+   "date": "2026-11-24T12:47:30.000Z",
+   "score": 2.7,
+   "desc": "Oil has generated export earnings and public revenue for decades, contributing to 80% of foreign exchange and about 60% of revenue; a heavy dependence ...",
+   "img": "https://cdn.businessday.ng/wp-content/uploads/2026/11/BusinessDayINF__oil.png",
+   "t": {
+    "en": "From oil to diversification: Opportunities shaping Nigeria’s green transition",
+    "fr": "Du pétrole à la diversification : des opportunités qui façonnent la transition verte du Nigeria",
+    "ar": "من النفط إلى التنويع: الفرص التي تشكل التحول الأخضر في نيجيريا"
+   },
+   "d": {
+    "en": "Oil has generated export earnings and public revenue for decades, contributing to 80% of foreign exchange and about 60% of revenue; a heavy dependence ...",
+    "fr": "Le pétrole génère des recettes d'exportation et des recettes publiques depuis des décennies, contribuant à 80 % des devises étrangères et à environ 60 % des revenus ; une forte dépendance...",
+    "ar": "لقد نجح النفط في توليد عائدات التصدير والإيرادات العامة لعقود من الزمن، حيث ساهم بنحو 80% من النقد الأجنبي ونحو 60% من الإيرادات؛ تبعية ثقيلة.."
+   }
+  },
+  {
+   "id": "n14-2026-11-23",
    "cat": "africa",
    "lang": "fr",
    "title": "Côte d'Ivoire: visite du président allemand à Abidjan, une première depuis 40 ans",
@@ -2840,7 +2918,7 @@
    }
   },
   {
-   "id": "n12-2026-11-24",
+   "id": "n15-2026-11-24",
    "cat": "congo",
    "lang": "fr",
    "title": "IA : le Tchad veut renforcer ses capacités nationales avec un laboratoire soutenu par l’UIT",
@@ -2861,76 +2939,13 @@
    }
   },
   {
-   "id": "n13-2026-11-24",
-   "cat": "africa",
-   "lang": "en",
-   "title": "Mali: The women powering the economy",
-   "source": "The Africa Report",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTTlwcktwVkl2YjFXQXNHODh5MGJHX18wN0VZMTFUSTJmYVJpM3NseUljYTJSTl94Yjk0U2kxclFXNE9nVjNSZWFmZUNjcTRfa1lvT0Y5MGh4aUVJTjVlalVXZERWTmV0XzR3ME9mUU1ETDlLVGRsWmMwenpJOVVDaw?oc=5",
-   "date": "2026-11-24T14:03:16.000Z",
-   "score": 2.5,
-   "img": "https://www.bing.com/th?id=ONUT.6jdyrdM4zDZcWPF5e0TIng&pid=News&w=900&h=1200&c=7&rs=1",
-   "t": {
-    "en": "Mali: The women powering the economy",
-    "fr": "Mali : Les femmes, moteur de l’économie",
-    "ar": "مالي: النساء يحركن الاقتصاد"
-   },
-   "d": {
-    "en": "Banking, mining, agribusiness, mobile money: in Mali, women are taking charge of companies and strategic sectors.",
-    "fr": "Banque, mines, agroalimentaire, mobile money : au Mali, les femmes prennent la tête des entreprises et des secteurs stratégiques.",
-    "ar": "الخدمات المصرفية، والتعدين، والأعمال التجارية الزراعية، والتحويلات المالية عبر الهاتف المحمول: في مالي، تتولى النساء مسؤولية الشركات والقطاعات الاستراتيجية."
-   }
-  },
-  {
-   "id": "n14-2026-11-24",
-   "cat": "africa",
-   "lang": "fr",
-   "title": "Nicolas Tiangaye, Moïse et la tortue",
-   "source": "Jeune Afrique",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOR1FRWFZmMHBldWw1Yms0VVJJVERZLTFGREExandWRFZHUGltakUzeEdxZjZKdTRvaElNaHZkTGZ3c1F6cVRjbzVtTjVxaXBMOTF5d1lUejBzV2RNU01KaVltVGM0aWtMN3ZyeWFVRHNLTTY3TUktNXAzU0pCb0w5S19xYW1PNXEz?oc=5",
-   "date": "2026-11-24T13:33:37.000Z",
-   "score": 2.5,
-   "img": "https://www.bing.com/th?id=ONUT.qFV7BxgnYy-RuaQTTLPzww&pid=News&w=900&h=1200&c=7&rs=1",
-   "t": {
-    "fr": "Nicolas Tiangaye, Moïse et la tortue",
-    "en": "Nicolas Tiangaye, Moses and the turtle",
-    "ar": "نيكولاس تيانجاي، موسى والسلحفاة"
-   },
-   "d": {
-    "fr": "Le 27 novembre auront lieu à Bangui les obsèques de l’avocat et ex-Premier ministre Nicolas Tiangaye, figure majeure du combat démocratique en République centrafricaine des vingt-cinq dernières années ...",
-    "en": "On November 27, the funeral of lawyer and former Prime Minister Nicolas Tiangaye, a major figure in the democratic struggle in the Central African Republic over the last twenty-five years, will take place in Bangui...",
-    "ar": "ستقام في بانغي في 27 تشرين الثاني/نوفمبر، جنازة المحامي ورئيس الوزراء السابق نيكولا تيانغاي، وهو شخصية بارزة في النضال الديمقراطي في جمهورية أفريقيا الوسطى على مدى السنوات الخمس والعشرين الماضية."
-   }
-  },
-  {
-   "id": "n15-2026-11-24",
-   "cat": "congo",
-   "lang": "fr",
-   "title": "Visa renforce son engagement au Cameroun avec l’ouverture d’un bureau de représentation à Douala",
-   "source": "AGENCE ECOFIN",
-   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOYVg1dzlDcnR0UkNFa2JaSjl1anA2M3JzTDA0YXJfUlk5U2ZoTTJ3clVOWHBPNXM0N01oV0ZaMFRfcVhOV1o0OExZZ0NEZWJKZV91RDN3QU5tbFJPRlh2SjVrZHpJdXo2a3NFdlhqMUJrdGR1T0wzbUtUNE9ONUFraVY5d2JoMG5kNTV1aFZfRkN1WWVOamtmRHIxbHlnYW1SZGJ1bHNEeGVpbkdGa0tsWFBOZ01KN1pCTXlHMW5CejAzVGdjTVRBZ01zRkVKNmVPa2hmcE9wUGZUa2tRbHhYd2NIZTVIZklrNGpzRjYxRQ?oc=5",
-   "date": "2026-11-24T12:39:00.000Z",
-   "score": 2.5,
-   "img": "https://www.bing.com/th?id=ONUT._Dmzfsl5a4Jy-2AWLcEg0g&pid=News&w=900&h=1200&c=7&rs=1",
-   "t": {
-    "fr": "Visa renforce son engagement au Cameroun avec l’ouverture d’un bureau de représentation à Douala",
-    "en": "Visa strengthens its commitment to Cameroon with the opening of a representative office in Douala",
-    "ar": "Visa تعزز التزامها تجاه الكاميرون من خلال افتتاح مكتب تمثيلي لها في دوالا"
-   },
-   "d": {
-    "fr": "Visa (NYSE : V), leader mondial des paiements numériques, a annoncé l’ouverture de son bureau de représentation à Douala, à l’occasion de ...",
-    "en": "Visa (NYSE: V), the world leader in digital payments, announced the opening of its representative office in Douala, on the occasion of...",
-    "ar": "أعلنت شركة Visa (رمزها في بورصة نيويورك: V)، الشركة الرائدة عالميًا في مجال المدفوعات الرقمية، عن افتتاح مكتبها التمثيلي في دوالا، بمناسبة..."
-   }
-  },
-  {
    "id": "n16-2026-11-24",
    "cat": "congo",
    "lang": "fr",
    "title": "CEMAC : les États face à 4 404 milliards FCFA d’échéances de dette d’ici octobre 2027",
    "source": "EcoMatin",
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWHdkR3lTYWlJS1NibHkwcG1UUkpOVFVFeDR4YnhJaHZfT0EyUkc4NGJGdzJ3ZE05R2tYZ0VUTl9na1VOX1dJaWtuenNtdlQya0lraW9WU013RnJqTlRlRV9IejdEQTBkY2gwZjVJazc1U0d2NFVtTTY0b1RyS1hFY2dic0xwejY4VzY2a3dudDk4S0VQb0tGZjgxSFJKbnN4amlSNg?oc=5",
-   "date": "2026-11-24T14:49:22.000Z",
+   "date": "2026-11-24T05:49:22.000Z",
    "score": 5,
    "img": "https://ecomatin.net/_next/image?url=https%3A%2F%2Fprod-backsite.ecomatin.be%2Fwp-content%2Fuploads%2F2025%2F12%2FSiege-de-la-BEAC-a-Yaounde.jpg&w=1200&q=75",
    "t": {
@@ -2969,6 +2984,28 @@
    "id": "n18-2026-11-24",
    "cat": "congo",
    "lang": "fr",
+   "title": "La rumba congolaise : cinq ans de consécration mondiale célébrés en grande pompe à paris",
+   "source": "Les Echos du Congo Brazzaville",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcHFYWFhpdGVqUF9WMWp0cHRRSkVvd2E4dGUyME9UcFRna1lVMTJ2NER1RVF4TEdBV0JpQVdmT3dqVTZxYlE0RTZackl6LWVVTUZFRFAxVHdjUDRqYXZySXgxaDcyaHJWRkZPZFBYbjk2VC1IX1g2LTlNRzNzVFRsSmJHTjhFM2tCM3BHLVQyRFl6dzFGQXM0Q0hCVnIyUXJWOHp3OWZwX2d1SkNERExYMHI5NGFuTXNZcm1lYjJpbS13STcyUUgtYktjek91Zw?oc=5",
+   "date": "2026-11-24T10:18:54.000Z",
+   "score": 3.5,
+   "desc": "La rumba congolaise, symbole d’un patrimoine partagé entre Brazzaville et Kinshasa, était à l’honneur, le 23 novembre, au siège de l’Unesco à Paris. Les deux Congo y ont lancé les festivités marquant ...",
+   "img": "https://lesechos-congobrazza.com/images/2026B/CACIJI.jpg",
+   "t": {
+    "fr": "La rumba congolaise : cinq ans de consécration mondiale célébrés en grande pompe à paris",
+    "en": "The Congolese rumba: five years of global recognition celebrated with great fanfare in Paris",
+    "ar": "الرومبا الكونغولية: خمس سنوات من الاعتراف العالمي تم الاحتفال بها مع ضجة كبيرة في باريس"
+   },
+   "d": {
+    "fr": "La rumba congolaise, symbole d’un patrimoine partagé entre Brazzaville et Kinshasa, était à l’honneur, le 23 novembre, au siège de l’Unesco à Paris. Les deux Congo y ont lancé les festivités marquant ...",
+    "en": "The Congolese rumba, symbol of a heritage shared between Brazzaville and Kinshasa, was in the spotlight on November 23 at UNESCO headquarters in Paris. The two Congos launched the festivities marking...",
+    "ar": "كانت رقصة الرومبا الكونغولية، رمز التراث المشترك بين برازافيل وكينشاسا، في دائرة الضوء يوم 23 تشرين الثاني/نوفمبر في مقر اليونسكو في باريس. بدأت الكونغو والكونغو الاحتفالات بمناسبة..."
+   }
+  },
+  {
+   "id": "n19-2026-11-24",
+   "cat": "congo",
+   "lang": "fr",
    "title": "OMS-Afrique : Brazzaville garde son siège, les rumeurs peuvent faire leurs valises",
    "source": "Les Echos du Congo Brazzaville",
    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSEFzY3VrSEM2OEJBRVYyNDRvWTV0NXlBSlcwUWxNeUlPSmlpZ2ttTVVKaHFnNGl6YXpLbHRWcWVMaFZ0dFIwQ2xUelh0c2pxRHhBTlFaQUdSMVBOYkRhTEJodjFXbXVVTTNNanFmUTVjMktQTzRnU1p6OXFGZDhvcnZTQUJOMVdjQ2RkOENhOXV6cUlsVExnNkw0VHhNOWE1eS15TGNYbnE0dEZoSUhlU2hnS2s5dmFEdlR4RVpFTVRSbm9f?oc=5",
@@ -2987,7 +3024,7 @@
    }
   },
   {
-   "id": "n19-2026-11-24",
+   "id": "n20-2026-11-24",
    "cat": "africa",
    "lang": "fr",
    "title": "Bank of Africa : le bénéfice grimpe de 13 %, soutenu par ses activités subsahariennes",
@@ -3008,7 +3045,7 @@
    }
   },
   {
-   "id": "n20-2026-11-24",
+   "id": "n21-2026-11-24",
    "cat": "congo",
    "lang": "fr",
    "title": "Tourisme : l’INS propose un suivi trimestriel des prix et de la fréquentation au Cameroun",
@@ -3024,7 +3061,7 @@
    }
   },
   {
-   "id": "n21-2026-11-23",
+   "id": "n22-2026-11-23",
    "cat": "africa",
    "lang": "fr",
    "title": "BRVM : Coris Holding ramènera sa participation à 64,6 % après l’OPV de Coris Bank CI",
@@ -3045,28 +3082,23 @@
    }
   },
   {
-   "id": "n22-2026-11-23",
-   "cat": "congo",
-   "lang": "fr",
-   "title": "Gabon : Fitch redoute un mur de remboursements de dette en 2027, malgré la réduction du déficit",
-   "source": "AGENCE ECOFIN",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPOS03eDB4TVZHQTNpMnBLTU51M2czamc0MlRrVE54dE5vYndmUzNPSVozRTM3V0JOWlptVWxJQ3NoMmtWWEtDNDhVenBlS2hkWDM2NjdnbG9zU3hXWHVPaDFLdWJabG9vcGZ4V25SZmlKMkRVNVd3LS1hTnVHUnBhYzBMX3pzZHI1MFoxaFNTQkx2azJ2aWhieTNUWFdVeElOMFlkMDVSa2l5SHlCcFJiY2tvNDBoVTZYaVVQSTVYd0s4ZGlHcnJ6VDQ5cmVGOGJwb1BtTlp5U3pOM0V5a0g2ZGZVeVJLclk?oc=5",
-   "date": "2026-11-23T09:50:00.000Z",
-   "score": 3,
-   "img": "https://www.bing.com/th?id=ONUT.7PIj4vkxM-n_a_DC7QNIsQ&pid=News&w=900&h=1200&c=7&rs=1",
+   "id": "n23-2026-11-24",
+   "cat": "markets",
+   "lang": "en",
+   "title": "Iraq Rejects OPEC+ Assessment of Its Oil Production Capacity",
+   "source": "Bloomberg.com",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPalAzWlRlOWZNWE5rTXFHTmp4TmNfdlZOS2VJa0pZck8tZmczNGgtSl81VFB4bFpTcXVHMmwxV0ZuRVhlOGh0MUtrWTIydGo1NlYyVXZsNXdxSXdEbEpuY3ZacjRlV2hUOGJER0ljZzUyMDk1TVFkbXhwZktvQk5aSDBPUEdTRVYyaVR3eVdDaVdWR1RYOXB4UmJfOUdvY0t3bk9rZFlFUjBBTFYtdFVr?oc=5",
+   "date": "2026-11-24T18:01:45.000Z",
+   "score": 4.9,
+   "img": "https://www.bing.com/th?id=ONUT.Zz19mNLgLhYS1zbwls7mCQ&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
-    "fr": "Gabon : Fitch redoute un mur de remboursements de dette en 2027, malgré la réduction du déficit",
-    "en": "Gabon: Fitch fears a wall of debt repayments in 2027, despite the reduction in the deficit",
-    "ar": "الجابون: تخشى فيتش من جدار سداد الديون في 2027 رغم انخفاض العجز"
-   },
-   "d": {
-    "fr": "Le Gabon devrait sensiblement réduire son déficit budgétaire d'ici 2027. Mais cette amélioration ne suffit pas à rassurer Fitch Ratings, qui ...",
-    "en": "Gabon should significantly reduce its budget deficit by 2027. But this improvement is not enough to reassure Fitch Ratings, which...",
-    "ar": "ينبغي للجابون أن تعمل على خفض عجز ميزانيتها بشكل كبير بحلول عام 2027. ولكن هذا التحسن لا يكفي لطمأنة وكالة فيتش للتصنيفات الائتمانية، التي..."
+    "en": "Iraq Rejects OPEC+ Assessment of Its Oil Production Capacity",
+    "fr": "L’Irak rejette l’évaluation OPEP+ de sa capacité de production pétrolière",
+    "ar": "العراق يرفض تقييم أوبك+ لقدرته على إنتاج النفط"
    }
   },
   {
-   "id": "n23-2026-11-24",
+   "id": "n24-2026-11-24",
    "cat": "markets",
    "lang": "en",
    "title": "Brazil's tax revenue extends record run in October, buoyed by higher oil prices",
@@ -3087,7 +3119,7 @@
    }
   },
   {
-   "id": "n24-2026-11-24",
+   "id": "n25-2026-11-24",
    "cat": "markets",
    "lang": "en",
    "title": "Oil Prices Rebound as Shipping Risks Persist",
@@ -3103,7 +3135,7 @@
    }
   },
   {
-   "id": "n25-2026-11-24",
+   "id": "n26-2026-11-24",
    "cat": "markets",
    "lang": "en",
    "title": "Oil prices near three-month low",
@@ -3119,7 +3151,7 @@
    }
   },
   {
-   "id": "n26-2026-11-23",
+   "id": "n27-2026-11-23",
    "cat": "markets",
    "lang": "en",
    "title": "Oil Prices Fall as Traders Weigh Supply Surplus, Gulf Attacks",
@@ -3135,58 +3167,34 @@
    }
   },
   {
-   "id": "n27-2026-11-24",
-   "cat": "markets",
-   "lang": "en",
-   "title": "Oil rebounds from three-month lows on Hormuz threats",
-   "source": "CNBC",
-   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9RbFJmLVhQblBkeXRGZWhFNUp1QnktVTktWUREMTVVdGltRUtadnZSWHc4bUNzQ1pmM0hUWTMyZjA3elJoUHJhdlpWd2IyZjhfRmJ0QVh2R3NGT2lLMmlrYnlRMVJiYnEyWmIxa09uQkwwUdIBd0FVX3lxTE04V3NOeElMTnNta3I4Y0preS1IQ2FOeUZfdFNnZngwYTJaWnpOSXBKUUU3bl9aWkNKWi1iZFZRQzlCODI1Tm5CYl9BNHhlVC1pbExhb0J2UnVRTHVDVWRsQWlPZGVFTEp6QU9lUXQxWl9fWW1oT1Yw?oc=5",
-   "date": "2026-11-24T04:51:00.000Z",
-   "score": 4.1,
-   "img": "https://image.cnbcfm.com/api/v1/image/108555737-1795112898196-108555737-1795112774503-gettyimages-2305353820-AA_19112026_3054071.jpg?v=1795112907&w=1920&h=1080",
-   "t": {
-    "en": "Oil rebounds from three-month lows on Hormuz threats",
-    "fr": "Le pétrole rebondit après son plus bas de trois mois suite aux menaces d'Ormuz",
-    "ar": "النفط ينتعش من أدنى مستوياته في ثلاثة أشهر بسبب تهديدات هرمز"
-   }
-  },
-  {
    "id": "n28-2026-11-24",
    "cat": "markets",
    "lang": "en",
-   "title": "January WTI Crude Oil Contract Closes Up $1.88, or 2.4%; Settles at $82.05 per Barrel. January Brent Oil Was Last Seen Up $1.71, or 1.9%, to $91.08",
-   "source": "marketscreener.com",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPNmJNYWc2NzgwaTk3NEpJVDdSRlRUdmRwNGQyOVN3UVBtSVVFZnh2dnpRalhBdDJzUTlVZF9qaVNYQ3hHVzYwSFpTcW54VGZHMWVNYlJ1eUxCNG1aRlJQNExfQXUxRGFKRUpveHJnLWdrRDBCTGNmT1NzeTRfSE0zcGlMLXBEdGxWT2ZOMFBjaDN4N2hlZXpSN2QwTFR6ZjdMVHZXcVVReXdWYmhxem8zcE9IQ2tEVDVXRTBtejQzTjdHS05EYlNRT3VtMThjUlQwZUczN29YRnZLdUZvcXFOQw?oc=5",
-   "date": "2026-11-24T19:38:25.000Z",
+   "title": "Oil Prices Reportedly Rise Over 2% As Brent Settles At $91.40",
+   "source": "Forbes Middle East",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVFNzZjBvRVE2cHJDcUVwX3ktc1RWeklzbnQ4TDM3dUFadTc0R1FGS1BwSG4tTFMzNDRaRlk4X2RaaktYMFNjOG1rX3hEaEgxOFY5NFJxVWl5ZTYtaU1uSzNoVUhjQkFKajRxSlZORmN3VkJxNi10d2pMd1l2QjFnR2V4dDNxeGtqU2VuR0pfYlhVXzhwWFU4XzJXWlJEWHRFMnc?oc=5",
+   "date": "2026-11-24T20:46:50.000Z",
    "score": 4,
-   "desc": null,
-   "img": "https://www.bing.com/th?id=ONUT.Nsxudf-nGp4uqSzNI-dIZA&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
-    "en": "January WTI Crude Oil Contract Closes Up $1.88, or 2.4%; Settles at $82.05 per Barrel. January Brent Oil Was Last Seen Up $1.71, or 1.9%, to $91.08",
-    "fr": "Le contrat de pétrole brut WTI de janvier se clôture en hausse de 1,88 $, ou 2,4 % ; S'établit à 82,05 $ le baril. Le pétrole Brent de janvier a été vu pour la dernière fois en hausse de 1,71 $, ou 1,9 %, à 91,08 $",
-    "ar": "أغلقت عقود خام غرب تكساس الوسيط لشهر يناير على ارتفاع بمقدار 1.88 دولار، أو 2.4%؛ يستقر عند 82.05 دولارًا للبرميل. وارتفع خام برنت لشهر يناير/كانون الثاني آخر مرة 1.71 دولار، أو 1.9%، إلى 91.08 دولار."
+    "en": "Oil Prices Reportedly Rise Over 2% As Brent Settles At $91.40",
+    "fr": "Les prix du pétrole augmenteraient de plus de 2 % alors que le Brent se stabilise à 91,40 $",
+    "ar": "يقال إن أسعار النفط ترتفع بأكثر من 2٪ مع استقرار خام برنت عند 91.40 دولارًا"
    }
   },
   {
    "id": "n29-2026-11-24",
    "cat": "markets",
    "lang": "en",
-   "title": "Sugar Prices Supported by Dollar Weakness and Strength in Crude Oil",
-   "source": "Barchart.com",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPX1ZDb0VBOEthanJxXzVubnl0SGJRaHQ0N0hTd3BMdFgwTzJmVFl4TVRBNFRzcGxkams1Y3FOdVYxRk1DV0JsLTY5OW1Qd2N5a1UtZVdBd3FFb3FPdGRzWVFJdWdXRDg2SmdpdHlTRWY4bWNoUjg2bUVDdmhtelR4OHRLeWtEXzRrMHRhNEtseUVpd3U1Zm40dVVnRlVNNnhDd3BhUV9LMlAyaEdvbUQ2eQ?oc=5",
-   "date": "2026-11-24T19:24:19.000Z",
+   "title": "Macklem says inflation forecast is lower, but oil price pressures are lingering",
+   "source": "Yahoo! Finance Canada",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNS3hTNGhPRU9tclZMQzk1Nl83bC1PRUM4TXhpWWhNRmtGcmY3X0tDb1NndDNYS1prbFR1T09mSEhjMmZrMUdORUFZNnpVNk1nQmZudy1VVFc2cmdBdFdHMjNvX3FxNDlXbTRib245cUVGNUoyM29lNi1yVkRleDNCal9jOEJuWWdVRDU3VGp1QQ?oc=5",
+   "date": "2026-11-24T20:40:29.000Z",
    "score": 4,
-   "desc": "March NY world sugar #11 (SBH27) is up +0.06 (+0.34%) today, and March London ICE white sugar #5 (SWH27) is up +0.90 (+0.18%). Sugar prices are climbing today as a weaker dollar ($DXY) has spurred ...",
-   "img": "https://www.bing.com/th?id=ONUT.LaEyJIrdpkCiCocURG0RNQ&pid=News&w=900&h=1200&c=7&rs=1",
+   "img": "https://www.bing.com/th?id=ONUT.-tXpg3cYuSHbOiYgoHLn7w&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
-    "en": "Sugar Prices Supported by Dollar Weakness and Strength in Crude Oil",
-    "fr": "Les prix du sucre soutenus par la faiblesse du dollar et la force du pétrole brut",
-    "ar": "أسعار السكر مدعومة بضعف الدولار وقوة النفط الخام"
-   },
-   "d": {
-    "en": "March NY world sugar #11 (SBH27) is up +0.06 (+0.34%) today, and March London ICE white sugar #5 (SWH27) is up +0.90 (+0.18%). Sugar prices are climbing today as a weaker dollar ($DXY) has spurred ...",
-    "fr": "Le sucre mondial n°11 de mars NY (SBH27) est en hausse de +0,06 (+0,34 %) aujourd'hui, et le sucre blanc ICE n°5 de mars Londres (SWH27) est en hausse de +0,90 (+0,18 %). Les prix du sucre grimpent aujourd’hui alors que la faiblesse du dollar ($DXY) a stimulé…",
-    "ar": "ارتفع السكر العالمي لشهر مارس في نيويورك رقم 11 (SBH27) +0.06 (+0.34٪) اليوم، وارتفع السكر الأبيض في لندن ICE رقم 5 (SWH27) لشهر مارس +0.90 (+0.18٪). ارتفعت أسعار السكر اليوم حيث أدى ضعف الدولار (DXY) إلى تحفيز ..."
+    "en": "Macklem says inflation forecast is lower, but oil price pressures are lingering",
+    "fr": "Macklem affirme que les prévisions d'inflation sont plus faibles, mais les pressions sur les prix du pétrole persistent",
+    "ar": "ويقول ماكليم إن توقعات التضخم أقل، لكن ضغوط أسعار النفط لا تزال قائمة"
    }
   },
   {
@@ -3197,7 +3205,7 @@
    "source": "WSJ",
    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdTdfR2pRTktJSFc1dmdlcnE2QTR2N1NYZWN4UW14cG1aNV9YSUFIM3Y1VHN1NXJhakFfb3M1QjVocC1yWjk4Yi10ZUFrMHZnSnVWRFQwaGx3TmhRR2Eydm1tSk80c3lxWTgtMFphb1FtYmVzQm1Bb28yS0Zxd1NjVTV5SzRhREJHdGFCaXY2SkpsTko1RVZKd1RwNA?oc=5",
    "date": "2026-11-23T17:27:00.000Z",
-   "score": 1.9,
+   "score": 1.8,
    "img": "https://www.bing.com/th?id=ONUT.yZTmAr0tzD8KBbQtxd663A&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
     "en": "EU Probes Coca-Cola Bottler, Citing Antitrust Concerns",
@@ -3213,7 +3221,7 @@
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPaTNjdlBtR2k2WGZjVFhHN1Q2dkcySlNlMlhLbTBUcHlveFpETHBnazN1Vy1fU2hvTjAzUWpTZVQ5UG9ERUNpbEZ5MG5fTkNVbF95eFNkYkhSWTNkYkJ3Mk90dlZLQlNOLUx1T081aWF3dEU3Tkd2R1Bwa3BYWFh1ano4eUY3dGdZS1FOR2lnYnFxWU5DNjNjbUw0QnZJMEpaVUJTQ1Nyb3E5WUFpTzRVZVMyVQ?oc=5",
    "date": "2026-11-23T16:51:37.000Z",
-   "score": 1.9,
+   "score": 1.8,
    "img": "https://www.bing.com/th?id=ONUT.41tb__n9RAnm182Wm-kQig&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
     "en": "EU opens antitrust investigation into Coca-Cola bottler CCEP",
@@ -3261,21 +3269,15 @@
    "id": "n34-2026-11-24",
    "cat": "bev",
    "lang": "en",
-   "title": "Coca-Cola HBC lists on JSE with Standard Bank’s backing",
-   "source": "Moneyweb",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVGktRlhpT1Y4SDRUbm5DdDFfZUNDWHdkYkREVFlRMFJOYkZnalYyaGFLVkJHczBSR0JMTll2eVR2aUFQRGdReXBPeF95SHFUYV9pTDFENlJ1alRIZ08zeVY4dFJ5VzdNXy1lRWFrQ1hJck1EeXJfNEpQZVJSNnpNeWdWaGRuNmxTLTVPbEJVZGxmaWNWMjJabVBPVnlQWXFGRlhXNGw0NmNldDg?oc=5",
-   "date": "2026-11-24T11:34:33.000Z",
+   "title": "Standard Bank supports Coca-Cola HBC’s landmark JSE secondary listing",
+   "source": "Novus Press Bulletin",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbjBJVng3WVk2azFGUHdaRVp2S3J5QVpyb001cEJIV3dVbHVyejNwYmZYVDR2M1VwSG5Jb2wzRkVQUTViV3hZRWJVYmRIeUl6VThHNk5kSkkxU1dJUXVsQTFXWnY4TXFzQ2t3cFdsZ0NSRWdGTUFoRlZYbU50VzFORU1yeFdMT3hjbVN6Y0Zld3FoR0d4bGZiZEJ3RUFVckhFS2dIdzYwY01Ddzg?oc=5",
+   "date": "2026-11-24T11:58:56.000Z",
    "score": 1.7,
-   "img": "https://www.bing.com/th?id=ONUT.cnYxmUb0gXfK0BpeAca3ew&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
-    "en": "Coca-Cola HBC lists on JSE with Standard Bank’s backing",
-    "fr": "Coca-Cola HBC est cotée au JSE avec le soutien de la Standard Bank",
-    "ar": "يتم إدراج شركة Coca-Cola HBC في بورصة جوهانسبرج بدعم من بنك ستاندرد"
-   },
-   "d": {
-    "en": "Coca-Cola HBC currently operates in 29 countries across Europe and Africa, including Nigeria and Egypt. Following the completion of the CCBA acquisition, its presence is expected to increase to 43 ...",
-    "fr": "Coca-Cola HBC opère actuellement dans 29 pays en Europe et en Afrique, dont le Nigeria et l'Égypte. Suite à la finalisation de l'acquisition de CCBA, sa présence devrait augmenter à 43...",
-    "ar": "تعمل شركة Coca-Cola HBC حاليًا في 29 دولة عبر أوروبا وإفريقيا، بما في ذلك نيجيريا ومصر. وبعد الانتهاء من عملية الاستحواذ على CCBA، من المتوقع أن يرتفع عددها إلى 43 ..."
+    "en": "Standard Bank supports Coca-Cola HBC’s landmark JSE secondary listing",
+    "fr": "Standard Bank soutient la cotation secondaire historique de Coca-Cola HBC à la JSE",
+    "ar": "يدعم Standard Bank الإدراج الثانوي البارز لشركة Coca-Cola HBC في بورصة جوهانسبرغ"
    }
   },
   {
@@ -3349,20 +3351,42 @@
   {
    "id": "n39-2026-11-24",
    "cat": "cfo",
-   "lang": "en",
-   "title": "Pure Cycle CFO buys $4,750 in company stock By Investing.com",
-   "source": "Investing.com Canada",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRlEwODFUZEpqSGFVTWY1VmhreVM3QUhIcFc4eldUZ2RJSGVSWFhpV0p4dTQwbWIxVHFESUd5bGlrc3BhLWctQ0JZZ1VVVjBHNl95bDJUcWx4Q0NOTHJ2RG16Sjk0Yk9aUVZzeVBONjdRMG9RbEkwMzZFeDJ4dzlWYWk1VTJRMEZYd2lwLXhXMFo4Ri1qU2VEUklmakhlUEs3eE90Nw?oc=5",
-   "date": "2026-11-24T20:05:45.000Z",
-   "score": 1.7,
+   "lang": "fr",
+   "title": "Makutano 2026 : le gouvernement pour la réduction du taux d’impôt sur les sociétés",
+   "source": "ACP | Agence Congolaise de Presse",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOXBNLTFVSjhRQnJfT3Vob0lOQmZ6N09sMkdIa0tOTWlTbjJfVHBfR2U4ZXV2Y1lmVEFLSVlKWEpOMWtwNUFZeF95ODRXRUtVVUtkVVhqalhvaG8zTEM2LVAtakdJM0RXczR4Q1ZqMHhuTnRMaTU4T254Z1VzeDM3WDFVMHJhWWJKZkxrai1oOTJqZERuaFhtNm9vdS1wVF9aTzVlUDF6VQ?oc=5",
+   "date": "2026-11-24T20:46:52.000Z",
+   "score": 2.4,
    "t": {
-    "en": "Pure Cycle CFO buys $4,750 in company stock By Investing.com",
-    "fr": "Le directeur financier de Pure Cycle achète pour 4 750 $ d’actions de la société Par Investing.com",
-    "ar": "المدير المالي لشركة Pure Cycle يشتري 4,750 دولارًا أمريكيًا من أسهم الشركة بواسطة Investing.com"
+    "fr": "Makutano 2026 : le gouvernement pour la réduction du taux d’impôt sur les sociétés",
+    "en": "Makutano 2026: the government for the reduction of the corporate tax rate",
+    "ar": "ماكوتانو 2026: الحكومة تخفض معدل الضريبة على الشركات"
    }
   },
   {
-   "id": "n40-2026-11-24",
+   "id": "n40-2026-11-23",
+   "cat": "cfo",
+   "lang": "fr",
+   "title": "Cameroun : la COBAC retire un nouvel agrément dans la microfinance, après 22 ans d’activité de l’établissement",
+   "source": "EcoMatin",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNOFNCVWlyUWd4by1XMU51SUJncXpBd2JVYjVIdVkwdllaajNRZWFGV0RxdGUyY2t6R3IyaE5MWlpCN1cyVlNLRklhZ29NOEdkQ1I1dlNEWFkxS3hJUEJpSVBtdjNPeU82YTBVU2JFclJKTklCTjBjWDdFOV93RzVFazE3WHZyMXBJTEFEeUUyUHduaVgxWDBYcDBlTFZYUzNaM1ZxYk52UWRHRk9ia3d6MjhMSWNCdllVUGdVQkRRLTlCaDBf?oc=5",
+   "date": "2026-11-23T22:44:42.000Z",
+   "score": 2.1,
+   "desc": "Les liquidations se multiplient dans le secteur camerounais de la microfinance. Un établissement qui revendiquait 13 agences à travers le pays vient de perdre son agrément après plus de deux décennies d’activité. Cette sanction…",
+   "img": "https://ecomatin.net/_next/image?url=https%3A%2F%2Fprod-backsite.ecomatin.be%2Fwp-content%2Fuploads%2F2026%2F11%2FGemini_Generated_Image_assat1assat1assa.jpeg&w=1200&q=75",
+   "t": {
+    "fr": "Cameroun : la COBAC retire un nouvel agrément dans la microfinance, après 22 ans d’activité de l’établissement",
+    "en": "Cameroon: COBAC withdraws a new approval in microfinance, after 22 years of activity of the establishment",
+    "ar": "الكاميرون: COBAC تسحب موافقتها الجديدة في مجال التمويل الأصغر، بعد 22 عاما من نشاط المؤسسة"
+   },
+   "d": {
+    "fr": "Les liquidations se multiplient dans le secteur camerounais de la microfinance. Un établissement qui revendiquait 13 agences à travers le pays vient de perdre son agrément après plus de deux décennies d’activité. Cette sanction…",
+    "en": "Liquidations are increasing in the Cameroonian microfinance sector. An establishment which boasted 13 agencies across the country has just lost its approval after more than two decades of activity. This sanction…",
+    "ar": "تتزايد عمليات التصفية في قطاع التمويل الأصغر في الكاميرون. فقدت المؤسسة التي تضم 13 وكالة في جميع أنحاء البلاد موافقتها للتو بعد أكثر من عقدين من النشاط. هذه العقوبة…"
+   }
+  },
+  {
+   "id": "n41-2026-11-24",
    "cat": "cfo",
    "lang": "en",
    "title": "Manulife Financial CFO: 18% Return Target Requires Capital Action and Earnings Growth",
@@ -3370,7 +3394,7 @@
    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMEhBT242VndwcExEc0RXMU9XUGZJdnlqSmVOUGJsUEVEcFdDZEJ1akhQWk51MG5sdTdrMnk1MERNOFIzNDBLcG5uZXlEdk84TXVkMG5CNUd0ekdIVS1qOWVVUFVyX19JdUJ0cU16djZCSnE3RGsyQzd4a0JiMVJ2VWl5UkNDQW0xY2k2ZVd5QlV3TS1XZFVHX1JPRmI3Zw?oc=5",
    "date": "2026-11-24T16:16:28.000Z",
    "score": 1.7,
-   "desc": "The above button links to Coinbase. Yahoo Finance is not a broker-dealer or investment adviser and does not offer securities or cryptocurrencies for sale or facilitate trading. Coinbase pays us for ...",
+   "desc": "Manulife delivered strong Q2 2026 results with core EPS up 16% YoY, core ROE at 16.3% (+130 bps YoY), and robust APE sales growth of 21% led by Asia and Canada. Management reaffirmed medium-term ...",
    "t": {
     "en": "Manulife Financial CFO: 18% Return Target Requires Capital Action and Earnings Growth",
     "fr": "Directeur financier de la Financière Manuvie : un objectif de rendement de 18 % nécessite une action en matière de capital et une croissance des bénéfices",
@@ -3383,7 +3407,7 @@
    }
   },
   {
-   "id": "n41-2026-11-24",
+   "id": "n42-2026-11-24",
    "cat": "cfo",
    "lang": "en",
    "title": "4 challenges facing Anthropic’s finance chief after IPO",
@@ -3399,37 +3423,7 @@
    }
   },
   {
-   "id": "n42-2026-11-24",
-   "cat": "cfo",
-   "lang": "en",
-   "title": "What Does NRC Health's Appointment of Ron Farnsworth as CFO Bring to Its Growth Strategy?",
-   "source": "Kalkine",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQUnc3T1ZJX2VLY1lzcWt2WUk4aFJCVGRySW9lNmtRblUzZjF0NnFDOTVkNzFnTl9ZUkgxVVM1aUlZc1NQM1p2TFlWb09vQTlYSkdBcGI2TW14VzYyMmhrQ3lBcGlqVXI1UTR2bzE1UmlRelM1RHZfRV83OVZ1N1Exam5aMkh5cVVtdHFxUWZvSzJzOWNGcy1JZWg2WTBrNjBWeXRDX3BjTjdPZ3doUkM0eW9pWnExRm1BSnF3TVFmWjUyMXBO?oc=5",
-   "date": "2026-11-24T14:10:00.000Z",
-   "score": 1.7,
-   "t": {
-    "en": "What Does NRC Health's Appointment of Ron Farnsworth as CFO Bring to Its Growth Strategy?",
-    "fr": "Qu'apporte la nomination de Ron Farnsworth au poste de directeur financier par NRC Health à sa stratégie de croissance ?",
-    "ar": "ما الذي يضيفه تعيين NRC Health لرون فارنسورث في منصب المدير المالي إلى استراتيجية النمو الخاصة بها؟"
-   }
-  },
-  {
    "id": "n43-2026-11-24",
-   "cat": "cfo",
-   "lang": "en",
-   "title": "Overchain Forecasts 2027: The Convergence of Fiat and Stablecoins in Corporate Treasury",
-   "source": "FF News",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQUR1SHBJb180UnhEMzFBRElWbDk1OFJzdUFDOURoZktBN0R1WTU3ZExjTFY4VEVUNEJyUGFWbVdXS09vbzJfX3JuQkI0dmlScE0tUjdlbVZvMTJ4M3hiQU8ydlE4QTBHWEJ1R3d6RnpTOXBRTjFUdWdIdHVydS1TVjN0LXctUFJLSE9QNWVVZFBvMWVqb2J1LUc5MW1kY0llVmU4TzlvVHg?oc=5",
-   "date": "2026-11-24T14:00:55.000Z",
-   "score": 1.7,
-   "t": {
-    "en": "Overchain Forecasts 2027: The Convergence of Fiat and Stablecoins in Corporate Treasury",
-    "fr": "Prévisions Overchain 2027 : la convergence de Fiat et de Stablecoins dans la trésorerie des entreprises",
-    "ar": "توقعات Overchain لعام 2027: تقارب العملات الورقية والعملات المستقرة في خزانة الشركات"
-   }
-  },
-  {
-   "id": "n44-2026-11-24",
    "cat": "lebanon",
    "lang": "en",
    "title": "Iraqi PM orders takeover of Kurdistan region’s border crossings after oil smuggling probe",
@@ -3445,7 +3439,7 @@
    }
   },
   {
-   "id": "n45-2026-11-24",
+   "id": "n44-2026-11-24",
    "cat": "lebanon",
    "lang": "en",
    "title": "Pensions in Lebanon, Syria, and Jordan: Conflict and Inflation",
@@ -3460,14 +3454,14 @@
    }
   },
   {
-   "id": "n46-2026-11-24",
+   "id": "n45-2026-11-24",
    "cat": "lebanon",
    "lang": "en",
    "title": "Gold edges lower as markets await US inflation data",
    "source": "LBCI Lebanon",
    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObnF5YURtOEkwRU5yTmFCVlhEaGtoMG4telRMWHNiWVJMLVN3LXZPSHBEX1ViSVNUVy1tcXdjM1V3X0t5bWM4cnp3TTRhdHVRRDZzVGowOFB2dDBMY3RCMzN3VGdEWkN4Nmd2eDJsOWhranJrLVc3Vno0dGttRUxuRWxWWUk4SXpqcFBCRkVzbWdrblcwTGVTa3hjUXh0OGtDX2RJ?oc=5",
    "date": "2026-11-24T07:52:08.000Z",
-   "score": 2.7,
+   "score": 2.6,
    "img": "https://www.bing.com/th?id=ONUT.5PlJlYahMbgSwS-uAiBWcw&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
     "en": "Gold edges lower as markets await US inflation data",
@@ -3476,14 +3470,14 @@
    }
   },
   {
-   "id": "n47-2026-11-24",
+   "id": "n46-2026-11-24",
    "cat": "lebanon",
    "lang": "en",
    "title": "Fuel prices drop in Lebanon",
    "source": "LBCI Lebanon",
    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9PMExzbWFpTXVOREVMZ0doWlE1Tjhfd3dnSy1SWmNnZ1NFbFRady1DNmVGNXdGaDQ2V2Qwb2tFUE1Mb2ZNMWhTZjRFY3NpMU94ZDVQRks3b1dwUmgtdlBZS3JBNWpOdENhczF1SDRIT2x3bU5kS2RJTVZiY1JqOGM?oc=5",
    "date": "2026-11-24T07:26:41.000Z",
-   "score": 2.7,
+   "score": 2.6,
    "img": "https://www.lbcgroup.tv/uploadImages/DocumentImages/Doc-T-963092-639277284412519567.jpg",
    "t": {
     "en": "Fuel prices drop in Lebanon",
@@ -3494,6 +3488,21 @@
     "en": "On Friday, October 16, 2026, prices for 95-octane and 98-octane fuel fell by LBP 22,000, while diesel dropped by LBP 11,000. Meanwhile, gas prices remained unchanged. The current ...",
     "fr": "Le vendredi 16 octobre 2026, les prix du carburant à indice d'octane de 95 et 98 ont chuté de 22 000 LL, tandis que celui du diesel a chuté de 11 000 LL. Pendant ce temps, les prix du gaz sont restés inchangés. Le courant...",
     "ar": "انخفضت أسعار البنزين 95 أوكتان و98 أوكتان، الجمعة 16 تشرين الأول 2026، بمقدار 22 ألف ليرة، فيما انخفض سعر المازوت بمقدار 11 ألف ليرة. وفي الوقت نفسه، ظلت أسعار الغاز دون تغيير. الحالي ..."
+   }
+  },
+  {
+   "id": "n47-2026-11-24",
+   "cat": "lebanon",
+   "lang": "en",
+   "title": "Economic Scene | Strike and Protests Planned Across Lebanon Tomorrow...",
+   "source": "aljadeed",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZ0FNelBkTmVQYVZ6Zk5IdEdHa0FkN1Y1RHJtNHFEaFpXb3R1R01Zbjg5UEMyMXIwUjgwNElIc3RkbTVPbzhYTHVycHdxQks4SjVQbGhrcml5TEIzYzlKTlZaT01samgzUXJxd3hmRXIxT1h2ZWVPcGM4QndiWnRnVElaNnRXRkV1M3c1LUZ2bmZISmJLSUgwZUdVR3Z3VDFSV0M0OVdNbzM?oc=5",
+   "date": "2026-11-24T13:46:00.000Z",
+   "score": 2.4,
+   "t": {
+    "en": "Economic Scene | Strike and Protests Planned Across Lebanon Tomorrow...",
+    "fr": "Scène économique | Grève et manifestations prévues demain à travers le Liban...",
+    "ar": "المشهد الاقتصادي | إضرابات واحتجاجات في أنحاء لبنان غدًا.."
    }
   },
   {
@@ -3513,43 +3522,6 @@
   },
   {
    "id": "n49-2026-11-24",
-   "cat": "lebanon",
-   "lang": "en",
-   "title": "Occupier forces demolish several houses in southern Lebanon - anews",
-   "source": "A News",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOR1I1emo4NTV5Y0pEdGJQVC1jQUxmM05qYUdmYmVaMXlUOFkwSDZGSjE4bG9ZNW1LaHd4enU0bURSTWstT2ZXXzhIWG1mYWpIRF96TURIdFpPcVI5aUpjNEJ2elI1OHNjUkF0cHRhRktIaUNLd1hPWEhoTGdMV0NNdUw3cVZDQmdxdjRvT3dfUHdOR1FkTkxNSlJZZU96N2ZWQkNCUtIBqgFBVV95cUxOUGpBY2pwN1FsU3BobnU5MmE1Wk0xYmNiSzUzYURjaEg4RzZtWEZkcGFpLWg4X0k1bXFrNGpvdWlBN3lUNlM4VTZxQnFwX1hCVmpvczhzeUpGOTJYV1FZRGVfeDg3RjU4V0M2Zk83R1d5clQtNTIzb1dXRnNLa0lJTTFPNG5oMkNUMlZJY3VwZ1NMV2VGRmJUQTJIX1FlMmp6ck9EVENsQWZkZw?oc=5",
-   "date": "2026-11-24T10:11:26.000Z",
-   "score": 2,
-   "img": "https://www.bing.com/th?id=ONUT.ZOjGTLlTGn_l_9lsAlP74A&pid=News&w=900&h=1200&c=7&rs=1",
-   "t": {
-    "en": "Occupier forces demolish several houses in southern Lebanon - anews",
-    "fr": "Les forces d'occupation démolirent plusieurs maisons au sud du Liban - news",
-    "ar": "جديد قوات الاحتلال تهدم عدة منازل في جنوب لبنان"
-   }
-  },
-  {
-   "id": "n50-2026-11-24",
-   "cat": "tech",
-   "lang": "en",
-   "title": "T. Rowe Price’s Tony Wang on the risks surrounding Nvidia stock",
-   "source": "CNBC",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTFEwYWFtVXI5SVlNTmpJY1N4c3JEUlh6UFprUTlYOVdaSk5fSXdYN2dlbVFyWHpLd3lJY2NXQnViZmZYVGVfSVFyUkw4akYza056ZWVJdmpQTkJUc3VVdkhFalNYQmRxV2prbG9BMUhNNmE4RDB5YThxaGhIN1ZQMkNaTmZvUVk3TW81aERqeUd1QmNEVE0zNDl5NFhSMDRT?oc=5",
-   "date": "2026-11-24T18:49:29.000Z",
-   "score": 3.9,
-   "img": "https://image.cnbcfm.com/api/v1/image/108369472-17906961161790696113-48684006496-1080pnbcnews.jpg?v=1790696115&w=1920&h=1080",
-   "t": {
-    "en": "T. Rowe Price’s Tony Wang on the risks surrounding Nvidia stock",
-    "fr": "Tony Wang de T. Rowe Price sur les risques liés aux actions Nvidia",
-    "ar": "توني وانغ من T. Rowe Price يتحدث عن المخاطر المحيطة بأسهم Nvidia"
-   },
-   "d": {
-    "en": "Tony Wang, T.Rowe Price Global Science and Technology Fund portfolio manager, joins 'Squawk on the Street' to discuss how AI fears are impacting the tech trade. Got a confidential news tip? We want to ...",
-    "fr": "Tony Wang, gestionnaire de portefeuille du T.Rowe Price Global Science and Technology Fund, rejoint « Squawk on the Street » pour discuter de l'impact des craintes liées à l'IA sur le commerce technologique. Vous avez une actualité confidentielle ? Nous voulons...",
-    "ar": "ينضم توني وانغ، مدير محفظة صندوق T.Rowe Price العالمي للعلوم والتكنولوجيا، إلى برنامج \"Squawk on the Street\" لمناقشة كيفية تأثير مخاوف الذكاء الاصطناعي على تجارة التكنولوجيا. حصلت على معلومات سرية الأخبار؟ نريد أن..."
-   }
-  },
-  {
-   "id": "n51-2026-11-24",
    "cat": "tech",
    "lang": "fr",
    "title": "Vodacom Congo (RDC) : l’énergie renouvelable comme levier de l’inclusion numérique",
@@ -3570,7 +3542,7 @@
    }
   },
   {
-   "id": "n52-2026-11-24",
+   "id": "n50-2026-11-24",
    "cat": "tech",
    "lang": "en",
    "title": "Trump wanted Jensen Huang back. Now, the president is all alone in Washington",
@@ -3578,7 +3550,6 @@
    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE95NUpSSE5ueU45ZDYzdnJka1dqZFM0Zy1UeGZxd3BxWS03UHRmSWxDMFptbmZkT043WG1SR1BrU1RCMjFuZ1ZHbVg5amVFbm5kRk5PdDAtRzRyeWJXRTQ3VTNSeENGZnNOa1V3eUltc9IBdEFVX3lxTE5QbVN6RFpoeFpIbFBJRENsNXZVWnctNkJ1M1M4OVNNaThGRWtjNnhOVGxGX2RXb1BPZ3hSS2c5X2FRdS1WVjd5UmR6cEtOZUN4RHBXUmJCMkVCT2pENkxRdXl3NzlGUG52Uk5TOHZnbUI0dEhN?oc=5",
    "date": "2026-11-24T19:04:13.000Z",
    "score": 3.2,
-   "desc": "Republicans worry Nvidia CEO Jensen Huang's affairs with a suspected Chinese spy jeopardized U.S. national security.",
    "img": "https://www.bing.com/th?id=ONUT.-b1nvSCo1EFp9AVYWQTrAw&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
     "en": "Trump wanted Jensen Huang back. Now, the president is all alone in Washington",
@@ -3592,29 +3563,7 @@
    }
   },
   {
-   "id": "n53-2026-11-24",
-   "cat": "tech",
-   "lang": "en",
-   "title": "CoreWeave Bonds Hit All-Time Lows, Erasing Nvidia-Fueled Gains",
-   "source": "Bloomberg.com",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaVlRUDhNb043VEhfRnlUbEZMakhMRE9ZQWYwY0h5cFBEb2dNS1UzNVpzaGxDV19NMmI0T2JuZnFsWUNUNDFZenJWRFV2T2FfbkswUU9qR01WVHpCS05JYzQwNFlRZm5EMngtUmpBUHFiem5hdElhdzFyYWhRODBYYXA1OWM2WkVYM3ZlUDd4QXJIMEItQnItN255S1Y2TmxoN0taeFE2MU80czZKSGF1OFNB?oc=5",
-   "date": "2026-11-24T18:55:27.000Z",
-   "score": 3.2,
-   "desc": "CoreWeave Inc.’s bonds tumbled on Wednesday, in some cases to new lows, after Democratic candidates in favor of slowing down data-center construction won a number of gubernatorial races, including in ...",
-   "img": "https://www.bing.com/th?id=ONUT.90epL8jy0ISfV7IgKjnDLQ&pid=News&w=900&h=1200&c=7&rs=1",
-   "t": {
-    "en": "CoreWeave Bonds Hit All-Time Lows, Erasing Nvidia-Fueled Gains",
-    "fr": "Les obligations CoreWeave atteignent des plus bas historiques, effaçant les gains générés par Nvidia",
-    "ar": "وصلت سندات CoreWeave إلى أدنى مستوياتها على الإطلاق، مما أدى إلى محو المكاسب التي تغذيها Nvidia"
-   },
-   "d": {
-    "en": "CoreWeave Inc.’s bonds tumbled on Wednesday, in some cases to new lows, after Democratic candidates in favor of slowing down data-center construction won a number of gubernatorial races, including in ...",
-    "fr": "Les obligations de CoreWeave Inc. ont chuté mercredi, dans certains cas jusqu'à de nouveaux plus bas, après que les candidats démocrates en faveur du ralentissement de la construction de centres de données ont remporté un certain nombre de courses aux postes de gouverneur, notamment en ...",
-    "ar": "تراجعت سندات شركة CoreWeave Inc. يوم الأربعاء، وفي بعض الحالات إلى مستويات منخفضة جديدة، بعد فوز المرشحين الديمقراطيين المؤيدين لإبطاء بناء مراكز البيانات بعدد من سباقات حكام الولايات، بما في ذلك في ..."
-   }
-  },
-  {
-   "id": "n54-2026-11-24",
+   "id": "n51-2026-11-24",
    "cat": "tech",
    "lang": "en",
    "title": "Op-ed: Trump’s Nvidia board intervention put a price on national security. Our adversaries will take note",
@@ -3630,23 +3579,7 @@
    }
   },
   {
-   "id": "n55-2026-11-24",
-   "cat": "tech",
-   "lang": "en",
-   "title": "Nasdaq, S&P 500 fall as Nvidia-driven AI rally unwinds",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSTdTSVk1YVg0WC1SRVJKVW1XYTZJbjRhRVctYkNzZHZRcW5TaVE3MVdSd2JfYUNaV3otX1FzR1lxYkwyWWZtbS1ONDdiem9UVUI0ckV6c2tiOEt0TGViNlUxZFdSeDV0aVJ4cjZkSkE5Nk9veE1UTmxad0xxaXhScndGMV9IdWVrNUpOQnY0Y0hXVmpZVFgwbTFQMDZiX0NqdExaejlYMzJnbjg?oc=5",
-   "date": "2026-11-24T17:14:34.000Z",
-   "score": 3.2,
-   "img": "https://www.bing.com/th?id=ONUT.ceMUVVTLIYs7dRhb_pH1DA&pid=News&w=900&h=1200&c=7&rs=1",
-   "t": {
-    "en": "Nasdaq, S&P 500 fall as Nvidia-driven AI rally unwinds",
-    "fr": "Le Nasdaq et le S&P 500 chutent alors que le rallye de l'IA piloté par Nvidia se termine",
-    "ar": "يسقط مؤشر ناسداك وستاندرد آند بورز 500 مع تراجع ارتفاع الذكاء الاصطناعي الذي يقوده Nvidia"
-   }
-  },
-  {
-   "id": "n56-2026-11-24",
+   "id": "n52-2026-11-24",
    "cat": "tech",
    "lang": "en",
    "title": "OpenAI’s IPO Countdown Clock Is Ticking",
@@ -3662,7 +3595,7 @@
    }
   },
   {
-   "id": "n57-2026-11-24",
+   "id": "n53-2026-11-24",
    "cat": "tech",
    "lang": "fr",
    "title": "En Afrique, les ventes de smartphones s’effondrent sous l’effet de la hausse des prix (Omdia)",
@@ -3681,15 +3614,81 @@
     "en": "As demand from data centers dedicated to artificial intelligence for memory-related components explodes, the decline in margin ...",
     "ar": "مع تزايد الطلب من مراكز البيانات المخصصة للذكاء الاصطناعي على المكونات المتعلقة بالذاكرة، انخفض هامش الربح..."
    }
+  },
+  {
+   "id": "n54-2026-11-24",
+   "cat": "tech",
+   "lang": "fr",
+   "title": "Shadow AI : les usages non encadrés de l’IA interrogent la souveraineté numérique africaine",
+   "source": "AGENCE ECOFIN",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQaGhuc1lHTDdFZFRqZWlxZG1Pa2taamJDaFhYOVdweHl0ZVlrdE5XUFdGODREdjM5bm9QclRCeEZRWHdDMHI1ZlJiYkhhb1ZUMjdoOU5McmEwdkprTEdVQWNVdmxxdFRack5Hbk5HNmNsQXhXX242NEpLVURXZmswWW92OG1IVHZWVFpDTFVXbUpxbjBnOG91b1VhZzVjV0lfNFMyYXVwdnczbFJHMUcwU1pRVXF3OC1tN1FJSzF1aFVWc1RWRjZ1azZLWHBRVlBMNGZzS0Q3Q00xT1NMaDJvTG40bkl3UQ?oc=5",
+   "date": "2026-11-24T06:08:00.000Z",
+   "score": 3.1,
+   "desc": "Le Shadow AI désigne l'utilisation, par des employés, d'outils d'intelligence artificielle que leur organisation n'a ni validés ni contractualisés.",
+   "img": "https://www.bing.com/th?id=ONUT.EqiA3ej0Q3bbBJguiUty_Q&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "fr": "Shadow AI : les usages non encadrés de l’IA interrogent la souveraineté numérique africaine",
+    "en": "Shadow AI: unregulated uses of AI question African digital sovereignty",
+    "ar": "الذكاء الاصطناعي في الظل: الاستخدامات غير المنظمة للذكاء الاصطناعي تشكك في السيادة الرقمية الأفريقية"
+   },
+   "d": {
+    "fr": "Le Shadow AI désigne l'utilisation, par des employés, d'outils d'intelligence artificielle que leur organisation n'a ni validés ni contractualisés.",
+    "en": "Shadow AI refers to the use, by employees, of artificial intelligence tools that their organization has neither validated nor contracted.",
+    "ar": "يشير Shadow AI إلى استخدام الموظفين لأدوات الذكاء الاصطناعي التي لم تتحقق مؤسستهم منها أو تتعاقد عليها."
+   }
+  },
+  {
+   "id": "n55-2026-11-23",
+   "cat": "tech",
+   "lang": "fr",
+   "title": "Conflit en RD Congo : le Kenyan William Ruto et Félix Tshisekedi s'engagent à rétablir leurs relations",
+   "source": "BBC",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5RMldzb3V1MkRHbExna3V6OG9ua0dXa3RTSlNVbEo0alNFTjhOeXhRUnVHTVpMX2xpSk5WWldMV04xeG9nRTZVNFdIMEFaa19UWkNlQ29Gb2x3MnFqOHFz0gFkQVVfeXFMTXRrZ2ltQm5lR3V5Sk1EcExpLXJGaGdHaC0wQXl2ZEF4UXAtaVdCazV4ZWdJQmgtVG9XWktXT2NYQUNnWE1ZTmFkR0t0M3NGby1xa3JkTklTMW11dFREZlRrQXRLbw?oc=5",
+   "date": "2026-11-23T10:34:35.000Z",
+   "score": 2.6,
+   "desc": "Les deux dirigeants se sont engagés à défendre la souveraineté et la « non-ingérence dans les affaires intérieures des États ».",
+   "img": "https://ichef.bbci.co.uk/news/1200/branded_afrique/ae1f/live/ec9cfdb0-e71f-11f1-914b-6d226d813a52.jpg",
+   "t": {
+    "fr": "Conflit en RD Congo : le Kenyan William Ruto et Félix Tshisekedi s'engagent à rétablir leurs relations",
+    "en": "Conflict in DR Congo: Kenyan William Ruto and Félix Tshisekedi commit to restoring their relations",
+    "ar": "الصراع في جمهورية الكونغو الديمقراطية: الكيني ويليام روتو وفيليكس تشيسيكيدي يلتزمان باستعادة العلاقات بينهما"
+   },
+   "d": {
+    "fr": "Les deux dirigeants se sont engagés à défendre la souveraineté et la « non-ingérence dans les affaires intérieures des États ».",
+    "en": "Both leaders pledged to uphold sovereignty and “non-interference in the internal affairs of states.”",
+    "ar": "وتعهد الزعيمان بدعم السيادة و\"عدم التدخل في الشؤون الداخلية للدول\"."
+   }
+  },
+  {
+   "id": "n56-2026-11-24",
+   "cat": "tech",
+   "lang": "en",
+   "title": "Jensen Huang strikes remorseful tone in Nvidia all-hands meeting: Here's what you need to know",
+   "source": "CNBC",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNeGxwMnZFb1BMNHZoXzlSU2xyV0RTZ3dhN3ptUFJHRTItQk11VGhkWVJBWHp2WTE0Qlg0ektoVDFEb0U2bVNaWjF5NUM3SVVOckhUU3g4MHFtcFpWR1BMeG02THd0c2l0RVBwR2JfdGxRZ1pkQ0hkZWFGUXdnTkx4bm5NZEZpWHFfNC1yRGhvdDBMTm05dFQ4SHlPdEpzQmVsalBpcWRJOWhBUHdBMG95X2xUcm5KNndqSU1UdEF3QlZYaUlCcHZKYkV5SlNSaElL?oc=5",
+   "date": "2026-11-24T20:39:56.000Z",
+   "score": 2.5,
+   "desc": "CNBC's Seema Mody reports the latest news surrounding Jensen Huang's return to Nvidia.",
+   "img": "https://www.bing.com/th?id=ONUT.sk5Tc2Fk5ddPZ2Uxc0uylQ&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "Jensen Huang strikes remorseful tone in Nvidia all-hands meeting: Here's what you need to know",
+    "fr": "Jensen Huang prend un ton de remords lors de la réunion générale de Nvidia : voici ce que vous devez savoir",
+    "ar": "جنسن هوانغ يضرب نبرة الندم في اجتماع Nvidia الشامل: إليك ما تحتاج إلى معرفته"
+   },
+   "d": {
+    "en": "CNBC's Seema Mody reports the latest news surrounding Jensen Huang's return to Nvidia.",
+    "fr": "Seema Mody de CNBC rapporte les dernières nouvelles concernant le retour de Jensen Huang chez Nvidia.",
+    "ar": "تقدم سيما مودي من CNBC تقريرًا عن آخر الأخبار المحيطة بعودة Jensen Huang إلى Nvidia."
+   }
   }
  ],
  "log": [
-  "bev: 117/157 on topic",
-  "cfo: 77/104 on topic",
-  "photos: 47/62 {\"cached\":38,\"empty\":16,\"gnsig\":15,\"gnpage\":\"<!doctype html><html lang=\\\"en-US\\\" dir=\\\"ltr\\\"><head><base href\",\"othersrc\":103,\"nomatch\":43,\"sameStoryOtherOutlet\":4}",
-  "translated 15 new, reused 47, of 62",
-  "dedupe: 4 duplicates removed, 4 re-filed by region",
-  "edition kept (2.2 h old)"
+  "bev: 117/156 on topic",
+  "cfo: 82/109 on topic",
+  "photos: 46/61 {\"cached\":33,\"gnsig\":19,\"gnpage\":\"<!doctype html><html lang=\\\"en-US\\\" dir=\\\"ltr\\\"><head><base href\",\"empty\":12,\"othersrc\":102,\"nomatch\":42,\"sameStoryOtherOutlet\":2}",
+  "translated 21 new, reused 40, of 61",
+  "dedupe: 4 duplicates removed, 3 re-filed by region",
+  "edition kept (3.1 h old)"
  ],
  "gn_cache": {
   "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZjlZeVdJWEZiVnUyT3ItWjQ0MzNiS1JUX3RzT2M4NDN5Y2tjM0VOZGhhLUZsMS1YZG54ci1raFdQVnRucy1VYVdWMVpjVUFEY08ySGNXWU5EV2Q2Z1Q2WkdKTXdmeFU2NWdNbEdaRGVLT1lfbldUWGtXbDl1RVJPZzk4dm1QdjRZeTRuMjR3dDM0QnJ0SVZwR0VVdHdDVHZwaTI0RzZQZkptdnltRWtGS1Ixbw?oc=5": {
@@ -3702,10 +3701,10 @@
    "img": "https://www.bing.com/th?id=ONUT.ZoB_ucwV8l3do7Q8DrZz0A&pid=News&w=900&h=1200&c=7&rs=1",
    "at": 1795522028357
   },
-  "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVWt1Q241a09DQXB0MnV4TmhXRjNBTUVtQVNHd29vSUZzd0dMWVl3RV9NQUh1SHE5U081WDRIZzNPOFFabEd6TjliX1ZMS2FKLXAydG5IaTUxaEFuRW1VMGpuNklCQ2doM1FzSm9LQ2FKNzBMUnc3dC1GR2NadmdXeVVSelFKb1M4dm5TZDN5UTl5Qmp1NEtEMTdoVHEzb0lJVkk3Y29fNW91RUhuOHc?oc=5": {
+  "https://news.google.com/rss/articles/CBMingFBVV95cUxQLTBqVnllWWdXMThBVk1EbTYyUVgwVW9RYTR6TW1faTkwM2R3eV9yRVQ4VUkteFBMbS1TdDRCb2VzZXNCT0kySThGTUg2d3EyalZpMHZrZEltcko1Ui1lTGdlSS1PZUpiQlo1WGlxbG1hclV2NC1pUU5YU01GbjB2R2dPMFZQUVBoSGRBMXBhNnRDZ1JUdURuamtRWkpTdw?oc=5": {
    "v": 2,
-   "img": "https://www.bing.com/th?id=ONUT.HM0THnd_KmCYZJ_oC5hc0w&pid=News&w=900&h=1200&c=7&rs=1",
-   "at": 1795551075066
+   "img": "https://www.bing.com/th?id=ONUT.t-C8uywRA6mV_y4dmKAcbQ&pid=News&w=900&h=1200&c=7&rs=1",
+   "at": 1795554298655
   },
   "https://news.google.com/rss/articles/CBMitwFBVV95cUxOX2lLRXdXdmpCM0FsdHVpNkdYTWttMDRZd294U3VSZGtqczloSEN5N1VfTzBpbjJLZGYwWm55RDlXSmY0b2tod0tBUl9lbkl4TW13VDBuWEVDYjgxamc4anBNdGhtWTdvUUNiYUp5MDlJVU81Sl9qa283bUIzTUNCU0lZZ1VBdXo2UW5hQmoyT191dFpWODY2aldnOVJmRzVaaV9tZDF2U0hKbmRubUg0TllIendaRzg?oc=5": {
    "v": 2,
@@ -3725,12 +3724,12 @@
   "https://news.google.com/rss/articles/CBMiywFBVV95cUxQb3BxYnRCNkFoZS00cUlLam1XQ1M0MVIxVGhFRHA4OFEyWVVzcmpzYlExQmhwbkFuTjVEdTZwRy05ZXVQczYtNWRTTVJxRWhNRHRHMkFYdXNVa2xuc3hCTm1NbERmMWw5Wkh6Y0hmLXRtREtVeGxBNUNFb0dtWTN6R09JREFtSEVhRzBfTDlTTmg3U3JXZEhTc2luMXE3MFJIa0g5X1RiSlpLZDA3eHV1NFd6cVZDalJxWkdreDUtSF93Nm5vREg0Nzl2bw?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795551074671
+   "at": 1795554298545
   },
-  "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPVHF4NmhNSkZJR2dLNnpGaFhkS0VRSVZUbGE0b3pMTGxRSGlFUXhjcmttQXp2QUlIM2g5OGdSY3poSjh5QXZZbTVEU2dVUjNtMk9jRmVIZWVQMTRjRW1XLV9ybW4tcUkyczhBcVZWbU0yVTF3N2VuZ1BEc3RpZTN2U0oyU1BqT2F2TkdDTVlUOU1IdThxUmxUa1F6ZzcyQUlqVklZd2Q3TjVETWpjWk02TXplYVNuYXZ4TXNleEtZcGxVb2xOZl9hSGh1RV9oWGVMZVV3blQ0MVdUU09SZDVF?oc=5": {
+  "https://news.google.com/rss/articles/CBMivgFBVV95cUxOckQ1czl5VWFleEFFSV9DVFV3NVVMWkN3eTk1MjJ2OVBtSzBPZVVQMGdtRDdUcHlMbWQzSEFLLVJPcHJTcmYwRXJfb1BRME1qT2U2ck16UEZ4ZmJlSElTTnZxMWc2cWRZSUtLcG90WFBlQVFBUkVYRnRPczd6dVVuaGlobzd3dGhvX1pjUHJLa0pPblI1Q3pFaEtyeDZzMXB5aVY1MW5aQjNiQUREOHpLOGhienhDdnhwUl9nSTRR?oc=5": {
    "v": 2,
-   "img": null,
-   "at": 1795551074769
+   "img": "https://www.bing.com/th?id=ONUT._h8-U4UcbFgj6eSvI5tS8w&pid=News&w=900&h=1200&c=7&rs=1",
+   "at": 1795554298485
   },
   "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQmx4d3lZOEZ2VDVnZENlaFhwOEVvVzlLaVlXa0RNaXV0NmViSzN3aXZOd2ZuVGt4WUVaSXp3WjBzY2R5bUVGLXZPdXFTZUtWRFdpaVZvYlJYZm1tU1RheVQ3cndZM21laDNraVlldmFNMFJFelRQOUpCUFhkM0xsOExETjNxWlRfX2hjR0syMXNKS29zWDZJSXpiQ3FWVnc3Wmx0VkdYNDE2N2xIZXJjLVg1UHZpdTV3TkYyVWw1QmN6OTczSVdRaA?oc=5": {
    "v": 2,
@@ -3740,12 +3739,27 @@
   "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcU1DXzc4bFRkdG1jcVhyTS04YWJtbERsQ1pCcktlbUlFTFZZX05XUlgxdHRPWmplR3dMSFlicTlET2wwcC1UWUZrSDBBM25XQkw4M1BEelFvSnVWZ2kxNDhsaVRubFBfakFLc0EwMFRwRlV1c3RPdjBPZzhMVkRBLWxUQ0pqdW5hQmdDcHptNXBvVG1ySGg5a3VkMkxITmctWHNwVGRmZzUzSzdCYTdwNTFzZ9IBuAFBVV95cUxPOUR3a0ZHQzdzR2tFcGoxSkE1SF90ckJQWVQzVm1IZ1JNdW1zNFNxTWg5MGlSc2dGVXNrRmVxcjl3bGVfVWZPcjltVG84Y2hoNklHRnhHYi1UNmwtVmhKVjNKeE13Wjh4YjlHb0JUT0o2TWFhQnVBRjZfMElvbjNtZW1KblcxTjdRME5UZG9pYzhKa2ZiN3IybWYwTkFjNVo2cnBQcGNWNlpMcHBRYVczcjdRRkJOYWts?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795551074762
+   "at": 1795554298671
+  },
+  "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQ1BBbUdWUGl2Mkt2S3YxZTUyZ1hUcU4yQ2NMbUZmbUYtbE0za18wOXFtNl9sQkhCd29LX2I2U1I0T2laWFJ1aEh4VDJLc09fdE1pUHNycFc4aGNtcEVWTVdmY210bUFaVUJSQktNN0o0eHU2WGZIbHZCOXBSbzVNZDlnYWN5dVJtam5BNk4xTWgxMy00cHFqSXJ5RE0yVXpVMW9fcExiaGt3Rl91QTdZWU1Cc3F3dw?oc=5": {
+   "v": 2,
+   "img": null,
+   "at": 1795554299551
+  },
+  "https://news.google.com/rss/articles/CBMingFBVV95cUxQa0M2alRzSUhKSVFCOW9mRlR1Q0pTSDQ3TkhvTThWSTFHTktTVF9tMmJpQndyT2xSbUJwLXM3NzZ4cEh1dU9OUmJ0ZFZFNXZaZnBqT3AxVjJod3FhTlR0UnVnVkNuSXpfbHAxYzVqcjZ6a1FORlUzRTI2Y1dsLS1HbERCUVFQNlB1MmVYdGhuaC1DX1ZCRXZ0eGNyaUtiQQ?oc=5": {
+   "v": 2,
+   "img": "https://beninwebtv.com/en/wp-content/uploads/sites/3/2026/10/fmi-siege-washington-marek-slusarczyk-archive-2013-en-ce971ec0fdda.webp",
+   "at": 1795554299574
   },
   "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNTJpLW02LXhmLVVWTjVLWnhQS2FyQXdENGRaRDRmZFBuTnFCd2NUZ1B0bC02UWthQS11YmxRZk80NEVGVDhLRjU1LWJfUEEzN2NXLU95bFBxdF9EdjlsNmR6UDRQRHk0Z19GSG1RelptOHdIa1JZNzlORnNIRzc3czBvY1F2YXhfOTFCN1otVWQ4dDJwUnFoSEdOSjl2Q2lNYmRvUjh4MVFRT015LUxxTkJRZDg?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795551075581
+   "at": 1795554299270
+  },
+  "https://news.google.com/rss/articles/CBMivAFBVV95cUxPeUljbXlOajE1OU5Kenh1aF9NUS1jNnFwVFFtbmtzYzVLLWxRUFJkQkRBZlN1TEYzUWwyal96MU52Ympnbk9kNHpBbWVnX0c3dEJnTUp5SHh6VVFVVGRhTGxrcjJscDI2dWVBdEtzSkdKLUxNZWNnUzZLenNYTFE1UTZRdjhXUk56bTFKZEZZUEYyczZVdlBDbndQWTFlaEVBM1NuT0pWUUFzVm1yRUtaVDBsTUVzNU1KY2xVVw?oc=5": {
+   "v": 2,
+   "img": "https://cdn.businessday.ng/wp-content/uploads/2026/11/BusinessDayINF__oil.png",
+   "at": 1795554300388
   },
   "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPeXdlSGljdXhXX1FMZ1lqNmVlSkZ5Sm5XR2d2dTZnUnNPUVhhMkNrNG5NVkhNdTAwRDU1b1oxbEVRZXRjSHl0aUh6b2pfLXlQS2U1cmRLNmI3NUVsbFZNNDBwb0VoelVHMG5vNS0zVHpudW9jZ2xFQUo3Y0lXVDFQOXM3U2hsWnpNaExBZ1J6U0Y5bWREaU5oZm1fMnZRSHpmUUJvbWJtUFhrMXdZRzB2R2dMQzdEN3dOME5sV0dwazNLYnJpQmZvWWhfaXk0WnhXeWN2ZQ?oc=5": {
    "v": 2,
@@ -3757,21 +3771,6 @@
    "img": "https://www.bing.com/th?id=ONUT.6m524n7Z_5ZUqFATjsJ7uw&pid=News&w=900&h=1200&c=7&rs=1",
    "at": 1795547351825
   },
-  "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTTlwcktwVkl2YjFXQXNHODh5MGJHX18wN0VZMTFUSTJmYVJpM3NseUljYTJSTl94Yjk0U2kxclFXNE9nVjNSZWFmZUNjcTRfa1lvT0Y5MGh4aUVJTjVlalVXZERWTmV0XzR3ME9mUU1ETDlLVGRsWmMwenpJOVVDaw?oc=5": {
-   "v": 2,
-   "img": "https://www.bing.com/th?id=ONUT.6jdyrdM4zDZcWPF5e0TIng&pid=News&w=900&h=1200&c=7&rs=1",
-   "at": 1795547351784
-  },
-  "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOR1FRWFZmMHBldWw1Yms0VVJJVERZLTFGREExandWRFZHUGltakUzeEdxZjZKdTRvaElNaHZkTGZ3c1F6cVRjbzVtTjVxaXBMOTF5d1lUejBzV2RNU01KaVltVGM0aWtMN3ZyeWFVRHNLTTY3TUktNXAzU0pCb0w5S19xYW1PNXEz?oc=5": {
-   "v": 2,
-   "img": "https://www.bing.com/th?id=ONUT.qFV7BxgnYy-RuaQTTLPzww&pid=News&w=900&h=1200&c=7&rs=1",
-   "at": 1795547351936
-  },
-  "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOYVg1dzlDcnR0UkNFa2JaSjl1anA2M3JzTDA0YXJfUlk5U2ZoTTJ3clVOWHBPNXM0N01oV0ZaMFRfcVhOV1o0OExZZ0NEZWJKZV91RDN3QU5tbFJPRlh2SjVrZHpJdXo2a3NFdlhqMUJrdGR1T0wzbUtUNE9ONUFraVY5d2JoMG5kNTV1aFZfRkN1WWVOamtmRHIxbHlnYW1SZGJ1bHNEeGVpbkdGa0tsWFBOZ01KN1pCTXlHMW5CejAzVGdjTVRBZ01zRkVKNmVPa2hmcE9wUGZUa2tRbHhYd2NIZTVIZklrNGpzRjYxRQ?oc=5": {
-   "v": 2,
-   "img": "https://www.bing.com/th?id=ONUT._Dmzfsl5a4Jy-2AWLcEg0g&pid=News&w=900&h=1200&c=7&rs=1",
-   "at": 1795547352195
-  },
   "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWHdkR3lTYWlJS1NibHkwcG1UUkpOVFVFeDR4YnhJaHZfT0EyUkc4NGJGdzJ3ZE05R2tYZ0VUTl9na1VOX1dJaWtuenNtdlQya0lraW9WU013RnJqTlRlRV9IejdEQTBkY2gwZjVJazc1U0d2NFVtTTY0b1RyS1hFY2dic0xwejY4VzY2a3dudDk4S0VQb0tGZjgxSFJKbnN4amlSNg?oc=5": {
    "v": 2,
    "img": "https://ecomatin.net/_next/image?url=https%3A%2F%2Fprod-backsite.ecomatin.be%2Fwp-content%2Fuploads%2F2025%2F12%2FSiege-de-la-BEAC-a-Yaounde.jpg&w=1200&q=75",
@@ -3782,6 +3781,11 @@
    "img": "https://www.investiraucameroun.com/media/k2/items/cache/ba136a414854bf1bf0a260309139e666_L.jpg",
    "at": 1795446917371
   },
+  "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcHFYWFhpdGVqUF9WMWp0cHRRSkVvd2E4dGUyME9UcFRna1lVMTJ2NER1RVF4TEdBV0JpQVdmT3dqVTZxYlE0RTZackl6LWVVTUZFRFAxVHdjUDRqYXZySXgxaDcyaHJWRkZPZFBYbjk2VC1IX1g2LTlNRzNzVFRsSmJHTjhFM2tCM3BHLVQyRFl6dzFGQXM0Q0hCVnIyUXJWOHp3OWZwX2d1SkNERExYMHI5NGFuTXNZcm1lYjJpbS13STcyUUgtYktjek91Zw?oc=5": {
+   "v": 2,
+   "img": "https://lesechos-congobrazza.com/images/2026B/CACIJI.jpg",
+   "at": 1795554301223
+  },
   "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSEFzY3VrSEM2OEJBRVYyNDRvWTV0NXlBSlcwUWxNeUlPSmlpZ2ttTVVKaHFnNGl6YXpLbHRWcWVMaFZ0dFIwQ2xUelh0c2pxRHhBTlFaQUdSMVBOYkRhTEJodjFXbXVVTTNNanFmUTVjMktQTzRnU1p6OXFGZDhvcnZTQUJOMVdjQ2RkOENhOXV6cUlsVExnNkw0VHhNOWE1eS15TGNYbnE0dEZoSUhlU2hnS2s5dmFEdlR4RVpFTVRSbm9f?oc=5": {
    "v": 2,
    "img": "https://lesechos-congobrazza.com/images/2026B/DAFI_2.jpg",
@@ -3790,7 +3794,7 @@
   "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQaW91RFVlSE5LMVdWX1kzRklvdTBQVmZwS01BMVluN3pqb0tlcktuREFkTHBVOHktM01aeTc0NVY3Q05sTU00ek9Pc0toN3B0ZGg5RS1PZkFOdUxEOEZGdDhBbnRLYWJaRHFBRloybmFkWFBBNDZ1eWFrTjA3cEtJbS1leU40VUtLLUZmSGlTTHU3OURiY3JDdUZmbTlOQWp3VkNtVXEta2cwZVBHZnNna3lvcDR6QTFLV0pYaWJ1SFhtLTZXb1dmRl9YTEV3VlFnSmR3U3hudw?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795551075880
+   "at": 1795554300303
   },
   "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMTZBMXo1Wmo2dEd5Znh0bExHc092N21EQTlQR2ZPb2VZdnloaFp6eEM1SWJyUWVRUmEtQ1NkS0s3alVSdzNOTGhKcXQtWGY1U284TlJucTJPNnpUdFNTLU5nUVlPR2lCTXZwbm5HZmJHVzB1NWtrX3R3NllONGhSalFySVk2aWNBQTJ3WGFvN3dZOFJDNWk2TEpKbEJ4dDctODQtOHVGQnl1eGgzb3RieWVZVEh4aFIwV3BsVXNkZG04MjJiOFRxWVRJdkRNaEcxMmVJMlNLV05wdHYxWGJ0UTBDbXo?oc=5": {
    "v": 2,
@@ -3802,10 +3806,10 @@
    "img": "https://www.bing.com/th?id=ONUT.a2HliLDcXO-VRLSL6mDt4w&pid=News&w=900&h=1200&c=7&rs=1",
    "at": 1795547352379
   },
-  "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPOS03eDB4TVZHQTNpMnBLTU51M2czamc0MlRrVE54dE5vYndmUzNPSVozRTM3V0JOWlptVWxJQ3NoMmtWWEtDNDhVenBlS2hkWDM2NjdnbG9zU3hXWHVPaDFLdWJabG9vcGZ4V25SZmlKMkRVNVd3LS1hTnVHUnBhYzBMX3pzZHI1MFoxaFNTQkx2azJ2aWhieTNUWFdVeElOMFlkMDVSa2l5SHlCcFJiY2tvNDBoVTZYaVVQSTVYd0s4ZGlHcnJ6VDQ5cmVGOGJwb1BtTlp5U3pOM0V5a0g2ZGZVeVJLclk?oc=5": {
+  "https://news.google.com/rss/articles/CBMirwFBVV95cUxPalAzWlRlOWZNWE5rTXFHTmp4TmNfdlZOS2VJa0pZck8tZmczNGgtSl81VFB4bFpTcXVHMmwxV0ZuRVhlOGh0MUtrWTIydGo1NlYyVXZsNXdxSXdEbEpuY3ZacjRlV2hUOGJER0ljZzUyMDk1TVFkbXhwZktvQk5aSDBPUEdTRVYyaVR3eVdDaVdWR1RYOXB4UmJfOUdvY0t3bk9rZFlFUjBBTFYtdFVr?oc=5": {
    "v": 2,
-   "img": "https://www.bing.com/th?id=ONUT.7PIj4vkxM-n_a_DC7QNIsQ&pid=News&w=900&h=1200&c=7&rs=1",
-   "at": 1795547352651
+   "img": "https://www.bing.com/th?id=ONUT.Zz19mNLgLhYS1zbwls7mCQ&pid=News&w=900&h=1200&c=7&rs=1",
+   "at": 1795554300581
   },
   "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORmVvMEdpSWJqdEg5V2VKRlRfYlYzcTY0c3p0RU5PVk9ORHZ5S3E2NUxRYjVZYVFPUVlhY2ZRbDR2d3l3ZGpTc3VvNkNDd3B5bFA2azFNX0ExZWtXUWxFemFuWEMzNXBQaFV0eTgtVjVLMDNfek5qc1E5cUZvaEdYTThmSVZZZDJraXJYTEtZUXY3UmRnN2dKeEdFakJEbHBZcmdPaEZNS3pOY1oyLV9hZW85X0NmSmJwcWU4UDZGR0hkaG8?oc=5": {
    "v": 2,
@@ -3827,20 +3831,15 @@
    "img": "https://www.bing.com/th?id=ONUT.Qm6ZUx8Y04o08nU28WTNRA&pid=News&w=900&h=1200&c=7&rs=1",
    "at": 1795526801927
   },
-  "https://news.google.com/rss/articles/CBMickFVX3lxTE9RbFJmLVhQblBkeXRGZWhFNUp1QnktVTktWUREMTVVdGltRUtadnZSWHc4bUNzQ1pmM0hUWTMyZjA3elJoUHJhdlpWd2IyZjhfRmJ0QVh2R3NGT2lLMmlrYnlRMVJiYnEyWmIxa09uQkwwUdIBd0FVX3lxTE04V3NOeElMTnNta3I4Y0preS1IQ2FOeUZfdFNnZngwYTJaWnpOSXBKUUU3bl9aWkNKWi1iZFZRQzlCODI1Tm5CYl9BNHhlVC1pbExhb0J2UnVRTHVDVWRsQWlPZGVFTEp6QU9lUXQxWl9fWW1oT1Yw?oc=5": {
+  "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVFNzZjBvRVE2cHJDcUVwX3ktc1RWeklzbnQ4TDM3dUFadTc0R1FGS1BwSG4tTFMzNDRaRlk4X2RaaktYMFNjOG1rX3hEaEgxOFY5NFJxVWl5ZTYtaU1uSzNoVUhjQkFKajRxSlZORmN3VkJxNi10d2pMd1l2QjFnR2V4dDNxeGtqU2VuR0pfYlhVXzhwWFU4XzJXWlJEWHRFMnc?oc=5": {
    "v": 2,
-   "img": "https://image.cnbcfm.com/api/v1/image/108555737-1795112898196-108555737-1795112774503-gettyimages-2305353820-AA_19112026_3054071.jpg?v=1795112907&w=1920&h=1080",
-   "at": 1795526802327
+   "img": null,
+   "at": 1795554301141
   },
-  "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPNmJNYWc2NzgwaTk3NEpJVDdSRlRUdmRwNGQyOVN3UVBtSVVFZnh2dnpRalhBdDJzUTlVZF9qaVNYQ3hHVzYwSFpTcW54VGZHMWVNYlJ1eUxCNG1aRlJQNExfQXUxRGFKRUpveHJnLWdrRDBCTGNmT1NzeTRfSE0zcGlMLXBEdGxWT2ZOMFBjaDN4N2hlZXpSN2QwTFR6ZjdMVHZXcVVReXdWYmhxem8zcE9IQ2tEVDVXRTBtejQzTjdHS05EYlNRT3VtMThjUlQwZUczN29YRnZLdUZvcXFOQw?oc=5": {
+  "https://news.google.com/rss/articles/CBMijwFBVV95cUxNS3hTNGhPRU9tclZMQzk1Nl83bC1PRUM4TXhpWWhNRmtGcmY3X0tDb1NndDNYS1prbFR1T09mSEhjMmZrMUdORUFZNnpVNk1nQmZudy1VVFc2cmdBdFdHMjNvX3FxNDlXbTRib245cUVGNUoyM29lNi1yVkRleDNCal9jOEJuWWdVRDU3VGp1QQ?oc=5": {
    "v": 2,
-   "img": "https://www.bing.com/th?id=ONUT.Nsxudf-nGp4uqSzNI-dIZA&pid=News&w=900&h=1200&c=7&rs=1",
-   "at": 1795551076109
-  },
-  "https://news.google.com/rss/articles/CBMisAFBVV95cUxPX1ZDb0VBOEthanJxXzVubnl0SGJRaHQ0N0hTd3BMdFgwTzJmVFl4TVRBNFRzcGxkams1Y3FOdVYxRk1DV0JsLTY5OW1Qd2N5a1UtZVdBd3FFb3FPdGRzWVFJdWdXRDg2SmdpdHlTRWY4bWNoUjg2bUVDdmhtelR4OHRLeWtEXzRrMHRhNEtseUVpd3U1Zm40dVVnRlVNNnhDd3BhUV9LMlAyaEdvbUQ2eQ?oc=5": {
-   "v": 2,
-   "img": "https://www.bing.com/th?id=ONUT.LaEyJIrdpkCiCocURG0RNQ&pid=News&w=900&h=1200&c=7&rs=1",
-   "at": 1795551076141
+   "img": "https://www.bing.com/th?id=ONUT.-tXpg3cYuSHbOiYgoHLn7w&pid=News&w=900&h=1200&c=7&rs=1",
+   "at": 1795554301110
   },
   "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdTdfR2pRTktJSFc1dmdlcnE2QTR2N1NYZWN4UW14cG1aNV9YSUFIM3Y1VHN1NXJhakFfb3M1QjVocC1yWjk4Yi10ZUFrMHZnSnVWRFQwaGx3TmhRR2Eydm1tSk80c3lxWTgtMFphb1FtYmVzQm1Bb28yS0Zxd1NjVTV5SzRhREJHdGFCaXY2SkpsTko1RVZKd1RwNA?oc=5": {
    "v": 2,
@@ -3855,17 +3854,17 @@
   "https://news.google.com/rss/articles/CBMidEFVX3lxTFBYWXBPSHFWS21pY19Gby1wR0QxMm5sMFJWVlBrQTJrRzlXMkFXYldxM3JtNWNzVTNsRTZzUERqTUIzVDJvSkFpRThqLTRmUmhhOXUyellpMEc1UzhaVnhGRGZ0ejF1NkdIZWljLWpuMm5pNXUy?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795551077008
+   "at": 1795554301341
   },
   "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQ0JqNXBNcVJORnJxZWVFTy1KX2VxNG9aRkE5aEc2cXM4WEFaOTBiVWNxTTVmRlctck92bXhiTUloNnhGOVdsOUxiUnhzRHVkbEpiYzJKYjZsdDE0b3A5NUZMaGF0TVd0Y240Q2VSOHpYMnhoMFRaVjdLMTMyOVlDNmY3TXBobk5GOTNtZ3pXNFRxYzRuNWpKdEFYVXJoYjFSZnRV?oc=5": {
    "v": 2,
    "img": "https://www.bing.com/th?id=ONUT.feDGgZZDKfCA9WrsUB1AMg&pid=News&w=900&h=1200&c=7&rs=1",
    "at": 1795526803164
   },
-  "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVGktRlhpT1Y4SDRUbm5DdDFfZUNDWHdkYkREVFlRMFJOYkZnalYyaGFLVkJHczBSR0JMTll2eVR2aUFQRGdReXBPeF95SHFUYV9pTDFENlJ1alRIZ08zeVY4dFJ5VzdNXy1lRWFrQ1hJck1EeXJfNEpQZVJSNnpNeWdWaGRuNmxTLTVPbEJVZGxmaWNWMjJabVBPVnlQWXFGRlhXNGw0NmNldDg?oc=5": {
+  "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbjBJVng3WVk2azFGUHdaRVp2S3J5QVpyb001cEJIV3dVbHVyejNwYmZYVDR2M1VwSG5Jb2wzRkVQUTViV3hZRWJVYmRIeUl6VThHNk5kSkkxU1dJUXVsQTFXWnY4TXFzQ2t3cFdsZ0NSRWdGTUFoRlZYbU50VzFORU1yeFdMT3hjbVN6Y0Zld3FoR0d4bGZiZEJ3RUFVckhFS2dIdzYwY01Ddzg?oc=5": {
    "v": 2,
-   "img": "https://www.bing.com/th?id=ONUT.cnYxmUb0gXfK0BpeAca3ew&pid=News&w=900&h=1200&c=7&rs=1",
-   "at": 1795526803289
+   "img": null,
+   "at": 1795554301836
   },
   "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdmRGSS1vMlNWdW5ITTltQVBDWGhLaHE5SzQtX0hRMFU0MHpGMjZQaHlSNnlweUFnM1Jjd1YtWmx2cFJId3k4dGR3MG16WmRPbmN6N0hrUWktNGd1Y1o3QV92cnhZSldjck1iSTNOX1NEWUF0Z0xDb3VUdnRzNnVBcWRWQjNvVmdXa09tdVViUVhKZzg0bnZlMkxnLTgxQU5mWXBsMW9ka2RjYnMwNmVSOGNiclVlUFBhWVdEUExVZ9IBvwFBVV95cUxNdmRGSS1vMlNWdW5ITTltQVBDWGhLaHE5SzQtX0hRMFU0MHpGMjZQaHlSNnlweUFnM1Jjd1YtWmx2cFJId3k4dGR3MG16WmRPbmN6N0hrUWktNGd1Y1o3QV92cnhZSldjck1iSTNOX1NEWUF0Z0xDb3VUdnRzNnVBcWRWQjNvVmdXa09tdVViUVhKZzg0bnZlMkxnLTgxQU5mWXBsMW9ka2RjYnMwNmVSOGNiclVlUFBhWVdEUExVZw?oc=5": {
    "v": 2,
@@ -3875,7 +3874,7 @@
   "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOGxwalh3YmhuMlpxUG9BRDI3a1JoTDZBVU8tY29QVnBjVW9IZVhzaGhiTjB0Undha0NLTTZNdTlGLTVzcjZwX3VSb19Lb2xwclF6QlZNS3U3T2tjMVpHaWhNM0Jnd3hhMGhfT1FkSFpsVkRQWlNoRlNwbjdLcDVfb0lCb1I1M3pDSXczaXBZOTlTX3hOeXl6d2xFd3BwMldPUmZkUENxazVvWXlQT3p6TEFUVGstbTlibHc?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795551077143
+   "at": 1795554301786
   },
   "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYlJZNURiemN5TlJxNzQ1V2R5a05PbS1WOVRCWWN0WmhsQTJ5enZfZW5wUG95ODg4YXVWY29GVlVtZUx4VFRwbFpLNXBRZkdobHpSUXJVdnVmM2NCZlQ0YUg0djNrQjE2UDZJaFhqakpxMnJmTVVyYmxmUnU0QlpkM3ZBeFloaThkck5MbjRPRWgxNmdjOVAwZHlsazdEZmMwSkIzTmhlSQ?oc=5": {
    "v": 2,
@@ -3887,30 +3886,25 @@
    "img": "https://www.bing.com/th?id=ONUT.-dkIqHhLfP4gRFzJ074DaA&pid=News&w=900&h=1200&c=7&rs=1",
    "at": 1795526804015
   },
-  "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRlEwODFUZEpqSGFVTWY1VmhreVM3QUhIcFc4eldUZ2RJSGVSWFhpV0p4dTQwbWIxVHFESUd5bGlrc3BhLWctQ0JZZ1VVVjBHNl95bDJUcWx4Q0NOTHJ2RG16Sjk0Yk9aUVZzeVBONjdRMG9RbEkwMzZFeDJ4dzlWYWk1VTJRMEZYd2lwLXhXMFo4Ri1qU2VEUklmakhlUEs3eE90Nw?oc=5": {
+  "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOXBNLTFVSjhRQnJfT3Vob0lOQmZ6N09sMkdIa0tOTWlTbjJfVHBfR2U4ZXV2Y1lmVEFLSVlKWEpOMWtwNUFZeF95ODRXRUtVVUtkVVhqalhvaG8zTEM2LVAtakdJM0RXczR4Q1ZqMHhuTnRMaTU4T254Z1VzeDM3WDFVMHJhWWJKZkxrai1oOTJqZERuaFhtNm9vdS1wVF9aTzVlUDF6VQ?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795551077645
+   "at": 1795554301936
+  },
+  "https://news.google.com/rss/articles/CBMixAFBVV95cUxNOFNCVWlyUWd4by1XMU51SUJncXpBd2JVYjVIdVkwdllaajNRZWFGV0RxdGUyY2t6R3IyaE5MWlpCN1cyVlNLRklhZ29NOEdkQ1I1dlNEWFkxS3hJUEJpSVBtdjNPeU82YTBVU2JFclJKTklCTjBjWDdFOV93RzVFazE3WHZyMXBJTEFEeUUyUHduaVgxWDBYcDBlTFZYUzNaM1ZxYk52UWRHRk9ia3d6MjhMSWNCdllVUGdVQkRRLTlCaDBf?oc=5": {
+   "v": 2,
+   "img": "https://ecomatin.net/_next/image?url=https%3A%2F%2Fprod-backsite.ecomatin.be%2Fwp-content%2Fuploads%2F2026%2F11%2FGemini_Generated_Image_assat1assat1assa.jpeg&w=1200&q=75",
+   "at": 1795554302580
   },
   "https://news.google.com/rss/articles/CBMingFBVV95cUxOMEhBT242VndwcExEc0RXMU9XUGZJdnlqSmVOUGJsUEVEcFdDZEJ1akhQWk51MG5sdTdrMnk1MERNOFIzNDBLcG5uZXlEdk84TXVkMG5CNUd0ekdIVS1qOWVVUFVyX19JdUJ0cU16djZCSnE3RGsyQzd4a0JiMVJ2VWl5UkNDQW0xY2k2ZVd5QlV3TS1XZFVHX1JPRmI3Zw?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795551077934
+   "at": 1795554303374
   },
   "https://news.google.com/rss/articles/CBMif0FVX3lxTFBVTHpRRUF1WF9fSTlOVExHQ0kyU3NHUHFEbmVObzF0LTFKQzhVd0p3SDBzVEx0dUFYNjNvSi1OTE5XaDVnVVZJUXZfTzRGNGtZZWdVZTZuRXZBOGlpT05JQjgzazg0aURnSDVOdzdsVDFIaU1GUWZpOE51V200bFU?oc=5": {
    "v": 2,
    "img": "https://imgproxy.divecdn.com/c_1lW-8OXmuAa8II6mTW9cl4qOw8PGj5-p2HRBM-Et4/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9hbnRocm9waWMuanBn.webp",
    "at": 1795543221561
-  },
-  "https://news.google.com/rss/articles/CBMixAFBVV95cUxQUnc3T1ZJX2VLY1lzcWt2WUk4aFJCVGRySW9lNmtRblUzZjF0NnFDOTVkNzFnTl9ZUkgxVVM1aUlZc1NQM1p2TFlWb09vQTlYSkdBcGI2TW14VzYyMmhrQ3lBcGlqVXI1UTR2bzE1UmlRelM1RHZfRV83OVZ1N1Exam5aMkh5cVVtdHFxUWZvSzJzOWNGcy1JZWg2WTBrNjBWeXRDX3BjTjdPZ3doUkM0eW9pWnExRm1BSnF3TVFmWjUyMXBO?oc=5": {
-   "v": 2,
-   "img": null,
-   "at": 1795551077755
-  },
-  "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQUR1SHBJb180UnhEMzFBRElWbDk1OFJzdUFDOURoZktBN0R1WTU3ZExjTFY4VEVUNEJyUGFWbVdXS09vbzJfX3JuQkI0dmlScE0tUjdlbVZvMTJ4M3hiQU8ydlE4QTBHWEJ1R3d6RnpTOXBRTjFUdWdIdHVydS1TVjN0LXctUFJLSE9QNWVVZFBvMWVqb2J1LUc5MW1kY0llVmU4TzlvVHg?oc=5": {
-   "v": 2,
-   "img": null,
-   "at": 1795551078421
   },
   "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVGhuQ1VIci1XSXM2UU1HWGZSZ2hNTDJpSlpvSl96WGpfZEIxUTJ4OVZpNmlOcnR5bGtYNzQwcTNTTzFsd0dSczF5Rl9qM0hPNmJ0N19wYWdxU0xYTWxFYWRGb0FudmxmQTBnM2VNdnV2dkRNT0NlT2oyZjM3LUp2cHFBeThEakN3QktJcGktMGRyYnFNZWpUOXpUVXpqQ3p6Q0ZDejRHdUQ5dHA3dzJEWWI4X2VlM016b2VDQXNHYW83dw?oc=5": {
    "v": 2,
@@ -3920,7 +3914,7 @@
   "https://news.google.com/rss/articles/CBMihwFBVV95cUxOYkR3ZjBRNDREN25qWUhPWDlWWjlGMWpBWWVBQVI1UFlpTUhnTGwwbVFIQVoyY1hkZWM0Y0kyeC1ZZU1OQWJXU3ZpalM3ZnVCZGNoUFdrU3hUY29Pb2UxNTJCYVVGSm5JN1pfb1J5a0FMWGlQck41WlJCZkxtXzlvTkFFZm1vaGc?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795551078867
+   "at": 1795554302444
   },
   "https://news.google.com/rss/articles/CBMiowFBVV95cUxObnF5YURtOEkwRU5yTmFCVlhEaGtoMG4telRMWHNiWVJMLVN3LXZPSHBEX1ViSVNUVy1tcXdjM1V3X0t5bWM4cnp3TTRhdHVRRDZzVGowOFB2dDBMY3RCMzN3VGdEWkN4Nmd2eDJsOWhranJrLVc3Vno0dGttRUxuRWxWWUk4SXpqcFBCRkVzbWdrblcwTGVTa3hjUXh0OGtDX2RJ?oc=5": {
    "v": 2,
@@ -3932,20 +3926,15 @@
    "img": "https://www.lbcgroup.tv/uploadImages/DocumentImages/Doc-T-963092-639277284412519567.jpg",
    "at": 1795511911696
   },
+  "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZ0FNelBkTmVQYVZ6Zk5IdEdHa0FkN1Y1RHJtNHFEaFpXb3R1R01Zbjg5UEMyMXIwUjgwNElIc3RkbTVPbzhYTHVycHdxQks4SjVQbGhrcml5TEIzYzlKTlZaT01samgzUXJxd3hmRXIxT1h2ZWVPcGM4QndiWnRnVElaNnRXRkV1M3c1LUZ2bmZISmJLSUgwZUdVR3Z3VDFSV0M0OVdNbzM?oc=5": {
+   "v": 2,
+   "img": null,
+   "at": 1795554303345
+  },
   "https://news.google.com/rss/articles/CBMijgFBVV95cUxPYkZlRGxGeEhiQ2MwY013d0E0MkN2N2ozc3FYRlh2TTJZZVBHaVh0bkpoNE4xSTZXUGpjelV5WTRDM3NwblpDaktWZ1VpRUVCbXBoeEE5d2R6b1JSbEJ1MEliNlJfTEQ4NTMyNkU3M01GcWlKYUp2NlNFdXRlSEVLWmk1WVp1a19iMXZXWmV3?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795551079681
-  },
-  "https://news.google.com/rss/articles/CBMipAFBVV95cUxOR1I1emo4NTV5Y0pEdGJQVC1jQUxmM05qYUdmYmVaMXlUOFkwSDZGSjE4bG9ZNW1LaHd4enU0bURSTWstT2ZXXzhIWG1mYWpIRF96TURIdFpPcVI5aUpjNEJ2elI1OHNjUkF0cHRhRktIaUNLd1hPWEhoTGdMV0NNdUw3cVZDQmdxdjRvT3dfUHdOR1FkTkxNSlJZZU96N2ZWQkNCUtIBqgFBVV95cUxOUGpBY2pwN1FsU3BobnU5MmE1Wk0xYmNiSzUzYURjaEg4RzZtWEZkcGFpLWg4X0k1bXFrNGpvdWlBN3lUNlM4VTZxQnFwX1hCVmpvczhzeUpGOTJYV1FZRGVfeDg3RjU4V0M2Zk83R1d5clQtNTIzb1dXRnNLa0lJTTFPNG5oMkNUMlZJY3VwZ1NMV2VGRmJUQTJIX1FlMmp6ck9EVENsQWZkZw?oc=5": {
-   "v": 2,
-   "img": "https://www.bing.com/th?id=ONUT.ZOjGTLlTGn_l_9lsAlP74A&pid=News&w=900&h=1200&c=7&rs=1",
-   "at": 1795551080284
-  },
-  "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTFEwYWFtVXI5SVlNTmpJY1N4c3JEUlh6UFprUTlYOVdaSk5fSXdYN2dlbVFyWHpLd3lJY2NXQnViZmZYVGVfSVFyUkw4akYza056ZWVJdmpQTkJUc3VVdkhFalNYQmRxV2prbG9BMUhNNmE4RDB5YThxaGhIN1ZQMkNaTmZvUVk3TW81aERqeUd1QmNEVE0zNDl5NFhSMDRT?oc=5": {
-   "v": 2,
-   "img": "https://image.cnbcfm.com/api/v1/image/108369472-17906961161790696113-48684006496-1080pnbcnews.jpg?v=1790696115&w=1920&h=1080",
-   "at": 1795547356380
+   "at": 1795554303908
   },
   "https://news.google.com/rss/articles/CBMipgFBVV95cUxONlY4d3JraEZNanJDdUxxd3p2UGdlTFNIMzFhR1FaemlUaHF2MGVBTk1tM2VDbEVCSjRwY29tVGEtTXpmVUxKVTZ6ZkV4V1ZXUnQtOEFWTl9HTTNTSmpGQndMTHZtQWNyaHc0bXFLM1MzSEZfdmowOTZOVHJiaVpIc0Q3NVNzblFNTUlkSE1YZC1MY3V2MUdydzNVU2RuX0NxUVdHbURB?oc=5": {
    "v": 2,
@@ -3957,20 +3946,10 @@
    "img": "https://www.bing.com/th?id=ONUT.-b1nvSCo1EFp9AVYWQTrAw&pid=News&w=900&h=1200&c=7&rs=1",
    "at": 1795551080567
   },
-  "https://news.google.com/rss/articles/CBMisgFBVV95cUxOaVlRUDhNb043VEhfRnlUbEZMakhMRE9ZQWYwY0h5cFBEb2dNS1UzNVpzaGxDV19NMmI0T2JuZnFsWUNUNDFZenJWRFV2T2FfbkswUU9qR01WVHpCS05JYzQwNFlRZm5EMngtUmpBUHFiem5hdElhdzFyYWhRODBYYXA1OWM2WkVYM3ZlUDd4QXJIMEItQnItN255S1Y2TmxoN0taeFE2MU80czZKSGF1OFNB?oc=5": {
-   "v": 2,
-   "img": "https://www.bing.com/th?id=ONUT.90epL8jy0ISfV7IgKjnDLQ&pid=News&w=900&h=1200&c=7&rs=1",
-   "at": 1795551081134
-  },
   "https://news.google.com/rss/articles/CBMilwFBVV95cUxPLVlVQW41ckp3MEdDOGFDa1Q4MVVhZGtIUzhMN3l2OHBXZllyb2VLUnVEcUxmdVp4T0NXU2VfT2pwMjdJcmpVeXVEUm5KOWtFZWpQMzYySUxYM0xSOEZvcWUyLTU3Z0dmZDd3NlJjemZidDI2NzdKZ2NoenBBcEJBeWttMlNiOHpIQkV4RVlGQm9XbmhJb0RB0gGcAUFVX3lxTFBIXzhSVHJRVGRsTGlFR2o5emlBUzBYdkZ1TnoxTjd2eThxNjU0V2Rvd3RmOWxkcUI0UmN0MGxFQ29TZldBU0ZLS19IWFNnaFRUSjZibHRnMGF4Y1VYRHl1VHQ4SkxxU3dhejBobmNQek9qZ0JXYWFUa2lLTTRjWVlybjVnWUpjZ2lCQU9kZzhDdm5xSVhPcE14ZmtsTw?oc=5": {
    "v": 2,
    "img": "https://www.bing.com/th?id=ONUT.c_X9eP_n5S2nXZa0hRgNDw&pid=News&w=900&h=1200&c=7&rs=1",
    "at": 1795547355335
-  },
-  "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSTdTSVk1YVg0WC1SRVJKVW1XYTZJbjRhRVctYkNzZHZRcW5TaVE3MVdSd2JfYUNaV3otX1FzR1lxYkwyWWZtbS1ONDdiem9UVUI0ckV6c2tiOEt0TGViNlUxZFdSeDV0aVJ4cjZkSkE5Nk9veE1UTmxad0xxaXhScndGMV9IdWVrNUpOQnY0Y0hXVmpZVFgwbTFQMDZiX0NqdExaejlYMzJnbjg?oc=5": {
-   "v": 2,
-   "img": "https://www.bing.com/th?id=ONUT.ceMUVVTLIYs7dRhb_pH1DA&pid=News&w=900&h=1200&c=7&rs=1",
-   "at": 1795537505689
   },
   "https://news.google.com/rss/articles/CBMigAFBVV95cUxOV3Qxb0R3X0EydVhiOG9yX1ZCczV1eVBZaGdvYVlFWGdTNjBNS3dEYjI1dzZOS2lMQW1tTEZDc1h5cFNtWTFHcUFnSWxzcFJIcDNvLVdNOEZzQnRhNnNlYi1xMFJFUUI5Z3Z0b2xVTHB2NXBlV2RoUGpIVDJQbzZtNQ?oc=5": {
    "v": 2,
@@ -3981,6 +3960,21 @@
    "v": 2,
    "img": "https://www.bing.com/th?id=ONUT.KgDRK1qi_XTEJWRzL5WiFw&pid=News&w=900&h=1200&c=7&rs=1",
    "at": 1795505400125
+  },
+  "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQaGhuc1lHTDdFZFRqZWlxZG1Pa2taamJDaFhYOVdweHl0ZVlrdE5XUFdGODREdjM5bm9QclRCeEZRWHdDMHI1ZlJiYkhhb1ZUMjdoOU5McmEwdkprTEdVQWNVdmxxdFRack5Hbk5HNmNsQXhXX242NEpLVURXZmswWW92OG1IVHZWVFpDTFVXbUpxbjBnOG91b1VhZzVjV0lfNFMyYXVwdnczbFJHMUcwU1pRVXF3OC1tN1FJSzF1aFVWc1RWRjZ1azZLWHBRVlBMNGZzS0Q3Q00xT1NMaDJvTG40bkl3UQ?oc=5": {
+   "v": 2,
+   "img": "https://www.bing.com/th?id=ONUT.EqiA3ej0Q3bbBJguiUty_Q&pid=News&w=900&h=1200&c=7&rs=1",
+   "at": 1795554303843
+  },
+  "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5RMldzb3V1MkRHbExna3V6OG9ua0dXa3RTSlNVbEo0alNFTjhOeXhRUnVHTVpMX2xpSk5WWldMV04xeG9nRTZVNFdIMEFaa19UWkNlQ29Gb2x3MnFqOHFz0gFkQVVfeXFMTXRrZ2ltQm5lR3V5Sk1EcExpLXJGaGdHaC0wQXl2ZEF4UXAtaVdCazV4ZWdJQmgtVG9XWktXT2NYQUNnWE1ZTmFkR0t0M3NGby1xa3JkTklTMW11dFREZlRrQXRLbw?oc=5": {
+   "v": 2,
+   "img": "https://ichef.bbci.co.uk/news/1200/branded_afrique/ae1f/live/ec9cfdb0-e71f-11f1-914b-6d226d813a52.jpg",
+   "at": 1795554304070
+  },
+  "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNeGxwMnZFb1BMNHZoXzlSU2xyV0RTZ3dhN3ptUFJHRTItQk11VGhkWVJBWHp2WTE0Qlg0ektoVDFEb0U2bVNaWjF5NUM3SVVOckhUU3g4MHFtcFpWR1BMeG02THd0c2l0RVBwR2JfdGxRZ1pkQ0hkZWFGUXdnTkx4bm5NZEZpWHFfNC1yRGhvdDBMTm05dFQ4SHlPdEpzQmVsalBpcWRJOWhBUHdBMG95X2xUcm5KNndqSU1UdEF3QlZYaUlCcHZKYkV5SlNSaElL?oc=5": {
+   "v": 2,
+   "img": "https://www.bing.com/th?id=ONUT.sk5Tc2Fk5ddPZ2Uxc0uylQ&pid=News&w=900&h=1200&c=7&rs=1",
+   "at": 1795554304775
   }
  }
 }
