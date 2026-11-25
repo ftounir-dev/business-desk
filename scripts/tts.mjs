@@ -16,7 +16,10 @@ for (const lang of ["en", "fr", "ar"]) {
   const segs = (P[lang] || []).map(s => s.text).filter(Boolean);
   const out = path.join(ROOT, "data", `brief-${lang}.mp3`);
   if (!segs.length) continue;
-  if (P.audio[lang] && P.audio[lang].includes(P.id)) { console.log(`tts ${lang}: already done`); continue; }
+  // "Done" only if the saved recording really belongs to this edition (a tag file is saved next to each recording)
+  const tagFile = path.join(ROOT, "data", `brief-${lang}.id`);
+  let tag = ""; try { tag = (await fs.readFile(tagFile, "utf8")).trim(); } catch {}
+  if (P.audio[lang] && P.audio[lang].includes(P.id) && tag === P.id) { console.log(`tts ${lang}: already done`); continue; }
   try {
     const bufs = [], marks = []; let bytes = 0;
     for (const text of segs) {
@@ -32,6 +35,7 @@ for (const lang of ["en", "fr", "ar"]) {
     const all = Buffer.concat(bufs);
     if (all.length < 5000) throw new Error("audio too short");
     await fs.writeFile(out, all);
+    await fs.writeFile(tagFile, P.id + "\n");
     P.audio[lang] = `data/brief-${lang}.mp3?v=${P.id}`;
     P.audio_secs = P.audio_secs || {}; P.audio_secs[lang] = Math.round(all.length / 6000);   // 48 kbit/s
     P.marks = P.marks || {}; P.marks[lang] = marks;

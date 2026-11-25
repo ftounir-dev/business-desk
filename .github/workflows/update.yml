@@ -58,7 +58,8 @@ jobs:
           git config user.name "business-desk-bot"
           git config user.email "business-desk-bot@users.noreply.github.com"
           git add data/brief.json
-          git add data/*.mp3 data/push.enc 2>/dev/null || true
+          git add data/*.mp3 data/*.id 2>/dev/null || true
+          if [ -f data/push.enc ]; then git add data/push.enc; fi
           git diff --cached --quiet && echo "No change" && exit 0
           git commit -m "Brief $(date -u +'%Y-%m-%d %H:%M') UTC"
           git pull --rebase -q || true
