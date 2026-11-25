@@ -22,8 +22,8 @@
     "ok": true
    },
    "bev": {
-    "fresh": 5,
-    "total": 5,
+    "fresh": 4,
+    "total": 4,
     "ok": true
    },
    "cfo": {
@@ -47,7 +47,7 @@
   "translate": "google",
   "static_days": 58
  },
- "generated_at": "2026-11-25T15:20:36.721Z",
+ "generated_at": "2026-11-25T17:17:05.544Z",
  "follow": [
   "BEAC",
   "CEMAC",
@@ -67,13 +67,13 @@
   "sub_topic": "bd-rayan-push-8dc2b9425e0b"
  },
  "alerts": "https://ntfy.sh/bd-rayan-fc9d86a0e5",
- "summary_at": "2026-11-25T05:42:10.348Z",
- "edition": "morning",
+ "summary_at": "2026-11-25T17:16:16.890Z",
+ "edition": "evening",
  "summary_mode": "ai",
  "peg": 655.957,
  "fx": {
-  "eurusd": 1.0938525199890137,
-  "usdxaf": 599.6759051271265,
+  "eurusd": 1.098538875579834,
+  "usdxaf": 597.1176938583724,
   "usdxaf_prev": 601.348571523993,
   "date": "2026-11-25"
  },
@@ -85,10 +85,10 @@
    "unit": "XAF per USD",
    "dp": 1,
    "cost": 1,
-   "value": 599.6759051271265,
+   "value": 597.1176938583724,
    "prev": 601.348571523993,
    "date": "2026-11-25",
-   "change_pct": -0.278152551793287,
+   "change_pct": -0.7035649315501491,
    "series": [
     [
      "2026-10-27",
@@ -176,18 +176,18 @@
     ],
     [
      "2026-11-25",
-     599.6759051271265
+     597.1176938583724
     ]
    ],
    "source": "655.957 ÷ EUR/USD",
    "url": "https://finance.yahoo.com/quote/EURUSD%3DX",
    "why": {
-    "en": "Dollar rallies before key inflation reading; Aussie and sterling slump",
-    "fr": "Le dollar se redresse avant les chiffres clés de l'inflation ; Chute de l'aussie et de la livre sterling",
-    "ar": "الدولار يرتفع قبل قراءة التضخم الرئيسية؛ تراجع الدولار الأسترالي والجنيه الاسترليني",
-    "source": "CNBC",
-    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTkVTajJOTGhaYkV4VzhrbUp1Smo0RFZmdFc0MkJOTHJBT1ZVM2JhNUtacjU3ZloxcmlCcmlwaE1JdEF6Vlk5S0V3VUI4V21iQVdPcEtqVHdHZGZJd0poYzBFSXpRbjNrYWUyWEg0N2RzQlBLRHhPcWxZUjRXYmZ5MXpUUkN0QdIBiwFBVV95cUxQS1ZaRXB4ZWFUbDVkXzdUT2psQmZCRXZvR3hRbHlIRHY0TjlkXzVSMGVWMy1MdkxiWGdGbXhWUVpqQkVDS1cyb201SVRmQW5Lb1pFOTB0X2NNdFdvNUZENk5MbzhYRmxmNEpvc3c3dFFObUYwQW5JUG9BMFg4RUd5UklKNGtZUGVCN0hN?oc=5",
-    "date": "2026-11-25T05:05:41.000Z",
+    "en": "Fed policymakers at odds over causes of high inflation",
+    "fr": "Les décideurs de la Fed ne s'entendent pas sur les causes de l'inflation élevée",
+    "ar": "ويختلف صناع السياسة في بنك الاحتياطي الفيدرالي حول أسباب ارتفاع التضخم",
+    "source": "Reuters",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ2Vtdjdia2xUaVF5bWxRSVlPUTZjc1JmWG9Uam1QSHpNcXZuREdQVmRyX2hkNEtMbWhFd1VFb3l6QVJGYkJHZlZXUDJLVlM4cDdDR0RSVTRPMmZaUHAtMlhtSDlQeFF4UGJadUhrQmhlaWlJT1cwSG9IRnF1cC1COEtKdTBsUWVsXzhkYWhUWHNKTjJsUVJuNw?oc=5",
+    "date": "2026-11-25T11:02:09.000Z",
     "related": true
    }
   },
@@ -198,10 +198,10 @@
    "unit": "USD per EUR",
    "dp": 4,
    "cost": -1,
-   "value": 1.0938525199890137,
+   "value": 1.098538875579834,
    "prev": 1.090809941291809,
    "date": "2026-11-25",
-   "change_pct": 0.2789283982506996,
+   "change_pct": 0.708550041162237,
    "series": [
     [
      "2026-10-27",
@@ -289,18 +289,18 @@
     ],
     [
      "2026-11-25",
-     1.0938525199890137
+     1.098538875579834
     ]
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/EURUSD%3DX",
    "why": {
-    "en": "Dollar rallies before key inflation reading; Aussie and sterling slump",
-    "fr": "Le dollar se redresse avant les chiffres clés de l'inflation ; Chute de l'aussie et de la livre sterling",
-    "ar": "الدولار يرتفع قبل قراءة التضخم الرئيسية؛ تراجع الدولار الأسترالي والجنيه الاسترليني",
-    "source": "CNBC",
-    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTkVTajJOTGhaYkV4VzhrbUp1Smo0RFZmdFc0MkJOTHJBT1ZVM2JhNUtacjU3ZloxcmlCcmlwaE1JdEF6Vlk5S0V3VUI4V21iQVdPcEtqVHdHZGZJd0poYzBFSXpRbjNrYWUyWEg0N2RzQlBLRHhPcWxZUjRXYmZ5MXpUUkN0QdIBiwFBVV95cUxQS1ZaRXB4ZWFUbDVkXzdUT2psQmZCRXZvR3hRbHlIRHY0TjlkXzVSMGVWMy1MdkxiWGdGbXhWUVpqQkVDS1cyb201SVRmQW5Lb1pFOTB0X2NNdFdvNUZENk5MbzhYRmxmNEpvc3c3dFFObUYwQW5JUG9BMFg4RUd5UklKNGtZUGVCN0hN?oc=5",
-    "date": "2026-11-25T05:05:41.000Z",
+    "en": "Fed policymakers at odds over causes of high inflation",
+    "fr": "Les décideurs de la Fed ne s'entendent pas sur les causes de l'inflation élevée",
+    "ar": "ويختلف صناع السياسة في بنك الاحتياطي الفيدرالي حول أسباب ارتفاع التضخم",
+    "source": "Reuters",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ2Vtdjdia2xUaVF5bWxRSVlPUTZjc1JmWG9Uam1QSHpNcXZuREdQVmRyX2hkNEtMbWhFd1VFb3l6QVJGYkJHZlZXUDJLVlM4cDdDR0RSVTRPMmZaUHAtMlhtSDlQeFF4UGJadUhrQmhlaWlJT1cwSG9IRnF1cC1COEtKdTBsUWVsXzhkYWhUWHNKTjJsUVJuNw?oc=5",
+    "date": "2026-11-25T11:02:09.000Z",
     "related": true
    }
   },
@@ -311,10 +311,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 90.04000091552734,
+   "value": 89.5199966430664,
    "prev": 91.4000015258789,
    "date": "2026-11-25",
-   "change_pct": -1.487965631998911,
+   "change_pct": -2.0568980869001385,
    "series": [
     [
      "2026-10-27",
@@ -402,7 +402,7 @@
     ],
     [
      "2026-11-25",
-     90.04000091552734
+     89.5199966430664
     ]
    ],
    "source": "Yahoo Finance",
@@ -424,10 +424,10 @@
    "unit": "USD/bbl",
    "dp": 2,
    "cost": 1,
-   "value": 83.4800033569336,
+   "value": 82.91999816894531,
    "prev": 82.05000305175781,
    "date": "2026-11-25",
-   "change_pct": 1.742840038986615,
+   "change_pct": 1.0603230771834449,
    "series": [
     [
      "2026-10-27",
@@ -515,7 +515,7 @@
     ],
     [
      "2026-11-25",
-     83.4800033569336
+     82.91999816894531
     ]
    ],
    "source": "Yahoo Finance",
@@ -537,10 +537,10 @@
    "unit": "USD/oz",
    "dp": 0,
    "cost": 0,
-   "value": 3496,
+   "value": 3498.800048828125,
    "prev": 3561.89990234375,
    "date": "2026-11-25",
-   "change_pct": -1.850133472318738,
+   "change_pct": -1.771522368556877,
    "series": [
     [
      "2026-10-27",
@@ -628,15 +628,15 @@
     ],
     [
      "2026-11-25",
-     3496
+     3498.800048828125
     ]
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/GC%3DF",
    "why": {
-    "en": "Down 1.9%, moving with Silver (−3.8%): a broad sell-off rather than one-off news.",
-    "fr": "En baisse de 1,9%, comme l'argent (−3,8%) : un mouvement d'ensemble plutôt qu'une nouvelle isolée.",
-    "ar": "انخفاض 1.9% بالتوازي مع Silver (−3.8%): حركة عامة وليست خبرًا منفردًا."
+    "en": "Down 1.8%, moving with Silver (−3.6%): a broad sell-off rather than one-off news.",
+    "fr": "En baisse de 1,8%, comme l'argent (−3,6%) : un mouvement d'ensemble plutôt qu'une nouvelle isolée.",
+    "ar": "انخفاض 1.8% بالتوازي مع Silver (−3.6%): حركة عامة وليست خبرًا منفردًا."
    }
   },
   {
@@ -646,10 +646,10 @@
    "unit": "USD/oz",
    "dp": 2,
    "cost": 0,
-   "value": 39.20000076293945,
+   "value": 39.29999923706055,
    "prev": 40.7599983215332,
    "date": "2026-11-25",
-   "change_pct": -3.827275816568454,
+   "change_pct": -3.581940982812426,
    "series": [
     [
      "2026-10-27",
@@ -737,15 +737,15 @@
     ],
     [
      "2026-11-25",
-     39.20000076293945
+     39.29999923706055
     ]
    ],
    "source": "Yahoo Finance",
    "url": "https://finance.yahoo.com/quote/SI%3DF",
    "why": {
-    "en": "Down 3.8%, moving with Gold (−1.9%): a broad sell-off rather than one-off news.",
-    "fr": "En baisse de 3,8%, comme l'or (−1,9%) : un mouvement d'ensemble plutôt qu'une nouvelle isolée.",
-    "ar": "انخفاض 3.8% بالتوازي مع Gold (−1.9%): حركة عامة وليست خبرًا منفردًا."
+    "en": "Down 3.6%, moving with Gold (−1.8%): a broad sell-off rather than one-off news.",
+    "fr": "En baisse de 3,6%, comme l'or (−1,8%) : un mouvement d'ensemble plutôt qu'une nouvelle isolée.",
+    "ar": "انخفاض 3.6% بالتوازي مع Gold (−1.8%): حركة عامة وليست خبرًا منفردًا."
    }
   }
  ],
@@ -985,60 +985,104 @@
    {
     "level": "high",
     "score": 5,
+    "cat": "worldwide",
+    "source": "BNN Bloomberg",
+    "date": "2026-11-25T11:47:32.000Z",
+    "img": "https://www.bnnbloomberg.ca/resizer/v2/XDEEBJ75UTIWNS6MRCQZZP4T7U.jpg?smart=true&auth=1d68eef2a5da4d8ad29d4b3800198955194b68e13dc7e40666d4a166259b6277&width=1200&height=630",
+    "owner": "Worldwide",
+    "title": "Bank of Canada Sees Inflation Ending Below Forecast on Falling Oil",
+    "kind": "news",
+    "detail": "Falling global oil prices could push future inflation below previous forecasts, according to the Bank of Canada. The assessment follows a broader retreat in crude markets.",
+    "impact": "Lower oil prices could accelerate monetary policy easing by central banks.",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPT1NwZUhEUk1EN0VUT1dwa2U0cXQwY3JTMm11NXRsVS1mNUFfZ0ZrYXZldVdZbmRoektXRGo4NWI5d3VwUFNsRHJ6XzVHZ1h3Yl93OFY2QlFDODJUdzZpRlBkNXVGYW9KOTY2SEQ4bG1QZWE1WklQZDNMM3pZd0ZQR1BkZHZua1IxOGx1bGU5Mk1qTUZBWE0xM0FpMFhVdUFmT0JVclFkenZqZ2hESHNoMEREZjlHRzNEZ2c1QlRSSGh1QWpWc1BjR3FZcXhqckpNZV9J?oc=5",
+    "ctx": "Brent −2.1% at the last close"
+   },
+   {
+    "level": "high",
+    "score": 5,
+    "cat": "africa",
+    "source": "Financial Afrik",
+    "date": "2026-11-25T11:55:22.000Z",
+    "img": "https://www.financialafrik.com/wp-content/uploads/2024/05/DFC54E69-3E29-4DC2-99A7-0521551F5219.jpeg",
+    "owner": "Africa",
+    "title": "Ivory Coast Raises 110 Billion FCFA with Strong Market Demand",
+    "kind": "news",
+    "detail": "Ivory Coast successfully mobilized 110 billion FCFA on November 24, 2026, achieving a coverage rate of 201.90% with yields of 6.26% for three years and 7.03% for five years.",
+    "impact": "The strong subscription reinforces Ivory Coast's benchmark sovereign status within the UMOA market.",
+    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQUkhZVU1kbG43VlF1amRLRzRfR2V3Vm1xbjJ4ZkhQNjZCSENoWXJURjI4RFY0TTFhbnYxZUx5Sk41WDlOeFp6T0N0c1RpWEpTQndWTE1RbWF3MVhpZmZuWnNuT0tRVE1nY2lMS05kVlZJZ1lGWHRTMzdHZk1jNzU4TThUYlRBcVRHajlvWXJfb01sSF90WE5TSWlnX1N5cVZFUjNPYTVCc1NiVDRNaWptV2RHYUl3OHZqZzlOblI4ODVGTjRpT3B0QlNSQ25zT1hwdzJNdHJZTmw5MWlYWlN1c0xENzM?oc=5",
+    "ctx": "USD/XAF −0.7% at the last close"
+   },
+   {
+    "level": "high",
+    "score": 5,
     "cat": "congo",
     "source": "EcoMatin",
     "date": "2026-11-24T05:49:22.000Z",
     "img": "https://ecomatin.net/_next/image?url=https%3A%2F%2Fprod-backsite.ecomatin.be%2Fwp-content%2Fuploads%2F2025%2F12%2FSiege-de-la-BEAC-a-Yaounde.jpg&w=1200&q=75",
     "owner": "Congo & CEMAC",
-    "title": "CEMAC States Face 4,404 Billion FCFA in Debt Maturities",
+    "title": "CEMAC States Face 4,404 Billion FCFA in Debt Maturities by 2027",
     "kind": "news",
-    "detail": "CEMAC governments from Gabon to Chad and Congo face a heavy repayment schedule totaling 4,404 billion FCFA through October 2027.",
-    "impact": "This heavy refinancing schedule could tighten liquidity and push up yields on regional bond markets.",
+    "detail": "Governments across the CEMAC region, from Gabon to Chad, Congo, and Cameroon, must manage a busy repayment schedule totaling 4,404 billion FCFA through October 2027.",
+    "impact": "The heavy repayment schedule increases refinancing pressures on regional public finances.",
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWHdkR3lTYWlJS1NibHkwcG1UUkpOVFVFeDR4YnhJaHZfT0EyUkc4NGJGdzJ3ZE05R2tYZ0VUTl9na1VOX1dJaWtuenNtdlQya0lraW9WU013RnJqTlRlRV9IejdEQTBkY2gwZjVJazc1U0d2NFVtTTY0b1RyS1hFY2dic0xwejY4VzY2a3dudDk4S0VQb0tGZjgxSFJKbnN4amlSNg?oc=5",
-    "ctx": "USD/XAF −0.4% at the last close"
+    "ctx": "USD/XAF −0.7% at the last close"
    },
    {
-    "level": "high",
-    "score": 5,
-    "cat": "worldwide",
-    "source": "Bloomberg.com",
-    "date": "2026-11-24T20:58:22.000Z",
-    "img": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iMqTVvUNj9kk/v0/1200x800.jpg",
-    "owner": "Worldwide",
-    "title": "Bank of Canada Shifts Core Inflation Gauges as Forecast Lowers",
+    "level": "med",
+    "score": 4,
+    "cat": "cfo",
+    "source": "Journal de Brazza",
+    "date": "2026-11-24T15:20:43.000Z",
+    "img": null,
+    "owner": "CFO & treasury",
+    "title": "Congo Employers Submit 2027 Finance Law Proposals to Assembly",
     "kind": "news",
-    "detail": "Governor Tiff Macklem announced that the Bank of Canada is changing the metrics it uses to weigh underlying price pressures while lowering its inflation forecast.",
-    "impact": "Shifting inflation metrics could signal earlier or deeper policy rate adjustments by the central bank.",
-    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUVJ3MVdLQjc0eVhETnJBR0xUWUp6UjVhMmtFcnQ5aEdBV2VqbnlNZkdlSnpMOENIYnNNWHV5X3kzVThaWjE2MXhVMXJnV0o3STlZRzdXWF9fMk9KWHhMMXliUXoyR1V6dHpISkVDbk14ODJWZGE4amhMNlZFMDZvNVRjT3pFUFdsZWlvbm0tcnNRVE1Eb0loSmw4VUZLa2VCbzZDTg?oc=5"
+    "detail": "Employers in the Republic of Congo have formally submitted their fiscal proposals regarding the 2027 Finance Law to the National Assembly.",
+    "impact": "The proposals could influence corporate tax and regulatory adjustments in the upcoming budget.",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOGxwalh3YmhuMlpxUG9BRDI3a1JoTDZBVU8tY29QVnBjVW9IZVhzaGhiTjB0Undha0NLTTZNdTlGLTVzcjZwX3VSb19Lb2xwclF6QlZNS3U3T2tjMVpHaWhNM0Jnd3hhMGhfT1FkSFpsVkRQWlNoRlNwbjdLcDVfb0lCb1I1M3pDSXczaXBZOTlTX3hOeXl6d2xFd3BwMldPUmZkUENxazVvWXlQT3p6TEFUVGstbTlibHc?oc=5"
+   },
+   {
+    "level": "med",
+    "score": 4,
+    "cat": "worldwide",
+    "source": "Financial Times",
+    "date": "2026-11-25T14:27:46.000Z",
+    "img": null,
+    "owner": "Worldwide",
+    "title": "OPEC+ Members Head for Clash Over Production Estimates",
+    "kind": "news",
+    "detail": "The largest members of OPEC+ are moving toward a disagreement regarding oil production estimates and future output quotas.",
+    "impact": "Disputes within OPEC+ could increase volatility in international crude benchmarks.",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMXZnb25ZTWVaVHNZU2lWMG9YYzlVaTFPMFR0Vnd5TFJIWHRoWVU2dTVMWThxRXdLTzFqWjdsak14cW9DVGZKbW0zNE1XblVZWlpiSTdwWEk4ZTdtT1lkWkdZSEFydlgwT19fSWRfUnpmZTF4bW85SnpBZ0x3dVZIWlo2WDQ?oc=5",
+    "ctx": "Brent −2.1% at the last close"
    },
    {
     "level": "med",
     "score": 4,
     "cat": "africa",
-    "source": "The Nation Newspaper",
-    "date": "2026-11-23T18:14:51.000Z",
-    "img": null,
+    "source": "AGENCE ECOFIN",
+    "date": "2026-11-25T10:49:00.000Z",
+    "img": "https://www.bing.com/th?id=ONUT.ioylc09X62O4yVL4NCCLPQ&pid=News&w=900&h=1200&c=7&rs=1",
     "owner": "Africa",
-    "title": "Nigeria Reports 4.43% Economic Growth and Lower Inflation",
+    "title": "Guinea Secures $417 Million IMF Financing Program Over 38 Months",
     "kind": "news",
-    "detail": "The Nigerian federal government announced that the national economy grew by 4.43%, inflation dropped to 14.06%, and foreign reserves reached $54.87 billion.",
-    "impact": "Stronger growth and lower inflation could boost investor confidence in West African sovereign assets.",
-    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcU1DXzc4bFRkdG1jcVhyTS04YWJtbERsQ1pCcktlbUlFTFZZX05XUlgxdHRPWmplR3dMSFlicTlET2wwcC1UWUZrSDBBM25XQkw4M1BEelFvSnVWZ2kxNDhsaVRubFBfakFLc0EwMFRwRlV1c3RPdjBPZzhMVkRBLWxUQ0pqdW5hQmdDcHptNXBvVG1ySGg5a3VkMkxITmctWHNwVGRmZzUzSzdCYTdwNTFzZ9IBuAFBVV95cUxPOUR3a0ZHQzdzR2tFcGoxSkE1SF90ckJQWVQzVm1IZ1JNdW1zNFNxTWg5MGlSc2dGVXNrRmVxcjl3bGVfVWZPcjltVG84Y2hoNklHRnhHYi1UNmwtVmhKVjNKeE13Wjh4YjlHb0JUT0o2TWFhQnVBRjZfMElvbjNtZW1KblcxTjdRME5UZG9pYzhKa2ZiN3IybWYwTkFjNVo2cnBQcGNWNlpMcHBRYVczcjdRRkJOYWts?oc=5"
+    "detail": "The International Monetary Fund approved a new financial backing program for Guinea worth $417 million to be disbursed over a 38-month period.",
+    "impact": "The IMF program will support Guinea's external balances and structural reform agenda.",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOa1RXSHVvZGp0dkRhV1ZpMlkyT1kxTk5sS25XVlR0SFVvVHI5Q2pvZTRSYTd0UU84dU9vVkNyR0xoM3FYamRrMENxTWltb1RYb1doYnBsanZaVlR3SXVRUS1NRGZLeWtBS0ZxdERnZHBST1dUellMX2g2OFZpckdCLVVhNklCdTFoQW9vMDVpcXhxMDlvNzNLZGF2LVBZOFh5aDZ5OWlKOWVQZ240ZWxHVVp0SU5WT1BSU1otZjNBRDA3UGQ2M1ZvVGl3?oc=5"
    },
    {
     "level": "med",
     "score": 4,
     "cat": "congo",
-    "source": "Investir au Cameroun",
-    "date": "2026-11-23T12:55:00.000Z",
-    "img": "https://www.investiraucameroun.com/media/k2/items/cache/ba136a414854bf1bf0a260309139e666_L.jpg",
+    "source": "AGENCE ECOFIN",
+    "date": "2026-11-25T10:18:00.000Z",
+    "img": "https://www.bing.com/th?id=ONUT.uzGTk2e9g6Y6qLJTOVdsdA&pid=News&w=900&h=1200&c=7&rs=1",
     "owner": "Congo & CEMAC",
-    "title": "BDEAC Receives Green Light to Raise 298.3 Billion FCFA",
+    "title": "Cameroon Secures $22 Million from DEG for Afriland First Bank",
     "kind": "news",
-    "detail": "The Development Bank of Central African States obtained clearance from its Board of Directors to conduct fundraising surveys for 298.3 billion FCFA following its Eurobond success.",
-    "impact": "The capital raise will expand regional project financing capacity across Central Africa.",
-    "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNeWVtckJmNmpObXJ5T18zR0VzXzd3akRGYWZlOEdjdUpEdFgyNE5qLW9haWN3RGx1U1l3X1BGVmoxUGRsaWtKbHhxZTRKMmk1MlVYbVlDTTlxQ1AwTDd3WE9vMTlIM19FWlpJN1JwSFQycEp4dkRpcWROUThQWXhnTlhXdjdHdHpEX3RxTzVkRWJsZmU5eFhkQWt2ZTM4YS1JUHM5c2RSdmJPcUUzVzN2YldBOUhsd1d1NVFGdlh6Z0xpVExLeEkzenhka0dqeTN1SHI5MFR3QVg3RkxyN01RTXNWWUctNGMzOWNxMkY1R3RiaGZ3dGlvZ1haeGR5WEZHVVE?oc=5",
-    "ctx": "USD/XAF −0.4% at the last close"
+    "detail": "Afriland First Bank in Cameroon has obtained $22 million in financing from DEG to expand commercial credit lines for local businesses.",
+    "impact": "The credit facility helps alleviate growing liquidity constraints for Cameroonian enterprises.",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxObGRuZGZMdVhMZlEtQWVIeVJpUTdiNk9mdklTM1k0QWtzLXdKbGhtaExOYkdfaWdpaW4xeExpcVl5VmM1RnlOTlk1SV9sWDd0bDdZS1Jha2FTR0pJWnphcUI0T0xxRHdUenp4VVdwLW84M05CUFcwQ29scHEtTWFNT3A4c1ptanJPcnRNbWpVbDRUaE5YSFZCYmdOU0xBQXN6OGE5SXAxZHVXYWJFc1RSMjNkek9xOXlXNVltMmhkNDhicWxsM2xuSDJkLW03c0haUlBtMjhoaw?oc=5"
    },
    {
     "level": "med",
@@ -1046,59 +1090,46 @@
     "cat": "cfo",
     "source": "ACP | Agence Congolaise de Presse",
     "date": "2026-11-24T20:46:52.000Z",
-    "img": null,
+    "img": "https://www.bing.com/th?id=ONUT.8GeiSiPHntPm-Qf38zENvA&pid=News&w=900&h=1200&c=7&rs=1",
     "owner": "CFO & treasury",
-    "title": "DRC Proposes Lowering Corporate Tax Rate to 27.5%",
+    "title": "Makutano 2026: Congolese Government Backs Corporate Tax Reduction",
     "kind": "news",
-    "detail": "During the Makutano 2026 conference, the DRC finance minister announced a proposed finance law reducing the corporate tax rate to 27.5%.",
-    "impact": "Lower corporate taxes could improve corporate margins and stimulate private investment in the Congolese economy.",
+    "detail": "During the Makutano 2026 conference, government officials expressed support for lowering the corporate tax rate to stimulate private sector activity.",
+    "impact": "A reduced corporate tax rate could improve corporate cash flows and boost private investment in Congo.",
     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOXBNLTFVSjhRQnJfT3Vob0lOQmZ6N09sMkdIa0tOTWlTbjJfVHBfR2U4ZXV2Y1lmVEFLSVlKWEpOMWtwNUFZeF95ODRXRUtVVUtkVVhqalhvaG8zTEM2LVAtakdJM0RXczR4Q1ZqMHhuTnRMaTU4T254Z1VzeDM3WDFVMHJhWWJKZkxrai1oOTJqZERuaFhtNm9vdS1wVF9aTzVlUDF6VQ?oc=5"
-   },
-   {
-    "level": "med",
-    "score": 4,
-    "cat": "worldwide",
-    "source": "Bloomberg.com",
-    "date": "2026-11-25T03:36:00.000Z",
-    "img": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iyT1ouM5DfJ4/v0/1200x800.jpg",
-    "owner": "Worldwide",
-    "title": "Alibaba Explores Offshore Yuan and Dollar Bond Sales",
-    "kind": "news",
-    "detail": "Alibaba Group Holding Ltd. has held discussions with banks in recent weeks regarding a potential offshore bond sale in yuan and dollars next year.",
-    "impact": "Large tech debt issuance could increase supply in offshore fixed-income markets.",
-    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOXNFMnc0c0p5cHBVblZMNlI4V1JKdGdqdG1LdjgwbFBNNTJoMWpzNmZUMU50a3pTMERpQjNHdHdIVTRJOTgwWFZDQVlTNXNEMktiaTRtRWxhV01qSHp5QjZEX0lYcjBsR0h3Rk1vQjVXMnBzN1ppOEwwRjVDcVJoTk1HMzg5cW1YS09CVjlSclR5ZW1nWi16bnZoUXB5bjZKVGNrZlN4NjZXMjZpVFRjMGloTQ?oc=5",
-    "ctx": "USD/XAF −0.4% at the last close"
-   },
-   {
-    "level": "med",
-    "score": 3,
-    "cat": "africa",
-    "source": "AGENCE ECOFIN",
-    "date": "2026-11-24T09:54:00.000Z",
-    "img": null,
-    "owner": "Africa",
-    "title": "Bank of Africa Profit Climbs 13% on Sub-Saharan Activities",
-    "kind": "news",
-    "detail": "Moroccan banking group Bank of Africa reported a 13% increase in profit, supported by a lower cost of risk and stronger performance in its sub-Saharan units.",
-    "impact": "Regional banking profitability remains resilient despite stagnant overall revenues.",
-    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQaW91RFVlSE5LMVdWX1kzRklvdTBQVmZwS01BMVluN3pqb0tlcktuREFkTHBVOHktM01aeTc0NVY3Q05sTU00ek9Pc0toN3B0ZGg5RS1PZkFOdUxEOEZGdDhBbnRLYWJaRHFBRloybmFkWFBBNDZ1eWFrTjA3cEtJbS1leU40VUtLLUZmSGlTTHU3OURiY3JDdUZmbTlOQWp3VkNtVXEta2cwZVBHZnNna3lvcDR6QTFLV0pYaWJ1SFhtLTZXb1dmRl9YTEV3VlFnSmR3U3hudw?oc=5"
-   },
-   {
-    "level": "med",
-    "score": 3,
-    "cat": "congo",
-    "source": "Investir au Cameroun",
-    "date": "2026-11-25T04:28:00.000Z",
-    "img": "https://www.investiraucameroun.com/media/k2/items/cache/c521de097f9302ab2828143bcc44cd0b_L.jpg",
-    "owner": "Congo & CEMAC",
-    "title": "Institutional Investors Hold 38% of Cameroonian OTAs",
-    "kind": "news",
-    "detail": "Institutional investors held 500.54 billion FCFA of assimilable Treasury bonds issued by Cameroon as of October 31, representing 38.3% of outstanding bonds.",
-    "impact": "Strong institutional uptake supports liquidity in Cameroon's domestic debt market.",
-    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOdzVqTXFvUkhNbDRYcEdoRllqUjA3bTJNclloR2s1TmpjNjI1QUhBYmk4c1huN2lvNWFlYm0wWHJQaWZOM250cmgwWGd3YTlwY0VrTUNkT0NYdTBwVFI4c1kzYjVjY1VhQnB0ZXNPVlBfV2Y4ZnctVWpWd0ttcFRKaFBSR20xRDJubk5DQTI3RDFJOEs4TnJqR0l4R1hVRGV0Q0d3QVdDOFhocWpqMk1xUXJ1VkRmV2YyemdYd2F6ck9zMHowZ1I2YWlQN3hxSGtUTkhEVThoTVd5U1VyVWFHWHd6bnhjZVc3djR4Y0ZzRXZMSE0?oc=5"
    }
   ],
   "fr": [
+   {
+    "level": "high",
+    "score": 5,
+    "cat": "worldwide",
+    "source": "BNN Bloomberg",
+    "date": "2026-11-25T11:47:32.000Z",
+    "img": "https://www.bnnbloomberg.ca/resizer/v2/XDEEBJ75UTIWNS6MRCQZZP4T7U.jpg?smart=true&auth=1d68eef2a5da4d8ad29d4b3800198955194b68e13dc7e40666d4a166259b6277&width=1200&height=630",
+    "owner": "Monde",
+    "title": "La Banque du Canada anticipe une inflation sous les prévisions avec la chute du pétrole",
+    "kind": "news",
+    "detail": "La baisse des prix mondiaux du pétrole pourrait ramener l'inflation en dessous des prévisions antérieures, selon la Banque du Canada, suite au repli des cours du brut.",
+    "impact": "La baisse des cours pétroliers pourrait accélérer l'assouplissement de la politique monétaire des banques centrales.",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPT1NwZUhEUk1EN0VUT1dwa2U0cXQwY3JTMm11NXRsVS1mNUFfZ0ZrYXZldVdZbmRoektXRGo4NWI5d3VwUFNsRHJ6XzVHZ1h3Yl93OFY2QlFDODJUdzZpRlBkNXVGYW9KOTY2SEQ4bG1QZWE1WklQZDNMM3pZd0ZQR1BkZHZua1IxOGx1bGU5Mk1qTUZBWE0xM0FpMFhVdUFmT0JVclFkenZqZ2hESHNoMEREZjlHRzNEZ2c1QlRSSGh1QWpWc1BjR3FZcXhqckpNZV9J?oc=5",
+    "ctx": "Brent −2,1 % à la dernière clôture"
+   },
+   {
+    "level": "high",
+    "score": 5,
+    "cat": "africa",
+    "source": "Financial Afrik",
+    "date": "2026-11-25T11:55:22.000Z",
+    "img": "https://www.financialafrik.com/wp-content/uploads/2024/05/DFC54E69-3E29-4DC2-99A7-0521551F5219.jpeg",
+    "owner": "Afrique",
+    "title": "La Côte d'Ivoire lève 110 milliards de FCFA avec une forte demande",
+    "kind": "news",
+    "detail": "La Côte d'Ivoire a mobilisé 110 milliards de FCFA le 24 novembre 2026, affichant un taux de couverture de 201,90% et des rendements de 6,26% à trois ans et 7,03% à cinq ans.",
+    "impact": "Cette forte souscription consolide le statut de signature souveraine de référence de la Côte d'Ivoire sur le marché de l'UMOA.",
+    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQUkhZVU1kbG43VlF1amRLRzRfR2V3Vm1xbjJ4ZkhQNjZCSENoWXJURjI4RFY0TTFhbnYxZUx5Sk41WDlOeFp6T0N0c1RpWEpTQndWTE1RbWF3MVhpZmZuWnNuT0tRVE1nY2lMS05kVlZJZ1lGWHRTMzdHZk1jNzU4TThUYlRBcVRHajlvWXJfb01sSF90WE5TSWlnX1N5cVZFUjNPYTVCc1NiVDRNaWptV2RHYUl3OHZqZzlOblI4ODVGTjRpT3B0QlNSQ25zT1hwdzJNdHJZTmw5MWlYWlN1c0xENzM?oc=5",
+    "ctx": "USD/XAF −0,7 % à la dernière clôture"
+   },
    {
     "level": "high",
     "score": 5,
@@ -1109,53 +1140,67 @@
     "owner": "Congo & CEMAC",
     "title": "Les États de la CEMAC face à 4 404 milliards de FCFA de maturités de dette",
     "kind": "news",
-    "detail": "Les gouvernements de la CEMAC, du Gabon au Tchad et au Congo, font face à un calendrier de remboursement chargé totalisant 4 404 milliards de FCFA jusqu'en octobre 2027.",
-    "impact": "Cette lourde échéance de refinancement pourrait resserrer la liquidité et pousser les rendements à la hausse sur les marchés obligataires régionaux.",
+    "detail": "Les gouvernements de la zone CEMAC, du Gabon au Tchad, au Congo et au Cameroun, devront faire face à un calendrier de remboursement s'élevant à 4 404 milliards de FCFA d'ici octobre 2027.",
+    "impact": "Ce calendrier de remboursement chargé accroît les pressions de refinancement sur les finances publiques régionales.",
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWHdkR3lTYWlJS1NibHkwcG1UUkpOVFVFeDR4YnhJaHZfT0EyUkc4NGJGdzJ3ZE05R2tYZ0VUTl9na1VOX1dJaWtuenNtdlQya0lraW9WU013RnJqTlRlRV9IejdEQTBkY2gwZjVJazc1U0d2NFVtTTY0b1RyS1hFY2dic0xwejY4VzY2a3dudDk4S0VQb0tGZjgxSFJKbnN4amlSNg?oc=5",
-    "ctx": "USD/XAF −0,4 % à la dernière clôture"
+    "ctx": "USD/XAF −0,7 % à la dernière clôture"
    },
    {
-    "level": "high",
-    "score": 5,
-    "cat": "worldwide",
-    "source": "Bloomberg.com",
-    "date": "2026-11-24T20:58:22.000Z",
-    "img": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iMqTVvUNj9kk/v0/1200x800.jpg",
-    "owner": "Monde",
-    "title": "La Banque du Canada modifie ses indicateurs d'inflation de base",
+    "level": "med",
+    "score": 4,
+    "cat": "cfo",
+    "source": "Journal de Brazza",
+    "date": "2026-11-24T15:20:43.000Z",
+    "img": null,
+    "owner": "DAF & trésorerie",
+    "title": "Congo - Loi de finances 2027 : le patronat soumet ses propositions à l'Assemblée",
     "kind": "news",
-    "detail": "Le gouverneur Tiff Macklem a annoncé que la Banque du Canada modifie les mesures utilisées pour évaluer les pressions sous-jacentes tout en abaissant ses prévisions d'inflation.",
-    "impact": "La modification des indicateurs d'inflation pourrait signaler des ajustements de taux plus hâtifs ou marqués.",
-    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUVJ3MVdLQjc0eVhETnJBR0xUWUp6UjVhMmtFcnQ5aEdBV2VqbnlNZkdlSnpMOENIYnNNWHV5X3kzVThaWjE2MXhVMXJnV0o3STlZRzdXWF9fMk9KWHhMMXliUXoyR1V6dHpISkVDbk14ODJWZGE4amhMNlZFMDZvNVRjT3pFUFdsZWlvbm0tcnNRVE1Eb0loSmw4VUZLa2VCbzZDTg?oc=5"
+    "detail": "Les employeurs de la République du Congo ont officiellement soumis leurs propositions fiscales concernant le projet de loi de finances 2027 à l'Assemblée nationale.",
+    "impact": "Ces propositions pourraient influencer la fiscalité des entreprises et les ajustements réglementaires du prochain budget.",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOGxwalh3YmhuMlpxUG9BRDI3a1JoTDZBVU8tY29QVnBjVW9IZVhzaGhiTjB0Undha0NLTTZNdTlGLTVzcjZwX3VSb19Lb2xwclF6QlZNS3U3T2tjMVpHaWhNM0Jnd3hhMGhfT1FkSFpsVkRQWlNoRlNwbjdLcDVfb0lCb1I1M3pDSXczaXBZOTlTX3hOeXl6d2xFd3BwMldPUmZkUENxazVvWXlQT3p6TEFUVGstbTlibHc?oc=5"
+   },
+   {
+    "level": "med",
+    "score": 4,
+    "cat": "worldwide",
+    "source": "Financial Times",
+    "date": "2026-11-25T14:27:46.000Z",
+    "img": null,
+    "owner": "Monde",
+    "title": "Les grands membres de l'OPEP+ s'orientent vers un désaccord sur la production",
+    "kind": "news",
+    "detail": "Les principaux membres de l'OPEP+ se dirigent vers un clash concernant les estimations de production de pétrole et les quotas futurs.",
+    "impact": "Les désaccords au sein de l'OPEP+ risquent d'accroître la volatilité des cours internationaux du brut.",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMXZnb25ZTWVaVHNZU2lWMG9YYzlVaTFPMFR0Vnd5TFJIWHRoWVU2dTVMWThxRXdLTzFqWjdsak14cW9DVGZKbW0zNE1XblVZWlpiSTdwWEk4ZTdtT1lkWkdZSEFydlgwT19fSWRfUnpmZTF4bW85SnpBZ0x3dVZIWlo2WDQ?oc=5",
+    "ctx": "Brent −2,1 % à la dernière clôture"
    },
    {
     "level": "med",
     "score": 4,
     "cat": "africa",
-    "source": "The Nation Newspaper",
-    "date": "2026-11-23T18:14:51.000Z",
-    "img": null,
+    "source": "AGENCE ECOFIN",
+    "date": "2026-11-25T10:49:00.000Z",
+    "img": "https://www.bing.com/th?id=ONUT.ioylc09X62O4yVL4NCCLPQ&pid=News&w=900&h=1200&c=7&rs=1",
     "owner": "Afrique",
-    "title": "Le Nigeria affiche une croissance de 4,43% et un recul de l'inflation",
+    "title": "Guinée : le FMI approuve un programme de financement de 417 millions de dollars",
     "kind": "news",
-    "detail": "Le gouvernement fédéral nigérian a annoncé une croissance économique de 4,43%, une baisse de l'inflation à 14,06% et des réserves de change à 54,87 milliards de dollars.",
-    "impact": "Une croissance plus forte et une inflation en baisse pourraient renforcer la confiance des investisseurs dans les actifs souverains ouest-africains.",
-    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcU1DXzc4bFRkdG1jcVhyTS04YWJtbERsQ1pCcktlbUlFTFZZX05XUlgxdHRPWmplR3dMSFlicTlET2wwcC1UWUZrSDBBM25XQkw4M1BEelFvSnVWZ2kxNDhsaVRubFBfakFLc0EwMFRwRlV1c3RPdjBPZzhMVkRBLWxUQ0pqdW5hQmdDcHptNXBvVG1ySGg5a3VkMkxITmctWHNwVGRmZzUzSzdCYTdwNTFzZ9IBuAFBVV95cUxPOUR3a0ZHQzdzR2tFcGoxSkE1SF90ckJQWVQzVm1IZ1JNdW1zNFNxTWg5MGlSc2dGVXNrRmVxcjl3bGVfVWZPcjltVG84Y2hoNklHRnhHYi1UNmwtVmhKVjNKeE13Wjh4YjlHb0JUT0o2TWFhQnVBRjZfMElvbjNtZW1KblcxTjdRME5UZG9pYzhKa2ZiN3IybWYwTkFjNVo2cnBQcGNWNlpMcHBRYVczcjdRRkJOYWts?oc=5"
+    "detail": "Le Fonds monétaire international a approuvé un nouveau programme de soutien financier en faveur de la Guinée d'un montant de 417 millions de dollars sur 38 mois.",
+    "impact": "Ce programme du FMI soutiendra les équilibres extérieurs de la Guinée et son programme de réformes structurelles.",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOa1RXSHVvZGp0dkRhV1ZpMlkyT1kxTk5sS25XVlR0SFVvVHI5Q2pvZTRSYTd0UU84dU9vVkNyR0xoM3FYamRrMENxTWltb1RYb1doYnBsanZaVlR3SXVRUS1NRGZLeWtBS0ZxdERnZHBST1dUellMX2g2OFZpckdCLVVhNklCdTFoQW9vMDVpcXhxMDlvNzNLZGF2LVBZOFh5aDZ5OWlKOWVQZ240ZWxHVVp0SU5WT1BSU1otZjNBRDA3UGQ2M1ZvVGl3?oc=5"
    },
    {
     "level": "med",
     "score": 4,
     "cat": "congo",
-    "source": "Investir au Cameroun",
-    "date": "2026-11-23T12:55:00.000Z",
-    "img": "https://www.investiraucameroun.com/media/k2/items/cache/ba136a414854bf1bf0a260309139e666_L.jpg",
+    "source": "AGENCE ECOFIN",
+    "date": "2026-11-25T10:18:00.000Z",
+    "img": "https://www.bing.com/th?id=ONUT.uzGTk2e9g6Y6qLJTOVdsdA&pid=News&w=900&h=1200&c=7&rs=1",
     "owner": "Congo & CEMAC",
-    "title": "La BDEAC obtient le feu vert pour lever 298,3 milliards de FCFA",
+    "title": "Cameroun : Afriland First Bank obtient 22 millions de dollars de la DEG",
     "kind": "news",
-    "detail": "La Banque de Développement des États de l'Afrique Centrale a reçu l'autorisation de son conseil d'administration pour mener des levées de fonds de 298,3 milliards de FCFA après le succès de son eurobond.",
-    "impact": "Cette levée de capitaux permettra d'élargir la capacité de financement des projets régionaux en Afrique centrale.",
-    "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNeWVtckJmNmpObXJ5T18zR0VzXzd3akRGYWZlOEdjdUpEdFgyNE5qLW9haWN3RGx1U1l3X1BGVmoxUGRsaWtKbHhxZTRKMmk1MlVYbVlDTTlxQ1AwTDd3WE9vMTlIM19FWlpJN1JwSFQycEp4dkRpcWROUThQWXhnTlhXdjdHdHpEX3RxTzVkRWJsZmU5eFhkQWt2ZTM4YS1JUHM5c2RSdmJPcUUzVzN2YldBOUhsd1d1NVFGdlh6Z0xpVExLeEkzenhka0dqeTN1SHI5MFR3QVg3RkxyN01RTXNWWUctNGMzOWNxMkY1R3RiaGZ3dGlvZ1haeGR5WEZHVVE?oc=5",
-    "ctx": "USD/XAF −0,4 % à la dernière clôture"
+    "detail": "Afriland First Bank au Cameroun a obtenu un financement de 22 millions de dollars auprès de la DEG pour renforcer le financement des entreprises locales.",
+    "impact": "Cette ligne de crédit contribue à atténuer les contraintes croissantes de financement des entreprises camerounaises.",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxObGRuZGZMdVhMZlEtQWVIeVJpUTdiNk9mdklTM1k0QWtzLXdKbGhtaExOYkdfaWdpaW4xeExpcVl5VmM1RnlOTlk1SV9sWDd0bDdZS1Jha2FTR0pJWnphcUI0T0xxRHdUenp4VVdwLW84M05CUFcwQ29scHEtTWFNT3A4c1ptanJPcnRNbWpVbDRUaE5YSFZCYmdOU0xBQXN6OGE5SXAxZHVXYWJFc1RSMjNkek9xOXlXNVltMmhkNDhicWxsM2xuSDJkLW03c0haUlBtMjhoaw?oc=5"
    },
    {
     "level": "med",
@@ -1163,59 +1208,46 @@
     "cat": "cfo",
     "source": "ACP | Agence Congolaise de Presse",
     "date": "2026-11-24T20:46:52.000Z",
-    "img": null,
+    "img": "https://www.bing.com/th?id=ONUT.8GeiSiPHntPm-Qf38zENvA&pid=News&w=900&h=1200&c=7&rs=1",
     "owner": "DAF & trésorerie",
-    "title": "La RDC propose de baisser le taux de l'impôt sur les sociétés à 27,5%",
+    "title": "Makutano 2026 : le gouvernement favorable à une baisse de l'impôt sur les sociétés",
     "kind": "news",
-    "detail": "Lors de la conférence Makutano 2026, le ministre des Finances de la RDC a annoncé un projet de loi de finances réduisant le taux de l'impôt sur les sociétés à 27,5%.",
-    "impact": "La baisse de l'impôt sur les sociétés pourrait améliorer les marges des entreprises et stimuler l'investissement privé dans l'économie congolaise.",
+    "detail": "Lors de la conférence Makutano 2026, les représentants du gouvernement ont exprimé leur soutien en faveur d'une réduction du taux de l'impôt sur les sociétés.",
+    "impact": "Une baisse de l'impôt sur les sociétés pourrait améliorer la trésorerie des entreprises et stimuler l'investissement privé au Congo.",
     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOXBNLTFVSjhRQnJfT3Vob0lOQmZ6N09sMkdIa0tOTWlTbjJfVHBfR2U4ZXV2Y1lmVEFLSVlKWEpOMWtwNUFZeF95ODRXRUtVVUtkVVhqalhvaG8zTEM2LVAtakdJM0RXczR4Q1ZqMHhuTnRMaTU4T254Z1VzeDM3WDFVMHJhWWJKZkxrai1oOTJqZERuaFhtNm9vdS1wVF9aTzVlUDF6VQ?oc=5"
-   },
-   {
-    "level": "med",
-    "score": 4,
-    "cat": "worldwide",
-    "source": "Bloomberg.com",
-    "date": "2026-11-25T03:36:00.000Z",
-    "img": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iyT1ouM5DfJ4/v0/1200x800.jpg",
-    "owner": "Monde",
-    "title": "Alibaba étudie des émissions d'obligations en yuans et en dollars",
-    "kind": "news",
-    "detail": "Alibaba Group Holding Ltd. a mené des discussions ces dernières semaines avec des banques concernant une émission potentielle d'obligations offshore en yuans et en dollars l'année prochaine.",
-    "impact": "Une importante émission de dette technologique pourrait accroître l'offre sur les marchés obligataires offshore.",
-    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOXNFMnc0c0p5cHBVblZMNlI4V1JKdGdqdG1LdjgwbFBNNTJoMWpzNmZUMU50a3pTMERpQjNHdHdIVTRJOTgwWFZDQVlTNXNEMktiaTRtRWxhV01qSHp5QjZEX0lYcjBsR0h3Rk1vQjVXMnBzN1ppOEwwRjVDcVJoTk1HMzg5cW1YS09CVjlSclR5ZW1nWi16bnZoUXB5bjZKVGNrZlN4NjZXMjZpVFRjMGloTQ?oc=5",
-    "ctx": "USD/XAF −0,4 % à la dernière clôture"
-   },
-   {
-    "level": "med",
-    "score": 3,
-    "cat": "africa",
-    "source": "AGENCE ECOFIN",
-    "date": "2026-11-24T09:54:00.000Z",
-    "img": null,
-    "owner": "Afrique",
-    "title": "Le bénéfice de Bank of Africa grimpe de 13% grâce aux activités subsahariennes",
-    "kind": "news",
-    "detail": "Le groupe bancaire marocain Bank of Africa a enregistré une hausse de 13% de son bénéfice, portée par la baisse du coût du risque et la performance de ses filiales subsahariennes.",
-    "impact": "La rentabilité bancaire régionale reste résiliente malgré la stagnation des revenus globaux.",
-    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQaW91RFVlSE5LMVdWX1kzRklvdTBQVmZwS01BMVluN3pqb0tlcktuREFkTHBVOHktM01aeTc0NVY3Q05sTU00ek9Pc0toN3B0ZGg5RS1PZkFOdUxEOEZGdDhBbnRLYWJaRHFBRloybmFkWFBBNDZ1eWFrTjA3cEtJbS1leU40VUtLLUZmSGlTTHU3OURiY3JDdUZmbTlOQWp3VkNtVXEta2cwZVBHZnNna3lvcDR6QTFLV0pYaWJ1SFhtLTZXb1dmRl9YTEV3VlFnSmR3U3hudw?oc=5"
-   },
-   {
-    "level": "med",
-    "score": 3,
-    "cat": "congo",
-    "source": "Investir au Cameroun",
-    "date": "2026-11-25T04:28:00.000Z",
-    "img": "https://www.investiraucameroun.com/media/k2/items/cache/c521de097f9302ab2828143bcc44cd0b_L.jpg",
-    "owner": "Congo & CEMAC",
-    "title": "Les institutionnels détiennent 38% des OTA camerounaises",
-    "kind": "news",
-    "detail": "Les investisseurs institutionnels détenaient 500,54 milliards de FCFA d'obligations du Trésor assimilables émises par le Cameroun au 31 octobre, soit 38,3% des encours.",
-    "impact": "Une forte participation institutionnelle soutient la liquidité sur le marché obligataire domestique du Cameroun.",
-    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOdzVqTXFvUkhNbDRYcEdoRllqUjA3bTJNclloR2s1TmpjNjI1QUhBYmk4c1huN2lvNWFlYm0wWHJQaWZOM250cmgwWGd3YTlwY0VrTUNkT0NYdTBwVFI4c1kzYjVjY1VhQnB0ZXNPVlBfV2Y4ZnctVWpWd0ttcFRKaFBSR20xRDJubk5DQTI3RDFJOEs4TnJqR0l4R1hVRGV0Q0d3QVdDOFhocWpqMk1xUXJ1VkRmV2YyemdYd2F6ck9zMHowZ1I2YWlQN3hxSGtUTkhEVThoTVd5U1VyVWFHWHd6bnhjZVc3djR4Y0ZzRXZMSE0?oc=5"
    }
   ],
   "ar": [
+   {
+    "level": "high",
+    "score": 5,
+    "cat": "worldwide",
+    "source": "BNN Bloomberg",
+    "date": "2026-11-25T11:47:32.000Z",
+    "img": "https://www.bnnbloomberg.ca/resizer/v2/XDEEBJ75UTIWNS6MRCQZZP4T7U.jpg?smart=true&auth=1d68eef2a5da4d8ad29d4b3800198955194b68e13dc7e40666d4a166259b6277&width=1200&height=630",
+    "owner": "Worldwide",
+    "title": "بنك كندا يرى أن التضخم سينتهي دون التوقعات بسبب انخفاض النفط",
+    "kind": "news",
+    "detail": "قد يؤدي انخفاض أسعار النفط العالمية إلى دفع التضخم المستقبلي إلى ما دون التوقعات السابقة، وفقًا لبنك كندا. ويأتي التقييم في أعقاب تراجع أوسع نطاقا في أسواق النفط الخام.",
+    "impact": "ومن الممكن أن يؤدي انخفاض أسعار النفط إلى تسريع وتيرة تيسير السياسة النقدية من قبل البنوك المركزية.",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPT1NwZUhEUk1EN0VUT1dwa2U0cXQwY3JTMm11NXRsVS1mNUFfZ0ZrYXZldVdZbmRoektXRGo4NWI5d3VwUFNsRHJ6XzVHZ1h3Yl93OFY2QlFDODJUdzZpRlBkNXVGYW9KOTY2SEQ4bG1QZWE1WklQZDNMM3pZd0ZQR1BkZHZua1IxOGx1bGU5Mk1qTUZBWE0xM0FpMFhVdUFmT0JVclFkenZqZ2hESHNoMEREZjlHRzNEZ2c1QlRSSGh1QWpWc1BjR3FZcXhqckpNZV9J?oc=5",
+    "ctx": "برنت −2.1% عند آخر إغلاق"
+   },
+   {
+    "level": "high",
+    "score": 5,
+    "cat": "africa",
+    "source": "Financial Afrik",
+    "date": "2026-11-25T11:55:22.000Z",
+    "img": "https://www.financialafrik.com/wp-content/uploads/2024/05/DFC54E69-3E29-4DC2-99A7-0521551F5219.jpeg",
+    "owner": "Africa",
+    "title": "ساحل العاج تجمع 110 مليار فرنك أفريقي مع الطلب القوي في السوق",
+    "kind": "news",
+    "detail": "نجحت ساحل العاج في تعبئة 110 مليار فرنك أفريقي في 24 نوفمبر 2026، محققة معدل تغطية قدره 201.90% مع عائدات تبلغ 6.26% لمدة ثلاث سنوات و7.03% لمدة خمس سنوات.",
+    "impact": "يعزز الاشتراك القوي الوضع السيادي القياسي لساحل العاج داخل سوق UMOA.",
+    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQUkhZVU1kbG43VlF1amRLRzRfR2V3Vm1xbjJ4ZkhQNjZCSENoWXJURjI4RFY0TTFhbnYxZUx5Sk41WDlOeFp6T0N0c1RpWEpTQndWTE1RbWF3MVhpZmZuWnNuT0tRVE1nY2lMS05kVlZJZ1lGWHRTMzdHZk1jNzU4TThUYlRBcVRHajlvWXJfb01sSF90WE5TSWlnX1N5cVZFUjNPYTVCc1NiVDRNaWptV2RHYUl3OHZqZzlOblI4ODVGTjRpT3B0QlNSQ25zT1hwdzJNdHJZTmw5MWlYWlN1c0xENzM?oc=5",
+    "ctx": "الدولار/الفرنك −0.7% عند آخر إغلاق"
+   },
    {
     "level": "high",
     "score": 5,
@@ -1224,55 +1256,69 @@
     "date": "2026-11-24T05:49:22.000Z",
     "img": "https://ecomatin.net/_next/image?url=https%3A%2F%2Fprod-backsite.ecomatin.be%2Fwp-content%2Fuploads%2F2025%2F12%2FSiege-de-la-BEAC-a-Yaounde.jpg&w=1200&q=75",
     "owner": "Congo & CEMAC",
-    "title": "تواجه دول الجماعة الاقتصادية والنقدية لوسط أفريقيا 4.404 مليار فرنك أفريقي في آجال استحقاق الديون",
+    "title": "تواجه دول الجماعة الاقتصادية والنقدية لوسط أفريقيا 4.404 مليار فرنك أفريقي في آجال استحقاق الديون بحلول عام 2027",
     "kind": "news",
-    "detail": "وتواجه حكومات الجماعة الاقتصادية والنقدية لوسط أفريقيا من الجابون إلى تشاد والكونغو جدول سداد ثقيل يبلغ إجماليه 4.404 مليار فرنك أفريقي حتى أكتوبر 2027.",
-    "impact": "وقد يؤدي جدول إعادة التمويل الثقيل هذا إلى تضييق السيولة ورفع العائدات في أسواق السندات الإقليمية.",
+    "detail": "ويتعين على الحكومات في مختلف أنحاء منطقة الجماعة الاقتصادية والنقدية لوسط أفريقيا، من الجابون إلى تشاد والكونغو والكاميرون، أن تدير جدول سداد مزدحما يبلغ إجماليه 4404 مليار فرنك أفريقي حتى أكتوبر/تشرين الأول 2027.",
+    "impact": "ويزيد جدول السداد الثقيل من ضغوط إعادة التمويل على المالية العامة الإقليمية.",
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWHdkR3lTYWlJS1NibHkwcG1UUkpOVFVFeDR4YnhJaHZfT0EyUkc4NGJGdzJ3ZE05R2tYZ0VUTl9na1VOX1dJaWtuenNtdlQya0lraW9WU013RnJqTlRlRV9IejdEQTBkY2gwZjVJazc1U0d2NFVtTTY0b1RyS1hFY2dic0xwejY4VzY2a3dudDk4S0VQb0tGZjgxSFJKbnN4amlSNg?oc=5",
-    "ctx": "الدولار/الفرنك −0.4% عند آخر إغلاق"
+    "ctx": "الدولار/الفرنك −0.7% عند آخر إغلاق"
    },
    {
-    "level": "high",
-    "score": 5,
-    "cat": "worldwide",
-    "source": "Bloomberg.com",
-    "date": "2026-11-24T20:58:22.000Z",
-    "img": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iMqTVvUNj9kk/v0/1200x800.jpg",
-    "owner": "Worldwide",
-    "title": "بنك كندا يغير مقاييس التضخم الأساسية مع انخفاض التوقعات",
+    "level": "med",
+    "score": 4,
+    "cat": "cfo",
+    "source": "Journal de Brazza",
+    "date": "2026-11-24T15:20:43.000Z",
+    "img": null,
+    "owner": "CFO & treasury",
+    "title": "يقدم أصحاب العمل في الكونغو مقترحات قانون المالية لعام 2027 إلى الجمعية",
     "kind": "news",
-    "detail": "أعلن المحافظ تيف ماكليم أن بنك كندا يقوم بتغيير المقاييس التي يستخدمها لتقييم ضغوط الأسعار الأساسية مع خفض توقعات التضخم.",
-    "impact": "قد يشير تغيير مقاييس التضخم إلى تعديلات مبكرة أو أعمق لأسعار الفائدة من قبل البنك المركزي.",
-    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUVJ3MVdLQjc0eVhETnJBR0xUWUp6UjVhMmtFcnQ5aEdBV2VqbnlNZkdlSnpMOENIYnNNWHV5X3kzVThaWjE2MXhVMXJnV0o3STlZRzdXWF9fMk9KWHhMMXliUXoyR1V6dHpISkVDbk14ODJWZGE4amhMNlZFMDZvNVRjT3pFUFdsZWlvbm0tcnNRVE1Eb0loSmw4VUZLa2VCbzZDTg?oc=5"
+    "detail": "قدم أصحاب العمل في جمهورية الكونغو رسميًا مقترحاتهم المالية فيما يتعلق بقانون المالية لعام 2027 إلى الجمعية الوطنية.",
+    "impact": "يمكن أن تؤثر المقترحات على ضريبة الشركات والتعديلات التنظيمية في الميزانية القادمة.",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOGxwalh3YmhuMlpxUG9BRDI3a1JoTDZBVU8tY29QVnBjVW9IZVhzaGhiTjB0Undha0NLTTZNdTlGLTVzcjZwX3VSb19Lb2xwclF6QlZNS3U3T2tjMVpHaWhNM0Jnd3hhMGhfT1FkSFpsVkRQWlNoRlNwbjdLcDVfb0lCb1I1M3pDSXczaXBZOTlTX3hOeXl6d2xFd3BwMldPUmZkUENxazVvWXlQT3p6TEFUVGstbTlibHc?oc=5"
+   },
+   {
+    "level": "med",
+    "score": 4,
+    "cat": "worldwide",
+    "source": "Financial Times",
+    "date": "2026-11-25T14:27:46.000Z",
+    "img": null,
+    "owner": "Worldwide",
+    "title": "أعضاء أوبك+ يتجهون نحو صراع حول تقديرات الإنتاج",
+    "kind": "news",
+    "detail": "يتجه أكبر أعضاء أوبك+ نحو الخلاف بشأن تقديرات إنتاج النفط وحصص الإنتاج المستقبلية.",
+    "impact": "يمكن أن تؤدي الخلافات داخل أوبك+ إلى زيادة التقلبات في معايير النفط الخام الدولية.",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMXZnb25ZTWVaVHNZU2lWMG9YYzlVaTFPMFR0Vnd5TFJIWHRoWVU2dTVMWThxRXdLTzFqWjdsak14cW9DVGZKbW0zNE1XblVZWlpiSTdwWEk4ZTdtT1lkWkdZSEFydlgwT19fSWRfUnpmZTF4bW85SnpBZ0x3dVZIWlo2WDQ?oc=5",
+    "ctx": "برنت −2.1% عند آخر إغلاق"
    },
    {
     "level": "med",
     "score": 4,
     "cat": "africa",
-    "source": "The Nation Newspaper",
-    "date": "2026-11-23T18:14:51.000Z",
-    "img": null,
+    "source": "AGENCE ECOFIN",
+    "date": "2026-11-25T10:49:00.000Z",
+    "img": "https://www.bing.com/th?id=ONUT.ioylc09X62O4yVL4NCCLPQ&pid=News&w=900&h=1200&c=7&rs=1",
     "owner": "Africa",
-    "title": "نيجيريا تعلن عن نمو اقتصادي بنسبة 4.43% وانخفاض التضخم",
+    "title": "غينيا تحصل على 417 مليون دولار من برنامج تمويل صندوق النقد الدولي على مدى 38 شهرًا",
     "kind": "news",
-    "detail": "أعلنت الحكومة الفيدرالية النيجيرية أن الاقتصاد الوطني نما بنسبة 4.43%، وانخفض التضخم إلى 14.06%، وبلغ الاحتياطي الأجنبي 54.87 مليار دولار.",
-    "impact": "ومن شأن النمو القوي وانخفاض التضخم أن يعززا ثقة المستثمرين في الأصول السيادية في غرب أفريقيا.",
-    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcU1DXzc4bFRkdG1jcVhyTS04YWJtbERsQ1pCcktlbUlFTFZZX05XUlgxdHRPWmplR3dMSFlicTlET2wwcC1UWUZrSDBBM25XQkw4M1BEelFvSnVWZ2kxNDhsaVRubFBfakFLc0EwMFRwRlV1c3RPdjBPZzhMVkRBLWxUQ0pqdW5hQmdDcHptNXBvVG1ySGg5a3VkMkxITmctWHNwVGRmZzUzSzdCYTdwNTFzZ9IBuAFBVV95cUxPOUR3a0ZHQzdzR2tFcGoxSkE1SF90ckJQWVQzVm1IZ1JNdW1zNFNxTWg5MGlSc2dGVXNrRmVxcjl3bGVfVWZPcjltVG84Y2hoNklHRnhHYi1UNmwtVmhKVjNKeE13Wjh4YjlHb0JUT0o2TWFhQnVBRjZfMElvbjNtZW1KblcxTjdRME5UZG9pYzhKa2ZiN3IybWYwTkFjNVo2cnBQcGNWNlpMcHBRYVczcjdRRkJOYWts?oc=5"
+    "detail": "وافق صندوق النقد الدولي على برنامج دعم مالي جديد لغينيا بقيمة 417 مليون دولار يتم صرفه على مدى 38 شهرا.",
+    "impact": "وسيدعم برنامج صندوق النقد الدولي التوازنات الخارجية لغينيا وأجندة الإصلاح الهيكلي.",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOa1RXSHVvZGp0dkRhV1ZpMlkyT1kxTk5sS25XVlR0SFVvVHI5Q2pvZTRSYTd0UU84dU9vVkNyR0xoM3FYamRrMENxTWltb1RYb1doYnBsanZaVlR3SXVRUS1NRGZLeWtBS0ZxdERnZHBST1dUellMX2g2OFZpckdCLVVhNklCdTFoQW9vMDVpcXhxMDlvNzNLZGF2LVBZOFh5aDZ5OWlKOWVQZ240ZWxHVVp0SU5WT1BSU1otZjNBRDA3UGQ2M1ZvVGl3?oc=5"
    },
    {
     "level": "med",
     "score": 4,
     "cat": "congo",
-    "source": "Investir au Cameroun",
-    "date": "2026-11-23T12:55:00.000Z",
-    "img": "https://www.investiraucameroun.com/media/k2/items/cache/ba136a414854bf1bf0a260309139e666_L.jpg",
+    "source": "AGENCE ECOFIN",
+    "date": "2026-11-25T10:18:00.000Z",
+    "img": "https://www.bing.com/th?id=ONUT.uzGTk2e9g6Y6qLJTOVdsdA&pid=News&w=900&h=1200&c=7&rs=1",
     "owner": "Congo & CEMAC",
-    "title": "BDEAC يتلقى الضوء الأخضر لجمع 298.3 مليار فرنك أفريقي",
+    "title": "الكاميرون تحصل على 22 مليون دولار من DEG لبنك Afriland First",
     "kind": "news",
-    "detail": "حصل بنك التنمية لدول وسط أفريقيا على تصريح من مجلس إدارته لإجراء دراسات استقصائية لجمع الأموال بقيمة 298.3 مليار فرنك أفريقي بعد نجاح سندات اليورو.",
-    "impact": "وستعمل زيادة رأس المال على توسيع القدرة الإقليمية على تمويل المشاريع في جميع أنحاء وسط أفريقيا.",
-    "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNeWVtckJmNmpObXJ5T18zR0VzXzd3akRGYWZlOEdjdUpEdFgyNE5qLW9haWN3RGx1U1l3X1BGVmoxUGRsaWtKbHhxZTRKMmk1MlVYbVlDTTlxQ1AwTDd3WE9vMTlIM19FWlpJN1JwSFQycEp4dkRpcWROUThQWXhnTlhXdjdHdHpEX3RxTzVkRWJsZmU5eFhkQWt2ZTM4YS1JUHM5c2RSdmJPcUUzVzN2YldBOUhsd1d1NVFGdlh6Z0xpVExLeEkzenhka0dqeTN1SHI5MFR3QVg3RkxyN01RTXNWWUctNGMzOWNxMkY1R3RiaGZ3dGlvZ1haeGR5WEZHVVE?oc=5",
-    "ctx": "الدولار/الفرنك −0.4% عند آخر إغلاق"
+    "detail": "حصل بنك Afriland First Bank في الكاميرون على تمويل بقيمة 22 مليون دولار من DEG لتوسيع خطوط الائتمان التجارية للشركات المحلية.",
+    "impact": "ويساعد التسهيل الائتماني على تخفيف القيود المتزايدة على السيولة بالنسبة للشركات الكاميرونية.",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxObGRuZGZMdVhMZlEtQWVIeVJpUTdiNk9mdklTM1k0QWtzLXdKbGhtaExOYkdfaWdpaW4xeExpcVl5VmM1RnlOTlk1SV9sWDd0bDdZS1Jha2FTR0pJWnphcUI0T0xxRHdUenp4VVdwLW84M05CUFcwQ29scHEtTWFNT3A4c1ptanJPcnRNbWpVbDRUaE5YSFZCYmdOU0xBQXN6OGE5SXAxZHVXYWJFc1RSMjNkek9xOXlXNVltMmhkNDhicWxsM2xuSDJkLW03c0haUlBtMjhoaw?oc=5"
    },
    {
     "level": "med",
@@ -1280,242 +1326,243 @@
     "cat": "cfo",
     "source": "ACP | Agence Congolaise de Presse",
     "date": "2026-11-24T20:46:52.000Z",
-    "img": null,
+    "img": "https://www.bing.com/th?id=ONUT.8GeiSiPHntPm-Qf38zENvA&pid=News&w=900&h=1200&c=7&rs=1",
     "owner": "CFO & treasury",
-    "title": "جمهورية الكونغو الديمقراطية تقترح خفض معدل الضريبة على الشركات إلى 27.5%",
+    "title": "ماكوتانو 2026: الحكومة الكونغولية تدعم تخفيض الضرائب على الشركات",
     "kind": "news",
-    "detail": "خلال مؤتمر ماكوتانو 2026، أعلن وزير مالية جمهورية الكونغو الديمقراطية عن قانون مالي مقترح لخفض معدل الضريبة على الشركات إلى 27.5%.",
-    "impact": "ومن الممكن أن يؤدي خفض الضرائب على الشركات إلى تحسين هوامش أرباحها وتحفيز الاستثمار الخاص في الاقتصاد الكونغولي.",
+    "detail": "وخلال مؤتمر ماكوتانو 2026، أعرب المسؤولون الحكوميون عن دعمهم لخفض معدل الضريبة على الشركات لتحفيز نشاط القطاع الخاص.",
+    "impact": "ومن الممكن أن يؤدي خفض معدل الضريبة على الشركات إلى تحسين التدفقات النقدية للشركات وتعزيز الاستثمار الخاص في الكونغو.",
     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOXBNLTFVSjhRQnJfT3Vob0lOQmZ6N09sMkdIa0tOTWlTbjJfVHBfR2U4ZXV2Y1lmVEFLSVlKWEpOMWtwNUFZeF95ODRXRUtVVUtkVVhqalhvaG8zTEM2LVAtakdJM0RXczR4Q1ZqMHhuTnRMaTU4T254Z1VzeDM3WDFVMHJhWWJKZkxrai1oOTJqZERuaFhtNm9vdS1wVF9aTzVlUDF6VQ?oc=5"
-   },
-   {
-    "level": "med",
-    "score": 4,
-    "cat": "worldwide",
-    "source": "Bloomberg.com",
-    "date": "2026-11-25T03:36:00.000Z",
-    "img": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iyT1ouM5DfJ4/v0/1200x800.jpg",
-    "owner": "Worldwide",
-    "title": "علي بابا تستكشف مبيعات السندات باليوان والدولار في الخارج",
-    "kind": "news",
-    "detail": "أجرت مجموعة علي بابا القابضة المحدودة مناقشات مع البنوك في الأسابيع الأخيرة بشأن بيع سندات خارجية محتملة باليوان والدولار العام المقبل.",
-    "impact": "يمكن أن يؤدي إصدار ديون التكنولوجيا الكبيرة إلى زيادة العرض في الأسواق الخارجية ذات الدخل الثابت.",
-    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOXNFMnc0c0p5cHBVblZMNlI4V1JKdGdqdG1LdjgwbFBNNTJoMWpzNmZUMU50a3pTMERpQjNHdHdIVTRJOTgwWFZDQVlTNXNEMktiaTRtRWxhV01qSHp5QjZEX0lYcjBsR0h3Rk1vQjVXMnBzN1ppOEwwRjVDcVJoTk1HMzg5cW1YS09CVjlSclR5ZW1nWi16bnZoUXB5bjZKVGNrZlN4NjZXMjZpVFRjMGloTQ?oc=5",
-    "ctx": "الدولار/الفرنك −0.4% عند آخر إغلاق"
-   },
-   {
-    "level": "med",
-    "score": 3,
-    "cat": "africa",
-    "source": "AGENCE ECOFIN",
-    "date": "2026-11-24T09:54:00.000Z",
-    "img": null,
-    "owner": "Africa",
-    "title": "أرباح بنك أفريقيا ترتفع بنسبة 13% بفضل أنشطة جنوب الصحراء الكبرى",
-    "kind": "news",
-    "detail": "أعلنت المجموعة المصرفية المغربية بنك أفريقيا عن زيادة بنسبة 13% في أرباحها، مدعومة بانخفاض تكلفة المخاطر وأداء أقوى في وحداتها بجنوب الصحراء الكبرى.",
-    "impact": "لا تزال ربحية الخدمات المصرفية الإقليمية مرنة على الرغم من ركود الإيرادات الإجمالية.",
-    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQaW91RFVlSE5LMVdWX1kzRklvdTBQVmZwS01BMVluN3pqb0tlcktuREFkTHBVOHktM01aeTc0NVY3Q05sTU00ek9Pc0toN3B0ZGg5RS1PZkFOdUxEOEZGdDhBbnRLYWJaRHFBRloybmFkWFBBNDZ1eWFrTjA3cEtJbS1leU40VUtLLUZmSGlTTHU3OURiY3JDdUZmbTlOQWp3VkNtVXEta2cwZVBHZnNna3lvcDR6QTFLV0pYaWJ1SFhtLTZXb1dmRl9YTEV3VlFnSmR3U3hudw?oc=5"
-   },
-   {
-    "level": "med",
-    "score": 3,
-    "cat": "congo",
-    "source": "Investir au Cameroun",
-    "date": "2026-11-25T04:28:00.000Z",
-    "img": "https://www.investiraucameroun.com/media/k2/items/cache/c521de097f9302ab2828143bcc44cd0b_L.jpg",
-    "owner": "Congo & CEMAC",
-    "title": "يمتلك المستثمرون المؤسسيون 38% من اتفاقيات الاستثمار عبر الإنترنت في الكاميرون",
-    "kind": "news",
-    "detail": "يمتلك المستثمرون المؤسسيون 500.54 مليار فرنك أفريقي من سندات الخزانة القابلة الاستيعاب التي أصدرتها الكاميرون اعتبارًا من 31 أكتوبر، وهو ما يمثل 38.3٪ من السندات القائمة.",
-    "impact": "ويدعم الاستيعاب المؤسسي القوي السيولة في سوق الديون المحلية في الكاميرون.",
-    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOdzVqTXFvUkhNbDRYcEdoRllqUjA3bTJNclloR2s1TmpjNjI1QUhBYmk4c1huN2lvNWFlYm0wWHJQaWZOM250cmgwWGd3YTlwY0VrTUNkT0NYdTBwVFI4c1kzYjVjY1VhQnB0ZXNPVlBfV2Y4ZnctVWpWd0ttcFRKaFBSR20xRDJubk5DQTI3RDFJOEs4TnJqR0l4R1hVRGV0Q0d3QVdDOFhocWpqMk1xUXJ1VkRmV2YyemdYd2F6ck9zMHowZ1I2YWlQN3hxSGtUTkhEVThoTVd5U1VyVWFHWHd6bnhjZVc3djR4Y0ZzRXZMSE0?oc=5"
    }
   ]
  },
  "takeaway": {
-  "en": "CEMAC debt maturities near 4.4 trillion CFA as global inflation eases and oil prices slide.",
-  "fr": "Les échéances de dette de la CEMAC approchent 4 400 milliards de CFA alors que l'inflation mondiale recule."
+  "en": "Global oil slips below $90 as Ivory Coast raises 110B CFA and CEMAC faces heavy debt maturities.",
+  "fr": "Le pétrole baisse sous 90$ alors que la Côte d'Ivoire lève 110Mds de FCFA et que la CEMAC fait face à d'importantes échéances de dette."
  },
  "podcast": {
-  "id": "mwvp7tcz",
-  "edition": "morning",
-  "ai": true,
+  "id": "mwwdyw7a",
+  "edition": "evening",
   "en": [
    {
     "k": "intro",
-    "text": "Good morning, Rayan. Today is Wednesday, the twenty-fifth of November, twenty-six. Lower oil prices and heavy regional debt maturities set the tone for today's briefing."
+    "text": "Good evening Rayan. It's Wednesday 25 November. Here is your Business Desk brief."
    },
    {
     "k": "markets",
-    "text": "Let us look at the markets. Brent crude stands at eighty-seven dollars and twenty-nine cents a barrel, down four point five percent on the day and down twenty-three point three percent over the month. Prices fell as the prospect of a market surplus offset concerns over Middle East disruptions, and as traders weighed a view that the regional conflict is in a stalemate allowing enough oil to flow. For the global economy, lower oil brings relief to consumers and helps trade sentiment, but for Central Africa and the Republic of Congo, it means tighter public revenues and lower export earnings. Gold trades at three thousand five hundred forty-three dollars and fifty cents an ounce, easing zero point five two percent today and down thirteen percent over the month. The US dollar trades at five hundred ninety-nine point fifteen CFA francs, down zero point three seven percent today but up two point one percent over the month. The euro against the dollar stands at one point zero nine, up zero point three seven percent today. For CEMAC importers, a stable euro-pegged CFA franc cushions European import costs, but the strong dollar increases debt servicing strains on dollar-denominated obligations."
+    "text": "First, the markets. Brent crude is down 2.1 percent. Gold is down 1.8 percent. The dollar is down 0.7 percent."
+   },
+   {
+    "k": "lead",
+    "text": "Now, five things to know."
    },
    {
     "k": "point",
-    "text": "First, in regional debt, CEMAC states face four thousand four hundred and four billion CFA francs in debt maturities by October twenty-seven. From Gabon to Chad, and through Congo and Cameroon, governments must manage this heavy repayment schedule. This challenge weighs heavily on oil-exporting economies that remain vulnerable to commodity price swings and must find sustainable refinancing paths."
+    "cat": "worldwide",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPT1NwZUhEUk1EN0VUT1dwa2U0cXQwY3JTMm11NXRsVS1mNUFfZ0ZrYXZldVdZbmRoektXRGo4NWI5d3VwUFNsRHJ6XzVHZ1h3Yl93OFY2QlFDODJUdzZpRlBkNXVGYW9KOTY2SEQ4bG1QZWE1WklQZDNMM3pZd0ZQR1BkZHZua1IxOGx1bGU5Mk1qTUZBWE0xM0FpMFhVdUFmT0JVclFkenZqZ2hESHNoMEREZjlHRzNEZ2c1QlRSSGh1QWpWc1BjR3FZcXhqckpNZV9J?oc=5",
+    "text": "First, Worldwide. Falling global oil prices could mean inflation ends below forecast, Bank of Canada says."
    },
    {
     "k": "point",
-    "text": "Second, in regional banking markets, institutional investors held five hundred point fifty-four billion CFA francs of assimilable Treasury bonds issued by Cameroon as of October thirty-first, representing thirty-eight point three percent of the country's outstanding bonds on the BEAC market. This strong institutional participation shows domestic debt markets are deepening, providing vital local currency financing for public budgets."
+    "cat": "congo",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxObDBqUzdBOGNsZHhrMndGbHhBdTFtSkR6cF9ERDd3WEI5dUFpem1HdjNDQmxJRXdtTWt3Slg5Q0FpODdKQXI0YU1JZXJjNENnZkZ6bVZrRW9WalpXVUZPOE5JblE4SWdhTGY4Q2Z2N1NkVjJETUk5cW1ZWUhocnZVSHF6WDJGRFJIaWcyZzJ2cWdKZWw4dFpDaS1XWXVsbkVNLWhfZUowSUNjbm5nM29PUFlMNy1pYkg0cFQxUHhtMzQ0VUhFMVM2c2JR?oc=5",
+    "text": "Second, Congo & CEMAC. [Press release], Alios Finance Cameroon completes a fundraising of 13 billion FCFA on the CEMAC bond market."
    },
    {
     "k": "point",
-    "text": "Third, in development finance, the Development Bank of Central African States has received the green light from its board of directors to raise an additional two hundred ninety-eight point three billion CFA francs following the success of its recent Eurobond. This fresh capital will help fund regional infrastructure projects and support economic integration across Central Africa."
+    "cat": "africa",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVExid0U3M1I0UHRSQ052OXhHMkJyZG9EakZRZXlJeFNQYm9KVlN5dVZEa2M4YWNTYjNlU3NBeDlfT0NSWTlZZWxUdTVtRmNKZWF1c0ZsTmZfVVpybXZqeWF3RldySnVDNS03YTR5aHROdUZrdFdVbURKRExOeWJCX1ZnV0NsTUU5ZFZtaG05QTNXMF84UW9JWnVqMXV1d1ZxcDlEM2lrSzYycC1FN2d6MEY1ZjdScTlIQ1o2UUZn?oc=5",
+    "text": "Third, Africa. African debt, the AfDB and the ALSF tackle the additional cost of sovereign financing."
    },
    {
     "k": "point",
-    "text": "Fourth, in international monetary policy, the Bank of Canada announced a shift in its framework, stating that inflation forecasts are lower while oil price pressures linger. Governor Tiff Macklem explained that the central bank is changing the metrics it uses to weigh underlying price pressures, signaling a cautious approach to global monetary easing as supply factors evolve."
+    "cat": "lebanon",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVG9lR1B4ZmlJeGYwOXc3Um4yeWZGVzJSUElNS1ZZbHdZcnd2TDJVVEEwUkFha09GZ3NyRmRpQnA4VTNKMnFCQ1lNZndMZEw2TkJfSkNmVzNaVzhSM3A1bG1HMVYzWjZkSTFNT1NBZlRPZGgyNXZoQkJKdVo0VG41Q2NqMUlkcVIzNXYzNmNPN2xpdy1BVjdGTlJ0ZUZCZXc?oc=5",
+    "text": "Fourth, Lebanon. US Inflation remains high despite retreating gas prices."
    },
    {
     "k": "point",
-    "text": "Fifth, in institutional news for Brazzaville, the World Health Organization for Africa has confirmed that its regional headquarters remains firmly in Brazzaville, putting an end to relocation rumors. This decision preserves local administrative stability and maintains the city's status as a key hub for continental public health governance."
+    "cat": "tech",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE02aG9MTzVQV1FPaHZkWUlkbUctTTNOWWxwTHplcDc2akxGWU4xRy1MQndiMUxhU0tEN2Y5WkdRTlIxRU80aUxmbGNJOWVVdE12VjZ1YnM2NU8xN0VoX0ZmNVNrbDlGOEdLV0kzV19fcEJrNDVjUk1KZnhVMA?oc=5",
+    "text": "Finally, Technology. Stock Sell-Off Continues as Investors Fret About A.I., Tariffs and Inflation."
    },
    {
     "k": "number",
-    "text": "The number of the day is four thousand four hundred and four billion CFA francs. That is the total debt maturity facing CEMAC states by October twenty-seven, highlighting the immense refinancing challenge ahead for regional finance ministries."
+    "text": "The number of the day: 38 %. Public debt: institutional investors hold 38% of Cameroonian OTAs on the BEAC market."
    },
    {
     "k": "watch",
-    "text": "What to watch next is the forty-second OPEC and non-OPEC ministerial meeting on November twenty-ninth, which will set the production framework for twenty-seven and dictate the future path of oil revenues."
+    "text": "What to watch: 42nd OPEC and non-OPEC Ministerial Meeting: 2027 production framework, Sunday 29 November."
    },
    {
     "k": "outro",
-    "text": "Thank you for listening, Rayan. Have a productive business day."
+    "text": "That's your brief. The full edition is in the app. Have a good day."
    }
   ],
-  "mins_en": 4,
+  "mins_en": 1,
   "fr": [
    {
     "k": "intro",
-    "text": "Bonjour Rayan. Nous sommes le mercredi vingt-cinq novembre deux mille vingt-six. La baisse des prix du pétrole et les lourdes échéances de dette régionale marquent notre édition d'aujourd'hui."
+    "text": "Bonsoir Rayan. Nous sommes le mercredi 25 novembre. Voici votre brief Business Desk."
    },
    {
     "k": "markets",
-    "text": "Regardons les marchés. Le Brent s'établit à quatre-vingt-sept dollars vingt-neuf le baril, en recul de quatre virgule cinq pour cent sur la journée et de vingt-trois virgule trois pour cent sur le mois. Les prix ont baissé face à la perspective d'un excédent de marché et à l'idée d'une impasse au Moyen-Orient permettant au pétrole de couler. Pour l'économie mondiale, un pétrole bas soulage les consommateurs, mais pour l'Afrique centrale et le Congo, cela signifie des recettes publiques plus serrées. L'or se négocie à trois mille cinq cent quarante-trois dollars cinquante l'once, en baisse de zéro virgule cinquante-deux pour cent. Le dollar s'échange à cinq cent quatre-vingt-dix-neuf virgule quinze francs CFA, en baisse de zéro virgule trente-sept pour cent aujourd'hui mais en hausse de deux virgule un pour cent sur le mois. L'euro face au dollar s'établit à un virgule zéro neuf. Pour les importateurs de la CEMAC, la parité fixe avec l'euro protège des coûts européens, mais un dollar fort pèse sur la dette en dollars."
+    "text": "D'abord, les marchés. Le Brent perd 2,1 pour cent. L'or perd 1,8 pour cent. Le dollar perd 0,7 pour cent."
+   },
+   {
+    "k": "lead",
+    "text": "Maintenant, cinq choses à savoir."
    },
    {
     "k": "point",
-    "text": "Premièrement, dans la dette régionale, les États de la CEMAC font face à quatre mille quatre cent quatre milliards de francs d'échéances de dette d'ici octobre vingt-sept. Du Gabon au Tchad, en passant par le Congo et le Cameroun, les gouvernements doivent gérer ce calendrier de remboursement chargé, un défi pour des économies dépendantes des matières premières."
+    "cat": "worldwide",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPT1NwZUhEUk1EN0VUT1dwa2U0cXQwY3JTMm11NXRsVS1mNUFfZ0ZrYXZldVdZbmRoektXRGo4NWI5d3VwUFNsRHJ6XzVHZ1h3Yl93OFY2QlFDODJUdzZpRlBkNXVGYW9KOTY2SEQ4bG1QZWE1WklQZDNMM3pZd0ZQR1BkZHZua1IxOGx1bGU5Mk1qTUZBWE0xM0FpMFhVdUFmT0JVclFkenZqZ2hESHNoMEREZjlHRzNEZ2c1QlRSSGh1QWpWc1BjR3FZcXhqckpNZV9J?oc=5",
+    "text": "Premier point, Monde. La baisse des prix mondiaux du pétrole pourrait signifier que l’inflation se terminerait en dessous des prévisions, selon la Banque du Canada."
    },
    {
     "k": "point",
-    "text": "Deuxièmement, sur le marché monétaire de la BEAC, les investisseurs institutionnels détenaient cinq cents virgule cinquante-quatre milliards de francs CFA d'obligations du Trésor assimilables émises par le Cameroun au trente et un octobre, soit trente-huit virgule trois pour cent de l'encours. Cette participation montre l'approfondissement du marché de la dette domestique."
+    "cat": "congo",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxObDBqUzdBOGNsZHhrMndGbHhBdTFtSkR6cF9ERDd3WEI5dUFpem1HdjNDQmxJRXdtTWt3Slg5Q0FpODdKQXI0YU1JZXJjNENnZkZ6bVZrRW9WalpXVUZPOE5JblE4SWdhTGY4Q2Z2N1NkVjJETUk5cW1ZWUhocnZVSHF6WDJGRFJIaWcyZzJ2cWdKZWw4dFpDaS1XWXVsbkVNLWhfZUowSUNjbm5nM29PUFlMNy1pYkg0cFQxUHhtMzQ0VUhFMVM2c2JR?oc=5",
+    "text": "Deuxième point, Congo & CEMAC. [Communiqué], Alios Finance Cameroun boucle une levée de 13 milliards FCFA sur le marché obligataire de la CEMAC."
    },
    {
     "k": "point",
-    "text": "Troisièmement, en finance de développement, la Banque de développement des États de l'Afrique centrale a obtenu le feu vert de son conseil d'administration pour lever deux cent quatre-vingt-dix-huit virgule trois milliards de francs CFA supplémentaires, après le succès de son eurobond. Ce capital financera des projets d'infrastructure régionaux."
+    "cat": "africa",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVExid0U3M1I0UHRSQ052OXhHMkJyZG9EakZRZXlJeFNQYm9KVlN5dVZEa2M4YWNTYjNlU3NBeDlfT0NSWTlZZWxUdTVtRmNKZWF1c0ZsTmZfVVpybXZqeWF3RldySnVDNS03YTR5aHROdUZrdFdVbURKRExOeWJCX1ZnV0NsTUU5ZFZtaG05QTNXMF84UW9JWnVqMXV1d1ZxcDlEM2lrSzYycC1FN2d6MEY1ZjdScTlIQ1o2UUZn?oc=5",
+    "text": "Troisième point, Afrique. Dette africaine, la BAD et l’ALSF s’attaquent au surcoût du financement souverain."
    },
    {
     "k": "point",
-    "text": "Quatrièmement, en politique monétaire internationale, la Banque du Canada a annoncé une modification de son cadre, jugeant les prévisions d'inflation plus basses tandis que persistent les pressions pétrolières. Le gouverneur Tiff Macklem a indiqué un changement des indicateurs d'inflation sous-jacente, signalant une approche prudente de l'assouplissement monétaire."
+    "cat": "lebanon",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVG9lR1B4ZmlJeGYwOXc3Um4yeWZGVzJSUElNS1ZZbHdZcnd2TDJVVEEwUkFha09GZ3NyRmRpQnA4VTNKMnFCQ1lNZndMZEw2TkJfSkNmVzNaVzhSM3A1bG1HMVYzWjZkSTFNT1NBZlRPZGgyNXZoQkJKdVo0VG41Q2NqMUlkcVIzNXYzNmNPN2xpdy1BVjdGTlJ0ZUZCZXc?oc=5",
+    "text": "Quatrième point, Liban. L’inflation américaine reste élevée malgré la baisse des prix du gaz."
    },
    {
     "k": "point",
-    "text": "Cinquièmement, pour Brazzaville, l'Organisation mondiale de la santé pour l'Afrique a confirmé que son siège régional reste solidement établi dans la capitale congolaise, balayant les rumeurs de déménagement et préservant la stabilité administrative de la ville."
+    "cat": "tech",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE02aG9MTzVQV1FPaHZkWUlkbUctTTNOWWxwTHplcDc2akxGWU4xRy1MQndiMUxhU0tEN2Y5WkdRTlIxRU80aUxmbGNJOWVVdE12VjZ1YnM2NU8xN0VoX0ZmNVNrbDlGOEdLV0kzV19fcEJrNDVjUk1KZnhVMA?oc=5",
+    "text": "Enfin, Technologie. La vente d’actions se poursuit alors que les investisseurs s’inquiètent de l’IA, des tarifs douaniers et de l’inflation."
    },
    {
     "k": "number",
-    "text": "Le chiffre du jour est quatre mille quatre cent quatre milliards de francs CFA. C'est le montant total des échéances de dette des États de la CEMAC d'ici octobre vingt-sept, illustrant le défi de refinancement."
+    "text": "Le chiffre du jour : 38 %. Dette publique : les investisseurs institutionnels détiennent 38 % des OTA camerounais sur le marché de la BEAC."
    },
    {
     "k": "watch",
-    "text": "A suivre, la quarante-deuxième réunion ministérielle de l'OPEP et de ses alliés le vingt-neuf novembre, qui fixera le cadre de production pour vingt-sept et orientera les revenus pétroliers."
+    "text": "À surveiller : 42e réunion ministérielle OPEP et non-OPEP : cadre de production 2027, dimanche 29 novembre."
    },
    {
     "k": "outro",
-    "text": "Merci de votre écoute Rayan. Passez une excellente journée professionnelle."
+    "text": "C'est tout pour ce brief. L'édition complète est dans l'application. Bonne journée."
    }
   ],
-  "mins_fr": 3,
+  "mins_fr": 1,
   "ar": [
    {
     "k": "intro",
-    "text": "صباح الخير ريان. اليوم هو الأربعاء الخامس من نوفمبر عام ألفين وستة وعشرين. انخفاض أسعار النفط واستحقاقات الديون الإقليمية الكبيرة تحدد ملامح إحاطة اليوم."
+    "text": "مساء الخير يا ريان. اليوم الأربعاء، 25 نوفمبر. إليك موجز Business Desk."
    },
    {
     "k": "markets",
-    "text": "نظرة على الأسواق. يبلغ سعر خام برنت سبعة وثمانين دولاراً وتسعة وعشرين سنتاً للبرميل، منخفضاً بنسبة أربعة ونصف بالمئة اليوم، وبنسبة ثلاثة وعشرين وثلاثة بالمئة خلال الشهر. انخفضت الأسعار وسط توقعات بوجود فائض في السوق. بالنسبة للاقتصاد العالمي، يجلب النفط المنخفض ارتياحاً للمستهلكين، ولكن بالنسبة لأفريقيا الوسطى والكونغو، فهذا يعني إيرادات عامة ضيقة. يبلغ سعر الذهب ثلاثة آلاف وخمسمائة وثلاثة وأربعين دولاراً وخمسين سنتاً للأونصة. يتداول الدولار الأمريكي عند خمسمائة وتسعة وتسعين فرانكاً سيفا وخمسة عشر سنتيماً، منخفضاً بنسبة صفر وثلاثة وأربعين بالمئة اليوم. زوج اليورو مقابل الدولار عند واحد وتسعة من مئة. بالنسبة لمستوردي منطقة إيماك، تحمي العملة المرتبطة باليورو تكاليف الاستفادة، لكن الدولار القوي يزيد من ضغوط خدمة الديون."
+    "text": "أولًا، الأسواق. خام برنت ينخفض 2.1 بالمئة. الذهب ينخفض 1.8 بالمئة. الدولار ينخفض 0.7 بالمئة."
+   },
+   {
+    "k": "lead",
+    "text": "والآن، خمسة أمور يجب معرفتها."
    },
    {
     "k": "point",
-    "text": "أولاً، في مجال الديون الإقليمية، تواجه دول مجموعة الاقتصاد والنقدي لوسط أفريقيا استحقاقات ديون بقيمة أربعة آلاف وستمائة وأربعة مليارات فرانك سيفا بحلول أكتوبر سبعة وعشرين. من غابون إلى تشاد، وعبر الكونغو والكاميرون، يجب على الحكومات إدارة جدول السداد هذا، وهو تحدٍ لاقتصادات تعتمد على السلع الأساسية."
+    "cat": "worldwide",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPT1NwZUhEUk1EN0VUT1dwa2U0cXQwY3JTMm11NXRsVS1mNUFfZ0ZrYXZldVdZbmRoektXRGo4NWI5d3VwUFNsRHJ6XzVHZ1h3Yl93OFY2QlFDODJUdzZpRlBkNXVGYW9KOTY2SEQ4bG1QZWE1WklQZDNMM3pZd0ZQR1BkZHZua1IxOGx1bGU5Mk1qTUZBWE0xM0FpMFhVdUFmT0JVclFkenZqZ2hESHNoMEREZjlHRzNEZ2c1QlRSSGh1QWpWc1BjR3FZcXhqckpNZV9J?oc=5",
+    "text": "أولًا، العالم. يقول بنك كندا إن انخفاض أسعار النفط العالمية قد يعني أن التضخم سينتهي دون التوقعات."
    },
    {
     "k": "point",
-    "text": "ثانياً، في أسواق البنوك الإقليمية، احتفظ المستثمرون المؤسسيون بخمسمائة مليار وخمسين فرانكاً سيفا من سندات الخزانة التي أصدرتها الكاميرون حتى نهاية أكتوبر، مما يمثل ثمانية وثلاثين وثلاثة بالمئة من السندات القائمة. يظهر هذا مشاركة قوية لتشاطر أسواق الديون المحلية."
+    "cat": "congo",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxObDBqUzdBOGNsZHhrMndGbHhBdTFtSkR6cF9ERDd3WEI5dUFpem1HdjNDQmxJRXdtTWt3Slg5Q0FpODdKQXI0YU1JZXJjNENnZkZ6bVZrRW9WalpXVUZPOE5JblE4SWdhTGY4Q2Z2N1NkVjJETUk5cW1ZWUhocnZVSHF6WDJGRFJIaWcyZzJ2cWdKZWw4dFpDaS1XWXVsbkVNLWhfZUowSUNjbm5nM29PUFlMNy1pYkg0cFQxUHhtMzQ0VUhFMVM2c2JR?oc=5",
+    "text": "ثانيًا، الكونغو وCEMAC. [بيان صحفي]، أكملت شركة Alios Finance Cameroon عملية جمع أموال بقيمة 13 مليار فرنك أفريقي في سوق سندات CEMAC."
    },
    {
     "k": "point",
-    "text": "ثالثاً، في تمويل التنمية، حصل بنك تنمية دول وسط أفريقيا على الضوء الأخضر من مجلس إدارته لجمع مئتين وثمانية وتسعين مليار فرانك سيفا إضافية بعد نجاح سنده الأوروبي. سيساعد هذا رأس المال في تمويل البنية التحتية."
+    "cat": "africa",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVExid0U3M1I0UHRSQ052OXhHMkJyZG9EakZRZXlJeFNQYm9KVlN5dVZEa2M4YWNTYjNlU3NBeDlfT0NSWTlZZWxUdTVtRmNKZWF1c0ZsTmZfVVpybXZqeWF3RldySnVDNS03YTR5aHROdUZrdFdVbURKRExOeWJCX1ZnV0NsTUU5ZFZtaG05QTNXMF84UW9JWnVqMXV1d1ZxcDlEM2lrSzYycC1FN2d6MEY1ZjdScTlIQ1o2UUZn?oc=5",
+    "text": "ثالثًا، أفريقيا. الديون الأفريقية، يعالج بنك التنمية الأفريقي وصندوق الدعم الزراعي الأفريقي التكلفة الإضافية للتمويل السيادي."
    },
    {
     "k": "point",
-    "text": "رابعاً، في السياسة النقدية الدولية، أعلن بنك كندا عن تغيير في إطاره، مشيراً إلى أن توقعات التغير أدنى بينما تظل ضغوط أسعار النفط مستمرة، مما يشير إلى نهج حذر تجاه التيسير النقدي."
+    "cat": "lebanon",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVG9lR1B4ZmlJeGYwOXc3Um4yeWZGVzJSUElNS1ZZbHdZcnd2TDJVVEEwUkFha09GZ3NyRmRpQnA4VTNKMnFCQ1lNZndMZEw2TkJfSkNmVzNaVzhSM3A1bG1HMVYzWjZkSTFNT1NBZlRPZGgyNXZoQkJKdVo0VG41Q2NqMUlkcVIzNXYzNmNPN2xpdy1BVjdGTlJ0ZUZCZXc?oc=5",
+    "text": "رابعًا، لبنان. لا يزال التضخم في الولايات المتحدة مرتفعاً على الرغم من تراجع أسعار الغاز."
    },
    {
     "k": "point",
-    "text": "خامساً، في أخبار المؤسسات لبراتزافيل، أكدت منظمة الصحة العالمية لأفريقيا أن مقرها الإقليمي يبقى في براتزافيل، مما يضع حدا لشائعات النقل ويحافظ على الاستقرار الإداري."
+    "cat": "tech",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE02aG9MTzVQV1FPaHZkWUlkbUctTTNOWWxwTHplcDc2akxGWU4xRy1MQndiMUxhU0tEN2Y5WkdRTlIxRU80aUxmbGNJOWVVdE12VjZ1YnM2NU8xN0VoX0ZmNVNrbDlGOEdLV0kzV19fcEJrNDVjUk1KZnhVMA?oc=5",
+    "text": "وأخيرًا، التكنولوجيا. يستمر بيع الأسهم مع قلق المستثمرين بشأن الذكاء الاصطناعي والتعريفات الجمركية والتضخم."
    },
    {
     "k": "number",
-    "text": "رقم اليوم هو أربعة آلاف وستمائة وأربعة مليارات فرانك سيفا. هذا هو إجمالي استحقاقات الديون التي تواجه دول المجموعة بحلول أكتوبر سبعة وعشرين، مما يسلط الضوء على التحدي القادم."
+    "text": "رقم اليوم: 38 %. الدين العام: يمتلك المستثمرون المؤسسيون 38% من اتفاقيات الاستثمار عبر الإنترنت الكاميرونية في سوق BEAC."
    },
    {
     "k": "watch",
-    "text": "ما يجب مراقبته هو الاجتماع الوزاري الثاني والأربعون لمنظمة أوبك والدول المنتجة في التاسع والعشرين من نوفمبر لتحديد إطار الإنتاج للعام المقبل."
+    "text": "ما يجب متابعته: الاجتماع الوزاري الـ42 لأوبك وخارجها: إطار الإنتاج لعام 2027, الأحد، 29 نوفمبر."
    },
    {
     "k": "outro",
-    "text": "شكراً لحسن استماعك ريان. أتمنى لك يوم عمل مثمراً."
+    "text": "هذا هو موجزك. العدد الكامل في التطبيق. يومًا موفقًا."
    }
   ],
-  "mins_ar": 3,
+  "mins_ar": 1,
   "audio": {
-   "en": "data/brief-en.mp3?v=mwvp7tcz",
-   "fr": "data/brief-fr.mp3?v=mwvp7tcz",
-   "ar": "data/brief-ar.mp3?v=mwvp7tcz"
+   "en": "data/brief-en.mp3?v=mwwdyw7a",
+   "fr": "data/brief-fr.mp3?v=mwwdyw7a",
+   "ar": "data/brief-ar.mp3?v=mwwdyw7a"
   },
   "audio_secs": {
-   "en": 227,
-   "fr": 179,
-   "ar": 247
+   "en": 91,
+   "fr": 88,
+   "ar": 135
   },
   "marks": {
    "en": [
     0,
-    12.4,
-    83.5,
-    107.8,
-    133.6,
-    154.4,
-    175.6,
-    195.3,
-    210.2,
-    221.8
+    7.8,
+    20,
+    22.9,
+    31.6,
+    41.9,
+    50.8,
+    57.5,
+    65.7,
+    76,
+    85.2
    ],
    "fr": [
     0,
-    11,
-    63.9,
-    82.8,
-    102.1,
-    119.3,
-    138.3,
-    151.9,
-    163.5,
-    173.4
+    7.7,
+    18,
+    21.1,
+    30.5,
+    40.2,
+    47.9,
+    54.6,
+    63,
+    73,
+    81
    ],
    "ar": [
     0,
-    17.1,
-    94.8,
-    125.4,
-    152.2,
-    173.8,
-    191.9,
-    208.6,
-    226.7,
-    239.7
+    11,
+    27.2,
+    32.1,
+    43.6,
+    59.6,
+    73.3,
+    83.9,
+    96.1,
+    112.3,
+    127.1
    ]
   }
  },
@@ -2108,6 +2155,101 @@
     "fr": "Les investisseurs institutionnels détenaient 500,54 milliards de FCFA d'obligations du Trésor assimilables émises par le Cameroun au 31 octobre, soit 38,3% des encours.",
     "ar": "يمتلك المستثمرون المؤسسيون 500.54 مليار فرنك أفريقي من سندات الخزانة القابلة الاستيعاب التي أصدرتها الكاميرون اعتبارًا من 31 أكتوبر، وهو ما يمثل 38.3٪ من السندات القائمة."
    }
+  },
+  {
+   "at": "2026-11-25T17:16:16.890Z",
+   "date": "2026-11-25T11:47:32.000Z",
+   "cat": "worldwide",
+   "score": 5,
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPT1NwZUhEUk1EN0VUT1dwa2U0cXQwY3JTMm11NXRsVS1mNUFfZ0ZrYXZldVdZbmRoektXRGo4NWI5d3VwUFNsRHJ6XzVHZ1h3Yl93OFY2QlFDODJUdzZpRlBkNXVGYW9KOTY2SEQ4bG1QZWE1WklQZDNMM3pZd0ZQR1BkZHZua1IxOGx1bGU5Mk1qTUZBWE0xM0FpMFhVdUFmT0JVclFkenZqZ2hESHNoMEREZjlHRzNEZ2c1QlRSSGh1QWpWc1BjR3FZcXhqckpNZV9J?oc=5",
+   "source": "BNN Bloomberg",
+   "img": "https://www.bnnbloomberg.ca/resizer/v2/XDEEBJ75UTIWNS6MRCQZZP4T7U.jpg?smart=true&auth=1d68eef2a5da4d8ad29d4b3800198955194b68e13dc7e40666d4a166259b6277&width=1200&height=630",
+   "t": {
+    "en": "Bank of Canada Sees Inflation Ending Below Forecast on Falling Oil",
+    "fr": "La Banque du Canada anticipe une inflation sous les prévisions avec la chute du pétrole",
+    "ar": "بنك كندا يرى أن التضخم سينتهي دون التوقعات بسبب انخفاض النفط"
+   },
+   "d": {
+    "en": "Falling global oil prices could push future inflation below previous forecasts, according to the Bank of Canada. The assessment follows a broader retreat in crude markets.",
+    "fr": "La baisse des prix mondiaux du pétrole pourrait ramener l'inflation en dessous des prévisions antérieures, selon la Banque du Canada, suite au repli des cours du brut.",
+    "ar": "قد يؤدي انخفاض أسعار النفط العالمية إلى دفع التضخم المستقبلي إلى ما دون التوقعات السابقة، وفقًا لبنك كندا. ويأتي التقييم في أعقاب تراجع أوسع نطاقا في أسواق النفط الخام."
+   }
+  },
+  {
+   "at": "2026-11-25T17:16:16.890Z",
+   "date": "2026-11-25T11:55:22.000Z",
+   "cat": "africa",
+   "score": 5,
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQUkhZVU1kbG43VlF1amRLRzRfR2V3Vm1xbjJ4ZkhQNjZCSENoWXJURjI4RFY0TTFhbnYxZUx5Sk41WDlOeFp6T0N0c1RpWEpTQndWTE1RbWF3MVhpZmZuWnNuT0tRVE1nY2lMS05kVlZJZ1lGWHRTMzdHZk1jNzU4TThUYlRBcVRHajlvWXJfb01sSF90WE5TSWlnX1N5cVZFUjNPYTVCc1NiVDRNaWptV2RHYUl3OHZqZzlOblI4ODVGTjRpT3B0QlNSQ25zT1hwdzJNdHJZTmw5MWlYWlN1c0xENzM?oc=5",
+   "source": "Financial Afrik",
+   "img": "https://www.financialafrik.com/wp-content/uploads/2024/05/DFC54E69-3E29-4DC2-99A7-0521551F5219.jpeg",
+   "t": {
+    "en": "Ivory Coast Raises 110 Billion FCFA with Strong Market Demand",
+    "fr": "La Côte d'Ivoire lève 110 milliards de FCFA avec une forte demande",
+    "ar": "ساحل العاج تجمع 110 مليار فرنك أفريقي مع الطلب القوي في السوق"
+   },
+   "d": {
+    "en": "Ivory Coast successfully mobilized 110 billion FCFA on November 24, 2026, achieving a coverage rate of 201.90% with yields of 6.26% for three years and 7.03% for five years.",
+    "fr": "La Côte d'Ivoire a mobilisé 110 milliards de FCFA le 24 novembre 2026, affichant un taux de couverture de 201,90% et des rendements de 6,26% à trois ans et 7,03% à cinq ans.",
+    "ar": "نجحت ساحل العاج في تعبئة 110 مليار فرنك أفريقي في 24 نوفمبر 2026، محققة معدل تغطية قدره 201.90% مع عائدات تبلغ 6.26% لمدة ثلاث سنوات و7.03% لمدة خمس سنوات."
+   }
+  },
+  {
+   "at": "2026-11-25T17:16:16.890Z",
+   "date": "2026-11-25T14:27:46.000Z",
+   "cat": "worldwide",
+   "score": 4,
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMXZnb25ZTWVaVHNZU2lWMG9YYzlVaTFPMFR0Vnd5TFJIWHRoWVU2dTVMWThxRXdLTzFqWjdsak14cW9DVGZKbW0zNE1XblVZWlpiSTdwWEk4ZTdtT1lkWkdZSEFydlgwT19fSWRfUnpmZTF4bW85SnpBZ0x3dVZIWlo2WDQ?oc=5",
+   "source": "Financial Times",
+   "img": null,
+   "t": {
+    "en": "OPEC+ Members Head for Clash Over Production Estimates",
+    "fr": "Les grands membres de l'OPEP+ s'orientent vers un désaccord sur la production",
+    "ar": "أعضاء أوبك+ يتجهون نحو صراع حول تقديرات الإنتاج"
+   },
+   "d": {
+    "en": "The largest members of OPEC+ are moving toward a disagreement regarding oil production estimates and future output quotas.",
+    "fr": "Les principaux membres de l'OPEP+ se dirigent vers un clash concernant les estimations de production de pétrole et les quotas futurs.",
+    "ar": "يتجه أكبر أعضاء أوبك+ نحو الخلاف بشأن تقديرات إنتاج النفط وحصص الإنتاج المستقبلية."
+   }
+  },
+  {
+   "at": "2026-11-25T17:16:16.890Z",
+   "date": "2026-11-25T10:49:00.000Z",
+   "cat": "africa",
+   "score": 4,
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOa1RXSHVvZGp0dkRhV1ZpMlkyT1kxTk5sS25XVlR0SFVvVHI5Q2pvZTRSYTd0UU84dU9vVkNyR0xoM3FYamRrMENxTWltb1RYb1doYnBsanZaVlR3SXVRUS1NRGZLeWtBS0ZxdERnZHBST1dUellMX2g2OFZpckdCLVVhNklCdTFoQW9vMDVpcXhxMDlvNzNLZGF2LVBZOFh5aDZ5OWlKOWVQZ240ZWxHVVp0SU5WT1BSU1otZjNBRDA3UGQ2M1ZvVGl3?oc=5",
+   "source": "AGENCE ECOFIN",
+   "img": "https://www.bing.com/th?id=ONUT.ioylc09X62O4yVL4NCCLPQ&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "Guinea Secures $417 Million IMF Financing Program Over 38 Months",
+    "fr": "Guinée : le FMI approuve un programme de financement de 417 millions de dollars",
+    "ar": "غينيا تحصل على 417 مليون دولار من برنامج تمويل صندوق النقد الدولي على مدى 38 شهرًا"
+   },
+   "d": {
+    "en": "The International Monetary Fund approved a new financial backing program for Guinea worth $417 million to be disbursed over a 38-month period.",
+    "fr": "Le Fonds monétaire international a approuvé un nouveau programme de soutien financier en faveur de la Guinée d'un montant de 417 millions de dollars sur 38 mois.",
+    "ar": "وافق صندوق النقد الدولي على برنامج دعم مالي جديد لغينيا بقيمة 417 مليون دولار يتم صرفه على مدى 38 شهرا."
+   }
+  },
+  {
+   "at": "2026-11-25T17:16:16.890Z",
+   "date": "2026-11-25T10:18:00.000Z",
+   "cat": "congo",
+   "score": 4,
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxObGRuZGZMdVhMZlEtQWVIeVJpUTdiNk9mdklTM1k0QWtzLXdKbGhtaExOYkdfaWdpaW4xeExpcVl5VmM1RnlOTlk1SV9sWDd0bDdZS1Jha2FTR0pJWnphcUI0T0xxRHdUenp4VVdwLW84M05CUFcwQ29scHEtTWFNT3A4c1ptanJPcnRNbWpVbDRUaE5YSFZCYmdOU0xBQXN6OGE5SXAxZHVXYWJFc1RSMjNkek9xOXlXNVltMmhkNDhicWxsM2xuSDJkLW03c0haUlBtMjhoaw?oc=5",
+   "source": "AGENCE ECOFIN",
+   "img": "https://www.bing.com/th?id=ONUT.uzGTk2e9g6Y6qLJTOVdsdA&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "Cameroon Secures $22 Million from DEG for Afriland First Bank",
+    "fr": "Cameroun : Afriland First Bank obtient 22 millions de dollars de la DEG",
+    "ar": "الكاميرون تحصل على 22 مليون دولار من DEG لبنك Afriland First"
+   },
+   "d": {
+    "en": "Afriland First Bank in Cameroon has obtained $22 million in financing from DEG to expand commercial credit lines for local businesses.",
+    "fr": "Afriland First Bank au Cameroun a obtenu un financement de 22 millions de dollars auprès de la DEG pour renforcer le financement des entreprises locales.",
+    "ar": "حصل بنك Afriland First Bank في الكاميرون على تمويل بقيمة 22 مليون دولار من DEG لتوسيع خطوط الائتمان التجارية للشركات المحلية."
+   }
   }
  ],
  "weekly": {
@@ -2396,7 +2538,7 @@
     },
     {
      "year": 1981,
-     "text": "كتبت مجموعة من أعضاء البرلمان المحافظين رسالة توضح معارضتهم للسياسة الاقتصادية لمارجريت تاتشر، مما أدى إلى تكهنات حول الانفصال عن الحزب.",
+     "text": "كتبت مجموعة من أعضاء البرلمان المحافظين رسالة توضح معارضتهم للسياسة الاقتصادية لمارغريت تاتشر، مما أدى إلى تكهنات حول الانفصال عن الحزب.",
      "url": "https://en.wikipedia.org/wiki/Gang_of_25",
      "img": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Margaret_Thatcher_%281981%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
     },
@@ -2426,7 +2568,7 @@
    "lebanon": [
     {
      "year": 1989,
-     "text": "رينيه معوض، محامي وسياسي لبناني، رئيس لبنان الثالث عشر (من مواليد 1925)",
+     "text": "رينيه معوض، محامي وسياسي لبناني، رئيس لبنان الثالث عشر (مواليد 1925)",
      "kind": "died",
      "md": "11-22",
      "url": "https://en.wikipedia.org/wiki/Ren%C3%A9_Moawad"
@@ -2464,6 +2606,19 @@
   },
   "more": [
    {
+    "title": "How Will AI Shake Up Your Growth Strategy?",
+    "source": "BCG",
+    "lang": "en",
+    "paywall": false,
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQQkY4U1c0WWxFNzViXzUzdGNZM21LaTdabjFLZktnQVM3LWRiOTY1LWRYVjAtRGRmUE1lQ2s0OE5nYmV1YlZQcDJZM2J6X0xZTjNERjFDS0ZXMHdDYzIwOE8xenJMSlFJRDN6Mnk1NnBuYnpwZHl0ck91VzVxbktJN3hn?oc=5",
+    "date": "2026-11-25T05:05:28.000Z",
+    "t": {
+     "en": "How Will AI Shake Up Your Growth Strategy?",
+     "fr": "Comment l’IA va-t-elle bouleverser votre stratégie de croissance ?",
+     "ar": "كيف سيغير الذكاء الاصطناعي استراتيجية النمو لديك؟"
+    }
+   },
+   {
     "title": "The Agentic Leadership Playbook: How CMOs Can Set Their Brands Apart",
     "source": "BCG",
     "lang": "en",
@@ -2477,16 +2632,16 @@
     }
    },
    {
-    "title": "AI Is Crossing into the Physical World. Here’s Why Japan Is Worth Watching.",
-    "source": "BCG",
+    "title": "Essential Tax and Wealth Planning Guide: 2027 Edition",
+    "source": "Deloitte Insights",
     "lang": "en",
     "paywall": false,
-    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5lUU1kZEhDcktCM0hZOTVjaG9xak03MzNCcHpPQ0VKMVhkNzlRajhrdXAyWUppSjhhY3p0V2FwTUFyQy1WRW1BRWlYMjBGaGRKTDBTczFrVC1qM05ZYzJvSjFMSXdYQVZSdFBpb0xKekc0cUpjcG5TLVFOUlp4QQ?oc=5",
-    "date": "2026-11-24T09:06:50.000Z",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOblQ2QTlXUUMzNjY4N3NHQ05pMGNRRDVkUm1xSEFmc0VVbTJtWGZiVWw4RncwODFyWk1WVTdJZ2R4bVZvbFF6eml1VU56bmNCWXVwSFE0NHRVYnpPclJTWlYxOE84Z01EOFF3bmIwUUdvLS1rMVdRUUhuMS04aDhSWllfZVR6dTMyMUdfeVRORjEtTzVnUjVrYXdpR1VrWFE?oc=5",
+    "date": "2026-11-17T08:00:00.000Z",
     "t": {
-     "en": "AI Is Crossing into the Physical World. Here’s Why Japan Is Worth Watching.",
-     "fr": "L’IA pénètre le monde physique. Voici pourquoi le Japon mérite d’être surveillé.",
-     "ar": "الذكاء الاصطناعي يعبر إلى العالم المادي. إليكم لماذا تستحق اليابان المشاهدة."
+     "en": "Essential Tax and Wealth Planning Guide: 2027 Edition",
+     "fr": "Guide essentiel de planification fiscale et patrimoniale : édition 2027",
+     "ar": "دليل تخطيط الضرائب والثروات الأساسي: إصدار 2027"
     }
    },
    {
@@ -2505,19 +2660,6 @@
     }
    },
    {
-    "title": "Essential Tax and Wealth Planning Guide: 2027 Edition",
-    "source": "Deloitte Insights",
-    "lang": "en",
-    "paywall": false,
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOblQ2QTlXUUMzNjY4N3NHQ05pMGNRRDVkUm1xSEFmc0VVbTJtWGZiVWw4RncwODFyWk1WVTdJZ2R4bVZvbFF6eml1VU56bmNCWXVwSFE0NHRVYnpPclJTWlYxOE84Z01EOFF3bmIwUUdvLS1rMVdRUUhuMS04aDhSWllfZVR6dTMyMUdfeVRORjEtTzVnUjVrYXdpR1VrWFE?oc=5",
-    "date": "2026-11-17T08:00:00.000Z",
-    "t": {
-     "en": "Essential Tax and Wealth Planning Guide: 2027 Edition",
-     "fr": "Guide essentiel de planification fiscale et patrimoniale : édition 2027",
-     "ar": "دليل تخطيط الضرائب والثروات الأساسي: إصدار 2027"
-    }
-   },
-   {
     "title": "What Will You Stop Doing Under Your New Strategy?",
     "source": "Harvard Business Review",
     "lang": "en",
@@ -2530,6 +2672,48 @@
      "en": "What Will You Stop Doing Under Your New Strategy?",
      "fr": "Qu’allez-vous arrêter de faire dans le cadre de votre nouvelle stratégie ?",
      "ar": "ما الذي ستتوقف عن فعله في ظل استراتيجيتك الجديدة؟"
+    }
+   },
+   {
+    "title": "- MIT Sloan Management Review",
+    "source": "MIT Sloan Management Review",
+    "lang": "en",
+    "paywall": false,
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5wcFhJSGZHV3lZNV9qNElkRE5MejNZV1dLLWc5Zkx0bkRtaDBHQzJxb1dZQ2daUEIwM19Vdy1LNTU1LU9LYmZobUU1TG1NM2M?oc=5",
+    "date": "2026-11-25T03:58:43.000Z",
+    "img": "https://www.bing.com/th?id=ONUT.2F2Y7IkCauT4DPgjR4QRGA&pid=News&w=900&h=1200&c=7&rs=1",
+    "t": {
+     "en": "- MIT Sloan Management Review",
+     "fr": "- Revue de gestion du MIT Sloan",
+     "ar": "- مراجعة إدارة معهد ماساتشوستس للتكنولوجيا سلون"
+    }
+   },
+   {
+    "title": "What is the agentic factory? An update to the machinery of transformation for financial-services businesses",
+    "source": "McKinsey",
+    "lang": "en",
+    "paywall": false,
+    "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQWWx2Zy1UR2JOZHBVdkJ1SU1VSXpVcDc1MGxsYkZSQU9NRlNOaFdIV1dENHBqSkYzNkt0UlZ4NDlTMlRhbnk2eTFaSnpuYjQzUGFpLWRQY2NSeFlGZ09wMkZRSFA4eVpwdzNRUlJwSzFBYjg5TElxVUpLXzhHWk5yVnEtMzh2SlBOcjU1UW5aODQzV2FtUjhNTWRnWHhVME52UEI3cFRyNTZjbTJ2SGttX1FQaTZHQjdiNXRPeXhOZlFfZzBKeDljLUU2b0JzcVFXV01RcWprVUYzQV96LUJ4N3RLSHlFOGIwRlVlRDVrZTZ2TkU4WUVwekhYZ3Znc1k?oc=5",
+    "date": "2026-11-24T00:00:00.000Z",
+    "t": {
+     "en": "What is the agentic factory? An update to the machinery of transformation for financial-services businesses",
+     "fr": "Qu'est-ce que l'usine agentique ? Une mise à jour des mécanismes de transformation pour les entreprises de services financiers",
+     "ar": "ما هو مصنع الوكيل ؟ تحديث لآلية التحول لشركات الخدمات المالية"
+    }
+   },
+   {
+    "title": "Nvidia reinstates Huang as chief, Kress remains CFO",
+    "source": "CFO Dive",
+    "lang": "en",
+    "paywall": false,
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWVhoeVgwWTFEbDMwNDRjZGRKdENOZkwzU2U3VmdzaHVzUEhXNE1NeHVsOWkybHB5MGFzTk9MVkU0X3o2ZTdCTjhHN0ZYbzBZYU5CQWZHTXRiN2VfM1FMcUV5akxjV2hzSWdubFJacmRCZnpyT1dRVzNWemowanVmRXdNQUNITHIwNklGLWYzdHl5WXU2?oc=5",
+    "date": "2026-11-23T22:58:13.000Z",
+    "desc": "Shares of the AI chip maker jumped over 30% in morning trading on Jensen Huang’s return to the CEO seat despite reports of multiple affairs, including one with an alleged Chinese spy.",
+    "img": "https://imgproxy.divecdn.com/dVAyi73LsPq7zvYUr2wKFekA9ECTXRPkuWDm8q75mb4/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjI2NzAyOTM3LmpwZw==.webp",
+    "t": {
+     "en": "Nvidia reinstates Huang as chief, Kress remains CFO",
+     "fr": "Nvidia réintègre Huang à la tête, Kress reste directeur financier",
+     "ar": "أعادت Nvidia تعيين Huang كرئيس لها، بينما ظل Kress مديرًا ماليًا"
     }
    },
    {
@@ -2561,78 +2745,29 @@
     }
    },
    {
-    "title": "AI Agents Could Make Big Tech Bigger by Max von Thun",
-    "source": "Project Syndicate",
-    "lang": "en",
-    "paywall": false,
-    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZWRMOHhCOENBazJNWGViYTFoSTNZb2VvSVdoenViYzBaazVqaVppc3JnY3N2emxIRkxaTFZ3YUw1MDgtQVRuemZHQkxWaEZ0eWNDQy1IWFFlQ3FFQ3MtSTNKWU5HVDhJMEJib1VzZVFHYkF6Sm5ocHNKOHNDQ3RBVjZiNW5TS0tvOFV6QXcyaHc3Tk5rV0dkTXpGY2wtVjRwNTFqLTZ2aXJINWlhUmtuZUttTExvQ28?oc=5",
-    "date": "2026-11-23T15:12:00.000Z",
-    "desc": "The rise of agentic AI could give a handful of Big Tech firms unprecedented power over our personal lives. Unless lawmakers and regulators act now, these digital gatekeepers could manipulate consumers ...",
-    "img": "https://webapi.project-syndicate.org/library/30c844e4f5a6f040909cac5b7d5f11d7.2-1-super.1.jpg",
-    "t": {
-     "en": "AI Agents Could Make Big Tech Bigger by Max von Thun",
-     "fr": "Les agents IA pourraient faire grandir les grandes technologies par Max von Thun",
-     "ar": "يمكن لوكلاء الذكاء الاصطناعي أن يجعلوا شركات التكنولوجيا الكبرى أكبر، بقلم ماكس فون ثون"
-    }
-   },
-   {
-    "title": "What the Volatility of the AI Trade Means for Your Company",
+    "title": "Software Updates Keep Crashing Systems. Here’s How to Stay Secure and Online.",
     "source": "Harvard Business Review",
     "lang": "en",
     "paywall": true,
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPY3czOG1TS2xtVnBCOC1xdWhqbjk3UGhRV2w1ZVRraWU4SlUyaG5jbjR3b0ZFOEd4cGYxVDlsZHdPempoTjNSRzF5WUlpR2pCYmRPRnZGVldJRzRwcERoT0NIMXBheVQ2ODBnZE1XUUpSaF9WZHN1bzhrbkQ4UG02MzVwa1BIa3RoUVE?oc=5",
-    "date": "2026-11-23T21:16:02.000Z",
-    "desc": "The U.S. stock market has swung sharply over the past week. AI-related turbulence helped trigger a selloff that even Anthropic’s record-setting IPO couldn’t halt, while news of Nvidia CEO Jensen Huang’s resignation—and his…",
-    "img": "https://hbr.org/resources/images/article_assets/2026/11/Nov26_24_172125537.jpg",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUlE2dUVtZVkzR3Roc1QtVmN0S0ZaZUlxRjc5OG5GUzdRWHc4Q29RT2FyVERxQ2J1SkVtVlN2Y2tzdE96S2JpWUFhRVJDUjdaNVVCSkJTZVlQN2tXQnBRSE9SQVBmYU1kMXpoRDlkZlVwdHoxdzVrb1B1d1d3dWdlUjRBQjR1RVd4TE5DM0F3SFJjcDZGNTdBVlVSbkhQNHM?oc=5",
+    "date": "2026-11-24T13:22:20.000Z",
     "t": {
-     "en": "What the Volatility of the AI Trade Means for Your Company",
-     "fr": "Ce que la volatilité du commerce de l'IA signifie pour votre entreprise",
-     "ar": "ماذا يعني تقلب تجارة الذكاء الاصطناعي لشركتك"
+     "en": "Software Updates Keep Crashing Systems. Here’s How to Stay Secure and Online.",
+     "fr": "Les mises à jour logicielles continuent de planter les systèmes. Voici comment rester en sécurité et en ligne.",
+     "ar": "تحديثات البرامج تحافظ على تعطل الأنظمة. إليك كيفية البقاء آمنًا ومتصلًا بالإنترنت."
     }
    },
    {
-    "title": "Consumers fret about inflation as execs fixate on interest rates",
+    "title": "AI spurs finance headcount dip",
     "source": "CFO.com",
     "lang": "en",
     "paywall": false,
-    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcmhiMl90MjVwbzhoZElQR1YybWhaMUFXQlRHYTF0NXRlUnNSY3c0X2k4U0oxWXJSSm1KWUI1dDlQWGlEM3dfTG5UQ0FrRFM2NFVmQ283by02V2FFcEdBMG92b0dUWEJlbkxfdWFQWi1nc3JTZDRUcXdZajNXZ0I2dmFnZHFBT2JHQXBQSlgtckd3WFJ1YnlVbVhRcHRVQQ?oc=5",
-    "date": "2026-11-18T14:20:29.000Z",
-    "desc": "PwC’s latest Market Volatility Survey detected diverging worries among financial services execs and consumers.",
-    "img": "https://imgproxy.divecdn.com/7P2afhvn_EaPyW-Z1wrXqBztNoeB8YlTPkVquhnyLrM/g:ce/rs:fit:770:435/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMzA0NTA0NzI4LmpwZw==.webp",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9fMWFRNnNiMlN4ZjdEYXpSalVGbk93cElDNEY4aGJudy1aS1lxTmRtY0VTRnRnV3lqY1AycHlyWURtZE9YZ1JiVDFncktnZFFrcG4xbjN5cVVHS1VFX2tyTWtEdlVNeVIxa0RyR095X3g?oc=5",
+    "date": "2026-11-16T08:00:00.000Z",
     "t": {
-     "en": "Consumers fret about inflation as execs fixate on interest rates",
-     "fr": "Les consommateurs s’inquiètent de l’inflation alors que les dirigeants se concentrent sur les taux d’intérêt",
-     "ar": "يشعر المستهلكون بالقلق بشأن التضخم حيث يركز المسؤولون التنفيذيون على أسعار الفائدة"
-    }
-   },
-   {
-    "title": "Infrastructures : dix ans après, le pari encore inaccompli d’Africa50",
-    "source": "Jeune Afrique",
-    "lang": "fr",
-    "paywall": false,
-    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNcVNuZ0M5ZW12amxwVWw4N01tNlFfMDFHNm51YlRDXzgyYUpGUko4czJycms2U21QV09lelYxdnJDa0duYnJIUl9MMktSaTRiRVFsVWF5aERkRVdrWE0xTVhrSnpQXzBXMkdlb1gyTFB3OHpjMmF3a0VKNjlsSEs2RWgyR0dfaXkwcnJ1S1lDTmNSWTE0R1JYbzB2ZktDdzl1ZS1KNEtvNFhEb1JVSWRHVW0zWTlfd3UxVmZkTF90N2tsUQ?oc=5",
-    "date": "2026-11-24T07:31:43.000Z",
-    "desc": "Dix ans après sa création, Africa50 affiche un portefeuille d’infrastructures de 9 milliards de dollars. Entre rareté des projets bancables et dépendance aux bailleurs publics, enquête sur un bilan contrasté.",
-    "img": "https://prod.cdn-medias.jeuneafrique.com/cdn-cgi/image/q=auto,f=auto,metadata=none,width=1280,height=720,fit=cover,gravity=0.5000x0.5000/https://prod.cdn-medias.jeuneafrique.com/medias/2026/11/23/jad20261123-eco-africa50-investisseurs.jpg",
-    "t": {
-     "fr": "Infrastructures : dix ans après, le pari encore inaccompli d’Africa50",
-     "en": "Infrastructure: ten years later, Africa50’s still unfulfilled bet",
-     "ar": "البنية التحتية: بعد مرور عشر سنوات، لا يزال رهان أفريقيا 50 غير محقق"
-    }
-   },
-   {
-    "title": "Are America’s supply chains really more vulnerable than China’s?",
-    "source": "The Economist",
-    "lang": "en",
-    "paywall": true,
-    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNFBWSjVEQ0pBcWgyNlBqN1lMek01WEdzVVM2S19IdWpmT2V0ZnVESmVMMGF2SlVVemRubzc4ZU9ESHhCZkxvQkxKNmdqb3k2cUt3VlJ4MEdLbW9neXlkeGp1VEtJdjVqekd0QnhFVjlNRWpMMFRiczJJM0psUjMwVVhqaUFNdVJrMlBPRGNvNWxpWWV1Z25ka1N6SkRZc3pFeU9VckhGSzFCVlRHLUVaN1VqZzViRUNpN3RVWQ?oc=5",
-    "date": "2026-11-24T20:34:14.000Z",
-    "desc": "At the recent Asia-Pacific Economic Co-operation forum in the Chinese city of Shenzhen, the leaders’ closing declaration mentioned supply chains a dozen times (compared with four in 2017). This ...",
-    "img": "https://www.bing.com/th?id=ONUT.rPHMm3YmJYkPpm4v24VpEA&pid=News&w=900&h=1200&c=7&rs=1",
-    "t": {
-     "en": "Are America’s supply chains really more vulnerable than China’s?",
-     "fr": "Les chaînes d’approvisionnement américaines sont-elles vraiment plus vulnérables que celles de la Chine ?",
-     "ar": "فهل سلاسل التوريد الأميركية أكثر عرضة للخطر من سلاسل التوريد الصينية؟"
+     "en": "AI spurs finance headcount dip",
+     "fr": "L’IA stimule la baisse des effectifs dans le secteur financier",
+     "ar": "الذكاء الاصطناعي يحفز تراجع عدد الموظفين الماليين"
     }
    }
   ],
@@ -2750,24 +2885,18 @@
    }
   },
   {
-   "id": "n1-2026-11-24",
+   "id": "n1-2026-11-25",
    "cat": "worldwide",
    "lang": "en",
-   "title": "Bank of Canada Warns of Broadening Inflation; Bonds Decline",
-   "source": "Bloomberg",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZjlZeVdJWEZiVnUyT3ItWjQ0MzNiS1JUX3RzT2M4NDN5Y2tjM0VOZGhhLUZsMS1YZG54ci1raFdQVnRucy1VYVdWMVpjVUFEY08ySGNXWU5EV2Q2Z1Q2WkdKTXdmeFU2NWdNbEdaRGVLT1lfbldUWGtXbDl1RVJPZzk4dm1QdjRZeTRuMjR3dDM0QnJ0SVZwR0VVdHdDVHZwaTI0RzZQZkptdnltRWtGS1Ixbw?oc=5",
-   "date": "2026-11-24T22:09:17.000Z",
-   "score": 5,
-   "img": "https://www.bing.com/th?id=ONUT.DUn-SaBc2puzez_grWZTbw&pid=News&w=900&h=1200&c=7&rs=1",
+   "title": "Opec+’s largest members head for clash over oil production estimates",
+   "source": "Financial Times",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMXZnb25ZTWVaVHNZU2lWMG9YYzlVaTFPMFR0Vnd5TFJIWHRoWVU2dTVMWThxRXdLTzFqWjdsak14cW9DVGZKbW0zNE1XblVZWlpiSTdwWEk4ZTdtT1lkWkdZSEFydlgwT19fSWRfUnpmZTF4bW85SnpBZ0x3dVZIWlo2WDQ?oc=5",
+   "date": "2026-11-25T14:27:46.000Z",
+   "score": 4.9,
    "t": {
-    "en": "Bank of Canada Warns of Broadening Inflation; Bonds Decline",
-    "fr": "La Banque du Canada met en garde contre une inflation croissante ; Déclin des obligations",
-    "ar": "بنك كندا يحذر من اتساع نطاق التضخم؛ تراجع السندات"
-   },
-   "d": {
-    "en": "The Bank of Canada is changing the metrics it uses to weigh underlying price pressures as part of its new monetary policy framework, Governor Tiff Macklem announced Tuesday.",
-    "fr": "La Banque du Canada modifie les mesures qu'elle utilise pour évaluer les pressions sous-jacentes sur les prix dans le cadre de son nouveau cadre de politique monétaire, a annoncé mardi le gouverneur Tiff Macklem.",
-    "ar": "أعلن محافظ بنك كندا تيف ماكليم يوم الثلاثاء أن بنك كندا يغير المقاييس التي يستخدمها لوزن ضغوط الأسعار الأساسية كجزء من إطار سياسته النقدية الجديد."
+    "en": "Opec+’s largest members head for clash over oil production estimates",
+    "fr": "Les plus grands membres de l’Opep+ s’affrontent sur les estimations de la production pétrolière",
+    "ar": "يتجه أكبر أعضاء أوبك + إلى صراع حول تقديرات إنتاج النفط"
    }
   },
   {
@@ -2779,7 +2908,6 @@
    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ2Vtdjdia2xUaVF5bWxRSVlPUTZjc1JmWG9Uam1QSHpNcXZuREdQVmRyX2hkNEtMbWhFd1VFb3l6QVJGYkJHZlZXUDJLVlM4cDdDR0RSVTRPMmZaUHAtMlhtSDlQeFF4UGJadUhrQmhlaWlJT1cwSG9IRnF1cC1COEtKdTBsUWVsXzhkYWhUWHNKTjJsUVJuNw?oc=5",
    "date": "2026-11-25T11:02:09.000Z",
    "score": 4.9,
-   "desc": "Federal Reserve Chairman Kevin Warsh has called artificial intelligence a \"hinge\" of history critical to US leadership, but the technology has also ...",
    "img": "https://www.bing.com/th?id=ONUT.t-C8uywRA6mV_y4dmKAcbQ&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
     "en": "Fed policymakers at odds over causes of high inflation",
@@ -2797,11 +2925,12 @@
    "cat": "worldwide",
    "lang": "en",
    "title": "Alibaba in Talks for Potential Yuan, Dollar Bond Sale Next Year",
-   "source": "Bloomberg",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOXNFMnc0c0p5cHBVblZMNlI4V1JKdGdqdG1LdjgwbFBNNTJoMWpzNmZUMU50a3pTMERpQjNHdHdIVTRJOTgwWFZDQVlTNXNEMktiaTRtRWxhV01qSHp5QjZEX0lYcjBsR0h3Rk1vQjVXMnBzN1ppOEwwRjVDcVJoTk1HMzg5cW1YS09CVjlSclR5ZW1nWi16bnZoUXB5bjZKVGNrZlN4NjZXMjZpVFRjMGloTQ?oc=5",
-   "date": "2026-11-25T03:36:00.000Z",
-   "score": 4.9,
-   "img": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iyT1ouM5DfJ4/v0/1200x800.jpg",
+   "source": "Bloomberg.com",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUWt4UlRKN202R3hobkE4b3paYTMwNXplVjdNVkZ6YzhtVjJVcFJ6dHM3Y0NkaHoyaFYwZkp1dFdFVDBYR2FpTEl6dFQ4SU5EakNRQ1czQkdmOUxpX2U5a3Z3eVp1UkdDSzB3QXI5QUI2M3ZId0VpQmRPNFhQUndWY1R0TzByNmZsQm54dy1GcFlSUjIyZnNrT2xJeHU0VVlYekdDTTlnNE9GWmpELUE4dHlRel84aEpuaWZTZVZqZE1jNm5DMnJ0UW8tQlg4N05pSVZMdjNB?oc=5",
+   "date": "2026-11-25T01:38:30.000Z",
+   "score": 4.8,
+   "desc": "Chinese e-commerce and cloud services giant Alibaba Group Holding Ltd. has been in discussions in recent weeks with banks about potentially raising money in the offshore bond markets next year, people ...",
+   "img": "https://www.bing.com/th?id=ONUT.zgMQwxWM5hC6wtDgWamN8g&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
     "en": "Alibaba in Talks for Potential Yuan, Dollar Bond Sale Next Year",
     "fr": "Alibaba en pourparlers pour une vente potentielle d'obligations en yuans et en dollars l'année prochaine",
@@ -2817,21 +2946,21 @@
    "id": "n4-2026-11-25",
    "cat": "worldwide",
    "lang": "en",
-   "title": "Global risk-off mood lifts dollar ahead of inflation data",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUUFucHFRbGxzR3laOUhHVU5fQ215SV82VkdMcExqZy1DMmpLalE4RHkyUDgyaEVLQmhVQ3l1VFZXcUV2ZV9UQmlqX1p2X09UbjlfbzlTY1EwUld2Z2dFV0d3cTI0bDlUejkxbFRsczJ5Q2ZmdXVaTkNNTXNKLUZkYkxLVVhFejU1VjdVTXp4d3ctRmc2NWhDbFdJV1NDRTE4UFQzOGQ4eXI4bXdjLWJB?oc=5",
-   "date": "2026-11-25T01:19:00.000Z",
-   "score": 4.8,
-   "img": "https://www.bing.com/th?id=ONUT.vO6dgawFiF0N-rwY3C3AfQ&pid=News&w=900&h=1200&c=7&rs=1",
+   "title": "Utah’s Weird Crude Is Attracting Big Oil’s Attention After Market Chaos",
+   "source": "Bloomberg.com",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZ0JWWTg5UnRaejBZS2RlYVA3SnVHNzVDOGhqQjBaM1dCZWdPV09CWW1IZ0FwME9JWXU1NFhJZDUtajZDX0xZZlo5Zm5CNWlwc1JCcnFWY181TGNKOVE5NkNlMFA4Q3BOdnltSjBYSW85U1lrekVPelRTM1Q5MmpnN0xqZ3NHR3pzYUtTZi1qWlhYYVh4YndodGJsbmZsR2JoUWRxMDQ5MDRWS2lkRW85dV9ybFVCY1poQlVqWlRybw?oc=5",
+   "date": "2026-11-25T12:00:00.000Z",
+   "score": 4.2,
+   "desc": "International oil giants are boosting purchases of a niche crude so awkward to handle that it trades at a steep discount, opening huge profit potential for the few refiners equipped to process it.",
    "t": {
-    "en": "Global risk-off mood lifts dollar ahead of inflation data",
-    "fr": "L’aversion au risque mondiale fait grimper le dollar avant les données sur l’inflation",
-    "ar": "المزاج العالمي للعزوف عن المخاطرة يرفع الدولار قبيل بيانات التضخم"
+    "en": "Utah’s Weird Crude Is Attracting Big Oil’s Attention After Market Chaos",
+    "fr": "L’étrange pétrole brut de l’Utah attire l’attention des grandes sociétés pétrolières après le chaos du marché",
+    "ar": "يجذب خام يوتا الغريب انتباه شركات النفط الكبرى بعد فوضى السوق"
    },
    "d": {
-    "en": "By Sruthi Shankar and Rocky Swift Nov 25 (Reuters) - The dollar rose on Wednesday as a renewed slump in technology stocks and talk of new US tariffs lifted the currency ahead of inflation data that ...",
-    "fr": "Par Sruthi Shankar et Rocky Swift, 25 novembre (Reuters) - Le dollar a augmenté mercredi alors qu'un nouvel effondrement des valeurs technologiques et les discussions sur de nouveaux droits de douane américains ont fait monter la monnaie avant les données d'inflation qui...",
-    "ar": "من سروثي شانكار وروكي سويفت (رويترز) - ارتفع الدولار يوم الأربعاء مع تجدد تراجع أسهم التكنولوجيا والحديث عن رسوم جمركية أمريكية جديدة مما أدى إلى ارتفاع العملة قبل بيانات التضخم التي..."
+    "en": "International oil giants are boosting purchases of a niche crude so awkward to handle that it trades at a steep discount, opening huge profit potential for the few refiners equipped to process it.",
+    "fr": "Les géants pétroliers internationaux augmentent leurs achats d’un brut de niche si difficile à gérer qu’il se négocie à un prix fortement réduit, ouvrant ainsi un énorme potentiel de profit aux quelques raffineurs équipés pour le traiter.",
+    "ar": "تعمل شركات النفط الدولية العملاقة على زيادة مشترياتها من النفط الخام المتخصص الذي يصعب التعامل معه بحيث يتم تداوله بخصم كبير، مما يفتح إمكانية تحقيق أرباح هائلة للمصافي القليلة المجهزة لمعالجته."
    }
   },
   {
@@ -2842,7 +2971,7 @@
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaHo3dUJCUmRaTEFNN1NHaGIwSzhUTF9RVGduN1RfVk4xWGlyblRLYWhCT0F3N3hMMFFJekJHZnFsNHpucEF4TnVuakZWdHVDbF9QbFV5NkViTzQ4VHFLWjdtN0diMUJsblFGMWdxYXRrZGdaODhFcmtGZVVLeXh5bVZJdXduUHAxb0prR2I0NGRmaW5xZ19vZ1dRczdGU0gwSGVtSENBZGpmMDRqOFljRUJPNHpRM3M?oc=5",
    "date": "2026-11-25T02:21:00.000Z",
-   "score": 4.2,
+   "score": 4.1,
    "img": "https://www.bing.com/th?id=ONUT.Xjo-Z2LDMR0GFy0MdWeXfQ&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
     "en": "Australian inflation heats up in October, core hits two-year high",
@@ -2855,7 +2984,7 @@
    "cat": "worldwide",
    "lang": "en",
    "title": "Australian Inflation Accelerates, Even After RBA Rate Hikes",
-   "source": "Bloomberg",
+   "source": "Bloomberg.com",
    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSmZnclVsakZpNHFUSWtSVk4walE3M0V1bkM0RHgyWFVpRjVzVHM0TTI4TWhTYnNjQXJSTWkzdWZ2clZiVmEyaTEtSjlheHZTUURJWXB6TF9mc1JrcEZxbjlfWUJTLTlieWpSa2dzWHNPem1IVEdCVFNwSmFqYW95cTI0ak4wSUE2UC1EV19WZVU5MUpSRUNPeUUtYWNHb3AyazFodU9qVzNMbmJZZVE?oc=5",
    "date": "2026-11-25T01:44:00.000Z",
    "score": 4.1,
@@ -2867,6 +2996,28 @@
   },
   {
    "id": "n7-2026-11-25",
+   "cat": "worldwide",
+   "lang": "en",
+   "title": "Bond And Credit Markets Signal The Fed's Hawkish Tilt Is Too Tight As Oil Retreats",
+   "source": "Seeking Alpha",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUWduVHQ0YTgydmR0dHhhUjhfTEZ2cFhGc1Q2R01GVHhsTTJvNExMNlMwZk5GWmt5Ym00Y2tJZ3NnMGI5N3FEb0l1eGljRHpKTG0wVVRyTE5XLTRPb2c2ai13eFFEcThoSlRtbUEyZUExeVBpTC1vd3Q3OUtZX0Qxc2VjR09mem5rVnlrckV2U1JzdzVCMGN5bFI0Ulo2U0VRd1ZRTGlvM0hsazA3OGlF?oc=5",
+   "date": "2026-11-25T12:10:00.000Z",
+   "score": 4,
+   "desc": "We had a huge bounceback in stocks and a big consumer confidence print, but the bond market barely budged. The bond market is sending a message - the outlook for Fed policy is too tight.",
+   "img": "https://www.bing.com/th?id=ONUT.vY-bBQwnYvY68dqMfh652w&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "Bond And Credit Markets Signal The Fed's Hawkish Tilt Is Too Tight As Oil Retreats",
+    "fr": "Les marchés obligataires et du crédit signalent que l'orientation belliciste de la Fed est trop stricte alors que le pétrole recule",
+    "ar": "تشير أسواق السندات والائتمان إلى أن ميل بنك الاحتياطي الفيدرالي إلى تضييق السياسة النقدية ضيق للغاية مع تراجع أسعار النفط"
+   },
+   "d": {
+    "en": "We had a huge bounceback in stocks and a big consumer confidence print, but the bond market barely budged. The bond market is sending a message - the outlook for Fed policy is too tight.",
+    "fr": "Nous avons assisté à un énorme rebond des actions et à une forte hausse de la confiance des consommateurs, mais le marché obligataire n’a pratiquement pas bougé. Le marché obligataire envoie un message : les perspectives concernant la politique de la Fed sont trop serrées.",
+    "ar": "لقد شهدنا ارتدادًا كبيرًا في الأسهم وأثرًا كبيرًا على ثقة المستهلك، لكن سوق السندات لم يتزحزح إلا بالكاد. يرسل سوق السندات رسالة مفادها أن التوقعات بالنسبة لسياسة بنك الاحتياطي الفيدرالي ضيقة للغاية."
+   }
+  },
+  {
+   "id": "n8-2026-11-25",
    "cat": "africa",
    "lang": "fr",
    "title": "UMOA : la Côte d’Ivoire lève 110 milliards de FCFA et conforte son statut de signature souveraine de référence",
@@ -2887,14 +3038,14 @@
    }
   },
   {
-   "id": "n8-2026-11-24",
+   "id": "n9-2026-11-24",
    "cat": "africa",
    "lang": "en",
    "title": "The 2027 \"New Economy\" budget as a gateway for Qatari investment and stronger ties",
    "source": "Business & Financial Times",
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNd1FsUDVPb3FiallhVHFOYUJ6SzdYakx5OUV0NTVLcGY1aG1fU09kUEFWTmF1Y2tlc2M4TVNnOUxtbzB6MWlVTlZCc0prYTF5bnhDOWV3OWQwMHJZdEdxMlUzUnJUaGxiTkVuZzNmdlE0MUl4LUZsM3RzSXByMWZvRUJ4Wng2UUVnWWtOTmdQM0l0cFc3aFlOM2t1eGtjNFRHUFd1UV9LWWxGVmMxRWd6b2dVNA?oc=5",
    "date": "2026-11-24T22:03:01.000Z",
-   "score": 3.7,
+   "score": 3.6,
    "img": "https://www.bing.com/th?id=ONUT.8_yskrKlcqMjY2aS9un5-A&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
     "en": "The 2027 \"New Economy\" budget as a gateway for Qatari investment and stronger ties",
@@ -2908,14 +3059,14 @@
    }
   },
   {
-   "id": "n9-2026-11-24",
+   "id": "n10-2026-11-24",
    "cat": "africa",
    "lang": "fr",
    "title": "Après la Côte d’Ivoire, Coris Bank International Bénin se lance à la conquête de la BRVM",
    "source": "Financial Afrik",
    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQmx4d3lZOEZ2VDVnZENlaFhwOEVvVzlLaVlXa0RNaXV0NmViSzN3aXZOd2ZuVGt4WUVaSXp3WjBzY2R5bUVGLXZPdXFTZUtWRFdpaVZvYlJYZm1tU1RheVQ3cndZM21laDNraVlldmFNMFJFelRQOUpCUFhkM0xsOExETjNxWlRfX2hjR0syMXNKS29zWDZJSXpiQ3FWVnc3Wmx0VkdYNDE2N2xIZXJjLVg1UHZpdTV3TkYyVWw1QmN6OTczSVdRaA?oc=5",
    "date": "2026-11-24T17:09:30.000Z",
-   "score": 3.5,
+   "score": 3.4,
    "img": "https://www.financialafrik.com/wp-content/uploads/2026/11/IMG_8818.JPG-scaled.jpeg",
    "t": {
     "fr": "Après la Côte d’Ivoire, Coris Bank International Bénin se lance à la conquête de la BRVM",
@@ -2929,7 +3080,7 @@
    }
   },
   {
-   "id": "n10-2026-11-25",
+   "id": "n11-2026-11-25",
    "cat": "africa",
    "lang": "fr",
    "title": "NSIA Banque, partenaire Platinum du SICA 2026, soutient les industries culturelles et créatives",
@@ -2937,7 +3088,6 @@
    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOUTZyd204LTlEbXpodFRVTmpmdzJpUDRaMW5nUE9UTEdzVE5NV0ZGMUh3TVVnamVleWQxSjZNUFlVQnEwd3lxbFVfQmRRR3ZDYnI5cC01NjVmSEdCYmI0NEFxOVJvZGFITjR1SS1tak1laWRHMHVicDZ6dmVkWmdjV3NUSm1WSXVtSnFycmRPZEEzU3hUWVRzUkt3OTRKUXpxbDgwSG9kLTc2TjJRYlp2dW5aYkYya3B2dW1mclpIaV9uNHRkbjR1OVZUSTJRQTdnMHlPVlNYVEZjWnJlOUsxSUdrMFJPZ1pT?oc=5",
    "date": "2026-11-25T13:30:00.000Z",
    "score": 3.2,
-   "desc": "NSIA Banque Côte d'Ivoire participe en qualité de Partenaire Platinum à la 3ᵉ édition du Salon International du Contenu Audiovisuel (SICA 2026), qui ...",
    "img": "https://www.bing.com/th?id=ONUT.tKIjfgA4Y-915RZK2zgG-Q&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
     "fr": "NSIA Banque, partenaire Platinum du SICA 2026, soutient les industries culturelles et créatives",
@@ -2951,7 +3101,7 @@
    }
   },
   {
-   "id": "n11-2026-11-25",
+   "id": "n12-2026-11-25",
    "cat": "africa",
    "lang": "fr",
    "title": "Le Ministre Adama Coulibaly appelle à accélérer les réformes pour le lancement de l’ECO en 2027",
@@ -2972,7 +3122,7 @@
    }
   },
   {
-   "id": "n12-2026-11-25",
+   "id": "n13-2026-11-25",
    "cat": "africa",
    "lang": "fr",
    "title": "Côte d’Ivoire : les députés de la CAEF adoptent à l’unanimité le budget 2027 et son annexe fiscale",
@@ -2993,7 +3143,7 @@
    }
   },
   {
-   "id": "n13-2026-11-25",
+   "id": "n14-2026-11-25",
    "cat": "africa",
    "lang": "fr",
    "title": "Guinée : le FMI approuve un programme de financement de 417 millions $ sur 38 mois",
@@ -3009,7 +3159,7 @@
    }
   },
   {
-   "id": "n14-2026-11-25",
+   "id": "n15-2026-11-25",
    "cat": "congo",
    "lang": "fr",
    "title": "Cameroun : Afriland First Bank obtient 22 millions $ de la DEG pour financer les entreprises",
@@ -3030,7 +3180,7 @@
    }
   },
   {
-   "id": "n15-2026-11-25",
+   "id": "n16-2026-11-25",
    "cat": "congo",
    "lang": "fr",
    "title": "[Communiqué] : Alios Finance Cameroun boucle une levée de 13 milliards FCFA sur le marché obligataire de la CEMAC",
@@ -3045,7 +3195,7 @@
    }
   },
   {
-   "id": "n16-2026-11-25",
+   "id": "n17-2026-11-25",
    "cat": "congo",
    "lang": "fr",
    "title": "Dette publique : les investisseurs institutionnels détiennent 38 % des OTA camerounais sur le marché de la BEAC",
@@ -3066,14 +3216,29 @@
    }
   },
   {
-   "id": "n17-2026-11-24",
+   "id": "n18-2026-11-25",
+   "cat": "africa",
+   "lang": "fr",
+   "title": "Dette africaine : la BAD et l’ALSF s’attaquent au surcoût du financement souverain",
+   "source": "Financial Afrik",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVExid0U3M1I0UHRSQ052OXhHMkJyZG9EakZRZXlJeFNQYm9KVlN5dVZEa2M4YWNTYjNlU3NBeDlfT0NSWTlZZWxUdTVtRmNKZWF1c0ZsTmZfVVpybXZqeWF3RldySnVDNS03YTR5aHROdUZrdFdVbURKRExOeWJCX1ZnV0NsTUU5ZFZtaG05QTNXMF84UW9JWnVqMXV1d1ZxcDlEM2lrSzYycC1FN2d6MEY1ZjdScTlIQ1o2UUZn?oc=5",
+   "date": "2026-11-25T11:09:30.000Z",
+   "score": 4.5,
+   "t": {
+    "fr": "Dette africaine : la BAD et l’ALSF s’attaquent au surcoût du financement souverain",
+    "en": "African debt: the AfDB and the ALSF tackle the additional cost of sovereign financing",
+    "ar": "الديون الأفريقية: يعالج بنك التنمية الأفريقي وصندوق الدعم الزراعي الأفريقي التكلفة الإضافية للتمويل السيادي"
+   }
+  },
+  {
+   "id": "n19-2026-11-24",
    "cat": "congo",
    "lang": "fr",
    "title": "CEMAC : les États face à 4 404 milliards FCFA d’échéances de dette d’ici octobre 2027",
    "source": "EcoMatin",
    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWHdkR3lTYWlJS1NibHkwcG1UUkpOVFVFeDR4YnhJaHZfT0EyUkc4NGJGdzJ3ZE05R2tYZ0VUTl9na1VOX1dJaWtuenNtdlQya0lraW9WU013RnJqTlRlRV9IejdEQTBkY2gwZjVJazc1U0d2NFVtTTY0b1RyS1hFY2dic0xwejY4VzY2a3dudDk4S0VQb0tGZjgxSFJKbnN4amlSNg?oc=5",
    "date": "2026-11-24T05:49:22.000Z",
-   "score": 4.6,
+   "score": 4.5,
    "img": "https://ecomatin.net/_next/image?url=https%3A%2F%2Fprod-backsite.ecomatin.be%2Fwp-content%2Fuploads%2F2025%2F12%2FSiege-de-la-BEAC-a-Yaounde.jpg&w=1200&q=75",
    "t": {
     "fr": "CEMAC : les États face à 4 404 milliards FCFA d’échéances de dette d’ici octobre 2027",
@@ -3087,14 +3252,14 @@
    }
   },
   {
-   "id": "n18-2026-11-24",
+   "id": "n20-2026-11-24",
    "cat": "congo",
    "lang": "fr",
    "title": "Gabon: l’État convertit 407 milliards FCFA de dette intérieure en obligations du trésor avec des maturités de 2 à 5 ans",
    "source": "EcoMatin",
    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQbzM5NDBaVFZNQll3MDhXN0hfRDZMZlZJSjZWallYVGFpY1QzV1ZGbC1KUUlJckJjOGV3b2hzRzNMOTgzZGZhOE1kNGNuR3JnRXVQUWwtRW5DSkFBVXloNGx0WTRPZ0dGSFB4cFB0bERjRjdDaEF0U3pCN0tYY3lnYk93LTRzRXZtaEJPeUk5Z1pvUlFxb1N6RDA4Q1lxUGJiTkpCOUc2cmdBRzBvVHIwclphQTZxc25SOTd2VWQzd3ZlSFVoV29FOXVJUXNYeml2OTJjVA?oc=5",
    "date": "2026-11-24T23:55:17.000Z",
-   "score": 4.4,
+   "score": 4.3,
    "t": {
     "fr": "Gabon: l’État convertit 407 milliards FCFA de dette intérieure en obligations du trésor avec des maturités de 2 à 5 ans",
     "en": "Gabon: the State converts 407 billion FCFA of domestic debt into treasury bonds with maturities of 2 to 5 years",
@@ -3102,7 +3267,7 @@
    }
   },
   {
-   "id": "n19-2026-11-25",
+   "id": "n21-2026-11-25",
    "cat": "congo",
    "lang": "fr",
    "title": "Congo Terminal investit 5 millions d’euros pour soutenir la croissance des activités portuaires",
@@ -3117,14 +3282,14 @@
    }
   },
   {
-   "id": "n20-2026-11-23",
+   "id": "n22-2026-11-23",
    "cat": "congo",
    "lang": "fr",
    "title": "La BDEAC obtient le quitus des administrateurs pour lever 298,3 milliards FCFA de plus après le succès de son eurobond",
    "source": "Investir au Cameroun",
    "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQOFRhcDQtb19xQ0IyX0hVS19FNURHbEhqVkFmaUNUZXNocGwtT2pRN0FHcGx1a21FeGU4MWNwSzFpWFpueWpuVnk0Z0JYNnIyMkJXSU8xVHB5ZmQ3MmxjVmhWTzJIeThRSFVDT2lSNHM4LXVvOURHbFVmd0ZFaTdOY1VtR2Y2MEdja053TWo2SmNVM1k1WHJJa2JPeDhJV1hEV2ZhS293Qk9aZ2ZGcDc1R2NIX1M3S2ZiUnhKaFdDalFQR0dVREVZS1d0NXVRcUFRNGZuRGJVUy1RMVZPOWlBczFib2d0WmJkLTA4ZElVN3lJUkxRblp5NTdNRUxuZ9IBgwJBVV95cUxNbjVoZmN0bF9WLW9DRVRudVZVUmFLQTNTeW1xQkhONnVyWi1oNUxITE5UN0QtTTNGT1hEVlphYnRtUlp1UWdiZ3FDSE0zY2U3c25lYUVvZllja2pBOFBzaUIyV3U0MnF6YTVRRUNKRWlIY3loYURWaTVMN3VpX3JKSU1rTzBGVFdNWjgwVTBxQzNwSnVCOGF5UVRvYlZSWV9SaHFzWmhhWTdVcVI0SG1FOUNGSjdtV2VUWm1mQndESEZGYy0yME1INVdVWldyTHlqcUdBOEJWSXdybXVGV3ZTcDVrYm1JWUlPTW9ibzY0bktrYnZ5UUkycTRrZUpoRlJBZ0Q0?oc=5",
    "date": "2026-11-23T18:57:41.000Z",
-   "score": 4.2,
+   "score": 4.1,
    "img": "https://www.investiraucameroun.com/media/k2/items/cache/ba136a414854bf1bf0a260309139e666_L.jpg",
    "t": {
     "fr": "La BDEAC obtient le quitus des administrateurs pour lever 298,3 milliards FCFA de plus après le succès de son eurobond",
@@ -3138,7 +3303,7 @@
    }
   },
   {
-   "id": "n21-2026-11-25",
+   "id": "n23-2026-11-25",
    "cat": "markets",
    "lang": "en",
    "title": "BOE’s Bailey Sees Lower Peak For Inflation If Energy Prices Stay Where They Are",
@@ -3154,7 +3319,7 @@
    }
   },
   {
-   "id": "n22-2026-11-25",
+   "id": "n24-2026-11-25",
    "cat": "markets",
    "lang": "en",
    "title": "Kazakhstan also seeks higher oil output capacity estimate ahead of 2027 OPEC+ quota debate, sources say",
@@ -3175,13 +3340,13 @@
    }
   },
   {
-   "id": "n23-2026-11-25",
+   "id": "n25-2026-11-25",
    "cat": "markets",
    "lang": "en",
    "title": "Oil Prices Fall as Traders Weigh Supply Outlook, Renewed Middle East Tensions",
    "source": "WSJ",
    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNT2lmRnNkZk4xMmU5a3lHTWEwV3JfZ2pfUW55aTJUNi04clZpa2E4dDJacWRnQVRjMzRFX3FfSFA1c203SFhvd0tHOTZWTUloNmhtTm91QS1raEwwNWJKaUpaZktCbGlFRzRlMXA1ZTFUVHZKWGMxVWswU0JyUWRSNEtxSFBBUnN2ZGxfazFpTEw2QkJpUC1WUHJ5TnRxaFVSa0VZaFJodmZrUkJZNXY0OEVsYXNGek4wTHp2OEczai0?oc=5",
-   "date": "2026-11-25T13:16:32.000Z",
+   "date": "2026-11-25T12:27:00.000Z",
    "score": 4.9,
    "img": "https://www.bing.com/th?id=ONUT.9-rW3pzfrtzdzDaM5iAvag&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
@@ -3191,23 +3356,7 @@
    }
   },
   {
-   "id": "n24-2026-11-25",
-   "cat": "markets",
-   "lang": "en",
-   "title": "Dollar rallies before key inflation reading; Aussie and sterling slump",
-   "source": "CNBC",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTkVTajJOTGhaYkV4VzhrbUp1Smo0RFZmdFc0MkJOTHJBT1ZVM2JhNUtacjU3ZloxcmlCcmlwaE1JdEF6Vlk5S0V3VUI4V21iQVdPcEtqVHdHZGZJd0poYzBFSXpRbjNrYWUyWEg0N2RzQlBLRHhPcWxZUjRXYmZ5MXpUUkN0QdIBiwFBVV95cUxQS1ZaRXB4ZWFUbDVkXzdUT2psQmZCRXZvR3hRbHlIRHY0TjlkXzVSMGVWMy1MdkxiWGdGbXhWUVpqQkVDS1cyb201SVRmQW5Lb1pFOTB0X2NNdFdvNUZENk5MbzhYRmxmNEpvc3c3dFFObUYwQW5JUG9BMFg4RUd5UklKNGtZUGVCN0hN?oc=5",
-   "date": "2026-11-25T05:05:41.000Z",
-   "score": 4.9,
-   "img": "https://image.cnbcfm.com/api/v1/image/108292457-1776344977367-gettyimages-2271011731-baglietto-notitle260415_npPd0.jpeg?v=1795570925&w=1920&h=1080",
-   "t": {
-    "en": "Dollar rallies before key inflation reading; Aussie and sterling slump",
-    "fr": "Le dollar se redresse avant les chiffres clés de l'inflation ; Chute de l'aussie et de la livre sterling",
-    "ar": "الدولار يرتفع قبل قراءة التضخم الرئيسية؛ تراجع الدولار الأسترالي والجنيه الاسترليني"
-   }
-  },
-  {
-   "id": "n25-2026-11-25",
+   "id": "n26-2026-11-25",
    "cat": "markets",
    "lang": "en",
    "title": "Oil prices fall as supply glut concerns offset Middle East disruption fears",
@@ -3215,7 +3364,6 @@
    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5sVkRYS2FOQ1VncmwyVlgxNEpDWEtzaS15SlVVUTR1bThrMlRqT053QTAtTnlLYk1mRTdhWWtlbXFLZmZqa1pFc2xTdGwwcjlvc1RGRk9HVFpVaHQxVktfSXFfbTIyRWVTWWowOUhiNGN0WUg1WVNXSkx0MU8xUdIBfkFVX3lxTE5sVkRYS2FOQ1VncmwyVlgxNEpDWEtzaS15SlVVUTR1bThrMlRqT053QTAtTnlLYk1mRTdhWWtlbXFLZmZqa1pFc2xTdGwwcjlvc1RGRk9HVFpVaHQxVktfSXFfbTIyRWVTWWowOUhiNGN0WUg1WVNXSkx0MU8xUQ?oc=5",
    "date": "2026-11-25T05:05:08.000Z",
    "score": 4.9,
-   "desc": "Oil prices fell on Thursday, paring the previous day's gains, as hopes for peace talks took the edge off renewed concerns over Middle East supply disruptions from escalating regional conflict. Brent ...",
    "img": "https://image.cnbcfm.com/api/v1/image/108278829-1773747965777-108278829-1773747914707-gettyimages-2266989649-bb2_7726_2fd42ayv.jpg?v=1794879324&w=1920&h=1080",
    "t": {
     "en": "Oil prices fall as supply glut concerns offset Middle East disruption fears",
@@ -3229,14 +3377,14 @@
    }
   },
   {
-   "id": "n26-2026-11-24",
+   "id": "n27-2026-11-24",
    "cat": "markets",
    "lang": "en",
    "title": "Oil Prices Rebound as Shipping Risks Persist",
    "source": "WSJ",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMkpRNmtac0F4dkZ2QTRqVEhSc2piS0Vpd1JNaHVScnZZYmRfdzBEbWZXOUFjb0dhR29XZURYZnRUcTVkQW41Y3pOT1plS0ZDOU5NTm1Qel9OUWRMNU53Y2ZoUjBWU045YUczZFRfZGswa0UtY2hVMVJMS2g0b29qUmw3YjN4VHF0aGVTYjVZdl94WjcwdXkxZ3diaVNXSWZwcE9tM2V3b3JLcTRTU0o0aw?oc=5",
    "date": "2026-11-24T21:28:00.000Z",
-   "score": 4.7,
+   "score": 4.6,
    "img": "https://www.bing.com/th?id=ONUT.JJQCjTyYyUYwVMFuXxXYiw&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
     "en": "Oil Prices Rebound as Shipping Risks Persist",
@@ -3245,11 +3393,11 @@
    }
   },
   {
-   "id": "n27-2026-11-25",
+   "id": "n28-2026-11-25",
    "cat": "markets",
    "lang": "en",
    "title": "Soy Oil Hits Nine-Month Low as Strong Meal Demand Boosts Crush",
-   "source": "Bloomberg",
+   "source": "Bloomberg.com",
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMG9PUDVaMjhQNzFya256VmQzMG9jMHZGaGhmSDA4M3lDZEJSTGoyTm9ZUkdVN1BwU3V1OWt5QTd1TlNXN2pmcWlVMEtEbHFfSk9oc0dIZW9VVk43ZTRTeWkyYWZ2SUtTZkg1SFczMGpocEY2Wm1OamREZnpHZmxTcFN6eHprRUZsQnQtZllmZXJxSTdyVFNJel80NUdFbDNmR2kxaExOZGJMSGY5WDhKdU5wMA?oc=5",
    "date": "2026-11-25T13:00:06.000Z",
    "score": 4.2,
@@ -3266,7 +3414,23 @@
    }
   },
   {
-   "id": "n28-2026-11-25",
+   "id": "n29-2026-11-25",
+   "cat": "markets",
+   "lang": "en",
+   "title": "Oil Futures End Volatile Session Near Flat",
+   "source": "WSJ",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNeUlHaVFFSnlSWkY0ako5NjJsMTNsVjQ4eGhKc05oZGFWMDN4c3RQR0NyODVNUzNUenFRNS01Y1QyZi03Vm45eTNkbXF3bVBlTUhkWGVHeXIteUlPNFY2aEh3bnh4VXFaVzRMWk1fOV84SXQ4RlRMb2p4QWZ1b2NMb0JJQWZpdURHb2VLLVZVT20yQk5nWTBPUl9hUUxvcllXM0p1dFdxZjd2WWFlaEtVUGFoUzNHNG1IYWQyTkZfLUtOQQ?oc=5",
+   "date": "2026-11-25T11:20:08.000Z",
+   "score": 4.2,
+   "img": "https://www.bing.com/th?id=ONUT._Gi9SQNrYB0MXuZtR8Mihg&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "Oil Futures End Volatile Session Near Flat",
+    "fr": "Les contrats à terme sur le pétrole terminent une session volatile proche du plat",
+    "ar": "العقود الآجلة للنفط تنتهي بجلسة متقلبة بالقرب من مستوى مسطح"
+   }
+  },
+  {
+   "id": "n30-2026-11-25",
    "cat": "bev",
    "lang": "en",
    "title": "India: rPET market remains stable as falling virgin PET prices temper converter substitution interest",
@@ -3281,7 +3445,7 @@
    }
   },
   {
-   "id": "n29-2026-11-25",
+   "id": "n31-2026-11-25",
    "cat": "bev",
    "lang": "en",
    "title": "Thums Up to Kinley: Inside Hindustan Coca-Cola IPO DRHP— 41 Drinks, 1.7M outlets & OFS",
@@ -3289,7 +3453,6 @@
    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOaTJ5R0c2SnR6OVlmVUd6M21kcjZKbHVCYlFSc01Ic1M5Mlgzd1VBcDhIYTFwb19BVVMwcV9uT1pfWnpIby1JbTdlOXRMWXBFM1o0S2hUR3N6SDdwcWlOSUZNR0l4Z2lISnZXMU1lSER3aDkwei15U0FYUlR3MnpRSHBMOUJtM0pLTTFYTHkzdGo5aXpWQTdyMHhQYlRydHpGLThSM0NCSk4xRlpKOGdhX2hmLXU3Q01YeEhOckZLWjFKVHI2Z3hpb3U5d2xqSVQ3ZFg2V1FhcjliaUnSAeIBQVVfeXFMTmliZFpESDJicFFWZTdjOEZsLWtXSjhQdE1pZ2RTdWZjQzh4ZEQ3T2s3RHZDMmZFOVdYVDVDQ1E1c3FGWDVMaWt4b0F5V29JZmlmUFhEWFV0bE15OTB2dUVJYlYybXplOTV5c0RFM0lhd095emJkR2dTcDNNeEx4TUJaRUhhYUd5eXNxdkMzbFhncExGd2lycjNXc0FpTV9XY0k0azZTRDV4SEFmSS02MHJNcW4xUThXZmROcEFXS1FYeEZ4cFRhYnM4Y0c5OXcwVkdCeVlnM0M0TVczZjFia3FOQQ?oc=5",
    "date": "2026-11-25T10:57:40.000Z",
    "score": 1.7,
-   "desc": "From Thums Up and Sprite to Kinley and Maaza, explore the company's 41-drink portfolio, 1.7 million outlets, financials and offer-for-sale details.",
    "img": "https://www.bing.com/th?id=ONUT.qJ_AqogKCDwl9K0JCQAt9w&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
     "en": "Thums Up to Kinley: Inside Hindustan Coca-Cola IPO DRHP— 41 Drinks, 1.7M outlets & OFS",
@@ -3303,7 +3466,7 @@
    }
   },
   {
-   "id": "n30-2026-11-25",
+   "id": "n32-2026-11-25",
    "cat": "bev",
    "lang": "en",
    "title": "Coca-Cola HBC completes JSE secondary listing ahead of CCBA acquisition",
@@ -3319,29 +3482,14 @@
    }
   },
   {
-   "id": "n31-2026-11-25",
-   "cat": "bev",
-   "lang": "en",
-   "title": "Hindustan Coca-Cola Holdings IPO: DRHP, Issue Size & Review",
-   "source": "IndiaIPO",
-   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBYWXBPSHFWS21pY19Gby1wR0QxMm5sMFJWVlBrQTJrRzlXMkFXYldxM3JtNWNzVTNsRTZzUERqTUIzVDJvSkFpRThqLTRmUmhhOXUyellpMEc1UzhaVnhGRGZ0ejF1NkdIZWljLWpuMm5pNXUy?oc=5",
-   "date": "2026-11-25T02:51:22.000Z",
-   "score": 1.7,
-   "t": {
-    "en": "Hindustan Coca-Cola Holdings IPO: DRHP, Issue Size & Review",
-    "fr": "Introduction en bourse d'Hindustan Coca-Cola Holdings : DRHP, taille de l'émission et examen",
-    "ar": "الاكتتاب العام الأولي لشركة هندوستان كوكا كولا القابضة: DRHP، حجم الإصدار والمراجعة"
-   }
-  },
-  {
-   "id": "n32-2026-11-24",
+   "id": "n33-2026-11-24",
    "cat": "bev",
    "lang": "en",
    "title": "Carlsberg, Pernod Ricard and Coca-Cola Advance India IPO Plans at Different Stages",
    "source": "Aabkari Times",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVTRQRUM3SXQ0WHNmbUg1bC14dDY0WVROSThnam9yNWFoOFV1dzZ0N2txYUtCTVFKMUQ1MUNkVjAxeDlzRXB1OGhMYzJ6ZE4zTTZsYnE1ZVkzYVFYOWNBNUw0T3hxSnp5MDJZMlZTWEJSQjF2TEdfeXUxYmx2UU9kNS1BOERxendiYmxsaTNPWWhKY1pacW5YTkNBOHU4UXFXcHc2U05xV1hHak95?oc=5",
    "date": "2026-11-24T23:41:59.000Z",
-   "score": 1.6,
+   "score": 1.5,
    "t": {
     "en": "Carlsberg, Pernod Ricard and Coca-Cola Advance India IPO Plans at Different Stages",
     "fr": "Carlsberg, Pernod Ricard et Coca-Cola font avancer leurs projets d'introduction en bourse en Inde à différentes étapes",
@@ -3349,7 +3497,7 @@
    }
   },
   {
-   "id": "n33-2026-11-25",
+   "id": "n34-2026-11-25",
    "cat": "cfo",
    "lang": "en",
    "title": "Poland's Orlen dismisses CFO, deputy CEO, shares fall",
@@ -3365,13 +3513,13 @@
    }
   },
   {
-   "id": "n34-2026-11-25",
+   "id": "n35-2026-11-25",
    "cat": "cfo",
    "lang": "en",
    "title": "Tokenization and AI Rewrite the CFO Playbook for Corporate Cybersecurity",
    "source": "WSJ",
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcm1HX01NeTRUZ3lQOENZRi1oUzNKenlmNHlBdVpCeU0zX1pFRkNfT2NyblBrNVczeDN1RllJZ3ZIaDQ5bHYwcFo4Y3ZKaVBYVE5RSHF3ZWVaWHlRd09YekJMalYtamRjN1l4c25ZV3hab2E0dU04RU1vZXB5M0J1TnF0bGVwcXZvSFRUampCQ2FhczhqYWoycmRpcWpBV1NVNERmMDB0UmhEdzZQSkw3RW42cw?oc=5",
-   "date": "2026-11-25T12:36:00.000Z",
+   "date": "2026-11-25T12:38:02.000Z",
    "score": 2.5,
    "img": "https://www.bing.com/th?id=ONUT.tjPshOVkz88CyhE0jN8xdw&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
@@ -3381,7 +3529,7 @@
    }
   },
   {
-   "id": "n35-2026-11-25",
+   "id": "n36-2026-11-25",
    "cat": "cfo",
    "lang": "en",
    "title": "Life Insurance Corp of India names Sonija M. S. as CFO",
@@ -3402,14 +3550,14 @@
    }
   },
   {
-   "id": "n36-2026-11-24",
+   "id": "n37-2026-11-24",
    "cat": "cfo",
    "lang": "fr",
    "title": "Congo-Loi de finances 2027 : le patronat soumet ses propositions à l’Assemblée nationale",
    "source": "Journal de Brazza",
    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOGxwalh3YmhuMlpxUG9BRDI3a1JoTDZBVU8tY29QVnBjVW9IZVhzaGhiTjB0Undha0NLTTZNdTlGLTVzcjZwX3VSb19Lb2xwclF6QlZNS3U3T2tjMVpHaWhNM0Jnd3hhMGhfT1FkSFpsVkRQWlNoRlNwbjdLcDVfb0lCb1I1M3pDSXczaXBZOTlTX3hOeXl6d2xFd3BwMldPUmZkUENxazVvWXlQT3p6TEFUVGstbTlibHc?oc=5",
    "date": "2026-11-24T15:20:43.000Z",
-   "score": 2.2,
+   "score": 2.1,
    "t": {
     "fr": "Congo-Loi de finances 2027 : le patronat soumet ses propositions à l’Assemblée nationale",
     "en": "Congo-Finance Law 2027: employers submit their proposals to the National Assembly",
@@ -3417,14 +3565,14 @@
    }
   },
   {
-   "id": "n37-2026-11-24",
+   "id": "n38-2026-11-24",
    "cat": "cfo",
    "lang": "fr",
    "title": "Makutano 2026 : le gouvernement pour la réduction du taux d’impôt sur les sociétés",
    "source": "ACP | Agence Congolaise de Presse",
    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOXBNLTFVSjhRQnJfT3Vob0lOQmZ6N09sMkdIa0tOTWlTbjJfVHBfR2U4ZXV2Y1lmVEFLSVlKWEpOMWtwNUFZeF95ODRXRUtVVUtkVVhqalhvaG8zTEM2LVAtakdJM0RXczR4Q1ZqMHhuTnRMaTU4T254Z1VzeDM3WDFVMHJhWWJKZkxrai1oOTJqZERuaFhtNm9vdS1wVF9aTzVlUDF6VQ?oc=5",
    "date": "2026-11-24T20:46:52.000Z",
-   "score": 2.1,
+   "score": 2,
    "img": "https://www.bing.com/th?id=ONUT.8GeiSiPHntPm-Qf38zENvA&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
     "fr": "Makutano 2026 : le gouvernement pour la réduction du taux d’impôt sur les sociétés",
@@ -3433,14 +3581,14 @@
    }
   },
   {
-   "id": "n38-2026-11-24",
+   "id": "n39-2026-11-24",
    "cat": "cfo",
    "lang": "en",
    "title": "Evonik eyes specialty chemicals targets, CFO says",
    "source": "Reuters",
    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYlJZNURiemN5TlJxNzQ1V2R5a05PbS1WOVRCWWN0WmhsQTJ5enZfZW5wUG95ODg4YXVWY29GVlVtZUx4VFRwbFpLNXBRZkdobHpSUXJVdnVmM2NCZlQ0YUg0djNrQjE2UDZJaFhqakpxMnJmTVVyYmxmUnU0QlpkM3ZBeFloaThkck5MbjRPRWgxNmdjOVAwZHlsazdEZmMwSkIzTmhlSQ?oc=5",
    "date": "2026-11-24T15:09:44.000Z",
-   "score": 2,
+   "score": 1.9,
    "img": "https://www.bing.com/th?id=ONUT.atmFQUYw7LKrNBPFWE_YZA&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
     "en": "Evonik eyes specialty chemicals targets, CFO says",
@@ -3454,22 +3602,45 @@
    }
   },
   {
-   "id": "n39-2026-11-25",
+   "id": "n40-2026-11-25",
    "cat": "lebanon",
    "lang": "en",
-   "title": "Lebanon foreign minister escalates refugee row with UN agency",
-   "source": "Yeni Safak English",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWWdRMlBRQ21rM053cGpwZnZFTDd2QW5xX0J0MnhMdjhfWGVkUG9VQVZFSHlSOEE5ZFlNX0FONV9uVTFDNlg2bGh4TlRubmxaTWNScEt4WTVUUHhZOGgtemtyYk9JQzFycUZaZHRtR29JdVVQcDZtZG9BNmdQcUtpb1VIeUhEYUN4dlJWdlRBVEt6OUdxM3FOOU1YM01SQUhEelE?oc=5",
-   "date": "2026-11-25T08:53:57.000Z",
-   "score": 2.7,
+   "title": "US Inflation remains high despite retreating gas prices",
+   "source": "Naharnet",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVG9lR1B4ZmlJeGYwOXc3Um4yeWZGVzJSUElNS1ZZbHdZcnd2TDJVVEEwUkFha09GZ3NyRmRpQnA4VTNKMnFCQ1lNZndMZEw2TkJfSkNmVzNaVzhSM3A1bG1HMVYzWjZkSTFNT1NBZlRPZGgyNXZoQkJKdVo0VG41Q2NqMUlkcVIzNXYzNmNPN2xpdy1BVjdGTlJ0ZUZCZXc?oc=5",
+   "date": "2026-11-25T13:56:00.000Z",
+   "score": 4,
+   "img": "https://www.bing.com/th?id=ONUT.66Vz3ieOkS95vxELCRkiCQ&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
-    "en": "Lebanon foreign minister escalates refugee row with UN agency",
-    "fr": "Le ministre libanais des Affaires étrangères intensifie le différend sur les réfugiés avec l'agence de l'ONU",
-    "ar": "وزير الخارجية اللبناني يصعد خلاف اللاجئين مع وكالة الأمم المتحدة"
+    "en": "US Inflation remains high despite retreating gas prices",
+    "fr": "L’inflation américaine reste élevée malgré la baisse des prix du gaz",
+    "ar": "لا يزال التضخم في الولايات المتحدة مرتفعاً على الرغم من تراجع أسعار الغاز"
    }
   },
   {
-   "id": "n40-2026-11-25",
+   "id": "n41-2026-11-25",
+   "cat": "lebanon",
+   "lang": "en",
+   "title": "Yemen's Houthis say they attacked Saudi oil refinery and Riyadh financial district",
+   "source": "LBCI Lebanon",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNWmxFWFBJSHprQllmZ05Ldk50Vk1PVUZqc2JoN1EwWkN4dWNwaG1yNDJaQTBSUDRZV0V5RlpFMU1rbWFkT3FTM0ozSnlLeW40Qk5IbmU3aXhKTEoxaDVpRjRyMFRicW5rSHBjREFfdnFDXzYzSWlkYVQ4NTZVZ1ZBaUFVU1dYVm1mRXBiUXdxd3RxUzV3WUJGRE4taDBtT2FuX19wdzJhRnJMc1N2YXBYbGxpR2JzRUIyNTNkYWFjcjdVQQ?oc=5",
+   "date": "2026-11-25T07:44:59.000Z",
+   "score": 2.7,
+   "desc": "Yemen's Houthis said on Wednesday they had attacked Saudi Arabia's Ras Tanura oil refinery and Riyadh's financial district. Houthi military spokesman Yahya Saree said the refinery attack caused fires ...",
+   "img": "https://www.lbcgroup.tv/uploadImages/DocumentImages/Doc-T-969568-639311895522415914.png",
+   "t": {
+    "en": "Yemen's Houthis say they attacked Saudi oil refinery and Riyadh financial district",
+    "fr": "Les Houthis du Yémen affirment avoir attaqué une raffinerie de pétrole saoudienne et le quartier financier de Riyad",
+    "ar": "ويقول الحوثيون في اليمن إنهم هاجموا مصفاة النفط السعودية والمركز المالي بالرياض"
+   },
+   "d": {
+    "en": "Yemen's Houthis said on Wednesday they had attacked Saudi Arabia's Ras Tanura oil refinery and Riyadh's financial district. Houthi military spokesman Yahya Saree said the refinery attack caused fires ...",
+    "fr": "Les Houthis du Yémen ont déclaré mercredi avoir attaqué la raffinerie de pétrole de Ras Tanura en Arabie Saoudite et le quartier financier de Riyad. Le porte-parole militaire des Houthis, Yahya Saree, a déclaré que l'attaque de la raffinerie avait provoqué des incendies...",
+    "ar": "وقال الحوثيون في اليمن يوم الأربعاء إنهم هاجموا مصفاة رأس تنورة النفطية في السعودية والحي المالي في الرياض. وقال المتحدث العسكري للحوثيين يحيى سريع إن الهجوم على المصفاة تسبب في حرائق..."
+   }
+  },
+  {
+   "id": "n42-2026-11-25",
    "cat": "lebanon",
    "lang": "en",
    "title": "Lebanon's Hariri says no sect has exclusive right to ministries",
@@ -3484,14 +3655,14 @@
    }
   },
   {
-   "id": "n41-2026-11-25",
+   "id": "n43-2026-11-25",
    "cat": "lebanon",
    "lang": "en",
    "title": "Lebanese olive oil, fresh fruits eyed for Lankan market",
    "source": "Island.lk",
    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBNYmZqQTFLNlNHLTRZeU9VRmRPN0w4MnRrWE9MYkY4TDkybHdtU2pzWjRkQWFvTW1wazFVVkdoWTlCWGd6amVDMXZ6M3hsU0JkYWJWc256S0RNTUFQSEU3dWM5S2JfcExSLVBYUlpYdTEydVlXY1lyQU9CVXdKQQ?oc=5",
    "date": "2026-11-25T02:27:33.000Z",
-   "score": 2.7,
+   "score": 2.6,
    "t": {
     "en": "Lebanese olive oil, fresh fruits eyed for Lankan market",
     "fr": "L'huile d'olive libanaise et les fruits frais recherchés pour le marché lankais",
@@ -3499,14 +3670,14 @@
    }
   },
   {
-   "id": "n42-2026-11-24",
+   "id": "n44-2026-11-24",
    "cat": "lebanon",
    "lang": "en",
    "title": "Why Us Sanctions On Hezbollah Affiliates In Lebanon Struggle To Bite",
    "source": "ИФЗ РАН",
    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYVFfLUtheldOemJ3dWhFVnF1ZXRzOElSdWFCTmswblVDWGJEV2RZMWMtTjZyTDd3dXRmOTJMMS1aeVU1TlBhZkVOYllVME94MUpPQXRVN01jZXB1Z0R2OEllb1ZCbjJYeDNzWm9pRU5MMTE4LUxyaDVhMlNPdmNvbmVpWUZoSVk?oc=5",
    "date": "2026-11-24T23:44:09.000Z",
-   "score": 2.6,
+   "score": 2.5,
    "t": {
     "en": "Why Us Sanctions On Hezbollah Affiliates In Lebanon Struggle To Bite",
     "fr": "Pourquoi les sanctions américaines contre les affiliés du Hezbollah au Liban ont du mal à mordre",
@@ -3514,89 +3685,76 @@
    }
   },
   {
-   "id": "n43-2026-11-24",
+   "id": "n45-2026-11-24",
    "cat": "lebanon",
    "lang": "en",
-   "title": "Economic Scene | Strike and Protests Planned Across Lebanon Tomorrow | News Reports, Newscasts",
-   "source": "aljadeed",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZ0FNelBkTmVQYVZ6Zk5IdEdHa0FkN1Y1RHJtNHFEaFpXb3R1R01Zbjg5UEMyMXIwUjgwNElIc3RkbTVPbzhYTHVycHdxQks4SjVQbGhrcml5TEIzYzlKTlZaT01samgzUXJxd3hmRXIxT1h2ZWVPcGM4QndiWnRnVElaNnRXRkV1M3c1LUZ2bmZISmJLSUgwZUdVR3Z3VDFSV0M0OVdNbzM?oc=5",
-   "date": "2026-11-24T13:46:00.000Z",
-   "score": 2.1,
+   "title": "Iraqi PM orders takeover of Kurdistan region’s border crossings after oil smuggling probe",
+   "source": "LBCI Lebanon",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVGhuQ1VIci1XSXM2UU1HWGZSZ2hNTDJpSlpvSl96WGpfZEIxUTJ4OVZpNmlOcnR5bGtYNzQwcTNTTzFsd0dSczF5Rl9qM0hPNmJ0N19wYWdxU0xYTWxFYWRGb0FudmxmQTBnM2VNdnV2dkRNT0NlT2oyZjM3LUp2cHFBeThEakN3QktJcGktMGRyYnFNZWpUOXpUVXpqQ3p6Q0ZDejRHdUQ5dHA3dzJEWWI4X2VlM016b2VDQXNHYW83dw?oc=5",
+   "date": "2026-11-24T08:20:33.000Z",
+   "score": 2.5,
+   "img": "https://www.bing.com/th?id=ONUT.GOGojP9psXbVJX1zLE8-wA&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
-    "en": "Economic Scene | Strike and Protests Planned Across Lebanon Tomorrow | News Reports, Newscasts",
-    "fr": "Scène économique | Grève et manifestations prévues demain à travers le Liban | Reportages, journaux télévisés",
-    "ar": "المشهد الاقتصادي | إضراب واحتجاجات مخطط لها في جميع أنحاء لبنان غدًا | التقارير الإخبارية، نشرات الأخبار"
+    "en": "Iraqi PM orders takeover of Kurdistan region’s border crossings after oil smuggling probe",
+    "fr": "Le Premier ministre irakien ordonne la prise des postes frontaliers de la région du Kurdistan après une enquête sur la contrebande de pétrole",
+    "ar": "رئيس الوزراء العراقي يأمر بالسيطرة على المنافذ الحدودية لإقليم كردستان بعد تحقيق في تهريب النفط"
    }
   },
   {
-   "id": "n44-2026-11-25",
+   "id": "n46-2026-11-24",
    "cat": "lebanon",
    "lang": "en",
-   "title": "Embassies of five countries reaffirm support for Lebanon's sovereignty",
-   "source": "Yeni Safak English",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcTZzbjh6VUE1aV9DTnMyQkV0YnFmNjR4QmM1Q01FOTBUdGdxODVXZzFNQ0Jyek9ocEdjZkFxRnhPcEZqVF9TTXp6amdlU0ZJVG45TE1RNEtVdFptWnhTWnFXOVYxMlhqcWh6a09zczNSNlFJbkVNSlBURnJVNFJkWHhIanJndXhFd3ZvdVVTcVM3Y3dyekIwOGlvQmxvbzVQSHBTZkNEeElRY0J6?oc=5",
-   "date": "2026-11-25T14:33:54.000Z",
-   "score": 2,
+   "title": "Oil prices near three-month lows as rising supply offsets Hormuz threat",
+   "source": "LBCI Lebanon",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPLVNSWmdEN1RnODNDeExiamFuRjNoelRxN1NSc3dzbW9rWVdNd21UX043OHo0cFlNa0pab096VXhTdkJvcXdiWUswRGJkQzBXRjlDaTJ4clJYdmZjdDBZNkRXS3lGRk80VHBZVUlkb1hmU0l6ckZFT25sLWFlSF9iZF80RjZlUnJEeWFudl9NZGt2WDlVQ2RXZ19fQmpGX1NldF9VcjBlMF9ocDNaY0NXZHJaU3dWcDY5WEUxRA?oc=5",
+   "date": "2026-11-24T07:16:32.000Z",
+   "score": 2.5,
+   "desc": "Oil prices fell for a second day on Tuesday to trade near three-month lows on signs of rising crude supply and a potential market surplus, though risks to shipping through the Strait of Hormuz ...",
+   "img": "https://www.lbcgroup.tv/uploadImages/DocumentImages/Doc-T-969399-639311014647029373.PNG",
    "t": {
-    "en": "Embassies of five countries reaffirm support for Lebanon's sovereignty",
-    "fr": "Les ambassades de cinq pays réaffirment leur soutien à la souveraineté du Liban",
-    "ar": "سفارات خمس دول تؤكد دعمها لسيادة لبنان"
-   }
-  },
-  {
-   "id": "n45-2026-11-25",
-   "cat": "lebanon",
-   "lang": "en",
-   "title": "Jaber Meets UAE Delegation on Lebanon Finance",
-   "source": "Daily Beirut",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMUJJenB4N21ZUUhwY3BKM0RnRTBXZkxleU95dnJrYVowdUxJbHQ5WV9tM3B1ejdYbFpQT2laMk9oYnlfNlVhSk9xREdFWEZQLXFCZGVlanV5c3dOanozUU5UcWZNcWlKYlNvaFlnYkplUS10NUNzY0kxeGtMNk9iaC0tYUROdDQ4S0RRaFZmaEpFaGt1cXF4Vk9ESkFXNG9uNXR0cXNhc1dTaEZwU2ZrQXJjMDZBTVowRks5bVFn?oc=5",
-   "date": "2026-11-25T13:57:18.000Z",
-   "score": 2,
-   "t": {
-    "en": "Jaber Meets UAE Delegation on Lebanon Finance",
-    "fr": "Jaber rencontre la délégation des Émirats arabes unis sur les finances du Liban",
-    "ar": "جابر يلتقي وفداً إماراتياً للشؤون المالية في لبنان"
-   }
-  },
-  {
-   "id": "n46-2026-11-25",
-   "cat": "lebanon",
-   "lang": "en",
-   "title": "Lebanon committed to Hezbollah-Israel truce",
-   "source": "Yeni Safak English",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOV19ZdF9SLXFmUE9vMTdQZVlkRTBMaFJla1pSaFZlNVlrWTFFc19lV1BsVmJvSmNUMmIxdDVBRzNjSHhDMVIxTmNqQmEwZEdCaFI2TmhNdVVkZy16R3VoY3V6VW9hMnpMV2g2VDk1Ukc3Wmk2UmVBMUZMYm4wb3M0dHdQYkRXeEpvMHc?oc=5",
-   "date": "2026-11-25T11:32:02.000Z",
-   "score": 2,
-   "t": {
-    "en": "Lebanon committed to Hezbollah-Israel truce",
-    "fr": "Le Liban attaché à la trêve Hezbollah-Israël",
-    "ar": "لبنان ملتزم بالهدنة بين حزب الله وإسرائيل"
+    "en": "Oil prices near three-month lows as rising supply offsets Hormuz threat",
+    "fr": "Les prix du pétrole proches de leur plus bas niveau depuis trois mois alors que l'augmentation de l'offre compense la menace d'Ormuz",
+    "ar": "أسعار النفط تقترب من أدنى مستوياتها في ثلاثة أشهر حيث يعوض ارتفاع العرض تهديد هرمز"
+   },
+   "d": {
+    "en": "Oil prices fell for a second day on Tuesday to trade near three-month lows on signs of rising crude supply and a potential market surplus, though risks to shipping through the Strait of Hormuz ...",
+    "fr": "Les prix du pétrole ont chuté pour une deuxième journée mardi pour s'établir à un plus bas de trois mois en raison de signes d'une augmentation de l'offre de brut et d'un potentiel excédentaire du marché, malgré les risques pour le transport par le détroit d'Ormuz...",
+    "ar": "تراجعت أسعار النفط لليوم الثاني على التوالي، اليوم الثلاثاء، لتقترب من أدنى مستوياتها في ثلاثة أشهر بفعل مؤشرات على زيادة إمدادات الخام وفائض محتمل في السوق، لكن المخاطر التي تهدد الشحن عبر مضيق هرمز..."
    }
   },
   {
    "id": "n47-2026-11-25",
-   "cat": "tech",
+   "cat": "lebanon",
    "lang": "en",
-   "title": "Stock Sell-Off Set to Continue as Investors Fret About A.I., Tariffs and Inflation",
-   "source": "The New York Times",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE02aG9MTzVQV1FPaHZkWUlkbUctTTNOWWxwTHplcDc2akxGWU4xRy1MQndiMUxhU0tEN2Y5WkdRTlIxRU80aUxmbGNJOWVVdE12VjZ1YnM2NU8xN0VoX0ZmNVNrbDlGOEdLV0kzV19fcEJrNDVjUk1KZnhVMA?oc=5",
-   "date": "2026-11-25T13:35:19.000Z",
-   "score": 4,
-   "desc": "Shares of Nvidia, Anthropic and other tech companies tumbled in premarket trading, continuing their slide from the previous session, as investors also worried about tariffs and interest rates.",
-   "img": "https://www.bing.com/th?id=ONUT.Y8LTcCIqHEFLODLdKQ8swQ&pid=News&w=900&h=1200&c=7&rs=1",
+   "title": "EU plans 50-bn-euro fund for AI, quantum",
+   "source": "LBCI Lebanon",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPVDRsX3lvY3JfcGNiMVVDWHZpUm01U2dmMUJVenRFUnN4QnUtSkhZMkNDTktkaUJDYjhEbGRMQ3MyZGx1bzlKQ0dLVU9RTG9zR2x5MlJaYUNOeWNZNUJLZGk4clI0QW92VmNELXBXVU0wVVFYWmdsd3RyaTNOelZfeDAtb3RRZnpBR1ItWlg1VmVva1k?oc=5",
+   "date": "2026-11-25T09:48:33.000Z",
+   "score": 2.4,
    "t": {
-    "en": "Stock Sell-Off Set to Continue as Investors Fret About A.I., Tariffs and Inflation",
-    "fr": "La vente d’actions devrait se poursuivre alors que les investisseurs s’inquiètent de l’IA, des tarifs douaniers et de l’inflation",
-    "ar": "من المقرر أن تستمر عمليات بيع الأسهم مع قلق المستثمرين بشأن الذكاء الاصطناعي والتعريفات الجمركية والتضخم"
-   },
-   "d": {
-    "en": "Shares of Nvidia, Anthropic and other tech companies tumbled in premarket trading, continuing their slide from the previous session, as investors also worried about tariffs and interest rates.",
-    "fr": "Les actions de Nvidia, Anthropic et d'autres sociétés technologiques ont chuté lors des échanges avant commercialisation, poursuivant leur baisse par rapport à la séance précédente, les investisseurs s'inquiétant également des tarifs douaniers et des taux d'intérêt.",
-    "ar": "تراجعت أسهم Nvidia وAnthropic وشركات التكنولوجيا الأخرى في تداول ما قبل السوق، لتواصل انخفاضها من الجلسة السابقة، حيث يشعر المستثمرون أيضًا بالقلق بشأن التعريفات الجمركية وأسعار الفائدة."
+    "en": "EU plans 50-bn-euro fund for AI, quantum",
+    "fr": "L'UE prévoit un fonds de 50 milliards d'euros pour l'IA et le quantum",
+    "ar": "الاتحاد الأوروبي يخطط لصندوق بقيمة 50 مليار يورو للذكاء الاصطناعي الكمي"
    }
   },
   {
    "id": "n48-2026-11-25",
+   "cat": "tech",
+   "lang": "en",
+   "title": "Stock Sell-Off Continues as Investors Fret About A.I., Tariffs and Inflation",
+   "source": "The New York Times",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE02aG9MTzVQV1FPaHZkWUlkbUctTTNOWWxwTHplcDc2akxGWU4xRy1MQndiMUxhU0tEN2Y5WkdRTlIxRU80aUxmbGNJOWVVdE12VjZ1YnM2NU8xN0VoX0ZmNVNrbDlGOEdLV0kzV19fcEJrNDVjUk1KZnhVMA?oc=5",
+   "date": "2026-11-25T14:47:47.000Z",
+   "score": 4,
+   "img": "https://www.bing.com/th?id=ONUT.Y8LTcCIqHEFLODLdKQ8swQ&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "Stock Sell-Off Continues as Investors Fret About A.I., Tariffs and Inflation",
+    "fr": "La vente d’actions se poursuit alors que les investisseurs s’inquiètent de l’IA, des tarifs douaniers et de l’inflation",
+    "ar": "يستمر بيع الأسهم مع قلق المستثمرين بشأن الذكاء الاصطناعي والتعريفات الجمركية والتضخم"
+   }
+  },
+  {
+   "id": "n49-2026-11-25",
    "cat": "tech",
    "lang": "fr",
    "title": "Souveraineté numérique : La BAD débloque 750 000 USD pour doter la CEDEAO d’une",
@@ -3614,22 +3772,6 @@
     "fr": "Le Groupe de la Banque africaine de développement a officialisé, ce 24 novembre 2026 à Lungi, en Sierra Leone, l'octroi d'un don stratégique de 750 0 ...",
     "en": "The African Development Bank Group formalized, on November 24, 2026, in Lungi, Sierra Leone, the granting of a strategic grant of 750,000...",
     "ar": "قامت مجموعة بنك التنمية الأفريقي، في 24 نوفمبر 2026، في لونجي، سيراليون، بإضفاء الطابع الرسمي على منح منحة استراتيجية قدرها 750 ألف..."
-   }
-  },
-  {
-   "id": "n49-2026-11-24",
-   "cat": "tech",
-   "lang": "en",
-   "title": "AI debt markets shudder as Nvidia's top 'banker' returns",
-   "source": "CNBC",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5nS1FDUS1xNTd6cWFBUE9JbUxkUnZUSnJFck82RHlqeEZOVTBUenpqYWJHbjd0VldkNEI4b3NFalZXTXhRTVFpQ042V2FVQ0g2SXNHeUlYOU1yQnVDWE5FaDFFUWNIUXB3UFpzbm9PcDNNb0Vrc19wV0RKZ2ZwWjjSAYQBQVVfeXFMUERIbXJUSm81dUY0YV9wRlo2YkpfNTBtY3JCOGFsSFM1ODBzU1ltLVFnaHZyRkhmZURkY3dCX1RKVjc3MUd0RVZGR0dtZFZFZjc0LTczZmIwVm1sTjBsaUNZSEo5MEhTWXdMcXU2aHVXTHNRWXJLZnd6VUU0cmxEUHdHZGRp?oc=5",
-   "date": "2026-11-24T21:38:03.000Z",
-   "score": 3.7,
-   "img": "https://www.bing.com/th?id=ONUT.wD8bc5UTksx8fyzYE1O2_Q&pid=News&w=900&h=1200&c=7&rs=1",
-   "t": {
-    "en": "AI debt markets shudder as Nvidia's top 'banker' returns",
-    "fr": "Les marchés de la dette IA frémissent alors que le principal « banquier » de Nvidia revient",
-    "ar": "ترتعش أسواق ديون الذكاء الاصطناعي مع عودة أفضل \"مصرفي\" شركة Nvidia"
    }
   },
   {
@@ -3654,92 +3796,110 @@
    }
   },
   {
-   "id": "n51-2026-11-24",
+   "id": "n51-2026-11-25",
    "cat": "tech",
    "lang": "en",
-   "title": "Saudi national charged in OpenAI bugging to be released on $1 million bond",
-   "source": "CNBC",
-   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1pdXZBMHRlenptLXduWlZuVzlDS1VuRzgyc3RxVUZHQ254YmpVM21lOU1Pd0pJSU1HTDZ2YTdfRjBSUGFZSUFIYVc3RjlvTlhCcmpzaFloYmZQWDEyamd0OExnSTZSYWFqekJ0TFAzQ0pHY045MXJJWWx3WTU0QdIBgwFBVV95cUxPWl81RnJfSUhQMnBTLUhlUXZUMEI5NjE1ckRxTUZrcW5XckxsLWVCbktmSHd1M01QZjZKc2g2bHBYVW16NWlHRDNXd282eTh1TEhzaFNnS2V0SGUyYzEzNjY2QjJnUkduXzFvWjFkRWRTTXZyU21XaVFYZE5uN3pPTWk2MA?oc=5",
-   "date": "2026-11-24T21:45:49.000Z",
-   "score": 3,
-   "img": "https://www.bing.com/th?id=ONUT.RMqKM1KbagvNZlDpmCPVZg&pid=News&w=900&h=1200&c=7&rs=1",
+   "title": "US finds no evidence China directed executive to spy on Nvidia CEO, WSJ reports",
+   "source": "Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNb1ZBby1iVDJnTmJwX3hDYWJpU2lxTUdLTHdlWHFqRHJUcmtTOWFuQkFRTlUyZTJBcGdNMWR3N3d1YlJIV05kWk1mU21JSDZmSVpZR1BlanpqRzFXSkg3NkxkeElWcHM0Q2Y4eFJKb3Fha29XakxYNFJ4cXExZHo4MFVDOHdDbENrQWs0d0lqQ3Z5cEVDRVBQR1hNNWZxSmhiUll4NFg1amZlU01oWm9fN2hkUFBBNkdKT21v?oc=5",
+   "date": "2026-11-25T16:54:06.000Z",
+   "score": 2.5,
+   "img": "https://www.bing.com/th?id=ONUT.4SNwFuo-aauveH33lU25yA&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
-    "en": "Saudi national charged in OpenAI bugging to be released on $1 million bond",
-    "fr": "Un ressortissant saoudien accusé de bugging avec OpenAI sera libéré sous caution d'un million de dollars",
-    "ar": "سيتم إطلاق سراح المواطن السعودي المتهم بالتنصت على OpenAI بكفالة بقيمة مليون دولار"
-   },
-   "d": {
-    "en": "Abdulrahman Alfozan is accused of planting a recording device in an executive conference room at OpenAI's headquarters.",
-    "fr": "Abdulrahman Alfozan est accusé d'avoir installé un appareil d'enregistrement dans une salle de conférence exécutive au siège d'OpenAI.",
-    "ar": "عبد الرحمن الفوزان متهم بزرع جهاز تسجيل في قاعة المؤتمرات التنفيذية في المقر الرئيسي لشركة OpenAI."
+    "en": "US finds no evidence China directed executive to spy on Nvidia CEO, WSJ reports",
+    "fr": "Les États-Unis ne trouvent aucune preuve que la Chine a ordonné à un dirigeant d'espionner le PDG de Nvidia, rapporte le WSJ",
+    "ar": "لم تجد الولايات المتحدة أي دليل على أن الصين وجهت المدير التنفيذي للتجسس على الرئيس التنفيذي لشركة Nvidia، حسبما ذكرت وول ستريت جورنال"
    }
   },
   {
    "id": "n52-2026-11-25",
    "cat": "tech",
    "lang": "en",
-   "title": "Nvidia agrees to settle 2018 US investor class action for $290 million",
-   "source": "Reuters",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQ2cwWG1mYkVmSG5oSTgwZmcxcVY5SWg2ak5aTHBtbG1qWHVvcGxjOGQzTFZKZkNSdWgtOHJtbW1BenVtTWc2UmFrOFpHbTV1Mnh5MWgxWk00R0NrVG5PX0hkNWxmczRRLWdnRUtvRFBhMzVzZUlRN0FXRFVJYlNTVUJaT1U3eVY4SUwtNFd2a1MweTlBZW1ReG9mU0pQa2ZUd3RnaEZtMXNyQmhxeDV0SGN1eWRGcDN2UExZ?oc=5",
-   "date": "2026-11-25T14:13:44.000Z",
+   "title": "CoreWeave, Nvidia Credit Risk Hit Fresh Highs as AI Fears Mount",
+   "source": "Bloomberg.com",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORGVYTmpUeWhmYUNmYzBaWjlES0t0b3N0dTFoNEsxVlk5TklPNXVYZ1BaU05HSnJxTDdOOHNPOU1DWVpnY3oxbUtxLXBISjlOYWs4V1VWZnNub3lkaEkybWo0czRNdzFJc2pGT2NERDFUSkJ1a3lOY2JJM2pEaUZ3VnpJaHNqeE95SkRDYUg5RmVwRDlyTlBnNzZXQXhnd24yYnl6ajlMWGIxNHp6bHhZbmk2dw?oc=5",
+   "date": "2026-11-25T16:44:02.000Z",
    "score": 2.5,
-   "desc": "Nvidia has agreed to pay $290 million to settle a long-running investor lawsuit alleging the chipmaker misled ​shareholders about how much its sales of a graphics ‌processing unit were being fueled by ...",
    "t": {
-    "en": "Nvidia agrees to settle 2018 US investor class action for $290 million",
-    "fr": "Nvidia accepte de régler le recours collectif des investisseurs américains de 2018 pour 290 millions de dollars",
-    "ar": "وافقت Nvidia على تسوية دعوى جماعية للمستثمرين الأمريكيين لعام 2018 مقابل 290 مليون دولار"
-   },
-   "d": {
-    "en": "Nvidia has agreed to pay $290 million to settle a long-running investor lawsuit alleging the chipmaker misled ​shareholders about how much its sales of a graphics ‌processing unit were being fueled by ...",
-    "fr": "Nvidia a accepté de payer 290 millions de dollars pour régler un procès de longue date contre des investisseurs alléguant que le fabricant de puces avait induit les actionnaires en erreur sur la mesure dans laquelle ses ventes d'une unité de traitement graphique étaient alimentées par...",
-    "ar": "وافقت شركة Nvidia على دفع 290 مليون دولار لتسوية دعوى قضائية طويلة الأمد للمستثمرين تزعم أن شركة تصنيع الرقائق ضللت المساهمين بشأن مقدار مبيعاتها من وحدة معالجة الرسومات التي تغذيها..."
+    "en": "CoreWeave, Nvidia Credit Risk Hit Fresh Highs as AI Fears Mount",
+    "fr": "CoreWeave et le risque de crédit Nvidia atteignent de nouveaux sommets alors que les craintes liées à l'IA augmentent",
+    "ar": "CoreWeave وNvidia Credit Risk تصلان إلى مستويات عالية جديدة مع تصاعد مخاوف الذكاء الاصطناعي"
    }
   },
   {
    "id": "n53-2026-11-25",
    "cat": "tech",
    "lang": "en",
-   "title": "Nasdaq Futures Tumble as AI Selloff Returns",
-   "source": "WSJ",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNVZEZVVpM2pKb2t2dDktNWRNZ2xTXzc5aUN3SjNzM1dRbGRHUkZoYjFJY2hRaGZCd1dsNGNXckIxOWg1el9oZnhVVjRNSlpwcjJFLTQxSzZqSFZ1bVZGczJWR2RTT1BUU3BLenB0amhsQWFqRlJWNlNTdkR0dGRlcmNzWDg0R19lMDVwQ2lUdVF5YTQ0SnZKWElqbGwwa3VIemV3WDhVWEpiQQ?oc=5",
-   "date": "2026-11-25T13:28:00.000Z",
+   "title": "Trump’s accounts traded Nvidia shares 44 times this year, records show",
+   "source": "BBC",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0zeHlzeG5POVNQREwyaGhoTnNCb0taYVN3MkRDNjItbUZyNmZHU2taS2F5Q2dKaDVYeVFWVTg4bG1MNlVmb284Ti1pOEwyRzJ1RjFXVHVWWEZmR2s?oc=5",
+   "date": "2026-11-25T16:42:11.000Z",
    "score": 2.5,
-   "img": "https://www.bing.com/th?id=ONUT.xYxzrtc-13gv9q7OjfdxqA&pid=News&w=900&h=1200&c=7&rs=1",
+   "desc": "A review of the US president's financial disclosures shows Donald Trump's investment portfolios have regularly traded shares in the tech giant.",
+   "img": "https://www.bing.com/th?id=ONUT.KoNQlMkg-DgKoh4fmXgmVw&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
-    "en": "Nasdaq Futures Tumble as AI Selloff Returns",
-    "fr": "Les contrats à terme sur le Nasdaq s'effondrent alors que la vente de l'IA revient",
-    "ar": "تعثر العقود الآجلة في بورصة ناسداك مع عودة عمليات البيع بالذكاء الاصطناعي"
+    "en": "Trump’s accounts traded Nvidia shares 44 times this year, records show",
+    "fr": "Les comptes de Trump ont échangé des actions Nvidia 44 fois cette année, selon les archives",
+    "ar": "وتظهر السجلات أن حسابات ترامب تداولت أسهم نفيديا 44 مرة هذا العام"
+   },
+   "d": {
+    "en": "A review of the US president's financial disclosures shows Donald Trump's investment portfolios have regularly traded shares in the tech giant.",
+    "fr": "Un examen des déclarations financières du président américain montre que les portefeuilles d'investissement de Donald Trump ont régulièrement négocié des actions du géant de la technologie.",
+    "ar": "تظهر مراجعة للإفصاحات المالية للرئيس الأمريكي أن المحافظ الاستثمارية لدونالد ترامب تتداول بانتظام الأسهم في عملاق التكنولوجيا."
    }
   },
   {
    "id": "n54-2026-11-25",
    "cat": "tech",
-   "lang": "fr",
-   "title": "Nigeria : un hub d’innovation numérique inauguré dans l’État de Borno",
-   "source": "AGENCE ECOFIN",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOEZ3TlpNQ0U4aXJkZFY0V01OLWNDRVp6dFZVcFMwVU5xUEEtTGJibDI1RG9STG1DMmxrSFg4eUhXNFJXWnpDNzh2RVh2Z0pvVFUzcTZJVE9lQ0JoQnMyVkVtYVUxRzgtSnRBZU02MzdUWjlibHJLSVpHNzJpV1ZUUFFYVWFid2xaTWRRaWUyODBCQmtMVXZTcHNXWS10WGZEdktjM29ZU0Z0M1NCVWFqV3d6dDQzdk9OT2tJeW0zemNkOUpTS01ZVw?oc=5",
-   "date": "2026-11-25T12:48:00.000Z",
+   "lang": "en",
+   "title": "No one would've run Nvidia like Jensen Huang in his absence, says Cypress Semiconductor's TJ Rodgers",
+   "source": "CNBC",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTkNMdGZVNFR6SWxqSEI3YmdaRERyMXVrb1BYYmJPUlNFbGVQQXQ1dHpCSjNOVUVjbjNwSC1JT29PRWJtRzY1cXdONzEwSXBRMHo3YUtQYzcyTG5sZHdHYVIwUW9EQnhvUmd5X1ZaNko2eDY1cDZvaEgwdG1aYjFYQXI4RVBfYVp6UnBVeDl2OU50TUhCdW0tZFF3NmptM0FGZTl4MWtVdTlNRFJKRWprZk4xbVZsS0YzWndJWHBPa3RINzZjZzhyS3FRWmRfYzhsV2N0aWI5cw?oc=5",
+   "date": "2026-11-25T15:38:25.000Z",
    "score": 2.5,
-   "img": "https://www.bing.com/th?id=ONUT.fPbrZTVfwVJSBD3f_z-dpA&pid=News&w=900&h=1200&c=7&rs=1",
+   "desc": "T.J. Rodgers, co-founder and former CEO of Cypress Semiconductor, joins 'Squawk on the Street' to discuss Jensen Huang's return to Nvidia, the impacts of artificial intelligence, and more.",
+   "img": "https://www.bing.com/th?id=ONUT.K-Vlx59naHOu5iqCK9dwnA&pid=News&w=900&h=1200&c=7&rs=1",
    "t": {
-    "fr": "Nigeria : un hub d’innovation numérique inauguré dans l’État de Borno",
-    "en": "Nigeria: a digital innovation hub inaugurated in Borno State",
-    "ar": "نيجيريا: افتتاح مركز للابتكار الرقمي في ولاية بورنو"
+    "en": "No one would've run Nvidia like Jensen Huang in his absence, says Cypress Semiconductor's TJ Rodgers",
+    "fr": "Personne n'aurait dirigé Nvidia comme Jensen Huang en son absence, déclare TJ Rodgers de Cypress Semiconductor",
+    "ar": "لا يمكن لأحد أن يدير Nvidia مثل Jensen Huang في غيابه، كما يقول TJ Rodgers من شركة Cypress Semiconductor"
    },
    "d": {
-    "fr": "Depuis le lancement du programme « 3 Million Technical Talent (3MTT) » par les autorités nigérianes, fin 2023, les initiatives se ...",
-    "en": "Since the launch of the “3 Million Technical Talent (3MTT)” program by the Nigerian authorities at the end of 2023, initiatives have ...",
-    "ar": "منذ إطلاق برنامج \"3 ملايين موهبة فنية (3MTT)\" من قبل السلطات النيجيرية نهاية عام 2023، تزايدت المبادرات ..."
+    "en": "T.J. Rodgers, co-founder and former CEO of Cypress Semiconductor, joins 'Squawk on the Street' to discuss Jensen Huang's return to Nvidia, the impacts of artificial intelligence, and more.",
+    "fr": "T.J. Rodgers, co-fondateur et ancien PDG de Cypress Semiconductor, rejoint « Squawk on the Street » pour discuter du retour de Jensen Huang chez Nvidia, des impacts de l'intelligence artificielle, et bien plus encore.",
+    "ar": "تي جيه. ينضم رودجرز، المؤسس المشارك والرئيس التنفيذي السابق لشركة Cypress Semiconductor، إلى برنامج \"Squawk on the Street\" لمناقشة عودة Jensen Huang إلى Nvidia، وتأثيرات الذكاء الاصطناعي، والمزيد."
+   }
+  },
+  {
+   "id": "n55-2026-11-25",
+   "cat": "tech",
+   "lang": "en",
+   "title": "Jensen Huang Breaks Silence, Signals Willingness to Return as Nvidia CEO",
+   "source": "WSJ",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5QczVTbUQzdjZ0WHN0QjYwRXJidGl2YmJzeFVVOGhEV0FoZHp3QkJ1dng1REtUS21Qa2lYSGdUejlhbGtfNzlQT1V6Zm45NDltc2hKeEowZ3NtcHdsaUNvN2ttTTJXWUgzNkF3SGZUUjdFX1FiRHc?oc=5",
+   "date": "2026-11-25T15:00:59.000Z",
+   "score": 2.5,
+   "img": "https://www.bing.com/th?id=ONUT.5GUyQfk5U9LnSivlIlY9Mw&pid=News&w=900&h=1200&c=7&rs=1",
+   "t": {
+    "en": "Jensen Huang Breaks Silence, Signals Willingness to Return as Nvidia CEO",
+    "fr": "Jensen Huang brise le silence et signale sa volonté de revenir en tant que PDG de Nvidia",
+    "ar": "جنسن هوانغ يخرج عن صمته، ويشير إلى استعداده للعودة إلى منصب الرئيس التنفيذي لشركة Nvidia"
    }
   }
  ],
  "log": [
-  "bev: 101/135 on topic",
-  "cfo: 83/109 on topic",
-  "photos: 38/55 {\"cached\":30,\"gnsig\":13,\"gnpage\":\"<!doctype html><html lang=\\\"en-US\\\" dir=\\\"ltr\\\"><head><base href\",\"empty\":24,\"othersrc\":77,\"nomatch\":36,\"sameStoryOtherOutlet\":3}",
-  "translated 13 new, reused 42, of 55",
-  "dedupe: 0 duplicates removed, 1 re-filed by region",
-  "edition kept (9.6 h old)"
+  "bev: 104/154 on topic",
+  "cfo: 82/109 on topic",
+  "photos: 41/56 {\"cached\":30,\"gnsig\":16,\"gnpage\":\"<!doctype html><html lang=\\\"en-US\\\" dir=\\\"ltr\\\"><head><base href\",\"othersrc\":133,\"nomatch\":41,\"empty\":25,\"sameStoryOtherOutlet\":5}",
+  "translated 16 new, reused 40, of 56",
+  "dedupe: 0 duplicates removed, 2 re-filed by region",
+  "photos: 5/13 {\"cached\":30,\"gnsig\":16,\"gnpage\":\"<!doctype html><html lang=\\\"en-US\\\" dir=\\\"ltr\\\"><head><base href\",\"othersrc\":171,\"nomatch\":60,\"empty\":33,\"sameStoryOtherOutlet\":6}",
+  "ai try gemini-flash-latest 503 [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
+  "ai: gemini gemini-flash-lite-latest",
+  "ai try gemini-flash-latest 503 [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
+  "ai try gemini-flash-lite-latest 503 [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
+  "podcast ai: gemini gemini-flash-lite-latest 503 [{ \"error\": { \"code\": 503, \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
+  "podcast: 5 points, 1 min"
  ],
  "gn_cache": {
   "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPT1NwZUhEUk1EN0VUT1dwa2U0cXQwY3JTMm11NXRsVS1mNUFfZ0ZrYXZldVdZbmRoektXRGo4NWI5d3VwUFNsRHJ6XzVHZ1h3Yl93OFY2QlFDODJUdzZpRlBkNXVGYW9KOTY2SEQ4bG1QZWE1WklQZDNMM3pZd0ZQR1BkZHZua1IxOGx1bGU5Mk1qTUZBWE0xM0FpMFhVdUFmT0JVclFkenZqZ2hESHNoMEREZjlHRzNEZ2c1QlRSSGh1QWpWc1BjR3FZcXhqckpNZV9J?oc=5": {
@@ -3747,25 +3907,25 @@
    "img": "https://www.bnnbloomberg.ca/resizer/v2/XDEEBJ75UTIWNS6MRCQZZP4T7U.jpg?smart=true&auth=1d68eef2a5da4d8ad29d4b3800198955194b68e13dc7e40666d4a166259b6277&width=1200&height=630",
    "at": 1795558020771
   },
-  "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZjlZeVdJWEZiVnUyT3ItWjQ0MzNiS1JUX3RzT2M4NDN5Y2tjM0VOZGhhLUZsMS1YZG54ci1raFdQVnRucy1VYVdWMVpjVUFEY08ySGNXWU5EV2Q2Z1Q2WkdKTXdmeFU2NWdNbEdaRGVLT1lfbldUWGtXbDl1RVJPZzk4dm1QdjRZeTRuMjR3dDM0QnJ0SVZwR0VVdHdDVHZwaTI0RzZQZkptdnltRWtGS1Ixbw?oc=5": {
+  "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMXZnb25ZTWVaVHNZU2lWMG9YYzlVaTFPMFR0Vnd5TFJIWHRoWVU2dTVMWThxRXdLTzFqWjdsak14cW9DVGZKbW0zNE1XblVZWlpiSTdwWEk4ZTdtT1lkWkdZSEFydlgwT19fSWRfUnpmZTF4bW85SnpBZ0x3dVZIWlo2WDQ?oc=5": {
    "v": 2,
-   "img": "https://www.bing.com/th?id=ONUT.DUn-SaBc2puzez_grWZTbw&pid=News&w=900&h=1200&c=7&rs=1",
-   "at": 1795613873811
+   "img": null,
+   "at": 1795626772376
   },
   "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ2Vtdjdia2xUaVF5bWxRSVlPUTZjc1JmWG9Uam1QSHpNcXZuREdQVmRyX2hkNEtMbWhFd1VFb3l6QVJGYkJHZlZXUDJLVlM4cDdDR0RSVTRPMmZaUHAtMlhtSDlQeFF4UGJadUhrQmhlaWlJT1cwSG9IRnF1cC1COEtKdTBsUWVsXzhkYWhUWHNKTjJsUVJuNw?oc=5": {
    "v": 2,
    "img": "https://www.bing.com/th?id=ONUT.t-C8uywRA6mV_y4dmKAcbQ&pid=News&w=900&h=1200&c=7&rs=1",
    "at": 1795619872304
   },
-  "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOXNFMnc0c0p5cHBVblZMNlI4V1JKdGdqdG1LdjgwbFBNNTJoMWpzNmZUMU50a3pTMERpQjNHdHdIVTRJOTgwWFZDQVlTNXNEMktiaTRtRWxhV01qSHp5QjZEX0lYcjBsR0h3Rk1vQjVXMnBzN1ppOEwwRjVDcVJoTk1HMzg5cW1YS09CVjlSclR5ZW1nWi16bnZoUXB5bjZKVGNrZlN4NjZXMjZpVFRjMGloTQ?oc=5": {
+  "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUWt4UlRKN202R3hobkE4b3paYTMwNXplVjdNVkZ6YzhtVjJVcFJ6dHM3Y0NkaHoyaFYwZkp1dFdFVDBYR2FpTEl6dFQ4SU5EakNRQ1czQkdmOUxpX2U5a3Z3eVp1UkdDSzB3QXI5QUI2M3ZId0VpQmRPNFhQUndWY1R0TzByNmZsQm54dy1GcFlSUjIyZnNrT2xJeHU0VVlYekdDTTlnNE9GWmpELUE4dHlRel84aEpuaWZTZVZqZE1jNm5DMnJ0UW8tQlg4N05pSVZMdjNB?oc=5": {
    "v": 2,
-   "img": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iyT1ouM5DfJ4/v0/1200x800.jpg",
-   "at": 1795585085487
+   "img": "https://www.bing.com/th?id=ONUT.zgMQwxWM5hC6wtDgWamN8g&pid=News&w=900&h=1200&c=7&rs=1",
+   "at": 1795626772081
   },
-  "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUUFucHFRbGxzR3laOUhHVU5fQ215SV82VkdMcExqZy1DMmpLalE4RHkyUDgyaEVLQmhVQ3l1VFZXcUV2ZV9UQmlqX1p2X09UbjlfbzlTY1EwUld2Z2dFV0d3cTI0bDlUejkxbFRsczJ5Q2ZmdXVaTkNNTXNKLUZkYkxLVVhFejU1VjdVTXp4d3ctRmc2NWhDbFdJV1NDRTE4UFQzOGQ4eXI4bXdjLWJB?oc=5": {
+  "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZ0JWWTg5UnRaejBZS2RlYVA3SnVHNzVDOGhqQjBaM1dCZWdPV09CWW1IZ0FwME9JWXU1NFhJZDUtajZDX0xZZlo5Zm5CNWlwc1JCcnFWY181TGNKOVE5NkNlMFA4Q3BOdnltSjBYSW85U1lrekVPelRTM1Q5MmpnN0xqZ3NHR3pzYUtTZi1qWlhYYVh4YndodGJsbmZsR2JoUWRxMDQ5MDRWS2lkRW85dV9ybFVCY1poQlVqWlRybw?oc=5": {
    "v": 2,
-   "img": "https://www.bing.com/th?id=ONUT.vO6dgawFiF0N-rwY3C3AfQ&pid=News&w=900&h=1200&c=7&rs=1",
-   "at": 1795613873526
+   "img": null,
+   "at": 1795626773006
   },
   "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaHo3dUJCUmRaTEFNN1NHaGIwSzhUTF9RVGduN1RfVk4xWGlyblRLYWhCT0F3N3hMMFFJekJHZnFsNHpucEF4TnVuakZWdHVDbF9QbFV5NkViTzQ4VHFLWjdtN0diMUJsblFGMWdxYXRrZGdaODhFcmtGZVVLeXh5bVZJdXduUHAxb0prR2I0NGRmaW5xZ19vZ1dRczdGU0gwSGVtSENBZGpmMDRqOFljRUJPNHpRM3M?oc=5": {
    "v": 2,
@@ -3775,7 +3935,12 @@
   "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSmZnclVsakZpNHFUSWtSVk4walE3M0V1bkM0RHgyWFVpRjVzVHM0TTI4TWhTYnNjQXJSTWkzdWZ2clZiVmEyaTEtSjlheHZTUURJWXB6TF9mc1JrcEZxbjlfWUJTLTlieWpSa2dzWHNPem1IVEdCVFNwSmFqYW95cTI0ak4wSUE2UC1EV19WZVU5MUpSRUNPeUUtYWNHb3AyazFodU9qVzNMbmJZZVE?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795619872233
+   "at": 1795626772247
+  },
+  "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUWduVHQ0YTgydmR0dHhhUjhfTEZ2cFhGc1Q2R01GVHhsTTJvNExMNlMwZk5GWmt5Ym00Y2tJZ3NnMGI5N3FEb0l1eGljRHpKTG0wVVRyTE5XLTRPb2c2ai13eFFEcThoSlRtbUEyZUExeVBpTC1vd3Q3OUtZX0Qxc2VjR09mem5rVnlrckV2U1JzdzVCMGN5bFI0Ulo2U0VRd1ZRTGlvM0hsazA3OGlF?oc=5": {
+   "v": 2,
+   "img": "https://www.bing.com/th?id=ONUT.vY-bBQwnYvY68dqMfh652w&pid=News&w=900&h=1200&c=7&rs=1",
+   "at": 1795626772814
   },
   "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQUkhZVU1kbG43VlF1amRLRzRfR2V3Vm1xbjJ4ZkhQNjZCSENoWXJURjI4RFY0TTFhbnYxZUx5Sk41WDlOeFp6T0N0c1RpWEpTQndWTE1RbWF3MVhpZmZuWnNuT0tRVE1nY2lMS05kVlZJZ1lGWHRTMzdHZk1jNzU4TThUYlRBcVRHajlvWXJfb01sSF90WE5TSWlnX1N5cVZFUjNPYTVCc1NiVDRNaWptV2RHYUl3OHZqZzlOblI4ODVGTjRpT3B0QlNSQ25zT1hwdzJNdHJZTmw5MWlYWlN1c0xENzM?oc=5": {
    "v": 2,
@@ -3820,12 +3985,17 @@
   "https://news.google.com/rss/articles/CBMiygFBVV95cUxObDBqUzdBOGNsZHhrMndGbHhBdTFtSkR6cF9ERDd3WEI5dUFpem1HdjNDQmxJRXdtTWt3Slg5Q0FpODdKQXI0YU1JZXJjNENnZkZ6bVZrRW9WalpXVUZPOE5JblE4SWdhTGY4Q2Z2N1NkVjJETUk5cW1ZWUhocnZVSHF6WDJGRFJIaWcyZzJ2cWdKZWw4dFpDaS1XWXVsbkVNLWhfZUowSUNjbm5nM29PUFlMNy1pYkg0cFQxUHhtMzQ0VUhFMVM2c2JR?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795619872309
+   "at": 1795626772954
   },
   "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOdzVqTXFvUkhNbDRYcEdoRllqUjA3bTJNclloR2s1TmpjNjI1QUhBYmk4c1huN2lvNWFlYm0wWHJQaWZOM250cmgwWGd3YTlwY0VrTUNkT0NYdTBwVFI4c1kzYjVjY1VhQnB0ZXNPVlBfV2Y4ZnctVWpWd0ttcFRKaFBSR20xRDJubk5DQTI3RDFJOEs4TnJqR0l4R1hVRGV0Q0d3QVdDOFhocWpqMk1xUXJ1VkRmV2YyemdYd2F6ck9zMHowZ1I2YWlQN3hxSGtUTkhEVThoTVd5U1VyVWFHWHd6bnhjZVc3djR4Y0ZzRXZMSE0?oc=5": {
    "v": 2,
    "img": "https://www.investiraucameroun.com/media/k2/items/cache/c521de097f9302ab2828143bcc44cd0b_L.jpg",
    "at": 1795585086809
+  },
+  "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVExid0U3M1I0UHRSQ052OXhHMkJyZG9EakZRZXlJeFNQYm9KVlN5dVZEa2M4YWNTYjNlU3NBeDlfT0NSWTlZZWxUdTVtRmNKZWF1c0ZsTmZfVVpybXZqeWF3RldySnVDNS03YTR5aHROdUZrdFdVbURKRExOeWJCX1ZnV0NsTUU5ZFZtaG05QTNXMF84UW9JWnVqMXV1d1ZxcDlEM2lrSzYycC1FN2d6MEY1ZjdScTlIQ1o2UUZn?oc=5": {
+   "v": 2,
+   "img": null,
+   "at": 1795626773439
   },
   "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWHdkR3lTYWlJS1NibHkwcG1UUkpOVFVFeDR4YnhJaHZfT0EyUkc4NGJGdzJ3ZE05R2tYZ0VUTl9na1VOX1dJaWtuenNtdlQya0lraW9WU013RnJqTlRlRV9IejdEQTBkY2gwZjVJazc1U0d2NFVtTTY0b1RyS1hFY2dic0xwejY4VzY2a3dudDk4S0VQb0tGZjgxSFJKbnN4amlSNg?oc=5": {
    "v": 2,
@@ -3835,12 +4005,12 @@
   "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQbzM5NDBaVFZNQll3MDhXN0hfRDZMZlZJSjZWallYVGFpY1QzV1ZGbC1KUUlJckJjOGV3b2hzRzNMOTgzZGZhOE1kNGNuR3JnRXVQUWwtRW5DSkFBVXloNGx0WTRPZ0dGSFB4cFB0bERjRjdDaEF0U3pCN0tYY3lnYk93LTRzRXZtaEJPeUk5Z1pvUlFxb1N6RDA4Q1lxUGJiTkpCOUc2cmdBRzBvVHIwclphQTZxc25SOTd2VWQzd3ZlSFVoV29FOXVJUXNYeml2OTJjVA?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795619872684
+   "at": 1795626773624
   },
   "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQTDA0U1QzNmtaelVMUzVNNU16VjN2c0VaTkNyX01zSXdwcHFQZVlCOHEyQVNtZVFTM0dCci1tZjR0TFdPZjdFODFaSktYTjJGdFRxdDZOdlc0ZDBiNHBqYzVzMjNsTXZkSmRQdUg1b3NkeFFTWnN2NkszeGd4dXgtajZyYldjYmxXM2pjWmtjcHFRSlFEbFllLW1QUk1TMnhCU0xyZzMyMUtlcXRSX1hFZVNPOXFMdnRUUE9LenpmN2w3Yjdrd1FyUElBUzNuZktSeVBv?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795619872961
+   "at": 1795626773617
   },
   "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQOFRhcDQtb19xQ0IyX0hVS19FNURHbEhqVkFmaUNUZXNocGwtT2pRN0FHcGx1a21FeGU4MWNwSzFpWFpueWpuVnk0Z0JYNnIyMkJXSU8xVHB5ZmQ3MmxjVmhWTzJIeThRSFVDT2lSNHM4LXVvOURHbFVmd0ZFaTdOY1VtR2Y2MEdja053TWo2SmNVM1k1WHJJa2JPeDhJV1hEV2ZhS293Qk9aZ2ZGcDc1R2NIX1M3S2ZiUnhKaFdDalFQR0dVREVZS1d0NXVRcUFRNGZuRGJVUy1RMVZPOWlBczFib2d0WmJkLTA4ZElVN3lJUkxRblp5NTdNRUxuZ9IBgwJBVV95cUxNbjVoZmN0bF9WLW9DRVRudVZVUmFLQTNTeW1xQkhONnVyWi1oNUxITE5UN0QtTTNGT1hEVlphYnRtUlp1UWdiZ3FDSE0zY2U3c25lYUVvZllja2pBOFBzaUIyV3U0MnF6YTVRRUNKRWlIY3loYURWaTVMN3VpX3JKSU1rTzBGVFdNWjgwVTBxQzNwSnVCOGF5UVRvYlZSWV9SaHFzWmhhWTdVcVI0SG1FOUNGSjdtV2VUWm1mQndESEZGYy0yME1INVdVWldyTHlqcUdBOEJWSXdybXVGV3ZTcDVrYm1JWUlPTW9ibzY0bktrYnZ5UUkycTRrZUpoRlJBZ0Q0?oc=5": {
    "v": 2,
@@ -3862,11 +4032,6 @@
    "img": "https://www.bing.com/th?id=ONUT.9-rW3pzfrtzdzDaM5iAvag&pid=News&w=900&h=1200&c=7&rs=1",
    "at": 1795591974166
   },
-  "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTkVTajJOTGhaYkV4VzhrbUp1Smo0RFZmdFc0MkJOTHJBT1ZVM2JhNUtacjU3ZloxcmlCcmlwaE1JdEF6Vlk5S0V3VUI4V21iQVdPcEtqVHdHZGZJd0poYzBFSXpRbjNrYWUyWEg0N2RzQlBLRHhPcWxZUjRXYmZ5MXpUUkN0QdIBiwFBVV95cUxQS1ZaRXB4ZWFUbDVkXzdUT2psQmZCRXZvR3hRbHlIRHY0TjlkXzVSMGVWMy1MdkxiWGdGbXhWUVpqQkVDS1cyb201SVRmQW5Lb1pFOTB0X2NNdFdvNUZENk5MbzhYRmxmNEpvc3c3dFFObUYwQW5JUG9BMFg4RUd5UklKNGtZUGVCN0hN?oc=5": {
-   "v": 2,
-   "img": "https://image.cnbcfm.com/api/v1/image/108292457-1776344977367-gettyimages-2271011731-baglietto-notitle260415_npPd0.jpeg?v=1795570925&w=1920&h=1080",
-   "at": 1795598510886
-  },
   "https://news.google.com/rss/articles/CBMifkFVX3lxTE5sVkRYS2FOQ1VncmwyVlgxNEpDWEtzaS15SlVVUTR1bThrMlRqT053QTAtTnlLYk1mRTdhWWtlbXFLZmZqa1pFc2xTdGwwcjlvc1RGRk9HVFpVaHQxVktfSXFfbTIyRWVTWWowOUhiNGN0WUg1WVNXSkx0MU8xUdIBfkFVX3lxTE5sVkRYS2FOQ1VncmwyVlgxNEpDWEtzaS15SlVVUTR1bThrMlRqT053QTAtTnlLYk1mRTdhWWtlbXFLZmZqa1pFc2xTdGwwcjlvc1RGRk9HVFpVaHQxVktfSXFfbTIyRWVTWWowOUhiNGN0WUg1WVNXSkx0MU8xUQ?oc=5": {
    "v": 2,
    "img": "https://image.cnbcfm.com/api/v1/image/108278829-1773747965777-108278829-1773747914707-gettyimages-2266989649-bb2_7726_2fd42ayv.jpg?v=1794879324&w=1920&h=1080",
@@ -3882,10 +4047,15 @@
    "img": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iX_Sdi07uDfg/v0/1200x800.jpg",
    "at": 1795604810198
   },
+  "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNeUlHaVFFSnlSWkY0ako5NjJsMTNsVjQ4eGhKc05oZGFWMDN4c3RQR0NyODVNUzNUenFRNS01Y1QyZi03Vm45eTNkbXF3bVBlTUhkWGVHeXIteUlPNFY2aEh3bnh4VXFaVzRMWk1fOV84SXQ4RlRMb2p4QWZ1b2NMb0JJQWZpdURHb2VLLVZVT20yQk5nWTBPUl9hUUxvcllXM0p1dFdxZjd2WWFlaEtVUGFoUzNHNG1IYWQyTkZfLUtOQQ?oc=5": {
+   "v": 2,
+   "img": "https://www.bing.com/th?id=ONUT._Gi9SQNrYB0MXuZtR8Mihg&pid=News&w=900&h=1200&c=7&rs=1",
+   "at": 1795626774273
+  },
   "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQREdSam1xbUp3N2VIWmRVRy1rQi0zZnpEWHJ3QmxrY2pCTmZta1RqeEI0dF9BdXJyNjBOWFN0alJicXI3bnZJSHhGS1FCbFV0MmVlZzhRWjBaSU1nbmVJQ2sxQ3ZaelJ4SG5mNXljQS0xeUZPcFpDT1BWN25ILWJKdFhuTXFkMnh0ajNxM2xTcVNtMTJ2SGVvNi1qZWVEc0NLamY2YW1FNlNRUGNKY250eDNOb0tYZzQwOHRXWUhpTFhMdnBGbjlIRzJlblVMWnJ5am81WXBEdTRPV3pncHNF?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795619873325
+   "at": 1795626774086
   },
   "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOaTJ5R0c2SnR6OVlmVUd6M21kcjZKbHVCYlFSc01Ic1M5Mlgzd1VBcDhIYTFwb19BVVMwcV9uT1pfWnpIby1JbTdlOXRMWXBFM1o0S2hUR3N6SDdwcWlOSUZNR0l4Z2lISnZXMU1lSER3aDkwei15U0FYUlR3MnpRSHBMOUJtM0pLTTFYTHkzdGo5aXpWQTdyMHhQYlRydHpGLThSM0NCSk4xRlpKOGdhX2hmLXU3Q01YeEhOckZLWjFKVHI2Z3hpb3U5d2xqSVQ3ZFg2V1FhcjliaUnSAeIBQVVfeXFMTmliZFpESDJicFFWZTdjOEZsLWtXSjhQdE1pZ2RTdWZjQzh4ZEQ3T2s3RHZDMmZFOVdYVDVDQ1E1c3FGWDVMaWt4b0F5V29JZmlmUFhEWFV0bE15OTB2dUVJYlYybXplOTV5c0RFM0lhd095emJkR2dTcDNNeEx4TUJaRUhhYUd5eXNxdkMzbFhncExGd2lycjNXc0FpTV9XY0k0azZTRDV4SEFmSS02MHJNcW4xUThXZmROcEFXS1FYeEZ4cFRhYnM4Y0c5OXcwVkdCeVlnM0M0TVczZjFia3FOQQ?oc=5": {
    "v": 2,
@@ -3897,15 +4067,10 @@
    "img": "https://www.bing.com/th?id=ONUT.feDGgZZDKfCA9WrsUB1AMg&pid=News&w=900&h=1200&c=7&rs=1",
    "at": 1795598510969
   },
-  "https://news.google.com/rss/articles/CBMidEFVX3lxTFBYWXBPSHFWS21pY19Gby1wR0QxMm5sMFJWVlBrQTJrRzlXMkFXYldxM3JtNWNzVTNsRTZzUERqTUIzVDJvSkFpRThqLTRmUmhhOXUyellpMEc1UzhaVnhGRGZ0ejF1NkdIZWljLWpuMm5pNXUy?oc=5": {
-   "v": 2,
-   "img": null,
-   "at": 1795619873861
-  },
   "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVTRQRUM3SXQ0WHNmbUg1bC14dDY0WVROSThnam9yNWFoOFV1dzZ0N2txYUtCTVFKMUQ1MUNkVjAxeDlzRXB1OGhMYzJ6ZE4zTTZsYnE1ZVkzYVFYOWNBNUw0T3hxSnp5MDJZMlZTWEJSQjF2TEdfeXUxYmx2UU9kNS1BOERxendiYmxsaTNPWWhKY1pacW5YTkNBOHU4UXFXcHc2U05xV1hHak95?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795619873877
+   "at": 1795626774255
   },
   "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdjhwZTlLdy1WOHVUWTJkTUJBc0hncUd2QXY5OFZUakQ2TWpqX2EwRTE0czhqTnhCRXVvUFhpYnEyVmNteU9PVEVCWnZYeV9TR0otVkJUWWNBUEJwekVXakJVZ09RRlppRHhrcktzVGFENWctdFpOZl9XSWZfWnBqLXp2Y3hUQmswZFRlOGRoOHJSdWZ6UHVuS2NLS1lhaW9HQlFNZw?oc=5": {
    "v": 2,
@@ -3925,7 +4090,7 @@
   "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOGxwalh3YmhuMlpxUG9BRDI3a1JoTDZBVU8tY29QVnBjVW9IZVhzaGhiTjB0Undha0NLTTZNdTlGLTVzcjZwX3VSb19Lb2xwclF6QlZNS3U3T2tjMVpHaWhNM0Jnd3hhMGhfT1FkSFpsVkRQWlNoRlNwbjdLcDVfb0lCb1I1M3pDSXczaXBZOTlTX3hOeXl6d2xFd3BwMldPUmZkUENxazVvWXlQT3p6TEFUVGstbTlibHc?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795619874479
+   "at": 1795626774328
   },
   "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOXBNLTFVSjhRQnJfT3Vob0lOQmZ6N09sMkdIa0tOTWlTbjJfVHBfR2U4ZXV2Y1lmVEFLSVlKWEpOMWtwNUFZeF95ODRXRUtVVUtkVVhqalhvaG8zTEM2LVAtakdJM0RXczR4Q1ZqMHhuTnRMaTU4T254Z1VzeDM3WDFVMHJhWWJKZkxrai1oOTJqZERuaFhtNm9vdS1wVF9aTzVlUDF6VQ?oc=5": {
    "v": 2,
@@ -3937,45 +4102,45 @@
    "img": "https://www.bing.com/th?id=ONUT.atmFQUYw7LKrNBPFWE_YZA&pid=News&w=900&h=1200&c=7&rs=1",
    "at": 1795537503231
   },
-  "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWWdRMlBRQ21rM053cGpwZnZFTDd2QW5xX0J0MnhMdjhfWGVkUG9VQVZFSHlSOEE5ZFlNX0FONV9uVTFDNlg2bGh4TlRubmxaTWNScEt4WTVUUHhZOGgtemtyYk9JQzFycUZaZHRtR29JdVVQcDZtZG9BNmdQcUtpb1VIeUhEYUN4dlJWdlRBVEt6OUdxM3FOOU1YM01SQUhEelE?oc=5": {
+  "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVG9lR1B4ZmlJeGYwOXc3Um4yeWZGVzJSUElNS1ZZbHdZcnd2TDJVVEEwUkFha09GZ3NyRmRpQnA4VTNKMnFCQ1lNZndMZEw2TkJfSkNmVzNaVzhSM3A1bG1HMVYzWjZkSTFNT1NBZlRPZGgyNXZoQkJKdVo0VG41Q2NqMUlkcVIzNXYzNmNPN2xpdy1BVjdGTlJ0ZUZCZXc?oc=5": {
    "v": 2,
-   "img": null,
-   "at": 1795619874734
+   "img": "https://www.bing.com/th?id=ONUT.66Vz3ieOkS95vxELCRkiCQ&pid=News&w=900&h=1200&c=7&rs=1",
+   "at": 1795626775080
+  },
+  "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNWmxFWFBJSHprQllmZ05Ldk50Vk1PVUZqc2JoN1EwWkN4dWNwaG1yNDJaQTBSUDRZV0V5RlpFMU1rbWFkT3FTM0ozSnlLeW40Qk5IbmU3aXhKTEoxaDVpRjRyMFRicW5rSHBjREFfdnFDXzYzSWlkYVQ4NTZVZ1ZBaUFVU1dYVm1mRXBiUXdxd3RxUzV3WUJGRE4taDBtT2FuX19wdzJhRnJMc1N2YXBYbGxpR2JzRUIyNTNkYWFjcjdVQQ?oc=5": {
+   "v": 2,
+   "img": "https://www.lbcgroup.tv/uploadImages/DocumentImages/Doc-T-969568-639311895522415914.png",
+   "at": 1795626776359
   },
   "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSm9ueW55eEduR3k4aF9iUGpXMXVOYnhEa2NHY0dXLWFNTnJsRXU2bXlGbDJBbFRFRW9maUFVcmc3YnR3VW1BdG1NZ0p2WXg0aDJjcnJ6VDZISnVWTXo2SFQ1TXpNMU9Bb1dSX0xmTllEbENXUWhPZVpXdFJSb29SeFdkNlFHVTJ6bC1rRC1PaWt1WEVQMnFTczdyajJjWUxHN3ZwdXln?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795619874542
+   "at": 1795626774880
   },
   "https://news.google.com/rss/articles/CBMifkFVX3lxTFBNYmZqQTFLNlNHLTRZeU9VRmRPN0w4MnRrWE9MYkY4TDkybHdtU2pzWjRkQWFvTW1wazFVVkdoWTlCWGd6amVDMXZ6M3hsU0JkYWJWc256S0RNTUFQSEU3dWM5S2JfcExSLVBYUlpYdTEydVlXY1lyQU9CVXdKQQ?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795619874753
+   "at": 1795626774950
   },
   "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYVFfLUtheldOemJ3dWhFVnF1ZXRzOElSdWFCTmswblVDWGJEV2RZMWMtTjZyTDd3dXRmOTJMMS1aeVU1TlBhZkVOYllVME94MUpPQXRVN01jZXB1Z0R2OEllb1ZCbjJYeDNzWm9pRU5MMTE4LUxyaDVhMlNPdmNvbmVpWUZoSVk?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795619875037
+   "at": 1795626775444
   },
-  "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZ0FNelBkTmVQYVZ6Zk5IdEdHa0FkN1Y1RHJtNHFEaFpXb3R1R01Zbjg5UEMyMXIwUjgwNElIc3RkbTVPbzhYTHVycHdxQks4SjVQbGhrcml5TEIzYzlKTlZaT01samgzUXJxd3hmRXIxT1h2ZWVPcGM4QndiWnRnVElaNnRXRkV1M3c1LUZ2bmZISmJLSUgwZUdVR3Z3VDFSV0M0OVdNbzM?oc=5": {
+  "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVGhuQ1VIci1XSXM2UU1HWGZSZ2hNTDJpSlpvSl96WGpfZEIxUTJ4OVZpNmlOcnR5bGtYNzQwcTNTTzFsd0dSczF5Rl9qM0hPNmJ0N19wYWdxU0xYTWxFYWRGb0FudmxmQTBnM2VNdnV2dkRNT0NlT2oyZjM3LUp2cHFBeThEakN3QktJcGktMGRyYnFNZWpUOXpUVXpqQ3p6Q0ZDejRHdUQ5dHA3dzJEWWI4X2VlM016b2VDQXNHYW83dw?oc=5": {
+   "v": 2,
+   "img": "https://www.bing.com/th?id=ONUT.GOGojP9psXbVJX1zLE8-wA&pid=News&w=900&h=1200&c=7&rs=1",
+   "at": 1795626775969
+  },
+  "https://news.google.com/rss/articles/CBMivAFBVV95cUxPLVNSWmdEN1RnODNDeExiamFuRjNoelRxN1NSc3dzbW9rWVdNd21UX043OHo0cFlNa0pab096VXhTdkJvcXdiWUswRGJkQzBXRjlDaTJ4clJYdmZjdDBZNkRXS3lGRk80VHBZVUlkb1hmU0l6ckZFT25sLWFlSF9iZF80RjZlUnJEeWFudl9NZGt2WDlVQ2RXZ19fQmpGX1NldF9VcjBlMF9ocDNaY0NXZHJaU3dWcDY5WEUxRA?oc=5": {
+   "v": 2,
+   "img": "https://www.lbcgroup.tv/uploadImages/DocumentImages/Doc-T-969399-639311014647029373.PNG",
+   "at": 1795626777878
+  },
+  "https://news.google.com/rss/articles/CBMikwFBVV95cUxPVDRsX3lvY3JfcGNiMVVDWHZpUm01U2dmMUJVenRFUnN4QnUtSkhZMkNDTktkaUJDYjhEbGRMQ3MyZGx1bzlKQ0dLVU9RTG9zR2x5MlJaYUNOeWNZNUJLZGk4clI0QW92VmNELXBXVU0wVVFYWmdsd3RyaTNOelZfeDAtb3RRZnpBR1ItWlg1VmVva1k?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795619875101
-  },
-  "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcTZzbjh6VUE1aV9DTnMyQkV0YnFmNjR4QmM1Q01FOTBUdGdxODVXZzFNQ0Jyek9ocEdjZkFxRnhPcEZqVF9TTXp6amdlU0ZJVG45TE1RNEtVdFptWnhTWnFXOVYxMlhqcWh6a09zczNSNlFJbkVNSlBURnJVNFJkWHhIanJndXhFd3ZvdVVTcVM3Y3dyekIwOGlvQmxvbzVQSHBTZkNEeElRY0J6?oc=5": {
-   "v": 2,
-   "img": null,
-   "at": 1795619875451
-  },
-  "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMUJJenB4N21ZUUhwY3BKM0RnRTBXZkxleU95dnJrYVowdUxJbHQ5WV9tM3B1ejdYbFpQT2laMk9oYnlfNlVhSk9xREdFWEZQLXFCZGVlanV5c3dOanozUU5UcWZNcWlKYlNvaFlnYkplUS10NUNzY0kxeGtMNk9iaC0tYUROdDQ4S0RRaFZmaEpFaGt1cXF4Vk9ESkFXNG9uNXR0cXNhc1dTaEZwU2ZrQXJjMDZBTVowRks5bVFn?oc=5": {
-   "v": 2,
-   "img": null,
-   "at": 1795619875641
-  },
-  "https://news.google.com/rss/articles/CBMiigFBVV95cUxOV19ZdF9SLXFmUE9vMTdQZVlkRTBMaFJla1pSaFZlNVlrWTFFc19lV1BsVmJvSmNUMmIxdDVBRzNjSHhDMVIxTmNqQmEwZEdCaFI2TmhNdVVkZy16R3VoY3V6VW9hMnpMV2g2VDk1Ukc3Wmk2UmVBMUZMYm4wb3M0dHdQYkRXeEpvMHc?oc=5": {
-   "v": 2,
-   "img": null,
-   "at": 1795619876040
+   "at": 1795626776519
   },
   "https://news.google.com/rss/articles/CBMie0FVX3lxTE02aG9MTzVQV1FPaHZkWUlkbUctTTNOWWxwTHplcDc2akxGWU4xRy1MQndiMUxhU0tEN2Y5WkdRTlIxRU80aUxmbGNJOWVVdE12VjZ1YnM2NU8xN0VoX0ZmNVNrbDlGOEdLV0kzV19fcEJrNDVjUk1KZnhVMA?oc=5": {
    "v": 2,
@@ -3987,35 +4152,35 @@
    "img": "https://www.bing.com/th?id=ONUT.KZphGOKgfaQmVr0vbqTweA&pid=News&w=900&h=1200&c=7&rs=1",
    "at": 1795598514194
   },
-  "https://news.google.com/rss/articles/CBMif0FVX3lxTE5nS1FDUS1xNTd6cWFBUE9JbUxkUnZUSnJFck82RHlqeEZOVTBUenpqYWJHbjd0VldkNEI4b3NFalZXTXhRTVFpQ042V2FVQ0g2SXNHeUlYOU1yQnVDWE5FaDFFUWNIUXB3UFpzbm9PcDNNb0Vrc19wV0RKZ2ZwWjjSAYQBQVVfeXFMUERIbXJUSm81dUY0YV9wRlo2YkpfNTBtY3JCOGFsSFM1ODBzU1ltLVFnaHZyRkhmZURkY3dCX1RKVjc3MUd0RVZGR0dtZFZFZjc0LTczZmIwVm1sTjBsaUNZSEo5MEhTWXdMcXU2aHVXTHNRWXJLZnd6VUU0cmxEUHdHZGRp?oc=5": {
-   "v": 2,
-   "img": "https://www.bing.com/th?id=ONUT.wD8bc5UTksx8fyzYE1O2_Q&pid=News&w=900&h=1200&c=7&rs=1",
-   "at": 1795558024760
-  },
   "https://news.google.com/rss/articles/CBMieEFVX3lxTE56eC1rNEgtamFWQ0kzWWw0bVZObjZqMDdkZE9XOU91aVdST0RtYk91U0EtNEFYWEo0RWFDVklpaTUtZjFVc2FyM2paTk5nMWhDOHFBRkNHOWdVdmpiZTBKVkJoWFlSN1NWTUVPeEhQcm1wbXdveGtrWNIBfkFVX3lxTE9DVkFsbFdUOEk3YmRtWHR2bmJYRXFCbXNpMHZBeHd2X21MRFFBRGxXdXdOT05wRm9ISWhkRzZSVDI4Q0pSWEJ3MlZDTS1saXNpVm8tU3NIVnIzWkRxcWdGZE5SbGdOVEVaZURnNnRIcGRKTERfMllaaW9xQTBxUQ?oc=5": {
    "v": 2,
    "img": "https://www.bing.com/th?id=ONUT.dOsLvay-uiQBwovGM3rf_g&pid=News&w=900&h=1200&c=7&rs=1",
    "at": 1795591976039
   },
-  "https://news.google.com/rss/articles/CBMifkFVX3lxTE1pdXZBMHRlenptLXduWlZuVzlDS1VuRzgyc3RxVUZHQ254YmpVM21lOU1Pd0pJSU1HTDZ2YTdfRjBSUGFZSUFIYVc3RjlvTlhCcmpzaFloYmZQWDEyamd0OExnSTZSYWFqekJ0TFAzQ0pHY045MXJJWWx3WTU0QdIBgwFBVV95cUxPWl81RnJfSUhQMnBTLUhlUXZUMEI5NjE1ckRxTUZrcW5XckxsLWVCbktmSHd1M01QZjZKc2g2bHBYVW16NWlHRDNXd282eTh1TEhzaFNnS2V0SGUyYzEzNjY2QjJnUkduXzFvWjFkRWRTTXZyU21XaVFYZE5uN3pPTWk2MA?oc=5": {
+  "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNb1ZBby1iVDJnTmJwX3hDYWJpU2lxTUdLTHdlWHFqRHJUcmtTOWFuQkFRTlUyZTJBcGdNMWR3N3d1YlJIV05kWk1mU21JSDZmSVpZR1BlanpqRzFXSkg3NkxkeElWcHM0Q2Y4eFJKb3Fha29XakxYNFJ4cXExZHo4MFVDOHdDbENrQWs0d0lqQ3Z5cEVDRVBQR1hNNWZxSmhiUll4NFg1amZlU01oWm9fN2hkUFBBNkdKT21v?oc=5": {
    "v": 2,
-   "img": "https://www.bing.com/th?id=ONUT.RMqKM1KbagvNZlDpmCPVZg&pid=News&w=900&h=1200&c=7&rs=1",
-   "at": 1795558025061
+   "img": "https://www.bing.com/th?id=ONUT.4SNwFuo-aauveH33lU25yA&pid=News&w=900&h=1200&c=7&rs=1",
+   "at": 1795626776978
   },
-  "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQ2cwWG1mYkVmSG5oSTgwZmcxcVY5SWg2ak5aTHBtbG1qWHVvcGxjOGQzTFZKZkNSdWgtOHJtbW1BenVtTWc2UmFrOFpHbTV1Mnh5MWgxWk00R0NrVG5PX0hkNWxmczRRLWdnRUtvRFBhMzVzZUlRN0FXRFVJYlNTVUJaT1U3eVY4SUwtNFd2a1MweTlBZW1ReG9mU0pQa2ZUd3RnaEZtMXNyQmhxeDV0SGN1eWRGcDN2UExZ?oc=5": {
+  "https://news.google.com/rss/articles/CBMiswFBVV95cUxORGVYTmpUeWhmYUNmYzBaWjlES0t0b3N0dTFoNEsxVlk5TklPNXVYZ1BaU05HSnJxTDdOOHNPOU1DWVpnY3oxbUtxLXBISjlOYWs4V1VWZnNub3lkaEkybWo0czRNdzFJc2pGT2NERDFUSkJ1a3lOY2JJM2pEaUZ3VnpJaHNqeE95SkRDYUg5RmVwRDlyTlBnNzZXQXhnd24yYnl6ajlMWGIxNHp6bHhZbmk2dw?oc=5": {
    "v": 2,
    "img": null,
-   "at": 1795619876619
+   "at": 1795626777318
   },
-  "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNVZEZVVpM2pKb2t2dDktNWRNZ2xTXzc5aUN3SjNzM1dRbGRHUkZoYjFJY2hRaGZCd1dsNGNXckIxOWg1el9oZnhVVjRNSlpwcjJFLTQxSzZqSFZ1bVZGczJWR2RTT1BUU3BLenB0amhsQWFqRlJWNlNTdkR0dGRlcmNzWDg0R19lMDVwQ2lUdVF5YTQ0SnZKWElqbGwwa3VIemV3WDhVWEpiQQ?oc=5": {
+  "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0zeHlzeG5POVNQREwyaGhoTnNCb0taYVN3MkRDNjItbUZyNmZHU2taS2F5Q2dKaDVYeVFWVTg4bG1MNlVmb284Ti1pOEwyRzJ1RjFXVHVWWEZmR2s?oc=5": {
    "v": 2,
-   "img": "https://www.bing.com/th?id=ONUT.xYxzrtc-13gv9q7OjfdxqA&pid=News&w=900&h=1200&c=7&rs=1",
-   "at": 1795619876627
+   "img": "https://www.bing.com/th?id=ONUT.KoNQlMkg-DgKoh4fmXgmVw&pid=News&w=900&h=1200&c=7&rs=1",
+   "at": 1795626777327
   },
-  "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOEZ3TlpNQ0U4aXJkZFY0V01OLWNDRVp6dFZVcFMwVU5xUEEtTGJibDI1RG9STG1DMmxrSFg4eUhXNFJXWnpDNzh2RVh2Z0pvVFUzcTZJVE9lQ0JoQnMyVkVtYVUxRzgtSnRBZU02MzdUWjlibHJLSVpHNzJpV1ZUUFFYVWFid2xaTWRRaWUyODBCQmtMVXZTcHNXWS10WGZEdktjM29ZU0Z0M1NCVWFqV3d6dDQzdk9OT2tJeW0zemNkOUpTS01ZVw?oc=5": {
+  "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTkNMdGZVNFR6SWxqSEI3YmdaRERyMXVrb1BYYmJPUlNFbGVQQXQ1dHpCSjNOVUVjbjNwSC1JT29PRWJtRzY1cXdONzEwSXBRMHo3YUtQYzcyTG5sZHdHYVIwUW9EQnhvUmd5X1ZaNko2eDY1cDZvaEgwdG1aYjFYQXI4RVBfYVp6UnBVeDl2OU50TUhCdW0tZFF3NmptM0FGZTl4MWtVdTlNRFJKRWprZk4xbVZsS0YzWndJWHBPa3RINzZjZzhyS3FRWmRfYzhsV2N0aWI5cw?oc=5": {
    "v": 2,
-   "img": "https://www.bing.com/th?id=ONUT.fPbrZTVfwVJSBD3f_z-dpA&pid=News&w=900&h=1200&c=7&rs=1",
-   "at": 1795613878742
+   "img": "https://www.bing.com/th?id=ONUT.K-Vlx59naHOu5iqCK9dwnA&pid=News&w=900&h=1200&c=7&rs=1",
+   "at": 1795626777910
+  },
+  "https://news.google.com/rss/articles/CBMidkFVX3lxTE5QczVTbUQzdjZ0WHN0QjYwRXJidGl2YmJzeFVVOGhEV0FoZHp3QkJ1dng1REtUS21Qa2lYSGdUejlhbGtfNzlQT1V6Zm45NDltc2hKeEowZ3NtcHdsaUNvN2ttTTJXWUgzNkF3SGZUUjdFX1FiRHc?oc=5": {
+   "v": 2,
+   "img": "https://www.bing.com/th?id=ONUT.5GUyQfk5U9LnSivlIlY9Mw&pid=News&w=900&h=1200&c=7&rs=1",
+   "at": 1795626778045
   }
  }
 }
